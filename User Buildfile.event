@@ -1,0 +1,64 @@
+#define AnimationSwitch //undefine to not install animations
+#define MusicSwitch //undefine to not install music
+
+#ifndef AnimationSwitch
+MESSAGE Animation Switch is off and animations are not written
+#endif
+
+#ifndef MusicSwitch
+MESSAGE Music Switch is off and songs are not written
+#endif
+
+//Definitions
+#include "Definitions/User Definitions.event"
+
+//Text
+#include "Text/Install Text Data.event"
+
+//Modulars
+ALIGN 4
+#include "ModularCharacters/Modular Character Installer.event"
+ALIGN 4
+#include "ModularClasses/Modular Class Installer.event"
+ALIGN 4
+#include "ModularItems/Modular Item Installer.event"
+
+//Stat Setters
+#include "Definitions/Stat Set.event"
+
+//Promotion Editors
+#include "Promotion Items/Promotion Item Editor.event"
+
+//Graphics
+#include "Graphics/Master Graphic Installer.event"
+
+//Engine Hacks
+#include "Engine Hacks/Master Hack Installer.event"
+
+//Maps
+ALIGN 4
+#include "Maps/Master Map Installer.event"
+
+//Music
+#ifdef MusicSwitch
+#include "Music/Music Installer.event"
+#endif
+
+//Quotes
+#include "Quotes/Battle Quotes Installer.event"
+#include "Quotes/Death Quotes Installer.event"
+
+//Supports
+#include "Support Editor/Support Editor.event"
+
+//Events
+#include "Events/Master Event Installer.event"
+
+//Escape Points
+#include "Escape Points/Installer.event"
+
+//Chapter Data
+#include "Chapter Data/Chapter Data Installer.event"
+
+//Forced Deployment
+#include "Force Deploy/Force Deployer.event"

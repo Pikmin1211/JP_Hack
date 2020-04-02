@@ -1,0 +1,43 @@
+// Move
+SetClassMove(Knight,5)
+SetClassMove(Troubadour,7)
+SetClassMove(MageKnight,8)
+SetClassMove(MageKnightF,8)
+SetClassMove(Valkyrie,8)
+
+// Killing Trainee Palettes
+setCBSP(0x00, Ross, 0x00, 0x00)
+setCBSP(0x00, Ross, 0x02, 0x00)
+setCBSP(0x00, Ross, 0x05, 0x00)
+setCBSP(0x00, Ross, 0x06, 0x00)
+
+setCBSP(0x00, Amelia, 0x00, 0x00)
+setCBSP(0x00, Amelia, 0x02, 0x00)
+setCBSP(0x00, Amelia, 0x05, 0x00)
+setCBSP(0x00, Amelia, 0x06, 0x00)
+
+setCBSP(0x00, Ewan, 0x00, 0x00)
+setCBSP(0x00, Ewan, 0x02, 0x00)
+setCBSP(0x00, Ewan, 0x05, 0x00)
+setCBSP(0x00, Ewan, 0x06, 0x00)
+
+// Items
+SetItemAbility1(LightBrand,IsWeapon|IsMagic)
+SetItemAbility1(Runesword,IsWeapon|IsMagic)
+SetItemAbility1(WindSword,IsWeapon|IsMagic)
+
+SetItemDurability(ShadowKiller,20)
+SetItemDurability(BrightLance,20)
+SetItemDurability(Fiendcleaver,20)
+SetItemDurability(BeaconBow,20)
+
+SetItemAbility3(Rapier,0x0)
+SetItemRank(Rapier,CRank)
+SetItemDurability(Rapier,25)
+SetItemMt(Rapier,6)
+
+// Lower throne avoid
+PUSH
+ORG 0x80C498
+BYTE 20
+POP

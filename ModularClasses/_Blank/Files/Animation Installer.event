@@ -1,0 +1,16 @@
+#ifdef AnimationSwitch
+
+ALIGN 4
+
+#include "Animations/Type Installer.event"
+
+ClassAnim:
+TypeAnim(BlankTypeAnim)
+EndAnim
+
+#endif
+
+#ifndef AnimationSwitch
+ClassAnim:
+EndAnim
+#endif

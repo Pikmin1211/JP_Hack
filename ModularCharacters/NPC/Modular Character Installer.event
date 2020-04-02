@@ -1,0 +1,11 @@
+#include "Civilian/Civilian Installer.event"
+
+#include "Town Guard/Town Guard Installer.event"
+
+#include "Priest/Priest Installer.event"
+
+#include "Eevster/Eevster Installer.event"
+
+#include "Basement/Basement Installer.event"
+
+#include "Basement2/Basement Installer.event"

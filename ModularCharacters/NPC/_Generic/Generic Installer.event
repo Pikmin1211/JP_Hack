@@ -1,0 +1,15 @@
+#define Generic //UnitID here
+#define GenericName //TextID here
+#define GenericDescription //TextID here
+#define GenericFaction //MinimugID here
+
+{
+	#define UnitID Generic
+	#define UnitNameLocation GenericName
+	#define UnitDescriptionLocation GenericDescription
+	#define UnitFaction GenericFaction
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

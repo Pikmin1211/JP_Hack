@@ -1,0 +1,19 @@
+
+
+{
+	#define UnitID Oskar
+	#define UnitClass OskarClass
+	#define UnitMugID OskarMug
+	#define UnitNameLocation OskarName
+	#define UnitDescriptionLocation OskarDescription
+	#define Palette1Number OskarPalette1
+	#define Palette2Number OskarPalette2
+	#define Palette3Number OskarPalette3
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Support Installer.event"
+	#include "Files/Palette Installer.event"
+	#include "Files/Mug Installer.event"
+	//#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

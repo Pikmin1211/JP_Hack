@@ -1,0 +1,34 @@
+#define EnemyEscapeTable 0x5A8188
+#define NPCEscapeTable 0x5A828C
+
+#define EscapeUp 3
+#define EscapeDown 2
+#define EscapeLeft 0
+#define EscapeRight 1
+#define EscapeInPlace 5
+
+#define EscapePointEntry(X,Y,Direction) "BYTE X Y Direction 0"
+#define EscapePointTerminator "BYTE 0xFF 0xFF 0xFF 0xFF"
+#define SetEnemyEscapePoint(ChapterID,EscapePointList) "PUSH; ORG EnemyEscapeTable + (ChapterID * 0x4); POIN EscapePointList; POP"
+#define SetNPCEscapePoint(ChapterID,EscapePointList) "PUSH; ORG NPCEscapeTable + (ChapterID * 0x4); POIN EscapePointList; POP"
+
+EnemyEscapeTableCh4:
+EscapePointEntry(8,1,EscapeInPlace)
+EscapePointEntry(10,7,EscapeInPlace)
+EscapePointEntry(12,3,EscapeInPlace)
+EscapePointEntry(2,8,EscapeInPlace)
+EscapePointTerminator
+
+NPCEscapeTableCh1:
+EscapePointEntry(5,14,EscapeDown)
+EscapePointTerminator
+
+NPCEscapeTableCh4:
+EscapePointEntry(11,16,EscapeDown)
+EscapePointEntry(12,16,EscapeDown)
+EscapePointEntry(13,16,EscapeDown)
+EscapePointTerminator
+
+SetEnemyEscapePoint(0x4,EnemyEscapeTableCh4)
+SetNPCEscapePoint(0x1,NPCEscapeTableCh1)
+SetNPCEscapePoint(0x4,NPCEscapeTableCh4)

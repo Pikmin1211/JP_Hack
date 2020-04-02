@@ -1,0 +1,6 @@
+#define MagicOrb 0xA
+
+#define AdeptManual 0xBD//ItemID here
+#define AdeptManualMagicAnim 0xFE//MagicAnimationID here
+#define AdeptManualIcon 0xAD//ItemIconID here
+#define AdeptManualDescription SD_Adept//TextID here

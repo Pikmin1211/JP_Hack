@@ -1,0 +1,72 @@
+HeroCrestList:
+BYTE Mercenary MercenaryF Myrmidon MyrmidonF Fighter Journeyman2 0x0
+
+KnightCrestList:
+BYTE Cavalier CavalierF Knight KnightF Recruit2 0x0
+
+OrionsBoltList:
+BYTE Archer ArcherF 0x0
+
+ElysianWhipList:
+BYTE PegasusKnight WyvernRider WyvernRiderF 0x0
+
+GuidingRingList:
+BYTE Priest Cleric Mage MageF Monk Shaman ShamanF Troubadour Pupil2 0x0
+
+MasterSealList:
+BYTE Mercenary MercenaryF Myrmidon MyrmidonF Fighter Pirate Brigand Cavalier CavalierF Knight KnightF Archer ArcherF PegasusKnight WyvernRider WyvernRiderF Priest Cleric Mage MageF Shaman ShamanF Troubadour Thief Journeyman1 Pupil1 Recruit1 Journeyman2 Pupil2 Recruit2 Monk 0x0
+
+HeavenSealList:
+BYTE 0x0
+
+OceanSealList:
+BYTE Thief Pirate Brigand 0x0
+
+LunarBraceList:
+BYTE EphraimLord 0x0
+
+SolarBraceList:
+BYTE EirikaLord 0x0
+
+#define PromoItem(Index,List) "ORG PromotionItemTable + 0x4 + (Index * 12); POIN List"
+
+PUSH
+PromoItem(0x0,HeroCrestList)
+PromoItem(0x1,KnightCrestList)
+PromoItem(0x2,OrionsBoltList)
+PromoItem(0x3,ElysianWhipList)
+PromoItem(0x4,GuidingRingList)
+PromoItem(0x5,MasterSealList)
+PromoItem(0x6,HeavenSealList)
+PromoItem(0x7,OceanSealList)
+PromoItem(0x8,LunarBraceList)
+PromoItem(0x9,SolarBraceList)
+POP
+
+
+/*
+PUSH
+
+ORG 0x29398
+POIN HeroCrestList
+ORG 0x293A0
+POIN KnightCrestList
+ORG 0x293A8
+POIN OrionsBoltList
+ORG 0x293B0
+POIN ElysianWhipList
+ORG 0x293B8
+POIN GuidingRingList
+ORG 0x293C0
+POIN MasterSealList
+ORG 0x29408
+POIN OceanSealList
+ORG 0x291D0
+POIN LunarBraceList
+ORG 0x29214
+POIN SolarBraceList
+ORG 0x293D8 // Unused, for item 0x8a
+BYTE 0x0 0x0 0x0
+
+POP
+*/

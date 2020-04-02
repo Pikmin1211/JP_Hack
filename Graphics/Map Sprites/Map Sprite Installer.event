@@ -1,0 +1,10 @@
+SigilSprite:
+#incext png2dmp "Sigil.png" --lz77
+
+TorchSprite:
+#incext png2dmp "Torch.png" --lz77
+
+SetMapSprite(0x6A,0,SigilSprite)
+SetMapSprite(0x33,0,SigilSprite)
+SetMapSprite(0x61,0,SigilSprite)
+SetMapSprite(0x78,0,TorchSprite)

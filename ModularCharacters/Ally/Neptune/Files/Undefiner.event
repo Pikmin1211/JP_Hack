@@ -1,0 +1,119 @@
+//General
+#undef UnitID
+#undef UnitClass
+#undef UnitMugID
+#undef UnitNameLocation
+#undef UnitDescriptionLocation
+#undef UnitName
+#undef UnitDescription
+#undef UnitMug
+#undef UnitMinimug
+#undef UnitAffinity
+#undef UnitPriority
+#undef PersonalSkill
+
+//Stats
+#undef UnitLevel
+#undef BaseHP
+#undef BaseStr
+#undef BaseMag
+#undef BaseSkl
+#undef BaseSpd
+#undef BaseDef
+#undef BaseRes
+#undef BaseLuk
+#undef BaseCon
+
+//Base Weapon Ranks
+#undef BaseSwordRank
+#undef BaseLanceRank
+#undef BaseAxeRank
+#undef BaseBowRank
+#undef BaseStaffRank
+#undef BaseAnimaRank
+#undef BaseLightRank
+#undef BaseDarkRank
+
+//Growth Rates
+#undef HPGrowth
+#undef StrGrowth
+#undef MagGrowth
+#undef SklGrowth
+#undef SpdGrowth
+#undef DefGrowth
+#undef ResGrowth
+#undef LukGrowth
+
+//Character Abilities
+#undef CharacterAbilityOne
+#undef CharacterAbilityTwo
+#undef CharacterAbilityThree
+#undef CharacterAbilityFour
+
+//Summoning
+#undef SummonedUnit
+
+//Support Data
+#undef SupportData
+
+//Convo Group
+#undef UnitConvoGroup
+
+//Mug
+#undef MouthX
+#undef MouthY
+#undef EyeX
+#undef EyeY
+#undef UnitMugData
+
+//Text
+#undef UseUnitText
+#undef NameTextData
+#undef DescriptionTextData
+
+//Palette
+#undef BaseClass
+#undef PromotedClass1
+#undef PromotedClass2
+#undef Palette1Number
+#undef Palette2Number
+#undef Palette3Number
+#undef Palette1
+#undef Palette2
+#undef Palette3
+
+//Custom Battle BGM
+#undef HasCustomBGM
+#undef CustomBGM
+
+//EXP Operands
+#undef EXPMultiplier
+#undef EXPDivisor
+
+//Skill List
+#undef HasPersonalSkillList
+#undef SkillList
+
+//Supports
+#undef SupportPartnerNumber
+#undef SupportPartnerOne
+#undef BaseSupportOne
+#undef SupportGrowthOne
+#undef SupportPartnerTwo
+#undef BaseSupportTwo
+#undef SupportGrowthTwo
+#undef SupportPartnerThree
+#undef BaseSupportThree
+#undef SupportGrowthThree
+#undef SupportPartnerFour
+#undef BaseSupportFour
+#undef SupportGrowthFour
+#undef SupportPartnerFive
+#undef BaseSupportFive
+#undef SupportGrowthFive
+#undef SupportPartnerSix
+#undef BaseSupportSix
+#undef SupportGrowthSix
+#undef SupportPartnerSeven
+#undef BaseSupportSeven
+#undef SupportGrowthSeven

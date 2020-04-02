@@ -1,0 +1,5 @@
+## PrologueName
+Prologue[X]
+
+## PrologueObjective
+Defeat Boss[X]

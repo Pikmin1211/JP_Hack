@@ -1,0 +1,4 @@
+// BYTE HardCharLock
+// BYTE HardClassLock
+
+#define SetWeaponLockArray(id,lockarray) "PUSH; ORG WeaponLockArrayPointerTable + (id * 0x4); POIN lockarray; POP"

@@ -1,0 +1,12 @@
+#define KnightErrandSong 0x54
+#define E1M1Song 0x55
+#define Taisen4Song 0x56
+#define SplashSong 0x58
+#define SkyEventSong 0x59
+#define EldiganTheLionheartSong 0x5D
+#define RedialSong 0x5E
+#define TrialSong 0x5F
+#define CapOnNappersSong 0x62
+#define FranticFactorySong 0x63
+#define MrBearSong 0x64
+#define DesertedChateauSong 0x92

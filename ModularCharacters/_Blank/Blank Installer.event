@@ -1,0 +1,24 @@
+#define Blank //UnitID here
+#define BlankClass //ClassID here
+#define BlankMug //MugID here
+#define BlankPalette1 //PaletteID here
+#define BlankPalette2 //PaletteID here
+#define BlankPalette3 //PaletteID here
+
+{
+	#define UnitID Blank
+	#define UnitClass BlankClass
+	#define UnitMugID BlankMug
+	#define UnitNameLocation BlankName
+	#define UnitDescriptionLocation BlankDescription
+	#define Palette1Number BlankPalette1
+	#define Palette2Number BlankPalette2
+	#define Palette3Number BlankPalette3
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Support Installer.event"
+	#include "Files/Palette Installer.event"
+	#include "Files/Mug Installer.event"
+	//#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

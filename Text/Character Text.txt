@@ -1,0 +1,175 @@
+## SandersName
+Sanders[X]
+
+## SandersDescription
+Placeholder[X]
+
+## FinnName
+Finn[X]
+
+## FinnDescription
+Placeholder[X]
+
+## ScottName
+Scott[X]
+
+## ScottDescription
+Placeholder[X]
+
+## RengeName
+Renge[X]
+
+## RengeDescription
+Placeholder[X]
+
+## MarisaName
+Marisa[X]
+
+## MarisaDescription
+Placeholder[X]
+
+## OskarName
+Oskar[X]
+
+## OskarDescription
+Placeholder[X]
+
+## BlancName
+Blanc[X]
+
+## BlancDescription
+Placeholder[X]
+
+## BattaName
+Batta[X]
+
+## BattaDescription
+The ruthless leader of the brigand[N]
+group known as Batta's Beasts.[X]
+
+## BattaBeastName
+B. Beast[X]
+
+## BattaBeastDescription
+A member of Batta's Beasts.[N]
+Savage, unremorseful brutes.[X]
+
+## SayoriName
+Sayori[X]
+
+## SayoriDescription
+Placeholder[X]
+
+## WoltName
+Wolt[X]
+
+## WoltDescription
+Placeholder[X]
+
+## ArdenName
+Arden[X]
+
+## ArdenDescription
+Placeholder[X]
+
+## KekhName
+Kek'h[X]
+
+## KekhDescription
+Placeholder[X]
+
+## DerekName
+Derek[X]
+
+## DerekDescription
+Placeholder[X]
+
+## VergilName
+Vergil[X]
+
+## VergilDescription
+Placeholder[X]
+
+## ImperialName
+Imperial[X]
+
+## ImperialDescription
+Placeholder[X]
+
+## TownGuardName
+[_T][_o][_w][_n] [_G][_u][_a][_r][_d][X]
+
+## TownGuardDescription
+Placeholder[X]
+
+## ONeillName
+O'Neill[X]
+
+## ONeillDescription
+Placeholder[X]
+
+## PriestUnitName
+Priest[X]
+
+## PriestUnitDescription
+Placeholder[X]
+
+## WrysName
+Wrys[X]
+
+## WrysDescription
+Placeholder[X]
+
+## NeptuneName
+Neptune[X]
+
+## NeptuneDescription
+Placeholder[X]
+
+## WilbellName
+Wilbell[X]
+
+## WilbellDescription
+Placeholder[X]
+
+## MonsterName
+Monster[X]
+
+## MonsterDescription
+Placeholder[X]
+
+## CultistName
+Cultist[X]
+
+## CultistDescription
+Placeholder[X]
+
+## NovalaName
+Novala[X]
+
+## NovalaDescription
+Placeholder[X]
+
+## BrianName
+Brian[X]
+
+## BrianDescription
+Placeholder[X]
+
+## TodorokiName
+Todoroki[X]
+
+## TodorokiDescription
+Placeholder[X]
+
+## EevsterName
+Eevster[X]
+
+## EevsterDescription
+Placeholder[X]
+
+## BasementName
+Basement[X]
+
+## BasementDescription
+Placeholder[X]

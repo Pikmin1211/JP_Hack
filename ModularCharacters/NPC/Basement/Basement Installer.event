@@ -1,0 +1,12 @@
+
+
+{
+	#define UnitID Basement
+	#define UnitNameLocation BasementName
+	#define UnitDescriptionLocation BasementDescription
+	#define UnitFaction BasementFaction
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

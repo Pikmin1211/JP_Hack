@@ -1,0 +1,259 @@
+EventPointerTable(Ch4Event, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0xC,RightReinforcements,0,MaxTurns(0))
+	TurnEventPlayer(0x0,LeftReinforcements,4)
+	TurnEventPlayer(0x0,MidThief,6)
+	TurnEventPlayer(0x0,LeftReinforcements,8)
+	TurnEventPlayer(0x0,TopThief,8)
+	TurnEventPlayer(0x0,DerekLeaves,11)
+	END_MAIN
+
+RightReinforcements:
+	CHECK_EVENTID 0x9
+	BNE 1 0xC 0x0
+		CHECK_EVENTID 0xA
+		BNE 1 0xC 0x0
+			ENUF 0xC
+			GOTO 2
+			LABEL 1
+	SpawnReinforcements(InsideReinforcements)
+	LABEL 2
+	NoFade
+	ENDA
+
+LeftReinforcements:
+	SpawnReinforcements(CavReinforcements)
+	NoFade
+	ENDA
+
+MidThief:
+	SpawnReinforcements(Thief2)
+	NoFade
+	ENDA
+
+TopThief:
+	SpawnReinforcements(Thief1)
+	NoFade
+	ENDA
+
+DerekLeaves:
+	CHECK_ALIVE Derek
+	BEQ 1 0x0 0xC
+		CAM1 Derek
+		FlashCursor(Derek,60)
+		Text(TestDialogue)
+		MoveCoords(0,1,0,0)
+		ENUN
+		REMU Derek
+		LABEL 1
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+	CharacterEventBothWays(0xB,SandersBrianTalk,Sanders,Brian)
+	END_MAIN
+
+SandersBrianTalk:
+	MUSS SkyEventSong
+	Text(TestDialogue)
+	CUSA Brian
+	MURE 2
+	NoFade
+	ENDA
+
+MiscBasedEvents:
+	AFEV 0xD LeftDoorEvent 0x9
+	AFEV 0xE RightDoorEvent 0xA
+	AREA 0x0 GreenEscape [11,16] [13,16]
+	CauseGameOverIfLordDies
+	END_MAIN
+
+GreenEscape:
+	CHECK_ALLEGIANCE 0xFFFF
+	SVAL 0x1 1
+	BNE 1 0xC 0x1 // branch label 1 if not NPC
+		Increment(1)
+		LABEL 1
+	NoFade
+	ENDA
+
+LeftDoorEvent:
+	FlashCursor(Eevster,60)
+	Text(TestDialogue)
+	SetAI(Eevster,0x6,0xC,0x0,0x0) // HastyAI
+	SetAI(Basement,0x6,0xC,0x0,0x0) // HastyAI
+	NoFade
+	ENDA
+
+RightDoorEvent:
+	FlashCursor(4,14,60)
+	Text(TestDialogue)
+	SetAI(Basement2,0x6,0xC,0x0,0x0) // HastyAI
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	Seize(4,2)
+	DoorFlag(0x9,2,11)
+	DoorFlag(0xA,4,13)
+	Door(8,13)
+	Door(8,5)
+	Door(9,5)
+	Door(14,2)
+	Door(15,2)
+	Chest(RedGem,7,8)
+	Chest(AdeptManual,8,7)
+	Chest(KillerLance,10,8)
+	Chest(EnergyRing,15,0)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(12,14)
+	Unit(11,13)
+	Unit(13,13)
+	Unit(11,14)
+	Unit(13,14)
+	Unit(11,15)
+	Unit(12,15)
+	Unit(13,15)
+	Unit(11,16)
+	Unit(12,16)
+	Unit(13,16)
+	UNIT
+
+EnemyUnits:
+
+	UNIT Todoroki Mercenary 0x0 Level(10,Enemy,0) [4,2] 0 0 0 0 [Elfire,SteelSword] NeverMoveAI
+
+	UNIT Derek Cavalier 0x0 Level(7,Enemy,1) [0,1] 2 0 0 0 [Rapier,LightBrand,Javelin] NeverMoveAI
+
+	UNIT Imperial2 Cavalier 0x0 Level(8,Enemy,1) [0,4] 0 0 0 0 [Javelin,Horseslayer] NeverMoveAI
+	UNIT Imperial2 Cavalier 0x0 Level(8,Enemy,1) [1,2] 0 0 0 0 [HeavySpear,SteelSword] NeverMoveAI
+
+	UNIT Imperial2 Shaman 0x0 Level(8,Enemy,1) [3,3] 0 0 0 0 [Flux] NeverMoveAI
+	UNIT Imperial2 Shaman 0x0 Level(8,Enemy,1) [5,3] 0 0 0 0 [Flux] NeverMoveAI
+
+	UNIT Imperial2 Knight 0x0 Level(8,Enemy,1) [8,12] 2 0 0 0 [Javelin,DoorKey] NeverMoveAI
+	UNIT Imperial2 Knight 0x0 Level(8,Enemy,1) [4,12] 0 0 0 0 [IronLance,Horseslayer] NeverMoveAI
+	UNIT Imperial2 Knight 0x0 Level(8,Enemy,1) [3,11] 0 0 0 0 [SteelLance] NeverMoveAI
+	UNIT Imperial2 Archer 0x0 Level(6,Enemy,1) [3,12] 0 0 0 0 [SteelBow] NeverMoveAI
+
+	UNIT Imperial2 Knight 0x0 Level(8,Enemy,1) [14,3] 2 0 0 0 [Javelin,DoorKey] NeverMoveAI
+	UNIT Imperial2 Knight 0x0 Level(8,Enemy,1) [15,3] 0 0 0 0 [Javelin,Vulnerary] NeverMoveAI
+	UNIT Imperial2 Archer 0x0 Level(6,Enemy,1) [13,0] 0 0 0 0 [Longbow] AttackInRangeAI
+	UNIT Imperial2 Archer 0x0 Level(6,Enemy,1) [9,0] 0 0 0 0 [Longbow] AttackInRangeAI
+
+	UNIT Imperial2 Priest 0x0 Level(4,Enemy,1) [8,6] 0 0 0 0 [Physic] AttackInRangeAI
+	UNIT Imperial2 Archer 0x0 Level(5,Enemy,1) [9,7] 0 0 0 0 [Longbow] AttackInRangeAI
+	UNIT Imperial2 Mage 0x0 Level(6,Enemy,1) [8,8] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT Imperial2 Mage 0x0 Level(6,Enemy,1) [13,8] 0 0 0 0 [Fire] DefaultAI
+	UNIT Imperial2 Mage 0x0 Level(6,Enemy,1) [15,7] 0 0 0 0 [Fire] DefaultAI
+	UNIT Imperial2 Soldier 0x0 Level(7,Enemy,1) [12,9] 0 0 0 0 [SteelLance] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(7,Enemy,1) [14,10] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Imperial2 Myrmidon 0x0 Level(6,Enemy,1) [14,5] 0 0 0 0 [SteelSword] AttackInRangeAI
+
+	UNIT Imperial2 Cavalier 0x0 Level(6,Enemy,1) [5,9] 0 0 0 0 [IronLance,SteelSword] AttackInRangeAI
+	UNIT Imperial2 Cavalier 0x0 Level(7,Enemy,1) [4,10] 0 0 0 0 [SlimLance,Javelin] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(6,Enemy,1) [4,8] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Imperial2 Myrmidon 0x0 Level(7,Enemy,1) [1,5] 0 0 0 0 [IronSword,IronBlade] AttackInRangeAI
+
+	UNIT Imperial2 Mercenary 0x0 Level(6,Enemy,1) [8,4] 0 0 0 0 [SteelSword] AttackInRangeAI
+	UNIT Imperial2 Soldier 0x0 Level(7,Enemy,1) [9,3] 0 0 0 0 [SteelLance,SlimLance] AttackInRangeAI
+	UNIT Imperial2 Mercenary 0x0 Level(6,Enemy,1) [7,3] 0 0 0 0 [IronSword] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(7,Enemy,1) [12,4] 0 0 0 0 [HandAxe,IronAxe] AttackInRangeAI
+
+	UNIT
+
+CavReinforcements:
+	UNIT Imperial2 Cavalier 0x0 Level(7,Enemy,1) [0,6] 0 0 1 REDA0R6 [SteelSword] DefaultAI
+	UNIT Imperial2 Cavalier 0x0 Level(7,Enemy,1) [0,6] 0 0 1 REDA0R5 [IronLance] DefaultAI
+	UNIT Imperial2 Cavalier 0x0 Level(8,Enemy,1) [0,6] 0 0 1 REDA0R7 [SlimLance,IronSword] DefaultAI
+
+	UNIT
+
+InsideReinforcements:
+	UNIT Imperial2 Mercenary 0x0 Level(5,Enemy,1) [15,5] 0 0 1 REDA15R5 [IronSword] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(6,Enemy,1) [15,5] 0 0 1 REDA14R5 [IronAxe] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(6,Enemy,1) [15,5] 0 0 1 REDA15R6 [IronAxe] DefaultAI
+
+	UNIT
+
+Thief1:
+	UNIT Imperial Thief 0x0 Level(5,Enemy,1) [8,1] 0 0 0 0 [IronSword,ChestKey] LootingThiefAI
+	UNIT
+
+Thief2:
+	UNIT Imperial Thief 0x0 Level(5,Enemy,1) [10,7] 0 0 0 0 [IronSword,ChestKey] LootingThiefAI
+	UNIT
+
+GreenUnits:
+
+	UNIT Brian Thief 0x0 Level(8,NPC,0) [8,15] 0 0 0 0 [SteelBlade,Rapier,Vulnerary,Lockpick] GuardTileAI
+
+	UNIT Eevster Troubadour 0x0 Level(7,NPC,0) [0,11] 0 0 0 0 [Mend,Vulnerary] GuardTileAI
+
+	UNIT Basement Mercenary 0x0 Level(3,NPC,1) [0,12] 0 0 0 0 [IronSword] GuardTileAI
+	UNIT Basement Soldier 0x0 Level(4,NPC,1) [1,11] 0 0 0 0 [IronLance] GuardTileAI
+
+	UNIT Basement2 Mercenary 0x0 Level(4,NPC,1) [3,15] 0 0 0 0 [IronSword] GuardTileAI
+	UNIT Basement2 Archer 0x0 Level(2,NPC,1) [5,15] 0 0 0 0 [IronBow] GuardTileAI
+	UNIT Basement2 Fighter 0x0 Level(3,NPC,1) [4,14] 0 0 0 0 [IronAxe] GuardTileAI
+
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 GreenUnits
+	ENUN
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	COUNTER_CHECK 1
+	SVAL 0x1 6
+	BNE 1 0xC 0x1 // branch label 1 if not all civs escaped
+		GiveItem(Swordreaver,Sanders)
+		LABEL 1
+	MNC2 5
+	NoFade
+	ENDA

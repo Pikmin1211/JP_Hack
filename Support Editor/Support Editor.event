@@ -1,0 +1,13 @@
+#undef SupportConversationTable
+
+ALIGN 4
+SupportConversationTable:
+SupportEntry(Eirika,Ephraim,0xC53,0xC54,0xC55)
+EndSupport
+
+PUSH
+ORG $84784
+POIN SupportConversationTable
+ORG $847FC
+POIN SupportConversationTable
+POP

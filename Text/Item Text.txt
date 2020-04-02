@@ -1,0 +1,5 @@
+## AdeptManualName
+Adept M.[X]
+
+## AdeptManualUseText
+Teaches Adept.[X]

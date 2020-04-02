@@ -1,0 +1,239 @@
+EventPointerTable(Ch3Event, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0xA,CheckCave,0,MaxTurns(0))
+	TurnEventPlayer(0x0,GreensTurnBlue,1)
+	TurnEventPlayer(0x0,Reinforce1,3)
+	TurnEventPlayer(0x0,Reinforce2,6)
+	TurnEventPlayer(0x0,HurryUp,10,MaxTurns(10))
+	END_MAIN
+
+CheckCave:
+	CHECK_EVENTID 0x9
+	BEQ 1 0x0 0xC
+		SpawnReinforcements(CaveUnits)
+		GOTO 2
+		LABEL 1
+	ENUF 0xA
+	LABEL 2
+	NoFade
+	ENDA
+
+Reinforce1:
+	SpawnReinforcements(RightUnits)
+	NoFade
+	ENDA
+
+Reinforce2:
+	SpawnReinforcements(LeftUnits)
+	NoFade
+	ENDA
+
+HurryUp:
+	SpawnReinforcements(RightUnitsNoEXP)
+	SpawnReinforcements(LeftUnitsNoEXP)
+	NoFade
+	ENDA
+
+GreensTurnBlue:
+	MUSC SkyEventSong
+	CAM1 Neptune
+	FlashCursor(Neptune,60)
+	Text(TestDialogue)
+	CUSA Neptune
+	CUSA Wilbell
+	MUSC FranticFactorySong
+	CAM1 [9,18]
+	FlashCursor(9,18,60)
+	Text(TestDialogue)
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	AREA 0x9 SetUpCave [0,14] [12,18]
+	CauseGameOverIfLordDies
+	END_MAIN
+
+SetUpCave:
+	CHECK_ALLEGIANCE 0xFFFF
+	BNE 1 0x0 0xC
+		GOTO 2
+		LABEL 1
+	ENUF 0x9
+	LABEL 2
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	Arrive(9,18)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(1,6)
+	Unit(2,5)
+	Unit(3,4)
+	Unit(0,5)
+	Unit(1,4)
+	Unit(2,3)
+	Unit(3,2)
+	Unit(1,2)
+	Unit(0,3)
+	Unit(4,3)
+	Unit(3,6)
+	UNIT
+
+EnemyUnits:
+
+	UNIT Cultist Shaman 0x0 Level(7,Enemy,1) [2,1] 2 0 0 0 [Flux,Mend] NeverMoveAI
+	UNIT Cultist Shaman 0x0 Level(8,Enemy,1) [12,1] 2 0 0 0 [Flux,Armorslayer] NeverMoveAI
+	UNIT Cultist Shaman 0x0 Level(8,Enemy,1) [1,17] 2 0 0 0 [Nosferatu,RedGem] NeverMoveAI
+	UNIT Cultist Shaman 0x0 Level(9,Enemy,1) [15,17] 2 0 0 0 [Nosferatu] NeverMoveAI
+
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [11,7] 0 0 0 0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [5,6] 0 0 0 0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(5,Enemy,1) [12,6] 0 0 0 0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [6,9] 0 0 0 0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [0,11] 0 0 0 0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(6,Enemy,1) [16,6] 0 0 0 0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(6,Enemy,1) [16,5] 0 0 0 0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(6,Enemy,1) [6,14] 0 0 0 0 [RottenClaw] AttackInRangeAI
+	UNIT Monster Revenant 0x0 Level(5,Enemy,1) [7,17] 0 0 0 0 [RottenClaw] AttackInRangeAI
+	UNIT Monster Revenant 0x0 Level(5,Enemy,1) [4,17] 0 0 0 0 [RottenClaw] AttackInRangeAI
+
+	UNIT Monster Bonewalker 0x0 Level(4,Enemy,1) [7,2] 0 0 0 0 [SlimSword] DefaultAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [8,3] 0 0 0 0 [Javelin,IronSword] DefaultAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [15,9] 0 0 0 0 [SteelSword,IronLance] AttackInRangeAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [6,17] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT Monster Bonewalker 0x0 Level(6,Enemy,1) [12,15] 0 0 0 0 [Javelin] AttackInRangeAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [2,15] 0 0 0 0 [IronSword,SlimLance] AttackInRangeAI
+	UNIT Monster Bonewalker 0x0 Level(4,Enemy,1) [1,14] 0 0 0 0 [Horseslayer] AttackInRangeAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [16,14] 0 0 0 0 [Javelin] NeverMoveAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [11,1] 0 0 0 0 [Javelin,Zanbato] NeverMoveAI
+	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [4,9] 0 0 0 0 [SteelBow] DefaultAI
+	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [13,0] 0 0 0 0 [Longbow] AttackInRangeAI
+	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [0,17] 0 0 0 0 [IronBow] NeverMoveAI
+	UNIT Monster BonewalkerBow 0x0 Level(6,Enemy,1) [1,18] 0 0 0 0 [SteelBow] NeverMoveAI
+	UNIT Monster BonewalkerBow 0x0 Level(4,Enemy,1) [12,17] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Monster BonewalkerBow 0x0 Level(4,Enemy,1) [5,18] 0 0 0 0 [SteelBow] AttackInRangeAI
+
+	UNIT Monster MautheDoog 0x0 Level(4,Enemy,1) [1,10] 0 0 0 0 [FieryFang] DefaultAI
+	UNIT Monster MautheDoog 0x0 Level(4,Enemy,1) [14,10] 0 0 0 0 [FieryFang] AttackInRangeAI
+
+	UNIT Monster Tarvos 0x0 Level(5,Enemy,1) [14,18] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Monster Tarvos 0x0 Level(4,Enemy,1) [8,0] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Monster Tarvos 0x0 Level(7,Enemy,1) [9,18] 0 0 0 0 [HandAxe,IronAxe,Halberd] NeverMoveAI
+
+	UNIT Monster Bael 0x0 Level(6,Enemy,1) [7,12] 0 0 0 0 [RottenClaw] AttackInRangeAI
+	UNIT Monster Bael 0x0 Level(6,Enemy,1) [11,13] 0 0 0 0 [RottenClaw] AttackInRangeAI
+
+	UNIT
+
+GreenUnits:
+
+	UNIT Neptune MyrmidonF 0x0 Level(6,NPC,0) [9,7] 0 0 0 0 [Shamshir,Shadowkiller,Vulnerary] NoAI
+	UNIT Wilbell ShamanF 0x0 Level(4,NPC,0) [8,7] 0 0 0 0 [Flux,Vulnerary,Torch] NoAI
+
+	UNIT
+
+CaveUnits:
+
+	UNIT Monster Bael 0x0 Level(5,Enemy,1) [9,14] 0 0 1 REDA8R14 [RottenClaw] DefaultAI
+	UNIT Monster Bael 0x0 Level(5,Enemy,1) [9,14] 0 0 1 REDA10R14 [RottenClaw] DefaultAI
+
+	UNIT
+
+RightUnits:
+
+	UNIT Monster Tarvos 0x0 Level(5,Enemy,1) [16,0] 0 0 1 REDA16R0 [SteelAxe,HandAxe] DefaultAI
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [16,0] 0 0 1 REDA15R0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [16,0] 0 0 1 REDA16R1 [RottenClaw] DefaultAI
+	UNIT
+
+LeftUnits:
+	
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [0,0] 0 0 1 REDA0R0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [0,0] 0 0 1 REDA1R0 [RottenClaw] DefaultAI
+	UNIT Monster Revenant 0x0 Level(4,Enemy,1) [0,0] 0 0 1 REDA0R1 [RottenClaw] DefaultAI
+	UNIT
+
+RightUnitsNoEXP:
+
+	UNIT MonsterNoEXP Tarvos 0x0 Level(7,Enemy,1) [16,0] 0 0 1 REDA16R0 [SteelAxe,HandAxe] DefaultAI
+	UNIT MonsterNoEXP Bael 0x0 Level(6,Enemy,1) [16,0] 0 0 1 REDA15R0 [RottenClaw] DefaultAI
+	UNIT MonsterNoEXP Bael 0x0 Level(6,Enemy,1) [16,0] 0 0 1 REDA16R1 [RottenClaw] DefaultAI
+	UNIT
+
+LeftUnitsNoEXP:
+	
+	UNIT MonsterNoEXP Bael 0x0 Level(7,Enemy,1) [0,0] 0 0 1 REDA0R0 [RottenClaw] DefaultAI
+	UNIT MonsterNoEXP Bonewalker 0x0 Level(6,Enemy,1) [0,0] 0 0 1 REDA1R0 [SteelSword,IronLance] DefaultAI
+	UNIT MonsterNoEXP Bonewalker 0x0 Level(6,Enemy,1) [0,0] 0 0 1 REDA0R1 [Javelin,SteelLance] DefaultAI
+	UNIT
+
+Traps1:
+	TorchTrap(7,6)
+	TorchTrap(10,6)
+	TorchTrap(9,17)
+	RedSigil(9,18)
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 GreenUnits
+	ENUN
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	CAM1 Neptune
+	FADU 16
+	CAM1 [2,1]
+	FlashCursor(2,1,60)
+	CAM1 [12,1]
+	FlashCursor(12,1,60)
+	CAM1 [1,17]
+	FlashCursor(1,17,60)
+	CAM1 [15,17]
+	FlashCursor(15,17,60)
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 4
+	NoFade
+	ENDA

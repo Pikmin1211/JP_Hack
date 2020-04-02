@@ -1,0 +1,20 @@
+#define Blank //ItemID here
+#define BlankMagicAnim //MagicAnimationID here
+#define BlankIcon //ItemIconID here
+#define BlankName //TextID here
+#define BlankDescription //TextID here
+#define BlankUseText //TextID here
+
+{
+	#define ItemNumber Blank
+	#define ItemIcon BlankIcon
+	#define ItemMagicAnimation BlankMagicAnim
+	#define ItemNameLocation BlankName
+	#define ItemDescriptionLocation BlankDescription
+	#define ItemUseTextLocation BlankUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

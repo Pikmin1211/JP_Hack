@@ -1,0 +1,113 @@
+//General
+#define ItemName ItemNameLocation
+#define ItemDescription ItemDescriptionLocation
+#define UseDescription ItemUseTextLocation
+#define ItemWeaponType 0x0
+
+//Weapon Abilities
+#define WeaponAbilityOne 0x0
+#define WeaponAbilityTwo 0x0
+#define WeaponAbilityThree 0x0
+#define WeaponAbilityFour 0x0
+
+//Stats
+#define Durability 0
+#define Might 0
+#define Hit 0
+#define Weight 0
+#define Crit 0
+#define Range 0
+#define CostPerUse 0
+#define WeaponRank 0
+//#define HasEffectiveness //Uncomment if the weapon is effective
+#define ItemEffectiveness 0 //For the effectiveness rework
+#define WeaponEffect 0
+#define WeaponEXP 0
+#define DebuffType 0x0
+#define ItemSkill 0x0
+
+//Spell Associaiton
+#define IsMapOnly 2
+#define RangedAnimation ItemMagicAnimation
+#define EnableRangedAnimation DisableRanged
+#define MapAnimation 0x0
+#define DirectHPChange 0x1
+#define MapSpriteDirection 0x0
+#define AttackColor WhiteAttack
+
+//Item Effect
+//#define HasItemEffect //Uncomment if item has staff/use effect
+#define ItemEffect NoItemEffect
+#define ItemUsability NoItemUsability
+#define ItemPrepScreenUsability NoItemPSUsability
+#define ItemTargeting NoItemTargeting
+#define ItemStaffAI 0x0
+#define ItemEffectExtra 0x0
+
+//Item Effect Association
+#define ItemEffectIsMapOnly 2
+#define ItemEffectRangedAnimation 0xFE
+#define ItemEffectEnableRangedAnimation DisableRanged
+#define ItemEffectMapAnimation 0x0
+#define ItemEffectDirectHPChange 0x1
+#define ItemEffectMapSpriteDirection 0x0
+#define ItemEffectColor WhiteAttack
+
+//#define HasStatBonus //Uncomment if item has stat bonuses
+//Stat Bonus
+#define ItemHPBonus 0
+#define ItemStrBonus 0
+#define ItemMagBonus 0
+#define ItemSklBonus 0
+#define ItemSpdBonus 0
+#define ItemDefBonus 0
+#define ItemResBonus 0
+#define ItemLukBonus 0
+#define ItemMovBonus 0
+#define ItemConBonus 0
+
+//Debuffs
+#define StrDebuff 0
+#define MagDebuff 0
+#define SklDebuff 0
+#define SpdDebuff 0
+#define DefDebuff 0
+#define ResDebuff 0
+#define LukDebuff 0
+
+//Posion Amount
+#define PoisonStrength 0
+
+StatBonuses:
+StatBonus(ItemHPBonus,ItemStrBonus,ItemMagBonus,ItemSklBonus,ItemSpdBonus,ItemDefBonus,ItemResBonus,ItemLukBonus,ItemMovBonus,ItemConBonus)
+
+PUSH
+ORG ItemTable + (ItemNumber * 0x24)
+ItemInstaller(ItemName,ItemDescription,UseDescription,ItemNumber,ItemWeaponType,WeaponAbilityOne,WeaponAbilityTwo,WeaponAbilityThree,WeaponAbilityFour,0x0,0x0,Durability,Might,Hit,Weight,Crit,Range,CostPerUse,WeaponRank,ItemIcon,0x0,WeaponEffect,WeaponEXP,DebuffType,ItemEffectExtra,ItemSkill)
+ORG SpellAssociationTable + ((ItemNumber-1) * 0x10)
+SpellAssociationEditor(ItemNumber,IsMapOnly,RangedAnimation,EnableRangedAnimation,0x0,MapAnimation,DirectHPChange,MapSpriteDirection,AttackColor,0x0)
+ORG UseEffectAnimTable + (ItemNumber * 16)
+SetItemEffectAnim(ItemNumber,ItemEffectIsMapOnly,ItemEffectRangedAnimation,ItemEffectEnableRangedAnimation,ItemEffectMapAnimation,ItemEffectDirectHPChange,ItemEffectMapSpriteDirection,ItemEffectColor)
+ORG WeaponDebuffTable + (DebuffType * 4)
+defWeaponDebuffs(StrDebuff,SklDebuff,SpdDebuff,LukDebuff,DefDebuff,ResDebuff,MagDebuff)
+ORG IERevampTable + (ItemNumber * 16)
+SetItemEffect(ItemUsability|IsPointer,ItemPrepScreenUsability|IsPointer,ItemTargeting|IsPointer,ItemEffect|IsPointer)
+ORG AI_StaffArray + (ItemNumber * 8)
+SetStaffAI(ItemNumber,ItemStaffAI)
+#ifdef PoisonRework
+ORG SetPoisonItemTable + ItemNumber
+BYTE PoisonStrength
+#endif
+#ifdef HasItemEffect
+ORG ItemTable + (ItemNumber * 0x24) + 0x1E
+BYTE ItemNumber
+#endif
+#ifdef HasEffectiveness
+ORG ItemTable + (ItemNumber * 0x24) + 0x10
+WORD ItemEffectiveness|IsPointer
+#endif
+#ifdef HasStatBonus
+ORG ItemTable + (ItemNumber * 0x24) + 0xC
+WORD StatBonuses|IsPointer
+#endif
+POP

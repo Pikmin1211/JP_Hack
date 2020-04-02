@@ -1,0 +1,342 @@
+#ifndef CustomTrapDisplayInstalled
+	#define	CustomTrapDisplayInstalled
+
+#include "_6CDefinitions.event"
+//3D450 who to attack?
+//nopping the check for riddint ballista an bx lring out of dismount ballista made the ballista move to attack, but it crashed
+
+MageList:
+BYTE Mage Sage Shaman Druid MageF SageF ShamanF DruidF 0xFF
+
+BlankList:
+BYTE 0xFF 0xFF
+
+//ballista
+	//3d880
+
+	//3d476 change weapons?
+	//39e3e check if movement is allowed
+//Temporary ballista movement stuff
+PUSH
+ORG $39E3C; SHORT 0x4280 //move even if inside ballista
+//ORG $39BAC; SHORT 0x46C0
+//ORG $39BB6; SHORT 0x46C0
+//	//ORG $39BBC; SHORT 0x46C0
+//	ORG $39BBC; SHORT 0x46C0
+//ORG $39BCC; SHORT 0xE004
+POP
+
+PUSH
+//ORG $39854; POIN NewProcThing
+//ORG $39894; POIN NewProcThing
+POP
+
+ALIGN 4
+//5A7FD0
+NewProcThing:
+_6C_SET_NAME($D80D0)
+_6C_LABEL(0)
+_6C_CALL_ROUTINE($39B00|1)
+_6C_SLEEP(0)
+_6C_CALL_ROUTINE($39AC8|1)
+_6C_GOTO(0)
+_6C_END
+
+//maybe?
+_6C_SLEEP(0)
+_6C_UNIL_EXISTS($59A548)
+_6C_LOOP_ROUTINE($39E88|1)
+_6C_END
+
+PUSH
+//ORG $39BF0; POIN NewProcThing2
+POP
+
+ALIGN 4
+//5A8024
+NewProcThing2:
+_6C_SET_NAME($D80DC)
+_6C_CALL_ROUTINE($39EF4|1)
+_6C_CALL_ROUTINE($39F0C|1)
+_6C_SLEEP(0)
+_6C_CALL_ROUTINE($39FAC|1)
+_6C_WHILE_ROUTINE($78739)
+_6C_CALL_ROUTINE($3A3C8|1)
+_6C_SLEEP(0)
+_6C_CALL_ROUTINE($3A4E4|1)
+_6C_LOOP_ROUTINE($3A5F8|1)
+_6C_CALL_ROUTINE_2($37744|1)
+_6C_CALL_ROUTINE_2($1D300|1)
+_6C_CALL_ROUTINE($3A63C|1)
+_6C_CALL_ROUTINE($3A6D0|1)
+_6C_LABEL(1)
+_6C_END
+
+//... yeah probably not
+_6C_GOTO(0)
+_6C_NEW_CHILD_BLOCKING(12)
+_6C_END
+
+//enemy inside ballistae don't move...
+//fix ai using ballista at ballista range regardless of weapon
+//fix ballista not showing range propery, at least for enemy
+//Add Custom terrain avoid/defense/res stuff
+//being mounted in the ballista and looking at items shows weird affinities
+//make mech have it's own hp
+
+/*
+maybe instead of getting regular range for the ballista I could get range+mov, or mov+2*range
+or like, get regular ballista range, if no ballista can attack in one turn check if they could attack in two turns
+*/
+
+#include "Extensions/Hack Installation.txt"
+
+PUSH
+//Hooking our new trap display routine
+ORG $2728A
+SHORT 0xB408
+jumpToHack(CustomTrapDisplay)
+//Ballista Mounted Map Sprite
+ORG $17920
+jumpToHack(GetBallistaMountedMapSprite)
+//Ballista Mounted Focusing Map Sprite
+ORG $78480
+jumpToHack(GetBallistaMountedFocusingMapSprite)
+//Get max range from item
+ORG $22C5C
+jumpToHack(GetBallistaAttackRange)
+ORG $248C8	//CustomRideUsability: this one does our new checks
+jumpToHack(CustomRideUsability)
+ORG $248F8	//CustomRideUsability: this one is just a fix so you can ride a ballista that's on top of a different trap
+jumpToHack(CustomRideUsability2)
+ORG $37A3C	//CustomRideUsability: same as above but this one is actually for the effect
+jumpToHack(CustomRideUsability3)
+ORG $18D50	//ballista movement costs
+jumpToHack(CustomBallistaTerrainCosts)
+ORG $3DDC2; SHORT 0x28FE //cmp r0,0xFE; 0xFF would give problems (this checks max item number)
+ORG $3DAD2; SHORT 0xE7B9 //new end of loop condition
+ORG $3DDC8; SHORT 0x46C0 0x46C0 //removed casting signed for item id because what the fuck
+ORG $3DA48	//making the ai check all ballista weapons that meet the custom usability
+jumpToHack(CustomBallistaAI)
+ORG $379C4	//fixing issue with 0xFF item uses
+SHORT 0x46C0 0x46C0
+jumpToHack(CustomBallistaAI2)
+ORG $3D63C; SHORT 0x46C0 //removing the original ability check
+//Fixing a bug hopefully
+ORG $2726C
+	//jumpToHack(NoEnemyFogFadeInIfTrap)
+POP
+
+//when an enemy is in the same tile as a trap in the fog and you reveal them, they will appear behind the trap
+//the game gives enemies that appear in the fog a lower priority in order to make them fade in
+//this is meant to fix the enemy behind trap problem by making units that are in the same tile as a trap not fade in
+NoEnemyFogFadeInIfTrap:
+	//#incbin "NoEnemyFogFadeInIfTrap.dmp"
+
+ALIGN 4
+CustomTrapDisplay:
+#incbin	"CustomTrapDisplay.dmp"
+POIN TrapDisplayArray
+
+#define BallistaMapSpriteArrayEntryLength 12
+
+ALIGN 4
+//get corresponding map sprite for each type of ballista
+GetBallistaMapSprite:
+#incbin "GetBallistaMapSprite.dmp"
+POIN BallistaMapSpriteArray
+WORD BallistaMapSpriteArrayEntryLength
+
+ALIGN 4
+GetBallistaMountedMapSprite:
+#incbin "GetBallistaMountedMapSprite.dmp"
+POIN BallistaMapSpriteArray
+WORD BallistaMapSpriteArrayEntryLength
+
+ALIGN 4
+GetBallistaMountedFocusingMapSprite:
+#incbin "GetBallistaMountedFocusingMapSprite.dmp"
+POIN BallistaMapSpriteArray
+WORD BallistaMapSpriteArrayEntryLength
+
+ALIGN 4
+CustomRideUsability:
+#incbin "CustomRideUsability.dmp"
+POIN BallistaMapSpriteArray
+WORD BallistaMapSpriteArrayEntryLength
+
+ALIGN 4
+CustomBallistaTerrainCosts:
+#incbin "CustomBallistaTerrainCosts.dmp"
+POIN BallistaMapSpriteArray
+WORD BallistaMapSpriteArrayEntryLength
+
+ALIGN 4
+CustomBallistaAI:
+#incbin "CustomBallistaAI.dmp"
+POIN BallistaMapSpriteArray
+WORD BallistaMapSpriteArrayEntryLength
+
+ALIGN 4
+CustomBallistaAI2:
+#incbin "CustomBallistaAI2.dmp"
+
+ALIGN 4
+CustomRideUsability2:
+#incbin "CustomRideUsability2.dmp"
+
+ALIGN 4
+CustomRideUsability3:
+#incbin "CustomRideUsability3.dmp"
+
+ALIGN 4
+MageUsability:
+#incbin "MageUsability.dmp"
+POIN MageList
+
+ALIGN 4
+NoUsability:
+#incbin "MageUsability.dmp"
+POIN BlankList
+
+ALIGN 4
+GetBallistaAttackRange:
+#incbin "GetBallistaAttackRange.dmp"
+
+ALIGN 4
+CheckForBallistaAbility:
+#incbin "CheckForBallistaAbility.dmp"
+
+ALIGN 4
+ChangeTrapPalette:
+#incbin "ChangeTrapPalette.dmp"
+
+//Ballista range might look weird, for example a 2-3 range ballista would look like 1-3 in several places
+//This is just how the game made all of them (even though they are 3-10 and 3-15) so I just left it like that
+
+ALIGN 4
+BallistaMapSpriteArray:
+//BYTE BallistaWeaponID EmptyBallistaMapSpriteID RidingStandingMapSpriteID RidingMovingMapSpriteID; POIN CustomRideUsability CustomTerrainCosts
+BYTE 0x35 0x69 0x66 0x67 ; POIN CheckForBallistaAbility BallistaTerrainCost//regular
+//BYTE 0x36 0x5C 0x59 0x68 ;POIN CheckForBallistaAbility BallistaTerrainCost//iron
+//BYTE 0x37 0x5D 0x5A 0x69 ;POIN CheckForBallistaAbility BallistaTerrainCost//killer
+BYTE MagicOrb 0x6B 0x65 0x69; POIN MageUsability BallistaTerrainCost//magic test
+BYTE IronSword 0x6A 0x01 0x01; POIN NoUsability BallistaTerrainCost//blue sigil
+BYTE SteelSword 0x33 0x01 0x01; POIN NoUsability BallistaTerrainCost//red sigil
+BYTE SilverSword 0x61 0x01 0x01; POIN NoUsability BallistaTerrainCost//green sigil
+BYTE SlimSword 0x78 0x1 0x1; POIN NoUsability BallistaTerrainCost// torch
+BYTE DemonLight 0x65 0x65 0x66 ;POIN 0 DemonKingTerrainCost//demon king "mecha" example
+BYTE 0x00 0xFF 0xFF 0xFF ;POIN 0 0//in case of error, this one will be displayed (0x00 0xFF 0xFF 0xFF to display nothing)
+
+//CustomTerrainCosts can be set to 0 to have vanilla ballista movement costs, it also includes the bonus avo/def/res from terrain, in case you feel like making a flying ballista
+//The CustomRideUsability pointer can be set to 0 to just not have one (everyone can ride that ballista)
+//The CustomRideUsability routine is called with r0 = unit pointer, r1 = weapon id, must return r0 = true or false
+
+ALIGN 4
+//movement cost, cost in rain, in snow, terrain avoid, defense and resistance
+BallistaTerrainCost: //ballista, iron ballista, killer ballista
+POIN 0x880bc18 0x880bc18 0x880bc18 0x880c479 0x880c4ba 0x880c4fb
+FootATerrainCost: //mercenary, myrmidon, archer, recruit, bard, dancer, soldier, revenant, entombed, bonewalker, wight
+POIN 0x880b849 0x880bc9a 0x880c0aa 0x880c479 0x880c4ba 0x880c4fb
+FootBTerrainCost: //lord, hero, sniper, swordmaster
+POIN 0x880b808 0x880bc59 0x880c069 0x880c479 0x880c4ba 0x880c4fb
+MageTerrainCost: //mage, sage, bishop, shaman, druid, summoner, pupil, monk, priest, cleric, necromancer, gorgon thankfully
+POIN 0x880ba10 0x880be61 0x880c271 0x880c479 0x880c4ba 0x880c4fb
+ThiefTerrainCost: //thief, assassin, rogue
+POIN 0x880b9cf 0x880be20 0x880c230 0x880c479 0x880c4ba 0x880c4fb
+FighterTerrainCost: //fighter, journeyman, warrior, cyclops
+POIN 0x880b8cb 0x880bd1c 0x880c12c 0x880c479 0x880c4ba 0x880c4fb
+BerserkerTerrainCost: //berserker
+POIN 0x880b90c 0x880bd5d 0x880c16d 0x880c479 0x880c4ba 0x880c4fb
+ArmorTerrainCost: //knight, general
+POIN 0x880b88a 0x880bcdb 0x880c0eb 0x880c479 0x880c4ba 0x880c4fb
+HorseATerrainCost: //cavalier, troubadour
+POIN 0x880ba92 0x880bee3 0x880c2f3 0x880c479 0x880c4ba 0x880c4fb
+HorseBTerrainCost: //master lord, paladin, mage knight, great knight, valkyrie (same as HorseA, but can cross mountains with a cost of 6)
+POIN 0x880bad3 0x880bf24 0x880c334 0x880c479 0x880c4ba 0x880c4fb
+DoogTerrainCost: //mauthe doog, tarvos
+POIN 0x880bb14 0x880bf65 0x880c375 0x880c479 0x880c4ba 0x880c4fb
+RangerTerrainCost: //ranger, gwyllgi, maelduin
+POIN 0x880bb55 0x880bfa6 0x880c3b6 0x880c479 0x880c4ba 0x880c4fb
+FlyingTerrainCost: //manakete, wyvern rider, wyvern lord, wyvern knight, pegasus knight, flacon knight, phantom, mogall, arch mogall, gargoyle, deathgoyle, dracozombie
+POIN 0x880bb96 0x880bfe7 0x880c3f7 0x880c53c 0x880c57d 0x880c5be
+WaterTerrainCost: //pirate, fleet
+POIN 0x880b98e 0x880bddf 0x880c1ef 0x880c479 0x880c4ba 0x880c4fb
+MountainTerrainCost: //brigand, bael, elder bael
+POIN 0x880b94d 0x880bd9e 0x880c1ae 0x880c479 0x880c4ba 0x880c4fb
+NPCTerrainCost: //civilian, peer, queen, prince, fallen prince, tent, pontifex, dead peer (pretty much civilians + cutscene only)
+POIN 0x880ba51 0x880bea2 0x880c2b2 0x880c479 0x880c4ba 0x880c4fb
+DemonKingTerrainCost: //demon king (not affected by weather)
+POIN 0x880bbd7 0x880bbd7 0x880bbd7 0x880c479 0x880c4ba 0x880c4fb
+
+ALIGN 4
+TrapDisplayArray:
+//BYTE TrapID MapSpriteID 0 0; POIN Routine (or 0 if you don't want a routine)
+//If you don't want any routine pointers just set them to 0
+BYTE 0x01 0x69 0x35 0; POIN GetBallistaMapSprite 0 //Ballista
+BYTE 0x01 0x6B MagicOrb 0; POIN GetBallistaMapSprite 0//Magic Orb
+//BYTE 0x01 0x65 DemonLight 0; POIN GetBallistaMapSprite MakeDemonKingMechaGrey//Demon King
+BYTE 0x01 0x6A IronSword 0; POIN GetBallistaMapSprite 0//blue sigil 
+BYTE 0x01 0x33 SteelSword 0; POIN GetBallistaMapSprite MakeSigilRed//Red sigil
+BYTE 0x01 0x61 SilverSword 0; POIN GetBallistaMapSprite MakeSigilGreen//Green sigil
+BYTE 0x01 0x78 SlimSword 0; POIN GetBallistaMapSprite MakeTorchRed // torch
+BYTE 0x0D 0x66 0 0; POIN 0 0//Light Rune
+#ifdef VeinDefinitions
+BYTE DragonVeinTrapID Vein_Map_Sprite_Number 0 0; POIN 0 ChangeTrapPalette//Dragon Veins, if defined
+#endif
+SHORT 0 //Terminator
+//The POIN routine is called with r0 = pointer to the trap data entry and must return r0 = MapSpriteID, or 0xFF if nothing should be drawn
+//The second POIN routine is called after the intermediate oam data has been set
+//The second POIN routine is called with r0 = pointer to the trap data entry, r1 = intermediate oam entry, r2 = sprite id, no return value, but can be used to set palette, priority, etc
+
+ALIGN 4
+ChangeTrapColor:
+#incbin "ChangeTrapColor.dmp"
+
+#define PlaceLightRune(XX,YY) "SVAL 1 XX; SVAL 2 YY; ASMC PlaceLightRuneASM|1"
+
+ALIGN 4
+PlaceLightRuneASM:
+#incbin "PlaceLightRuneASM.dmp"
+
+#define RedPal 0xD
+#define GreenPal 0xE
+
+//palette = 1 for ballistae
+#define ChangeTrapPalette(XX,YY,TrapID,Palette)  "SVAL 1 XX; SVAL 2 YY; SVAL 3 Palette; SVAL 4 TrapID; ASMC ChangeTrapColor|1"
+
+#define Sigil(X,Y) "BLST [X,Y] IronSword"
+#define BlueSigil(X,Y) "BLST [X,Y] IronSword"
+#define RedSigil(X,Y) "BLST [X,Y] SteelSword"
+#define GreenSigil(X,Y) "BLST [X,Y] SilverSword"
+#define TorchTrap(X,Y) "BLST [X,Y] SlimSword"
+
+#ifdef VeinDefinitions
+#define TurnVeinBlue(XX,YY)  "SVAL 1 XX; SVAL 2 YY; SVAL 3 0xC; SVAL 4 DragonVeinTrapID; ASMC ChangeTrapColor|1"
+#define TurnVeinRed(XX,YY)   "SVAL 1 XX; SVAL 2 YY; SVAL 3 0xD; SVAL 4 DragonVeinTrapID; ASMC ChangeTrapColor|1"
+#define TurnVeinGreen(XX,YY) "SVAL 1 XX; SVAL 2 YY; SVAL 3 0xE; SVAL 4 DragonVeinTrapID; ASMC ChangeTrapColor|1"
+#endif
+
+//ALIGN 4
+//MakeDemonKingMechaGrey:
+//#incbin "MakeDemonKingMechaGrey.dmp"
+//WORD 0x65
+
+ALIGN 4
+MakeSigilRed:
+#incbin "MakeSigilRed.dmp"
+WORD 0x33
+
+ALIGN 4
+MakeSigilGreen:
+#incbin "MakeSigilGreen.dmp"
+WORD 0x61
+
+ALIGN 4
+MakeTorchRed:
+#incbin "MakeSigilRed.dmp"
+WORD 0x78
+
+MESSAGE CustomTrapDisplay
+
+#endif

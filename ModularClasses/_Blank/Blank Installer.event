@@ -1,0 +1,20 @@
+#define Blank //ClassID here
+#define BlankTypeAnim //AnimationID here
+#define BlankClassCard //MugID here
+#define BlankName //TextID here
+#define BlankDescription //TextID here
+
+{
+	#define ClassNumber Blank
+	#define ClassCardLocation BlankClassCard
+	#define ClassNameLocation BlankName
+	#define ClassDescriptionLocation BlankDescription
+	//#define UseClassText //Comment out if you want to use text in the text buildfile
+	#include "Files/Animation Installer.event"
+	#include "Files/Map Sprite Installer.event"
+	#include "Files/Class Card Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Skill Editor.event"
+	#include "Files/Undefiner.event"
+}

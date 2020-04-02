@@ -1,0 +1,7 @@
+#define FieldsPaletteNight 0xE7
+
+ALIGN 4
+NightFieldsPal:
+#incbin "Palettes/NightFields_Pal.dmp"
+
+EventPointerTable(FieldsPaletteNight,NightFieldsPal)

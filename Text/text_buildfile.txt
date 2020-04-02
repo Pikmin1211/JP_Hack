@@ -1,0 +1,20 @@
+#0xD4C ZeroEntry
+[X]
+
+## SampleText
+Your text here![X]
+
+## TestDialogue
+[MidRight][LoadSanders]
+Test.[A][X]
+
+## PrepScreenUseSkillScroll
+Skill learned.[X]
+
+#include "Chapter Text/_Chapter Text.txt"
+
+#include "Character Text.txt"
+
+#include "Class Text.txt"
+
+#include "Item Text.txt"

@@ -1,0 +1,56 @@
+#define ChapterID 0
+#define ChapterName 0
+#define FogSightRange 0
+#define InitialX 0
+#define InitialY 0
+#define ChapterWeather ClearWeather
+#define HardBonusLevels 0
+#define NormalPenaltyLevels 0
+#define EasyPenaltyLevels 0
+#define PlayerMusic Distant_Roads
+#define EnemyMusic Shadow_of_the_Enemy
+#define NPCMusic Distant_Roads
+#define PlayerBattleMusic Attack
+#define EnemyBattleMusic Defense
+#define NPCBattleMusic Attack
+#define PlayerMusic2 Distant_Roads
+#define EnemyMusic2 Shadow_of_the_Enemy
+#define PrepScreenMusic Combat_Preparation
+#define WallHP 0
+#define EnemiesForVictoryMusic 1
+#define ChapterFadeToBlack 1//0x1 to fade to black
+#define TurnLimit 0//-1
+#define DefendUnit 0
+#define ObjectiveDisplay ObjectiveKillBoss
+#define ObjectiveText 0
+#define DetailObjectiveText 0
+#define ChapterBattleBackground NormalBackground
+
+// For Poison Rework
+#define PoisonTrapAmount 0
+
+// Define CustomShopBGM to use specific BGM for shops in this chapter
+//#define CustomShopBGM
+#define MapNumber 0
+#define ArmoryBGM 0
+#define VendorBGM 0
+#define SecretBGM 0
+
+// R text on save screen
+#define RText 0
+
+PUSH
+ChapterDataSetter(ChapterID,ChapterName,FogSightRange,InitialX,InitialY,ChapterWeather,HardBonusLevels,NormalPenaltyLevels,EasyPenaltyLevels,PlayerMusic,EnemyMusic,NPCMusic,PlayerBattleMusic,EnemyBattleMusic,NPCBattleMusic,PlayerMusic2,EnemyMusic2,PrepScreenMusic,WallHP,EnemiesForVictoryMusic,ChapterFadeToBlack,ObjectiveText,DetailObjectiveText,TurnLimit,DefendUnit,ObjectiveDisplay,ChapterBattleBackground)
+#ifdef PoisonRework
+ORG PoisonReworkGasTrapTable + ChapterID
+BYTE PoisonTrapAmount
+#endif
+#ifdef CustomShopBGM
+ORG ChangeShopBGMEachChapter_Table + ((MapNumber * 0x3) * 0x4)
+ShopBGMEntry(ArmoryBGM,ArmoryType,ChapterID)
+ShopBGMEntry(VendorBGM,VendorType,ChapterID)
+ShopBGMEntry(SecretBGM,SecretType,ChapterID)
+#endif
+ORG chapterRinfoChapterIDtable + (ChapterID * 2)
+SHORT RText
+POP

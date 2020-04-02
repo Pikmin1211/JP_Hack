@@ -1,0 +1,13 @@
+#define FogLightEntry(ChapterID,xcoord,ycoord,range) "BYTE ChapterID xcoord ycoord range; SHORT 0x00 0x00"
+#define FogLightEntry(ChapterID,xcoord,ycoord,range,flag) "BYTE ChapterID xcoord ycoord range; SHORT flag 0x00"
+#define FogTerminator "FogLightEntry(0,0,0,0)"
+// mapid x y range flag terminator
+
+KAGARIBI2_Table:
+
+// Chapter 3
+FogLightEntry(3,7,6,3)
+FogLightEntry(3,10,6,3)
+FogLightEntry(3,9,17,3)
+
+FogTerminator

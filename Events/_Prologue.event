@@ -1,0 +1,175 @@
+EventPointerTable(7, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0xA,GalleyReinforcements,0,MaxTurns(0))
+	TurnEventPlayer(0x0,Reinforcements,3)
+	TurnEventPlayer(0x0,BrigandsAppear,6)
+	END_MAIN
+
+GalleyReinforcements:
+	CHECK_EVENTID 0x9
+	BEQ 1 0x0 0xC
+		SpawnReinforcements(GalleyUnits)
+		GOTO 2
+		LABEL 1
+	ENUF 0xA
+	LABEL 2
+	NoFade
+	ENDA
+
+Reinforcements:
+	SpawnReinforcements(ExtraUnits)
+	NoFade
+	ENDA
+
+BrigandsAppear:
+	SpawnReinforcements(StairUnits)
+	NoFade
+	ENDA
+
+CharacterBasedEvents:
+	
+	END_MAIN
+
+MiscBasedEvents:
+	AREA 0x9 SetUpGalley [14,3] [20,10]
+	CauseGameOverIfLordDies
+	DefeatBoss(EndingScene)
+	END_MAIN
+
+SetUpGalley:
+	CHECK_ALLEGIANCE 0xFFFF
+	BNE 1 0x0 0xC
+		GOTO 2
+		LABEL 1
+	ENUF 0x9
+	LABEL 2
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	Village(0x0,LeftVillage,1,9)
+	Village(0x0,MidVillage,6,11)
+	Village(0x0,RightVillage,10,1)
+	END_MAIN
+
+LeftVillage:
+	MUSS SkyEventSong
+	Text(HouseBG,TestDialogue)
+	SpawnReinforcements(VillageUnits)
+	MURE 2
+	NoFade
+	ENDA
+
+MidVillage:
+	VillageEventItem(TestDialogue,HouseBG,Thunder)
+
+RightVillage:
+	VillageEventItem(TestDialogue,HouseBG,RedGem)
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT Sanders Mercenary 0x0 Level(1,Ally,0) [3,0] 0 0 1 REDA3R3 [IronSword,Vulnerary] NoAI
+	UNIT Finn Cavalier 0x0 Level(3,Ally,0) [3,0] 0 0 1 REDA2R2 [IronLance,Javelin,Vulnerary] NoAI
+	UNIT Scott Cavalier 0x0 Level(2,Ally,0) [3,0] 0 0 1 REDA4R2 [IronSword,IronLance] NoAI
+	UNIT Renge Cleric 0x0 Level(1,Ally,0) [3,0] 0 0 1 REDA3R1 [Heal,Vulnerary] NoAI
+	UNIT Marisa MageF 0x0 Level(2,Ally,0) [3,0] 0 0 1 REDA3R2 [Fire,Vulnerary] NoAI
+	UNIT
+
+VillageUnits:
+	UNIT Oskar Fighter 0x0 Level(3,Ally,0) [1,9] 0 0 1 REDA1R10 [SteelAxe,Vulnerary] NoAI
+	UNIT Blanc Fighter 0x0 Level(2,Ally,0) [1,9] 0 0 1 REDA2R10 [IronAxe,Hatchet,Vulnerary] NoAI
+	UNIT
+
+EnemyUnits:
+
+	UNIT Batta Brigand 0x0 Level(4,Enemy,0) [19,6] 0 0 0 0 [SteelAxe,HandAxe] AttackInRangeAI
+
+	UNIT BattaBeast Brigand 0x0 Level(1,Enemy,1) [18,10] 0 0 0 0 [IronAxe] BrigandAI
+
+	UNIT BattaBeast Mercenary 0x0 Level(1,Enemy,1) [3,10] 0 0 0 0 [IronSword] AttackInRangeAI
+	UNIT BattaBeast Mercenary 0x0 Level(2,Enemy,1) [9,7] 0 0 0 0 [IronSword] AttackInRangeAI
+	UNIT BattaBeast Mercenary 0x0 Level(3,Enemy,1) [8,0] 0 0 0 0 [IronSword] AttackInRangeAI
+
+	UNIT BattaBeast Soldier 0x0 Level(1,Enemy,1) [10,6] 0 0 0 0 [SlimLance] AttackInRangeAI
+	UNIT BattaBeast Soldier 0x0 Level(2,Enemy,1) [13,3] 0 0 0 0 [IronLance] AttackInRangeAI
+	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [18,6] 0 0 0 0 [IronLance] AttackInRangeAI
+	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [10,12] 0 0 0 0 [SteelLance] AttackInRangeAI
+
+	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [1,5] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [2,6] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [17,9] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT BattaBeast Fighter 0x0 Level(2,Enemy,1) [4,12] 0 0 0 0 [IronAxe] AttackInRangeAI
+
+	UNIT BattaBeast Archer 0x0 Level(1,Enemy,1) [2,10] 0 0 0 0 [IronBow] AttackInRangeAI
+	UNIT BattaBeast Archer 0x0 Level(1,Enemy,1) [17,1] 0 0 0 0 [IronBow] AttackInRangeAI
+
+	UNIT BattaBeast Mage 0x0 Level(2,Enemy,1) [11,12] 0 0 0 0 [Fire] AttackInRangeAI
+
+	UNIT
+
+StairUnits:
+	UNIT BattaBeast Brigand 0x0 Level(1,Enemy,1) [17,0] 0 0 0 0 [IronAxe] BrigandAI
+	UNIT BattaBeast Brigand 0x0 Level(1,Enemy,1) [18,0] 0 0 0 0 [IronAxe] BrigandAI
+	UNIT BattaBeast Brigand 0x0 Level(1,Enemy,1) [20,10] 0 0 0 0 [IronAxe] BrigandAI
+	UNIT
+
+ExtraUnits:
+	UNIT BattaBeast Cavalier 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [IronLance] DefaultAI
+	UNIT BattaBeast Cavalier 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [IronSword] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(2,Enemy,1) [0,12] 0 0 1 REDA0R12 [IronAxe] DefaultAI
+	UNIT BattaBeast Mercenary 0x0 Level(3,Enemy,1) [0,12] 0 0 1 REDA0R12 [SlimSword] DefaultAI
+	UNIT
+
+GalleyUnits:
+	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [17,0] 0 0 0 0 [IronLance] DefaultAI
+	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [18,0] 0 0 0 0 [IronLance] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [20,10] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 Units1
+	ENUN
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	ENDA
+
+EndingScene:
+	MNC2 0x1
+	NoFade
+	ENDA

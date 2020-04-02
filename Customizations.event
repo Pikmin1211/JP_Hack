@@ -1,0 +1,38 @@
+// Comment out options to turn them off.
+
+// Define to remove all pre-defined level up and personal skills.
+#define NoSkills
+
+// Define to use the default modular minimug box (do not define if using a custom one).
+#define MinimugBox
+
+// Define to remove RNG abuse via wiggling the movement cursor.
+// #define FixedArrowRNG
+
+// Define to allow units to take an action after being stopped in the fog.
+#define LessAnnoyingFog
+
+// Define to use the poison rework - poison is additive, damage is based on turns remaining.
+//#define PoisonRework
+
+// Define to remove the limitation of one trade per unit per turn.
+#define UnlimitedTrading
+
+// Define to allow chapter-forced units to be repositioned in the preparations menu.
+#define FreeReposition
+
+// Define to remove the Revenant class EXP bonus (define if replacing revenant class).
+// #define NoRevenantBonusEXP
+
+// Define to add improved village and castle tilesets (do not work in FoW)
+// #define ImprovedTilesets
+
+// Define to show Mov and Con in level up and promotion screens.
+// Note that doing so may cause minor graphical errors.
+// #define ExpandedLevelUpScreen
+
+// Define to hide the platform under map sprites in the status screen.
+//#define NoPlatform
+
+// Define the Status ID for Enfeeble.
+#define EnfeebleStatusID 0xA

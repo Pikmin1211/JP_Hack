@@ -1,0 +1,3 @@
+ALIGN 4
+Old_Nimap:
+#incbin "FE8_NI_Map.bin"

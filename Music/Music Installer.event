@@ -1,0 +1,38 @@
+//#define SongTableOffset 0x224470
+//#define SongTable(index,SongPointer,Group) "PUSH; ORG SongTableOffset+(8*index); POIN SongPointer; SHORT Group Group; POP"
+
+SongTable(KnightErrandSong,KnightErrand,1)
+#include "S Files/KnightErrand.event"
+
+SongTable(E1M1Song,e1m1,1)
+#include "S Files/e1m1.event"
+
+SongTable(Taisen4Song,taisen4,1)
+#include "S Files/taisen4.event"
+
+SongTable(SplashSong,Splash_HDN,1)
+#include "S Files/Splash_HDN.event"
+
+SongTable(SkyEventSong,SkyEvent,1)
+#include "S Files/SkyEvent.event"
+
+SongTable(EldiganTheLionheartSong,EldiganTheLionheart,1)
+#include "S Files/EldiganTheLionheart.event"
+
+SongTable(RedialSong,Redial,1)
+#include "S Files/Redial.event"
+
+SongTable(TrialSong,trial,1)
+#include "S Files/trial.event"
+
+SongTable(CapOnNappersSong,CapOnNappers,1)
+#include "S Files/CapOnNappers.event"
+
+SongTable(FranticFactorySong,FranticFactory,1)
+#include "S Files/FranticFactory.event"
+
+SongTable(MrBearSong,MrBear,1)
+#include "S Files/MrBear.event"
+
+SongTable(DesertedChateauSong,DesertedChateau,1)
+#include "S Files/DesertedChateau.event"

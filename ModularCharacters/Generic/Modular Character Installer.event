@@ -1,0 +1,11 @@
+#include "Batta Beast/Batta Beast Installer.event"
+
+#include "Imperial/Imperial Installer.event"
+
+#include "Monster/Monster Installer.event"
+
+#include "Monster No EXP/Monster Installer.event"
+
+#include "Cultist/Cultist Installer.event"
+
+#include "Imperial2/Imperial Installer.event"

@@ -1,0 +1,248 @@
+EventPointerTable(Ch1Event, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,VergilLeaves,2)
+	TurnEventPlayer(0x0,ReinforcementsAppear,3)
+	TurnEventPlayer(0x0,BrigandsAppear,5)
+	TurnEventPlayer(0x0,ReinforcementsAppear2,7)
+	END_MAIN
+
+VergilLeaves:
+	SpawnReinforcements(CutsceneUnit)
+	FlashCursor(17,8,60)
+	Text(TestDialogue)
+	MoveCoords(17,9,18,9)
+	ENUN
+	REMU Vergil
+	FlashCursor(Derek,60)
+	Text(TestDialogue)
+	NoFade
+	ENDA
+
+ReinforcementsAppear:
+	SpawnReinforcements(ReinforcementUnits)
+	NoFade
+	ENDA
+
+BrigandsAppear:
+	SpawnReinforcements(BrigandUnits)
+	NoFade
+	ENDA
+
+ReinforcementsAppear2:
+	SpawnReinforcements(ReinforcementUnits2)
+	NoFade
+	ENDA
+
+CutsceneUnit:
+	UNIT Imperial Soldier 0x0 Level(1,Enemy,1) [18,9] 0 0 1 REDA17R8 [Javelin] NeverMoveAI
+	UNIT
+
+ALIGN 32
+CharacterBasedEvents:
+	CharacterEventBothWays(0x9,SandersArdenTalk,Sanders,Arden)
+	CharacterEventBothWays(0xA,SandersWoltTalk,Sanders,Wolt)
+	END_MAIN
+
+SandersArdenTalk:
+	MUSS SkyEventSong
+	Text(TestDialogue)
+	CUSA Arden
+	MURE 2
+	NoFade
+	ENDA
+
+SandersWoltTalk:
+	MUSS SkyEventSong
+	Text(TestDialogue)
+	CUSA Wolt
+	MURE 2
+	NoFade
+	ENDA
+
+MiscBasedEvents:
+	AREA 0x0 EscapeCounter [5,14] [5,14]
+	DefeatBoss(EndingScene)
+	CauseGameOverIfLordDies
+	END_MAIN
+
+EscapeCounter:
+	CHECK_ALLEGIANCE 0xFFFF
+	SVAL 0x1 1
+	BNE 1 0xC 0x1 // branch label 1 if not NPC
+		Increment(1)
+		LABEL 1
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	House(0x0,LeftHouseEvent,3,11)
+	House(0x0,InnEvent,16,7)
+	Village(0x0,LeftVillage,4,2)
+	Village(0x0,RightVillage,15,2)
+	Armory(Ch1Armory,11,7)
+	END_MAIN
+
+LeftHouseEvent:
+	HouseEvent(TestDialogue,HouseBG)
+
+InnEvent:
+	HouseEvent(TestDialogue,Inn)
+
+LeftVillage:
+	MUSS SkyEventSong
+	Text(HouseBG,TestDialogue)
+	SpawnReinforcements(SayoriUnit)
+	MURE 2
+	NoFade
+	ENDA
+
+SayoriUnit:
+	UNIT Sayori PegasusKnight 0x0 Level(2,Ally,0) [4,2] 0 0 1 REDA4R3 [SlimLance,Javelin,Vulnerary] NoAI
+	UNIT
+
+RightVillage:
+	VillageEventItem(TestDialogue,HouseBG,Halberd)
+
+Ch1Armory:
+	SHLI IronSword SteelSword SlimLance IronLance SteelLance IronAxe HandAxe IronBow SteelBow Vulnerary
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(Sanders,3,13)
+	Unit(Finn,4,12)
+	Unit(Scott,4,14)
+	Unit(Renge,2,14)
+	Unit(Marisa,2,12)
+	Unit(Oskar,6,12)
+	Unit(Blanc,5,11)
+	UNIT
+
+EnemyUnits:
+
+	UNIT Vergil Paladin 0x0 Level(7,Enemy,0) [17,9] 0 0 0 0 [Spear,SteelBlade,SilverLance] NeverMoveAI
+	UNIT Derek Cavalier 0x0 Level(7,Enemy,0) [16,8] 0 0 0 0 [Javelin,SteelSword,IronLance] NeverMoveAI
+
+	UNIT Kekh Mercenary 0x0 Level(4,Enemy,0) [7,1] 0 0 0 0 [IronSword,Vulnerary] DefaultAI
+
+	UNIT Imperial Cavalier 0x0 Level(2,Enemy,1) [13,12] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Imperial Cavalier 0x0 Level(2,Enemy,1) [12,13] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT Imperial Soldier 0x0 Level(2,Enemy,1) [17,2] 0 0 0 0 [SlimLance] AttackInRangeAI
+	UNIT Imperial Soldier 0x0 Level(3,Enemy,1) [18,3] 0 0 0 0 [IronLance] AttackInRangeAI
+
+	UNIT Imperial Fighter 0x0 Level(3,Enemy,1) [13,7] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT Imperial Fighter 0x0 Level(3,Enemy,1) [14,4] 0 0 0 0 [IronAxe] AttackInRangeAI
+
+	UNIT Imperial Archer 0x0 Level(4,Enemy,1) [13,6] 0 0 0 0 [IronBow] AttackInRangeAI
+
+	UNIT Imperial Mage 0x0 Level(4,Enemy,1) [17,12] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT BattaBeast Mercenary 0x0 Level(1,Enemy,1) [6,0] 0 0 0 0 [SlimSword] DefaultAI
+	UNIT BattaBeast Soldier 0x0 Level(1,Enemy,1) [8,0] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT
+
+BrigandUnits:
+
+	UNIT BattaBeast Brigand 0x0 Level(1,Enemy,1) [7,0] 0 0 1 REDA7R0 [IronAxe] BrigandAI
+	UNIT BattaBeast Brigand 0x0 Level(1,Enemy,1) [18,12] 0 0 1 REDA18R12 [IronAxe] BrigandAI
+	UNIT
+
+ReinforcementUnits:
+
+	UNIT BattaBeast Fighter 0x0 Level(4,Enemy,1) [7,0] 0 0 1 REDA7R0 [IronAxe] DefaultAI
+	UNIT BattaBeast Mercenary 0x0 Level(4,Enemy,1) [7,0] 0 0 1 REDA6R0 [IronBlade] DefaultAI
+	UNIT BattaBeast Archer 0x0 Level(4,Enemy,1) [7,0] 0 0 1 REDA8R0 [SteelBow] DefaultAI
+
+	UNIT BattaBeast Mercenary 0x0 Level(2,Enemy,1) [0,5] 0 0 1 REDA0R5 [SlimSword] DefaultAI
+	UNIT BattaBeast Mage 0x0 Level(2,Enemy,1) [0,5] 0 0 1 REDA0R4 [Fire] DefaultAI
+
+	UNIT Imperial Soldier 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA13R13 [IronLance] DefaultAI
+	UNIT Imperial Fighter 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA12R14 [IronAxe] DefaultAI
+	UNIT Imperial Soldier 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA14R14 [IronLance,Javelin] DefaultAI
+	UNIT Imperial Archer 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA13R14 [IronBow] DefaultAI
+
+	UNIT
+
+ReinforcementUnits2:
+	UNIT BattaBeast Mercenary 0x0 Level(3,Enemy,1) [0,5] 0 0 1 REDA0R5 [SlimSword] DefaultAI
+	UNIT BattaBeast Mage 0x0 Level(3,Enemy,1) [0,5] 0 0 1 REDA0R4 [Fire] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(3,Enemy,1) [0,5] 0 0 1 REDA0R6 [IronAxe] DefaultAI
+
+	UNIT Imperial Cavalier 0x0 Level(3,Enemy,1) [18,10] 0 0 1 REDA18R10 [IronSword] DefaultAI
+	UNIT Imperial Cavalier 0x0 Level(3,Enemy,1) [18,10] 0 0 1 REDA18R11 [IronLance] DefaultAI
+
+	UNIT
+
+GreenUnits:
+
+	UNIT Arden Knight 0x0 Level(4,NPC,0) [7,3] 0 0 0 0 [IronLance,SteelSword,Vulnerary] DefaultAI
+	UNIT Wolt Archer 0x0 Level(2,NPC,0) [6,8] 0 0 0 0 [IronBow,PureWater] NeverMoveAI
+
+	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [6,3] 0 0 0 0 [IronLance] DefaultAI
+	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [8,3] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [6,4] 0 0 0 0 [0x0] HastyAI
+	UNIT CivilianUnit Civilian2 0x0 Level(1,NPC,0) [6,5] 0 0 0 0 [0x0] HastyAI
+	UNIT CivilianUnit CivilianF 0x0 Level(1,NPC,0) [5,4] 0 0 0 0 [0x0] HastyAI
+	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [5,5] 0 0 0 0 [0x0] HastyAI
+
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD2 0x1 Units1
+	ENUN
+	LOAD1 0x1 GreenUnits
+	ENUN
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	NoFade
+	ENDA
+
+EndingScene:
+	COUNTER_CHECK 1
+	SVAL 0x1 4
+	BNE 1 0xC 0x1 // branch label 1 if not all civs escaped
+		GiveItem(RedGem,Sanders)
+		LABEL 1
+	MNC2 2
+	NoFade
+	ENDA

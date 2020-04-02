@@ -1,0 +1,19 @@
+// No victory music
+PUSH
+ORG 0x1609E
+SHORT 0x0
+POP
+
+// Default prep screen use text is skill learning
+//PUSH
+//ORG StatBoosterTextTable + (11 * 0x8) + 0x2
+//SHORT PrepScreenUseSkillScroll
+//POP
+
+#include "Instruments/InstrumentInstaller.event"
+
+#include "FogLight/Installer.event"
+
+#include "Custom Trap Display/Custom Trap Display Installer.event"
+
+#include "SkillScrolls/SkillScrolls.event"

@@ -1,0 +1,184 @@
+// Ally
+
+#define Sanders 0x1//UnitID here
+#define SandersClass Mercenary//ClassID here
+#define SandersMug 0x2//MugID here
+#define SandersPalette1 0x1//PaletteID here
+#define SandersPalette2 0x2//PaletteID here
+#define SandersPalette3 0x3//PaletteID here
+
+#define Finn 0x2//UnitID here
+#define FinnClass Cavalier//ClassID here
+#define FinnMug 0x3//MugID here
+#define FinnPalette1 0x4//PaletteID here
+#define FinnPalette2 0x5//PaletteID here
+#define FinnPalette3 0x6//PaletteID here
+
+#define Scott 0x3//UnitID here
+#define ScottClass Cavalier//ClassID here
+#define ScottMug 0x4//MugID here
+#define ScottPalette1 0x7//PaletteID here
+#define ScottPalette2 0x8//PaletteID here
+#define ScottPalette3 0x9//PaletteID here
+
+#define Renge 0x4//UnitID here
+#define RengeClass Cleric//ClassID here
+#define RengeMug 0x5//MugID here
+#define RengePalette1 0xA//PaletteID here
+#define RengePalette2 0xB//PaletteID here
+#define RengePalette3 0xC//PaletteID here
+
+#define Marisa 0x5//UnitID here
+#define MarisaClass MageF//ClassID here
+#define MarisaMug 0x6//MugID here
+#define MarisaPalette1 0xD//PaletteID here
+#define MarisaPalette2 0xE//PaletteID here
+#define MarisaPalette3 0xF//PaletteID here
+
+#define Oskar 0x6//UnitID here
+#define OskarClass Fighter//ClassID here
+#define OskarMug 0x7//MugID here
+#define OskarPalette1 0x10//PaletteID here
+#define OskarPalette2 0x11//PaletteID here
+#define OskarPalette3 0x12//PaletteID here
+
+#define Blanc 0x7//UnitID here
+#define BlancClass Fighter//ClassID here
+#define BlancMug 0x8//MugID here
+#define BlancPalette1 0x13//PaletteID here
+#define BlancPalette2 0x14//PaletteID here
+#define BlancPalette3 0x15//PaletteID here
+
+#define Sayori 0x8//UnitID here
+#define SayoriClass PegasusKnight//ClassID here
+#define SayoriMug 0xA//MugID here
+#define SayoriPalette1 0x17//PaletteID here
+#define SayoriPalette2 0x18//PaletteID here
+#define SayoriPalette3 0x19//PaletteID here
+
+#define Wolt 0x9//UnitID here
+#define WoltClass Archer//ClassID here
+#define WoltMug 0xB//MugID here
+#define WoltPalette1 0x1A//PaletteID here
+#define WoltPalette2 0x1B//PaletteID here
+#define WoltPalette3 0x1C//PaletteID here
+
+#define Arden 0xA//UnitID here
+#define ArdenClass Knight//ClassID here
+#define ArdenMug 0xC//MugID here
+#define ArdenPalette1 0x1D//PaletteID here
+#define ArdenPalette2 0x1E//PaletteID here
+#define ArdenPalette3 0x1F//PaletteID here
+
+#define Wrys 0xB//UnitID here
+#define WrysClass Priest//ClassID here
+#define WrysMug 0x11//MugID here
+#define WrysPalette1 0x24//PaletteID here
+#define WrysPalette2 0x25//PaletteID here
+#define WrysPalette3 0x26//PaletteID here
+
+#define Neptune 0xC//UnitID here
+#define NeptuneClass MyrmidonF//ClassID here
+#define NeptuneMug 0x12//MugID here
+#define NeptunePalette1 0x27//PaletteID here
+#define NeptunePalette2 0x28//PaletteID here
+#define NeptunePalette3 0x29//PaletteID here
+
+#define Wilbell 0xD//UnitID here
+#define WilbellClass ShamanF//ClassID here
+#define WilbellMug 0x13//MugID here
+#define WilbellPalette1 0x2A//PaletteID here
+#define WilbellPalette2 0x2B//PaletteID here
+#define WilbellPalette3 0x2C//PaletteID here
+
+#define Brian 0xE//UnitID here
+#define BrianClass Thief//ClassID here
+#define BrianMug 0x14//MugID here
+#define BrianPalette1 0x2D//PaletteID here
+#define BrianPalette2 0x2E//PaletteID here
+#define BrianPalette3 0x2F//PaletteID here
+
+// Boss
+
+#define Batta 0x60//UnitID here
+#define BattaClass Brigand//ClassID here
+#define BattaMug 0x9//MugID here
+#define BattaPalette1 0x16//PaletteID here
+#define BattaPalette2 0x0//PaletteID here
+#define BattaPalette3 0x0//PaletteID here
+
+#define Kekh 0x61//UnitID here
+#define KekhClass Mercenary//ClassID here
+#define KekhMug 0xD//MugID here
+#define KekhPalette1 0x20//PaletteID here
+#define KekhPalette2 0x0//PaletteID here
+#define KekhPalette3 0x0//PaletteID here
+
+#define Derek 0x62//UnitID here
+#define DerekClass Cavalier//ClassID here
+#define DerekMug 0xE//MugID here
+#define DerekPalette1 0x21//PaletteID here
+#define DerekPalette2 0x0//PaletteID here
+#define DerekPalette3 0x0//PaletteID here
+
+#define Vergil 0x63//UnitID here
+#define VergilClass Paladin//ClassID here
+#define VergilMug 0xF//MugID here
+#define VergilPalette1 0x0//PaletteID here
+#define VergilPalette2 0x22//PaletteID here
+#define VergilPalette3 0x0//PaletteID here
+
+#define ONeill 0x64//UnitID here
+#define ONeillClass Fighter//ClassID here
+#define ONeillMug 0x10//MugID here
+#define ONeillPalette1 0x23//PaletteID here
+#define ONeillPalette2 0x0//PaletteID here
+#define ONeillPalette3 0x0//PaletteID here
+
+#define Todoroki 0x65//UnitID here
+#define TodorokiClass Mercenary//ClassID here
+#define TodorokiMug 0x15//MugID here
+#define TodorokiPalette1 0x30//PaletteID here
+#define TodorokiPalette2 0x0//PaletteID here
+#define TodorokiPalette3 0x0//PaletteID here
+
+// Generic + NPC
+
+#define BattaBeast 0x80//UnitID here
+#define BattaBeastFaction 0x1//MinimugID here
+
+#define Imperial 0x81//UnitID here
+#define ImperialFaction 0x3//MinimugID here
+
+#define CivilianUnit 0x82//UnitID here
+#define CivilianUnitName 0x305//TextID here
+#define CivilianUnitDescription 0x351//TextID here
+#define CivilianUnitFaction 0x2//MinimugID here
+
+#define TownGuard 0x83//UnitID here
+#define TownGuardFaction 0x5//MinimugID here
+
+#define PriestUnit 0x84//UnitID here
+#define PriestUnitFaction 0x2//MinimugID here
+
+#define Cultist 0x85//UnitID here
+#define CultistFaction 0x4 //MinimugID here
+
+#define Monster 0x86//UnitID here
+#define MonsterFaction 0x4//MinimugID here
+
+#define MonsterNoEXP 0x87//UnitID here
+
+#define Eevster 0x88//UnitID here
+#define EevsterClass Troubadour//ClassID here
+#define EevsterMug 0x16//MugID here
+#define EevsterPalette1 0x31//PaletteID here
+#define EevsterPalette2 0x32//PaletteID here
+#define EevsterPalette3 0x33//PaletteID here
+
+#define Basement 0x89//UnitID here
+#define BasementFaction 0x5//MinimugID here
+
+#define Basement2 0x8A//UnitID here
+
+#define Imperial2 0x8B//UnitID here

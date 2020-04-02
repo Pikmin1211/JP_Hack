@@ -1,0 +1,24 @@
+#undef DeathQuoteTable
+
+ALIGN 4
+DeathQuoteTable:
+
+// Prologue
+ChapterDeathQuote(Batta,Prologue,DefeatBossFlag,TestDialogue)
+
+// Ch1
+ChapterDeathQuote(Derek,Ch1,DefeatBossFlag,TestDialogue)
+
+// Ch2
+ChapterDeathQuote(PriestUnit,Ch2,GameOverFlag,TestDialogue)
+ChapterDeathQuote(Batta,Ch2,0x9,TestDialogue)
+ChapterDeathQuote(ONeill,Ch2,0xA,TestDialogue)
+
+// Always
+AlwaysDeathQuote(Sanders,GameOverFlag,TestDialogue)
+EndQuote
+
+PUSH
+ORG $8472C
+POIN DeathQuoteTable
+POP

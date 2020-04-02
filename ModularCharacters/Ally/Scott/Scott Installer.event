@@ -1,0 +1,19 @@
+
+
+{
+	#define UnitID Scott
+	#define UnitClass ScottClass
+	#define UnitMugID ScottMug
+	#define UnitNameLocation ScottName
+	#define UnitDescriptionLocation ScottDescription
+	#define Palette1Number ScottPalette1
+	#define Palette2Number ScottPalette2
+	#define Palette3Number ScottPalette3
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Support Installer.event"
+	#include "Files/Palette Installer.event"
+	#include "Files/Mug Installer.event"
+	//#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

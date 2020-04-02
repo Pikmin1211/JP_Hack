@@ -1,0 +1,19 @@
+
+
+{
+	#define UnitID Finn
+	#define UnitClass FinnClass
+	#define UnitMugID FinnMug
+	#define UnitNameLocation FinnName
+	#define UnitDescriptionLocation FinnDescription
+	#define Palette1Number FinnPalette1
+	#define Palette2Number FinnPalette2
+	#define Palette3Number FinnPalette3
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Support Installer.event"
+	#include "Files/Palette Installer.event"
+	#include "Files/Mug Installer.event"
+	//#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

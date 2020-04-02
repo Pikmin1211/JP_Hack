@@ -1,0 +1,7 @@
+#include "Ally/Modular Character Installer.event"
+
+#include "Boss/Modular Character Installer.event"
+
+#include "Generic/Modular Character Installer.event"
+
+#include "NPC/Modular Character Installer.event"
