@@ -1,0 +1,12 @@
+
+
+{
+	#define UnitID Wagon
+	#define UnitNameLocation WagonName
+	#define UnitDescriptionLocation WagonDescription
+	#define UnitFaction WagonFaction
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

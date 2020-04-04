@@ -9,3 +9,7 @@
 #include "Cultist/Cultist Installer.event"
 
 #include "Imperial2/Imperial Installer.event"
+
+#include "Batta Beast2/Batta Beast Installer.event"
+
+#include "MonsterBoss/Monster Installer.event"

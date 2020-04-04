@@ -22,5 +22,11 @@
 #include "Ch4.event"
 }
 {
+#include "Ch5.event"
+}
+{
+#include "Ch6.event"
+}
+{
 #include "_Prologue.event"
 }

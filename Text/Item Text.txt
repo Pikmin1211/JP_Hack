@@ -3,3 +3,9 @@ Adept M.[X]
 
 ## AdeptManualUseText
 Teaches Adept.[X]
+
+## SpeedRingName
+Speed Ring[X]
+
+## SpeedRingDescription
++2 speed when held.[X]

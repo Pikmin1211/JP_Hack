@@ -1,0 +1,94 @@
+//General
+#define UnitName UnitNameLocation
+#define UnitDescription UnitDescriptionLocation
+#define UnitMug 0x0
+#define UnitMinimug UnitFaction
+#define UnitAffinity 0x0
+#define UnitPriority 0x0
+#define PersonalSkill 0x0
+
+//Stats
+#define UnitLevel 1
+#define BaseHP 0
+#define BaseStr 0
+#define BaseMag 0
+#define BaseSkl 0
+#define BaseSpd 0
+#define BaseDef 0
+#define BaseRes 0
+#define BaseLuk 0
+#define BaseCon 0
+
+//Base Weapon Ranks
+#define BaseSwordRank 0
+#define BaseLanceRank 0
+#define BaseAxeRank 0
+#define BaseBowRank 0
+#define BaseStaffRank 0
+#define BaseAnimaRank 0
+#define BaseLightRank 0
+#define BaseDarkRank 0
+
+//Growth Rates
+#define HPGrowth 60
+#define StrGrowth 20
+#define MagGrowth 10
+#define SklGrowth 30
+#define SpdGrowth 20
+#define DefGrowth 15
+#define ResGrowth 5
+#define LukGrowth 25
+
+//Character Abilities
+#define CharacterAbilityOne 0x0
+#define CharacterAbilityTwo 0x0
+#define CharacterAbilityThree 0x0
+#define CharacterAbilityFour 0x0
+
+//Support Data
+#define SupportData 0x0
+
+//Summoning
+#define SummonedUnit 0x00
+
+//Convo Group (unused?)
+#define UnitConvoGroup 0x0
+
+//Custom Battle BGM
+//#define HasCustomBGM
+#define CustomBGM 0x0
+
+//EXP Operands
+#define EXPMultiplier 1
+#define EXPDivisor 1
+
+//Skill List
+//#define HasPersonalSkillList
+ALIGN 4
+SkillList:
+//BYTE Level SkillID
+BYTE 00 00
+ALIGN 4
+
+PUSH
+ORG CharacterTable + (UnitID * 0x34)
+UnitInstaller(UnitName,UnitDescription,UnitID,0x0,UnitMug,UnitMinimug,UnitAffinity,UnitPriority,UnitLevel,BaseHP,BaseStr,BaseSkl,BaseSpd,BaseDef,BaseRes,BaseLuk,BaseCon,BaseSwordRank,BaseLanceRank,BaseAxeRank,BaseBowRank,BaseStaffRank,BaseAnimaRank,BaseLightRank,BaseDarkRank,HPGrowth,StrGrowth,SklGrowth,SpdGrowth,DefGrowth,ResGrowth,LukGrowth,0x0,0x0,0x0,0x0,0x0,CharacterAbilityOne,CharacterAbilityTwo,CharacterAbilityThree,CharacterAbilityFour,0x0,UnitConvoGroup,0x0,0x0,0x0)
+ORG PersonalSkillTable + UnitID
+BYTE PersonalSkill
+ORG ModularEXPChapterTable + (UnitID * 8)
+ModularCharacterEXPEntry(UnitID,0xFF,0x00,EXPMultiplier,EXPDivisor)
+ORG SummonCharacterTable + ((UnitID-1) * 0x2)
+SummonEntry(UnitID,SummonedUnit)
+#ifdef HasCustomBGM
+ORG BattleBGM_Table + ((UnitID-1) * 0x8)
+CharacterBGM(CustomBGM,UnitID,0xFF,0x00,0x00)
+#endif
+ORG MagCharTable + (UnitID * 0x2)
+BYTE BaseMag MagGrowth
+#ifdef HasPersonalSkillList
+ORG CharLevelUpSkillTable + (UnitID * 0x4)
+POIN SkillList
+#endif
+POP
+
+

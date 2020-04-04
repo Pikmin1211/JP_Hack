@@ -1,0 +1,15 @@
+#define EnableDoorKey 0x1
+#define EnableLockpick 0x2
+#define EnableAntitoxin 0x4
+#define EnableAll 0x7
+#define NoDoorKey 0x6
+
+#define SetChapterAI(chapterid,ai) "PUSH; ORG 0xD8538 + (chapterid * 0x4); BYTE ai; POP"
+
+SetChapterAI(0,EnableAll)
+SetChapterAI(1,EnableAll)
+SetChapterAI(2,EnableAll)
+SetChapterAI(3,EnableAll)
+SetChapterAI(4,EnableAll)
+SetChapterAI(5,EnableAll)
+SetChapterAI(6,NoDoorKey)

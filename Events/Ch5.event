@@ -1,0 +1,412 @@
+EventPointerTable(Ch5xEvent, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,WagonsAppear,1)
+	TurnEventPlayer(0x0,Turn3Reinforce,3)
+	TurnEventPlayer(0x0,Turn5Reinforce,5)
+	TurnEventPlayer(0x0,SpawnRightCivilians,4)
+	TurnEventPlayer(0x0,Turn8Reinforce,8)
+	TurnEventPlayer(0x0,SpawnMiddleCivilians,8)
+	TurnEventPlayer(0x0,SpawnLeftCivilians,8)
+	TurnEventPlayer(0x0,Turn11Reinforce,11)
+	TurnEventPlayer(0x0,SpawnLeftCivilians,12)
+	TurnEventPlayer(0x0,SpawnRightCivilians,12)
+	TurnEventPlayer(0x0,BossesCharge,12)
+	TurnEventPlayer(0x0,Turn14Reinforce,14)
+	TurnEventPlayer(0x0,EndingScene,15)
+	END_MAIN
+
+WagonsAppear:
+	MUSC BlasterMasterStage1Song
+	SpawnReinforcements(WagonUnits)
+	FlashCursor(Wagon,60)
+	FlashCursor(Wagon2,60)
+	Text(TestDialogue)
+	CAM1 Kekh
+	FlashCursor(Kekh,60)
+	Text(TestDialogue)
+	CAM1 [6,19]
+	FlashCursor(Batta,60)
+	Text(TestDialogue)
+	FlashCursor(ONeill,60)
+	Text(TestDialogue)
+	NoFade
+	ENDA
+
+Turn3Reinforce:
+	CALL SpawnBottomForestUnits
+	NoFade
+	ENDA
+
+Turn5Reinforce:
+	CALL SpawnBottomCavs
+	CALL SpawnLeftPathUnits
+	CALL SpawnBottomBrigand
+	NoFade
+	ENDA
+
+Turn8Reinforce:
+	CALL SpawnBottomForestUnits
+	CALL SpawnWaterPegs
+	CALL SpawnLeftBrigand
+	CALL SpawnTopLeftUnits
+	NoFade
+	ENDA
+
+Turn11Reinforce:
+	CALL SpawnLeftPathUnits
+	CALL SpawnTopLeftUnits
+	CALL SpawnBottomBrigand
+	CALL SpawnLeftBrigand
+	NoFade
+	ENDA
+
+Turn14Reinforce:
+	CALL SpawnWaterPegs
+	CALL SpawnBottomCavs
+	CALL SpawnLeftPathUnits
+	NoFade
+	ENDA
+
+BossesCharge:
+	CHECK_ALIVE Batta
+	BEQ 1 0x0 0xC
+		CAM1 [6,19]
+		FlashCursor(Batta,60)
+		Text(TestDialogue)
+		SetAI(Batta,0,0,0,0)
+		LABEL 1
+	CHECK_ALIVE ONeill
+	BEQ 2 0x0 0xC
+		CAM1 [6,19]
+		FlashCursor(ONeill,60)
+		Text(TestDialogue)
+		SetAI(ONeill,0,0,0,0)
+		LABEL 2
+	NoFade
+	ENDA
+
+SpawnLeftCivilians:
+	SpawnReinforcements(LeftHouseCivs)
+	NoFade
+	ENDA
+
+SpawnRightCivilians:
+	SpawnReinforcements(RightHouseCivs)
+	NoFade
+	ENDA
+
+SpawnMiddleCivilians:
+	SpawnReinforcements(MidHouseCivs)
+	NoFade
+	ENDA
+
+SpawnLeftPathUnits:
+	SpawnReinforcements(LeftPathUnits)
+	NoFade
+	ENDA
+
+SpawnBottomCavs:
+	SpawnReinforcements(BottomCavs)
+	NoFade
+	ENDA
+
+SpawnTopLeftUnits:
+	SpawnReinforcements(TopLeftUnits)
+	NoFade
+	ENDA
+
+SpawnWaterPegs:
+	SpawnReinforcements(WaterPegs)
+	NoFade
+	ENDA
+
+SpawnBottomForestUnits:
+	SpawnReinforcements(BottomForestUnits)
+	NoFade
+	ENDA
+
+SpawnLeftBrigand:
+	SpawnReinforcements(LeftBrigand)
+	NoFade
+	ENDA
+
+SpawnBottomBrigand:
+	SpawnReinforcements(BottomBrigand)
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	AREA 0x0 CheckForCivs [13,0] [16,4]
+	CauseGameOverIfLordDies
+	END_MAIN
+
+#define CheckAllegiance(xcoord,ycoord,labelno) "SVAL 0xB Coords(xcoord,ycoord); CHECK_EXISTS 0xFFFE; BEQ labelno 0xC 0x0; CHECK_ALLEGIANCE 0xFFFE; BNE labelno 0xC 0x1; MoveCoords(xcoord,ycoord,16,0); ENUN; SVAL 0xB Coords(16,0); REMU 0xFFFE; Increment(1); GOTO 99; LABEL labelno"
+
+/*
+SVAL 0xB [xcoord,ycoord]
+CHECK_EXISTS 0xFFFE
+BEQ labelno 0xC 0x0
+CHECK_ALLEGIANCE 0xFFFE
+BNE labelno 0xC 0x1
+	MoveCoords(xcoord,ycoord,16,0)
+	ENUN
+	SVAL 0xB [16,0]
+	REMU 0xFFFE
+	Increment(1)
+	GOTO 99
+LABEL labelno
+*/
+
+CheckForCivs:
+	SVAL 0x1 1 // npc
+	CheckAllegiance(13,0,1)
+	CheckAllegiance(13,1,2)
+	CheckAllegiance(13,2,3)
+	CheckAllegiance(14,0,4)
+	CheckAllegiance(14,1,5)
+	CheckAllegiance(14,2,6)
+	CheckAllegiance(15,0,7)
+	CheckAllegiance(15,1,8)
+	CheckAllegiance(15,2,9)
+	CheckAllegiance(16,0,10)
+	CheckAllegiance(16,1,11)
+	CheckAllegiance(16,2,12)
+	CheckAllegiance(14,3,13)
+	CheckAllegiance(15,3,14)
+	LABEL 99
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	Village(0x9,LeftVillage,6,1)
+	Village(0xA,MidVillage,9,15)
+	Village(0xB,RightVillage,16,9)
+	Armory(Ch5Armory,5,5)
+	Vendor(Ch5Vendor,8,5)
+	END_MAIN
+
+LeftVillage:
+	VillageEventItem(TestDialogue,HouseBG,KillerBow)
+
+MidVillage:
+	VillageEventItem(TestDialogue,HouseBG,RedGem)
+
+RightVillage:
+	VillageEventItem(TestDialogue,HouseBG,Lancereaver)
+
+Ch5Armory:
+	SHLI IronSword SteelSword SlimSword LightBrand IronLance SteelLance SlimLance Javelin IronAxe SteelAxe HandAxe Hammer IronBow SteelBow ShortBow
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Ch5Vendor:
+	SHLI Fire Thunder Elfire Flux Nosferatu Heal Mend Barrier Restore Vulnerary Elixir PureWater
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(10,4)
+	Unit(9,5)
+	Unit(11,5)
+	Unit(10,6)
+	Unit(8,6)
+	Unit(9,7)
+	Unit(12,6)
+	Unit(13,5)
+	Unit(11,7)
+	Unit(7,5)
+	UNIT
+
+EnemyUnits:
+
+	UNIT Batta Brigand 0x0 Level(11,Enemy,1) [4,19] 0 0 0 0 [SteelAxe,Halberd,HandAxe] NeverMoveAI
+	UNIT ONeill Fighter 0x0 Level(10,Enemy,1) [8,19] 0 0 0 0 [IronAxe,HandAxe,Hammer] NeverMoveAI
+	UNIT Kekh Mercenary 0x0 Level(10,Enemy,1) [0,2] 2 0 0 0 [SteelSword,Lancereaver,LightBrand,SecretBook] NeverMoveAI
+
+	UNIT BattaBeast2 Mercenary 0x0 Level(7,Enemy,1) [0,17] 0 0 0 0 [IronSword] DelayedDefaultAI
+	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [1,17] 0 0 0 0 [SteelLance] DelayedDefaultAI
+	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [0,16] 0 0 0 0 [SlimLance] DelayedDefaultAI
+
+	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [0,1] 0 0 0 0 [SteelBow] NeverMoveAI
+	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [11,19] 0 0 0 0 [Longbow] NeverMoveAI
+	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [12,18] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [1,0] 0 0 0 0 [Swordreaver,SteelAxe] AttackInRangeAI
+	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [0,5] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT BattaBeast2 Knight 0x0 Level(8,Enemy,1) [5,2] 0 0 0 0 [Javelin,IronLance] NeverMoveAI
+	UNIT BattaBeast2 Mage 0x0 Level(8,Enemy,1) [7,0] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT BattaBeast2 Mercenary 0x0 Level(7,Enemy,1) [13,9] 0 0 0 0 [IronBlade] AttackInRangeAI
+	UNIT BattaBeast2 Fighter 0x0 Level(8,Enemy,1) [14,10] 0 0 0 0 [IronAxe,Halberd] AttackInRangeAI
+	UNIT BattaBeast2 Mage 0x0 Level(8,Enemy,1) [14,9] 0 0 0 0 [Fire] AttackInRangeAI
+
+	UNIT
+
+WagonUnits:
+	
+	UNIT Wagon Transporter 0x0 Level(5,Ally,1) [16,0] 0 0 1 REDA14R4 [0x0] NoAI
+	UNIT Wagon2 Transporter 0x0 Level(5,Ally,1) [16,0] 0 0 1 REDA15R4 [0x0] NoAI
+
+	UNIT
+
+LeftHouseCivs:
+
+	UNIT CivilianUnit CivilianF 0x0 Level(3,NPC,1) [2,10] 0 0 1 REDA2R9 [0x0] NeverMoveAI
+	UNIT CivilianUnit Civilian3 0x0 Level(3,NPC,1) [2,10] 0 0 1 REDA3R10 [0x0] NeverMoveAI
+
+	UNIT
+
+RightHouseCivs:
+
+	UNIT CivilianUnit CivilianF2 0x0 Level(3,NPC,1) [7,8] 0 0 1 REDA6R8 [0x0] NeverMoveAI
+	UNIT CivilianUnit Civilian 0x0 Level(3,NPC,1) [7,8] 0 0 1 REDA7R9 [0x0] NeverMoveAI
+
+	UNIT
+
+MidHouseCivs:
+
+	UNIT CivilianUnit CivilianF2 0x0 Level(3,NPC,1) [6,13] 0 0 1 REDA5R13 [0x0] NeverMoveAI
+	UNIT CivilianUnit Civilian3 0x0 Level(3,NPC,1) [6,13] 0 0 1 REDA7R13 [0x0] NeverMoveAI
+
+	UNIT
+
+BottomCavs:
+
+	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA6R19 [SteelSword] DefaultAI
+	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA7R19 [HeavySpear,SlimSword] DefaultAI
+	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA5R19 [IronLance,Javelin] DefaultAI
+
+	UNIT
+
+BottomForestUnits:
+
+	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [0,17] 0 0 1 REDA0R17 [Horseslayer,Javelin] DefaultAI
+	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [0,17] 0 0 1 REDA0R16 [IronAxe] DefaultAI
+	UNIT BattaBeast2 Mercenary 0x0 Level(7,Enemy,1) [0,17] 0 0 1 REDA1R17 [SteelBlade,IronSword] DefaultAI
+
+	UNIT
+
+LeftPathUnits:
+
+	UNIT BattaBeast2 Archer 0x0 Level(7,Enemy,1) [0,11] 0 0 1 REDA0R11 [ShortBow] DefaultAI
+	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [0,11] 0 0 1 REDA0R10 [SteelAxe] DefaultAI
+	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [0,11] 0 0 1 REDA0R12 [Hammer,Hatchet] DefaultAI
+
+	UNIT
+
+TopLeftUnits:
+
+	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [0,2] 0 0 1 REDA0R1 [IronBlade,LightBrand] DefaultAI
+	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [0,2] 0 0 1 REDA1R2 [SteelLance] DefaultAI
+	UNIT BattaBeast2 Soldier 0x0 Level(8,Enemy,1) [0,2] 0 0 1 REDA0R3 [ShortSpear] DefaultAI
+	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [0,2] 0 0 1 REDA0R2 [IronBow] DefaultAI
+
+	UNIT
+
+WaterPegs:
+	
+	UNIT BattaBeast2 PegasusKnight 0x0 Level(7,Enemy,1) [16,17] 0 0 1 REDA16R17 [SlimLance] DefaultAI
+	UNIT BattaBeast2 PegasusKnight 0x0 Level(7,Enemy,1) [16,17] 0 0 1 REDA16R16 [IronLance,Javelin] DefaultAI
+	UNIT BattaBeast2 PegasusKnight 0x0 Level(7,Enemy,1) [16,17] 0 0 1 REDA16R18 [SteelLance,SlimLance] DefaultAI
+
+	UNIT
+
+LeftBrigand:
+	
+	UNIT BattaBeast2 Brigand 0x0 Level(6,Enemy,1) [0,5] 0 0 1 REDA0R5 [IronAxe] BrigandAI
+
+	UNIT
+
+BottomBrigand:
+	
+	UNIT BattaBeast2 Brigand 0x0 Level(6,Enemy,1) [10,19] 0 0 1 REDA10R19 [IronAxe] BrigandAI
+
+	UNIT 
+
+Traps1:
+	GreenSigil(14,3)
+	GreenSigil(15,3)
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 RightHouseCivs
+	ENUN
+	LOAD1 0x1 LeftHouseCivs
+	ENUN
+	LOAD1 0x1 MidHouseCivs
+	ENUN
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	CALL CounterChecker
+	FADI 16
+	DISA Wagon
+	DISA Wagon2
+	MNC2 6
+	NoFade
+	ENDA
+
+CounterChecker:
+	COUNTER_CHECK 1
+	SVAL 0x1 15
+	BLT 1 0xC 0x1
+		GiveItem(Speedwing,Sanders)
+		LABEL 1
+	COUNTER_CHECK 1
+	SVAL 0x1 12
+	BLT 2 0xC 0x1
+		GiveItem(Rescue,Sanders)
+		LABEL 2
+	COUNTER_CHECK 1
+	SVAL 0x1 8
+	BLT 3 0xC 0x1
+		GiveItem(KillingEdge,Sanders)
+		LABEL 3
+	COUNTER_CHECK 1
+	SVAL 0x1 4
+	BLT 4 0xC 0x1
+		GiveItem(Vulnerary,Sanders)
+		LABEL 4
+	NoFade
+	ENDA

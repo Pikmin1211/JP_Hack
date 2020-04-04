@@ -9,3 +9,7 @@
 #include "Basement/Basement Installer.event"
 
 #include "Basement2/Basement Installer.event"
+
+#include "Wagon/Wagon Installer.event"
+
+#include "Wagon2/Wagon Installer.event"

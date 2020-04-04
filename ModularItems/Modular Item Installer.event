@@ -1,1 +1,3 @@
 #include "Adept Manual/Adept Manual Installer.event"
+
+#include "Speed Ring/Speed Ring Installer.event"

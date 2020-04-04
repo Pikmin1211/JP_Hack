@@ -152,7 +152,7 @@ EnemyUnits:
 	UNIT Vergil Paladin 0x0 Level(7,Enemy,0) [17,9] 0 0 0 0 [Spear,SteelBlade,SilverLance] NeverMoveAI
 	UNIT Derek Cavalier 0x0 Level(7,Enemy,0) [16,8] 0 0 0 0 [Javelin,SteelSword,IronLance] NeverMoveAI
 
-	UNIT Kekh Mercenary 0x0 Level(4,Enemy,0) [7,1] 0 0 0 0 [IronSword,Vulnerary] DefaultAI
+	UNIT Kekh Mercenary 0x0 Level(5,Enemy,0) [7,1] 0 0 0 0 [IronSword,Vulnerary] DefaultAI
 
 	UNIT Imperial Cavalier 0x0 Level(2,Enemy,1) [13,12] 0 0 0 0 [IronLance] DefaultAI
 	UNIT Imperial Cavalier 0x0 Level(2,Enemy,1) [12,13] 0 0 0 0 [IronLance] DefaultAI

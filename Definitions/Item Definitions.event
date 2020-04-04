@@ -1,6 +1,11 @@
 #define MagicOrb 0xA
 
 #define AdeptManual 0xBD//ItemID here
-#define AdeptManualMagicAnim 0xFE//MagicAnimationID here
+#define AdeptManualMagicAnim 0xFF//MagicAnimationID here
 #define AdeptManualIcon 0xAD//ItemIconID here
 #define AdeptManualDescription SD_Adept//TextID here
+
+#define SpeedRing 0xBE//ItemID here
+#define SpeedRingMagicAnim 0xFF//MagicAnimationID here
+#define SpeedRingIcon 0xAE//ItemIconID here
+#define SpeedRingUseText 0x0//TextID here

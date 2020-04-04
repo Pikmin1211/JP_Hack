@@ -14,6 +14,9 @@ ChapterDeathQuote(PriestUnit,Ch2,GameOverFlag,TestDialogue)
 ChapterDeathQuote(Batta,Ch2,0x9,TestDialogue)
 ChapterDeathQuote(ONeill,Ch2,0xA,TestDialogue)
 
+// Ch6
+ChapterDeathQuote(MonsterBoss,Ch5,DefeatBossFlag,0x0)
+
 // Always
 AlwaysDeathQuote(Sanders,GameOverFlag,TestDialogue)
 EndQuote

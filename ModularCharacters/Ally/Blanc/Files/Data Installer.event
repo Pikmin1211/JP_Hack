@@ -13,7 +13,7 @@
 #define BaseStr 3
 #define BaseMag 2
 #define BaseSkl 4
-#define BaseSpd 3
+#define BaseSpd 4
 #define BaseDef 0
 #define BaseRes 2
 #define BaseLuk 6
@@ -31,10 +31,10 @@
 
 //Growth Rates
 #define HPGrowth 70
-#define StrGrowth 40
+#define StrGrowth 45
 #define MagGrowth 25
 #define SklGrowth 50
-#define SpdGrowth 40
+#define SpdGrowth 45
 #define DefGrowth 25
 #define ResGrowth 20
 #define LukGrowth 45

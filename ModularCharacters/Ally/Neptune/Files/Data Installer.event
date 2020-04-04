@@ -5,7 +5,7 @@
 #define UnitMinimug 0x0
 #define UnitAffinity AffThunder
 #define UnitPriority 0x0
-#define PersonalSkill LancebreakerID
+#define PersonalSkill AcrobatID
 
 //Stats
 #define UnitLevel 6
@@ -17,7 +17,7 @@
 #define BaseDef 3
 #define BaseRes 3
 #define BaseLuk 9
-#define BaseCon (-2)
+#define BaseCon 0
 
 //Base Weapon Ranks
 #define BaseSwordRank CRank
@@ -30,12 +30,12 @@
 #define BaseDarkRank 0
 
 //Growth Rates
-#define HPGrowth 70
-#define StrGrowth 40
+#define HPGrowth 65
+#define StrGrowth 35
 #define MagGrowth 30
 #define SklGrowth 55
 #define SpdGrowth 60
-#define DefGrowth 25
+#define DefGrowth 15
 #define ResGrowth 20
 #define LukGrowth 70
 

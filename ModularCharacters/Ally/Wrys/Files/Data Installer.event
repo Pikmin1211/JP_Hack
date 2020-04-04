@@ -31,11 +31,11 @@
 
 //Growth Rates
 #define HPGrowth 70
-#define StrGrowth 60
-#define MagGrowth 40
-#define SklGrowth 30
+#define StrGrowth 45
+#define MagGrowth 35
+#define SklGrowth 40
 #define SpdGrowth 35
-#define DefGrowth 50
+#define DefGrowth 35
 #define ResGrowth 15
 #define LukGrowth 25
 

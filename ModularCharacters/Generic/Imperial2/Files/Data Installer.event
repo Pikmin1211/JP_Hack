@@ -14,7 +14,7 @@
 #define BaseMag 0
 #define BaseSkl 2
 #define BaseSpd 0
-#define BaseDef 2
+#define BaseDef 1
 #define BaseRes 1
 #define BaseLuk 0
 #define BaseCon 0

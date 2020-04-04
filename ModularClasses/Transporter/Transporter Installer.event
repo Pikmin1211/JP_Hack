@@ -1,0 +1,16 @@
+
+
+{
+	#define ClassNumber Transporter
+	#define ClassCardLocation TransporterClassCard
+	#define ClassNameLocation TransporterName
+	#define ClassDescriptionLocation TransporterDescription
+	//#define UseClassText //Comment out if you want to use text in the text buildfile
+	#include "Files/Animation Installer.event"
+	#include "Files/Map Sprite Installer.event"
+	#include "Files/Class Card Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Skill Editor.event"
+	#include "Files/Undefiner.event"
+}

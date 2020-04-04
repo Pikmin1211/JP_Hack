@@ -10,3 +10,9 @@
 #define FranticFactorySong 0x63
 #define MrBearSong 0x64
 #define DesertedChateauSong 0x92
+#define AttackShiningForceSong 0x93
+#define Battle1ElonaSong 0x94
+#define BlasterMasterStage1Song 0xA8
+#define Pikmin2BossSong 0xA9
+#define ShopPrepSong 0xAD
+#define DarkLabyrinthSong 0xAE

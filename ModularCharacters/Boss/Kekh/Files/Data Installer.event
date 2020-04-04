@@ -8,9 +8,9 @@
 #define PersonalSkill 0x0
 
 //Stats
-#define UnitLevel 4
+#define UnitLevel 5
 #define BaseHP 8
-#define BaseStr 4
+#define BaseStr 5
 #define BaseMag 0
 #define BaseSkl 3
 #define BaseSpd 0
@@ -30,14 +30,14 @@
 #define BaseDarkRank 0
 
 //Growth Rates
-#define HPGrowth 0
-#define StrGrowth 0
-#define MagGrowth 0
-#define SklGrowth 0
-#define SpdGrowth 0
-#define DefGrowth 0
-#define ResGrowth 0
-#define LukGrowth 0
+#define HPGrowth 70
+#define StrGrowth 45
+#define MagGrowth 10
+#define SklGrowth 45
+#define SpdGrowth 30
+#define DefGrowth 15
+#define ResGrowth 10
+#define LukGrowth 10
 
 //Character Abilities
 #define CharacterAbilityOne 0x0

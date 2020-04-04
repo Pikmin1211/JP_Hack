@@ -17,3 +17,5 @@ POP
 #include "Custom Trap Display/Custom Trap Display Installer.event"
 
 #include "SkillScrolls/SkillScrolls.event"
+
+#include "ChapterAI/ChapterAI.event"

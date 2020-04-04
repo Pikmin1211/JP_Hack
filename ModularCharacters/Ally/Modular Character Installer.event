@@ -25,3 +25,7 @@
 #include "Wilbell/Wilbell Installer.event"
 
 #include "Brian/Brian Installer.event"
+
+#include "Otaku/Otaku Installer.event"
+
+#include "Gohard/Gohard Installer.event"

@@ -9,3 +9,5 @@
 #include "ONeill/ONeill Installer.event"
 
 #include "Todoroki/Todoroki Installer.event"
+
+#include "Novala/Novala Installer.event"

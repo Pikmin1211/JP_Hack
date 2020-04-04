@@ -154,7 +154,9 @@ EnemyUnits:
 
 	UNIT Monster Tarvos 0x0 Level(5,Enemy,1) [14,18] 0 0 0 0 [SteelAxe] AttackInRangeAI
 	UNIT Monster Tarvos 0x0 Level(4,Enemy,1) [8,0] 0 0 0 0 [IronAxe] DefaultAI
-	UNIT Monster Tarvos 0x0 Level(7,Enemy,1) [9,18] 0 0 0 0 [HandAxe,IronAxe,Halberd] NeverMoveAI
+	UNIT Monster Tarvos 0x0 Level(5,Enemy,1) [10,18] 0 0 0 0 [HandAxe,IronAxe] AttackInRangeAI
+
+	UNIT Novala Shaman 0x0 Level(8,Enemy,0) [9,18] 0 0 0 0 [Flux,Nosferatu] NeverMoveAI
 
 	UNIT Monster Bael 0x0 Level(6,Enemy,1) [7,12] 0 0 0 0 [RottenClaw] AttackInRangeAI
 	UNIT Monster Bael 0x0 Level(6,Enemy,1) [11,13] 0 0 0 0 [RottenClaw] AttackInRangeAI

@@ -1,0 +1,1739 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	AttackShiningForce_grp  voicegroup000
+	#define	AttackShiningForce_pri  0
+	#define	AttackShiningForce_rev  0
+	#define	AttackShiningForce_mvl  45
+	#define	AttackShiningForce_key  0
+	#define	AttackShiningForce_tbs  1
+	#define	AttackShiningForce_exg  0
+	#define	AttackShiningForce_cmp  1
+
+	// .rodata
+	//	AttackShiningForce
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+AttackShiningForce_1:
+	BYTE	KEYSH   AttackShiningForce_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   170*AttackShiningForce_tbs/2
+	BYTE		VOICE   38
+	BYTE		VOL     93*AttackShiningForce_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N48     Cs2   v100
+	BYTE	W48
+AttackShiningForce_1_B1:
+	BYTE		N12     Fn2   v100
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W24
+// 001   ----------------------------------------
+AttackShiningForce_1_001:
+	BYTE	W24
+	BYTE		N12     Fn2   v100
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W48
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+// 003   ----------------------------------------
+AttackShiningForce_1_003:
+	BYTE		N12     Fn1   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W24
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_001
+// 006   ----------------------------------------
+	BYTE		N24     Fn1   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_003
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_003
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_003
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_003
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_003
+// 012   ----------------------------------------
+AttackShiningForce_1_012:
+	BYTE		N12     Fn1   v100
+	BYTE	W24
+	BYTE		        Cs2 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 013   ----------------------------------------
+AttackShiningForce_1_013:
+	BYTE		N12     Cs2   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+AttackShiningForce_1_014:
+	BYTE		N12     Cs2   v100
+	BYTE	W24
+	BYTE		        Ds2 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+AttackShiningForce_1_015:
+	BYTE		N12     Ds2   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE		N12   
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_003
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_003
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_003
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_012
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_013
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_014
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_1_015
+// 024   ----------------------------------------
+	BYTE		N12     Ds2   v100
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	AttackShiningForce_1_B1
+AttackShiningForce_1_B2:
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+AttackShiningForce_2:
+	BYTE	KEYSH   AttackShiningForce_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   42
+	BYTE		VOL     127*AttackShiningForce_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N06     Fn4   v100
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Gs4 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+AttackShiningForce_2_B1:
+	BYTE		N12     Cn5   v100
+	BYTE	W24
+	BYTE		        Bn4 
+	BYTE	W24
+// 001   ----------------------------------------
+	BYTE		N06     Gs2 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W18
+	BYTE		N12     Cn5 
+	BYTE	W24
+	BYTE		        Bn4 
+	BYTE	W24
+	BYTE		N06     Gs2 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W18
+// 002   ----------------------------------------
+	BYTE		        Cn5 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Cn5 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Ds5 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W18
+	BYTE		        Gn5 
+	BYTE	W06
+	BYTE		TIE   
+	BYTE	W24
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W48
+	BYTE		EOT   
+	BYTE		N12     Gs5 
+	BYTE	W24
+	BYTE		        Dn5 
+	BYTE	W24
+// 005   ----------------------------------------
+	BYTE		N06     Bn2 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W18
+	BYTE		N12     Gs5 
+	BYTE	W24
+	BYTE		        Dn5 
+	BYTE	W24
+	BYTE		N06     Bn2 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W18
+// 006   ----------------------------------------
+	BYTE		N24     Gs5 
+	BYTE	W24
+	BYTE		N12     Gn5 
+	BYTE	W18
+	BYTE		N06     Dn5 
+	BYTE	W06
+	BYTE		TIE   
+	BYTE	W48
+// 007   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+// 008   ----------------------------------------
+AttackShiningForce_2_008:
+	BYTE		N06     Fn4   v100
+	BYTE	W18
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N72     Fn5 
+	BYTE	W72
+	BYTE	PEND
+// 009   ----------------------------------------
+AttackShiningForce_2_009:
+	BYTE		N06     Ds5   v100
+	BYTE	W08
+	BYTE		        Dn5 
+	BYTE	W08
+	BYTE		        As4 
+	BYTE	W08
+	BYTE		        Cn5 
+	BYTE	W18
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE		N48   
+	BYTE	W48
+	BYTE	PEND
+// 010   ----------------------------------------
+AttackShiningForce_2_010:
+	BYTE		N06     Fn4   v100
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		        Gs4 
+	BYTE	W08
+	BYTE		        As4 
+	BYTE	W18
+	BYTE		        Ds4 
+	BYTE	W06
+	BYTE		TIE   
+	BYTE	W48
+	BYTE	PEND
+// 011   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_2_008
+// 013   ----------------------------------------
+AttackShiningForce_2_013:
+	BYTE		N06     Fn5   v100
+	BYTE	W08
+	BYTE		        Ds5 
+	BYTE	W08
+	BYTE		        Cs5 
+	BYTE	W08
+	BYTE		        Cn5 
+	BYTE	W18
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE		N48   
+	BYTE	W48
+	BYTE	PEND
+// 014   ----------------------------------------
+AttackShiningForce_2_014:
+	BYTE		N06     Fn4   v100
+	BYTE	W08
+	BYTE		        Gn4 
+	BYTE	W08
+	BYTE		        Gs4 
+	BYTE	W08
+	BYTE		        As4 
+	BYTE	W18
+	BYTE		        Ds4 
+	BYTE	W06
+	BYTE		TIE     Ds5 
+	BYTE	W48
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_2_008
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_2_009
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_2_010
+// 019   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Ds4 
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_2_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_2_013
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_2_014
+// 023   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Ds5 
+// 024   ----------------------------------------
+	BYTE		N06     Fn4   v100
+	BYTE	W18
+	BYTE		N06   
+	BYTE	W06
+	BYTE	GoTo
+	 POIN2	AttackShiningForce_2_B1
+AttackShiningForce_2_B2:
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.5) ****************//
+
+AttackShiningForce_3:
+	BYTE	KEYSH   AttackShiningForce_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   38
+	BYTE		VOL     100*AttackShiningForce_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N06     Cs2   v100
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+AttackShiningForce_3_B1:
+	BYTE		N48     Cs2   v100
+	BYTE	W48
+// 001   ----------------------------------------
+AttackShiningForce_3_001:
+	BYTE		N06     Fn1   v100
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N60   
+	BYTE	W60
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+// 003   ----------------------------------------
+AttackShiningForce_3_003:
+	BYTE		N12     Fn1   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_001
+// 006   ----------------------------------------
+	BYTE		N06     Fn1   v100
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_003
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_003
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_003
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_003
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_003
+// 012   ----------------------------------------
+AttackShiningForce_3_012:
+	BYTE	W24
+	BYTE		N12     Cs2   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 013   ----------------------------------------
+AttackShiningForce_3_013:
+	BYTE		N12     Cs2   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+AttackShiningForce_3_014:
+	BYTE		N12     Cs2   v100
+	BYTE	W24
+	BYTE		        Ds1 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+AttackShiningForce_3_015:
+	BYTE		N12     Ds1   v100
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE		N12   
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W24
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_003
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_003
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_003
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_012
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_013
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_014
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_3_015
+// 024   ----------------------------------------
+	BYTE		N12     Ds1   v100
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	AttackShiningForce_3_B1
+AttackShiningForce_3_B2:
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.6) ****************//
+
+AttackShiningForce_4:
+	BYTE	KEYSH   AttackShiningForce_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   73
+	BYTE		VOL     95*AttackShiningForce_mvl/mxv
+	BYTE	W48
+AttackShiningForce_4_B1:
+	BYTE		BEND    c_v-16
+	BYTE		N12     Fn5   v100
+	BYTE	W01
+	BYTE		BEND    c_v-8
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+	BYTE		        c_v-11
+	BYTE		N12     En5 
+	BYTE	W01
+	BYTE		BEND    c_v-6
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+// 001   ----------------------------------------
+	BYTE	W24
+	BYTE		        c_v-16
+	BYTE		N12     Fn5 
+	BYTE	W01
+	BYTE		BEND    c_v-8
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+	BYTE		        c_v-11
+	BYTE		N12     En5 
+	BYTE	W01
+	BYTE		BEND    c_v-6
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W44
+	BYTE	W01
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE		N06     Dn5 
+	BYTE	W18
+	BYTE		        Gn5 
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+// 004   ----------------------------------------
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        Gn5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W12
+	BYTE		BEND    c_v-6
+	BYTE		N12   
+	BYTE	W01
+	BYTE		BEND    c_v-3
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+	BYTE		        c_v-11
+	BYTE		N12     Dn5 
+	BYTE	W01
+	BYTE		BEND    c_v-6
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+// 005   ----------------------------------------
+	BYTE	W24
+	BYTE		        c_v-6
+	BYTE		N12     Gs5 
+	BYTE	W01
+	BYTE		BEND    c_v-3
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+	BYTE		        c_v-11
+	BYTE		N12     Dn5 
+	BYTE	W01
+	BYTE		BEND    c_v-6
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W44
+	BYTE	W01
+// 006   ----------------------------------------
+	BYTE		N04     Gs5 
+	BYTE	W04
+	BYTE		        As5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        As5 
+	BYTE	W04
+	BYTE		        Gs5 
+	BYTE	W04
+	BYTE		        As5 
+	BYTE	W52
+	BYTE		N06     Gn5 
+	BYTE	W18
+	BYTE		        Dn5 
+	BYTE	W06
+// 007   ----------------------------------------
+	BYTE		N04   
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn4 
+	BYTE	W04
+	BYTE		        Ds4 
+	BYTE	W04
+	BYTE		        Fn4 
+	BYTE	W04
+	BYTE		        Gn4 
+	BYTE	W04
+	BYTE		        As4 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+// 008   ----------------------------------------
+	BYTE		        Gn5 
+	BYTE	W24
+	BYTE		N06     Cn3   v080
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+// 009   ----------------------------------------
+AttackShiningForce_4_009:
+	BYTE		N06     Cn3   v080
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE	PEND
+// 010   ----------------------------------------
+AttackShiningForce_4_010:
+	BYTE		N06     Cn3   v080
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE	PEND
+// 011   ----------------------------------------
+AttackShiningForce_4_011:
+	BYTE		N06     Ds3   v080
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Ds5   v100
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Ds5 
+	BYTE	W12
+	BYTE		        As4 
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        As4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W04
+	BYTE		        Fs4 
+	BYTE	W04
+	BYTE		        Gn4 
+	BYTE	W04
+	BYTE		        As4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE	PEND
+// 012   ----------------------------------------
+AttackShiningForce_4_012:
+	BYTE		N04     Fn5   v100
+	BYTE	W06
+	BYTE		N06     As2   v080
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_009
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_010
+// 015   ----------------------------------------
+AttackShiningForce_4_015:
+	BYTE		N06     Ds3   v080
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		N04     Ds4   v100
+	BYTE	W04
+	BYTE		        Fn4 
+	BYTE	W04
+	BYTE		        Gn4 
+	BYTE	W04
+	BYTE		        As4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Cs5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Cs5 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        As4 
+	BYTE	W04
+	BYTE		        Gn4 
+	BYTE	W04
+	BYTE		        Fn4 
+	BYTE	W04
+	BYTE		        Ds4 
+	BYTE	W04
+	BYTE		        Fn4 
+	BYTE	W04
+	BYTE		        Gn4 
+	BYTE	W04
+	BYTE		        As4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Cs5 
+	BYTE	W04
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE		        Ds5 
+	BYTE	W06
+	BYTE		N06     As2   v080
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_009
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_010
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_011
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_012
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_009
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_010
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_4_015
+// 024   ----------------------------------------
+	BYTE		N04     Ds5   v100
+	BYTE	W06
+	BYTE		N06     As2   v080
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        As2 
+	BYTE	W06
+	BYTE	GoTo
+	 POIN2	AttackShiningForce_4_B1
+AttackShiningForce_4_B2:
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.7) ****************//
+
+AttackShiningForce_5:
+	BYTE	KEYSH   AttackShiningForce_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   73
+	BYTE		VOL     69*AttackShiningForce_mvl/mxv
+	BYTE	W48
+AttackShiningForce_5_B1:
+	BYTE		BEND    c_v-16
+	BYTE		N12     Gs4   v100
+	BYTE	W01
+	BYTE		BEND    c_v-8
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+	BYTE		        c_v-11
+	BYTE		N12     Gn4 
+	BYTE	W01
+	BYTE		BEND    c_v-6
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+// 001   ----------------------------------------
+	BYTE	W24
+	BYTE		        c_v-16
+	BYTE		N12     Gs4 
+	BYTE	W01
+	BYTE		BEND    c_v-8
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+	BYTE		        c_v-11
+	BYTE		N12     Gn4 
+	BYTE	W01
+	BYTE		BEND    c_v-6
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W44
+	BYTE	W01
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE		N06     Bn4 
+	BYTE	W18
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		N04   
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+// 004   ----------------------------------------
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W04
+	BYTE		        Dn5 
+	BYTE	W04
+	BYTE		        Ds5 
+	BYTE	W12
+	BYTE		BEND    c_v-16
+	BYTE		N12     Fn5 
+	BYTE	W01
+	BYTE		BEND    c_v-8
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+	BYTE		        c_v-16
+	BYTE		N12     Bn4 
+	BYTE	W01
+	BYTE		BEND    c_v-8
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+// 005   ----------------------------------------
+	BYTE	W24
+	BYTE		        c_v-16
+	BYTE		N12     Fn5 
+	BYTE	W01
+	BYTE		BEND    c_v-8
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W21
+	BYTE		        c_v-16
+	BYTE		N12     Bn4 
+	BYTE	W01
+	BYTE		BEND    c_v-8
+	BYTE	W02
+	BYTE		        c_v+0
+	BYTE	W44
+	BYTE	W01
+// 006   ----------------------------------------
+	BYTE		N04     Fn5 
+	BYTE	W04
+	BYTE		        Fs5 
+	BYTE	W04
+	BYTE		        Fn5 
+	BYTE	W04
+	BYTE		        Fs5 
+	BYTE	W04
+	BYTE		        Fn5 
+	BYTE	W04
+	BYTE		        Fs5 
+	BYTE	W52
+	BYTE		N06     Dn5 
+	BYTE	W18
+	BYTE		        Bn4 
+	BYTE	W06
+// 007   ----------------------------------------
+	BYTE		N04   
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+	BYTE		        Cn5 
+	BYTE	W04
+	BYTE		        Gn3 
+	BYTE	W04
+	BYTE		        An3 
+	BYTE	W04
+	BYTE		        Bn3 
+	BYTE	W04
+	BYTE		        Cn4 
+	BYTE	W04
+	BYTE		        Dn4 
+	BYTE	W04
+	BYTE		        Gn4 
+	BYTE	W04
+// 008   ----------------------------------------
+	BYTE		        Bn4 
+	BYTE	W24
+	BYTE		N06     Fn2   v080
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+// 009   ----------------------------------------
+AttackShiningForce_5_009:
+	BYTE		N06     Fn2   v080
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE	PEND
+// 010   ----------------------------------------
+AttackShiningForce_5_010:
+	BYTE		N06     Fn2   v080
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE	PEND
+// 011   ----------------------------------------
+AttackShiningForce_5_011:
+	BYTE		N06     Gn2   v080
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE	PEND
+// 012   ----------------------------------------
+AttackShiningForce_5_012:
+	BYTE		N06     Gn2   v080
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Ds2 
+	BYTE	W06
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_009
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_010
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_011
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_012
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_009
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_010
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_011
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_012
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_009
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_010
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_5_011
+// 024   ----------------------------------------
+	BYTE		N06     Gn2   v080
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Fn2 
+	BYTE	W06
+	BYTE	GoTo
+	 POIN2	AttackShiningForce_5_B1
+AttackShiningForce_5_B2:
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.8) ****************//
+
+AttackShiningForce_6:
+	BYTE		VOL     127*AttackShiningForce_mvl/mxv
+	BYTE	KEYSH   AttackShiningForce_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE	W36
+	BYTE		N03     Dn1   v080
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+AttackShiningForce_6_B1:
+	BYTE		N03     Dn1   v100
+	BYTE	W24
+	BYTE		N03   
+	BYTE	W24
+// 001   ----------------------------------------
+AttackShiningForce_6_001:
+	BYTE		N03     Dn1   v080
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		        Dn1   v100
+	BYTE	W24
+	BYTE		N03   
+	BYTE	W24
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+// 003   ----------------------------------------
+AttackShiningForce_6_003:
+	BYTE		N03     Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v100
+	BYTE	W24
+	BYTE		N03   
+	BYTE	W24
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_001
+// 006   ----------------------------------------
+	BYTE		N03     Dn1   v080
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W04
+	BYTE		N03   
+	BYTE	W12
+	BYTE		N03   
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE		        Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AttackShiningForce_6_003
+// 024   ----------------------------------------
+	BYTE		N03     Dn1   v100
+	BYTE	W12
+	BYTE		        Dn1   v080
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W06
+	BYTE	GoTo
+	 POIN2	AttackShiningForce_6_B1
+AttackShiningForce_6_B2:
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+AttackShiningForce:
+	BYTE	6	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	AttackShiningForce_pri	// Priority
+	BYTE	AttackShiningForce_rev	// Reverb.
+
+	POIN2	AttackShiningForce_grp
+
+	POIN2	AttackShiningForce_1
+	POIN2	AttackShiningForce_2
+	POIN2	AttackShiningForce_3
+	POIN2	AttackShiningForce_4
+	POIN2	AttackShiningForce_5
+	POIN2	AttackShiningForce_6
+
+	

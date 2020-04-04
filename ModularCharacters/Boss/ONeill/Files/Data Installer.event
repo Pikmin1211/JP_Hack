@@ -5,7 +5,7 @@
 #define UnitMinimug 0x0
 #define UnitAffinity AffFire
 #define UnitPriority 0x0
-#define PersonalSkill FieryBloodID
+#define PersonalSkill 0x0
 
 //Stats
 #define UnitLevel 8
@@ -30,14 +30,14 @@
 #define BaseDarkRank 0
 
 //Growth Rates
-#define HPGrowth 0
-#define StrGrowth 0
+#define HPGrowth 80
+#define StrGrowth 60
 #define MagGrowth 0
-#define SklGrowth 0
-#define SpdGrowth 0
-#define DefGrowth 0
-#define ResGrowth 0
-#define LukGrowth 0
+#define SklGrowth 20
+#define SpdGrowth 15
+#define DefGrowth 20
+#define ResGrowth 10
+#define LukGrowth 10
 
 //Character Abilities
 #define CharacterAbilityOne 0x0

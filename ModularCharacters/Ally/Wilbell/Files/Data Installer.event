@@ -9,12 +9,12 @@
 
 //Stats
 #define UnitLevel 4
-#define BaseHP 6
+#define BaseHP 7
 #define BaseStr 0
-#define BaseMag 4
+#define BaseMag 5
 #define BaseSkl 6
-#define BaseSpd 5
-#define BaseDef 2
+#define BaseSpd 6
+#define BaseDef 3
 #define BaseRes 3
 #define BaseLuk 6
 #define BaseCon 3
@@ -30,12 +30,12 @@
 #define BaseDarkRank 0
 
 //Growth Rates
-#define HPGrowth 70
+#define HPGrowth 65
 #define StrGrowth 5
 #define MagGrowth 60
 #define SklGrowth 35
-#define SpdGrowth 40
-#define DefGrowth 20
+#define SpdGrowth 30
+#define DefGrowth 15
 #define ResGrowth 55
 #define LukGrowth 35
 

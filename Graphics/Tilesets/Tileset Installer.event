@@ -5,3 +5,11 @@ NightFieldsPal:
 #incbin "Palettes/NightFields_Pal.dmp"
 
 EventPointerTable(FieldsPaletteNight,NightFieldsPal)
+
+#define CastlePaletteSewer 0xE6
+
+ALIGN 4
+SewerCastlePal:
+#incbin "Palettes/SewerCastle_Pal.dmp"
+
+EventPointerTable(CastlePaletteSewer,SewerCastlePal)

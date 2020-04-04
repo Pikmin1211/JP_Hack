@@ -1,0 +1,245 @@
+EventPointerTable(Ch5Event, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,NewUnitsAppear,3)
+	TurnEventPlayer(0x0,MoreMonsters,4)
+	TurnEventPlayer(0x0,WaterDrains,6)
+	TurnEventPlayer(0x0,DrainMonsters,6)
+	InfiniteTurnEventPlayer(0x0,SpawnScaryMonsters,7)
+	END_MAIN
+
+SpawnScaryMonsters:
+	SpawnReinforcements(ScaryMonsters)
+	NoFade
+	ENDA
+
+MoreMonsters:
+	SpawnReinforcements(MonsterUnits)
+	NoFade
+	ENDA
+
+MonsterUnits:
+
+	UNIT Monster2 Mogall 0x0 Level(7,Enemy,1) [8,17] 0 0 1 REDA8R17 [EvilEye] DefaultAI
+	UNIT Monster2 Mogall 0x0 Level(7,Enemy,1) [8,17] 0 0 1 REDA9R16 [EvilEye] DefaultAI
+
+	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [2,17] 0 0 1 REDA2R16 [FetidClaw] DefaultAI
+	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [3,17] 0 0 1 REDA3R16 [SharpClaw] DefaultAI
+
+	UNIT Monster2 Bael 0x0 Level(7,Enemy,1) [0,3] 0 0 1 REDA0R3 [PoisonClaw] DefaultAI
+	UNIT Monster2 Bael 0x0 Level(7,Enemy,1) [0,9] 0 0 1 REDA0R9 [FetidClaw] DefaultAI
+
+	UNIT
+
+DrainMonsters:
+	SpawnReinforcements(MoreMonsterUnits)
+	CAM1 Sanders
+	FlashCursor(Sanders,60)
+	Text(TestDialogue)
+	SpawnReinforcements(NPCUnits)
+	FlashCursor(Vergil,60)
+	Text(TestDialogue)
+	NoFade
+	ENDA
+
+MoreMonsterUnits:
+
+	UNIT Monster2 Bael 0x0 Level(8,Enemy,1) [5,0] 0 0 1 REDA5R0 [FetidClaw] DefaultAI
+	UNIT Monster2 Bael 0x0 Level(8,Enemy,1) [6,0] 0 0 1 REDA6R0 [FetidClaw] DefaultAI
+	UNIT Monster2 Bael 0x0 Level(8,Enemy,1) [11,0] 0 0 1 REDA11R0 [SharpClaw] DefaultAI
+
+	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [2,17] 0 0 1 REDA2R16 [FetidClaw] DefaultAI
+	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [3,17] 0 0 1 REDA3R16 [SharpClaw] DefaultAI
+
+	UNIT Monster2 Bael 0x0 Level(9,Enemy,1) [0,3] 0 0 1 REDA0R3 [SharpClaw] DefaultAI
+	UNIT MonsterBoss ElderBael 0x0 Level(1,Enemy,1) [0,9] 0 0 1 REDA0R9 [FetidClaw] NeverMoveAI
+
+	UNIT MonsterNoEXP ElderBael 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA22R17 [SharpClaw] DefaultAI
+	UNIT MonsterNoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA21R17 [SilverAxe] DefaultAI
+	UNIT MonsterNoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA23R17 [SilverAxe] DefaultAI
+
+	UNIT
+
+ScaryMonsters:
+
+	UNIT MonsterNoEXP ElderBael 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA22R17 [SharpClaw] DefaultAI
+	UNIT MonsterNoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA21R17 [SilverAxe] DefaultAI
+	UNIT MonsterNoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA23R17 [SilverAxe] DefaultAI
+
+	UNIT
+
+NPCUnits:
+	
+	UNIT Vergil Paladin 0x0 Level(7,NPC,0) [25,16] 0 0 1 REDA22R15 [Spear,SteelBlade,SilverLance,Elixir] DefaultAI
+	UNIT Imperial2 Cavalier 0x0 Level(17,NPC,1) [25,16] 0 0 1 REDA21R15 [ShortSpear,SilverSword,Vulnerary] DefaultAI
+	UNIT Imperial2 Cavalier 0x0 Level(17,NPC,1) [25,16] 0 0 1 REDA23R15 [LightBrand,Axereaver,Vulnerary] DefaultAI
+	UNIT Imperial2 Troubadour 0x0 Level(13,NPC,1) [25,16] 0 0 1 REDA22R14 [Mend] DefaultAI
+
+	UNIT
+
+
+NewUnitsAppear:
+	MUSS SkyEventSong
+	SpawnReinforcements(NewUnits)
+	FlashCursor(Otaku,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	DefeatBoss(EndingScene)
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+	Door(18,2)
+	Chest(Dragonshield,15,14)
+	Chest(KillerAxe,14,15)
+	Chest(BlueGem,21,3)
+	Chest(SpeedRing,22,4)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(22,16)
+	Unit(20,15)
+	Unit(21,15)
+	Unit(23,15)
+	Unit(24,15)
+	Unit(20,16)
+	Unit(24,16)
+	Unit(20,17)
+	Unit(21,17)
+	Unit(23,17)
+	Unit(24,17)
+	UNIT
+
+EnemyUnits:
+
+	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [22,9] 0 0 0 0 [RottenClaw] DefaultAI
+	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [21,12] 0 0 0 0 [FetidClaw] DefaultAI
+	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [23,11] 0 0 0 0 [SteelSword] DefaultAI
+	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [24,12] 0 0 0 0 [IronLance,Lancereaver] DefaultAI
+
+	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [14,14] 2 0 0 0 [Javelin,SteelSword,ChestKey_5] AttackInRangeAI
+	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [15,15] 0 0 0 0 [LightBrand,SlimLance] AttackInRangeAI
+	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [13,14] 0 0 0 0 [SteelBow] AttackInRangeAI
+
+	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [12,2] 0 0 0 0 [SharpClaw] AttackInRangeAI
+	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [12,3] 0 0 0 0 [RottenClaw] AttackInRangeAI
+	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [9,2] 0 0 0 0 [SteelBow] AttackInRangeAI
+
+	UNIT Monster2 Revenant 0x0 Level(8,Enemy,1) [8,13] 0 0 0 0 [FetidClaw] AttackInRangeAI
+	UNIT Monster2 Revenant 0x0 Level(8,Enemy,1) [9,12] 0 0 0 0 [RottenClaw] AttackInRangeAI
+
+	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [5,10] 0 0 0 0 [Horseslayer,ShortSpear] AttackInRangeAI
+	UNIT Monster2 Bonewalker 0x0 Level(9,Enemy,1) [5,11] 0 0 0 0 [SteelLance,IronBlade] AttackInRangeAI
+	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [2,9] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [2,3] 0 0 0 0 [ShortBow] AttackInRangeAI
+
+	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [4,2] 2 0 0 0 [ShortSpear,SteelSword,Elixir] NeverMoveAI
+
+	UNIT Monster2 Mogall 0x0 Level(8,Enemy,1) [8,16] 0 0 0 0 [EvilEye] DefaultAI
+	UNIT Monster2 Mogall 0x0 Level(8,Enemy,1) [9,17] 0 0 0 0 [EvilEye] DefaultAI
+	UNIT Monster2 Mogall 0x0 Level(9,Enemy,1) [12,6] 0 0 0 0 [EvilEye] AttackInRangeAI
+	UNIT Monster2 Mogall 0x0 Level(9,Enemy,1) [12,12] 0 0 0 0 [EvilEye] AttackInRangeAI
+	UNIT Monster2 Mogall 0x0 Level(9,Enemy,1) [5,5] 0 0 0 0 [EvilEye] AttackInRangeAI
+
+	UNIT Monster2 Bael 0x0 Level(8,Enemy,1) [2,17] 0 0 0 0 [RottenClaw] DelayedDefaultAI
+	UNIT Monster2 Bael 0x0 Level(8,Enemy,1) [3,17] 0 0 0 0 [PoisonClaw] DelayedDefaultAI
+	UNIT Monster2 Bael 0x0 Level(8,Enemy,1) [0,9] 0 0 0 0 [RottenClaw] DelayedDefaultAI
+	UNIT Monster2 Bael 0x0 Level(8,Enemy,1) [0,3] 0 0 0 0 [FetidClaw] DelayedDefaultAI
+
+	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [22,3] 0 0 0 0 [FetidClaw] AttackInRangeAI
+	UNIT Monster2 Revenant 0x0 Level(8,Enemy,1) [21,4] 0 0 0 0 [PoisonClaw] AttackInRangeAI
+	UNIT Monster2 Entombed 0x0 Level(1,Enemy,1) [24,5] 0 0 0 0 [SharpClaw] AttackInRangeAI
+
+	UNIT Monster2 Entombed 0x0 Level(1,Enemy,1) [10,9] 0 0 0 0 [FetidClaw] AttackInRangeAI
+	UNIT Monster2 Revenant 0x0 Level(8,Enemy,1) [13,8] 0 0 0 0 [SharpClaw] AttackInRangeAI
+	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [13,10] 0 0 0 0 [PoisonClaw] AttackInRangeAI
+	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [8,8] 0 0 0 0 [IronBow] AttackInRangeAI
+
+	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [18,9] 0 0 0 0 [SteelSword,Javelin] AttackInRangeAI
+	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [19,8] 0 0 0 0 [HeavySpear] AttackInRangeAI
+	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [16,6] 0 0 0 0 [SilverLance,SteelSword] AttackInRangeAI
+
+	UNIT Monster2 Bael 0x0 Level(8,Enemy,1) [17,2] 0 0 0 0 [RottenClaw] AttackInRangeAI
+
+	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [2,14] 0 0 0 0 [SharpClaw] AttackInRangeAI
+
+	UNIT
+
+NewUnits:
+
+	UNIT Otaku Mercenary 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA16R1 [IronBlade,SteelSword,Vulnerary] NoAI
+	UNIT Gohard Knight 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA17R1 [SteelAxe,HandAxe,Fiendcleaver,Elixir] NoAI
+
+	UNIT
+
+WaterDrains:
+	FADI 16
+	SOUN 0xBD // Water down sfx
+	TILEREVERSE 5
+	TILEREVERSE 6
+	TILEREVERSE 7
+	TILEREVERSE 8
+	STAL 30
+	FADU 16
+	NoFade
+	ENDA
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	TILECHANGE 5
+	TILECHANGE 6
+	TILECHANGE 7
+	TILECHANGE 8
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 7
+	NoFade
+	ENDA

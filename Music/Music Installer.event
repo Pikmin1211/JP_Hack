@@ -36,3 +36,21 @@ SongTable(MrBearSong,MrBear,1)
 
 SongTable(DesertedChateauSong,DesertedChateau,1)
 #include "S Files/DesertedChateau.event"
+
+SongTable(AttackShiningForceSong,AttackShiningForce,1)
+#include "S Files/AttackShiningForce.event"
+
+SongTable(Battle1ElonaSong,Battle1Elona,1)
+#include "S Files/Battle1Elona.event"
+
+SongTable(BlasterMasterStage1Song,BlasterMasterStage1,1)
+#include "S Files/BlasterMasterStage1.event"
+
+SongTable(Pikmin2BossSong,Pikmin2Boss,1)
+#include "S Files/Pikmin2Boss.event"
+
+SongTable(ShopPrepSong,ShopPrep,1)
+#include "S Files/ShopPrep.event"
+
+SongTable(DarkLabyrinthSong,DarkLabyrinth,1)
+#include "S Files/DarkLabyrinth.event"

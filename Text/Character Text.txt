@@ -73,7 +73,7 @@ Arden[X]
 Placeholder[X]
 
 ## KekhName
-Kek'h[X]
+K'ekh[X]
 
 ## KekhDescription
 Placeholder[X]
@@ -172,4 +172,16 @@ Placeholder[X]
 Basement[X]
 
 ## BasementDescription
+Placeholder[X]
+
+## OtakuName
+Otaku[X]
+
+## OtakuDescription
+Placeholder[X]
+
+## GohardName
+Gohard[X]
+
+## GohardDescription
 Placeholder[X]

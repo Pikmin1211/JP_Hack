@@ -1,0 +1,9 @@
+#define MouthX 3
+#define MouthY 4
+#define EyeX 3
+#define EyeY 2
+
+ALIGN 16
+UnitMugData:
+#incext PortraitFormatter "Mug/UnitMug.png"
+setMugEntry(UnitMugID, UnitMugData, MouthX, MouthY, EyeX, EyeY)

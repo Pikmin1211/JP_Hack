@@ -35,8 +35,8 @@
 #define MagGrowth 55
 #define SklGrowth 55
 #define SpdGrowth 60
-#define DefGrowth 20
-#define ResGrowth 15
+#define DefGrowth 10
+#define ResGrowth 5
 #define LukGrowth 55
 
 //Character Abilities

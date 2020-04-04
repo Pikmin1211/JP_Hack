@@ -5,19 +5,19 @@
 #define UnitMinimug 0x0
 #define UnitAffinity AffIce
 #define UnitPriority 0x0
-#define PersonalSkill FieryBlood
+#define PersonalSkill FieryBloodID
 
 //Stats
-#define UnitLevel 10
+#define UnitLevel 9
 #define BaseHP 12
 #define BaseStr 7
 #define BaseMag 6
 #define BaseSkl 1
-#define BaseSpd 0
-#define BaseDef 2
-#define BaseRes 3
+#define BaseSpd 1
+#define BaseDef 4
+#define BaseRes 4
 #define BaseLuk 0
-#define BaseCon 0
+#define BaseCon 1
 
 //Base Weapon Ranks
 #define BaseSwordRank CRank
@@ -25,7 +25,7 @@
 #define BaseAxeRank 0
 #define BaseBowRank 0
 #define BaseStaffRank 0
-#define BaseAnimaRank ARank
+#define BaseAnimaRank CRank
 #define BaseLightRank 0
 #define BaseDarkRank 0
 

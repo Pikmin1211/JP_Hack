@@ -1,0 +1,2 @@
+#define Transporter 0x80//ClassID here
+#define TransporterClassCard 0xAD//MugID here

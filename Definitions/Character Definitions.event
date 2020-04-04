@@ -98,6 +98,20 @@
 #define BrianPalette2 0x2E//PaletteID here
 #define BrianPalette3 0x2F//PaletteID here
 
+#define Otaku 0x10//UnitID here
+#define OtakuClass Mercenary//ClassID here
+#define OtakuMug 0x18//MugID here
+#define OtakuPalette1 0x35//PaletteID here
+#define OtakuPalette2 0x36//PaletteID here
+#define OtakuPalette3 0x37//PaletteID here
+
+#define Gohard 0x11//UnitID here
+#define GohardClass Knight//ClassID here
+#define GohardMug 0x19//MugID here
+#define GohardPalette1 0x38//PaletteID here
+#define GohardPalette2 0x39//PaletteID here
+#define GohardPalette3 0x3A//PaletteID here
+
 // Boss
 
 #define Batta 0x60//UnitID here
@@ -142,6 +156,13 @@
 #define TodorokiPalette2 0x0//PaletteID here
 #define TodorokiPalette3 0x0//PaletteID here
 
+#define Novala 0x66//UnitID here
+#define NovalaClass Shaman//ClassID here
+#define NovalaMug 0x17//MugID here
+#define NovalaPalette1 0x34//PaletteID here
+#define NovalaPalette2 0x0//PaletteID here
+#define NovalaPalette3 0x0//PaletteID here
+
 // Generic + NPC
 
 #define BattaBeast 0x80//UnitID here
@@ -182,3 +203,16 @@
 #define Basement2 0x8A//UnitID here
 
 #define Imperial2 0x8B//UnitID here
+
+#define Wagon 0x8C//UnitID here
+#define WagonName 0x305//TextID here
+#define WagonDescription 0x351//TextID here
+#define WagonFaction 0x2//MinimugID here
+
+#define Wagon2 0x8D//UnitID here
+
+#define BattaBeast2 0x8E//UnitID here
+
+#define MonsterBoss 0x8F//UnitID here
+
+#define Monster2 0x90//UnitID here

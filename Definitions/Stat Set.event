@@ -1,9 +1,14 @@
 // Move
 SetClassMove(Knight,5)
+SetClassMove(General,6)
 SetClassMove(Troubadour,7)
 SetClassMove(MageKnight,8)
 SetClassMove(MageKnightF,8)
 SetClassMove(Valkyrie,8)
+
+SetClassSpd(Mercenary,7)
+SetClassSpd(WyvernRider,4)
+SetClassDef(WyvernRider,6)
 
 // Killing Trainee Palettes
 setCBSP(0x00, Ross, 0x00, 0x00)
@@ -35,6 +40,12 @@ SetItemAbility3(Rapier,0x0)
 SetItemRank(Rapier,CRank)
 SetItemDurability(Rapier,25)
 SetItemMt(Rapier,6)
+
+SetItemRank(Rescue,CRank)
+SetItemDurability(Rescue,15)
+SetItemValue(Rescue,120)
+
+SetItemDurability(ChestKey_5,3)
 
 // Lower throne avoid
 PUSH
