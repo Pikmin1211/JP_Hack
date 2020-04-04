@@ -3,7 +3,7 @@
 #define UnitDescription UnitDescriptionLocation
 #define UnitMug 0x0
 #define UnitMinimug UnitFaction
-#define UnitAffinity 0x0
+#define UnitAffinity AffDark
 #define UnitPriority 0x0
 #define PersonalSkill VoidCurseID
 
