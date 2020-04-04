@@ -3,7 +3,7 @@
 #define UnitDescription UnitDescriptionLocation
 #define UnitMug UnitMugID
 #define UnitMinimug 0x0
-#define UnitAffinity AffDark
+#define UnitAffinity AffIce
 #define UnitPriority 0x0
 #define PersonalSkill PowerstaffID
 
@@ -16,7 +16,7 @@
 #define BaseSpd 4
 #define BaseDef 2
 #define BaseRes 1
-#define BaseLuk 8
+#define BaseLuk 10
 #define BaseCon 1
 
 //Base Weapon Ranks
