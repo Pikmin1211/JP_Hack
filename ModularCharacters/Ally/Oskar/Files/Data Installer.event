@@ -30,14 +30,14 @@
 #define BaseDarkRank 0
 
 //Growth Rates
-#define HPGrowth 85
-#define StrGrowth 65
+#define HPGrowth 90
+#define StrGrowth 75
 #define MagGrowth 5
-#define SklGrowth 55
+#define SklGrowth 45
 #define SpdGrowth 20
-#define DefGrowth 40
+#define DefGrowth 30
 #define ResGrowth 10
-#define LukGrowth 30
+#define LukGrowth 50
 
 //Character Abilities
 #define CharacterAbilityOne 0x0
