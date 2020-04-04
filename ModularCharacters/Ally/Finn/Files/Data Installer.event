@@ -9,8 +9,8 @@
 
 //Stats
 #define UnitLevel 3
-#define BaseHP 5
-#define BaseStr 2
+#define BaseHP 6
+#define BaseStr 3
 #define BaseMag 2
 #define BaseSkl 3
 #define BaseSpd 0
@@ -31,12 +31,12 @@
 
 //Growth Rates
 #define HPGrowth 80
-#define StrGrowth 55
+#define StrGrowth 60
 #define MagGrowth 15
 #define SklGrowth 55
-#define SpdGrowth 25
-#define DefGrowth 45
-#define ResGrowth 15
+#define SpdGrowth 30
+#define DefGrowth 35
+#define ResGrowth 30
 #define LukGrowth 25
 
 //Character Abilities
