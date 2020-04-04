@@ -3,7 +3,7 @@
 #define UnitDescription UnitDescriptionLocation
 #define UnitMug UnitMugID
 #define UnitMinimug 0x0
-#define UnitAffinity AffLight
+#define UnitAffinity AffIce
 #define UnitPriority 0x0
 #define PersonalSkill ChivalryID
 
