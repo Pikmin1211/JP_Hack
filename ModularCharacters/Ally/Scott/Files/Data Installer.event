@@ -3,7 +3,7 @@
 #define UnitDescription UnitDescriptionLocation
 #define UnitMug UnitMugID
 #define UnitMinimug 0x0
-#define UnitAffinity AffIce
+#define UnitAffinity AffWind
 #define UnitPriority 0x0
 #define PersonalSkill InspirationID
 
@@ -30,14 +30,14 @@
 #define BaseDarkRank 0
 
 //Growth Rates
-#define HPGrowth 70
+#define HPGrowth 75
 #define StrGrowth 35
-#define MagGrowth 20
-#define SklGrowth 60
-#define SpdGrowth 45
-#define DefGrowth 25
-#define ResGrowth 20
-#define LukGrowth 45
+#define MagGrowth 25
+#define SklGrowth 55
+#define SpdGrowth 60
+#define DefGrowth 20
+#define ResGrowth 30
+#define LukGrowth 30
 
 //Character Abilities
 #define CharacterAbilityOne 0x0
