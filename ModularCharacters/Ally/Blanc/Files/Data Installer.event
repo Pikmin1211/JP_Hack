@@ -31,13 +31,13 @@
 
 //Growth Rates
 #define HPGrowth 70
-#define StrGrowth 45
+#define StrGrowth 40
 #define MagGrowth 25
-#define SklGrowth 50
-#define SpdGrowth 45
-#define DefGrowth 25
+#define SklGrowth 55
+#define SpdGrowth 50
+#define DefGrowth 20
 #define ResGrowth 20
-#define LukGrowth 45
+#define LukGrowth 60
 
 //Character Abilities
 #define CharacterAbilityOne 0x0
