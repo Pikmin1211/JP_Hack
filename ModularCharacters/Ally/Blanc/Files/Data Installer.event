@@ -3,21 +3,21 @@
 #define UnitDescription UnitDescriptionLocation
 #define UnitMug UnitMugID
 #define UnitMinimug 0x0
-#define UnitAffinity AffThunder
+#define UnitAffinity AffIce
 #define UnitPriority 0x0
 #define PersonalSkill WrathID
 
 //Stats
 #define UnitLevel 2
-#define BaseHP 4
-#define BaseStr 3
-#define BaseMag 2
-#define BaseSkl 4
-#define BaseSpd 4
-#define BaseDef 0
-#define BaseRes 2
+#define BaseHP 5
+#define BaseStr 4
+#define BaseMag 1
+#define BaseSkl 3
+#define BaseSpd 3
+#define BaseDef 1
+#define BaseRes 1
 #define BaseLuk 6
-#define BaseCon 0
+#define BaseCon 1
 
 //Base Weapon Ranks
 #define BaseSwordRank 0
@@ -35,8 +35,8 @@
 #define MagGrowth 25
 #define SklGrowth 55
 #define SpdGrowth 50
-#define DefGrowth 15
-#define ResGrowth 10
+#define DefGrowth 20
+#define ResGrowth 20
 #define LukGrowth 60
 
 //Character Abilities
