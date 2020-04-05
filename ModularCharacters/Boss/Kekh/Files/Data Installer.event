@@ -3,7 +3,7 @@
 #define UnitDescription UnitDescriptionLocation
 #define UnitMug UnitMugID
 #define UnitMinimug 0x0
-#define UnitAffinity AffThunder
+#define UnitAffinity AffFire
 #define UnitPriority 0x0
 #define PersonalSkill 0x0
 
@@ -13,7 +13,7 @@
 #define BaseStr 5
 #define BaseMag 0
 #define BaseSkl 3
-#define BaseSpd 0
+#define BaseSpd 2
 #define BaseDef 3
 #define BaseRes 4
 #define BaseLuk 5
