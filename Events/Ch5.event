@@ -305,9 +305,9 @@ MidHouseCivs:
 
 BottomCavs:
 
-	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA6R19 [SteelSword] DefaultAI
+	UNIT BattaBeast2 AxeKnight 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA6R19 [SteelAxe] DefaultAI
 	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA7R19 [HeavySpear,SlimSword] DefaultAI
-	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA5R19 [IronLance,Javelin] DefaultAI
+	UNIT BattaBeast2 LanceKnight 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA5R19 [IronLance,Javelin] DefaultAI
 
 	UNIT
 
@@ -329,7 +329,7 @@ LeftPathUnits:
 
 TopLeftUnits:
 
-	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [0,2] 0 0 1 REDA0R1 [IronBlade,LightBrand] DefaultAI
+	UNIT BattaBeast2 FreeKnight 0x0 Level(7,Enemy,1) [0,2] 0 0 1 REDA0R1 [IronBlade,LightBrand] DefaultAI
 	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [0,2] 0 0 1 REDA1R2 [SteelLance] DefaultAI
 	UNIT BattaBeast2 Soldier 0x0 Level(8,Enemy,1) [0,2] 0 0 1 REDA0R3 [ShortSpear] DefaultAI
 	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [0,2] 0 0 1 REDA0R2 [IronBow] DefaultAI

@@ -1,4 +1,4 @@
-#define BaseClass 0x0
+#define BaseClass Cavalier
 #define PromotedClass1 0x0
 #define PromotedClass2 0x0
 

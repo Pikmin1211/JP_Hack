@@ -9,15 +9,15 @@
 
 //Stats
 #define UnitLevel 2
-#define BaseHP 4
-#define BaseStr 3
-#define BaseMag 2
-#define BaseSkl 4
-#define BaseSpd 4
-#define BaseDef 0
-#define BaseRes 2
+#define BaseHP 5
+#define BaseStr 4
+#define BaseMag 1
+#define BaseSkl 3
+#define BaseSpd 3
+#define BaseDef 1
+#define BaseRes 1
 #define BaseLuk 6
-#define BaseCon 0
+#define BaseCon 1
 
 //Base Weapon Ranks
 #define BaseSwordRank 0

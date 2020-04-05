@@ -1,2 +1,37 @@
+#define SandersSwordAnim EirikaSwordAnim
+#define SandersUnarmedAnim EirikaUnarmedAnim
+
 #define Transporter 0x80//ClassID here
-#define TransporterClassCard 0xAD//MugID here
+#define TransporterClassCard 0x100//MugID here
+
+#define AxeArmor KnightF//ClassID here
+#define AxeArmorAxeAnim KnightFLanceAnim//AnimationID here
+#define AxeArmorHandaxeAnim KnightFUnarmedAnim//AnimationID here
+#define AxeArmorClassCard 0x101//MugID here
+
+#define LanceArmor Knight
+#define LanceArmorSwordAnim 0xCA
+
+#define LanceKnight 0x81//ClassID here
+#define LanceKnightClassCard CavalierClassCard//MugID here
+
+#define AxeKnight 0x82
+#define AxeKnightClassCard 0x102
+#define AxeKnightAxeAnim 0xCB
+#define AxeKnightHandaxeAnim 0xCC
+
+#define FreeKnight 0x83
+#define FreeKnightClassCard 0x103
+
+#define RengeStaffAnim 0xCC
+#define RengeUnarmedAnim 0xCD
+#define WrysStaffAnim 0xCE
+#define WrysUnarmedAnim 0xCF
+
+#define FighterF 0x84//ClassID here
+#define FighterFAxeAnim 0xD0//AnimationID here
+#define FighterFHandaxeAnim 0xD1//AnimationID here
+#define FighterFUnarmedAnim 0xD2//AnimationID here
+#define FighterFClassCard 0x104//MugID here
+#define FighterFName 0x2DC//TextID here
+#define FighterFDescription 0x327//TextID here

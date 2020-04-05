@@ -338,20 +338,132 @@ __TEXTPROCESSD9D:
 setText($D9D, __TEXTPROCESSD9D)
 
 __TEXTPROCESSD9E:
-#incbin ".TextEntries\text_buildfileAdeptManualName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAxeArmorName.fetxt.dmp"
 setText($D9E, __TEXTPROCESSD9E)
 
 __TEXTPROCESSD9F:
-#incbin ".TextEntries\text_buildfileAdeptManualUseText.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileAxeArmorDescription.fetxt.dmp"
 setText($D9F, __TEXTPROCESSD9F)
 
 __TEXTPROCESSDA0:
-#incbin ".TextEntries\text_buildfileSpeedRingName.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileLanceArmorName.fetxt.dmp"
 setText($DA0, __TEXTPROCESSDA0)
 
 __TEXTPROCESSDA1:
-#incbin ".TextEntries\text_buildfileSpeedRingDescription.fetxt.dmp"
+#incbin ".TextEntries\text_buildfileLanceArmorDescription.fetxt.dmp"
 setText($DA1, __TEXTPROCESSDA1)
+
+__TEXTPROCESSDA2:
+#incbin ".TextEntries\text_buildfileLanceKnightName.fetxt.dmp"
+setText($DA2, __TEXTPROCESSDA2)
+
+__TEXTPROCESSDA3:
+#incbin ".TextEntries\text_buildfileLanceKnightDescription.fetxt.dmp"
+setText($DA3, __TEXTPROCESSDA3)
+
+__TEXTPROCESSDA4:
+#incbin ".TextEntries\text_buildfileAxeKnightName.fetxt.dmp"
+setText($DA4, __TEXTPROCESSDA4)
+
+__TEXTPROCESSDA5:
+#incbin ".TextEntries\text_buildfileAxeKnightDescription.fetxt.dmp"
+setText($DA5, __TEXTPROCESSDA5)
+
+__TEXTPROCESSDA6:
+#incbin ".TextEntries\text_buildfileFreeKnightName.fetxt.dmp"
+setText($DA6, __TEXTPROCESSDA6)
+
+__TEXTPROCESSDA7:
+#incbin ".TextEntries\text_buildfileFreeKnightDescription.fetxt.dmp"
+setText($DA7, __TEXTPROCESSDA7)
+
+__TEXTPROCESSDA8:
+#incbin ".TextEntries\text_buildfileAdeptManualName.fetxt.dmp"
+setText($DA8, __TEXTPROCESSDA8)
+
+__TEXTPROCESSDA9:
+#incbin ".TextEntries\text_buildfileAdeptManualUseText.fetxt.dmp"
+setText($DA9, __TEXTPROCESSDA9)
+
+__TEXTPROCESSDAA:
+#incbin ".TextEntries\text_buildfileSpeedRingName.fetxt.dmp"
+setText($DAA, __TEXTPROCESSDAA)
+
+__TEXTPROCESSDAB:
+#incbin ".TextEntries\text_buildfileSpeedRingDescription.fetxt.dmp"
+setText($DAB, __TEXTPROCESSDAB)
+
+__TEXTPROCESSDAC:
+#incbin ".TextEntries\text_buildfileKnightErrandName.fetxt.dmp"
+setText($DAC, __TEXTPROCESSDAC)
+
+__TEXTPROCESSDAD:
+#incbin ".TextEntries\text_buildfileE1M1Name.fetxt.dmp"
+setText($DAD, __TEXTPROCESSDAD)
+
+__TEXTPROCESSDAE:
+#incbin ".TextEntries\text_buildfileTaisen4Name.fetxt.dmp"
+setText($DAE, __TEXTPROCESSDAE)
+
+__TEXTPROCESSDAF:
+#incbin ".TextEntries\text_buildfileSplashName.fetxt.dmp"
+setText($DAF, __TEXTPROCESSDAF)
+
+__TEXTPROCESSDB0:
+#incbin ".TextEntries\text_buildfileSkyEventName.fetxt.dmp"
+setText($DB0, __TEXTPROCESSDB0)
+
+__TEXTPROCESSDB1:
+#incbin ".TextEntries\text_buildfileEldiganTheLionheartName.fetxt.dmp"
+setText($DB1, __TEXTPROCESSDB1)
+
+__TEXTPROCESSDB2:
+#incbin ".TextEntries\text_buildfileRedialName.fetxt.dmp"
+setText($DB2, __TEXTPROCESSDB2)
+
+__TEXTPROCESSDB3:
+#incbin ".TextEntries\text_buildfileTrialName.fetxt.dmp"
+setText($DB3, __TEXTPROCESSDB3)
+
+__TEXTPROCESSDB4:
+#incbin ".TextEntries\text_buildfileCapOnNappersName.fetxt.dmp"
+setText($DB4, __TEXTPROCESSDB4)
+
+__TEXTPROCESSDB5:
+#incbin ".TextEntries\text_buildfileFranticFactoryName.fetxt.dmp"
+setText($DB5, __TEXTPROCESSDB5)
+
+__TEXTPROCESSDB6:
+#incbin ".TextEntries\text_buildfileMrBearName.fetxt.dmp"
+setText($DB6, __TEXTPROCESSDB6)
+
+__TEXTPROCESSDB7:
+#incbin ".TextEntries\text_buildfileDesertedChateauName.fetxt.dmp"
+setText($DB7, __TEXTPROCESSDB7)
+
+__TEXTPROCESSDB8:
+#incbin ".TextEntries\text_buildfileAttackShiningForceName.fetxt.dmp"
+setText($DB8, __TEXTPROCESSDB8)
+
+__TEXTPROCESSDB9:
+#incbin ".TextEntries\text_buildfileBattle1ElonaName.fetxt.dmp"
+setText($DB9, __TEXTPROCESSDB9)
+
+__TEXTPROCESSDBA:
+#incbin ".TextEntries\text_buildfileBlasterMasterStage1Name.fetxt.dmp"
+setText($DBA, __TEXTPROCESSDBA)
+
+__TEXTPROCESSDBB:
+#incbin ".TextEntries\text_buildfilePikmin2BossName.fetxt.dmp"
+setText($DBB, __TEXTPROCESSDBB)
+
+__TEXTPROCESSDBC:
+#incbin ".TextEntries\text_buildfileShopPrepName.fetxt.dmp"
+setText($DBC, __TEXTPROCESSDBC)
+
+__TEXTPROCESSDBD:
+#incbin ".TextEntries\text_buildfileDarkLabyrinthName.fetxt.dmp"
+setText($DBD, __TEXTPROCESSDBD)
 
 }
 

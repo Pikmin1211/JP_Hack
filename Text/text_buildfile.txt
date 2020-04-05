@@ -18,3 +18,5 @@ Skill learned.[X]
 #include "Class Text.txt"
 
 #include "Item Text.txt"
+
+#include "Song Text.txt"

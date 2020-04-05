@@ -19,3 +19,7 @@ POP
 #include "SkillScrolls/SkillScrolls.event"
 
 #include "ChapterAI/ChapterAI.event"
+
+#include "SoundRoom/SoundRoom Installer.event"
+
+#include "Character Specific Animations/Installer.event"

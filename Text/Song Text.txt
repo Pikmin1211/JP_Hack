@@ -1,0 +1,53 @@
+## KnightErrandName
+Knight Errand[X]
+
+## E1M1Name
+At Doom's Gate[X]
+
+## Taisen4Name
+Taisen 4[X]
+
+## SplashName
+Splash[X]
+
+## SkyEventName
+Sky Event[X]
+
+## EldiganTheLionheartName
+Eldigan the Lionheart[X]
+
+## RedialName
+Redial[X]
+
+## TrialName
+Trial[X]
+
+## CapOnNappersName
+Cap on Nappers[X]
+
+## FranticFactoryName
+Frantic Factory[X]
+
+## MrBearName
+Mr. Bear[X]
+
+## DesertedChateauName
+Deserted Chateau[X]
+
+## AttackShiningForceName
+Attack (Shining Force)[X]
+
+## Battle1ElonaName
+Battle 1 (Elona)[X]
+
+## BlasterMasterStage1Name
+Stage 1 (Blaster Master)[X]
+
+## Pikmin2BossName
+Boss (Pikmin 2)[X]
+
+## ShopPrepName
+Shop / Prep (Langrisser 2)[X]
+
+## DarkLabyrinthName
+Dark Labyrinth[X]

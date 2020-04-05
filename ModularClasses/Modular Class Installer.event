@@ -1,1 +1,11 @@
 #include "Transporter/Transporter Installer.event"
+
+#include "Axe Armor/Axe Armor Installer.event"
+
+#include "Lance Knight/Lance Knight Installer.event"
+
+#include "Axe Knight/Axe Knight Installer.event"
+
+#include "Free Knight/Free Knight Installer.event"
+
+#include "Fighter F/Fighter F Installer.event"

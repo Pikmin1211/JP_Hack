@@ -1,0 +1,53 @@
+#define SoundRoomEntry(songid,length,name) "WORD songid length 0 name"
+#define SoundRoomTerminator "WORD 0xFFFFFFFF 0 0 0"
+
+ALIGN 4
+NewSoundRoom:
+#incbin "SoundRoomVanilla.bin"
+
+// new entries here
+SoundRoomEntry(KnightErrandSong,1,KnightErrandName)
+SoundRoomEntry(E1M1Song,1,E1M1Name)
+SoundRoomEntry(Taisen4Song,1,Taisen4Name)
+SoundRoomEntry(SplashSong,1,SplashName)
+SoundRoomEntry(SkyEventSong,1,SkyEventName)
+SoundRoomEntry(EldiganTheLionheartSong,1,EldiganTheLionheartName)
+SoundRoomEntry(RedialSong,1,RedialName)
+SoundRoomEntry(TrialSong,1,TrialName)
+SoundRoomEntry(CapOnNappersSong,1,CapOnNappersName)
+SoundRoomEntry(FranticFactorySong,1,FranticFactoryName)
+SoundRoomEntry(MrBearSong,1,MrBearName)
+SoundRoomEntry(DesertedChateauSong,1,DesertedChateauName)
+SoundRoomEntry(AttackShiningForceSong,1,AttackShiningForceName)
+SoundRoomEntry(Battle1ElonaSong,1,Battle1ElonaName)
+SoundRoomEntry(BlasterMasterStage1Song,1,BlasterMasterStage1Name)
+SoundRoomEntry(Pikmin2BossSong,1,Pikmin2BossName)
+SoundRoomEntry(ShopPrepSong,1,ShopPrepName)
+SoundRoomEntry(DarkLabyrinthSong,1,DarkLabyrinthName)
+
+SoundRoomTerminator
+
+PUSH
+ORG 0x1BC14   
+POIN NewSoundRoom
+ORG 0x1BCC4
+POIN NewSoundRoom
+ORG 0xAECA8
+POIN NewSoundRoom
+ORG 0xAECD0
+POIN NewSoundRoom
+ORG 0xAED2C
+POIN NewSoundRoom
+ORG 0xAEEBC
+POIN NewSoundRoom
+ORG 0xAF438
+POIN NewSoundRoom
+ORG 0xAF830
+POIN NewSoundRoom
+ORG 0xAFE30
+POIN NewSoundRoom
+ORG 0xB0080
+POIN NewSoundRoom
+ORG 0xB042C
+POIN NewSoundRoom
+POP

@@ -10,7 +10,7 @@
 //Stats
 #define UnitLevel 1
 #define BaseHP 4
-#define BaseStr 4
+#define BaseStr 2
 #define BaseMag 2
 #define BaseSkl 0
 #define BaseSpd 1

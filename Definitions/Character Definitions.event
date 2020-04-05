@@ -8,7 +8,7 @@
 #define SandersPalette3 0x3//PaletteID here
 
 #define Finn 0x2//UnitID here
-#define FinnClass Cavalier//ClassID here
+#define FinnClass LanceKnight//ClassID here
 #define FinnMug 0x3//MugID here
 #define FinnPalette1 0x4//PaletteID here
 #define FinnPalette2 0x5//PaletteID here
@@ -43,7 +43,7 @@
 #define OskarPalette3 0x12//PaletteID here
 
 #define Blanc 0x7//UnitID here
-#define BlancClass Fighter//ClassID here
+#define BlancClass FighterF//ClassID here
 #define BlancMug 0x8//MugID here
 #define BlancPalette1 0x13//PaletteID here
 #define BlancPalette2 0x14//PaletteID here
@@ -106,7 +106,7 @@
 #define OtakuPalette3 0x37//PaletteID here
 
 #define Gohard 0x11//UnitID here
-#define GohardClass Knight//ClassID here
+#define GohardClass AxeArmor//ClassID here
 #define GohardMug 0x19//MugID here
 #define GohardPalette1 0x38//PaletteID here
 #define GohardPalette2 0x39//PaletteID here

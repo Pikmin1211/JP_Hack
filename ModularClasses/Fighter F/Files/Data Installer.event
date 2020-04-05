@@ -1,0 +1,101 @@
+//General
+#define ClassName ClassNameLocation
+#define ClassDescription ClassDescriptionLocation
+#define DefaultPromotion 0x0 //Unused, used by certain patches
+#define WalkSpeed 0
+#define ClassCard ClassCardLocation
+#define UnitSortOrder 0x0
+#define ClassRelativePower 3
+#define MovementSound 0x0
+#define ClassType 0x0 //For use with the effectiveness rework
+
+//Base Stats
+#define BaseHP 19
+#define BaseStr 4
+#define BaseMag 1
+#define BaseSkl 4
+#define BaseSpd 5
+#define BaseDef 2
+#define BaseRes 1
+#define BaseCon 10
+#define BaseMov 5
+
+//Max Stats
+#define MaxHP 60
+#define MaxStr 20
+#define MaxMag 20
+#define MaxSkl 20
+#define MaxSpd 20
+#define MaxDef 20
+#define MaxRes 20
+#define MaxCon 20
+
+//Enemy Growths
+#define HPGrowth 80
+#define StrGrowth 45
+#define MagGrowth 5
+#define SklGrowth 40
+#define SpdGrowth 35
+#define DefGrowth 12
+#define ResGrowth 20
+#define LukGrowth 15
+
+//Promotion Bonuses
+#define HPBonus 0
+#define StrBonus 0
+#define MagBonus 0
+#define SklBonus 0
+#define SpdBonus 0
+#define DefBonus 0
+#define ResBonus 0
+
+//Class Abilities
+#define ClassAbilityOne 0x0
+#define ClassAbilityTwo 0x0
+#define ClassAbilityThree 0x0
+#define ClassAbilityFour 0x0
+
+//Base Weapon Ranks
+#define BaseSwordRank 0
+#define BaseLanceRank 0
+#define BaseAxeRank DRank
+#define BaseBowRank 0
+#define BaseStaffRank 0
+#define BaseAnimaRank 0
+#define BaseLightRank 0
+#define BaseDarkRank 0
+
+//Animation
+#define BattleAnimation ClassAnim
+
+//Movement Type
+#define MoveType NormalMoveType
+#define RainMoveType NormalRainMoveType
+#define SnowMoveType NormalSnowMoveType
+#define TerrainAvoidBonus GetAvoBonus
+#define TerrainDefenseBonus GetDefBonus
+#define TerrainResistanceBonus GetResBonus
+
+//Promotion Paths
+#define PromotionOne Warrior
+#define PromotionTwo HeroF
+
+//EXP Operands
+#define EXPGainMultiplier 1
+#define EXPGainDivisor 1
+#define EXPGrantMultiplier 1
+#define EXPGrantDivisor 1
+
+PUSH
+ORG ClassTable + (ClassNumber * 0x54)
+ALIGN 4
+ClassInstaller(ClassName,ClassDescription,ClassNumber,DefaultPromotion,ClassNumber-1,WalkSpeed,ClassCard,UnitSortOrder,BaseHP,BaseStr,BaseSkl,BaseSpd,BaseDef,BaseRes,BaseCon,BaseMov,MaxHP,MaxStr,MaxSkl,MaxSpd,MaxDef,MaxRes,MaxCon,ClassRelativePower,HPGrowth,StrGrowth,SklGrowth,SpdGrowth,DefGrowth,ResGrowth,LukGrowth,HPBonus,StrBonus,SklBonus,SpdBonus,DefBonus,ResBonus,ClassAbilityOne,ClassAbilityTwo,ClassAbilityThree,ClassAbilityFour,BaseSwordRank,BaseLanceRank,BaseAxeRank,BaseBowRank,BaseStaffRank,BaseAnimaRank,BaseLightRank,BaseDarkRank,BattleAnimation|IsPointer,MoveType,RainMoveType,SnowMoveType,TerrainAvoidBonus,TerrainDefenseBonus,TerrainResistanceBonus,ClassType)
+ORG (PromotionBranchTable-2) + (ClassNumber * 2)
+BYTE PromotionOne PromotionTwo
+ORG WalkingSoundTable + ClassNumber
+BYTE MovementSound
+ORG ModularEXPClassTable + (ClassNumber * 20)
+ModularClassEXPEntry(EXPGainMultiplier,EXPGainDivisor,EXPGrantMultiplier,EXPGrantDivisor)
+ORG MagClassTable + (ClassNumber * 0x4)
+BYTE BaseMag MagGrowth MaxMag MagBonus
+POP

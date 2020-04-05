@@ -83,7 +83,7 @@ ScaryMonsters:
 NPCUnits:
 	
 	UNIT Vergil Paladin 0x0 Level(7,NPC,0) [25,16] 0 0 1 REDA22R15 [Spear,SteelBlade,SilverLance,Elixir] DefaultAI
-	UNIT Imperial2 Cavalier 0x0 Level(17,NPC,1) [25,16] 0 0 1 REDA21R15 [ShortSpear,SilverSword,Vulnerary] DefaultAI
+	UNIT Imperial2 AxeKnight 0x0 Level(17,NPC,1) [25,16] 0 0 1 REDA21R15 [ShortSpear,SilverAxe,Vulnerary] DefaultAI
 	UNIT Imperial2 Cavalier 0x0 Level(17,NPC,1) [25,16] 0 0 1 REDA23R15 [LightBrand,Axereaver,Vulnerary] DefaultAI
 	UNIT Imperial2 Troubadour 0x0 Level(13,NPC,1) [25,16] 0 0 1 REDA22R14 [Mend] DefaultAI
 
@@ -205,7 +205,7 @@ EnemyUnits:
 NewUnits:
 
 	UNIT Otaku Mercenary 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA16R1 [IronBlade,SteelSword,Vulnerary] NoAI
-	UNIT Gohard Knight 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA17R1 [SteelAxe,HandAxe,Fiendcleaver,Elixir] NoAI
+	UNIT Gohard AxeArmor 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA17R1 [SteelAxe,HandAxe,Fiendcleaver,Elixir] NoAI
 
 	UNIT
 

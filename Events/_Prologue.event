@@ -97,7 +97,7 @@ Tutorial:
 
 Units1:
 	UNIT Sanders Mercenary 0x0 Level(1,Ally,0) [3,0] 0 0 1 REDA3R3 [IronSword,Vulnerary] NoAI
-	UNIT Finn Cavalier 0x0 Level(3,Ally,0) [3,0] 0 0 1 REDA2R2 [IronLance,Javelin,Vulnerary] NoAI
+	UNIT Finn LanceKnight 0x0 Level(3,Ally,0) [3,0] 0 0 1 REDA2R2 [IronLance,Javelin,Vulnerary] NoAI
 	UNIT Scott Cavalier 0x0 Level(2,Ally,0) [3,0] 0 0 1 REDA4R2 [IronSword,IronLance] NoAI
 	UNIT Renge Cleric 0x0 Level(1,Ally,0) [3,0] 0 0 1 REDA3R1 [Heal,Vulnerary] NoAI
 	UNIT Marisa MageF 0x0 Level(2,Ally,0) [3,0] 0 0 1 REDA3R2 [Fire,Vulnerary] NoAI
@@ -105,7 +105,7 @@ Units1:
 
 VillageUnits:
 	UNIT Oskar Fighter 0x0 Level(3,Ally,0) [1,9] 0 0 1 REDA1R10 [SteelAxe,Vulnerary] NoAI
-	UNIT Blanc Fighter 0x0 Level(2,Ally,0) [1,9] 0 0 1 REDA2R10 [IronAxe,Hatchet,Vulnerary] NoAI
+	UNIT Blanc FighterF 0x0 Level(2,Ally,0) [1,9] 0 0 1 REDA2R10 [IronAxe,Hatchet,Vulnerary] NoAI
 	UNIT
 
 EnemyUnits:
@@ -143,7 +143,7 @@ StairUnits:
 
 ExtraUnits:
 	UNIT BattaBeast Cavalier 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [IronLance] DefaultAI
-	UNIT BattaBeast Cavalier 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [IronSword] DefaultAI
+	UNIT BattaBeast FreeKnight 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [IronSword] DefaultAI
 	UNIT BattaBeast Fighter 0x0 Level(2,Enemy,1) [0,12] 0 0 1 REDA0R12 [IronAxe] DefaultAI
 	UNIT BattaBeast Mercenary 0x0 Level(3,Enemy,1) [0,12] 0 0 1 REDA0R12 [SlimSword] DefaultAI
 	UNIT

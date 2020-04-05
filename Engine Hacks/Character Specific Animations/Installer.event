@@ -1,0 +1,23 @@
+//Hook with r0 for compatibility.
+#define r0_Compatibilty_jTH(offset) "BYTE 0x00 0x48 0x87 0x46; POIN (offset|0x1)"
+
+ALIGN 4
+#include "Custom Animations.event"
+
+ALIGN 4
+#include "Custom Animation Table.event"
+
+PUSH
+ORG $571E8  //FE8U
+r0_Compatibilty_jTH(IndividualAnimation7743)
+ORG $CD0E0  //FE8U
+jumpToHack(IndividualAnimation7743_CC)
+POP
+
+IndividualAnimation7743:
+#incbin "IndividualAnimation7743.dmp"
+POIN CustomAnimeTable
+
+IndividualAnimation7743_CC:
+#incbin "IndividualAnimation7743_CC.dmp"
+POIN CustomAnimeTable

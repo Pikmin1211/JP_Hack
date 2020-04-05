@@ -1,0 +1,7 @@
+ClassCardFile:
+#incext Png2Dmp "Class Cards/ClassCard.png" --lz77
+
+ClassCardPalette:
+#incext Png2Dmp "Class Cards/ClassCard.png" --palette-only
+
+setCardEntry(ClassCardLocation,ClassCardFile,ClassCardPalette)

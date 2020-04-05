@@ -155,7 +155,7 @@ EnemyUnits:
 	UNIT Kekh Mercenary 0x0 Level(5,Enemy,0) [7,1] 0 0 0 0 [IronSword,Vulnerary] DefaultAI
 
 	UNIT Imperial Cavalier 0x0 Level(2,Enemy,1) [13,12] 0 0 0 0 [IronLance] DefaultAI
-	UNIT Imperial Cavalier 0x0 Level(2,Enemy,1) [12,13] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Imperial LanceKnight 0x0 Level(2,Enemy,1) [12,13] 0 0 0 0 [IronLance] DefaultAI
 
 	UNIT Imperial Soldier 0x0 Level(2,Enemy,1) [17,2] 0 0 0 0 [SlimLance] AttackInRangeAI
 	UNIT Imperial Soldier 0x0 Level(3,Enemy,1) [18,3] 0 0 0 0 [IronLance] AttackInRangeAI
@@ -199,7 +199,7 @@ ReinforcementUnits2:
 	UNIT BattaBeast Mage 0x0 Level(3,Enemy,1) [0,5] 0 0 1 REDA0R4 [Fire] DefaultAI
 	UNIT BattaBeast Fighter 0x0 Level(3,Enemy,1) [0,5] 0 0 1 REDA0R6 [IronAxe] DefaultAI
 
-	UNIT Imperial Cavalier 0x0 Level(3,Enemy,1) [18,10] 0 0 1 REDA18R10 [IronSword] DefaultAI
+	UNIT Imperial AxeKnight 0x0 Level(3,Enemy,1) [18,10] 0 0 1 REDA18R10 [IronAxe] DefaultAI
 	UNIT Imperial Cavalier 0x0 Level(3,Enemy,1) [18,10] 0 0 1 REDA18R11 [IronLance] DefaultAI
 
 	UNIT

@@ -10,6 +10,10 @@ SetClassSpd(Mercenary,7)
 SetClassSpd(WyvernRider,4)
 SetClassDef(WyvernRider,6)
 
+SetClassName(Knight,LanceArmorName)
+SetClassDescription(Knight,LanceArmorDescription)
+SetClassSwordRank(Knight,ERank)
+
 // Killing Trainee Palettes
 setCBSP(0x00, Ross, 0x00, 0x00)
 setCBSP(0x00, Ross, 0x02, 0x00)

@@ -1,0 +1,39 @@
+#define SetClassAnim(ClassID,Animation) "PUSH; ORG ClassTable + 0x34 + (ClassID * 84); POIN Animation; POP"
+
+ALIGN 4
+{
+	#include "bin/SwordArmor Installer.event"
+}
+
+ALIGN 4
+LanceArmorAnims:
+LanceAnim(KnightLanceAnim)
+SwordAnim(LanceArmorSwordAnim)
+UnarmedAnim(KnightUnarmedAnim)
+EndAnim
+
+SetClassAnim(LanceArmor,LanceArmorAnims)
+
+ALIGN 4
+{
+	#include "bin/SandersSword Installer.event"
+	#include "bin/SandersUnarmed Installer.event"
+}
+
+ALIGN 4
+SandersAnims:
+SwordAnim(SandersSwordAnim)
+UnarmedAnim(SandersUnarmedAnim)
+EndAnim
+
+ALIGN 4
+{
+	#include "bin/TwintailClericStaff Installer.event"
+	#include "bin/TwintailClericUnarmed Installer.event"
+}
+
+ALIGN 4
+RengeAnims:
+StaffAnim(RengeStaffAnim)
+UnarmedAnim(RengeUnarmedAnim)
+EndAnim

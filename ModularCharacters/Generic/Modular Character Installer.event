@@ -13,3 +13,5 @@
 #include "Batta Beast2/Batta Beast Installer.event"
 
 #include "MonsterBoss/Monster Installer.event"
+
+#include "Monster2/Monster Installer.event"

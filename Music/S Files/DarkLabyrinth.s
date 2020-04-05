@@ -1,4543 +1,26 @@
 	.include "MPlayDef.s"
 
-	.equ	DL_grp, voicegroup000
-	.equ	DL_pri, 0
-	.equ	DL_rev, 0
-	.equ	DL_mvl, 45
-	.equ	DL_key, 0
-	.equ	DL_tbs, 1
-	.equ	DL_exg, 0
-	.equ	DL_cmp, 1
+	.equ	DarkLabyrinth_grp, voicegroup000
+	.equ	DarkLabyrinth_pri, 0
+	.equ	DarkLabyrinth_rev, 0
+	.equ	DarkLabyrinth_mvl, 45
+	.equ	DarkLabyrinth_key, 0
+	.equ	DarkLabyrinth_tbs, 1
+	.equ	DarkLabyrinth_exg, 0
+	.equ	DarkLabyrinth_cmp, 1
 
 	.section .rodata
-	.global	DL
+	.global	DarkLabyrinth
 	.align	2
 
-@**************** Track 1 (Midi-Chn.1) ****************@
+@**************** Track 1 (Midi-Chn.2) ****************@
 
-DL_1:
-	.byte	KEYSH , DL_key+0
-DL_1_B1:
+DarkLabyrinth_1:
+	.byte	KEYSH , DarkLabyrinth_key+0
 @ 000   ----------------------------------------
-	.byte	TEMPO , 120*DL_tbs/2
-	.byte		VOICE , 33
-	.byte		VOL   , 0*DL_mvl/mxv
-	.byte		PAN   , c_v-13
-	.byte		BEND  , c_v-1
-	.byte		N90   , Fs3 , v127
-	.byte	W23
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N90   , Fn3 
-	.byte	W02
-@ 001   ----------------------------------------
-	.byte	W22
-	.byte		BEND  , c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N92   , En3 
-	.byte	W04
-@ 002   ----------------------------------------
-	.byte	W20
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W03
-	.byte		        c_v-2
-	.byte		N90   , Ds3 
-	.byte	W05
-@ 003   ----------------------------------------
-	.byte	W18
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		TIE   , Dn3 
-	.byte	W07
-@ 004   ----------------------------------------
-	.byte	W17
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-@ 005   ----------------------------------------
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		EOT   
-	.byte		BEND  , c_v-4
-	.byte	W14
-	.byte		        c_v-1
-	.byte		N09   , Cs3 
-	.byte	W12
-	.byte		BEND  , c_v-1
-	.byte		N10   , Dn3 
-	.byte	W12
-	.byte		BEND  , c_v-1
-	.byte		N09   , An2 
-	.byte	W11
-	.byte		BEND  , c_v-1
-	.byte		TIE   , Dn2 
-	.byte	W11
-@ 006   ----------------------------------------
-	.byte	W13
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-@ 007   ----------------------------------------
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		EOT   
-	.byte		BEND  , c_v-5
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   , Fs3 
-	.byte	W14
-@ 008   ----------------------------------------
-	.byte	W10
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   , Fn3 
-	.byte	W15
-@ 009   ----------------------------------------
-	.byte	W08
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   , En3 
-	.byte	W17
-@ 010   ----------------------------------------
-	.byte	W07
-	.byte		BEND  , c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W02
-	.byte		        c_v-2
-	.byte		N44   , Ds3 
-	.byte	W19
-@ 011   ----------------------------------------
-	.byte	W05
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W03
-	.byte		        c_v-2
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   , Dn3 
-	.byte	W20
-@ 012   ----------------------------------------
-	.byte	W03
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W22
-@ 013   ----------------------------------------
-	.byte	W02
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W15
-	.byte		        c_v-1
-	.byte		N09   , Cs3 
-	.byte	W12
-	.byte		BEND  , c_v-1
-	.byte		N09   , Dn3 
-	.byte	W11
-	.byte		BEND  , c_v-1
-	.byte		N09   , An2 
-	.byte	W13
-	.byte		BEND  , c_v-1
-	.byte		N44   , Dn2 
-	.byte	W23
-@ 014   ----------------------------------------
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+2
-	.byte	W01
-@ 015   ----------------------------------------
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   , Cs3 
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-@ 016   ----------------------------------------
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W04
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-@ 017   ----------------------------------------
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   , Bn2 
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-@ 018   ----------------------------------------
-	.byte		        c_v-6
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-6
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-6
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-6
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-@ 019   ----------------------------------------
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-6
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-6
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-6
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   , Cs3 
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-@ 020   ----------------------------------------
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-@ 021   ----------------------------------------
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   , Dn2 
-	.byte	W24
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-@ 022   ----------------------------------------
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-@ 023   ----------------------------------------
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   , Cs3 
-	.byte	W24
-	.byte		BEND  , c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-@ 024   ----------------------------------------
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-@ 025   ----------------------------------------
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   , Dn3 
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-@ 026   ----------------------------------------
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-@ 027   ----------------------------------------
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W04
-	.byte		        c_v-1
-	.byte		N44   , En2 
-	.byte	W23
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W03
-@ 028   ----------------------------------------
-	.byte	W01
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W24
-	.byte		BEND  , c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W01
-@ 029   ----------------------------------------
-	.byte	W23
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   , Dn2 
-	.byte	W24
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W04
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W02
-@ 030   ----------------------------------------
-	.byte	W21
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W23
-	.byte		BEND  , c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-1
-	.byte		N44   
-	.byte	W04
-@ 031   ----------------------------------------
-	.byte	W20
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+3
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-3
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W02
-	.byte		        c_v-1
-	.byte		TIE   , En2 
-	.byte	W24
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-@ 032   ----------------------------------------
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-@ 033   ----------------------------------------
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-@ 034   ----------------------------------------
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		EOT   
-	.byte		BEND  , c_v+2
-	.byte	W02
-	.byte	GOTO
-	 .word	DL_1_B1
-DL_1_B2:
-	.byte	W01
-	.byte		BEND  , c_v-1
-	.byte		N92   , Fs3 , v127
-	.byte	W23
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-@ 035   ----------------------------------------
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N92   , Fn3 
-	.byte	W24
-	.byte		BEND  , c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-@ 036   ----------------------------------------
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+4
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-4
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W02
-	.byte		        c_v-1
-	.byte		N92   , En3 
-	.byte	W24
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-@ 037   ----------------------------------------
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-1
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-9
-	.byte	W01
-	.byte		        c_v-7
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W03
-	.byte		        c_v-2
-	.byte		N92   , Ds3 
-	.byte	W23
-	.byte		BEND  , c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-@ 038   ----------------------------------------
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+6
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-10
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+5
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-8
-	.byte	W01
-	.byte		        c_v-5
-	.byte	W01
-	.byte		        c_v-2
-	.byte	W01
-	.byte		        c_v+2
-	.byte	W02
-	.byte		        c_v-1
-	.byte	W12
-	.byte		        c_v-1
-	.byte	W24
-	.byte		        c_v-1
-	.byte	W24
-	.byte		        c_v-1
-	.byte	W05
-@ 039   ----------------------------------------
-	.byte	W18
-	.byte		        c_v-1
-	.byte	W12
-	.byte		        c_v-1
-	.byte	W23
-	.byte		        c_v-1
-	.byte	W24
-	.byte		        c_v-1
-	.byte	W19
-@ 040   ----------------------------------------
-	.byte	W04
-	.byte		        c_v-1
-	.byte	W24
-	.byte		        c_v-1
-	.byte	W11
-	.byte	FINE
-
-@**************** Track 2 (Midi-Chn.2) ****************@
-
-DL_2:
-	.byte	KEYSH , DL_key+0
-DL_2_B1:
-@ 000   ----------------------------------------
+	.byte	TEMPO , 120*DarkLabyrinth_tbs/2
 	.byte		VOICE , 34
-	.byte		VOL   , 41*DL_mvl/mxv
+	.byte		VOL   , 41*DarkLabyrinth_mvl/mxv
 	.byte		PAN   , c_v+12
 	.byte	W11
 	.byte		BEND  , c_v+0
@@ -4661,7 +144,8 @@ DL_2_B1:
 	.byte	W01
 	.byte		        c_v+3
 	.byte	W01
-	.byte		        c_v+5
+DarkLabyrinth_1_B1:
+	.byte		BEND  , c_v+5
 	.byte	W01
 	.byte		        c_v+7
 	.byte	W01
@@ -4683,7 +167,7 @@ DL_2_B1:
 	.byte		        c_v+3
 	.byte	W02
 	.byte		        c_v+0
-	.byte		N92   , Fn2 
+	.byte		N92   , Fn2 , v127
 	.byte	W24
 	.byte		BEND  , c_v+4
 	.byte	W01
@@ -8428,10 +3912,7 @@ DL_2_B1:
 	.byte	W01
 	.byte		        c_v+8
 	.byte	W01
-	.byte	GOTO
-	 .word	DL_2_B1
-DL_2_B2:
-	.byte		BEND  , c_v+6
+	.byte		        c_v+6
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
@@ -8451,11 +3932,11 @@ DL_2_B2:
 	.byte	W01
 	.byte		        c_v+8
 	.byte	W01
-	.byte		EOT   , En1 
+	.byte		EOT   
 	.byte		BEND  , c_v+6
 	.byte	W03
 	.byte		        c_v+0
-	.byte		N90   , Fs2 , v127
+	.byte		N90   , Fs2 
 	.byte	W23
 	.byte		BEND  , c_v+3
 	.byte	W01
@@ -8576,7 +4057,10 @@ DL_2_B2:
 	.byte	W01
 	.byte		        c_v+0
 	.byte	W01
-	.byte		        c_v+3
+	.byte	GOTO
+	 .word	DarkLabyrinth_1_B1
+DarkLabyrinth_1_B2:
+	.byte		BEND  , c_v+3
 	.byte	W01
 	.byte		        c_v+5
 	.byte	W01
@@ -8597,7 +4081,7 @@ DL_2_B2:
 	.byte		        c_v+0
 	.byte	W03
 	.byte		        c_v+0
-	.byte		N90   , Fn2 
+	.byte		N90   , Fn2 , v127
 	.byte	W24
 	.byte		BEND  , c_v+4
 	.byte	W01
@@ -9043,16 +4527,18 @@ DL_2_B2:
 	.byte		        c_v+0
 	.byte	FINE
 
-@**************** Track 3 (Midi-Chn.3) ****************@
+@**************** Track 2 (Midi-Chn.3) ****************@
 
-DL_3:
-	.byte	KEYSH , DL_key+0
-DL_3_B1:
+DarkLabyrinth_2:
+	.byte	KEYSH , DarkLabyrinth_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 70
-	.byte		VOL   , 60*DL_mvl/mxv
+	.byte		VOL   , 60*DarkLabyrinth_mvl/mxv
 	.byte		PAN   , c_v-7
-	.byte	W96
+	.byte	W92
+	.byte	W02
+DarkLabyrinth_2_B1:
+	.byte	W02
 @ 001   ----------------------------------------
 	.byte	W96
 @ 002   ----------------------------------------
@@ -9398,14 +4884,13 @@ DL_3_B1:
 @ 034   ----------------------------------------
 	.byte	W36
 	.byte		EOT   
-	.byte	W01
-	.byte	GOTO
-	 .word	DL_3_B1
-DL_3_B2:
-	.byte	W56
-	.byte	W03
+	.byte	W60
 @ 035   ----------------------------------------
-	.byte	W96
+	.byte	W36
+	.byte	GOTO
+	 .word	DarkLabyrinth_2_B1
+DarkLabyrinth_2_B2:
+	.byte	W60
 @ 036   ----------------------------------------
 	.byte	W96
 @ 037   ----------------------------------------
@@ -9419,14 +4904,13 @@ DL_3_B2:
 	.byte	W03
 	.byte	FINE
 
-@**************** Track 4 (Midi-Chn.4) ****************@
+@**************** Track 3 (Midi-Chn.4) ****************@
 
-DL_4:
-	.byte	KEYSH , DL_key+0
-DL_4_B1:
+DarkLabyrinth_3:
+	.byte	KEYSH , DarkLabyrinth_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 58
-	.byte		VOL   , 33*DL_mvl/mxv
+	.byte		VOL   , 33*DarkLabyrinth_mvl/mxv
 	.byte		PAN   , c_v+10
 	.byte		BEND  , c_v-1
 	.byte		N04   , Cs2 , v127
@@ -9452,8 +4936,9 @@ DL_4_B1:
 	.byte		N04   , Cs2 
 	.byte		N09   , Cs3 
 	.byte	W12
+DarkLabyrinth_3_B1:
 	.byte		BEND  , c_v-1
-	.byte		N04   , Bn1 
+	.byte		N04   , Bn1 , v127
 	.byte		N09   , Bn2 
 	.byte	W02
 @ 001   ----------------------------------------
@@ -10119,13 +5604,9 @@ DL_4_B1:
 	.byte	W96
 @ 034   ----------------------------------------
 	.byte	W36
-	.byte	W01
-	.byte	GOTO
-	 .word	DL_4_B1
-DL_4_B2:
-	.byte	W01
-	.byte		BEND  , c_v-1
-	.byte		N04   , Cs2 , v127
+	.byte	W02
+	.byte		        c_v-1
+	.byte		N04   , Cs2 
 	.byte		N09   , Cs3 
 	.byte	W12
 	.byte		BEND  , c_v-1
@@ -10150,8 +5631,11 @@ DL_4_B2:
 	.byte		N04   , Cs2 
 	.byte		N09   , Cs3 
 	.byte	W11
+	.byte	GOTO
+	 .word	DarkLabyrinth_3_B1
+DarkLabyrinth_3_B2:
 	.byte		BEND  , c_v-1
-	.byte		N04   , Bn1 
+	.byte		N04   , Bn1 , v127
 	.byte		N09   , Bn2 
 	.byte	W12
 	.byte		BEND  , c_v-1
@@ -10241,14 +5725,13 @@ DL_4_B2:
 	.byte	W03
 	.byte	FINE
 
-@**************** Track 5 (Midi-Chn.5) ****************@
+@**************** Track 4 (Midi-Chn.5) ****************@
 
-DL_5:
-	.byte	KEYSH , DL_key+0
-DL_5_B1:
+DarkLabyrinth_4:
+	.byte	KEYSH , DarkLabyrinth_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 54
-	.byte		VOL   , 32*DL_mvl/mxv
+	.byte		VOL   , 32*DarkLabyrinth_mvl/mxv
 	.byte		PAN   , c_v+1
 	.byte		BEND  , c_v-1
 	.byte		N09   , An3 , v127
@@ -10274,8 +5757,9 @@ DL_5_B1:
 	.byte		N09   , An3 
 	.byte		N09   , Cs4 
 	.byte	W12
+DarkLabyrinth_4_B1:
 	.byte		BEND  , c_v-1
-	.byte		N09   , Fn3 
+	.byte		N09   , Fn3 , v127
 	.byte		N09   , Bn3 
 	.byte	W02
 @ 001   ----------------------------------------
@@ -10941,13 +6425,9 @@ DL_5_B1:
 	.byte	W96
 @ 034   ----------------------------------------
 	.byte	W36
-	.byte	W01
-	.byte	GOTO
-	 .word	DL_5_B1
-DL_5_B2:
-	.byte	W01
-	.byte		BEND  , c_v-1
-	.byte		N09   , An3 , v127
+	.byte	W02
+	.byte		        c_v-1
+	.byte		N09   , An3 
 	.byte		N09   , Cs4 
 	.byte	W12
 	.byte		BEND  , c_v-1
@@ -10972,8 +6452,11 @@ DL_5_B2:
 	.byte		N09   , An3 
 	.byte		N09   , Cs4 
 	.byte	W11
+	.byte	GOTO
+	 .word	DarkLabyrinth_4_B1
+DarkLabyrinth_4_B2:
 	.byte		BEND  , c_v-1
-	.byte		N09   , Fn3 
+	.byte		N09   , Fn3 , v127
 	.byte		N09   , Bn3 
 	.byte	W12
 	.byte		BEND  , c_v-1
@@ -11063,14 +6546,13 @@ DL_5_B2:
 	.byte	W03
 	.byte	FINE
 
-@**************** Track 6 (Midi-Chn.6) ****************@
+@**************** Track 5 (Midi-Chn.6) ****************@
 
-DL_6:
-	.byte	KEYSH , DL_key+0
-DL_6_B1:
+DarkLabyrinth_5:
+	.byte	KEYSH , DarkLabyrinth_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 21
-	.byte		VOL   , 53*DL_mvl/mxv
+	.byte		VOL   , 41*DarkLabyrinth_mvl/mxv
 	.byte		PAN   , c_v-8
 	.byte		BEND  , c_v-1
 	.byte		N04   , Cs2 , v127
@@ -11096,8 +6578,9 @@ DL_6_B1:
 	.byte		N04   , Cs2 
 	.byte		N09   , Cs3 
 	.byte	W12
+DarkLabyrinth_5_B1:
 	.byte		BEND  , c_v-1
-	.byte		N04   , Bn1 
+	.byte		N04   , Bn1 , v127
 	.byte		N09   , Bn2 
 	.byte	W02
 @ 001   ----------------------------------------
@@ -11758,97 +7241,131 @@ DL_6_B1:
 	.byte		        c_v-1
 	.byte	W13
 	.byte		        c_v-1
-	.byte	W19
+	.byte	W03
+	.byte		        c_v-1
+	.byte	W11
+	.byte		        c_v-1
+	.byte	W05
 @ 033   ----------------------------------------
-	.byte	W96
+	.byte	W19
+	.byte		        c_v-1
+	.byte	W12
+	.byte		        c_v-1
+	.byte	W05
+	.byte		        c_v-1
+	.byte	W60
 @ 034   ----------------------------------------
 	.byte	W36
-	.byte	W01
-	.byte	GOTO
-	 .word	DL_6_B1
-DL_6_B2:
-	.byte	W01
-	.byte		BEND  , c_v-1
-	.byte		N09   , Cs3 , v127
+	.byte	W02
+	.byte		        c_v-1
+	.byte		N04   , Cs2 
+	.byte		N09   , Cs3 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Cs2 
+	.byte		N21   , Cs3 
 	.byte	W23
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Cs2 
+	.byte		N09   , Cs3 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Cs2 
+	.byte		N09   , Cs3 
 	.byte	W11
 @ 035   ----------------------------------------
 	.byte	W01
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Cs2 
+	.byte		N21   , Cs3 
 	.byte	W24
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Cs2 
+	.byte		N09   , Cs3 
 	.byte	W11
+	.byte	GOTO
+	 .word	DarkLabyrinth_5_B1
+DarkLabyrinth_5_B2:
 	.byte		BEND  , c_v-1
+	.byte		N04   , Bn1 , v127
 	.byte		N09   , Bn2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Bn1 
+	.byte		N21   , Bn2 
 	.byte	W24
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Bn1 
+	.byte		N09   , Bn2 
 	.byte	W11
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Bn1 
+	.byte		N09   , Bn2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Bn1 
+	.byte		N21   , Bn2 
 	.byte	W01
 @ 036   ----------------------------------------
 	.byte	W23
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Bn1 
+	.byte		N09   , Bn2 
 	.byte	W11
 	.byte		BEND  , c_v-1
+	.byte		N04   , An1 
 	.byte		N09   , An2 
 	.byte	W13
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , An1 
+	.byte		N21   , An2 
 	.byte	W23
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , An1 
+	.byte		N09   , An2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , An1 
+	.byte		N09   , An2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , An1 
+	.byte		N21   , An2 
 	.byte	W02
 @ 037   ----------------------------------------
 	.byte	W21
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , An1 
+	.byte		N09   , An2 
 	.byte	W12
 	.byte		BEND  , c_v-1
+	.byte		N04   , Gs1 
 	.byte		N09   , Gs2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Gs1 
+	.byte		N21   , Gs2 
 	.byte	W24
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Gs1 
+	.byte		N09   , Gs2 
 	.byte	W11
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Gs1 
+	.byte		N09   , Gs2 
 	.byte	W11
 	.byte		BEND  , c_v-1
-	.byte		N22   
+	.byte		N11   , Gs1 
+	.byte		N22   , Gs2 
 	.byte	W05
 @ 038   ----------------------------------------
 	.byte	W19
 	.byte		BEND  , c_v-1
-	.byte		N10   
+	.byte		N05   , Gs1 
+	.byte		N10   , Gs2 
 	.byte	W12
 	.byte		BEND  , c_v-1
+	.byte		N02   , Fs1 
 	.byte		N04   , Fs2 
 	.byte	W05
 	.byte		BEND  , c_v-1
@@ -11860,16 +7377,15 @@ DL_6_B2:
 	.byte	W03
 	.byte	FINE
 
-@**************** Track 7 (Midi-Chn.7) ****************@
+@**************** Track 6 (Midi-Chn.7) ****************@
 
-DL_7:
-	.byte	KEYSH , DL_key+0
-DL_7_B1:
+DarkLabyrinth_6:
+	.byte	KEYSH , DarkLabyrinth_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 24
-	.byte		VOL   , 43*DL_mvl/mxv
+	.byte		VOL   , 43*DarkLabyrinth_mvl/mxv
 	.byte		PAN   , c_v+10
-	.byte		VOL   , 46*DL_mvl/mxv
+	.byte		VOL   , 46*DarkLabyrinth_mvl/mxv
 	.byte		PAN   , c_v-16
 	.byte		BEND  , c_v-1
 	.byte		N04   , Cs2 , v127
@@ -11895,8 +7411,9 @@ DL_7_B1:
 	.byte		N04   , Cs2 
 	.byte		N09   , Cs3 
 	.byte	W12
+DarkLabyrinth_6_B1:
 	.byte		BEND  , c_v-1
-	.byte		N04   , Bn1 
+	.byte		N04   , Bn1 , v127
 	.byte		N09   , Bn2 
 	.byte	W02
 @ 001   ----------------------------------------
@@ -12557,98 +8074,132 @@ DL_7_B1:
 	.byte		        c_v-1
 	.byte	W13
 	.byte		        c_v-1
-	.byte	W19
+	.byte	W03
+	.byte		        c_v-1
+	.byte	W11
+	.byte		        c_v-1
+	.byte	W05
 @ 033   ----------------------------------------
-	.byte	W96
+	.byte	W19
+	.byte		        c_v-1
+	.byte	W12
+	.byte		        c_v-1
+	.byte	W05
+	.byte		        c_v-1
+	.byte	W60
 @ 034   ----------------------------------------
 	.byte	W36
-	.byte	W01
-	.byte	GOTO
-	 .word	DL_7_B1
-DL_7_B2:
-	.byte	W01
-	.byte		BEND  , c_v-1
-	.byte		N09   , Cs4 , v127
+	.byte	W02
+	.byte		        c_v-1
+	.byte		N04   , Cs2 
+	.byte		N09   , Cs3 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Cs2 
+	.byte		N21   , Cs3 
 	.byte	W23
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Cs2 
+	.byte		N09   , Cs3 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Cs2 
+	.byte		N09   , Cs3 
 	.byte	W11
 @ 035   ----------------------------------------
 	.byte	W01
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Cs2 
+	.byte		N21   , Cs3 
 	.byte	W24
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Cs2 
+	.byte		N09   , Cs3 
 	.byte	W11
+	.byte	GOTO
+	 .word	DarkLabyrinth_6_B1
+DarkLabyrinth_6_B2:
 	.byte		BEND  , c_v-1
-	.byte		N09   , Gs3 
+	.byte		N04   , Bn1 , v127
+	.byte		N09   , Bn2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Bn1 
+	.byte		N21   , Bn2 
 	.byte	W24
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Bn1 
+	.byte		N09   , Bn2 
 	.byte	W11
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Bn1 
+	.byte		N09   , Bn2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Bn1 
+	.byte		N21   , Bn2 
 	.byte	W01
 @ 036   ----------------------------------------
 	.byte	W23
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Bn1 
+	.byte		N09   , Bn2 
 	.byte	W11
 	.byte		BEND  , c_v-1
-	.byte		N09   , Fs3 
+	.byte		N04   , An1 
+	.byte		N09   , An2 
 	.byte	W13
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , An1 
+	.byte		N21   , An2 
 	.byte	W23
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , An1 
+	.byte		N09   , An2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , An1 
+	.byte		N09   , An2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , An1 
+	.byte		N21   , An2 
 	.byte	W02
 @ 037   ----------------------------------------
 	.byte	W21
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , An1 
+	.byte		N09   , An2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Gs1 
+	.byte		N09   , Gs2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N21   
+	.byte		N10   , Gs1 
+	.byte		N21   , Gs2 
 	.byte	W24
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Gs1 
+	.byte		N09   , Gs2 
 	.byte	W11
 	.byte		BEND  , c_v-1
-	.byte		N09   
+	.byte		N04   , Gs1 
+	.byte		N09   , Gs2 
 	.byte	W11
 	.byte		BEND  , c_v-1
-	.byte		N22   
+	.byte		N11   , Gs1 
+	.byte		N22   , Gs2 
 	.byte	W05
 @ 038   ----------------------------------------
 	.byte	W19
 	.byte		BEND  , c_v-1
-	.byte		N10   
+	.byte		N05   , Gs1 
+	.byte		N10   , Gs2 
 	.byte	W12
 	.byte		BEND  , c_v-1
-	.byte		N04   
+	.byte		N02   , Fs1 
+	.byte		N04   , Fs2 
 	.byte	W05
 	.byte		BEND  , c_v-1
 	.byte	W60
@@ -12659,15 +8210,14 @@ DL_7_B2:
 	.byte	W03
 	.byte	FINE
 
-@**************** Track 8 (Midi-Chn.8) ****************@
+@**************** Track 7 (Midi-Chn.8) ****************@
 
-DL_8:
-	.byte	KEYSH , DL_key+0
-DL_8_B1:
+DarkLabyrinth_7:
+	.byte	KEYSH , DarkLabyrinth_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 33
 	.byte		PAN   , c_v-13
-	.byte		VOL   , 52*DL_mvl/mxv
+	.byte		VOL   , 52*DarkLabyrinth_mvl/mxv
 	.byte		BEND  , c_v-1
 	.byte		N90   , Fs2 , v127
 	.byte	W23
@@ -12809,8 +8359,9 @@ DL_8_B1:
 	.byte	W01
 	.byte		        c_v-1
 	.byte	W03
-	.byte		        c_v-1
-	.byte		N90   , Fn2 
+DarkLabyrinth_7_B1:
+	.byte		BEND  , c_v-1
+	.byte		N90   , Fn2 , v127
 	.byte	W02
 @ 001   ----------------------------------------
 	.byte	W22
@@ -16572,13 +12123,9 @@ DL_8_B1:
 	.byte	W01
 	.byte		EOT   
 	.byte		BEND  , c_v+2
-	.byte	W02
-	.byte	GOTO
-	 .word	DL_8_B1
-DL_8_B2:
-	.byte	W01
-	.byte		BEND  , c_v-1
-	.byte		N92   , Fs2 , v127
+	.byte	W03
+	.byte		        c_v-1
+	.byte		N92   , Fs2 
 	.byte	W23
 	.byte		BEND  , c_v+2
 	.byte	W01
@@ -16721,8 +12268,11 @@ DL_8_B2:
 	.byte	W01
 	.byte		        c_v+2
 	.byte	W02
-	.byte		        c_v-1
-	.byte		N92   , Fn2 
+	.byte	GOTO
+	 .word	DarkLabyrinth_7_B1
+DarkLabyrinth_7_B2:
+	.byte		BEND  , c_v-1
+	.byte		N92   , Fn2 , v127
 	.byte	W24
 	.byte		BEND  , c_v+4
 	.byte	W01
@@ -17175,16 +12725,18 @@ DL_8_B2:
 	.byte	W11
 	.byte	FINE
 
-@**************** Track 9 (Midi-Chn.9) ****************@
+@**************** Track 8 (Midi-Chn.9) ****************@
 
-DL_9:
-	.byte	KEYSH , DL_key+0
-DL_9_B1:
+DarkLabyrinth_8:
+	.byte	KEYSH , DarkLabyrinth_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 70
-	.byte		VOL   , 36*DL_mvl/mxv
+	.byte		VOL   , 36*DarkLabyrinth_mvl/mxv
 	.byte		PAN   , c_v-7
-	.byte	W96
+	.byte	W92
+	.byte	W02
+DarkLabyrinth_8_B1:
+	.byte	W02
 @ 001   ----------------------------------------
 	.byte	W96
 @ 002   ----------------------------------------
@@ -17527,17 +13079,15 @@ DL_9_B1:
 @ 033   ----------------------------------------
 	.byte	W96
 @ 034   ----------------------------------------
-	.byte	W36
-	.byte	W01
-	.byte	GOTO
-	 .word	DL_9_B1
-DL_9_B2:
-	.byte	W54
-	.byte	W01
-	.byte		EOT   , En2 
+	.byte	W92
+	.byte		EOT   
 	.byte	W04
 @ 035   ----------------------------------------
-	.byte	W96
+	.byte	W36
+	.byte	GOTO
+	 .word	DarkLabyrinth_8_B1
+DarkLabyrinth_8_B2:
+	.byte	W60
 @ 036   ----------------------------------------
 	.byte	W96
 @ 037   ----------------------------------------
@@ -17554,22 +13104,21 @@ DL_9_B2:
 @******************************************************@
 	.align	2
 
-DL:
-	.byte	9	@ NumTrks
+DarkLabyrinth:
+	.byte	8	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	DL_pri	@ Priority
-	.byte	DL_rev	@ Reverb.
+	.byte	DarkLabyrinth_pri	@ Priority
+	.byte	DarkLabyrinth_rev	@ Reverb.
 
-	.word	DL_grp
+	.word	DarkLabyrinth_grp
 
-	.word	DL_1
-	.word	DL_2
-	.word	DL_3
-	.word	DL_4
-	.word	DL_5
-	.word	DL_6
-	.word	DL_7
-	.word	DL_8
-	.word	DL_9
+	.word	DarkLabyrinth_1
+	.word	DarkLabyrinth_2
+	.word	DarkLabyrinth_3
+	.word	DarkLabyrinth_4
+	.word	DarkLabyrinth_5
+	.word	DarkLabyrinth_6
+	.word	DarkLabyrinth_7
+	.word	DarkLabyrinth_8
 
 	.end
