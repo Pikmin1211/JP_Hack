@@ -30,11 +30,11 @@
 #define BaseDarkRank 0
 
 //Growth Rates
-#define HPGrowth 65
+#define HPGrowth 60
 #define StrGrowth 65
 #define MagGrowth 55
-#define SklGrowth 60
-#define SpdGrowth 55
+#define SklGrowth 55
+#define SpdGrowth 60
 #define DefGrowth 10
 #define ResGrowth 5
 #define LukGrowth 55
