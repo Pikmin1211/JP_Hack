@@ -3,7 +3,7 @@
 #define UnitDescription UnitDescriptionLocation
 #define UnitMug UnitMugID
 #define UnitMinimug 0x0
-#define UnitAffinity AffWind
+#define UnitAffinity AffIce
 #define UnitPriority 0x0
 #define PersonalSkill GaleforceID
 
@@ -30,7 +30,7 @@
 #define BaseDarkRank 0
 
 //Growth Rates
-#define HPGrowth 50
+#define HPGrowth 60
 #define StrGrowth 65
 #define MagGrowth 55
 #define SklGrowth 55
