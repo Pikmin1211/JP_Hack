@@ -33,8 +33,8 @@
 #define HPGrowth 80
 #define StrGrowth 55
 #define MagGrowth 25
-#define SklGrowth 30
-#define SpdGrowth 25
+#define SklGrowth 45
+#define SpdGrowth 30
 #define DefGrowth 30
 #define ResGrowth 15
 #define LukGrowth 30
