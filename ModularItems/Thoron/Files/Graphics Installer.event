@@ -1,0 +1,6 @@
+PUSH
+ORG WeaponIconOffset(ItemIcon)
+#incext Png2Dmp "Item Icon/ItemIcon.png"
+POP
+
+#include "Magic Animation/Thoron.event"

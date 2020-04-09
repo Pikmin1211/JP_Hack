@@ -8,4 +8,209 @@ Teaches Adept.[X]
 Speed Ring[X]
 
 ## SpeedRingDescription
-+2 speed when held.[X]
++2 Speed when held.[X]
+
+## RubySwordName
+Ruby Sword[X]
+
+## RubySwordDescription
+Doubles triangle effects.[X]
+
+## EmeraldAxeName
+Emerald Axe[X]
+
+## EmeraldAxeDescription
+Doubles triangle effects.[X]
+
+## SapphireLanceName
+Sapphire Ln.[X]
+
+## SapphireLanceDescription
+Doubles triangle effects.[X]
+
+## HuntingBowName
+Hunting Bow[X]
+
+## HuntingBowDescription
+Effective against cavalry.[X]
+
+## ShiningBowName
+Shining Bow[X]
+
+## ShiningBowDescription
+Magic weapon.[X]
+
+## AircaliburName
+Aircalibur[X]
+
+## AircaliburDescription
+Effective against fliers.[X]
+
+## ThoronName
+Thoron[X]
+
+## ThoronDescription
+ [X]
+
+## BolganoneName
+Bolganone[X]
+
+## BolganoneDescription
+ [X]
+
+## RuinName
+Ruin[X]
+
+## RuinDescription
+Improves critical hit rate.[X]
+
+## MiasmaName
+Miasma[X]
+
+## MiasmaDescription
+ [X]
+
+## JormungandrName
+Jormungandr[X]
+
+## JormungandrDescription
+Poisons the target.[X]
+
+## GreatswordName
+Greatsword[X]
+
+## GreatswordDescription
+ [X]
+
+## GreatlanceName
+Greatlance[X]
+
+## GreatlanceDescription
+ [X]
+
+## GreataxeName
+Greataxe[X]
+
+## GreataxeDescription
+ [X]
+
+## GreatbowName
+Greatbow[X]
+
+## GreatbowDescription
+ [X]
+
+## NobleRapierName
+Noble Rapier[X]
+
+## NobleRapierDescription
+Effective against infantry.[X]
+
+## LevinSwordName
+Levin Sword[X]
+
+## LevinSwordDescription
+Magic weapon.[X]
+
+## AegisManualName
+Aegis M.[X]
+
+## AegisManualUseText
+Teaches Aegis.[X]
+
+## AstraManualName
+Astra M.[X]
+
+## AstraManualUseText
+Teaches Astra.[X]
+
+## BoonManualName
+Boon M.[X]
+
+## BoonManualUseText
+Teaches Boon.[X]
+
+## CantoPlusManualName
+Canto+ M.[X]
+
+## CantoPlusManualUseText
+Teaches Canto+.[X]
+
+## LunaManualName
+Luna M.[X]
+
+## LunaManualUseText
+Teaches Luna.[X]
+
+## NihilManualName
+Nihil M.[X]
+
+## NihilManualUseText
+Teaches Nihil.[X]
+
+## NullifyManualName
+Nullify M.[X]
+
+## NullifyManualUseText
+Teaches Nullify.[X]
+
+## ParagonManualName
+Paragon M.[X]
+
+## ParagonManualUseText
+Teaches Paragon.[X]
+
+## PassManualName
+Pass M.[X]
+
+## PassManualUseText
+Teaches Pass.[X]
+
+## PaviseManualName
+Pavise M.[X]
+
+## PaviseManualUseText
+Teaches Pavise.[X]
+
+## RenewalManualName
+Renewal M.[X]
+
+## RenewalManualUseText
+Teaches Renewal.[X]
+
+## SolManualName
+Sol M.[X]
+
+## SolManualUseText
+Teaches Sol.[X]
+
+## WrathManualName
+Wrath M.[X]
+
+## WrathManualUseText
+Teaches Wrath.[X]
+
+## StrengthRingName
+Strength Ring[X]
+
+## StrengthRingDescription
++3 Strength when held.[X]
+
+## MagicRingName
+Magic Ring[X]
+
+## MagicRingDescription
++3 Magic when held.[X]
+
+## GuardRingName
+Guard Ring[X]
+
+## GuardRingDescription
++2 Def and Res[N]
+when held.[X]
+
+## LegRingName
+Leg Ring[X]
+
+## LegRingDescription
++1 Move when held.[X]

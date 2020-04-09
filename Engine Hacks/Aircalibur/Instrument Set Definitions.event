@@ -1,0 +1,21 @@
+// ALIGN 4 before each Instrument Table and InstrumentEntry!
+
+#define InstrumentTableEntry(type,note,panpot,sound,atk,dec,sus,rel) "BYTE type note 0 panpot; POIN sound; BYTE atk dec sus rel"
+#define InstrumentTableTerminator "BYTE 0 0 0 0 0 0 0 0 0 0 0 0"
+
+#define InstrumentEntry(header,freq,loopbyte,length) "WORD header freq loopbyte length"
+// Instrument entries are followed by #incbin of sample of "length" bytes
+
+// Instrument Types
+#define DirectSound 0x0
+#define DirectSoundFixedFreq 0x8
+#define MultiSample 0x40
+#define DrumPart 0x80
+
+// Notes
+#define NoteCnM2 0x0
+#define NoteCn3 0x3C
+
+// InstrumentEntry
+#define DefaultHeader 0x40000000
+#define DefaultFreq 0xD10C00

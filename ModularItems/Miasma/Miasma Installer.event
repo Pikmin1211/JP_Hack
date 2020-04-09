@@ -1,0 +1,15 @@
+
+
+{
+	#define ItemNumber Miasma
+	#define ItemIcon MiasmaIcon
+	#define ItemMagicAnimation MiasmaMagicAnim
+	#define ItemNameLocation MiasmaName
+	#define ItemDescriptionLocation MiasmaDescription
+	#define ItemUseTextLocation MiasmaUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

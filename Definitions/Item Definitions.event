@@ -9,3 +9,173 @@
 #define SpeedRingMagicAnim 0xFF//MagicAnimationID here
 #define SpeedRingIcon 0xAE//ItemIconID here
 #define SpeedRingUseText 0x0//TextID here
+
+#define RubySword 0xBF
+#define RubySwordMagicAnim 0xFF
+#define RubySwordIcon 0xAF
+#define RubySwordUseText 0x0
+
+#define SapphireLance 0xC0
+#define SapphireLanceMagicAnim 0xFF
+#define SapphireLanceIcon 0xCA
+#define SapphireLanceUseText 0x0
+
+#define EmeraldAxe 0xC1
+#define EmeraldAxeMagicAnim 0xFF
+#define EmeraldAxeIcon 0xCB
+#define EmeraldAxeUseText 0x0
+
+#define HuntingBow 0xC2
+#define HuntingBowMagicAnim ArrowAnimation
+#define HuntingBowIcon 0xCC
+#define HuntingBowUseText 0x0
+
+#define ShiningBow 0xC3
+#define ShiningBowMagicAnim LightningAnimation
+#define ShiningBowIcon 0xCD
+#define ShiningBowUseText 0x0
+
+//#define Aircalibur //ItemID here
+#define AircaliburMagicAnim AircaliburAnimation//MagicAnimationID here
+#define AircaliburIcon 0xCE//ItemIconID here
+#define AircaliburUseText 0x0//TextID here
+
+#define Thoron 0xC4//ItemID here
+#define ThoronMagicAnim 0x48//MagicAnimationID here
+#define ThoronIcon 0xCF//ItemIconID here
+#define ThoronUseText 0x0//TextID here
+
+#define Bolganone 0xC5//ItemID here
+#define BolganoneMagicAnim 0x49//MagicAnimationID here
+#define BolganoneIcon 0xDE//ItemIconID here
+#define BolganoneUseText 0x0//TextID here
+
+#define Ruin 0xC6//ItemID here
+#define RuinMagicAnim 0x4A//MagicAnimationID here
+#define RuinIcon 0xDF//ItemIconID here
+#define RuinUseText 0x0//TextID here
+
+#define Miasma 0xC7//ItemID here
+#define MiasmaMagicAnim EvilEyeAnimation//MagicAnimationID here
+#define MiasmaIcon 0xE0//ItemIconID here
+#define MiasmaUseText 0x0//TextID here
+
+#define Jormungandr 0xC8//ItemID here
+#define JormungandrMagicAnim 0x4B//MagicAnimationID here
+#define JormungandrIcon 0xE1//ItemIconID here
+#define JormungandrUseText 0x0//TextID here
+
+#define Greatsword 0xC9//ItemID here
+#define GreatswordMagicAnim 0xFF//MagicAnimationID here
+#define GreatswordIcon 0xE2//ItemIconID here
+#define GreatswordUseText 0x0//TextID here
+
+#define Greatlance 0xCA//ItemID here
+#define GreatlanceMagicAnim 0xFF//MagicAnimationID here
+#define GreatlanceIcon 0xE3//ItemIconID here
+#define GreatlanceUseText 0x0//TextID here
+
+#define Greataxe 0xCB//ItemID here
+#define GreataxeMagicAnim 0xFF//MagicAnimationID here
+#define GreataxeIcon 0xE4//ItemIconID here
+#define GreataxeUseText 0x0//TextID here
+
+#define Greatbow 0xCC//ItemID here
+#define GreatbowMagicAnim ArrowAnimation//MagicAnimationID here
+#define GreatbowIcon 0xE5//ItemIconID here
+#define GreatbowUseText 0x0//TextID here
+
+#define NobleRapier 0xCD//ItemID here
+#define NobleRapierMagicAnim 0xFF//MagicAnimationID here
+#define NobleRapierIcon 0xE6//ItemIconID here
+#define NobleRapierUseText 0x0//TextID here
+
+#define LevinSword 0xCE//ItemID here
+#define LevinSwordMagicAnim ThunderAnimation//MagicAnimationID here
+#define LevinSwordIcon 0xE7//ItemIconID here
+#define LevinSwordUseText 0x0//TextID here
+
+#define AegisManual 0xCF//ItemID here
+#define AegisManualMagicAnim 0xFF//MagicAnimationID here
+#define AegisManualIcon 0xE8//ItemIconID here
+#define AegisManualDescription SD_Aegis//TextID here
+
+#define AstraManual 0xD0//ItemID here
+#define AstraManualMagicAnim 0xFF//MagicAnimationID here
+#define AstraManualIcon 0xE9//ItemIconID here
+#define AstraManualDescription SD_Astra//TextID here
+
+#define BoonManual 0xD1//ItemID here
+#define BoonManualMagicAnim 0xFF//MagicAnimationID here
+#define BoonManualIcon 0xEA//ItemIconID here
+#define BoonManualDescription SD_Boon//TextID here
+
+#define CantoPlusManual 0xD2//ItemID here
+#define CantoPlusManualMagicAnim 0xFF//MagicAnimationID here
+#define CantoPlusManualIcon 0xEB//ItemIconID here
+#define CantoPlusManualDescription SD_CantoPlus//TextID here
+
+#define LunaManual 0xD3//ItemID here
+#define LunaManualMagicAnim 0xFF//MagicAnimationID here
+#define LunaManualIcon 0xEC//ItemIconID here
+#define LunaManualDescription SD_Luna//TextID here
+
+#define NihilManual 0xD4//ItemID here
+#define NihilManualMagicAnim 0xFF//MagicAnimationID here
+#define NihilManualIcon 0xED//ItemIconID here
+#define NihilManualDescription SD_Nihil//TextID here
+
+#define NullifyManual 0xD5//ItemID here
+#define NullifyManualMagicAnim 0xFF//MagicAnimationID here
+#define NullifyManualIcon 0xEE//ItemIconID here
+#define NullifyManualDescription SD_Nullify//TextID here
+
+#define ParagonManual 0xD6//ItemID here
+#define ParagonManualMagicAnim 0xFF//MagicAnimationID here
+#define ParagonManualIcon 0xEF//ItemIconID here
+#define ParagonManualDescription SD_Paragon//TextID here
+
+#define PassManual 0xD7//ItemID here
+#define PassManualMagicAnim 0xFF//MagicAnimationID here
+#define PassManualIcon 0xF0//ItemIconID here
+#define PassManualDescription SD_Pass//TextID here
+
+#define PaviseManual 0xD8//ItemID here
+#define PaviseManualMagicAnim 0xFF//MagicAnimationID here
+#define PaviseManualIcon 0xF1//ItemIconID here
+#define PaviseManualDescription SD_Pavise//TextID here
+
+#define RenewalManual 0xD9//ItemID here
+#define RenewalManualMagicAnim 0xFF//MagicAnimationID here
+#define RenewalManualIcon 0xF2//ItemIconID here
+#define RenewalManualDescription SD_Renewal//TextID here
+
+#define SolManual 0xDA//ItemID here
+#define SolManualMagicAnim 0xFF//MagicAnimationID here
+#define SolManualIcon 0xF3//ItemIconID here
+#define SolManualDescription SD_Sol//TextID here
+
+#define WrathManual 0xDB//ItemID here
+#define WrathManualMagicAnim 0xFF//MagicAnimationID here
+#define WrathManualIcon 0xF4//ItemIconID here
+#define WrathManualDescription SD_Wrath//TextID here
+
+#define StrengthRing 0xDC//ItemID here
+#define StrengthRingMagicAnim 0xFF//MagicAnimationID here
+#define StrengthRingIcon 0xF5//ItemIconID here
+#define StrengthRingUseText 0x0//TextID here
+
+#define MagicRing 0xDD//ItemID here
+#define MagicRingMagicAnim 0xFF//MagicAnimationID here
+#define MagicRingIcon 0xF6//ItemIconID here
+#define MagicRingUseText 0x0//TextID here
+
+#define GuardRing 0xDE//ItemID here
+#define GuardRingMagicAnim 0xFF//MagicAnimationID here
+#define GuardRingIcon 0xF7//ItemIconID here
+#define GuardRingUseText 0x0//TextID here
+
+#define LegRing 0xDF//ItemID here
+#define LegRingMagicAnim 0xFF//MagicAnimationID here
+#define LegRingIcon 0xF8//ItemIconID here
+#define LegRingUseText 0x0//TextID here

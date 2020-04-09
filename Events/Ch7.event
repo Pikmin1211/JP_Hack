@@ -1,0 +1,314 @@
+EventPointerTable(Ch6Event, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,YanndahlEvent,1)
+	TurnEventPlayer(0x0,Turn3Reinforcement,3)
+	TurnEventPlayer(0x0,Turn5Reinforcement,5)
+	TurnEventPlayer(0x0,SchezoAppears,7)
+	InfiniteTurnEventPlayer(0x0,DarkKnightsAppear,8)
+	END_MAIN
+
+BrigandUnit:
+	UNIT BattaBeast2 Brigand 0x0 Level(9,Enemy,1) [18,9] 0 0 0 0 [IronAxe] BrigandAI
+	UNIT
+
+Turn3Reinforcement:
+	SpawnReinforcements(Fliers1)
+	SpawnReinforcements(Cavs1)
+	NoFade
+	ENDA
+
+Turn5Reinforcement:
+	SpawnReinforcements(Fliers2)
+	SpawnReinforcements(Cavs2)
+	NoFade
+	ENDA
+
+YanndahlEvent:
+	MUSS SkyEventSong
+	SpawnReinforcements(YanndahlUnit)
+	FlashCursor(Yanndahl,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+SchezoAppears:
+	MUSS LegendThemeSong
+	SpawnReinforcements(SchezoUnit)
+	FlashCursor(Schezo,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+DarkKnightsAppear:
+	SpawnReinforcements(DarkKnights)
+	NoFade
+	ENDA
+
+SchezoUnit:
+	UNIT Schezo Battlemage 0x0 Level(5,Enemy,0) [0,28] 0 0 1 REDA1R27 [Fenrir,SilverSword,Rapier,Thunder] DefaultAI
+	UNIT DarkKnightUnit Cavalier 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA1R26 [Rapier,SilverLance] DefaultAI
+	UNIT DarkKnightUnit AxeKnight 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA2R27 [BraveAxe,ShortSpear] DefaultAI
+	UNIT DarkKnightUnit Druid 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA0R27 [Nosferatu,Physic] DefaultAI
+	UNIT DarkKnightUnit MageKnight 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA1R28 [Thunder,Fimbulvetr,Mend] DefaultAI
+	UNIT
+
+DarkKnights:
+	UNIT DarkKnightUnit Cavalier 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA1R26 [Rapier,SilverLance] DefaultAI
+	UNIT DarkKnightUnit AxeKnight 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA2R27 [BraveAxe,ShortSpear] DefaultAI
+	UNIT DarkKnightUnit Druid 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA0R27 [Nosferatu,Physic] DefaultAI
+	UNIT DarkKnightUnit MageKnight 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA1R28 [Thunder,Fimbulvetr,Mend] DefaultAI
+	UNIT
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	AFEV 0xB CheckForWin 0xA
+	AREA 0xC CheckGameOver [15,0] [17,0]
+	CauseGameOverIfLordDies
+	END_MAIN
+
+CheckGameOver:
+	CHECK_CLASS 0xFFFF
+	SVAL 2 Transporter
+	BNE 1 0xC 0x2 // branch label 1 if not transpoter
+		CALL GameOverEvent
+		GOTO 2
+		LABEL 1
+	ENUF 0xC
+	LABEL 2
+	NoFade
+	ENDA	
+
+GameOverEvent:
+	CAM1 Sanders
+	FlashCursor(Sanders,60)
+	Text(TestDialogue)
+	ASMC 0x00D391 //game over
+	NoFade
+	ENDA
+
+CheckForWin:
+	Increment(1)
+	COUNTER_CHECK 1
+	SVAL 0x2 6
+	BNE 1 0xC 0x2 // branch label 1 if counter not at 6
+		CALL EndingScene
+		GOTO 2
+	LABEL 1
+	ENUF 0xB
+	ENUF 0xA
+	LABEL 2
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	Village(0x9,RightVillage,18,16)
+	Armory(Ch7Armory,14,19)
+	Vendor(Ch7Vendor,3,5)
+	END_MAIN
+
+Ch7Armory:
+	SHLI IronSword SteelSword RubySword Wyrmslayer IronLance SteelLance SapphireLance HeavySpear IronAxe SteelAxe EmeraldAxe Halberd IronBow SteelBow ShortBow HuntingBow
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Ch7Vendor:
+	SHLI Fire Thunder Elfire Flux Nosferatu Heal Mend Restore Barrier Vulnerary Elixir PureWater
+	BYTE 0x0 0x0
+	ALIGN 4
+
+RightVillage:
+	VillageEventItem(TestDialogue,HouseBG,SpiritDust)
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(0,27)
+	Unit(0,25)
+	Unit(2,27)
+	Unit(2,25)
+	Unit(1,28)
+	Unit(1,26)
+	Unit(1,24)
+	Unit(3,28)
+	Unit(3,26)
+	Unit(3,24)
+	Unit(4,27)
+	Unit(4,25)
+	UNIT
+
+YanndahlUnit:
+	UNIT Yanndahl Soldier 0x0 Level(11,Ally,0) [0,28] 0 0 1 REDA5R26 [SteelLance,Axereaver,Javelin,Vulnerary] NoAI
+	UNIT
+
+EnemyUnits:
+
+	UNIT Derek Cavalier 0x0 Level(12,Enemy,1) [16,1] 0 0 0 0 [Rapier,LightBrand,SapphireLance,Elixir] NeverMoveAI
+	UNIT Imperial2 LanceArmor 0x0 Level(11,Enemy,1) [15,1] 0 0 0 0 [ShortSpear,Horseslayer,SteelBlade] NeverMoveAI
+	UNIT Imperial2 AxeArmor 0x0 Level(11,Enemy,1) [17,1] 0 0 0 0 [HandAxe,KillerAxe,IronLance] NeverMoveAI
+
+	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [14,20] 2 0 0 0 [Elixir] HastyAI
+	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [15,19] 2 0 0 0 [BlueGem] HastyAI
+	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [8,19] 2 0 0 0 [HeroCrest] HastyAI
+	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [9,19] 2 0 0 0 [Lancereaver] HastyAI
+	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [18,17] 2 0 0 0 [KnightCrest] HastyAI
+	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [17,18] 2 0 0 0 [ShiningBow] HastyAI
+
+	UNIT Imperial2 LanceKnight 0x0 Level(9,Enemy,1) [14,26] 0 0 0 0 [SteelLance,Vulnerary] DefaultAI
+	UNIT Imperial2 FreeKnight 0x0 Level(9,Enemy,1) [15,25] 0 0 0 0 [SteelSword] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [11,22] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [12,23] 0 0 0 0 [EmeraldAxe] DefaultAI
+	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [9,28] 0 0 0 0 [Javelin] DefaultAI
+
+	UNIT
+
+EnemyUnits2:
+
+	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [16,14] 0 0 0 0 [SteelBow,ShiningBow] AttackInRangeAI
+	UNIT Imperial2 Mage 0x0 Level(9,Enemy,1) [17,13] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT Imperial2 PegasusKnight 0x0 Level(8,Enemy,1) [10,12] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT Imperial2 PegasusKnight 0x0 Level(8,Enemy,1) [12,12] 0 0 0 0 [SlimLance] AttackInRangeAI
+
+	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [1,15] 0 0 0 0 [IronBow,Longbow] AttackInRangeAI
+
+	UNIT Imperial2 LanceArmor 0x0 Level(10,Enemy,1) [3,14] 0 0 0 0 [Javelin,IronBlade] NeverMoveAI
+	UNIT Imperial2 AxeArmor 0x0 Level(10,Enemy,1) [2,15] 0 0 0 0 [HandAxe,SteelAxe] NeverMoveAI
+
+	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [9,17] 0 0 0 0 [SteelSword] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [8,16] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [10,16] 0 0 0 0 [IronBlade] AttackInRangeAI
+	UNIT Imperial2 Mage 0x0 Level(9,Enemy,1) [12,19] 0 0 0 0 [Fire] AttackInRangeAI
+
+	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [13,15] 0 0 0 0 [IronLance,Javelin] AttackInRangeAI
+	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [12,14] 0 0 0 0 [HeavySpear,SilverLance] AttackInRangeAI
+
+	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [18,20] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [16,17] 0 0 0 0 [HandAxe] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [19,21] 0 0 0 0 [IronAxe] AttackInRangeAI
+
+	UNIT
+
+EnemyUnits3:
+
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [8,23] 0 0 0 0 [SteelAxe] DefaultAI
+	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [7,24] 0 0 0 0 [LightBrand,SteelSword] DefaultAI
+	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [8,25] 0 0 0 0 [SilverLance] DefaultAI
+	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [10,26] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT Imperial2 Mage 0x0 Level(10,Enemy,1) [6,15] 0 0 0 0 [Fire] AttackInRangeAI
+	UNIT Imperial2 Mage 0x0 Level(10,Enemy,1) [5,16] 0 0 0 0 [Elfire] AttackInRangeAI
+
+	UNIT Imperial2 LanceArmor 0x0 Level(11,Enemy,1) [9,6] 0 0 0 0 [Javelin,KillerLance] NeverMoveAI
+	UNIT Imperial2 AxeArmor 0x0 Level(11,Enemy,1) [9,8] 0 0 0 0 [HandAxe,Halberd] NeverMoveAI
+	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [9,7] 0 0 0 0 [SteelBow,Longbow] AttackInRangeAI
+	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [16,6] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [14,4] 0 0 0 0 [IronBow] AttackInRangeAI
+
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [6,6] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [7,7] 0 0 0 0 [RubySword] AttackInRangeAI
+	UNIT Imperial2 Soldier 0x0 Level(9,Enemy,1) [4,9] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT Imperial2 Soldier 0x0 Level(9,Enemy,1) [7,9] 0 0 0 0 [ShortSpear,Vulnerary] AttackInRangeAI
+	UNIT Imperial2 Mage 0x0 Level(9,Enemy,1) [4,5] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [11,3] 0 0 0 0 [HandAxe] NeverMoveAI
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [14,6] 0 0 0 0 [HandAxe] NeverMoveAI
+
+	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [12,5] 0 0 0 0 [SteelSword] AttackInRangeAI
+
+	UNIT BattaBeast2 Brigand 0x0 Level(9,Enemy,1) [18,9] 0 0 0 0 [IronAxe] BrigandAI
+
+
+	UNIT
+
+Fliers1:
+	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [1,19] 0 0 0 0 [SlimLance,SapphireLance] DefaultAI
+	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [1,21] 0 0 0 0 [Javelin,IronLance] DefaultAI
+	UNIT
+
+Fliers2:
+	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [0,0] 0 0 1 REDA2R1 [SlimLance,SapphireLance] DefaultAI
+	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [0,0] 0 0 1 REDA1R2 [Javelin,IronLance] DefaultAI
+	UNIT
+
+Cavs1:
+	UNIT Imperial2 Cavalier 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA2R9 [SteelLance,IronSword] DefaultAI
+	UNIT Imperial2 LanceKnight 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA1R10 [Horseslayer,Javelin] DefaultAI
+	UNIT Imperial2 AxeKnight 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA3R10 [SteelAxe] DefaultAI
+	UNIT Imperial2 AxeKnight 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA2R11 [IronAxe,Hammer] DefaultAI
+	UNIT
+
+Cavs2:
+	UNIT Imperial2 Cavalier 0x0 Level(9,Enemy,1) [16,0] 0 0 1 REDA16R3 [Javelin,SlimSword] DefaultAI
+	UNIT Imperial2 FreeKnight 0x0 Level(9,Enemy,1) [16,0] 0 0 1 REDA17R3 [IronBlade] DefaultAI
+	UNIT Imperial2 FreeKnight 0x0 Level(9,Enemy,1) [16,0] 0 0 1 REDA15R3 [LightBrand,IronSword] DefaultAI
+	UNIT
+
+Traps1:
+	RedSigil(15,0)
+	RedSigil(16,0)
+	RedSigil(17,0)
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	LOAD1 0x1 EnemyUnits2
+	ENUN
+	LOAD1 0x1 EnemyUnits3
+	ENUN
+	CALL SetTransporterMove
+	GotoPrepScreen
+	ENDA
+
+SetTransporterMove:
+	SetMoveBonus(14,20,(-4))
+	SetMoveBonus(15,19,(-4))
+	SetMoveBonus(8,19,(-5))
+	SetMoveBonus(9,19,(-5))
+	SetMoveBonus(18,17,(-4))
+	SetMoveBonus(17,18,(-4))
+	NoFade
+	ENDA
+
+EndingScene:
+	MNC2 8
+	NoFade
+	ENDA

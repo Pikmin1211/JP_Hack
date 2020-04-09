@@ -31,6 +31,11 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD AegisID
 
+ALIGN 4
+AegisScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN AegisScrollUsability|1
+
 // Astra
 ALIGN 4
 AstraScrollUsability:
@@ -44,6 +49,11 @@ AstraScrollEffect:
 POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD AstraID
+
+ALIGN 4
+AstraScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN AstraScrollUsability|1
 
 // Boon
 ALIGN 4
@@ -59,6 +69,11 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD BoonID
 
+ALIGN 4
+BoonScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN BoonScrollUsability|1
+
 // CantoPlus
 ALIGN 4
 CantoPlusScrollUsability:
@@ -72,6 +87,11 @@ CantoPlusScrollEffect:
 POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD CantoPlusID
+
+ALIGN 4
+CantoPlusScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN CantoPlusScrollUsability|1
 
 // Luna
 ALIGN 4
@@ -87,6 +107,11 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD LunaID
 
+ALIGN 4
+LunaScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN LunaScrollUsability|1
+
 // Nihil
 ALIGN 4
 NihilScrollUsability:
@@ -100,6 +125,11 @@ NihilScrollEffect:
 POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD NihilID
+
+ALIGN 4
+NihilScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN NihilScrollUsability|1
 
 // Nullify
 ALIGN 4
@@ -115,6 +145,11 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD NullifyID
 
+ALIGN 4
+NullifyScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN NullifyScrollUsability|1
+
 // Paragon
 ALIGN 4
 ParagonScrollUsability:
@@ -128,6 +163,11 @@ ParagonScrollEffect:
 POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD ParagonID
+
+ALIGN 4
+ParagonScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN ParagonScrollUsability|1
 
 // Pass
 ALIGN 4
@@ -143,6 +183,11 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD PassID
 
+ALIGN 4
+PassScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN PassScrollUsability|1
+
 // Pavise
 ALIGN 4
 PaviseScrollUsability:
@@ -156,6 +201,11 @@ PaviseScrollEffect:
 POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD PaviseID
+
+ALIGN 4
+PaviseScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN PaviseScrollUsability|1
 
 // Renewal
 ALIGN 4
@@ -171,6 +221,11 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD RenewalID
 
+ALIGN 4
+RenewalScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN RenewalScrollUsability|1
+
 // Sol
 ALIGN 4
 SolScrollUsability:
@@ -185,6 +240,11 @@ POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD SolID
 
+ALIGN 4
+SolScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN SolScrollUsability|1
+
 // Wrath
 ALIGN 4
 WrathScrollUsability:
@@ -198,6 +258,11 @@ WrathScrollEffect:
 POIN SkillTester|1
 POIN prLearnNewSkill|1
 WORD WrathID
+
+ALIGN 4
+WrathScrollPrepUsability:
+#incbin "ScrollPrepUsability.dmp"
+POIN WrathScrollUsability|1
 
 
 

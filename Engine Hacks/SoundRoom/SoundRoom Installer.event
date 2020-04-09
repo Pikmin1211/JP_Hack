@@ -24,6 +24,8 @@ SoundRoomEntry(BlasterMasterStage1Song,1,BlasterMasterStage1Name)
 SoundRoomEntry(Pikmin2BossSong,1,Pikmin2BossName)
 SoundRoomEntry(ShopPrepSong,1,ShopPrepName)
 SoundRoomEntry(DarkLabyrinthSong,1,DarkLabyrinthName)
+SoundRoomEntry(LegendThemeSong,1,LegendThemeName)
+SoundRoomEntry(LeifArmySong,1,LeifArmyName)
 
 SoundRoomTerminator
 

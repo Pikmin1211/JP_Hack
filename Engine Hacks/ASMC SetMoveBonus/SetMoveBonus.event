@@ -1,0 +1,17 @@
+ALIGN 4
+//MESSAGE SetMoveBonus at currentOffset
+ASMC_SetMoveBonus:
+	#incbin "SetMoveBonusBetter.dmp"
+    //WORD $4B06B510 $68804806 $F806F000 $68C94904 $5481221D $BC08BC10 $4718 $801829D $30004B8
+
+/* example usage:
+
+    // set a 2 move malus to Eirika
+    SVAL r2 Eirika
+    SVAL r3 (-2)
+    ASMC ASMC_SetMoveBonus|1
+
+*/
+
+#define SetMoveBonus(unit,bonus) "SVAL 2 unit; SVAL 3 bonus; ASMC ASMC_SetMoveBonus|1"
+#define SetMoveBonus(xcoord,ycoord,bonus) "SVAL 0xB Coords(xcoord,ycoord); SVAL 2 0xFFFE; SVAL 3 bonus; ASMC ASMC_SetMoveBonus|1"

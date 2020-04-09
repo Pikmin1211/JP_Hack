@@ -19,6 +19,12 @@ EscapePointEntry(12,3,EscapeInPlace)
 EscapePointEntry(2,8,EscapeInPlace)
 EscapePointTerminator
 
+EnemyEscapeTableCh7:
+EscapePointEntry(15,0,EscapeUp)
+EscapePointEntry(16,0,EscapeUp)
+EscapePointEntry(17,0,EscapeUp)
+EscapePointTerminator
+
 NPCEscapeTableCh1:
 EscapePointEntry(5,14,EscapeDown)
 EscapePointTerminator
@@ -30,5 +36,6 @@ EscapePointEntry(13,16,EscapeDown)
 EscapePointTerminator
 
 SetEnemyEscapePoint(0x4,EnemyEscapeTableCh4)
+SetEnemyEscapePoint(0x7,EnemyEscapeTableCh7)
 SetNPCEscapePoint(0x1,NPCEscapeTableCh1)
 SetNPCEscapePoint(0x4,NPCEscapeTableCh4)

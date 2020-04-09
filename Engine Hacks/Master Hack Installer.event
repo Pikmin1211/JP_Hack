@@ -23,3 +23,9 @@ POP
 #include "SoundRoom/SoundRoom Installer.event"
 
 #include "Character Specific Animations/Installer.event"
+
+#include "ASMC SetMoveBonus/SetMoveBonus.event"
+
+#include "SendAll/Installer.event"
+
+#include "Aircalibur/AircaliburFix.event"

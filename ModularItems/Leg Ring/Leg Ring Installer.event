@@ -1,0 +1,15 @@
+
+
+{
+	#define ItemNumber LegRing
+	#define ItemIcon LegRingIcon
+	#define ItemMagicAnimation LegRingMagicAnim
+	#define ItemNameLocation LegRingName
+	#define ItemDescriptionLocation LegRingDescription
+	#define ItemUseTextLocation LegRingUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

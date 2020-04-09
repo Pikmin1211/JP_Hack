@@ -82,10 +82,10 @@ ScaryMonsters:
 
 NPCUnits:
 	
-	UNIT Vergil Paladin 0x0 Level(7,NPC,0) [25,16] 0 0 1 REDA22R15 [Spear,SteelBlade,SilverLance,Elixir] DefaultAI
-	UNIT Imperial2 AxeKnight 0x0 Level(17,NPC,1) [25,16] 0 0 1 REDA21R15 [ShortSpear,SilverAxe,Vulnerary] DefaultAI
-	UNIT Imperial2 Cavalier 0x0 Level(17,NPC,1) [25,16] 0 0 1 REDA23R15 [LightBrand,Axereaver,Vulnerary] DefaultAI
-	UNIT Imperial2 Troubadour 0x0 Level(13,NPC,1) [25,16] 0 0 1 REDA22R14 [Mend] DefaultAI
+	UNIT Vergil Paladin 0x0 Level(7,NPC,0) [25,16] 0 0 1 REDA22R15 [Spear,Rapier,SilverLance,Elixir] DefaultAI
+	UNIT Imperial2 AxeKnight 0x0 Level(19,NPC,1) [25,16] 0 0 1 REDA21R15 [SilverAxe,ShortSpear,Vulnerary] DefaultAI
+	UNIT Imperial2 Cavalier 0x0 Level(19,NPC,1) [25,16] 0 0 1 REDA23R15 [LightBrand,Axereaver,Vulnerary] DefaultAI
+	UNIT Imperial2 Troubadour 0x0 Level(16,NPC,1) [25,16] 0 0 1 REDA22R14 [Mend] HealUnits
 
 	UNIT
 
@@ -155,7 +155,7 @@ EnemyUnits:
 	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [24,12] 0 0 0 0 [IronLance,Lancereaver] DefaultAI
 
 	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [14,14] 2 0 0 0 [Javelin,SteelSword,ChestKey_5] AttackInRangeAI
-	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [15,15] 0 0 0 0 [LightBrand,SlimLance] AttackInRangeAI
+	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [15,15] 0 0 0 0 [LightBrand,SapphireLance] AttackInRangeAI
 	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [13,14] 0 0 0 0 [SteelBow] AttackInRangeAI
 
 	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [12,2] 0 0 0 0 [SharpClaw] AttackInRangeAI
@@ -192,7 +192,7 @@ EnemyUnits:
 	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [13,10] 0 0 0 0 [PoisonClaw] AttackInRangeAI
 	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [8,8] 0 0 0 0 [IronBow] AttackInRangeAI
 
-	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [18,9] 0 0 0 0 [SteelSword,Javelin] AttackInRangeAI
+	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [18,9] 0 0 0 0 [RubySword,Javelin] AttackInRangeAI
 	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [19,8] 0 0 0 0 [HeavySpear] AttackInRangeAI
 	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [16,6] 0 0 0 0 [SilverLance,SteelSword] AttackInRangeAI
 
@@ -204,7 +204,7 @@ EnemyUnits:
 
 NewUnits:
 
-	UNIT Otaku Mercenary 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA16R1 [IronBlade,SteelSword,Vulnerary] NoAI
+	UNIT Otaku Mercenary 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA16R1 [IronBlade,RubySword,Vulnerary] NoAI
 	UNIT Gohard AxeArmor 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA17R1 [SteelAxe,HandAxe,Fiendcleaver,Elixir] NoAI
 
 	UNIT

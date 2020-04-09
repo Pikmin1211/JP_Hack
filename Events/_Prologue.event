@@ -60,9 +60,9 @@ SetUpGalley:
 	ENDA
 
 LocationBasedEvents:
-	Village(0x0,LeftVillage,1,9)
-	Village(0x0,MidVillage,6,11)
-	Village(0x0,RightVillage,10,1)
+	Village(0xB,LeftVillage,1,9)
+	Village(0xC,MidVillage,6,11)
+	Village(0xD,RightVillage,10,1)
 	END_MAIN
 
 LeftVillage:

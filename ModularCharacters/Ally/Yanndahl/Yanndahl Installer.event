@@ -1,0 +1,19 @@
+
+
+{
+	#define UnitID Yanndahl
+	#define UnitClass YanndahlClass
+	#define UnitMugID YanndahlMug
+	#define UnitNameLocation YanndahlName
+	#define UnitDescriptionLocation YanndahlDescription
+	#define Palette1Number YanndahlPalette1
+	#define Palette2Number YanndahlPalette2
+	#define Palette3Number YanndahlPalette3
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Support Installer.event"
+	#include "Files/Palette Installer.event"
+	#include "Files/Mug Installer.event"
+	//#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

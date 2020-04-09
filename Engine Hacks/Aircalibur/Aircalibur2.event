@@ -1,0 +1,44 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	Aircalibur2_grp  Aircalibur2Set
+	#define	Aircalibur2_pri  10
+	#define	Aircalibur2_rev  128
+	#define	Aircalibur2_mvl  127
+	#define	Aircalibur2_key  0
+	#define	Aircalibur2_tbs  1
+	#define	Aircalibur2_exg  0
+	#define	Aircalibur2_cmp  1
+
+	// .rodata
+	//	Aircalibur2
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+Aircalibur2_001:
+// 000   ----------------------------------------
+ BYTE   KEYSH   Aircalibur2_key+0
+ BYTE   TEMPO   150*Aircalibur2_tbs/2
+ BYTE   VOICE   1
+ BYTE   VOL   120*Aircalibur2_mvl/mxv
+ BYTE   N48  Cn3  v127
+ BYTE   W24
+ BYTE   W24
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+Aircalibur2:
+	BYTE	1	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	Aircalibur2_pri	// Priority
+	BYTE	Aircalibur2_rev	// Reverb.
+    
+	POIN2	Aircalibur2_grp
+    
+	POIN2	Aircalibur2_001
+
+	

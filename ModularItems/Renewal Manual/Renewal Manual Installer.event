@@ -1,0 +1,21 @@
+
+
+{
+	#define ItemNumber RenewalManual
+	#define ItemIcon RenewalManualIcon
+	#define ItemMagicAnimation RenewalManualMagicAnim
+	#define ItemNameLocation RenewalManualName
+	#define ItemDescriptionLocation RenewalManualDescription
+	#define ItemUseTextLocation RenewalManualUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}
+
+// Change prep screen effect
+PUSH
+ORG IBArray + (RenewalManual * 0x4)
+POIN RenewalPrepScrollUsageEffect
+POP

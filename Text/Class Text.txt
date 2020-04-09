@@ -39,3 +39,10 @@ Free Knight[X]
 ## FreeKnightDescription
 Mounted knights with swift[N]
 movement. Equip: Swords.[X]
+
+## BattlemageName
+Battlemage[X]
+
+## BattlemageDescription
+Fearsome magi with expert skill in both[N]
+spell and sword. Equip: Swords, anima.[X]

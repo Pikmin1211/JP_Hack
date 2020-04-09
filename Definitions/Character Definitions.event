@@ -112,6 +112,13 @@
 #define GohardPalette2 0x39//PaletteID here
 #define GohardPalette3 0x3A//PaletteID here
 
+#define Yanndahl 0x12//UnitID here
+#define YanndahlClass Soldier//ClassID here
+#define YanndahlMug 0x1A//MugID here
+#define YanndahlPalette1 0x3B//PaletteID here
+#define YanndahlPalette2 0x3C//PaletteID here
+#define YanndahlPalette3 0x3D//PaletteID here
+
 // Boss
 
 #define Batta 0x60//UnitID here
@@ -162,6 +169,13 @@
 #define NovalaPalette1 0x34//PaletteID here
 #define NovalaPalette2 0x0//PaletteID here
 #define NovalaPalette3 0x0//PaletteID here
+
+#define Schezo 0x67//UnitID here
+#define SchezoClass Battlemage//ClassID here
+#define SchezoMug 0x1B//MugID here
+#define SchezoPalette1 0x0//PaletteID here
+#define SchezoPalette2 0x3E//PaletteID here
+#define SchezoPalette3 0x0//PaletteID here
 
 // Generic + NPC
 
@@ -216,3 +230,6 @@
 #define MonsterBoss 0x8F//UnitID here
 
 #define Monster2 0x90//UnitID here
+
+#define DarkKnightUnit 0x91//UnitID here
+#define DarkKnightUnitFaction 0x4//MinimugID here

@@ -1,0 +1,15 @@
+#ifdef UseItemText
+
+NameTextData:
+#incext ParseFile "Text/ItemName.txt"
+setText(ItemNameLocation,NameTextData)
+
+DescriptionTextData:
+#incext ParseFile "Text/ItemDescription.txt"
+setText(ItemDescriptionLocation,DescriptionTextData)
+
+UseTextData:
+#incext ParseFile "Text/ItemUseText.txt"
+setText(ItemUseTextLocation,UseTextData)
+
+#endif

@@ -97,7 +97,7 @@ Imperial[X]
 Placeholder[X]
 
 ## TownGuardName
-[_T][_o][_w][_n] [_G][_u][_a][_r][_d][X]
+Town Grd.[X]
 
 ## TownGuardDescription
 Placeholder[X]
@@ -184,4 +184,22 @@ Placeholder[X]
 Gohard[X]
 
 ## GohardDescription
+Placeholder[X]
+
+## YanndahlName
+Yanndahl[X]
+
+## YanndahlDescription
+Placeholder[X]
+
+## SchezoName
+Schezo[X]
+
+## SchezoDescription
+Placeholder[X]
+
+## DarkKnightUnitName
+Dark Knight[X]
+
+## DarkKnightUnitDescription
 Placeholder[X]

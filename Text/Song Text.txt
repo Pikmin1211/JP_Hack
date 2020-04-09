@@ -51,3 +51,9 @@ Shop / Prep (Langrisser 2)[X]
 
 ## DarkLabyrinthName
 Dark Labyrinth[X]
+
+## LegendThemeName
+Legend Theme[X]
+
+## LeifArmyName
+The Army of Leif[X]

@@ -12,7 +12,7 @@
 //Base Stats
 #define BaseHP 17
 #define BaseStr 5
-#define BaseMag 0
+#define BaseMag 1
 #define BaseSkl 2
 #define BaseSpd 0
 #define BaseDef 9
@@ -33,7 +33,7 @@
 //Enemy Growths
 #define HPGrowth 80
 #define StrGrowth 40
-#define MagGrowth 0
+#define MagGrowth 10
 #define SklGrowth 30
 #define SpdGrowth 15
 #define DefGrowth 28

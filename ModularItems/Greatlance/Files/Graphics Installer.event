@@ -1,0 +1,4 @@
+PUSH
+ORG WeaponIconOffset(ItemIcon)
+#incext Png2Dmp "Item Icon/ItemIcon.png"
+POP

@@ -17,6 +17,9 @@ ChapterDeathQuote(ONeill,Ch2,0xA,TestDialogue)
 // Ch6
 ChapterDeathQuote(MonsterBoss,Ch5,DefeatBossFlag,0x0)
 
+// Ch7
+ChapterDeathQuote(Imperial,0x7,0xA,0x0)
+
 // Always
 AlwaysDeathQuote(Sanders,GameOverFlag,TestDialogue)
 EndQuote

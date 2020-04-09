@@ -1,0 +1,14 @@
+
+{
+	#define ItemNumber HuntingBow
+	#define ItemIcon HuntingBowIcon
+	#define ItemMagicAnimation HuntingBowMagicAnim
+	#define ItemNameLocation HuntingBowName
+	#define ItemDescriptionLocation HuntingBowDescription
+	#define ItemUseTextLocation HuntingBowUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

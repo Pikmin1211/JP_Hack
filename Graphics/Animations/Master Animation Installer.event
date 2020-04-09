@@ -37,3 +37,15 @@ RengeAnims:
 StaffAnim(RengeStaffAnim)
 UnarmedAnim(RengeUnarmedAnim)
 EndAnim
+
+ALIGN 4
+{
+	#include "bin/BaldPriestStaff Installer.event"
+	#include "bin/BaldPriestUnarmed Installer.event"
+}
+
+ALIGN 4
+WrysAnims:
+StaffAnim(WrysStaffAnim)
+UnarmedAnim(WrysUnarmedAnim)
+EndAnim

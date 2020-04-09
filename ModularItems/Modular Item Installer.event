@@ -1,3 +1,71 @@
 #include "Adept Manual/Adept Manual Installer.event"
 
 #include "Speed Ring/Speed Ring Installer.event"
+
+#include "Ruby Sword/Ruby Sword Installer.event"
+
+#include "Sapphire Lance/Sapphire Lance Installer.event"
+
+#include "Emerald Axe/Emerald Axe Installer.event"
+
+#include "Hunting Bow/Hunting Bow Installer.event"
+
+#include "Shining Bow/Shining Bow Installer.event"
+
+#include "Aircalibur/Aircalibur Installer.event"
+
+#include "Thoron/Thoron Installer.event"
+
+#include "Bolganone/Bolganone Installer.event"
+
+#include "Ruin/Ruin Installer.event"
+
+#include "Miasma/Miasma Installer.event"
+
+#include "Jormungandr/Jormungandr Installer.event"
+
+#include "Greatsword/Greatsword Installer.event"
+
+#include "Greatlance/Greatlance Installer.event"
+
+#include "Greataxe/Greataxe Installer.event"
+
+#include "Greatbow/Greatbow Installer.event"
+
+#include "Noble Rapier/Noble Rapier Installer.event"
+
+#include "Levin Sword/Levin Sword Installer.event"
+
+#include "Wrath Manual/Wrath Manual Installer.event"
+
+#include "Sol Manual/Sol Manual Installer.event"
+
+#include "Pavise Manual/Pavise Manual Installer.event"
+
+#include "Pass Manual/Pass Manual Installer.event"
+
+#include "Aegis Manual/Aegis Manual Installer.event"
+
+#include "Boon Manual/Boon Manual Installer.event"
+
+#include "CantoPlus Manual/CantoPlus Manual Installer.event"
+
+#include "Nihil Manual/Nihil Manual Installer.event"
+
+#include "Paragon Manual/Paragon Manual Installer.event"
+
+#include "Nullify Manual/Nullify Manual Installer.event"
+
+#include "Astra Manual/Astra Manual Installer.event"
+
+#include "Luna Manual/Luna Manual Installer.event"
+
+#include "Renewal Manual/Renewal Manual Installer.event"
+
+#include "Strength Ring/Strength Ring Installer.event"
+
+#include "Magic Ring/Magic Ring Installer.event"
+
+#include "Guard Ring/Guard Ring Installer.event"
+
+#include "Leg Ring/Leg Ring Installer.event"

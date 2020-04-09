@@ -1,0 +1,6 @@
+ALIGN 4
+SendAll:
+#incbin "SendAllTransporter.dmp"
+
+#define SendAll(UNITID) "BYTE 0x40 0x0D UNITID 0x00 ; POIN SendAll|1;"
+#define SendAll(xcoord,ycoord) "SVAL 0xB Coords(xcoord,ycoord); ASMC SendAll|1"

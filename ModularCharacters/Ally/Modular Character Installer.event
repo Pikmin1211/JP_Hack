@@ -29,3 +29,5 @@
 #include "Otaku/Otaku Installer.event"
 
 #include "Gohard/Gohard Installer.event"
+
+#include "Yanndahl/Yanndahl Installer.event"

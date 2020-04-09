@@ -35,3 +35,8 @@
 #define FighterFClassCard 0x104//MugID here
 #define FighterFName 0x2DC//TextID here
 #define FighterFDescription 0x327//TextID here
+
+#define Battlemage 0x85//ClassID here
+#define BattlemageSwordAnim 0xD3//AnimationID here
+#define BattlemageMagicAnim 0xD4//AnimationID here
+#define BattlemageClassCard 0x105//MugID here

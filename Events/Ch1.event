@@ -90,8 +90,8 @@ EscapeCounter:
 LocationBasedEvents:
 	House(0x0,LeftHouseEvent,3,11)
 	House(0x0,InnEvent,16,7)
-	Village(0x0,LeftVillage,4,2)
-	Village(0x0,RightVillage,15,2)
+	Village(0xB,LeftVillage,4,2)
+	Village(0xC,RightVillage,15,2)
 	Armory(Ch1Armory,11,7)
 	END_MAIN
 

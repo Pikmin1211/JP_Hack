@@ -254,7 +254,7 @@ Units1:
 EnemyUnits:
 
 	UNIT Batta Brigand 0x0 Level(11,Enemy,1) [4,19] 0 0 0 0 [SteelAxe,Halberd,HandAxe] NeverMoveAI
-	UNIT ONeill Fighter 0x0 Level(10,Enemy,1) [8,19] 0 0 0 0 [IronAxe,HandAxe,Hammer] NeverMoveAI
+	UNIT ONeill Fighter 0x0 Level(10,Enemy,1) [8,19] 0 0 0 0 [EmeraldAxe,HandAxe,Hammer] NeverMoveAI
 	UNIT Kekh Mercenary 0x0 Level(10,Enemy,1) [0,2] 2 0 0 0 [SteelSword,Lancereaver,LightBrand,SecretBook] NeverMoveAI
 
 	UNIT BattaBeast2 Mercenary 0x0 Level(7,Enemy,1) [0,17] 0 0 0 0 [IronSword] DelayedDefaultAI
@@ -266,7 +266,7 @@ EnemyUnits:
 	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [12,18] 0 0 0 0 [SteelBow] AttackInRangeAI
 	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [1,0] 0 0 0 0 [Swordreaver,SteelAxe] AttackInRangeAI
 	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [0,5] 0 0 0 0 [SteelAxe] AttackInRangeAI
-	UNIT BattaBeast2 Knight 0x0 Level(8,Enemy,1) [5,2] 0 0 0 0 [Javelin,IronLance] NeverMoveAI
+	UNIT BattaBeast2 Knight 0x0 Level(8,Enemy,1) [5,2] 0 0 0 0 [Javelin,SapphireLance] NeverMoveAI
 	UNIT BattaBeast2 Mage 0x0 Level(8,Enemy,1) [7,0] 0 0 0 0 [Thunder] AttackInRangeAI
 
 	UNIT BattaBeast2 Mercenary 0x0 Level(7,Enemy,1) [13,9] 0 0 0 0 [IronBlade] AttackInRangeAI
@@ -306,7 +306,7 @@ MidHouseCivs:
 BottomCavs:
 
 	UNIT BattaBeast2 AxeKnight 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA6R19 [SteelAxe] DefaultAI
-	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA7R19 [HeavySpear,SlimSword] DefaultAI
+	UNIT BattaBeast2 Cavalier 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA7R19 [HeavySpear,RubySword] DefaultAI
 	UNIT BattaBeast2 LanceKnight 0x0 Level(7,Enemy,1) [6,19] 0 0 1 REDA5R19 [IronLance,Javelin] DefaultAI
 
 	UNIT
@@ -314,7 +314,7 @@ BottomCavs:
 BottomForestUnits:
 
 	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [0,17] 0 0 1 REDA0R17 [Horseslayer,Javelin] DefaultAI
-	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [0,17] 0 0 1 REDA0R16 [IronAxe] DefaultAI
+	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [0,17] 0 0 1 REDA0R16 [EmeraldAxe] DefaultAI
 	UNIT BattaBeast2 Mercenary 0x0 Level(7,Enemy,1) [0,17] 0 0 1 REDA1R17 [SteelBlade,IronSword] DefaultAI
 
 	UNIT
@@ -330,7 +330,7 @@ LeftPathUnits:
 TopLeftUnits:
 
 	UNIT BattaBeast2 FreeKnight 0x0 Level(7,Enemy,1) [0,2] 0 0 1 REDA0R1 [IronBlade,LightBrand] DefaultAI
-	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [0,2] 0 0 1 REDA1R2 [SteelLance] DefaultAI
+	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [0,2] 0 0 1 REDA1R2 [SapphireLance] DefaultAI
 	UNIT BattaBeast2 Soldier 0x0 Level(8,Enemy,1) [0,2] 0 0 1 REDA0R3 [ShortSpear] DefaultAI
 	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [0,2] 0 0 1 REDA0R2 [IronBow] DefaultAI
 
@@ -340,19 +340,19 @@ WaterPegs:
 	
 	UNIT BattaBeast2 PegasusKnight 0x0 Level(7,Enemy,1) [16,17] 0 0 1 REDA16R17 [SlimLance] DefaultAI
 	UNIT BattaBeast2 PegasusKnight 0x0 Level(7,Enemy,1) [16,17] 0 0 1 REDA16R16 [IronLance,Javelin] DefaultAI
-	UNIT BattaBeast2 PegasusKnight 0x0 Level(7,Enemy,1) [16,17] 0 0 1 REDA16R18 [SteelLance,SlimLance] DefaultAI
+	UNIT BattaBeast2 PegasusKnight 0x0 Level(7,Enemy,1) [16,17] 0 0 1 REDA16R18 [SteelLance,SapphireLance] DefaultAI
 
 	UNIT
 
 LeftBrigand:
 	
-	UNIT BattaBeast2 Brigand 0x0 Level(6,Enemy,1) [0,5] 0 0 1 REDA0R5 [IronAxe] BrigandAI
+	UNIT BattaBeast2 Brigand 0x0 Level(6,Enemy,1) [0,5] 0 0 1 REDA0R5 [EmeraldAxe] BrigandAI
 
 	UNIT
 
 BottomBrigand:
 	
-	UNIT BattaBeast2 Brigand 0x0 Level(6,Enemy,1) [10,19] 0 0 1 REDA10R19 [IronAxe] BrigandAI
+	UNIT BattaBeast2 Brigand 0x0 Level(6,Enemy,1) [10,19] 0 0 1 REDA10R19 [SteelAxe] BrigandAI
 
 	UNIT 
 
@@ -379,6 +379,8 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+	SendAll(Wagon)
+	SendAll(Wagon2)
 	CALL CounterChecker
 	FADI 16
 	DISA Wagon

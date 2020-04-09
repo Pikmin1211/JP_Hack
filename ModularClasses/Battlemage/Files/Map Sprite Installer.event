@@ -1,0 +1,15 @@
+#define MapSpriteSize 0x0
+#define ClassAnimationPattern 0x81d0a7c
+
+ClassStand:
+#incext png2dmp "Map Sprites/Standing.png" --lz77
+
+ClassWalk:
+#incext png2dmp "Map Sprites/Moving.png" --lz77
+
+PUSH
+ORG MovingMapSpriteTable + ((ClassNumber-1) * 8)
+MovingMapSpriteInstaller(ClassWalk|IsPointer,ClassAnimationPattern)
+ORG StandingMapSpriteTable + ((ClassNumber-1) * 8)
+StandingMapSpriteInstaller(0x2,0x0,MapSpriteSize,0x0,ClassStand|IsPointer)
+POP

@@ -54,3 +54,9 @@ SongTable(ShopPrepSong,ShopPrep,1)
 
 SongTable(DarkLabyrinthSong,DarkLabyrinth,1)
 #include "S Files/DarkLabyrinth.event"
+
+SongTable(LegendThemeSong,LegendTheme,1)
+#include "S Files/LegendTheme.event"
+
+SongTable(LeifArmySong,LeifArmy,1)
+#include "S Files/LeifArmy.event"

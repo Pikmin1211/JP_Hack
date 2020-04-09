@@ -11,3 +11,5 @@
 #include "Todoroki/Todoroki Installer.event"
 
 #include "Novala/Novala Installer.event"
+
+#include "Schezo/Schezo Installer.event"

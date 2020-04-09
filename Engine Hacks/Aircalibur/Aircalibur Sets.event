@@ -1,0 +1,21 @@
+ALIGN 4
+Aircalibur1Set:
+InstrumentTableEntry(DrumPart,0,0,Aircalibur1Set,0,0,0,0)
+InstrumentTableEntry(DirectSound,NoteCn3,0,Aircalibur1Sound,0xFF,0,0xFF,0)
+InstrumentTableTerminator
+
+ALIGN 4
+Aircalibur2Set:
+InstrumentTableEntry(DrumPart,0,0,Aircalibur2Set,0,0,0,0)
+InstrumentTableEntry(DirectSound,NoteCn3,0,Aircalibur2Sound,0xFF,0,0xFF,0)
+InstrumentTableTerminator
+
+ALIGN 4
+Aircalibur1Sound:
+InstrumentEntry(0,DefaultFreq,0,16668)
+#incbin "Aircalibur1.bin"
+
+ALIGN 4
+Aircalibur2Sound:
+InstrumentEntry(0,0xA44000,0,3989)
+#incbin "Aircalibur2.bin"

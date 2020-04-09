@@ -1,0 +1,21 @@
+
+
+{
+	#define ItemNumber AstraManual
+	#define ItemIcon AstraManualIcon
+	#define ItemMagicAnimation AstraManualMagicAnim
+	#define ItemNameLocation AstraManualName
+	#define ItemDescriptionLocation AstraManualDescription
+	#define ItemUseTextLocation AstraManualUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}
+
+// Change prep screen effect
+PUSH
+ORG IBArray + (AstraManual * 0x4)
+POIN AstraPrepScrollUsageEffect
+POP

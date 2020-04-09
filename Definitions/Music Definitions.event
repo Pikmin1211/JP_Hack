@@ -16,3 +16,5 @@
 #define Pikmin2BossSong 0xA9
 #define ShopPrepSong 0xAD
 #define DarkLabyrinthSong 0xAE
+#define LegendThemeSong 0xB2
+#define LeifArmySong 0xBB

@@ -9,3 +9,5 @@
 #include "Free Knight/Free Knight Installer.event"
 
 #include "Fighter F/Fighter F Installer.event"
+
+#include "Battlemage/Battlemage Installer.event"
