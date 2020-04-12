@@ -187,7 +187,7 @@ Gohard[X]
 Placeholder[X]
 
 ## YanndahlName
-Yanndahl[X]
+Yandahl[X]
 
 ## YanndahlDescription
 Placeholder[X]
@@ -202,4 +202,40 @@ Placeholder[X]
 Dark Knight[X]
 
 ## DarkKnightUnitDescription
+Placeholder[X]
+
+## WhitewolfName
+Whitewolf[X]
+
+## WhitewolfDescription
+Placeholder[X]
+
+## TimName
+Tim[X]
+
+## TimDescription
+Placeholder[X]
+
+## BitName
+Bit[X]
+
+## BitDescription
+Placeholder[X]
+
+## MilanorName
+Milanor[X]
+
+## MilanorDescription
+Placeholder[X]
+
+## GutsName
+Guts[X]
+
+## GutsDescription
+Placeholder[X]
+
+## KohakuName
+Kohaku[X]
+
+## KohakuDescription
 Placeholder[X]

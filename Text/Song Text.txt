@@ -57,3 +57,21 @@ Legend Theme[X]
 
 ## LeifArmyName
 The Army of Leif[X]
+
+## BelovedTomboyishGirlName
+Beloved Tomboyish Girl[X]
+
+## BattlePhantasiaName
+Battle (Tales of Phantasia)[X]
+
+## HiryuNoKen2Name
+Hiryu No Ken 2[X]
+
+## JinTekken3Name
+Jin (Tekken 3)[X]
+
+## RollingDiceName
+Rolling Dice[X]
+
+## FragranceOfDarkCoffeeName
+The Fragrance of Dark Coffee[X]

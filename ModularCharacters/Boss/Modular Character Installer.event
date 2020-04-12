@@ -13,3 +13,7 @@
 #include "Novala/Novala Installer.event"
 
 #include "Schezo/Schezo Installer.event"
+
+#include "Tim/Tim Installer.event"
+
+#include "Bit/Bit Installer.event"

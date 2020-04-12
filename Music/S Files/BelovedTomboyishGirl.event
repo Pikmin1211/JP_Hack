@@ -1,0 +1,4450 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	BelovedTomboyishGirl_grp  voicegroup000
+	#define	BelovedTomboyishGirl_pri  0
+	#define	BelovedTomboyishGirl_rev  0
+	#define	BelovedTomboyishGirl_mvl  30
+	#define	BelovedTomboyishGirl_key  0
+	#define	BelovedTomboyishGirl_tbs  1
+	#define	BelovedTomboyishGirl_exg  0
+	#define	BelovedTomboyishGirl_cmp  1
+
+	// .rodata
+	//	BelovedTomboyishGirl
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+BelovedTomboyishGirl_1:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   148*BelovedTomboyishGirl_tbs/2
+	BYTE		VOICE   127
+	BYTE		PAN     c_v+0
+	BYTE		VOL     105*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W04
+	BYTE		N01     Cn1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W12
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v092
+	BYTE	W02
+// 001   ----------------------------------------
+	BYTE	W04
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE	W06
+	BYTE		        Fs1   v092
+	BYTE		N01     Cn2 
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     As1   v092
+	BYTE		N01     Cn2 
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     An1   v092
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE		N01     An1 
+	BYTE	W06
+	BYTE		        Fn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Dn1   v092
+	BYTE		N01     Fn1 
+	BYTE		N01     As1 
+	BYTE	W02
+BelovedTomboyishGirl_1_B1:
+	BYTE	W04
+	BYTE		N01     Dn1   v092
+	BYTE		N01     Fn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W02
+// 002   ----------------------------------------
+BelovedTomboyishGirl_1_002:
+	BYTE	W04
+	BYTE		N01     Cn1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W12
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W12
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v092
+	BYTE	W02
+	BYTE	PEND
+// 003   ----------------------------------------
+BelovedTomboyishGirl_1_003:
+	BYTE	W04
+	BYTE		N01     Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE	W06
+	BYTE		        Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Dn1   v092
+	BYTE		N01     As1 
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W02
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_002
+// 005   ----------------------------------------
+BelovedTomboyishGirl_1_005:
+	BYTE	W04
+	BYTE		N01     Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE	W06
+	BYTE		        Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Dn1   v092
+	BYTE		N01     En1   v108
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W02
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_003
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_002
+// 009   ----------------------------------------
+	BYTE	W04
+	BYTE		N01     Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Dn1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE		N01     En1 
+	BYTE		N01     As1   v092
+	BYTE		N01     Cn2   v108
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE		N01     An1 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1   v092
+	BYTE		N01     An1   v108
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Dn1   v092
+	BYTE		N01     En1   v108
+	BYTE		N01     Fn1 
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W02
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_002
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_003
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_002
+// 017   ----------------------------------------
+	BYTE	W04
+	BYTE		N01     Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     En1   v008
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     En1   v024
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     En1   v036
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     En1   v036
+	BYTE	W06
+	BYTE		        En1   v052
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE		N01     En1   v064
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE		N01     En1   v080
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE		N01     Cs2   v120
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Dn1   v092
+	BYTE		N01     En1   v108
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N01     Cs2 
+	BYTE	W14
+// 018   ----------------------------------------
+	BYTE	W22
+	BYTE		        Cn1 
+	BYTE		N01     Cs2 
+	BYTE	W36
+	BYTE		        Cn1   v052
+	BYTE		N01     Ds2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W18
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v092
+	BYTE	W02
+// 019   ----------------------------------------
+	BYTE	W04
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     En1   v008
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     En1   v024
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     En1   v036
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     En1   v036
+	BYTE	W06
+	BYTE		        En1   v052
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE		N01     En1   v064
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Cn1   v052
+	BYTE		N01     Dn1   v108
+	BYTE		N01     En1   v080
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        En1   v108
+	BYTE		N01     Fs1   v092
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Dn1   v092
+	BYTE		N01     En1   v108
+	BYTE		N01     As1   v092
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE		N01     Cs2   v092
+	BYTE		N01     En3   v064
+	BYTE	W06
+	BYTE		        Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v064
+	BYTE		N01     Fs1   v108
+	BYTE		N01     Dn3   v064
+	BYTE	W02
+// 020   ----------------------------------------
+BelovedTomboyishGirl_1_020:
+	BYTE	W04
+	BYTE		N01     Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE		N01     Ds3   v092
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     As1 
+	BYTE		N01     Ds3   v092
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1   v108
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     As1 
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE		N01     En3   v064
+	BYTE	W06
+	BYTE		        Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v064
+	BYTE		N01     Fs1   v108
+	BYTE		N01     Dn3   v064
+	BYTE	W02
+	BYTE	PEND
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 023   ----------------------------------------
+BelovedTomboyishGirl_1_023:
+	BYTE	W04
+	BYTE		N01     Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE		N01     Ds3   v092
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     As1 
+	BYTE		N01     Ds3   v092
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1   v108
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     As1 
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Cs2   v092
+	BYTE		N01     En3   v064
+	BYTE	W06
+	BYTE		        Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v064
+	BYTE		N01     Fs1   v108
+	BYTE		N01     Dn3   v064
+	BYTE	W02
+	BYTE	PEND
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_023
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_023
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_023
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_023
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_023
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_1_020
+// 051   ----------------------------------------
+	BYTE	W04
+	BYTE		N01     Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE		N01     Ds3   v092
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     As1 
+	BYTE		N01     Ds3   v092
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     En1 
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        En1 
+	BYTE		N01     Fs1   v108
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     En1 
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     En1 
+	BYTE		N01     As1 
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Cn1   v108
+	BYTE		N01     Dn1 
+	BYTE		N01     Dn3 
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE		N01     En1 
+	BYTE		N01     Fs1 
+	BYTE		N01     Ds3   v064
+	BYTE	W06
+	BYTE		        Dn1   v108
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N01     Fs1   v108
+	BYTE		N01     Cs2   v120
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v108
+	BYTE	W02
+// 052   ----------------------------------------
+	BYTE	W04
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v064
+	BYTE		N01     As1   v108
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v108
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     As1   v108
+	BYTE	W06
+	BYTE		        Cn1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     As1   v108
+	BYTE	W06
+	BYTE		        Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v108
+	BYTE	W02
+// 053   ----------------------------------------
+	BYTE	W04
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v064
+	BYTE		N01     As1   v108
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v064
+	BYTE		N01     As1   v108
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     As1   v108
+	BYTE	W06
+	BYTE		        Cn1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        En1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     As1   v108
+	BYTE	W02
+	BYTE	TEMPO   147*BelovedTomboyishGirl_tbs/2
+	BYTE	W04
+	BYTE		        Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v120
+	BYTE		N01     En1   v108
+	BYTE		N01     Fs1 
+	BYTE		N01     Cs2   v120
+	BYTE	W01
+	BYTE	TEMPO   148*BelovedTomboyishGirl_tbs/2
+	BYTE	W01
+	BYTE	TEMPO   147*BelovedTomboyishGirl_tbs/2
+	BYTE	W04
+	BYTE		        Cn1   v080
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE	TEMPO   146*BelovedTomboyishGirl_tbs/2
+	BYTE		        As1 
+	BYTE	W02
+// 054   ----------------------------------------
+	BYTE	W03
+	BYTE	TEMPO   145*BelovedTomboyishGirl_tbs/2
+	BYTE	W01
+	BYTE		        Fs1 
+	BYTE	W04
+	BYTE	TEMPO   144*BelovedTomboyishGirl_tbs/2
+	BYTE	W02
+	BYTE		        As1 
+	BYTE	W05
+	BYTE	TEMPO   143*BelovedTomboyishGirl_tbs/2
+	BYTE	W01
+	BYTE		        Fs1 
+	BYTE	W06
+	BYTE	TEMPO   142*BelovedTomboyishGirl_tbs/2
+	BYTE		        As1 
+	BYTE	W06
+	BYTE		        Fs1 
+	BYTE	W03
+	BYTE	TEMPO   141*BelovedTomboyishGirl_tbs/2
+	BYTE	W03
+	BYTE		        Cn1   v120
+	BYTE		N01     En1   v108
+	BYTE		N01     Fs1 
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     En1   v024
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1   v080
+	BYTE		N01     En1   v036
+	BYTE		N01     As1   v108
+	BYTE	W02
+	BYTE	TEMPO   140*BelovedTomboyishGirl_tbs/2
+	BYTE	W04
+	BYTE		        En1   v052
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE	TEMPO   141*BelovedTomboyishGirl_tbs/2
+	BYTE		        Dn1 
+	BYTE		N01     En1   v064
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE		        Cn1 
+	BYTE		N01     En1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE	TEMPO   140*BelovedTomboyishGirl_tbs/2
+	BYTE		        Dn1 
+	BYTE		N01     En1   v092
+	BYTE		N01     As1   v108
+	BYTE	W02
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_1_B1
+BelovedTomboyishGirl_1_B2:
+	BYTE	W04
+	BYTE		N01     Cn1   v108
+	BYTE		N01     En1   v092
+	BYTE		N01     Fs1   v108
+	BYTE	W06
+	BYTE	TEMPO   148*BelovedTomboyishGirl_tbs/2
+	BYTE	W14
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	TEMPO   146*BelovedTomboyishGirl_tbs/2
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.3) ****************//
+
+BelovedTomboyishGirl_2:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   4
+	BYTE		PAN     c_v+2
+	BYTE		VOL     110*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+BelovedTomboyishGirl_2_001:
+	BYTE	W56
+	BYTE	W02
+	BYTE		N11     Dn3   v100
+	BYTE		N11     Fs3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N11     Fs3 
+	BYTE	W02
+	BYTE	PEND
+BelovedTomboyishGirl_2_B1:
+	BYTE	W10
+	BYTE		N17     Dn3   v112
+	BYTE		N17     Bn3   v120
+	BYTE	W14
+// 002   ----------------------------------------
+BelovedTomboyishGirl_2_002:
+	BYTE	W04
+	BYTE		N17     Dn3   v112
+	BYTE		N17     An3   v120
+	BYTE	W18
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		N44     Bn3   v112
+	BYTE		N44     Dn4   v120
+	BYTE	W48
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		        Dn3   v112
+	BYTE		N11     An3   v120
+	BYTE	W02
+	BYTE	PEND
+// 003   ----------------------------------------
+BelovedTomboyishGirl_2_003:
+	BYTE	W10
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		N23     Bn3   v112
+	BYTE		N23     Dn4   v120
+	BYTE	W24
+	BYTE		N11     Bn3   v112
+	BYTE		N11     En4   v120
+	BYTE	W12
+	BYTE		        Fs3   v112
+	BYTE	W01
+	BYTE		        Bn3   v120
+	BYTE	W11
+	BYTE		        Fs3   v112
+	BYTE		N11     An3   v120
+	BYTE	W12
+	BYTE		        Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		        Dn3   v112
+	BYTE		N11     An3   v120
+	BYTE	W02
+	BYTE	PEND
+// 004   ----------------------------------------
+BelovedTomboyishGirl_2_004:
+	BYTE	W10
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		N60     Bn3   v112
+	BYTE		N60     Dn4   v120
+	BYTE	W60
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		        Dn3   v112
+	BYTE		N11     An3   v120
+	BYTE	W02
+	BYTE	PEND
+// 005   ----------------------------------------
+BelovedTomboyishGirl_2_005:
+	BYTE	W10
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		N23     Dn4   v112
+	BYTE		N23     Fs4   v120
+	BYTE	W24
+	BYTE		N11     Dn4   v112
+	BYTE		N11     Fs4   v120
+	BYTE	W12
+	BYTE		N23     Cs4   v112
+	BYTE		N23     En4   v120
+	BYTE	W24
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		        Dn3   v112
+	BYTE		N11     An3   v120
+	BYTE	W02
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_003
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_004
+// 009   ----------------------------------------
+	BYTE	W10
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		N23     Dn4   v112
+	BYTE		N23     Fs4   v120
+	BYTE	W24
+	BYTE		N11     Dn4   v112
+	BYTE		N11     Fs4   v120
+	BYTE	W12
+	BYTE		N23     Cs4   v112
+	BYTE		N23     En4   v120
+	BYTE	W24
+	BYTE		N17     Dn3   v112
+	BYTE		N17     Bn3   v120
+	BYTE	W14
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_003
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_004
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_003
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_004
+// 017   ----------------------------------------
+	BYTE	W10
+	BYTE		N11     Dn3   v112
+	BYTE		N11     Bn3   v120
+	BYTE	W12
+	BYTE		N23     Dn4   v112
+	BYTE		N23     Fs4   v120
+	BYTE	W24
+	BYTE		N11     Dn4   v112
+	BYTE		N11     Fs4   v120
+	BYTE	W12
+	BYTE		N02     En3 
+	BYTE	W03
+	BYTE		        Fs3 
+	BYTE	W03
+	BYTE		        An3 
+	BYTE	W03
+	BYTE		        Bn3 
+	BYTE	W03
+	BYTE		        Cs4 
+	BYTE	W03
+	BYTE		        Dn4 
+	BYTE	W03
+	BYTE		        En4 
+	BYTE	W03
+	BYTE		        Fs4 
+	BYTE	W03
+	BYTE		N17     Fn3 
+	BYTE		N11     Dn4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N11     Cn4 
+	BYTE	W02
+// 018   ----------------------------------------
+	BYTE	W10
+	BYTE		        Fn3 
+	BYTE		N11     Dn4 
+	BYTE	W12
+	BYTE		N23   
+	BYTE		N23     Fn4 
+	BYTE	W24
+	BYTE		N06     Cn4 
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE		N06     Cn4 
+	BYTE	W06
+	BYTE		N23     En3 
+	BYTE		N23     Gn3 
+	BYTE	W24
+	BYTE		N44     Fn3 
+	BYTE		N44     Dn4 
+	BYTE	W14
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_2_001
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_2_B1
+BelovedTomboyishGirl_2_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.4) ****************//
+
+BelovedTomboyishGirl_3:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   1
+	BYTE		PAN     c_v+26
+	BYTE		VOL     110*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W72
+BelovedTomboyishGirl_3_B1:
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W32
+	BYTE	W02
+	BYTE		N11     Dn4   v120
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		N32     An4 
+	BYTE	W14
+// 020   ----------------------------------------
+BelovedTomboyishGirl_3_020:
+	BYTE	W22
+	BYTE		N11     An4   v112
+	BYTE	W12
+	BYTE		        Fn4   v120
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N03     Fn4   v100
+	BYTE	W03
+	BYTE		N11     An4   v112
+	BYTE	W03
+	BYTE		        Fn4   v120
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4   v100
+	BYTE	W03
+	BYTE		N56     Dn4   v120
+	BYTE	W11
+	BYTE	PEND
+// 021   ----------------------------------------
+BelovedTomboyishGirl_3_021:
+	BYTE	W44
+	BYTE	W02
+	BYTE		N11     Dn4   v120
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N32     Dn5 
+	BYTE	W14
+	BYTE	PEND
+// 022   ----------------------------------------
+BelovedTomboyishGirl_3_022:
+	BYTE	W22
+	BYTE		N11     Dn5   v120
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		N02     Cn5 
+	BYTE	W03
+	BYTE		        Dn5 
+	BYTE	W03
+	BYTE		N06     Cn5 
+	BYTE	W06
+	BYTE		N11     Gn4 
+	BYTE	W12
+	BYTE		N68     An4 
+	BYTE	W14
+	BYTE	PEND
+// 023   ----------------------------------------
+BelovedTomboyishGirl_3_023:
+	BYTE	W56
+	BYTE	W02
+	BYTE		N23     En5   v120
+	BYTE	W24
+	BYTE		N32     Fn5 
+	BYTE	W14
+	BYTE	PEND
+// 024   ----------------------------------------
+BelovedTomboyishGirl_3_024:
+	BYTE	W22
+	BYTE		N11     Fn5   v120
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		        An5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		        Dn5   v116
+	BYTE	W02
+	BYTE	PEND
+// 025   ----------------------------------------
+BelovedTomboyishGirl_3_025:
+	BYTE	W10
+	BYTE		N11     Bn4   v116
+	BYTE	W12
+	BYTE		        Gn5   v120
+	BYTE	W12
+	BYTE		        Dn5   v116
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		N12     Cn5   v092
+	BYTE	W01
+	BYTE		N23     En5   v120
+	BYTE	W23
+	BYTE		N11     Fn5 
+	BYTE	W12
+	BYTE		        Dn5   v112
+	BYTE	W02
+	BYTE	PEND
+// 026   ----------------------------------------
+BelovedTomboyishGirl_3_026:
+	BYTE	W10
+	BYTE		N11     An4   v112
+	BYTE	W13
+	BYTE		        Fn5   v120
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W11
+	BYTE		        Cn5   v100
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W13
+	BYTE		        En5   v112
+	BYTE	W11
+	BYTE		N32     En5   v120
+	BYTE	W14
+	BYTE	PEND
+// 027   ----------------------------------------
+BelovedTomboyishGirl_3_027:
+	BYTE	W22
+	BYTE		N11     Dn5   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		N32     An4 
+	BYTE	W14
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_022
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_023
+// 032   ----------------------------------------
+BelovedTomboyishGirl_3_032:
+	BYTE	W22
+	BYTE		N11     Fn5   v120
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		        An5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W02
+	BYTE	PEND
+// 033   ----------------------------------------
+BelovedTomboyishGirl_3_033:
+	BYTE	W10
+	BYTE		N11     Bn4   v120
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		N12     Cn5   v092
+	BYTE	W01
+	BYTE		N23     En5   v120
+	BYTE	W23
+	BYTE		N01     En5   v060
+	BYTE	W01
+	BYTE		N11     Fn5   v120
+	BYTE	W11
+	BYTE		        Dn5 
+	BYTE	W02
+	BYTE	PEND
+// 034   ----------------------------------------
+BelovedTomboyishGirl_3_034:
+	BYTE	W10
+	BYTE		N11     An4   v120
+	BYTE	W13
+	BYTE		        Fn5 
+	BYTE	W11
+	BYTE		        En5 
+	BYTE	W13
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W11
+	BYTE		N32   
+	BYTE	W14
+	BYTE	PEND
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_027
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_020
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_021
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_022
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_023
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_024
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_025
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_026
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_027
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_021
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_032
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_033
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_3_034
+// 051   ----------------------------------------
+	BYTE	W22
+	BYTE		N32     Dn5   v120
+	BYTE	W36
+	BYTE		N23     An5 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W02
+// 052   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn5 
+	BYTE	W13
+	BYTE		        An5 
+	BYTE	W11
+	BYTE		        Gn5 
+	BYTE	W13
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W11
+	BYTE		N32   
+	BYTE	W14
+// 053   ----------------------------------------
+	BYTE	W22
+	BYTE		N11     An5 
+	BYTE	W12
+	BYTE		N32     Fn5 
+	BYTE	W36
+	BYTE		N11     An5 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W02
+// 054   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn5 
+	BYTE	W13
+	BYTE		        An5 
+	BYTE	W11
+	BYTE		        Cn6 
+	BYTE	W13
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Cn6 
+	BYTE	W01
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_3_B1
+BelovedTomboyishGirl_3_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.5) ****************//
+
+BelovedTomboyishGirl_4:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   24
+	BYTE		PAN     c_v+36
+	BYTE		VOL     90*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W72
+BelovedTomboyishGirl_4_B1:
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE		N11     Dn3   v100
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W02
+// 019   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Dn3   v112
+	BYTE	W12
+	BYTE		        An3   v120
+	BYTE	W02
+// 020   ----------------------------------------
+BelovedTomboyishGirl_4_020:
+	BYTE	W10
+	BYTE		N06     Fn3   v100
+	BYTE	W06
+	BYTE		N17     Dn4 
+	BYTE	W18
+	BYTE		N11     Cn3   v112
+	BYTE	W12
+	BYTE		        An3   v120
+	BYTE	W12
+	BYTE		        Fn3   v100
+	BYTE	W12
+	BYTE		        Dn4   v112
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Cs3   v120
+	BYTE	W02
+	BYTE	PEND
+// 021   ----------------------------------------
+BelovedTomboyishGirl_4_021:
+	BYTE	W10
+	BYTE		N06     Gn3   v100
+	BYTE	W06
+	BYTE		N17     Bn3 
+	BYTE	W18
+	BYTE		N11     Dn4   v112
+	BYTE	W12
+	BYTE		        Bn3   v120
+	BYTE	W12
+	BYTE		        Gn3   v100
+	BYTE	W12
+	BYTE		        Dn3   v112
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		        Fn3   v120
+	BYTE	W02
+	BYTE	PEND
+// 022   ----------------------------------------
+BelovedTomboyishGirl_4_022:
+	BYTE	W10
+	BYTE		N06     Dn3   v100
+	BYTE	W06
+	BYTE		N17     Fn3 
+	BYTE	W18
+	BYTE		N11     Cn3   v112
+	BYTE	W12
+	BYTE		        En3   v120
+	BYTE	W12
+	BYTE		        Cn3   v100
+	BYTE	W12
+	BYTE		        Gn3   v112
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE	W12
+	BYTE		        An3   v120
+	BYTE	W02
+	BYTE	PEND
+// 023   ----------------------------------------
+BelovedTomboyishGirl_4_023:
+	BYTE	W10
+	BYTE		N06     En3   v100
+	BYTE	W06
+	BYTE		N17     An3 
+	BYTE	W18
+	BYTE		N11     Cs3   v112
+	BYTE	W12
+	BYTE		        An3   v120
+	BYTE	W12
+	BYTE		        En3   v100
+	BYTE	W12
+	BYTE		        An3   v112
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        An3   v120
+	BYTE	W02
+	BYTE	PEND
+// 024   ----------------------------------------
+BelovedTomboyishGirl_4_024:
+	BYTE	W10
+	BYTE		N06     Fn3   v100
+	BYTE	W06
+	BYTE		N17     Dn4 
+	BYTE	W18
+	BYTE		N11     Cn4   v112
+	BYTE	W12
+	BYTE		        Fn4   v120
+	BYTE	W12
+	BYTE		        An3   v100
+	BYTE	W12
+	BYTE		        En4   v112
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Dn3   v120
+	BYTE	W02
+	BYTE	PEND
+// 025   ----------------------------------------
+BelovedTomboyishGirl_4_025:
+	BYTE	W10
+	BYTE		N06     Gn3   v100
+	BYTE	W06
+	BYTE		N17     Bn3 
+	BYTE	W18
+	BYTE		N11     Dn4   v112
+	BYTE	W12
+	BYTE		        Bn3   v120
+	BYTE	W12
+	BYTE		        Gn4   v100
+	BYTE	W12
+	BYTE		        Bn3   v112
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		        Fn3   v120
+	BYTE	W02
+	BYTE	PEND
+// 026   ----------------------------------------
+BelovedTomboyishGirl_4_026:
+	BYTE	W10
+	BYTE		N06     Dn3   v100
+	BYTE	W06
+	BYTE		N17     Fn3 
+	BYTE	W18
+	BYTE		N11     Cn3   v112
+	BYTE	W12
+	BYTE		        Gn3   v120
+	BYTE	W12
+	BYTE		        En3   v100
+	BYTE	W12
+	BYTE		        Gn3   v112
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        An3   v120
+	BYTE	W02
+	BYTE	PEND
+// 027   ----------------------------------------
+BelovedTomboyishGirl_4_027:
+	BYTE	W10
+	BYTE		N06     Fn3   v100
+	BYTE	W06
+	BYTE		N17     Dn4 
+	BYTE	W18
+	BYTE		N11     An3   v112
+	BYTE	W12
+	BYTE		        Fn4   v120
+	BYTE	W12
+	BYTE		        Gn3   v100
+	BYTE	W12
+	BYTE		        En4   v112
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        An3   v120
+	BYTE	W02
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_022
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_023
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_024
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_025
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_026
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_027
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_020
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_021
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_022
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_023
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_024
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_025
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_026
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_027
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_021
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_024
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_025
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_4_026
+// 051   ----------------------------------------
+	BYTE	W10
+	BYTE		N06     Fn3   v100
+	BYTE	W06
+	BYTE		N17     Dn4 
+	BYTE	W18
+	BYTE		N11     An3   v112
+	BYTE	W12
+	BYTE		        Fn4   v120
+	BYTE	W12
+	BYTE		        Gn3   v100
+	BYTE	W12
+	BYTE		        En4   v112
+	BYTE	W24
+	BYTE	W02
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_4_B1
+BelovedTomboyishGirl_4_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.6) ****************//
+
+BelovedTomboyishGirl_5:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   24
+	BYTE		PAN     c_v+0
+	BYTE		VOL     105*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W72
+BelovedTomboyishGirl_5_B1:
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+BelovedTomboyishGirl_5_018:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N44     Dn2   v116
+	BYTE		N44     An2 
+	BYTE	W14
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	W32
+	BYTE	W02
+	BYTE		        Cn2 
+	BYTE		N44     Gn2 
+	BYTE	W48
+	BYTE		        Dn2 
+	BYTE		N44     An2 
+	BYTE	W14
+// 020   ----------------------------------------
+BelovedTomboyishGirl_5_020:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn2   v116
+	BYTE		N44     An2 
+	BYTE	W48
+	BYTE		N92     Bn1 
+	BYTE		N92     Gn2 
+	BYTE	W14
+	BYTE	PEND
+// 021   ----------------------------------------
+BelovedTomboyishGirl_5_021:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N44     As1   v116
+	BYTE		N44     Dn2 
+	BYTE	W14
+	BYTE	PEND
+// 022   ----------------------------------------
+BelovedTomboyishGirl_5_022:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn2   v116
+	BYTE		N44     En2 
+	BYTE	W48
+	BYTE		N92     Cs2 
+	BYTE		N92     An2 
+	BYTE	W14
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_018
+// 024   ----------------------------------------
+BelovedTomboyishGirl_5_024:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn2   v116
+	BYTE		N44     An2 
+	BYTE	W48
+	BYTE		N68     Bn1 
+	BYTE		N68     Gn2 
+	BYTE	W14
+	BYTE	PEND
+// 025   ----------------------------------------
+BelovedTomboyishGirl_5_025:
+	BYTE	W56
+	BYTE	W02
+	BYTE		N23     Cn2   v116
+	BYTE		N23     Gn2 
+	BYTE	W24
+	BYTE		N44     As1 
+	BYTE		N44     Fn2 
+	BYTE	W14
+	BYTE	PEND
+// 026   ----------------------------------------
+BelovedTomboyishGirl_5_026:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn2   v116
+	BYTE		N44     Gn2 
+	BYTE	W48
+	BYTE		N68     Dn2 
+	BYTE		N68     An2 
+	BYTE	W14
+	BYTE	PEND
+// 027   ----------------------------------------
+BelovedTomboyishGirl_5_027:
+	BYTE	W56
+	BYTE	W02
+	BYTE		N23     Cn2   v116
+	BYTE		N23     Gn2 
+	BYTE	W24
+	BYTE		N44     Dn2 
+	BYTE		N44     An2 
+	BYTE	W14
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_022
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_018
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_024
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_025
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_026
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_027
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_020
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_021
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_022
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_018
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_024
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_025
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_026
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_027
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_021
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_018
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_024
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_025
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_5_026
+// 051   ----------------------------------------
+	BYTE	W56
+	BYTE	W02
+	BYTE		N23     Cn2   v116
+	BYTE		N23     Gn2 
+	BYTE	W36
+	BYTE	W02
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_5_B1
+BelovedTomboyishGirl_5_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.7) ****************//
+
+BelovedTomboyishGirl_6:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   45
+	BYTE		PAN     c_v+6
+	BYTE		VOL     110*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W72
+BelovedTomboyishGirl_6_B1:
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE		N48     Fn3   v060
+	BYTE		N48     Dn4 
+	BYTE	W14
+// 019   ----------------------------------------
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Gn3   v092
+	BYTE		N44     En4 
+	BYTE	W48
+	BYTE		N48     Fn3   v052
+	BYTE		N48     Dn4 
+	BYTE	W14
+// 020   ----------------------------------------
+BelovedTomboyishGirl_6_020:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Fn3   v052
+	BYTE		N44     Dn4 
+	BYTE	W48
+	BYTE		        Bn3   v072
+	BYTE		N44     Gn4   v080
+	BYTE	W14
+	BYTE	PEND
+// 021   ----------------------------------------
+BelovedTomboyishGirl_6_021:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N36     Cs4   v080
+	BYTE		N12     Fn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N24     Gn3 
+	BYTE	W12
+	BYTE		N12     En3 
+	BYTE	W12
+	BYTE		N44     As2 
+	BYTE		N44     Dn3 
+	BYTE	W14
+	BYTE	PEND
+// 022   ----------------------------------------
+BelovedTomboyishGirl_6_022:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N23     Cn3   v080
+	BYTE		N23     En3 
+	BYTE	W24
+	BYTE		N23   
+	BYTE		N23     Cn4 
+	BYTE	W24
+	BYTE		N92     Fn3 
+	BYTE		N92     Cs4 
+	BYTE	W14
+	BYTE	PEND
+// 023   ----------------------------------------
+BelovedTomboyishGirl_6_023:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N92     Fn3   v080
+	BYTE		N92     Dn4 
+	BYTE	W14
+	BYTE	PEND
+// 024   ----------------------------------------
+BelovedTomboyishGirl_6_024:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N92     Dn3   v080
+	BYTE		N92     Bn3 
+	BYTE	W14
+	BYTE	PEND
+// 025   ----------------------------------------
+BelovedTomboyishGirl_6_025:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N44     Dn3   v080
+	BYTE		N44     As3 
+	BYTE	W14
+	BYTE	PEND
+// 026   ----------------------------------------
+BelovedTomboyishGirl_6_026:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     En3   v080
+	BYTE		N44     Cn4 
+	BYTE	W48
+	BYTE		N92     Fn3 
+	BYTE		N92     Dn4 
+	BYTE	W14
+	BYTE	PEND
+// 027   ----------------------------------------
+BelovedTomboyishGirl_6_027:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N48     Fn3   v052
+	BYTE		N48     Dn4 
+	BYTE	W14
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_022
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_023
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_024
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_025
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_026
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_027
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_020
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_021
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_022
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_023
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_024
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_025
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_026
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_027
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_021
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_024
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_025
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_6_026
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_6_B1
+BelovedTomboyishGirl_6_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.8) ****************//
+
+BelovedTomboyishGirl_7:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   80
+	BYTE		VOL     76*BelovedTomboyishGirl_mvl/mxv
+	BYTE		PAN     c_v+6
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W72
+BelovedTomboyishGirl_7_B1:
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE		PAN     c_v-34
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE		        c_v+6
+	BYTE	W14
+// 035   ----------------------------------------
+	BYTE	W44
+	BYTE	W02
+	BYTE		N11     Fn3   v120
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		N32     Fn4 
+	BYTE	W14
+// 036   ----------------------------------------
+	BYTE	W22
+	BYTE		N11     Fn4   v112
+	BYTE	W12
+	BYTE		        An3   v120
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		N03     An3   v100
+	BYTE	W03
+	BYTE		N11     Fn4   v112
+	BYTE	W03
+	BYTE		        An3   v120
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		N56     Fn3 
+	BYTE	W14
+// 037   ----------------------------------------
+	BYTE	W44
+	BYTE	W02
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		N32     An4 
+	BYTE	W14
+// 038   ----------------------------------------
+	BYTE	W22
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		N02     En4 
+	BYTE	W03
+	BYTE		        Fn4 
+	BYTE	W03
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		N11     Cn4 
+	BYTE	W12
+	BYTE		N68     Cs4 
+	BYTE	W14
+// 039   ----------------------------------------
+	BYTE	W56
+	BYTE	W02
+	BYTE		N23     Gn4 
+	BYTE	W24
+	BYTE		N32     Fn4 
+	BYTE	W14
+// 040   ----------------------------------------
+	BYTE	W22
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        Bn4   v116
+	BYTE	W02
+// 041   ----------------------------------------
+	BYTE	W10
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        Dn5   v120
+	BYTE	W12
+	BYTE		        Bn4   v116
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		N12     Gn4   v092
+	BYTE	W01
+	BYTE		N23     Cn5   v120
+	BYTE	W23
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        Fn4   v112
+	BYTE	W02
+// 042   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn4 
+	BYTE	W13
+	BYTE		        An4   v120
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W11
+	BYTE		        En4   v100
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W13
+	BYTE		        Gn4   v112
+	BYTE	W11
+	BYTE		N32     Gn4   v120
+	BYTE	W14
+// 043   ----------------------------------------
+	BYTE	W22
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N32     Fn5 
+	BYTE	W14
+// 044   ----------------------------------------
+	BYTE	W22
+	BYTE		N11     Fn5   v112
+	BYTE	W12
+	BYTE		        An4   v120
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		N03     An4   v100
+	BYTE	W03
+	BYTE		N11     Fn5   v112
+	BYTE	W03
+	BYTE		        An4   v120
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		N56     Fn4 
+	BYTE	W14
+// 045   ----------------------------------------
+	BYTE	W44
+	BYTE	W02
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		N32     An5 
+	BYTE	W14
+// 046   ----------------------------------------
+	BYTE	W22
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		N02     En5 
+	BYTE	W03
+	BYTE		        Fn5 
+	BYTE	W03
+	BYTE		N06     En5 
+	BYTE	W06
+	BYTE		N11     Cn5 
+	BYTE	W12
+	BYTE		N68     Cs5 
+	BYTE	W14
+// 047   ----------------------------------------
+	BYTE	W56
+	BYTE	W02
+	BYTE		N23     Gn5 
+	BYTE	W24
+	BYTE		N32     Fn5 
+	BYTE	W14
+// 048   ----------------------------------------
+	BYTE	W22
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		        An5 
+	BYTE	W12
+	BYTE		        Cn6 
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		        Dn6 
+	BYTE	W12
+	BYTE		        Bn5   v116
+	BYTE	W02
+// 049   ----------------------------------------
+	BYTE	W10
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		        Dn6   v120
+	BYTE	W12
+	BYTE		        Bn5   v116
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		N12     Gn5   v092
+	BYTE	W01
+	BYTE		N23     Cn6   v120
+	BYTE	W23
+	BYTE		N11     An5 
+	BYTE	W12
+	BYTE		        Fn5   v112
+	BYTE	W02
+// 050   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn5 
+	BYTE	W13
+	BYTE		        An5   v120
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W11
+	BYTE		        En5   v100
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W13
+	BYTE		        Gn5   v112
+	BYTE	W11
+	BYTE		N32     Gn5   v120
+	BYTE	W14
+// 051   ----------------------------------------
+	BYTE	W22
+	BYTE		        An5 
+	BYTE	W36
+	BYTE		N23     An4 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W02
+// 052   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn4 
+	BYTE	W13
+	BYTE		        An4 
+	BYTE	W11
+	BYTE		        Gn4 
+	BYTE	W13
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W11
+	BYTE		N32   
+	BYTE	W14
+// 053   ----------------------------------------
+	BYTE	W22
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		N32     Fn4 
+	BYTE	W36
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W02
+// 054   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn4 
+	BYTE	W13
+	BYTE		        An4 
+	BYTE	W11
+	BYTE		        Cn5 
+	BYTE	W13
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W01
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_7_B1
+BelovedTomboyishGirl_7_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.9) ****************//
+
+BelovedTomboyishGirl_8:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   6
+	BYTE		PAN     c_v-44
+	BYTE		VOL     70*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W72
+BelovedTomboyishGirl_8_B1:
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W32
+	BYTE	W02
+	BYTE		N11     Dn2   v120
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		N32     An2 
+	BYTE	W14
+// 020   ----------------------------------------
+BelovedTomboyishGirl_8_020:
+	BYTE	W22
+	BYTE		N11     An2   v112
+	BYTE	W12
+	BYTE		        Fn2   v120
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		N03     Fn2   v100
+	BYTE	W03
+	BYTE		N11     An2   v112
+	BYTE	W03
+	BYTE		        Fn2   v120
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Fn2   v100
+	BYTE	W03
+	BYTE		N56     Dn2   v120
+	BYTE	W11
+	BYTE	PEND
+// 021   ----------------------------------------
+BelovedTomboyishGirl_8_021:
+	BYTE	W44
+	BYTE	W02
+	BYTE		N11     Dn2   v120
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		N32     Dn3 
+	BYTE	W14
+	BYTE	PEND
+// 022   ----------------------------------------
+BelovedTomboyishGirl_8_022:
+	BYTE	W22
+	BYTE		N11     Dn3   v120
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		N02     Cn3 
+	BYTE	W03
+	BYTE		        Dn3 
+	BYTE	W03
+	BYTE		N06     Cn3 
+	BYTE	W06
+	BYTE		N11     Gn2 
+	BYTE	W12
+	BYTE		N68     An2 
+	BYTE	W14
+	BYTE	PEND
+// 023   ----------------------------------------
+BelovedTomboyishGirl_8_023:
+	BYTE	W56
+	BYTE	W02
+	BYTE		N23     En3   v120
+	BYTE	W24
+	BYTE		N32     Fn3 
+	BYTE	W14
+	BYTE	PEND
+// 024   ----------------------------------------
+BelovedTomboyishGirl_8_024:
+	BYTE	W22
+	BYTE		N11     Fn3   v120
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Dn3   v116
+	BYTE	W02
+	BYTE	PEND
+// 025   ----------------------------------------
+BelovedTomboyishGirl_8_025:
+	BYTE	W10
+	BYTE		N11     Bn2   v116
+	BYTE	W12
+	BYTE		        Gn3   v120
+	BYTE	W12
+	BYTE		        Dn3   v116
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		N12     Cn3   v092
+	BYTE	W01
+	BYTE		N23     En3   v120
+	BYTE	W23
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		        Dn3   v112
+	BYTE	W02
+	BYTE	PEND
+// 026   ----------------------------------------
+BelovedTomboyishGirl_8_026:
+	BYTE	W10
+	BYTE		N11     An2   v112
+	BYTE	W13
+	BYTE		        Fn3   v120
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W11
+	BYTE		        Cn3   v100
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W13
+	BYTE		        En3   v112
+	BYTE	W11
+	BYTE		N32     En3   v120
+	BYTE	W14
+	BYTE	PEND
+// 027   ----------------------------------------
+BelovedTomboyishGirl_8_027:
+	BYTE	W22
+	BYTE		N11     Dn3   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		N32     An2 
+	BYTE	W14
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_021
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_022
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_023
+// 032   ----------------------------------------
+BelovedTomboyishGirl_8_032:
+	BYTE	W22
+	BYTE		N11     Fn3   v120
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W02
+	BYTE	PEND
+// 033   ----------------------------------------
+BelovedTomboyishGirl_8_033:
+	BYTE	W10
+	BYTE		N11     Bn2   v120
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		N12     Cn3   v092
+	BYTE	W01
+	BYTE		N23     En3   v120
+	BYTE	W23
+	BYTE		N01     En3   v060
+	BYTE	W01
+	BYTE		N11     Fn3   v120
+	BYTE	W11
+	BYTE		        Dn3 
+	BYTE	W02
+	BYTE	PEND
+// 034   ----------------------------------------
+BelovedTomboyishGirl_8_034:
+	BYTE	W10
+	BYTE		N11     An2   v120
+	BYTE	W13
+	BYTE		        Fn3 
+	BYTE	W11
+	BYTE		        En3 
+	BYTE	W13
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W11
+	BYTE		N32   
+	BYTE	W14
+	BYTE	PEND
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_027
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_020
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_021
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_022
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_023
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_024
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_025
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_026
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_027
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_021
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_023
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_032
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_033
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_8_034
+// 051   ----------------------------------------
+	BYTE	W22
+	BYTE		N32     Dn3   v120
+	BYTE	W36
+	BYTE		N23     An3 
+	BYTE	W24
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W02
+// 052   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn3 
+	BYTE	W13
+	BYTE		        An3 
+	BYTE	W11
+	BYTE		        Gn3 
+	BYTE	W13
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W11
+	BYTE		N32   
+	BYTE	W14
+// 053   ----------------------------------------
+	BYTE	W22
+	BYTE		N11     An3 
+	BYTE	W12
+	BYTE		N32     Fn3 
+	BYTE	W36
+	BYTE		N11     An3 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W02
+// 054   ----------------------------------------
+	BYTE	W10
+	BYTE		        Dn3 
+	BYTE	W13
+	BYTE		        An3 
+	BYTE	W11
+	BYTE		        Cn4 
+	BYTE	W13
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W01
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_8_B1
+BelovedTomboyishGirl_8_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.11) ****************//
+
+BelovedTomboyishGirl_9:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   45
+	BYTE		PAN     c_v+0
+	BYTE		VOL     67*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W72
+BelovedTomboyishGirl_9_B1:
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE		N48     Dn2   v116
+	BYTE		N48     An2 
+	BYTE	W14
+// 019   ----------------------------------------
+	BYTE	W32
+	BYTE	W02
+	BYTE		        Cn2 
+	BYTE		N48     Gn2 
+	BYTE	W48
+	BYTE		        Dn2 
+	BYTE		N48     An2 
+	BYTE	W14
+// 020   ----------------------------------------
+BelovedTomboyishGirl_9_020:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N48     Cn2   v116
+	BYTE		N48     An2 
+	BYTE	W48
+	BYTE		TIE     Bn1 
+	BYTE		TIE     Gn2 
+	BYTE	W14
+	BYTE	PEND
+// 021   ----------------------------------------
+BelovedTomboyishGirl_9_021:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N48     As1   v116
+	BYTE		N48     Dn2 
+	BYTE	W03
+	BYTE	PEND
+	BYTE		EOT     Bn1 
+	BYTE		        Gn2 
+	BYTE	W11
+// 022   ----------------------------------------
+BelovedTomboyishGirl_9_022:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N48     Cn2   v116
+	BYTE		N48     En2 
+	BYTE	W48
+	BYTE		TIE     Cs2 
+	BYTE		N96     An2 
+	BYTE	W14
+	BYTE	PEND
+// 023   ----------------------------------------
+BelovedTomboyishGirl_9_023:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N48     Dn2   v116
+	BYTE		N48     An2 
+	BYTE	W03
+	BYTE	PEND
+	BYTE		EOT     Cs2 
+	BYTE	W11
+// 024   ----------------------------------------
+BelovedTomboyishGirl_9_024:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N48     Cn2   v116
+	BYTE		N48     An2 
+	BYTE	W48
+	BYTE		N72     Bn1 
+	BYTE		N72     Gn2 
+	BYTE	W14
+	BYTE	PEND
+// 025   ----------------------------------------
+BelovedTomboyishGirl_9_025:
+	BYTE	W56
+	BYTE	W02
+	BYTE		N24     Cn2   v116
+	BYTE		N24     Gn2 
+	BYTE	W24
+	BYTE		N48     As1 
+	BYTE		N48     Fn2 
+	BYTE	W14
+	BYTE	PEND
+// 026   ----------------------------------------
+BelovedTomboyishGirl_9_026:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N48     Cn2   v116
+	BYTE		N48     Gn2 
+	BYTE	W48
+	BYTE		N72     Dn2 
+	BYTE		N72     An2 
+	BYTE	W14
+	BYTE	PEND
+// 027   ----------------------------------------
+BelovedTomboyishGirl_9_027:
+	BYTE	W56
+	BYTE	W02
+	BYTE		N24     Cn2   v116
+	BYTE		N24     Gn2 
+	BYTE	W24
+	BYTE		N48     Dn2 
+	BYTE		N48     An2 
+	BYTE	W14
+	BYTE	PEND
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_020
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_021
+	BYTE		EOT     Bn1 
+	BYTE		        Gn2 
+	BYTE	W11
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_022
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_023
+	BYTE		EOT     Cs2 
+	BYTE	W11
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_024
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_025
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_026
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_027
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_020
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_021
+	BYTE		EOT     Bn1 
+	BYTE		        Gn2 
+	BYTE	W11
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_022
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_023
+	BYTE		EOT     Cs2 
+	BYTE	W11
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_024
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_025
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_026
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_027
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_020
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_021
+	BYTE		EOT     Bn1 
+	BYTE		        Gn2 
+	BYTE	W11
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_022
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_023
+	BYTE		EOT     Cs2 
+	BYTE	W11
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_024
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_025
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_9_026
+// 051   ----------------------------------------
+	BYTE	W56
+	BYTE	W02
+	BYTE		N24     Cn2   v116
+	BYTE		N24     Gn2 
+	BYTE	W36
+	BYTE	W02
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_9_B1
+BelovedTomboyishGirl_9_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 10 (Midi-Chn.12) ****************//
+
+BelovedTomboyishGirl_10:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   33
+	BYTE		PAN     c_v-54
+	BYTE		VOL     90*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W56
+	BYTE	W02
+	BYTE		BEND    c_v+0
+	BYTE		N23     Dn1   v100
+	BYTE	W01
+	BYTE		BEND    c_v-2
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v-5
+	BYTE	W01
+	BYTE		        c_v-7
+	BYTE	W01
+	BYTE		        c_v-9
+	BYTE	W01
+	BYTE		        c_v-10
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v-17
+	BYTE	W01
+	BYTE		        c_v-19
+	BYTE	W01
+	BYTE		        c_v-20
+	BYTE	W01
+	BYTE		        c_v-22
+	BYTE	W01
+BelovedTomboyishGirl_10_B1:
+	BYTE		BEND    c_v-24
+	BYTE	W01
+	BYTE		        c_v-25
+	BYTE	W01
+	BYTE		        c_v-27
+	BYTE	W01
+	BYTE		        c_v-29
+	BYTE	W01
+	BYTE		        c_v-30
+	BYTE	W01
+	BYTE		        c_v-32
+	BYTE	W01
+	BYTE		        c_v-34
+	BYTE	W01
+	BYTE		        c_v-35
+	BYTE	W01
+	BYTE		        c_v-37
+	BYTE	W01
+	BYTE		        c_v-39
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE		N11     Bn0   v100
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W02
+// 002   ----------------------------------------
+BelovedTomboyishGirl_10_002:
+	BYTE	W10
+	BYTE		N11     Bn0   v100
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W02
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_002
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_002
+// 005   ----------------------------------------
+BelovedTomboyishGirl_10_005:
+	BYTE	W10
+	BYTE		N11     Bn0   v100
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Gn0 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W02
+	BYTE	PEND
+// 006   ----------------------------------------
+BelovedTomboyishGirl_10_006:
+	BYTE	W10
+	BYTE		N11     Gn0   v100
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W02
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_006
+// 008   ----------------------------------------
+BelovedTomboyishGirl_10_008:
+	BYTE	W10
+	BYTE		N11     Gn0   v100
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        An0 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W02
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	W10
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		        Bn0 
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W02
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_002
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_006
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_008
+// 017   ----------------------------------------
+	BYTE	W10
+	BYTE		N11     An0   v100
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N32     As0 
+	BYTE		N32     Fn1 
+	BYTE	W14
+// 018   ----------------------------------------
+	BYTE	W22
+	BYTE		N60     Cn1 
+	BYTE		N60     Gn1 
+	BYTE	W72
+	BYTE	W02
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W56
+	BYTE	W02
+	BYTE		BEND    c_v+0
+	BYTE		N23     Dn1   v116
+	BYTE	W01
+	BYTE		BEND    c_v-2
+	BYTE	W01
+	BYTE		        c_v-3
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v-6
+	BYTE	W01
+	BYTE		        c_v-7
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v-10
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v-16
+	BYTE	W01
+	BYTE		        c_v-18
+	BYTE	W01
+	BYTE		        c_v-19
+	BYTE	W01
+	BYTE		        c_v-20
+	BYTE	W01
+	BYTE		        c_v-22
+	BYTE	W01
+	BYTE		        c_v-23
+	BYTE	W01
+	BYTE		        c_v-24
+	BYTE	W01
+	BYTE		        c_v-26
+	BYTE	W01
+	BYTE		        c_v-27
+	BYTE	W01
+	BYTE		        c_v-28
+	BYTE	W01
+	BYTE		        c_v-30
+	BYTE	W01
+	BYTE		        c_v-31
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE		N44   
+	BYTE	W14
+// 036   ----------------------------------------
+BelovedTomboyishGirl_10_036:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn1   v116
+	BYTE	W48
+	BYTE		N92     Bn0 
+	BYTE	W14
+	BYTE	PEND
+// 037   ----------------------------------------
+BelovedTomboyishGirl_10_037:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N44     As0   v116
+	BYTE	W14
+	BYTE	PEND
+// 038   ----------------------------------------
+BelovedTomboyishGirl_10_038:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn1   v116
+	BYTE	W48
+	BYTE		N92     Cs1 
+	BYTE	W14
+	BYTE	PEND
+// 039   ----------------------------------------
+BelovedTomboyishGirl_10_039:
+	BYTE	W80
+	BYTE	W02
+	BYTE		N44     Dn1   v116
+	BYTE	W14
+	BYTE	PEND
+// 040   ----------------------------------------
+BelovedTomboyishGirl_10_040:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn1   v116
+	BYTE	W48
+	BYTE		N68     Bn0 
+	BYTE	W14
+	BYTE	PEND
+// 041   ----------------------------------------
+BelovedTomboyishGirl_10_041:
+	BYTE	W56
+	BYTE	W02
+	BYTE		N23     Cn1   v116
+	BYTE	W24
+	BYTE		N44     As0 
+	BYTE	W14
+	BYTE	PEND
+// 042   ----------------------------------------
+BelovedTomboyishGirl_10_042:
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn1   v116
+	BYTE	W48
+	BYTE		N68     Dn1 
+	BYTE	W14
+	BYTE	PEND
+// 043   ----------------------------------------
+	BYTE	W56
+	BYTE	W02
+	BYTE		BEND    c_v+0
+	BYTE		N23     An0 
+	BYTE	W01
+	BYTE		BEND    c_v-2
+	BYTE	W01
+	BYTE		        c_v-3
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v-6
+	BYTE	W01
+	BYTE		        c_v-7
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v-10
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v-16
+	BYTE	W01
+	BYTE		        c_v-18
+	BYTE	W01
+	BYTE		        c_v-19
+	BYTE	W01
+	BYTE		        c_v-20
+	BYTE	W01
+	BYTE		        c_v-22
+	BYTE	W01
+	BYTE		        c_v-23
+	BYTE	W01
+	BYTE		        c_v-24
+	BYTE	W01
+	BYTE		        c_v-26
+	BYTE	W01
+	BYTE		        c_v-27
+	BYTE	W01
+	BYTE		        c_v-28
+	BYTE	W01
+	BYTE		        c_v-30
+	BYTE	W01
+	BYTE		        c_v-31
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE		N44     Dn1 
+	BYTE	W14
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_036
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_037
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_038
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_039
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_040
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_041
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_042
+// 051   ----------------------------------------
+BelovedTomboyishGirl_10_051:
+	BYTE	W56
+	BYTE	W02
+	BYTE		BEND    c_v+0
+	BYTE		N23     An0   v116
+	BYTE	W01
+	BYTE		BEND    c_v-2
+	BYTE	W01
+	BYTE		        c_v-3
+	BYTE	W01
+	BYTE		        c_v-4
+	BYTE	W01
+	BYTE		        c_v-6
+	BYTE	W01
+	BYTE		        c_v-7
+	BYTE	W01
+	BYTE		        c_v-8
+	BYTE	W01
+	BYTE		        c_v-10
+	BYTE	W01
+	BYTE		        c_v-11
+	BYTE	W01
+	BYTE		        c_v-12
+	BYTE	W01
+	BYTE		        c_v-14
+	BYTE	W01
+	BYTE		        c_v-15
+	BYTE	W01
+	BYTE		        c_v-16
+	BYTE	W01
+	BYTE		        c_v-18
+	BYTE	W01
+	BYTE		        c_v-19
+	BYTE	W01
+	BYTE		        c_v-20
+	BYTE	W01
+	BYTE		        c_v-22
+	BYTE	W01
+	BYTE		        c_v-23
+	BYTE	W01
+	BYTE		        c_v-24
+	BYTE	W01
+	BYTE		        c_v-26
+	BYTE	W01
+	BYTE		        c_v-27
+	BYTE	W01
+	BYTE		        c_v-28
+	BYTE	W01
+	BYTE		        c_v-30
+	BYTE	W01
+	BYTE		        c_v-31
+	BYTE	W01
+	BYTE		        c_v+0
+	BYTE		N44     As0 
+	BYTE	W14
+	BYTE	PEND
+// 052   ----------------------------------------
+	BYTE	W32
+	BYTE	W02
+	BYTE		        Cn1 
+	BYTE	W48
+	BYTE		N68     Dn0 
+	BYTE	W14
+// 053   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_10_051
+// 054   ----------------------------------------
+	BYTE	W32
+	BYTE	W02
+	BYTE		N44     Cn1   v116
+	BYTE	W36
+	BYTE	W02
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_10_B1
+BelovedTomboyishGirl_10_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 11 (Midi-Chn.13) ****************//
+
+BelovedTomboyishGirl_11:
+	BYTE	KEYSH   BelovedTomboyishGirl_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   80
+	BYTE		VOL     50*BelovedTomboyishGirl_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W72
+BelovedTomboyishGirl_11_B1:
+	BYTE	W10
+	BYTE		PAN     c_v-34
+	BYTE		N06     Dn4   v100
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE		N06     Fs4   v100
+	BYTE	W06
+	BYTE		        Fs4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W02
+// 002   ----------------------------------------
+BelovedTomboyishGirl_11_002:
+	BYTE	W04
+	BYTE		N06     Dn4   v052
+	BYTE		N06     Bn4   v100
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE		N06     Bn4   v100
+	BYTE	W06
+	BYTE		        Dn4   v092
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Cs5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        Fs4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Fs4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        En4   v052
+	BYTE		N06     Cs5   v100
+	BYTE	W02
+	BYTE	PEND
+// 003   ----------------------------------------
+BelovedTomboyishGirl_11_003:
+	BYTE	W04
+	BYTE		N06     Dn4   v052
+	BYTE		N06     Bn4   v100
+	BYTE	W06
+	BYTE		        Cs4   v052
+	BYTE		N06     En4   v100
+	BYTE	W06
+	BYTE		        Bn3   v092
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		        An3   v100
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        Fs4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        Bn4   v052
+	BYTE	W06
+	BYTE		        En4 
+	BYTE		N06     Cs5   v100
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE		N06     Fs4   v100
+	BYTE	W06
+	BYTE		        Fs4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W02
+	BYTE	PEND
+// 004   ----------------------------------------
+BelovedTomboyishGirl_11_004:
+	BYTE	W04
+	BYTE		N06     Dn4   v052
+	BYTE		N06     Bn4   v100
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE		N06     Bn4   v100
+	BYTE	W06
+	BYTE		        Dn4   v092
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Cs5 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        Fs4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE		N06     Fs5   v100
+	BYTE	W06
+	BYTE		        Cs5   v052
+	BYTE		N06     En5   v100
+	BYTE	W02
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	W04
+	BYTE		        Bn4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        En4   v052
+	BYTE		N06     Cs5   v100
+	BYTE	W06
+	BYTE		        Fs4   v092
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Cs5   v100
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE		N06     Fs4   v100
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE	W06
+	BYTE		        Cs5 
+	BYTE		N06     En5   v100
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE		N06     Fs4   v100
+	BYTE	W06
+	BYTE		        Fs4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W02
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_11_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_11_003
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_11_004
+// 009   ----------------------------------------
+	BYTE	W04
+	BYTE		N06     Bn4   v052
+	BYTE		N06     Dn5   v100
+	BYTE	W06
+	BYTE		        En4   v052
+	BYTE		N06     Cs5   v100
+	BYTE	W06
+	BYTE		        Fs4   v092
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Cs5   v100
+	BYTE	W06
+	BYTE		        Fs4 
+	BYTE	W06
+	BYTE		        Dn4   v052
+	BYTE		N06     Fs4   v100
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE	W06
+	BYTE		        Cs5 
+	BYTE		N06     En5   v100
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE		N06     Fs5   v100
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W02
+// 010   ----------------------------------------
+BelovedTomboyishGirl_11_010:
+	BYTE	W04
+	BYTE		N06     Dn5   v052
+	BYTE		N06     Bn5   v100
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE		N06     Bn5   v100
+	BYTE	W06
+	BYTE		        Dn5   v092
+	BYTE	W06
+	BYTE		        Bn5 
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Dn6 
+	BYTE	W06
+	BYTE		        Cs6 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        Bn5   v100
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE		N06     Dn6   v100
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W06
+	BYTE		        En5   v052
+	BYTE		N06     Cs6   v100
+	BYTE	W02
+	BYTE	PEND
+// 011   ----------------------------------------
+BelovedTomboyishGirl_11_011:
+	BYTE	W04
+	BYTE		N06     Dn5   v052
+	BYTE		N06     Bn5   v100
+	BYTE	W06
+	BYTE		        Cs5   v052
+	BYTE		N06     En5   v100
+	BYTE	W06
+	BYTE		        Bn4   v092
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        Cs5 
+	BYTE	W06
+	BYTE		        An4   v100
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W06
+	BYTE		        Bn5   v052
+	BYTE	W06
+	BYTE		        En5 
+	BYTE		N06     Cs6   v100
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE		N06     Fs5   v100
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W02
+	BYTE	PEND
+// 012   ----------------------------------------
+BelovedTomboyishGirl_11_012:
+	BYTE	W04
+	BYTE		N06     Dn5   v052
+	BYTE		N06     Bn5   v100
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE		N06     Bn5   v100
+	BYTE	W06
+	BYTE		        Dn5   v092
+	BYTE	W06
+	BYTE		        Bn5 
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Dn6 
+	BYTE	W06
+	BYTE		        Cs6 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        Bn5   v100
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE		N06     Dn6   v100
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Dn6   v052
+	BYTE		N06     Fs6   v100
+	BYTE	W06
+	BYTE		        Cs6   v052
+	BYTE		N06     En6   v100
+	BYTE	W02
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	W04
+	BYTE		        Bn5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W06
+	BYTE		        En5   v052
+	BYTE		N06     Cs6   v100
+	BYTE	W06
+	BYTE		        Fs5   v092
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Dn6 
+	BYTE	W06
+	BYTE		        Cs6   v100
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE		N06     Fs5   v100
+	BYTE	W06
+	BYTE		        Fs6   v052
+	BYTE	W06
+	BYTE		        Cs6 
+	BYTE		N06     En6   v100
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE		N06     Fs5   v100
+	BYTE	W06
+	BYTE		        Fs5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W02
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_11_010
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_11_011
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	BelovedTomboyishGirl_11_012
+// 017   ----------------------------------------
+	BYTE	W04
+	BYTE		N06     Bn5   v052
+	BYTE		N06     Dn6   v100
+	BYTE	W06
+	BYTE		        En5   v052
+	BYTE		N06     Cs6   v100
+	BYTE	W06
+	BYTE		        Fs5   v092
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        Dn5 
+	BYTE	W06
+	BYTE		        En5 
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Dn6 
+	BYTE	W06
+	BYTE		        Cs6   v100
+	BYTE	W06
+	BYTE		        Fs5 
+	BYTE	W06
+	BYTE		        Dn5   v052
+	BYTE		N06     Fs5   v100
+	BYTE	W06
+	BYTE		        Fs6   v052
+	BYTE	W06
+	BYTE		        Cs6 
+	BYTE		N06     En6   v100
+	BYTE	W20
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W96
+// 054   ----------------------------------------
+	BYTE	W72
+	BYTE	GoTo
+	 POIN2	BelovedTomboyishGirl_11_B1
+BelovedTomboyishGirl_11_B2:
+	BYTE	W24
+// 055   ----------------------------------------
+	BYTE	W80
+	BYTE	W02
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+BelovedTomboyishGirl:
+	BYTE	11	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	BelovedTomboyishGirl_pri	// Priority
+	BYTE	BelovedTomboyishGirl_rev	// Reverb.
+
+	POIN2	BelovedTomboyishGirl_grp
+
+	POIN2	BelovedTomboyishGirl_1
+	POIN2	BelovedTomboyishGirl_2
+	POIN2	BelovedTomboyishGirl_3
+	POIN2	BelovedTomboyishGirl_4
+	POIN2	BelovedTomboyishGirl_5
+	POIN2	BelovedTomboyishGirl_6
+	POIN2	BelovedTomboyishGirl_7
+	POIN2	BelovedTomboyishGirl_8
+	POIN2	BelovedTomboyishGirl_9
+	POIN2	BelovedTomboyishGirl_10
+	POIN2	BelovedTomboyishGirl_11
+
+	

@@ -1,0 +1,22 @@
+#ifdef AnimationSwitch
+
+ALIGN 4
+
+#include "Animations/Sword Installer.event"
+#include "Animations/Axe Installer.event"
+#include "Animations/Handaxe Installer.event"
+#include "Animations/Unarmed Installer.event"
+
+ClassAnim:
+SwordAnim(HeroFSwordAnim)
+AxeAnim(HeroFAxeAnim)
+HandaxeAnim(HeroFHandaxeAnim)
+UnarmedAnim(HeroFUnarmedAnim)
+EndAnim
+
+#endif
+
+#ifndef AnimationSwitch
+ClassAnim:
+EndAnim
+#endif

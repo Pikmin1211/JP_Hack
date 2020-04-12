@@ -20,6 +20,10 @@ ChapterDeathQuote(MonsterBoss,Ch5,DefeatBossFlag,0x0)
 // Ch7
 ChapterDeathQuote(Imperial,0x7,0xA,0x0)
 
+// Ch8
+ChapterDeathQuote(Tim,0x8,0xB,TestDialogue)
+ChapterDeathQuote(Bit,0x8,0xC,TestDialogue)
+
 // Always
 AlwaysDeathQuote(Sanders,GameOverFlag,TestDialogue)
 EndQuote

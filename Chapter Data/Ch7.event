@@ -20,7 +20,7 @@
 #define EnemiesForVictoryMusic 1
 #define ChapterFadeToBlack 1//0x1 to fade to black
 #define TurnLimit 0//-1
-#define DefendUnit 0
+#define DefendUnit Imperial
 #define ObjectiveDisplay ObjectiveSeize
 #define ObjectiveText Ch7Objective
 #define DetailObjectiveText Ch7Objective

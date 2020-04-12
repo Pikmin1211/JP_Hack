@@ -1,5 +1,5 @@
 #define BaseClass Cleric
-#define PromotedClass1 0x0
-#define PromotedClass2 0x0
+#define PromotedClass1 BishopF
+#define PromotedClass2 Valkyrie
 
 #include "Palette/Palette Setup.event"

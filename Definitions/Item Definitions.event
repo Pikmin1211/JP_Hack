@@ -179,3 +179,8 @@
 #define LegRingMagicAnim 0xFF//MagicAnimationID here
 #define LegRingIcon 0xF8//ItemIconID here
 #define LegRingUseText 0x0//TextID here
+
+#define RazorAxe 0xE0//ItemID here
+#define RazorAxeMagicAnim 0xFF//MagicAnimationID here
+#define RazorAxeIcon 0xF9//ItemIconID here
+#define RazorAxeUseText 0x0//TextID here

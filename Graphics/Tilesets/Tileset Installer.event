@@ -13,3 +13,11 @@ SewerCastlePal:
 #incbin "Palettes/SewerCastle_Pal.dmp"
 
 EventPointerTable(CastlePaletteSewer,SewerCastlePal)
+
+#define SnowPaletteNight 0xE5
+
+ALIGN 4
+NightSnowPal:
+#incbin "Palettes/NightSnow_Pal.dmp"
+
+EventPointerTable(SnowPaletteNight,NightSnowPal)

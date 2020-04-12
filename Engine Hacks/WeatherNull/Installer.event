@@ -1,0 +1,82 @@
+// Removes weather move penalties so it is purely aesthetic
+
+PUSH
+
+ORG $80BF65
+#incbin "Bin/AnimalMove.bin"
+ORG $80C375
+#incbin "Bin/AnimalMove.bin"
+
+ORG $80BD5D
+#incbin "Bin/BerserkerMove.bin"
+ORG $80C16D
+#incbin "Bin/BerserkerMove.bin"
+
+ORG $80BD9E
+#incbin "Bin/BrigandMove.bin"
+ORG $80C1AE
+#incbin "Bin/BrigandMove.bin"
+
+ORG $80BEE3
+#incbin "Bin/CavalierMove.bin"
+ORG $80C2F3
+#incbin "Bin/CavalierMove.bin"
+
+ORG $80BEA2
+#incbin "Bin/CivilianMove.bin"
+ORG $80C2B2
+#incbin "Bin/CivilianMove.bin"
+
+// Demon King's movetype has no weather variation in vanilla.
+
+ORG $80BD1C
+#incbin "Bin/FighterMove.bin"
+ORG $80C12C
+#incbin "Bin/FighterMove.bin"
+
+ORG $80BFE7
+#incbin "Bin/FlierMove.bin"
+ORG $80C3F7
+#incbin "Bin/FlierMove.bin"
+
+ORG $80BCDB
+#incbin "Bin/KnightMove.bin"
+ORG $80C0EB
+#incbin "Bin/KnightMove.bin"
+
+ORG $80BE61
+#incbin "Bin/MageMove.bin"
+ORG $80C271
+#incbin "Bin/MageMove.bin"
+
+ORG $80BC9A
+#incbin "Bin/NormalMove.bin"
+ORG $80C0AA
+#incbin "Bin/NormalMove.bin"
+
+ORG $80BF24
+#incbin "Bin/PaladinMove.bin"
+ORG $80C334
+#incbin "Bin/PaladinMove.bin"
+
+ORG $80BDDF
+#incbin "Bin/PirateMove.bin"
+ORG $80C1EF
+#incbin "Bin/PirateMove.bin"
+
+ORG $80BFA6
+#incbin "Bin/RangerMove.bin"
+ORG $80C3B6
+#incbin "Bin/RangerMove.bin"
+
+ORG $80BC59
+#incbin "Bin/RiverCrossMove.bin"
+ORG $80C069
+#incbin "Bin/RiverCrossMove.bin"
+
+ORG $80BE20
+#incbin "Bin/ThiefMove.bin"
+ORG $80C230
+#incbin "Bin/ThiefMove.bin"
+
+POP

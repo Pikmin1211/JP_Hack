@@ -1,5 +1,5 @@
 #define BaseClass FighterF
-#define PromotedClass1 0x0
-#define PromotedClass2 0x0
+#define PromotedClass1 WarriorF
+#define PromotedClass2 HeroF
 
 #include "Palette/Palette Setup.event"

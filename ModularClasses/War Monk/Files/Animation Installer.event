@@ -1,0 +1,22 @@
+#ifdef AnimationSwitch
+
+ALIGN 4
+
+#include "Animations/Axe Installer.event"
+#include "Animations/Handaxe Installer.event"
+#include "Animations/Magic Installer.event"
+#include "Animations/Unarmed Installer.event"
+
+ClassAnim:
+AxeAnim(WarMonkAxeAnim)
+HandaxeAnim(WarMonkHandaxeAnim)
+StaffAnim(WarMonkMagicAnim)
+UnarmedAnim(WarMonkUnarmedAnim)
+EndAnim
+
+#endif
+
+#ifndef AnimationSwitch
+ClassAnim:
+EndAnim
+#endif

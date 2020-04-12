@@ -173,7 +173,7 @@ EnemyUnits:
 	UNIT Imperial2 Archer 0x0 Level(6,Enemy,1) [13,0] 0 0 0 0 [Longbow] AttackInRangeAI
 	UNIT Imperial2 Archer 0x0 Level(6,Enemy,1) [9,0] 0 0 0 0 [Longbow] AttackInRangeAI
 
-	UNIT Imperial2 Priest 0x0 Level(4,Enemy,1) [8,6] 0 0 0 0 [Physic] AttackInRangeAI
+	UNIT Imperial2 Priest 0x0 Level(4,Enemy,1) [8,6] 0 0 0 0 [Physic] HealUnits
 	UNIT Imperial2 Archer 0x0 Level(5,Enemy,1) [9,7] 0 0 0 0 [Longbow] AttackInRangeAI
 	UNIT Imperial2 Mage 0x0 Level(6,Enemy,1) [8,8] 0 0 0 0 [Thunder] AttackInRangeAI
 

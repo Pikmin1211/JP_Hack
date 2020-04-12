@@ -4,6 +4,14 @@ ORG 0x1609E
 SHORT 0x0
 POP
 
+// Armory and Vendor music
+PUSH
+ORG 0xB4C02
+BYTE FragranceOfDarkCoffeeSong
+ORG 0xB4C0C
+BYTE RollingDiceSong
+POP
+
 // Default prep screen use text is skill learning
 //PUSH
 //ORG StatBoosterTextTable + (11 * 0x8) + 0x2
@@ -29,3 +37,7 @@ POP
 #include "SendAll/Installer.event"
 
 #include "Aircalibur/AircaliburFix.event"
+
+#include "WeatherNull/Installer.event"
+
+#include "SplitPromoItems/SplitPromoItems.event"

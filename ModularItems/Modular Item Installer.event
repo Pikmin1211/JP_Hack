@@ -69,3 +69,5 @@
 #include "Guard Ring/Guard Ring Installer.event"
 
 #include "Leg Ring/Leg Ring Installer.event"
+
+#include "Razor Axe/Razor Axe Installer.event"

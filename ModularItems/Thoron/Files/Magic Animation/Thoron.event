@@ -22,7 +22,7 @@ WORD 0x85000000
 WORD 0x85000000
 WORD 0x85000000
 WORD 0x85000000
-WORD 0x85000000
+WORD 0x85000153
 WORD 0x85081029
 SHORT 2; BYTE 0 0x86; POIN Thoron_objimg_0; WORD 0 0; POIN Thoron_bgImage_0 Thoron_objPalette Thoron_bgPalette_0 Thoron_TSA_0
 SHORT 2; BYTE 1 0x86; POIN Thoron_objimg_0; WORD 12 24; POIN Thoron_bgImage_1 Thoron_objPalette Thoron_bgPalette_1 Thoron_TSA_1
@@ -79,6 +79,7 @@ SHORT 2; BYTE 37 0x86; POIN Thoron_objimg_0; WORD 444 888; POIN Thoron_bgImage_3
 WORD 0x85031029
 SHORT 5; BYTE 38 0x86; POIN Thoron_objimg_0; WORD 456 912; POIN Thoron_bgImage_0 Thoron_objPalette Thoron_bgPalette_0 Thoron_TSA_0
 WORD 0x8500012a
+WORD 0x85000053
 WORD 0x80000000
 
 //OAM Data
@@ -95,77 +96,77 @@ BYTE 0x0 0x0 0x0 0x10 0x0 0x0 0xbc 0xff 0xa8 0xff 0x0 0x0 0x1 0x0 0x0 0x0 0x0 0x
 Thoron_TSA_0:
 #incbin "Thoron_b_001.map.bin"
 Thoron_TSA_1:
-#incbin "Thoron_b_003.map.bin"
+#incbin "Thoron_b_002.map.bin"
 Thoron_TSA_2:
-#incbin "Thoron_b_004.map.bin"
+#incbin "Thoron_b_003.map.bin"
 Thoron_TSA_3:
-#incbin "Thoron_b_005.map.bin"
+#incbin "Thoron_b_004.map.bin"
 Thoron_TSA_4:
-#incbin "Thoron_b_006.map.bin"
+#incbin "Thoron_b_005.map.bin"
 Thoron_TSA_5:
-#incbin "Thoron_b_007.map.bin"
+#incbin "Thoron_b_006.map.bin"
 Thoron_TSA_6:
-#incbin "Thoron_b_008.map.bin"
+#incbin "Thoron_b_007.map.bin"
 Thoron_TSA_7:
-#incbin "Thoron_b_009.map.bin"
+#incbin "Thoron_b_008.map.bin"
 Thoron_TSA_8:
-#incbin "Thoron_b_010.map.bin"
+#incbin "Thoron_b_009.map.bin"
 Thoron_TSA_9:
-#incbin "Thoron_b_011.map.bin"
+#incbin "Thoron_b_010.map.bin"
 Thoron_TSA_10:
-#incbin "Thoron_b_012.map.bin"
+#incbin "Thoron_b_011.map.bin"
 Thoron_TSA_11:
-#incbin "Thoron_b_013.map.bin"
+#incbin "Thoron_b_012.map.bin"
 Thoron_TSA_12:
-#incbin "Thoron_b_014.map.bin"
+#incbin "Thoron_b_013.map.bin"
 Thoron_TSA_13:
-#incbin "Thoron_b_015.map.bin"
+#incbin "Thoron_b_014.map.bin"
 Thoron_TSA_14:
-#incbin "Thoron_b_016.map.bin"
+#incbin "Thoron_b_015.map.bin"
 Thoron_TSA_15:
-#incbin "Thoron_b_017.map.bin"
+#incbin "Thoron_b_016.map.bin"
 Thoron_TSA_16:
-#incbin "Thoron_b_018.map.bin"
+#incbin "Thoron_b_017.map.bin"
 Thoron_TSA_17:
-#incbin "Thoron_b_019.map.bin"
+#incbin "Thoron_b_018.map.bin"
 Thoron_TSA_18:
-#incbin "Thoron_b_020.map.bin"
+#incbin "Thoron_b_019.map.bin"
 Thoron_TSA_19:
-#incbin "Thoron_b_021.map.bin"
+#incbin "Thoron_b_020.map.bin"
 Thoron_TSA_20:
-#incbin "Thoron_b_022.map.bin"
+#incbin "Thoron_b_021.map.bin"
 Thoron_TSA_21:
-#incbin "Thoron_b_023.map.bin"
+#incbin "Thoron_b_022.map.bin"
 Thoron_TSA_22:
-#incbin "Thoron_b_024.map.bin"
+#incbin "Thoron_b_023.map.bin"
 Thoron_TSA_23:
-#incbin "Thoron_b_025.map.bin"
+#incbin "Thoron_b_024.map.bin"
 Thoron_TSA_24:
-#incbin "Thoron_b_026.map.bin"
+#incbin "Thoron_b_025.map.bin"
 Thoron_TSA_25:
-#incbin "Thoron_b_027.map.bin"
+#incbin "Thoron_b_026.map.bin"
 Thoron_TSA_26:
-#incbin "Thoron_b_028.map.bin"
+#incbin "Thoron_b_027.map.bin"
 Thoron_TSA_27:
-#incbin "Thoron_b_029.map.bin"
+#incbin "Thoron_b_028.map.bin"
 Thoron_TSA_28:
-#incbin "Thoron_b_030.map.bin"
+#incbin "Thoron_b_029.map.bin"
 Thoron_TSA_29:
-#incbin "Thoron_b_031.map.bin"
+#incbin "Thoron_b_030.map.bin"
 Thoron_TSA_30:
-#incbin "Thoron_b_032.map.bin"
+#incbin "Thoron_b_031.map.bin"
 Thoron_TSA_31:
-#incbin "Thoron_b_033.map.bin"
+#incbin "Thoron_b_032.map.bin"
 Thoron_TSA_32:
-#incbin "Thoron_b_034.map.bin"
+#incbin "Thoron_b_033.map.bin"
 Thoron_TSA_33:
-#incbin "Thoron_b_035.map.bin"
+#incbin "Thoron_b_034.map.bin"
 Thoron_TSA_34:
-#incbin "Thoron_b_036.map.bin"
+#incbin "Thoron_b_035.map.bin"
 Thoron_TSA_35:
-#incbin "Thoron_b_037.map.bin"
+#incbin "Thoron_b_036.map.bin"
 Thoron_TSA_36:
-#incbin "Thoron_b_038.map.bin"
+#incbin "Thoron_b_037.map.bin"
 
 //OBJ Sheets Data
 Thoron_objimg_0:
@@ -179,151 +180,151 @@ SHORT 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0
 Thoron_bgImage_0:
 #incbin "Thoron_b_001.img.bin"
 Thoron_bgImage_1:
-#incbin "Thoron_b_003.img.bin"
+#incbin "Thoron_b_002.img.bin"
 Thoron_bgImage_2:
-#incbin "Thoron_b_004.img.bin"
+#incbin "Thoron_b_003.img.bin"
 Thoron_bgImage_3:
-#incbin "Thoron_b_005.img.bin"
+#incbin "Thoron_b_004.img.bin"
 Thoron_bgImage_4:
-#incbin "Thoron_b_006.img.bin"
+#incbin "Thoron_b_005.img.bin"
 Thoron_bgImage_5:
-#incbin "Thoron_b_007.img.bin"
+#incbin "Thoron_b_006.img.bin"
 Thoron_bgImage_6:
-#incbin "Thoron_b_008.img.bin"
+#incbin "Thoron_b_007.img.bin"
 Thoron_bgImage_7:
-#incbin "Thoron_b_009.img.bin"
+#incbin "Thoron_b_008.img.bin"
 Thoron_bgImage_8:
-#incbin "Thoron_b_010.img.bin"
+#incbin "Thoron_b_009.img.bin"
 Thoron_bgImage_9:
-#incbin "Thoron_b_011.img.bin"
+#incbin "Thoron_b_010.img.bin"
 Thoron_bgImage_10:
-#incbin "Thoron_b_012.img.bin"
+#incbin "Thoron_b_011.img.bin"
 Thoron_bgImage_11:
-#incbin "Thoron_b_013.img.bin"
+#incbin "Thoron_b_012.img.bin"
 Thoron_bgImage_12:
-#incbin "Thoron_b_014.img.bin"
+#incbin "Thoron_b_013.img.bin"
 Thoron_bgImage_13:
-#incbin "Thoron_b_015.img.bin"
+#incbin "Thoron_b_014.img.bin"
 Thoron_bgImage_14:
-#incbin "Thoron_b_016.img.bin"
+#incbin "Thoron_b_015.img.bin"
 Thoron_bgImage_15:
-#incbin "Thoron_b_017.img.bin"
+#incbin "Thoron_b_016.img.bin"
 Thoron_bgImage_16:
-#incbin "Thoron_b_018.img.bin"
+#incbin "Thoron_b_017.img.bin"
 Thoron_bgImage_17:
-#incbin "Thoron_b_019.img.bin"
+#incbin "Thoron_b_018.img.bin"
 Thoron_bgImage_18:
-#incbin "Thoron_b_020.img.bin"
+#incbin "Thoron_b_019.img.bin"
 Thoron_bgImage_19:
-#incbin "Thoron_b_021.img.bin"
+#incbin "Thoron_b_020.img.bin"
 Thoron_bgImage_20:
-#incbin "Thoron_b_022.img.bin"
+#incbin "Thoron_b_021.img.bin"
 Thoron_bgImage_21:
-#incbin "Thoron_b_023.img.bin"
+#incbin "Thoron_b_022.img.bin"
 Thoron_bgImage_22:
-#incbin "Thoron_b_024.img.bin"
+#incbin "Thoron_b_023.img.bin"
 Thoron_bgImage_23:
-#incbin "Thoron_b_025.img.bin"
+#incbin "Thoron_b_024.img.bin"
 Thoron_bgImage_24:
-#incbin "Thoron_b_026.img.bin"
+#incbin "Thoron_b_025.img.bin"
 Thoron_bgImage_25:
-#incbin "Thoron_b_027.img.bin"
+#incbin "Thoron_b_026.img.bin"
 Thoron_bgImage_26:
-#incbin "Thoron_b_028.img.bin"
+#incbin "Thoron_b_027.img.bin"
 Thoron_bgImage_27:
-#incbin "Thoron_b_029.img.bin"
+#incbin "Thoron_b_028.img.bin"
 Thoron_bgImage_28:
-#incbin "Thoron_b_030.img.bin"
+#incbin "Thoron_b_029.img.bin"
 Thoron_bgImage_29:
-#incbin "Thoron_b_031.img.bin"
+#incbin "Thoron_b_030.img.bin"
 Thoron_bgImage_30:
-#incbin "Thoron_b_032.img.bin"
+#incbin "Thoron_b_031.img.bin"
 Thoron_bgImage_31:
-#incbin "Thoron_b_033.img.bin"
+#incbin "Thoron_b_032.img.bin"
 Thoron_bgImage_32:
-#incbin "Thoron_b_034.img.bin"
+#incbin "Thoron_b_033.img.bin"
 Thoron_bgImage_33:
-#incbin "Thoron_b_035.img.bin"
+#incbin "Thoron_b_034.img.bin"
 Thoron_bgImage_34:
-#incbin "Thoron_b_036.img.bin"
+#incbin "Thoron_b_035.img.bin"
 Thoron_bgImage_35:
-#incbin "Thoron_b_037.img.bin"
+#incbin "Thoron_b_036.img.bin"
 Thoron_bgImage_36:
-#incbin "Thoron_b_038.img.bin"
+#incbin "Thoron_b_037.img.bin"
 
 //BG Palettes Data
 Thoron_bgPalette_0:
 #incbin "Thoron_b_001.pal.bin"
 Thoron_bgPalette_1:
-#incbin "Thoron_b_003.pal.bin"
+#incbin "Thoron_b_002.pal.bin"
 Thoron_bgPalette_2:
-#incbin "Thoron_b_004.pal.bin"
+#incbin "Thoron_b_003.pal.bin"
 Thoron_bgPalette_3:
-#incbin "Thoron_b_005.pal.bin"
+#incbin "Thoron_b_004.pal.bin"
 Thoron_bgPalette_4:
-#incbin "Thoron_b_006.pal.bin"
+#incbin "Thoron_b_005.pal.bin"
 Thoron_bgPalette_5:
-#incbin "Thoron_b_007.pal.bin"
+#incbin "Thoron_b_006.pal.bin"
 Thoron_bgPalette_6:
-#incbin "Thoron_b_008.pal.bin"
+#incbin "Thoron_b_007.pal.bin"
 Thoron_bgPalette_7:
-#incbin "Thoron_b_009.pal.bin"
+#incbin "Thoron_b_008.pal.bin"
 Thoron_bgPalette_8:
-#incbin "Thoron_b_010.pal.bin"
+#incbin "Thoron_b_009.pal.bin"
 Thoron_bgPalette_9:
-#incbin "Thoron_b_011.pal.bin"
+#incbin "Thoron_b_010.pal.bin"
 Thoron_bgPalette_10:
-#incbin "Thoron_b_012.pal.bin"
+#incbin "Thoron_b_011.pal.bin"
 Thoron_bgPalette_11:
-#incbin "Thoron_b_013.pal.bin"
+#incbin "Thoron_b_012.pal.bin"
 Thoron_bgPalette_12:
-#incbin "Thoron_b_014.pal.bin"
+#incbin "Thoron_b_013.pal.bin"
 Thoron_bgPalette_13:
-#incbin "Thoron_b_015.pal.bin"
+#incbin "Thoron_b_014.pal.bin"
 Thoron_bgPalette_14:
-#incbin "Thoron_b_016.pal.bin"
+#incbin "Thoron_b_015.pal.bin"
 Thoron_bgPalette_15:
-#incbin "Thoron_b_017.pal.bin"
+#incbin "Thoron_b_016.pal.bin"
 Thoron_bgPalette_16:
-#incbin "Thoron_b_018.pal.bin"
+#incbin "Thoron_b_017.pal.bin"
 Thoron_bgPalette_17:
-#incbin "Thoron_b_019.pal.bin"
+#incbin "Thoron_b_018.pal.bin"
 Thoron_bgPalette_18:
-#incbin "Thoron_b_020.pal.bin"
+#incbin "Thoron_b_019.pal.bin"
 Thoron_bgPalette_19:
-#incbin "Thoron_b_021.pal.bin"
+#incbin "Thoron_b_020.pal.bin"
 Thoron_bgPalette_20:
-#incbin "Thoron_b_022.pal.bin"
+#incbin "Thoron_b_021.pal.bin"
 Thoron_bgPalette_21:
-#incbin "Thoron_b_023.pal.bin"
+#incbin "Thoron_b_022.pal.bin"
 Thoron_bgPalette_22:
-#incbin "Thoron_b_024.pal.bin"
+#incbin "Thoron_b_023.pal.bin"
 Thoron_bgPalette_23:
-#incbin "Thoron_b_025.pal.bin"
+#incbin "Thoron_b_024.pal.bin"
 Thoron_bgPalette_24:
-#incbin "Thoron_b_026.pal.bin"
+#incbin "Thoron_b_025.pal.bin"
 Thoron_bgPalette_25:
-#incbin "Thoron_b_027.pal.bin"
+#incbin "Thoron_b_026.pal.bin"
 Thoron_bgPalette_26:
-#incbin "Thoron_b_028.pal.bin"
+#incbin "Thoron_b_027.pal.bin"
 Thoron_bgPalette_27:
-#incbin "Thoron_b_029.pal.bin"
+#incbin "Thoron_b_028.pal.bin"
 Thoron_bgPalette_28:
-#incbin "Thoron_b_030.pal.bin"
+#incbin "Thoron_b_029.pal.bin"
 Thoron_bgPalette_29:
-#incbin "Thoron_b_031.pal.bin"
+#incbin "Thoron_b_030.pal.bin"
 Thoron_bgPalette_30:
-#incbin "Thoron_b_032.pal.bin"
+#incbin "Thoron_b_031.pal.bin"
 Thoron_bgPalette_31:
-#incbin "Thoron_b_033.pal.bin"
+#incbin "Thoron_b_032.pal.bin"
 Thoron_bgPalette_32:
-#incbin "Thoron_b_034.pal.bin"
+#incbin "Thoron_b_033.pal.bin"
 Thoron_bgPalette_33:
-#incbin "Thoron_b_035.pal.bin"
+#incbin "Thoron_b_034.pal.bin"
 Thoron_bgPalette_34:
-#incbin "Thoron_b_036.pal.bin"
+#incbin "Thoron_b_035.pal.bin"
 Thoron_bgPalette_35:
-#incbin "Thoron_b_037.pal.bin"
+#incbin "Thoron_b_036.pal.bin"
 Thoron_bgPalette_36:
-#incbin "Thoron_b_038.pal.bin"
+#incbin "Thoron_b_037.pal.bin"
 

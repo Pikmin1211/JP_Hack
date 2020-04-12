@@ -31,3 +31,9 @@
 #include "Gohard/Gohard Installer.event"
 
 #include "Yanndahl/Yanndahl Installer.event"
+
+#include "Milanor/Milanor Installer.event"
+
+#include "Guts/Guts Installer.event"
+
+#include "Kohaku/Kohaku Installer.event"

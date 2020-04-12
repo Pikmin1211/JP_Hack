@@ -1,8 +1,8 @@
 HeroCrestList:
-BYTE Mercenary MercenaryF Myrmidon MyrmidonF Fighter Journeyman2 0x0
+BYTE Mercenary MercenaryF Myrmidon MyrmidonF Fighter Journeyman2 FighterF 0x0
 
 KnightCrestList:
-BYTE Cavalier CavalierF Knight KnightF Recruit2 0x0
+BYTE Cavalier CavalierF Knight KnightF Recruit2 FreeKnight LanceKnight AxeKnight AxeArmor Soldier 0x0
 
 OrionsBoltList:
 BYTE Archer ArcherF 0x0
@@ -14,7 +14,7 @@ GuidingRingList:
 BYTE Priest Cleric Mage MageF Monk Shaman ShamanF Troubadour Pupil2 0x0
 
 MasterSealList:
-BYTE Mercenary MercenaryF Myrmidon MyrmidonF Fighter Pirate Brigand Cavalier CavalierF Knight KnightF Archer ArcherF PegasusKnight WyvernRider WyvernRiderF Priest Cleric Mage MageF Shaman ShamanF Troubadour Thief Journeyman1 Pupil1 Recruit1 Journeyman2 Pupil2 Recruit2 Monk 0x0
+BYTE Mercenary MercenaryF Myrmidon MyrmidonF Fighter Pirate Brigand Cavalier CavalierF Knight KnightF Archer ArcherF PegasusKnight WyvernRider WyvernRiderF Priest Cleric Mage MageF Shaman ShamanF Troubadour Thief Journeyman1 Pupil1 Recruit1 Journeyman2 Pupil2 Recruit2 Monk FreeKnight LanceKnight AxeKnight AxeArmor Soldier FighterF 0x0
 
 HeavenSealList:
 BYTE 0x0

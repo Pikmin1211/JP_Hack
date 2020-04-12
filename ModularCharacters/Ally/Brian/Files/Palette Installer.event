@@ -1,5 +1,5 @@
 #define BaseClass Thief
-#define PromotedClass1 0x0
-#define PromotedClass2 0x0
+#define PromotedClass1 Assassin
+#define PromotedClass2 Rogue
 
 #include "Palette/Palette Setup.event"

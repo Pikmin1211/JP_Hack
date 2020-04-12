@@ -5,6 +5,7 @@ SetClassMove(Troubadour,7)
 SetClassMove(MageKnight,8)
 SetClassMove(MageKnightF,8)
 SetClassMove(Valkyrie,8)
+SetClassMove(GreatKnight,7)
 
 SetClassSpd(Mercenary,7)
 SetClassSpd(WyvernRider,4)
@@ -16,6 +17,19 @@ SetClassSwordRank(Knight,ERank)
 
 SetClassClassType(Mogall,FlierType|MonsterType)
 SetClassClassType(ArchMogall,FlierType|MonsterType)
+
+SetClassBowRank(Warrior,DRank)
+SetClassSwordRank(GreatKnight,DRank)
+SetClassSwordRank(General,CRank)
+SetClassAxeRank(General,CRank)
+
+SetClassPromos(MageF,SageF,Witch)
+SetClassPromos(ShamanF,DruidF,Witch)
+SetClassPromos(PegasusKnight,Falcoknight,DarkFlier)
+SetClassPromos(Soldier,Halberdier,General)
+SetClassPromos(MyrmidonF,SwordmasterF,DreadFighterF)
+SetClassPromos(Priest,SwordSaint,WarMonk)
+
 
 // Killing Trainee Palettes
 setCBSP(0x00, Ross, 0x00, 0x00)
@@ -52,7 +66,15 @@ SetItemRank(Rescue,CRank)
 SetItemDurability(Rescue,15)
 SetItemValue(Rescue,120)
 
+SetItemRank(SteelAxe,DRank) //wtf IS
+
 SetItemDurability(ChestKey_5,3)
+
+SetItemValue(MasterSeal,10000)
+
+SetItemValue(Hatchet,18)
+SetItemAbility1(Hatchet,IsWeapon)
+SetItemDurability(Hatchet,25)
 
 // Lower throne avoid
 PUSH

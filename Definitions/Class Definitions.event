@@ -23,7 +23,7 @@
 #define FreeKnight 0x83
 #define FreeKnightClassCard 0x103
 
-#define RengeStaffAnim 0xCC
+#define RengeStaffAnim 0xE9
 #define RengeUnarmedAnim 0xCD
 #define WrysStaffAnim 0xCE
 #define WrysUnarmedAnim 0xCF
@@ -40,3 +40,60 @@
 #define BattlemageSwordAnim 0xD3//AnimationID here
 #define BattlemageMagicAnim 0xD4//AnimationID here
 #define BattlemageClassCard 0x105//MugID here
+
+#define DarkFlier 0x86//ClassID here
+#define DarkFlierLanceAnim 0xD5//AnimationID here
+#define DarkFlierUnarmedAnim 0xD6//AnimationID here
+#define DarkFlierClassCard 0x106//MugID here
+
+#define Witch 0x87//ClassID here
+#define WitchMagicAnim 0xD7//AnimationID here
+#define WitchClassCard 0x107//MugID here
+
+//#define HeroF
+#define HeroFSwordAnim 0xD8
+#define HeroFAxeAnim 0xD9
+#define HeroFHandaxeAnim 0xDA
+#define HeroFUnarmedAnim 0xDB
+#define HeroFClassCard 0x108
+#define HeroFName 0x2C7
+#define HeroFDescription 0x313
+
+#define WarriorF 0x88
+#define WarriorFAxeAnim 0xDC
+#define WarriorFHandaxeAnim 0xDD
+#define WarriorFBowAnim 0xDE
+#define WarriorFUnarmedAnim 0xDF
+#define WarriorFClassCard 0x109
+#define WarriorFName 0x2DD
+#define WarriorFDescription 0x328
+
+#define Halberdier 0x89
+#define HalberdierLanceAnim 0xE0
+#define HalberdierUnarmedAnim 0xE1
+#define HalberdierClassCard 0x10A
+
+#define DreadFighterF 0x8A
+#define DreadFighterFSwordAnim 0xE2
+#define DreadFighterFMagicAnim 0xE3
+#define DreadFighterFClassCard 0x10B
+#define DreadFighterFName DreadFighterName
+#define DreadFighterFDescription DreadFighterDescription
+
+#define SwordSaint 0x8B//ClassID here
+#define SwordSaintSwordAnim 0xE4//AnimationID here
+#define SwordSaintStaffAnim 0xE5//AnimationID here
+#define SwordSaintUnarmedAnim 0xE6//AnimationID here
+#define SwordSaintClassCard 0x10C//MugID here
+
+#define WarMonk 0x8C
+#define WarMonkAxeAnim 0xE7
+#define WarMonkHandaxeAnim 0xE8
+#define WarMonkMagicAnim 0xEA
+#define WarMonkUnarmedAnim 0xEB
+#define WarMonkClassCard 0x10D
+
+#define Maid 0xBD
+#define MaidSwordAnim 0xEC
+#define MaidStaffAnim 0xED
+#define MaidClassCard 0x10E

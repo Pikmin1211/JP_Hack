@@ -29,7 +29,7 @@
 //Spell Associaiton
 #define IsMapOnly 2
 #define RangedAnimation ItemMagicAnimation
-#define EnableRangedAnimation DisableRanged
+#define EnableRangedAnimation EnableRanged
 #define MapAnimation 0x0
 #define DirectHPChange 0x1
 #define MapSpriteDirection 0x0

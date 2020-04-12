@@ -1,0 +1,5 @@
+#define BaseClass FreeKnight
+#define PromotedClass1 Ranger
+#define PromotedClass2 Paladin
+
+#include "Palette/Palette Setup.event"

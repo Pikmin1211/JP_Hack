@@ -5,7 +5,7 @@ Adept M.[X]
 Teaches Adept.[X]
 
 ## SpeedRingName
-Speed Ring[X]
+Spd Ring[X]
 
 ## SpeedRingDescription
 +2 Speed when held.[X]
@@ -191,13 +191,13 @@ Wrath M.[X]
 Teaches Wrath.[X]
 
 ## StrengthRingName
-Strength Ring[X]
+Str Ring[X]
 
 ## StrengthRingDescription
 +3 Strength when held.[X]
 
 ## MagicRingName
-Magic Ring[X]
+Mag Ring[X]
 
 ## MagicRingDescription
 +3 Magic when held.[X]
@@ -214,3 +214,9 @@ Leg Ring[X]
 
 ## LegRingDescription
 +1 Move when held.[X]
+
+## RazorAxeName
+Razor Axe[X]
+
+## RazorAxeDescription
+Milanor's bladed axe.[X]

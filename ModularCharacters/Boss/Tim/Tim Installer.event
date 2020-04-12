@@ -1,0 +1,18 @@
+
+{
+	#define UnitID Tim
+	#define UnitClass TimClass
+	#define UnitMugID TimMug
+	#define UnitNameLocation TimName
+	#define UnitDescriptionLocation TimDescription
+	#define Palette1Number TimPalette1
+	#define Palette2Number TimPalette2
+	#define Palette3Number TimPalette3
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Support Installer.event"
+	#include "Files/Palette Installer.event"
+	#include "Files/Mug Installer.event"
+	//#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

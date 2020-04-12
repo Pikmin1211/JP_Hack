@@ -3,4 +3,6 @@ ORG WeaponIconOffset(ItemIcon)
 #incext Png2Dmp "Item Icon/ItemIcon.png"
 POP
 
-#include "Magic Animation/Jormungandr.event"
+{
+	#include "Magic Animation/Spell.event"
+}

@@ -1,0 +1,17 @@
+#ifdef AnimationSwitch
+
+ALIGN 4
+
+#include "Animations/Magic Installer.event"
+
+ClassAnim:
+MagicAnim(WitchMagicAnim)
+UnarmedAnim(WitchMagicAnim)
+EndAnim
+
+#endif
+
+#ifndef AnimationSwitch
+ClassAnim:
+EndAnim
+#endif

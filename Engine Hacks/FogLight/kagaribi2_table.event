@@ -10,4 +10,8 @@ FogLightEntry(3,7,6,3)
 FogLightEntry(3,10,6,3)
 FogLightEntry(3,9,17,3)
 
+// Chapter 8
+FogLightEntry(8,10,8,3)
+FogLightEntry(8,14,10,3)
+
 FogTerminator

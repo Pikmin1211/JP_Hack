@@ -60,3 +60,21 @@ SongTable(LegendThemeSong,LegendTheme,1)
 
 SongTable(LeifArmySong,LeifArmy,1)
 #include "S Files/LeifArmy.event"
+
+SongTable(BelovedTomboyishGirlSong,BelovedTomboyishGirl,1)
+#include "S Files/BelovedTomboyishGirl.event"
+
+SongTable(BattlePhantasiaSong,BattlePhantasia,1)
+#include "S Files/BattlePhantasia.event"
+
+SongTable(HiryuNoKen2Song,HiryuNoKen2,1)
+#include "S Files/HiryuNoKen2.event"
+
+SongTable(JinTekken3Song,JinTekken3,1)
+#include "S Files/JinTekken3.event"
+
+SongTable(RollingDiceSong,RollingDice,1)
+#include "S Files/RollingDice.event"
+
+SongTable(FragranceOfDarkCoffeeSong,FragranceOfDarkCoffee,1)
+#include "S Files/FragranceOfDarkCoffee.event"

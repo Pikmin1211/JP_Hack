@@ -46,3 +46,52 @@ Battlemage[X]
 ## BattlemageDescription
 Fearsome magi with expert skill in both[N]
 spell and sword. Equip: Swords, anima.[X]
+
+## DarkFlierName
+Dark Flier[X]
+
+## DarkFlierDescription
+Riders of black winged pegasi who[N]
+trample their foes. Equip: Lances.[X]
+
+## WitchName
+Witch[X]
+
+## WitchDescription
+Flying magicians with a mastery of[N]
+all magics. Equip: Anima, light, dark.[X]
+
+## HalberdierName
+Halberdier[X]
+
+## HalberdierDescription
+Elite soldiers who have honed their[N]
+skills to perfection. Equip: Lances.[X]
+
+## DreadFighterName
+Drd. Fighter[X]
+
+## DreadFighterDescription
+Swordfighters versed in many forms[N]
+of the dark arts. Equip: Swords, dark.[X]
+
+## SwordSaintName
+Swd. Saint[X]
+
+## SwordSaintDescription
+Holy men who have mastered the way[N]
+of the sword. Equip: Swords, staves.[X]
+
+## WarMonkName
+War Monk[X]
+
+## WarMonkDescription
+Clerics familiar with the divine and[N]
+the battlefield. Equip: Axes, staves.[X]
+
+## MaidName
+Maid[X]
+
+## MaidDescription
+Loyal servants who heal and defend[N]
+their masters. Equip: Swords, staves.[X]

@@ -18,3 +18,9 @@
 #define DarkLabyrinthSong 0xAE
 #define LegendThemeSong 0xB2
 #define LeifArmySong 0xBB
+#define BelovedTomboyishGirlSong 0xC0
+#define BattlePhantasiaSong 0xC1
+#define HiryuNoKen2Song 0xC2
+#define JinTekken3Song 0xC3
+#define RollingDiceSong 0xC4
+#define FragranceOfDarkCoffeeSong 0xC5

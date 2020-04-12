@@ -26,6 +26,12 @@ SoundRoomEntry(ShopPrepSong,1,ShopPrepName)
 SoundRoomEntry(DarkLabyrinthSong,1,DarkLabyrinthName)
 SoundRoomEntry(LegendThemeSong,1,LegendThemeName)
 SoundRoomEntry(LeifArmySong,1,LeifArmyName)
+SoundRoomEntry(BelovedTomboyishGirlSong,1,BelovedTomboyishGirlName)
+SoundRoomEntry(BattlePhantasiaSong,1,BattlePhantasiaName)
+SoundRoomEntry(HiryuNoKen2Song,1,HiryuNoKen2Name)
+SoundRoomEntry(JinTekken3Song,1,JinTekken3Name)
+SoundRoomEntry(RollingDiceSong,1,RollingDiceName)
+SoundRoomEntry(FragranceOfDarkCoffeeSong,1,FragranceOfDarkCoffeeName)
 
 SoundRoomTerminator
 

@@ -1,0 +1,19 @@
+#ifdef AnimationSwitch
+
+ALIGN 4
+
+#include "Animations/Sword Installer.event"
+#include "Animations/Magic Installer.event"
+
+ClassAnim:
+SwordAnim(DreadFighterFSwordAnim)
+MagicAnim(DreadFighterFMagicAnim)
+UnarmedAnim(DreadFighterFMagicAnim)
+EndAnim
+
+#endif
+
+#ifndef AnimationSwitch
+ClassAnim:
+EndAnim
+#endif

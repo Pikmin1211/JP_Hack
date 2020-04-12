@@ -113,11 +113,33 @@
 #define GohardPalette3 0x3A//PaletteID here
 
 #define Yanndahl 0x12//UnitID here
+#define Yandahl Yanndahl //oops
 #define YanndahlClass Soldier//ClassID here
 #define YanndahlMug 0x1A//MugID here
 #define YanndahlPalette1 0x3B//PaletteID here
 #define YanndahlPalette2 0x3C//PaletteID here
 #define YanndahlPalette3 0x3D//PaletteID here
+
+#define Milanor 0x13//UnitID here
+#define MilanorClass Brigand//ClassID here
+#define MilanorMug 0x1E//MugID here
+#define MilanorPalette1 0x41//PaletteID here
+#define MilanorPalette2 0x42//PaletteID here
+#define MilanorPalette3 0x43//PaletteID here
+
+#define Guts 0x14//UnitID here
+#define GutsClass FreeKnight//ClassID here
+#define GutsMug 0x1F//MugID here
+#define GutsPalette1 0x44//PaletteID here
+#define GutsPalette2 0x45//PaletteID here
+#define GutsPalette3 0x46//PaletteID here
+
+#define Kohaku 0x15//UnitID here
+#define KohakuClass Maid//ClassID here
+#define KohakuMug 0x20//MugID here
+#define KohakuPalette1 0x0//PaletteID here
+#define KohakuPalette2 0x47//PaletteID here
+#define KohakuPalette3 0x0//PaletteID here
 
 // Boss
 
@@ -177,6 +199,20 @@
 #define SchezoPalette2 0x3E//PaletteID here
 #define SchezoPalette3 0x0//PaletteID here
 
+#define Tim 0x68//UnitID here
+#define TimClass Warrior//ClassID here
+#define TimMug 0x1C//MugID here
+#define TimPalette1 0x0//PaletteID here
+#define TimPalette2 0x3F//PaletteID here
+#define TimPalette3 0x0//PaletteID here
+
+#define Bit 0x69//UnitID here
+#define BitClass Berserker//ClassID here
+#define BitMug 0x1D//MugID here
+#define BitPalette1 0x0//PaletteID here
+#define BitPalette2 0x40//PaletteID here
+#define BitPalette3 0x0//PaletteID here
+
 // Generic + NPC
 
 #define BattaBeast 0x80//UnitID here
@@ -233,3 +269,6 @@
 
 #define DarkKnightUnit 0x91//UnitID here
 #define DarkKnightUnitFaction 0x4//MinimugID here
+
+#define Whitewolf 0x92//UnitID here
+#define WhitewolfFaction 0x1//MinimugID here

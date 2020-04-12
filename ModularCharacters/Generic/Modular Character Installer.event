@@ -17,3 +17,5 @@
 #include "Monster2/Monster Installer.event"
 
 #include "Dark Knight Unit/Dark Knight Unit Installer.event"
+
+#include "Whitewolf/Whitewolf Installer.event"

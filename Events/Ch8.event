@@ -1,0 +1,348 @@
+EventPointerTable(Ch7Event, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,MilanorAppears,1)
+	TurnEventPlayer(0x0,Turn2Reinforcements,2)
+	TurnEventPlayer(0x0,MoreUnitsAppear,2)
+	TurnEventPlayer(0x0,Turn4Reinforcements,4)
+	TurnEventPlayer(0x0,BrigandsAppear,5)
+	TurnEventPlayer(0x0,Turn6Reinforcements,6)
+	TurnEventPlayer(0x0,Turn8Reinforcements,8)
+	TurnEventPlayer(0x0,TimBitCharge,10)
+	TurnEventPlayer(0x0,Turn10Reinforcements,10)
+	TurnEventPlayer(0x0,Turn12Reinforcements,12)
+	TurnEventPlayer(0x0,EndingScene,13)
+	END_MAIN
+
+Turn2Reinforcements:
+	SpawnReinforcements(RightGuys)
+	SpawnReinforcements(FortGuys)
+	SpawnReinforcements(TopCavs)
+	NoFade
+	ENDA
+
+Turn4Reinforcements:
+	SpawnReinforcements(TopGuys)
+	SpawnReinforcements(RightCavs)
+	SpawnReinforcements(BottomCavs)
+	NoFade
+	ENDA
+
+BrigandsAppear:
+	SpawnReinforcements(BrigandUnit)
+	NoFade
+	ENDA
+
+Turn6Reinforcements:
+	SpawnReinforcements(FortGuys)
+	SpawnReinforcements(BottomCavs)
+	SpawnReinforcements(RightGuys)
+	SpawnReinforcements(TopCavs)
+	NoFade
+	ENDA
+
+Turn8Reinforcements:
+	SpawnReinforcements(TopCavs)
+	SpawnReinforcements(BottomCavs)
+	SpawnReinforcements(BottomLeftGuys)
+	SpawnReinforcements(RightCavs)
+	NoFade
+	ENDA
+
+TimBitCharge:
+	MUSS Laughter
+	Text(0x20,TestDialogue)
+	SetAI(Tim,0,0,0,0)
+	SetAI(Bit,0,0,0,0)
+	SetAI(Whitewolf,0,0,0,0)
+	CAM1 Sanders
+	FlashCursor(Sanders,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+Turn10Reinforcements:
+	SpawnReinforcements(LeftCavs)
+	SpawnReinforcements(RightGuys)
+	SpawnReinforcements(BottomLeftGuys)
+	NoFade
+	ENDA
+
+Turn12Reinforcements:
+	SpawnReinforcements(LeftCavs)
+	SpawnReinforcements(BottomCavs)
+	SpawnReinforcements(RightCavs)
+	SpawnReinforcements(TopCavs)
+	NoFade
+	ENDA
+
+MilanorAppears:
+	MUSS SkyEventSong
+	SpawnReinforcements(MilanorUnit)
+	FlashCursor(Milanor,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+MoreUnitsAppear:
+	MUSS SkyEventSong
+	SpawnReinforcements(NewUnits)
+	FlashCursor(Guts,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	AFEV 0xD CheckForWin 0xB
+	AFEV 0xD CheckForWin 0xC
+	CauseGameOverIfLordDies
+	END_MAIN
+
+CheckForWin:
+	CHECK_EVENTID 0xB
+	BEQ 0x1 0x0 0xC
+	CHECK_EVENTID 0xC
+	BEQ 0x1 0x0 0xC
+		CALL EndingScene
+		GOTO 2
+	LABEL 1
+	ENUF 0xD
+	LABEL 2
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	Village(0x9,TopLeftVillage,2,2)
+	Village(0xA,BottomRightVillage,23,15)
+	Armory(Ch8Armory,16,10)
+	Vendor(Ch8Vendor,10,6)
+	END_MAIN
+
+TopLeftVillage:
+	VillageEventItem(TestDialogue,HouseBG,SolManual)
+
+BottomRightVillage:
+	VillageEventItem(TestDialogue,HouseBG,GuidingRing)
+
+Ch8Armory:
+	SHLI IronSword SteelSword IronLance SteelLance IronAxe SteelAxe IronBow SteelBow
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Ch8Vendor:
+	SHLI Fire Thunder Flux Miasma Heal Mend TorchStaff Vulnerary Torch
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(12,9)
+	Unit(12,7)
+	Unit(11,8)
+	Unit(12,8)
+	Unit(13,8)
+	Unit(10,9)
+	Unit(11,9)
+	Unit(13,9)
+	Unit(14,9)
+	Unit(11,10)
+	Unit(12,10)
+	Unit(13,10)
+	Unit(12,11)
+	UNIT
+
+EnemyUnits:
+
+	UNIT Tim Warrior 0x0 Level(1,Enemy,0) [1,16] 2 0 0 0 [SteelAxe,Greatbow,RedGem,StrengthRing] NeverMoveAI
+	UNIT Bit Berserker 0x0 Level(1,Enemy,0) [22,1] 2 0 0 0 [BattleAxe,HandAxe,Elixir,Talisman] NeverMoveAI
+
+	UNIT Whitewolf Brigand 0x0 Level(10,Enemy,1) [10,5] 0 0 0 0 [SteelAxe,Elixir] BrigandAI
+	UNIT Whitewolf Brigand 0x0 Level(10,Enemy,1) [14,13] 0 0 0 0 [SteelAxe,RedGem] BrigandAI
+
+	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [16,3] 0 0 0 0 [Longbow,ShiningBow] AttackInRangeAI
+	UNIT Whitewolf Shaman 0x0 Level(11,Enemy,1) [17,4] 0 0 0 0 [Miasma] AttackInRangeAI
+
+	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [6,13] 0 0 0 0 [Longbow,SteelBow] AttackInRangeAI
+	UNIT Whitewolf Mage 0x0 Level(10,Enemy,1) [7,14] 0 0 0 0 [Elfire,Fire] AttackInRangeAI
+
+	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [5,16] 0 0 0 0 [SteelBow,ShortBow] AttackInRangeAI
+	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [18,0] 0 0 0 0 [IronBow] AttackInRangeAI
+
+	UNIT Whitewolf Mage 0x0 Level(11,Enemy,1) [21,15] 2 0 0 0 [Aircalibur] AttackInRangeAI
+	UNIT Whitewolf Monk 0x0 Level(11,Enemy,1) [4,2] 0 0 0 0 [Shine] AttackInRangeAI
+
+	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [4,4] 0 0 0 0 [IronAxe,HandAxe] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [5,3] 0 0 0 0 [SteelLance] DefaultAI
+
+	UNIT Whitewolf Mercenary 0x0 Level(10,Enemy,1) [22,7] 0 0 0 0 [RubySword] DefaultAI
+	UNIT Whitewolf Mercenary 0x0 Level(10,Enemy,1) [22,8] 0 0 0 0 [IronBlade] DefaultAI
+
+	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [16,15] 0 0 0 0 [SteelAxe] DefaultAI
+
+	UNIT Whitewolf FreeKnight 0x0 Level(9,Enemy,1) [12,18] 0 0 0 0 [SteelSword,Vulnerary] DefaultAI
+	UNIT Whitewolf LanceKnight 0x0 Level(9,Enemy,1) [13,18] 0 0 0 0 [IronLance,Javelin] DefaultAI
+	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [24,2] 0 0 0 0 [HandAxe,HeavySpear] DefaultAI
+	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [1,3] 0 0 0 0 [SteelAxe] DefaultAI
+	UNIT Whitewolf Cavalier 0x0 Level(10,Enemy,1) [0,4] 0 0 0 0 [Horseslayer,SlimSword] DefaultAI
+
+	UNIT Whitewolf Soldier 0x0 Level(9,Enemy,1) [4,8] 0 0 0 0 [Javelin] DefaultAI
+	UNIT Whitewolf Fighter 0x0 Level(9,Enemy,1) [3,9] 0 0 0 0 [Hammer] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [4,10] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT Whitewolf Mercenary 0x0 Level(11,Enemy,1) [3,13] 0 0 0 0 [Greatsword] DefaultAI
+	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [1,7] 0 0 0 0 [EmeraldAxe] DefaultAI
+
+	UNIT Whitewolf Cavalier 0x0 Level(9,Enemy,1) [13,0] 0 0 0 0 [SteelLance,IronSword,EnergyRing] DefaultAI
+	UNIT Whitewolf FreeKnight 0x0 Level(10,Enemy,1) [14,0] 0 0 0 0 [LevinSword,IronBlade] DefaultAI
+
+	UNIT Whitewolf Soldier 0x0 Level(11,Enemy,1) [9,0] 0 0 0 0 [SilverLance] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(9,Enemy,1) [11,3] 0 0 0 0 [SapphireLance] DefaultAI
+
+	UNIT Whitewolf Fighter 0x0 Level(9,Enemy,1) [20,11] 0 0 0 0 [SteelAxe] DelayedDefaultAI
+	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [19,12] 0 0 0 0 [EmeraldAxe,HandAxe] DelayedDefaultAI
+	UNIT Whitewolf Myrmidon 0x0 Level(11,Enemy,1) [20,13] 0 0 0 0 [Rapier,SteelSword] DelayedDefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [21,12] 0 0 0 0 [SteelLance] DelayedDefaultAI
+
+	UNIT Whitewolf Mercenary 0x0 Level(9,Enemy,1) [8,11] 2 0 0 0 [Zanbato] DefaultAI
+	UNIT Whitewolf Fighter 0x0 Level(9,Enemy,1) [9,12] 0 0 0 0 [HandAxe] DefaultAI
+
+	UNIT Whitewolf Fighter 0x0 Level(9,Enemy,1) [14,7] 0 0 0 0 [Greataxe,IronAxe] DefaultAI
+	UNIT Whitewolf Mage 0x0 Level(10,Enemy,1) [15,6] 0 0 0 0 [Thunder] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [7,7] 0 0 0 0 [Axereaver,Javelin] DefaultAI
+
+	UNIT
+
+EnemyUnits2:
+
+	UNIT Whitewolf Myrmidon 0x0 Level(10,Enemy,1) [8,17] 0 0 0 0 [RubySword] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [9,18] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Whitewolf Fighter 0x0 Level(11,Enemy,1) [24,10] 0 0 0 0 [SilverAxe] DelayedDefaultAI
+
+	UNIT Whitewolf Priest 0x0 Level(9,Enemy,1) [20,4] 0 0 0 0 [Physic] HealUnits
+	UNIT Whitewolf Priest 0x0 Level(9,Enemy,1) [5,13] 0 0 0 0 [Physic] HealUnits
+
+	UNIT Whitewolf LanceArmor 0x0 Level(11,Enemy,1) [2,16] 0 0 0 0 [ShortSpear,Armorslayer,Greatlance] NeverMoveAI
+	UNIT Whitewolf AxeArmor 0x0 Level(11,Enemy,1) [1,17] 0 0 0 0 [HandAxe,Halberd,SteelLance] NeverMoveAI
+
+	UNIT Whitewolf LanceArmor 0x0 Level(11,Enemy,1) [23,1] 0 0 0 0 [LevinSword,Javelin] NeverMoveAI
+	UNIT Whitewolf AxeArmor 0x0 Level(11,Enemy,1) [22,2] 0 0 0 0 [HandAxe,Greataxe,IronLance] NeverMoveAI
+	UNIT Whitewolf LanceArmor 0x0 Level(11,Enemy,1) [18,0] 0 0 0 0 [ShortSpear,IronBlade] NeverMoveAI
+
+	UNIT
+
+TopCavs:
+	UNIT Whitewolf Cavalier 0x0 Level(10,Enemy,1) [14,0] 0 0 1 REDA14R0 [RubySword,Javelin] DefaultAI
+	UNIT Whitewolf LanceKnight 0x0 Level(11,Enemy,1) [14,0] 0 0 1 REDA13R0 [SteelLance] DefaultAI
+	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [14,0] 0 0 1 REDA15R0 [IronAxe] DefaultAI
+	UNIT
+
+LeftCavs:
+	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [0,4] 0 0 1 REDA0R4 [SteelAxe,HandAxe] DefaultAI
+	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [0,4] 0 0 1 REDA0R3 [SteelLance,IronAxe] DefaultAI
+	UNIT Whitewolf FreeKnight 0x0 Level(10,Enemy,1) [0,4] 0 0 1 REDA0R5 [IronBlade] DefaultAI
+	UNIT
+
+BottomCavs:
+	UNIT Whitewolf FreeKnight 0x0 Level(10,Enemy,1) [12,18] 0 0 1 REDA12R18 [SteelSword] DefaultAI
+	UNIT Whitewolf LanceKnight 0x0 Level(10,Enemy,1) [12,18] 0 0 1 REDA11R18 [SapphireLance] DefaultAI
+	UNIT Whitewolf LanceKnight 0x0 Level(10,Enemy,1) [12,18] 0 0 1 REDA13R18 [Javelin,SteelLance] DefaultAI
+	UNIT
+
+RightCavs:
+	UNIT Whitewolf Cavalier 0x0 Level(11,Enemy,1) [24,2] 0 0 1 REDA24R2 [LightBrand,IronLance] DefaultAI
+	UNIT Whitewolf AxeKnight 0x0 Level(11,Enemy,1) [24,2] 0 0 1 REDA24R3 [SteelAxe,Javelin] DefaultAI
+	UNIT
+
+FortGuys:
+	UNIT Whitewolf Mercenary 0x0 Level(10,Enemy,1) [1,9] 0 0 0 0 [SteelSword] DefaultAI
+	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [1,12] 0 0 0 0 [EmeraldAxe] DefaultAI
+	UNIT
+
+BottomLeftGuys:
+	UNIT Whitewolf Soldier 0x0 Level(11,Enemy,1) [1,18] 0 0 1 REDA1R18 [SteelLance] DefaultAI
+	UNIT Whitewolf Mage 0x0 Level(10,Enemy,1) [1,18] 0 0 1 REDA0R18 [Thunder] DefaultAI
+	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [1,18] 0 0 1 REDA3R18 [IronAxe] DefaultAI
+	UNIT
+
+RightGuys:
+	UNIT Whitewolf Shaman 0x0 Level(11,Enemy,1) [24,10] 0 0 1 REDA24R10 [Nosferatu,Flux] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [24,10] 0 0 1 REDA24R9 [SteelLance] DefaultAI
+	UNIT Whitewolf Mercenary 0x0 Level(10,Enemy,1) [24,10] 0 0 1 REDA24R11 [IronBlade] DefaultAI
+	UNIT
+
+TopGuys:
+	UNIT Whitewolf Mage 0x0 Level(9,Enemy,1) [9,0] 0 0 1 REDA9R0 [Elfire,Fire] DefaultAI
+	UNIT Whitewolf Myrmidon 0x0 Level(11,Enemy,1) [9,0] 0 0 1 REDA8R0 [RubySword] DefaultAI
+	UNIT
+
+BrigandUnit:
+	UNIT Whitewolf Brigand 0x0 Level(9,Enemy,1) [4,13] 0 0 0 0 [IronAxe] BrigandAI
+	UNIT Whitewolf Brigand 0x0 Level(9,Enemy,1) [24,12] 0 0 1 REDA24R12 [IronAxe] BrigandAI
+	UNIT
+
+MilanorUnit:
+	UNIT Milanor Brigand 0x0 Level(13,Ally,0) [12,9] 0 0 1 REDA13R11 [RazorAxe,Hatchet,Halberd,MasterSeal] NoAI
+	UNIT
+
+NewUnits:
+	UNIT Guts FreeKnight 0x0 Level(12,Ally,0) [12,9] 0 0 1 REDA11R9 [Greatsword,IronBlade,WrathManual,Vulnerary] NoAI
+	UNIT Kohaku Maid 0x0 Level(1,Ally,0) [12,9] 0 0 1 REDA13R9 [LevinSword,Physic,Heal,TorchStaff] NoAI
+	UNIT
+
+Traps1:
+	TorchTrap(10,8)
+	TorchTrap(14,10)
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	LOAD1 0x1 EnemyUnits2
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 9
+	NoFade
+	ENDA

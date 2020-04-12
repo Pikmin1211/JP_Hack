@@ -1,0 +1,18 @@
+#ifdef AnimationSwitch
+
+ALIGN 4
+
+#include "Animations/Lance Installer.event"
+#include "Animations/Unarmed Installer.event"
+
+ClassAnim:
+LanceAnim(DarkFlierLanceAnim)
+UnarmedAnim(DarkFlierUnarmedAnim)
+EndAnim
+
+#endif
+
+#ifndef AnimationSwitch
+ClassAnim:
+EndAnim
+#endif

@@ -31,5 +31,8 @@
 #include "Ch7.event"
 }
 {
+#include "Ch8.event"
+}
+{
 #include "_Prologue.event"
 }

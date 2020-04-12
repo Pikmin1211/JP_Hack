@@ -77,7 +77,7 @@
 #define TerrainResistanceBonus GetResBonus
 
 //Promotion Paths
-#define PromotionOne Warrior
+#define PromotionOne WarriorF
 #define PromotionTwo HeroF
 
 //EXP Operands

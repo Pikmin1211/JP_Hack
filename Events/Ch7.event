@@ -60,11 +60,11 @@ DarkKnightsAppear:
 	ENDA
 
 SchezoUnit:
-	UNIT Schezo Battlemage 0x0 Level(5,Enemy,0) [0,28] 0 0 1 REDA1R27 [Fenrir,SilverSword,Rapier,Thunder] DefaultAI
+	UNIT Schezo Battlemage 0x0 Level(5,Enemy,0) [0,28] 0 0 1 REDA1R27 [Fenrir,SilverSword,NobleRapier,Thoron] DefaultAI
 	UNIT DarkKnightUnit Cavalier 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA1R26 [Rapier,SilverLance] DefaultAI
 	UNIT DarkKnightUnit AxeKnight 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA2R27 [BraveAxe,ShortSpear] DefaultAI
-	UNIT DarkKnightUnit Druid 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA0R27 [Nosferatu,Physic] DefaultAI
-	UNIT DarkKnightUnit MageKnight 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA1R28 [Thunder,Fimbulvetr,Mend] DefaultAI
+	UNIT DarkKnightUnit Druid 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA0R27 [Jormungandr,Physic] DefaultAI
+	UNIT DarkKnightUnit MageKnight 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA1R28 [Aircalibur,Bolganone,Mend] DefaultAI
 	UNIT
 
 DarkKnights:
@@ -131,7 +131,7 @@ Ch7Armory:
 	ALIGN 4
 
 Ch7Vendor:
-	SHLI Fire Thunder Elfire Flux Nosferatu Heal Mend Restore Barrier Vulnerary Elixir PureWater
+	SHLI Fire Thunder Elfire Aircalibur Flux Miasma Nosferatu Ruin Heal Mend Restore Barrier Vulnerary Elixir PureWater
 	BYTE 0x0 0x0
 	ALIGN 4
 
