@@ -1,3 +1,5 @@
+ALIGN 4
+
 SilentGiveItemASMC:
 #incbin "SilentGiveItem.dmp"
 

@@ -2,7 +2,7 @@
 #define ItemName ItemNameLocation
 #define ItemDescription ItemDescriptionLocation
 #define UseDescription ItemUseTextLocation
-#define ItemWeaponType 0x0
+#define ItemWeaponType ItemType
 
 //Weapon Abilities
 #define WeaponAbilityOne 0x0
