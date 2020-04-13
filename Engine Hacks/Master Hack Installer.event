@@ -41,3 +41,7 @@ POP
 #include "WeatherNull/Installer.event"
 
 #include "SplitPromoItems/SplitPromoItems.event"
+
+#include "Growth Mods/FE8-GrowthModStackable.event"
+
+#include "SilentGiveItem/Installer.event"

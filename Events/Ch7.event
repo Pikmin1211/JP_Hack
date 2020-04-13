@@ -177,7 +177,7 @@ EnemyUnits:
 
 	UNIT Derek Cavalier 0x0 Level(12,Enemy,1) [16,1] 0 0 0 0 [Rapier,LightBrand,SapphireLance,Elixir] NeverMoveAI
 	UNIT Imperial2 LanceArmor 0x0 Level(11,Enemy,1) [15,1] 0 0 0 0 [ShortSpear,Horseslayer,SteelBlade] NeverMoveAI
-	UNIT Imperial2 AxeArmor 0x0 Level(11,Enemy,1) [17,1] 0 0 0 0 [HandAxe,KillerAxe,IronLance] NeverMoveAI
+	UNIT Imperial2 AxeArmor 0x0 Level(11,Enemy,1) [17,1] 0 0 0 0 [ShortAxe,KillerAxe,IronLance] NeverMoveAI
 
 	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [14,20] 2 0 0 0 [Elixir] HastyAI
 	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [15,19] 2 0 0 0 [BlueGem] HastyAI

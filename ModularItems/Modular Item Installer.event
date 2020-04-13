@@ -71,3 +71,35 @@
 #include "Leg Ring/Leg Ring Installer.event"
 
 #include "Razor Axe/Razor Axe Installer.event"
+
+#include "Flamberge/Flamberge Installer.event"
+
+#include "Flame Lance/Flame Lance Installer.event"
+
+#include "Short Axe/Short Axe Installer.event"
+
+#include "Bolt Axe/Bolt Axe Installer.event"
+
+#include "Hezul Scroll/Hezul Scroll Installer.event"
+
+#include "Odo Scroll/Odo Scroll Installer.event"
+
+#include "Fala Scroll/Fala Scroll Installer.event"
+
+#include "Noba Scroll/Noba Scroll Installer.event"
+
+#include "Sety Scroll/Sety Scroll Installer.event"
+
+#include "Blaggi Scroll/Blaggi Scroll Installer.event"
+
+#include "Neir Scroll/Neir Scroll Installer.event"
+
+#include "Heim Scroll/Heim Scroll Installer.event"
+
+#include "Baldo Scroll/Baldo Scroll Installer.event"
+
+#include "Ulir Scroll/Ulir Scroll Installer.event"
+
+#include "Dain Scroll/Dain Scroll Installer.event"
+
+#include "Tordo Scroll/Tordo Scroll Installer.event"

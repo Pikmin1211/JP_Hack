@@ -220,3 +220,107 @@ Razor Axe[X]
 
 ## RazorAxeDescription
 Milanor's bladed axe.[X]
+
+## FlambergeName
+Flamberge[X]
+
+## FlambergeDescription
+Magic weapon.[X]
+
+## FlameLanceName
+Flame Lance[X]
+
+## FlameLanceDescription
+Magic weapon.[X]
+
+## BoltAxeName
+Bolt Axe[X]
+
+## BoltAxeDescription
+Magic weapon.[X]
+
+## ShortAxeName
+Short Axe[X]
+
+## ShortAxeDescription
+Doubles as ranged attack.[X]
+
+## HezulScrollName
+Hezul Scroll[X]
+
+## HezulScrollDescription
+HP +30%, Str +10%, Luk -10%.[X]
+
+## OdoScrollName
+Odo Scroll[X]
+
+## OdoScrollDescription
+Skl +30%.[X]
+
+## BaldoScrollName
+Baldo Scroll[X]
+
+## BaldoScrollDescription
+HP +5%, Str +5%, Skl +5%,[N]
+Spd +5%, Luk +5%, Def +5%.[X]
+
+## DainScrollName
+Dain Scroll[X]
+
+## DainScrollDescription
+Str +10%, Spd -10%, Def +30%.[X]
+
+## NobaScrollName
+Noba Scroll[X]
+
+## NobaScrollDescription
+Str +30%, Mag -5%,[N]
+Spd +10%, Def +5%, Res -10%.[X]
+
+## NeirScrollName
+Neir Scroll[X]
+
+## NeirScrollDescription
+HP +15%, Str +10%,[N]
+Skl -10%, Def +15%.[X]
+
+## UlirScrollName
+Ulir Scroll[X]
+
+## UlirScrollDescription
+Skl +10%, Spd +10%, Luk +10%.[X]
+
+## TordoScrollName
+Tordo Scroll[X]
+
+## TordoScrollDescription
+HP +5%, Str +5%,[N]
+Mag +5%, Skl +10%, Luk +5%.[X]
+
+## FalaScrollName
+Fala Scroll[X]
+
+## FalaScrollDescription
+Str +5%, Mag +5%,[N]
+Skl +10%, Spd +10%.[X]
+
+## SetyScrollName
+Sety Scroll[X]
+
+## SetyScrollDescription
+HP -10%, Mag +15%,[N]
+Spd +10%, Luk +15%.[X]
+
+## BlaggiScrollName
+Blaggi Scroll[X]
+
+## BlaggiScrollDescription
+Str -15%, Mag +15%,[N]
+Luk +15%, Res +15%.[X]
+
+## HeimScrollName
+Heim Scroll[X]
+
+## HeimScrollDescription
+Mag +10%, Luk +10%,[N]
+Def -10%, Res +20%.[X]

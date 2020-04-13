@@ -1,0 +1,4 @@
+SilentGiveItemASMC:
+#incbin "SilentGiveItem.dmp"
+
+#define SilentGiveItem(xcoord,ycoord,itemid) "SVAL 0xB Coords(xcoord,ycoord); BYTE 0x4B 0x0D 0x0 itemid ; POIN SilentGiveItemASMC|1"

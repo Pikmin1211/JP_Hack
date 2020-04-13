@@ -92,6 +92,7 @@ Turn12Reinforcements:
 MilanorAppears:
 	MUSS SkyEventSong
 	SpawnReinforcements(MilanorUnit)
+	SilentGiveItem(13,11,NeirScroll)
 	FlashCursor(Milanor,60)
 	Text(TestDialogue)
 	MURE 2
@@ -189,7 +190,7 @@ Units1:
 EnemyUnits:
 
 	UNIT Tim Warrior 0x0 Level(1,Enemy,0) [1,16] 2 0 0 0 [SteelAxe,Greatbow,RedGem,StrengthRing] NeverMoveAI
-	UNIT Bit Berserker 0x0 Level(1,Enemy,0) [22,1] 2 0 0 0 [BattleAxe,HandAxe,Elixir,Talisman] NeverMoveAI
+	UNIT Bit Berserker 0x0 Level(1,Enemy,0) [22,1] 2 0 0 0 [BattleAxe,ShortAxe,Elixir,Talisman] NeverMoveAI
 
 	UNIT Whitewolf Brigand 0x0 Level(10,Enemy,1) [10,5] 0 0 0 0 [SteelAxe,Elixir] BrigandAI
 	UNIT Whitewolf Brigand 0x0 Level(10,Enemy,1) [14,13] 0 0 0 0 [SteelAxe,RedGem] BrigandAI
@@ -257,10 +258,10 @@ EnemyUnits2:
 	UNIT Whitewolf Priest 0x0 Level(9,Enemy,1) [5,13] 0 0 0 0 [Physic] HealUnits
 
 	UNIT Whitewolf LanceArmor 0x0 Level(11,Enemy,1) [2,16] 0 0 0 0 [ShortSpear,Armorslayer,Greatlance] NeverMoveAI
-	UNIT Whitewolf AxeArmor 0x0 Level(11,Enemy,1) [1,17] 0 0 0 0 [HandAxe,Halberd,SteelLance] NeverMoveAI
+	UNIT Whitewolf AxeArmor 0x0 Level(11,Enemy,1) [1,17] 0 0 0 0 [ShortAxe,Halberd,SteelLance] NeverMoveAI
 
 	UNIT Whitewolf LanceArmor 0x0 Level(11,Enemy,1) [23,1] 0 0 0 0 [LevinSword,Javelin] NeverMoveAI
-	UNIT Whitewolf AxeArmor 0x0 Level(11,Enemy,1) [22,2] 0 0 0 0 [HandAxe,Greataxe,IronLance] NeverMoveAI
+	UNIT Whitewolf AxeArmor 0x0 Level(11,Enemy,1) [22,2] 0 0 0 0 [ShortAxe,Greataxe,IronLance] NeverMoveAI
 	UNIT Whitewolf LanceArmor 0x0 Level(11,Enemy,1) [18,0] 0 0 0 0 [ShortSpear,IronBlade] NeverMoveAI
 
 	UNIT

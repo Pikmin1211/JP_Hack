@@ -1,0 +1,17 @@
+#ifndef _FE8_
+	ERROR Wrong ROM. Use FE8 instead.
+#endif
+
+#ifndef GrowthModItems
+ #define GrowthModItems
+ #ifndef ItemTable
+   #define ItemTable 0x809B10
+ #endif
+
+  PUSH
+  ORG 0x2BA28
+  #incbin "Growth Modifiers - Stackable.bin"
+  POIN ItemTable
+  POP
+
+#endif

@@ -1,0 +1,15 @@
+
+
+{
+	#define ItemNumber ShortAxe
+	#define ItemIcon ShortAxeIcon
+	#define ItemMagicAnimation ShortAxeMagicAnim
+	#define ItemNameLocation ShortAxeName
+	#define ItemDescriptionLocation ShortAxeDescription
+	#define ItemUseTextLocation ShortAxeUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}
