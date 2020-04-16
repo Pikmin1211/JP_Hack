@@ -75,3 +75,6 @@ Rolling Dice[X]
 
 ## FragranceOfDarkCoffeeName
 The Fragrance of Dark Coffee[X]
+
+## JenovaName
+J-E-N-O-V-A[X]

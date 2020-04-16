@@ -78,3 +78,6 @@ SongTable(RollingDiceSong,RollingDice,1)
 
 SongTable(FragranceOfDarkCoffeeSong,FragranceOfDarkCoffee,1)
 #include "S Files/FragranceOfDarkCoffee.event"
+
+SongTable(JenovaSong,Jenova,1)
+#include "S Files/Jenova.event"

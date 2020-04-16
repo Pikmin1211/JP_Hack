@@ -21,7 +21,7 @@ JinTekken3_001:
 // 000   ----------------------------------------
  BYTE   KEYSH   JinTekken3_key+0
  BYTE   TEMPO   132*JinTekken3_tbs/2
- BYTE   VOICE   30
+ BYTE   VOICE   29
  BYTE   VOL   42*JinTekken3_mvl/mxv
  BYTE   PAN   c_v+0
  BYTE   BEND   c_v+0
@@ -241,7 +241,6 @@ Label_0_FE3ED6:
  BYTE   W96
 // 033   ----------------------------------------
 Label_0_FE3F12:
- BYTE   VOICE   29
  BYTE   PAN   c_v+63
  BYTE   BEND   c_v-1
  BYTE   N32  Fs0  v120
@@ -340,7 +339,6 @@ Label_0_FE3F12:
  BYTE   PEND 
 // 034   ----------------------------------------
 Label_0_FE3F8D:
- BYTE   VOICE   30
  BYTE   PAN   c_v+0
  BYTE   W12
  BYTE   N05  Fs2  v120
@@ -427,7 +425,6 @@ Label_0_FE3F8D:
  BYTE   GoTo
   POIN2 Label_0_FE3ED6
 // 037   ----------------------------------------
- BYTE   VOICE   30
  BYTE   PAN   c_v+0
  BYTE   N05  Fs2  v120
  BYTE   W06

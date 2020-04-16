@@ -141,6 +141,13 @@
 #define KohakuPalette2 0x47//PaletteID here
 #define KohakuPalette3 0x0//PaletteID here
 
+#define Ky 0x16//UnitID here
+#define KyClass Myrmidon//ClassID here
+#define KyMug 0x21//MugID here
+#define KyPalette1 0x48//PaletteID here
+#define KyPalette2 0x49//PaletteID here
+#define KyPalette3 0x4A//PaletteID here
+
 // Boss
 
 #define Batta 0x60//UnitID here

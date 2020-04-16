@@ -32,6 +32,7 @@ SoundRoomEntry(HiryuNoKen2Song,1,HiryuNoKen2Name)
 SoundRoomEntry(JinTekken3Song,1,JinTekken3Name)
 SoundRoomEntry(RollingDiceSong,1,RollingDiceName)
 SoundRoomEntry(FragranceOfDarkCoffeeSong,1,FragranceOfDarkCoffeeName)
+SoundRoomEntry(JenovaSong,1,JenovaName)
 
 SoundRoomTerminator
 
