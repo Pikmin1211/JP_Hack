@@ -1,0 +1,695 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	ToccataAndDoom_grp  voicegroup000
+	#define	ToccataAndDoom_pri  0
+	#define	ToccataAndDoom_rev  0
+	#define	ToccataAndDoom_mvl  50
+	#define	ToccataAndDoom_key  0
+	#define	ToccataAndDoom_tbs  1
+	#define	ToccataAndDoom_exg  0
+	#define	ToccataAndDoom_cmp  1
+
+	// .rodata
+	//	ToccataAndDoom
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+ToccataAndDoom_1:
+	BYTE	KEYSH   ToccataAndDoom_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   140*ToccataAndDoom_tbs/2
+	BYTE		VOICE   46
+	BYTE		PAN     c_v+19
+	BYTE		VOL     114*ToccataAndDoom_mvl/mxv
+	BYTE		N24     Dn3   v127
+	BYTE	W24
+	BYTE		        An3 
+	BYTE	W24
+ToccataAndDoom_1_B1:
+	BYTE		N06     Dn4   v127
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        As4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+// 004   ----------------------------------------
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+// 005   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+// 006   ----------------------------------------
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+// 007   ----------------------------------------
+	BYTE		        Fn2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W60
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W48
+	BYTE	GoTo
+	 POIN2	ToccataAndDoom_1_B1
+ToccataAndDoom_1_B2:
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+ToccataAndDoom_2:
+	BYTE	KEYSH   ToccataAndDoom_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   46
+	BYTE		PAN     c_v-9
+	BYTE		VOL     105*ToccataAndDoom_mvl/mxv
+	BYTE	W48
+ToccataAndDoom_2_B1:
+	BYTE	W06
+	BYTE		N06     An3   v127
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+// 001   ----------------------------------------
+ToccataAndDoom_2_001:
+	BYTE	W06
+	BYTE		N06     An3   v127
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_2_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_2_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_2_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_2_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_2_001
+// 007   ----------------------------------------
+	BYTE	W06
+	BYTE		N06     An3   v127
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W54
+// 008   ----------------------------------------
+ToccataAndDoom_2_008:
+	BYTE	W48
+	BYTE		N24     Dn2   v127
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        An1 
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_2_008
+// 011   ----------------------------------------
+	BYTE		N24     As1   v127
+	BYTE	W24
+	BYTE		        An1 
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ToccataAndDoom_2_B1
+ToccataAndDoom_2_B2:
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+ToccataAndDoom_3:
+	BYTE	KEYSH   ToccataAndDoom_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   29
+	BYTE		VOL     127*ToccataAndDoom_mvl/mxv
+	BYTE		PAN     c_v+5
+	BYTE	W48
+ToccataAndDoom_3_B1:
+	BYTE	W48
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W48
+	BYTE		N06     Dn3   v076
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        En3 
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		        En3 
+	BYTE	W06
+// 008   ----------------------------------------
+ToccataAndDoom_3_008:
+	BYTE		N06     As2   v076
+	BYTE	W06
+	BYTE		        Dn3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE		        Dn3 
+	BYTE	W06
+	BYTE		        An2 
+	BYTE	W06
+	BYTE		        Cs3 
+	BYTE	W06
+	BYTE		        En3 
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		N12     Dn3   v127
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE		N12     As3 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N12     An3 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		        As2 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N12     Gn3 
+	BYTE	W12
+	BYTE		N24     En2 
+	BYTE		N24     Cs3 
+	BYTE		N24     En3 
+	BYTE		N24     An3 
+	BYTE	W24
+	BYTE		N06     Dn3   v076
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE		        Cn3 
+	BYTE	W06
+	BYTE		        En3 
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		        En3 
+	BYTE	W06
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_3_008
+// 011   ----------------------------------------
+	BYTE		N12     As2   v127
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N12     Gn3 
+	BYTE	W12
+	BYTE		N24     En2 
+	BYTE		N24     Cs3 
+	BYTE		N24     En3 
+	BYTE		N24     An3 
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ToccataAndDoom_3_B1
+ToccataAndDoom_3_B2:
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+ToccataAndDoom_4:
+	BYTE	KEYSH   ToccataAndDoom_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		VOL     91*ToccataAndDoom_mvl/mxv
+	BYTE		PAN     c_v-4
+	BYTE		N24     Cs2   v127
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+ToccataAndDoom_4_B1:
+	BYTE		N06     Fs1   v127
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE		N12     Ds2 
+	BYTE	W06
+	BYTE		N06     Fs1 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+// 001   ----------------------------------------
+ToccataAndDoom_4_001:
+	BYTE		N06     Fs1   v127
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE		N12     Cs2 
+	BYTE	W06
+	BYTE		N06     Fs1 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE		N12     Ds2 
+	BYTE	W06
+	BYTE		N06     Fs1 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_4_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_4_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_4_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_4_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_4_001
+// 007   ----------------------------------------
+	BYTE		N06     Fs1   v127
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE		N12     Cs2 
+	BYTE	W06
+	BYTE		N06     Fs1 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W54
+// 008   ----------------------------------------
+ToccataAndDoom_4_008:
+	BYTE	W48
+	BYTE		N24     Cs2   v127
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_4_008
+// 011   ----------------------------------------
+	BYTE		N24     Cs2   v127
+	BYTE	W24
+	BYTE		N24   
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ToccataAndDoom_4_B1
+ToccataAndDoom_4_B2:
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+ToccataAndDoom_5:
+	BYTE	KEYSH   ToccataAndDoom_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   116
+	BYTE		VOL     83*ToccataAndDoom_mvl/mxv
+	BYTE		PAN     c_v+16
+	BYTE		N12     Dn3   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+ToccataAndDoom_5_B1:
+	BYTE		N12     Gn2   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+// 001   ----------------------------------------
+ToccataAndDoom_5_001:
+	BYTE		N12     Gn2   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_5_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_5_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_5_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_5_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_5_001
+// 007   ----------------------------------------
+	BYTE		N12     Gn2   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W60
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W48
+	BYTE	GoTo
+	 POIN2	ToccataAndDoom_5_B1
+ToccataAndDoom_5_B2:
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+ToccataAndDoom_6:
+	BYTE	KEYSH   ToccataAndDoom_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   51
+	BYTE		VOL     127*ToccataAndDoom_mvl/mxv
+	BYTE		PAN     c_v-9
+	BYTE		N24     Fn3   v127
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+ToccataAndDoom_6_B1:
+	BYTE	W48
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+ToccataAndDoom_6_008:
+	BYTE	W48
+	BYTE		N24     Dn2   v127
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        An1 
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_6_008
+// 011   ----------------------------------------
+	BYTE		N24     As1   v127
+	BYTE	W24
+	BYTE		        An1 
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ToccataAndDoom_6_B1
+ToccataAndDoom_6_B2:
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+ToccataAndDoom_7:
+	BYTE	KEYSH   ToccataAndDoom_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   58
+	BYTE		VOL     127*ToccataAndDoom_mvl/mxv
+	BYTE		PAN     c_v-9
+	BYTE		N24     An2   v127
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+ToccataAndDoom_7_B1:
+	BYTE	W48
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+ToccataAndDoom_7_008:
+	BYTE	W48
+	BYTE		N24     Fn2   v127
+	BYTE	W24
+	BYTE		        En2 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W24
+	BYTE		        Cs2 
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ToccataAndDoom_7_008
+// 011   ----------------------------------------
+	BYTE		N24     Dn2   v127
+	BYTE	W24
+	BYTE		        Cs2 
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ToccataAndDoom_7_B1
+ToccataAndDoom_7_B2:
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+ToccataAndDoom:
+	BYTE	7	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	ToccataAndDoom_pri	// Priority
+	BYTE	ToccataAndDoom_rev	// Reverb.
+
+	POIN2	ToccataAndDoom_grp
+
+	POIN2	ToccataAndDoom_1
+	POIN2	ToccataAndDoom_2
+	POIN2	ToccataAndDoom_3
+	POIN2	ToccataAndDoom_4
+	POIN2	ToccataAndDoom_5
+	POIN2	ToccataAndDoom_6
+	POIN2	ToccataAndDoom_7
+
+	

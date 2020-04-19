@@ -1,0 +1,414 @@
+EventPointerTable(Ch8Event, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,DerekGoes,1)
+	TurnEventPlayer(0x0,Turn3Event,3)
+	TurnEventPlayer(0x0,Turn5Event,5)
+	TurnEventPlayer(0x0,Turn6Event,6)
+	TurnEventPlayer(0x0,Turn8Event,8)
+	TurnEventPlayer(0x0,RaydrikCharges,10)
+	TurnEventPlayer(0x0,Turn12Event,12)
+	InfiniteTurnEventPlayer(0xC,DoorUnits,0)
+	InfiniteTurnEventPlayer(0x0,AlwaysReinforcements,2)
+	END_MAIN
+
+DerekGoes:
+	MUSC JenovaSong
+	CAM1 Derek2
+	FlashCursor(Derek2,60)
+	Text(TestDialogue)
+	FlashCursor(Derek2,60)
+	CUSN Derek2
+	CamOn
+	MoveCoords(12,1,9,15)
+	ENUN
+	CamOff
+	FlashCursor(Eevster2,60)
+	Text(TestDialogue)
+	CAM1 Sanders
+	Text(TestDialogue)
+	CAM1 [1,12]
+	FlashCursor(1,12,60)
+	CAM1 [19,16]
+	FlashCursor(19,16,60)
+	CAM1 [10,19]
+	STAL 60
+	NoFade
+	ENDA
+
+Turn3Event:
+	SpawnReinforcements(Reinforcement1)
+	SpawnReinforcements(Reinforcement2)
+	NoFade
+	ENDA
+
+Turn5Event:
+	SpawnReinforcements(Reinforcement3)
+	SpawnReinforcements(Reinforcement4)
+	NoFade
+	ENDA
+
+Turn6Event:
+	CHECK_ALIVE Gromell
+	BEQ 1 0x0 0xC
+		CAM1 Gromell
+		FlashCursor(Gromell,60)
+		Text(TestDialogue)
+		LABEL 1
+	SpawnReinforcements(WyvernReinforcement)
+	SpawnReinforcements(ThiefUnit)
+	NoFade
+	ENDA
+
+Turn8Event:
+	SpawnReinforcements(ScaryReinforcement1)
+	SpawnReinforcements(ScaryReinforcement2)
+	NoFade
+	ENDA
+
+RaydrikCharges:
+	CHECK_ALIVE Raydrik
+	BEQ 1 0x0 0xC
+		CAM1 Raydrik
+		FlashCursor(Raydrik,60)
+		Text(TestDialogue)
+		MoveCoords(19,23,20,24)
+		ENUN
+		DISA Raydrik
+		STAL 20
+		CAM1 [21,3]
+		STAL 20
+		SpawnReinforcements(RaydrikMoves)
+		LABEL 1
+	NoFade
+	ENDA
+
+Turn12Event:
+	SpawnReinforcements(ScaryReinforcement1)
+	SpawnReinforcements(ScaryReinforcement2)
+	SpawnReinforcements(ScaryWyvernReinforcement)
+	NoFade
+	ENDA
+
+DoorUnits:
+	CHECK_EVENTID 0x9
+	BEQ 1 0x0 0xC
+	CHECK_EVENTID 0xA
+	BEQ 1 0x0 0xC
+		SpawnReinforcements(Reinforcement5)
+		GOTO 2
+	LABEL 1
+	ENUF 0xC
+	LABEL 2
+	NoFade
+	ENDA
+
+AlwaysReinforcements:
+	Increment(1)
+	COUNTER_CHECK 1
+	SVAL 0x1 2
+	BNE 1 0x1 0xC
+		SpawnReinforcements(Reinforcement6)
+		SpawnReinforcements(Reinforcement7)
+		SpawnReinforcements(Reinforcement8)
+		COUNTER_SET 1 0
+		LABEL 1
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+	CharacterEventBothWays(0xB,RecruitmentEvent,Sanders,Eevster2)
+	CharacterEventBothWays(0xB,RecruitmentEvent,Sanders,Ky)
+	CharacterEventBothWays(0xB,RecruitmentEvent,Sanders,Derek2)
+	END_MAIN
+
+RecruitmentEvent:
+	MUSS SkyEventSong
+	Text(TestDialogue)
+	CUSA Eevster2
+	CUSA Ky
+	CUSA Derek2
+	MURE 2
+	NoFade
+	ENDA
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+	Door(7,6)
+	Door(14,6)
+	Door(1,14)
+	Chest(BlueGem,0,18)
+	Chest(KnightCrest,2,17)
+	Chest(MagicRing,9,7)
+	Chest(Ruin,12,6)
+	House(0x9,RightSwitch,19,16)
+	House(0xA,LeftSwitch,1,12)
+	Arrive(0,22)
+	Arrive(0,23)
+	Arrive(0,24)
+	Arrive(0,25)
+	Arrive(0,26)
+	END_MAIN
+
+RightSwitch:
+	SOUN 0xAF // destroy wall
+	TILECHANGE 0x8
+	CHECK_EVENTID 0xA
+	BEQ 1 0xC 0x0
+		STAL 20
+		CAM1 [10,18]
+		STAL 20
+		EARTHQUAKE_START 0x100
+		STAL 150
+		EARTHQUAKE_END
+		STAL 60
+		SOUN 0xB1 // door open
+		TILECHANGE 0x9
+		LABEL 1
+	NoFade
+	ENDA
+
+LeftSwitch:
+	SOUN 0xAF // destroy wall
+	TILECHANGE 0x7
+	CHECK_EVENTID 0x9
+	BEQ 1 0xC 0x0
+		STAL 20
+		CAM1 [10,18]
+		STAL 20
+		EARTHQUAKE_START 0x100
+		STAL 150
+		EARTHQUAKE_END
+		STAL 60
+		SOUN 0xB1 // door open
+		TILECHANGE 0x9
+		LABEL 1
+	NoFade
+	ENDA
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(4,1)
+	Unit(5,1)
+	Unit(6,1)
+	Unit(4,2)
+	Unit(5,2)
+	Unit(6,2)
+	Unit(4,3)
+	
+	Unit(15,1)
+	Unit(16,1)
+	Unit(17,1)
+	Unit(15,2)
+	Unit(16,2)
+	Unit(17,2)
+	Unit(17,3)
+	UNIT
+
+EnemyUnits:
+
+	UNIT Derek2 Cavalier 0x0 Level(14,Enemy,0) [12,1] 0 0 0 0 [Rapier,ShortSpear,LightBrand,BaldoScroll] NeverMoveAI
+
+	UNIT Vergil Paladin 0x0 Level(7,Enemy,0) [11,1] 0 0 0 0 [Rapier,SilverLance,Spear,Elixir] NeverMoveAI
+	UNIT Gromell WyvernLord 0x0 Level(8,Enemy,0) [10,1] 0 0 0 0 [BoltAxe,BraveAxe,SilverLance,Elixir] NeverMoveAI
+
+	UNIT Raydrik General 0x0 Level(15,Enemy,0) [19,23] 0 0 0 0 [Runesword,BraveLance,Tomahawk,NobleRapier] NeverMoveAI
+
+	UNIT Officer Hero 0x0 Level(3,Enemy,1) [19,13] 0 0 0 0 [SteelSword,HandAxe,IronAxe] AttackInRangeAI
+	UNIT Officer Sniper 0x0 Level(1,Enemy,1) [1,9] 0 0 0 0 [ShiningBow,SteelBow] AttackInRangeAI
+	UNIT Officer Warrior 0x0 Level(3,Enemy,1) [3,24] 0 0 0 0 [EmeraldAxe,ShortAxe,Greatbow] AttackInRangeAI
+
+	UNIT Imperial2 Mercenary 0x0 Level(10,Enemy,1) [18,13] 0 0 0 0 [SteelSword] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [19,12] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [19,14] 0 0 0 0 [Greataxe] AttackInRangeAI
+
+	UNIT Imperial2 Archer 0x0 Level(10,Enemy,1) [0,8] 0 0 0 0 [ShortBow] AttackInRangeAI
+
+	UNIT Imperial2 LanceKnight 0x0 Level(10,Enemy,1) [0,12] 0 0 0 0 [SteelLance,HeavySpear] AttackInRangeAI
+	UNIT Imperial2 AxeKnight 0x0 Level(10,Enemy,1) [1,13] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Imperial2 AxeKnight 0x0 Level(10,Enemy,1) [1,11] 0 0 0 0 [SapphireLance,IronAxe] AttackInRangeAI
+
+	UNIT Imperial2 LanceArmor 0x0 Level(12,Enemy,1) [6,6] 0 0 0 0 [ShortSpear,SteelBlade] NeverMoveAI
+	UNIT Imperial2 AxeArmor 0x0 Level(12,Enemy,1) [15,6] 0 0 0 0 [ShortAxe,IronLance] NeverMoveAI
+
+	UNIT Imperial2 Mage 0x0 Level(10,Enemy,1) [10,6] 0 0 0 0 [Fire] AttackInRangeAI
+	UNIT Imperial2 Monk 0x0 Level(10,Enemy,1) [11,6] 0 0 0 0 [Shine] AttackInRangeAI
+
+	UNIT Imperial2 WyvernRider 0x0 Level(13,Enemy,1) [12,0] 0 0 0 0 [SapphireLance,Javelin] AttackInRangeAI
+	UNIT Imperial2 WyvernRider 0x0 Level(13,Enemy,1) [9,0] 0 0 0 0 [ShortSpear,Horseslayer] AttackInRangeAI
+
+	UNIT Imperial2 Soldier 0x0 Level(11,Enemy,1) [21,4] 0 0 0 0 [SilverLance] AttackInRangeAI
+	UNIT Imperial2 Soldier 0x0 Level(11,Enemy,1) [20,5] 0 0 0 0 [ShortSpear] AttackInRangeAI
+
+	UNIT Imperial2 AxeArmor 0x0 Level(10,Enemy,1) [2,6] 0 0 0 0 [SteelAxe,Javelin] AttackInRangeAI
+
+	UNIT Imperial2 Mercenary 0x0 Level(10,Enemy,1) [0,3] 0 0 0 0 [IronSword] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [0,5] 0 0 0 0 [EmeraldAxe] AttackInRangeAI
+
+	UNIT Imperial2 Mage 0x0 Level(10,Enemy,1) [20,9] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [3,23] 0 0 0 0 [Hammer,SteelAxe] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [3,25] 0 0 0 0 [ShortAxe,EmeraldAxe] AttackInRangeAI
+
+	UNIT Imperial2 LanceArmor 0x0 Level(12,Enemy,1) [13,24] 0 0 0 0 [Horseslayer,SapphireLance] AttackInRangeAI
+	UNIT Imperial2 LanceArmor 0x0 Level(12,Enemy,1) [8,24] 0 0 0 0 [Javelin,Greatsword] AttackInRangeAI
+
+	UNIT Imperial2 AxeArmor 0x0 Level(12,Enemy,1) [9,20] 0 0 0 0 [ShortAxe,IronLance] NeverMoveAI
+	UNIT Imperial2 AxeArmor 0x0 Level(12,Enemy,1) [12,20] 0 0 0 0 [HandAxe,SteelLance] NeverMoveAI
+
+	UNIT Imperial2 Fighter 0x0 Level(11,Enemy,1) [17,8] 0 0 0 0 [SteelAxe] AttackInRangeAI
+
+	UNIT Imperial2 Archer 0x0 Level(11,Enemy,1) [1,24] 0 0 0 0 [SilverBow] AttackInRangeAI
+
+	UNIT Imperial2 LanceArmor 0x0 Level(12,Enemy,1) [19,17] 0 0 0 0 [Greatlance] NeverMoveAI
+
+	UNIT
+
+GreenUnits:
+	UNIT Eevster2 Troubadour 0x0 Level(10,NPC,0) [10,15] 0 0 0 0 [Physic,Mend,Vulnerary,NihilManual] NeverMoveAI
+	UNIT Ky Myrmidon 0x0 Level(13,NPC,0) [11,15] 0 0 0 0 [LevinSword,SteelSword,Elixir] NeverMoveAI
+
+	UNIT Basement3 Mercenary 0x0 Level(10,NPC,1) [7,12] 0 0 0 0 [SteelSword] DefaultAI
+	UNIT Basement3 Soldier 0x0 Level(10,NPC,1) [8,11] 0 0 0 0 [ShortSpear,IronLance] DefaultAI
+	UNIT Basement3 Mage 0x0 Level(10,NPC,1) [14,14] 0 0 0 0 [Thunder,Elfire] DefaultAI
+	UNIT Basement3 Fighter 0x0 Level(10,NPC,1) [13,11] 0 0 0 0 [Greataxe,HandAxe] DefaultAI
+	UNIT Basement3 Myrmidon 0x0 Level(10,NPC,1) [14,12] 0 0 0 0 [RubySword,Zanbato] DefaultAI
+	UNIT Basement3 Pirate 0x0 Level(10,NPC,1) [7,14] 0 0 0 0 [EmeraldAxe,Hatchet] DefaultAI
+	UNIT Basement3 LanceArmor 0x0 Level(10,NPC,1) [13,15] 0 0 0 0 [SilverLance,SteelSword] DefaultAI
+	UNIT Basement3 AxeArmor 0x0 Level(10,NPC,1) [8,15] 0 0 0 0 [SilverAxe,Greatlance] DefaultAI
+
+	UNIT
+
+Reinforcement1:
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [21,10] 0 0 1 REDA21R11 [SteelAxe,HandAxe] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [21,10] 0 0 1 REDA21R9 [IronAxe] DefaultAI
+	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [21,10] 0 0 1 REDA21R10 [SteelBlade,RubySword] DefaultAI
+	UNIT
+
+Reinforcement2:
+	UNIT Imperial2 Soldier 0x0 Level(12,Enemy,1) [0,12] 0 0 1 REDA0R12 [SilverLance] DefaultAI
+	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [0,12] 0 0 1 REDA0R11 [IronSword] DefaultAI
+	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [0,12] 0 0 1 REDA0R13 [SteelSword] DefaultAI
+	UNIT
+
+Reinforcement3:
+	UNIT Imperial2 Cavalier 0x0 Level(12,Enemy,1) [5,0] 0 0 1 REDA5R1 [SteelSword,IronLance] DefaultAI
+	UNIT Imperial2 AxeKnight 0x0 Level(12,Enemy,1) [5,0] 0 0 1 REDA6R1 [SteelAxe] DefaultAI
+	UNIT Imperial2 FreeKnight 0x0 Level(12,Enemy,1) [5,0] 0 0 1 REDA4R1 [LevinSword,IronBlade] DefaultAI
+	UNIT
+
+Reinforcement4:
+	UNIT Imperial2 AxeKnight 0x0 Level(12,Enemy,1) [16,0] 0 0 1 REDA16R1 [SilverAxe] DefaultAI
+	UNIT Imperial2 LanceKnight 0x0 Level(12,Enemy,1) [16,0] 0 0 1 REDA15R1 [IronLance,Javelin] DefaultAI
+	UNIT Imperial2 LanceKnight 0x0 Level(12,Enemy,1) [16,0] 0 0 1 REDA17R1 [SteelLance] DefaultAI
+	UNIT
+
+WyvernReinforcement:
+	UNIT Imperial2 WyvernRider 0x0 Level(13,Enemy,1) [10,0] 0 0 1 REDA10R4 [SteelLance,Javelin] DefaultAI
+	UNIT Imperial2 WyvernRider 0x0 Level(13,Enemy,1) [11,0] 0 0 1 REDA11R4 [Greatlance] DefaultAI
+	UNIT
+
+RaydrikMoves:
+	UNIT Raydrik General 0x0 Level(15,Enemy,0) [21,3] 0 0 1 REDA21R3 [Runesword,BraveLance,Tomahawk,NobleRapier] DefaultAI
+	UNIT
+
+ScaryReinforcement1:
+	UNIT Officer Sniper 0x0 Level(5,Enemy,1) [5,0] 0 0 1 REDA5R1 [Greatbow,BraveBow] DefaultAI
+	UNIT Officer Hero 0x0 Level(5,Enemy,1) [5,0] 0 0 1 REDA6R1 [SilverSword,BraveAxe,Flamberge] DefaultAI
+	UNIT Officer Hero 0x0 Level(5,Enemy,1) [5,0] 0 0 1 REDA4R1 [SilverAxe,Tomahawk] DefaultAI
+	UNIT
+
+ScaryReinforcement2:
+	UNIT Officer General 0x0 Level(5,Enemy,1) [16,0] 0 0 1 REDA16R1 [BraveSword,Spear,Hammer,Zanbato] DefaultAI
+	UNIT Officer Halberdier 0x0 Level(5,Enemy,1) [16,0] 0 0 1 REDA15R1 [SilverLance,ShortSpear] DefaultAI
+	UNIT Officer Halberdier 0x0 Level(5,Enemy,1) [16,0] 0 0 1 REDA17R1 [Dragonspear,FlameLance] DefaultAI
+	UNIT
+
+ScaryWyvernReinforcement:
+	UNIT Imperial2 WyvernLord 0x0 Level(5,Enemy,1) [10,0] 0 0 1 REDA10R4 [Greataxe,ShortSpear] DefaultAI
+	UNIT Imperial2 WyvernLord 0x0 Level(5,Enemy,1) [11,0] 0 0 1 REDA11R4 [SilverLance,SteelAxe,ShortAxe] DefaultAI
+	UNIT
+
+Reinforcement5:
+	UNIT Officer Hero 0x0 Level(1,Enemy,1) [15,26] 0 0 1 REDA15R25 [IronBlade,HandAxe] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [15,26] 0 0 1 REDA14R25 [Greataxe] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [15,26] 0 0 1 REDA16R25 [Halberd,IronAxe] DefaultAI
+	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [15,26] 0 0 1 REDA15R24 [LightBrand,SteelSword] DefaultAI
+	UNIT
+
+Reinforcement6:
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [7,17] 0 0 1 REDA7R17 [IronAxe] DefaultAI
+	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [7,17] 0 0 1 REDA8R17 [IronBlade] DefaultAI
+	UNIT
+
+Reinforcement7:
+	UNIT Imperial2 Soldier 0x0 Level(12,Enemy,1) [14,17] 0 0 1 REDA13R17 [SteelLance] DefaultAI
+	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [14,17] 0 0 1 REDA14R17 [RubySword] DefaultAI
+	UNIT
+
+Reinforcement8:
+	UNIT Imperial2 Soldier 0x0 Level(12,Enemy,1) [10,0] 0 0 1 REDA10R9 [Javelin] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [11,0] 0 0 1 REDA11R9 [SteelAxe] DefaultAI
+	UNIT
+
+ThiefUnit:
+	UNIT Imperial2 Thief 0x0 Level(10,Enemy,1) [0,16] 0 0 0 0 [ChestKey,ChestKey] LootingThiefAI
+	UNIT
+
+Traps1:
+	RedSigil(0,22)
+	RedSigil(0,23)
+	RedSigil(0,24)
+	RedSigil(0,25)
+	RedSigil(0,26)
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	Increment(1)
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	LOAD1 0x1 GreenUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 10
+	NoFade
+	ENDA

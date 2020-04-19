@@ -1,0 +1,822 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	TheWorldIsTrembling_grp  voicegroup000
+	#define	TheWorldIsTrembling_pri  0
+	#define	TheWorldIsTrembling_rev  0
+	#define	TheWorldIsTrembling_mvl  35
+	#define	TheWorldIsTrembling_key  0
+	#define	TheWorldIsTrembling_tbs  1
+	#define	TheWorldIsTrembling_exg  0
+	#define	TheWorldIsTrembling_cmp  1
+
+	// .rodata
+	//	TheWorldIsTrembling
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+TheWorldIsTrembling_1:
+	BYTE	KEYSH   TheWorldIsTrembling_key+0
+TheWorldIsTrembling_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   70*TheWorldIsTrembling_tbs/2
+	BYTE		VOICE   40
+	BYTE		VOL     87*TheWorldIsTrembling_mvl/mxv
+	BYTE		PAN     c_v+48
+	BYTE	W09
+	BYTE		N48     Bn1   v100
+	BYTE		N48     Bn2 
+	BYTE	W48
+	BYTE		        Cn2 
+	BYTE		N48     Cn3 
+	BYTE	W36
+	BYTE	W03
+// 001   ----------------------------------------
+TheWorldIsTrembling_1_001:
+	BYTE	W09
+	BYTE		N48     Bn1   v100
+	BYTE		N48     Bn2 
+	BYTE	W48
+	BYTE		        Cn2 
+	BYTE		N48     Cn3 
+	BYTE	W36
+	BYTE	W03
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_1_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_1_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_1_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_1_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_1_001
+// 007   ----------------------------------------
+	BYTE	W09
+	BYTE		N48     Bn1   v100
+	BYTE		N48     Bn2 
+	BYTE	W84
+	BYTE	W03
+// 008   ----------------------------------------
+TheWorldIsTrembling_1_008:
+	BYTE		N08     Bn3   v100
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+TheWorldIsTrembling_1_009:
+	BYTE		N08     As3   v100
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_1_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_1_009
+	BYTE	GoTo
+	 POIN2	TheWorldIsTrembling_1_B1
+TheWorldIsTrembling_1_B2:
+// 012   ----------------------------------------
+	BYTE	W09
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+TheWorldIsTrembling_2:
+	BYTE	KEYSH   TheWorldIsTrembling_key+0
+TheWorldIsTrembling_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     100*TheWorldIsTrembling_mvl/mxv
+	BYTE		PAN     c_v-24
+	BYTE	W09
+	BYTE		N48     Bn2   v100
+	BYTE		N48     Bn3 
+	BYTE	W48
+	BYTE		        As2 
+	BYTE		N48     As3 
+	BYTE	W36
+	BYTE	W03
+// 001   ----------------------------------------
+	BYTE	W09
+	BYTE		        Bn2 
+	BYTE		N48     Bn3 
+	BYTE	W48
+	BYTE		        As2 
+	BYTE		N48     As3 
+	BYTE	W36
+	BYTE	W03
+// 002   ----------------------------------------
+	BYTE	W09
+	BYTE		N12     Bn2 
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE		N12     As3 
+	BYTE	W03
+// 003   ----------------------------------------
+TheWorldIsTrembling_2_003:
+	BYTE	W09
+	BYTE		N96     Bn2   v100
+	BYTE		N96     Bn3 
+	BYTE	W84
+	BYTE	W03
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	W09
+	BYTE		N48     Fs3 
+	BYTE		N48     Fs4 
+	BYTE	W48
+	BYTE		        En3 
+	BYTE		N48     En4 
+	BYTE	W36
+	BYTE	W03
+// 005   ----------------------------------------
+	BYTE	W09
+	BYTE		        Dn3 
+	BYTE		N48     Dn4 
+	BYTE	W48
+	BYTE		N24     Cn3 
+	BYTE		N24     Cn4 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE		N24     Gn4 
+	BYTE	W15
+// 006   ----------------------------------------
+	BYTE	W09
+	BYTE		N48     Fs3 
+	BYTE		N48     Fs4 
+	BYTE	W48
+	BYTE		        As2 
+	BYTE		N48     As3 
+	BYTE	W36
+	BYTE	W03
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_2_003
+// 008   ----------------------------------------
+	BYTE	W09
+	BYTE		N48     Bn1   v100
+	BYTE		N48     Bn2 
+	BYTE	W48
+	BYTE		N24     Dn2 
+	BYTE		N24     Dn3 
+	BYTE	W24
+	BYTE		        Bn1 
+	BYTE		N24     Bn2 
+	BYTE	W15
+// 009   ----------------------------------------
+	BYTE	W09
+	BYTE		N48     Cn2 
+	BYTE		N48     Cn3 
+	BYTE	W48
+	BYTE		N24     Gn2 
+	BYTE		N24     Gn3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N24     En3 
+	BYTE	W15
+// 010   ----------------------------------------
+	BYTE	W09
+	BYTE		N48     Fs2 
+	BYTE		N48     Fs3 
+	BYTE	W48
+	BYTE		N24     Dn2 
+	BYTE		N24     Dn3 
+	BYTE	W24
+	BYTE		        Bn1 
+	BYTE		N24     Bn2 
+	BYTE	W15
+// 011   ----------------------------------------
+	BYTE	W09
+	BYTE		N48     Cn2 
+	BYTE		N48     Cn3 
+	BYTE	W48
+	BYTE		        As1 
+	BYTE		N48     As2 
+	BYTE	W36
+	BYTE	W03
+	BYTE	GoTo
+	 POIN2	TheWorldIsTrembling_2_B1
+TheWorldIsTrembling_2_B2:
+// 012   ----------------------------------------
+	BYTE	W09
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+TheWorldIsTrembling_3:
+	BYTE	KEYSH   TheWorldIsTrembling_key+0
+TheWorldIsTrembling_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   123
+	BYTE		VOL     127*TheWorldIsTrembling_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N06     Fs1   v100
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W18
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W30
+	BYTE		N06   
+	BYTE	W06
+// 001   ----------------------------------------
+TheWorldIsTrembling_3_001:
+	BYTE		N06     Fs1   v100
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W18
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W30
+	BYTE		N06   
+	BYTE	W06
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_3_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_3_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_3_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_3_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_3_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_3_001
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	TheWorldIsTrembling_3_B1
+TheWorldIsTrembling_3_B2:
+// 012   ----------------------------------------
+	BYTE	W09
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+TheWorldIsTrembling_4:
+	BYTE	KEYSH   TheWorldIsTrembling_key+0
+TheWorldIsTrembling_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   47
+	BYTE		VOL     127*TheWorldIsTrembling_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N48     Bn1   v100
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+TheWorldIsTrembling_4_003:
+	BYTE	W72
+	BYTE		N03     En1   v100
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE		N48     Bn1 
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_4_003
+// 008   ----------------------------------------
+TheWorldIsTrembling_4_008:
+	BYTE		N48     Bn1   v100
+	BYTE	W84
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		N36     Cn2 
+	BYTE	W36
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N36   
+	BYTE	W36
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_4_008
+// 011   ----------------------------------------
+	BYTE		N36     Cn2   v100
+	BYTE	W36
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N03     Fs1 
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE		N03   
+	BYTE	W03
+	BYTE	GoTo
+	 POIN2	TheWorldIsTrembling_4_B1
+TheWorldIsTrembling_4_B2:
+// 012   ----------------------------------------
+	BYTE	W09
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.6) ****************//
+
+TheWorldIsTrembling_5:
+	BYTE	KEYSH   TheWorldIsTrembling_key+0
+TheWorldIsTrembling_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     85*TheWorldIsTrembling_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N48     Dn2   v100
+	BYTE		N48     Dn3 
+	BYTE	W48
+	BYTE		        En2 
+	BYTE		N48     En3 
+	BYTE	W48
+// 001   ----------------------------------------
+TheWorldIsTrembling_5_001:
+	BYTE		N48     Dn2   v100
+	BYTE		N48     Dn3 
+	BYTE	W48
+	BYTE		        En2 
+	BYTE		N48     En3 
+	BYTE	W48
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_5_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_5_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_5_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_5_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_5_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_5_001
+// 008   ----------------------------------------
+TheWorldIsTrembling_5_008:
+	BYTE		N08     Dn3   v100
+	BYTE		N08     Dn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N08     Dn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N08     Dn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N08     Dn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N08     Dn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N08     Dn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N08     Dn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N08     Dn4 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+TheWorldIsTrembling_5_009:
+	BYTE		N08     En3   v100
+	BYTE		N08     En4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N08     En4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N08     En4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N08     En4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N08     En4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N08     En4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N08     En4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N08     En4 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_5_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_5_009
+	BYTE	GoTo
+	 POIN2	TheWorldIsTrembling_5_B1
+TheWorldIsTrembling_5_B2:
+// 012   ----------------------------------------
+	BYTE	W09
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.7) ****************//
+
+TheWorldIsTrembling_6:
+	BYTE	KEYSH   TheWorldIsTrembling_key+0
+TheWorldIsTrembling_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     127*TheWorldIsTrembling_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N48     Bn2   v100
+	BYTE		N48     Bn3 
+	BYTE	W48
+	BYTE		        As2 
+	BYTE		N48     As3 
+	BYTE	W48
+// 001   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE		N48     Bn3 
+	BYTE	W48
+	BYTE		        As2 
+	BYTE		N48     As3 
+	BYTE	W48
+// 002   ----------------------------------------
+	BYTE		N12     Bn2 
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        As2 
+	BYTE		N12     As3 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE		N96     Bn2 
+	BYTE		N96     Bn3 
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		N48     Fs3 
+	BYTE		N48     Fs4 
+	BYTE	W48
+	BYTE		        En3 
+	BYTE		N48     En4 
+	BYTE	W48
+// 005   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE		N48     Dn4 
+	BYTE	W48
+	BYTE		N24     Cn3 
+	BYTE		N24     Cn4 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE		N24     Gn4 
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		N48     Fs3 
+	BYTE		N48     Fs4 
+	BYTE	W48
+	BYTE		        As2 
+	BYTE		N48     As3 
+	BYTE	W48
+// 007   ----------------------------------------
+	BYTE		N96     Bn2 
+	BYTE		N96     Bn3 
+	BYTE	W96
+// 008   ----------------------------------------
+TheWorldIsTrembling_6_008:
+	BYTE		N08     Bn3   v100
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N08     Bn4 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+TheWorldIsTrembling_6_009:
+	BYTE		N08     As3   v100
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE		        As3 
+	BYTE		N08     As4 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_6_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_6_009
+	BYTE	GoTo
+	 POIN2	TheWorldIsTrembling_6_B1
+TheWorldIsTrembling_6_B2:
+// 012   ----------------------------------------
+	BYTE	W09
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.8) ****************//
+
+TheWorldIsTrembling_7:
+	BYTE	KEYSH   TheWorldIsTrembling_key+0
+TheWorldIsTrembling_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     87*TheWorldIsTrembling_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N48     Bn1   v100
+	BYTE		N48     Bn2 
+	BYTE	W48
+	BYTE		        Cn2 
+	BYTE		N48     Cn3 
+	BYTE	W48
+// 001   ----------------------------------------
+TheWorldIsTrembling_7_001:
+	BYTE		N48     Bn1   v100
+	BYTE		N48     Bn2 
+	BYTE	W48
+	BYTE		        Cn2 
+	BYTE		N48     Cn3 
+	BYTE	W48
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_7_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_7_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_7_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_7_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_7_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	TheWorldIsTrembling_7_001
+// 008   ----------------------------------------
+	BYTE		N48     Bn1   v100
+	BYTE		N48     Bn2 
+	BYTE	W48
+	BYTE		N24     Dn2 
+	BYTE		N24     Dn3 
+	BYTE	W24
+	BYTE		        Bn1 
+	BYTE		N24     Bn2 
+	BYTE	W24
+// 009   ----------------------------------------
+	BYTE		N48     Cn2 
+	BYTE		N48     Cn3 
+	BYTE	W48
+	BYTE		N24     Gn2 
+	BYTE		N24     Gn3 
+	BYTE	W24
+	BYTE		        En2 
+	BYTE		N24     En3 
+	BYTE	W24
+// 010   ----------------------------------------
+	BYTE		N48     Fs2 
+	BYTE		N48     Fs3 
+	BYTE	W48
+	BYTE		N24     Dn2 
+	BYTE		N24     Dn3 
+	BYTE	W24
+	BYTE		        Bn1 
+	BYTE		N24     Bn2 
+	BYTE	W24
+// 011   ----------------------------------------
+	BYTE		N48     Cn2 
+	BYTE		N48     Cn3 
+	BYTE	W48
+	BYTE		        As1 
+	BYTE		N48     As2 
+	BYTE	W48
+	BYTE	GoTo
+	 POIN2	TheWorldIsTrembling_7_B1
+TheWorldIsTrembling_7_B2:
+// 012   ----------------------------------------
+	BYTE	W09
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+TheWorldIsTrembling:
+	BYTE	7	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	TheWorldIsTrembling_pri	// Priority
+	BYTE	TheWorldIsTrembling_rev	// Reverb.
+
+	POIN2	TheWorldIsTrembling_grp
+
+	POIN2	TheWorldIsTrembling_1
+	POIN2	TheWorldIsTrembling_2
+	POIN2	TheWorldIsTrembling_3
+	POIN2	TheWorldIsTrembling_4
+	POIN2	TheWorldIsTrembling_5
+	POIN2	TheWorldIsTrembling_6
+	POIN2	TheWorldIsTrembling_7
+
+	

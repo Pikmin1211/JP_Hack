@@ -4,7 +4,7 @@
 	#define	Jenova_grp  voicegroup000
 	#define	Jenova_pri  0
 	#define	Jenova_rev  0
-	#define	Jenova_mvl  80
+	#define	Jenova_mvl  120
 	#define	Jenova_key  0
 	#define	Jenova_tbs  1
 	#define	Jenova_exg  0

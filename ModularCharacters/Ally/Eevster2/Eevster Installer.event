@@ -1,0 +1,19 @@
+
+
+{
+	#define UnitID Eevster2
+	#define UnitClass EevsterClass
+	#define UnitMugID EevsterMug
+	#define UnitNameLocation EevsterName
+	#define UnitDescriptionLocation EevsterDescription
+	#define Palette1Number EevsterPalette1
+	#define Palette2Number EevsterPalette2
+	#define Palette3Number EevsterPalette3
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Support Installer.event"
+	#include "Files/Palette Installer.event"
+	//#include "Files/Mug Installer.event"
+	//#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

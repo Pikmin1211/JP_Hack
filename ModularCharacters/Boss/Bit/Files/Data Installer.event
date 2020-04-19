@@ -9,12 +9,12 @@
 
 //Stats
 #define UnitLevel 1
-#define BaseHP 20
-#define BaseStr 8
+#define BaseHP 22
+#define BaseStr 9
 #define BaseMag 0
 #define BaseSkl 7
-#define BaseSpd 4
-#define BaseDef 3
+#define BaseSpd 5
+#define BaseDef 2
 #define BaseRes 5
 #define BaseLuk 5
 #define BaseCon 4

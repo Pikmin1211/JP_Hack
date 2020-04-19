@@ -78,3 +78,90 @@ The Fragrance of Dark Coffee[X]
 
 ## JenovaName
 J-E-N-O-V-A[X]
+
+## NeverGonnaGiveYouUpName
+Never Gonna Give You Up[X]
+
+## ITRYOUTName
+I TRY OUT[X]
+
+## ToccataAndDoomName
+Toccata And Doom[X]
+
+## AbandonedChurchName
+Battle in the Abandoned Church[X]
+
+## TheWorldIsTremblingName
+The World is Trembling[X]
+
+## TrainRushName
+Train Rush[X]
+
+## SomewhereToBelongName
+Somewhere to Belong[X]
+
+## FindTheTruthName
+Find the Truth[X]
+
+## LonelyTownSoulBlazerName
+Lonely Town[X]
+
+## WereRangersName
+We're Rangers[X]
+
+## FuwaFuwaTimeName
+Fuwa Fuwa Time[X]
+
+## GreenGardenNightName
+Green Garden ~ Night[X]
+
+## InheritorOfTheLightName
+Inheritor of the Light[X]
+
+## Route209Name
+Route 209[X]
+
+## StoryLangrisserName
+Story (Langrisser)[X]
+
+## ASunnyPathName
+A Sunny Path[X]
+
+## DetectiveGumshoeName
+Detective Gumshoe[X]
+
+## InvestigationName
+Investigation[X]
+
+## KindredCryName
+Kindred Cry[X]
+
+## GeneralGuyPMName
+General Guy[X]
+
+## MinibossPMName
+Miniboss (Paper Mario)[X]
+
+## TubbaBlubbaPMName
+Tubba Blubba[X]
+
+## FatefulShowdownName
+Fateful Showdown[X]
+
+## ArmyOfVerdaneName
+Army of Verdane[X]
+
+## ConfidenceInTheDominationName
+Confidence in the Domination[X]
+
+## VsRaydrikName
+Vs. Raydrik[X]
+
+## ArmyAName
+Army A[X]
+
+## MadouBossName
+Boss (Madou Monogatari)[X]
+
+## UndergroundLairName
+Underground Lair[X]

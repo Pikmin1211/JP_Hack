@@ -19,3 +19,5 @@
 #include "Dark Knight Unit/Dark Knight Unit Installer.event"
 
 #include "Whitewolf/Whitewolf Installer.event"
+
+#include "Officer/Officer Installer.event"

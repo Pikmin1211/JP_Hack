@@ -148,6 +148,10 @@
 #define KyPalette2 0x49//PaletteID here
 #define KyPalette3 0x4A//PaletteID here
 
+#define Derek2 0x17//UnitID here
+
+#define Eevster2 0x18
+
 // Boss
 
 #define Batta 0x60//UnitID here
@@ -168,8 +172,8 @@
 #define DerekClass Cavalier//ClassID here
 #define DerekMug 0xE//MugID here
 #define DerekPalette1 0x21//PaletteID here
-#define DerekPalette2 0x0//PaletteID here
-#define DerekPalette3 0x0//PaletteID here
+#define DerekPalette2 0x4B//PaletteID here
+#define DerekPalette3 0x4C//PaletteID here
 
 #define Vergil 0x63//UnitID here
 #define VergilClass Paladin//ClassID here
@@ -219,6 +223,20 @@
 #define BitPalette1 0x0//PaletteID here
 #define BitPalette2 0x40//PaletteID here
 #define BitPalette3 0x0//PaletteID here
+
+#define Gromell 0x6A//UnitID here
+#define GromellClass WyvernLord//ClassID here
+#define GromellMug 0x22//MugID here
+#define GromellPalette1 0x0//PaletteID here
+#define GromellPalette2 0x4D//PaletteID here
+#define GromellPalette3 0x0//PaletteID here
+
+#define Raydrik 0x6B//UnitID here
+#define RaydrikClass General//ClassID here
+#define RaydrikMug 0x23//MugID here
+#define RaydrikPalette1 0x0//PaletteID here
+#define RaydrikPalette2 0x4E//PaletteID here
+#define RaydrikPalette3 0x0//PaletteID here
 
 // Generic + NPC
 
@@ -279,3 +297,8 @@
 
 #define Whitewolf 0x92//UnitID here
 #define WhitewolfFaction 0x1//MinimugID here
+
+#define Basement3 0x93
+
+#define Officer 0x94//UnitID here
+#define OfficerFaction 0x3//MinimugID here

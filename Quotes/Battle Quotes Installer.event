@@ -2,7 +2,7 @@
 
 ALIGN 4
 BattleQuoteTable:
-TwoWayBattleQuote(0x0,ONeill,Prologue,0x916)
+TwoWayBattleQuote(0x0,Batta,Prologue,PrologueBattaBattle)
 EndQuote
 
 PUSH

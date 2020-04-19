@@ -324,3 +324,9 @@ Heim Scroll[X]
 ## HeimScrollDescription
 Mag +10%, Luk +10%,[N]
 Def -10%, Res +20%.[X]
+
+## ResireName
+Resire[X]
+
+## ResireDescription
+Drains enemy HP into caster.[X]

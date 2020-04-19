@@ -12,11 +12,23 @@ ORG 0xB4C0C
 BYTE RollingDiceSong
 POP
 
-// Default prep screen use text is skill learning
-//PUSH
-//ORG StatBoosterTextTable + (11 * 0x8) + 0x2
-//SHORT PrepScreenUseSkillScroll
-//POP
+// Title Screen Music
+/*
+PUSH
+ORG 0xC5C9C
+BYTE Route209Song
+ORG 0x9ABE
+BYTE Route209Song
+ORG 0xC640A
+BYTE Route209Song
+ORG 0xC6436
+BYTE Route209Song
+ORG 0xA1946
+BYTE Route209Song
+ORG 0xAFA78
+BYTE Route209Song
+POP
+*/
 
 #include "Instruments/InstrumentInstaller.event"
 
@@ -45,3 +57,5 @@ POP
 #include "SilentGiveItem/Installer.event"
 
 #include "mug_exceed/EA.txt"
+
+#include "NosResire/NosResire.event"

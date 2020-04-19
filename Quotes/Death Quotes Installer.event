@@ -4,7 +4,7 @@ ALIGN 4
 DeathQuoteTable:
 
 // Prologue
-ChapterDeathQuote(Batta,Prologue,DefeatBossFlag,TestDialogue)
+ChapterDeathQuote(Batta,Prologue,DefeatBossFlag,PrologueBattaDeath)
 
 // Ch1
 ChapterDeathQuote(Derek,Ch1,DefeatBossFlag,TestDialogue)

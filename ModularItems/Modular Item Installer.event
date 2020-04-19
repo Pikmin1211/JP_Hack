@@ -103,3 +103,5 @@
 #include "Dain Scroll/Dain Scroll Installer.event"
 
 #include "Tordo Scroll/Tordo Scroll Installer.event"
+
+#include "Resire/Resire Installer.event"

@@ -95,3 +95,7 @@ Maid[X]
 ## MaidDescription
 Loyal servants who heal and defend[N]
 their masters. Equip: Swords, staves.[X]
+
+## WyvernLordDescription
+Wyvern-mounted knights of superior[N]
+skill. Equip: Lances, axes.[X]

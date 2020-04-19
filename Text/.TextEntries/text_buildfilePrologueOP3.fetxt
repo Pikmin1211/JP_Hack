@@ -1,0 +1,52 @@
+[Left][LoadMarisa][MidRight][LoadSanders]
+
+You brought[N]
+
+her along?[AN]
+
+
+
+[Left]
+
+Well, I can't very well[N]
+
+leave her own her own, can I?[AN]
+
+
+
+[FarLeft][LoadRenge]
+
+I can help too...[N]
+
+If you get hurt...[AN]
+
+
+
+[Left][Clear][LoadFinn]
+
+I'm not comfortable with[N]
+
+it either, but she's right.[AN]
+
+Besides, these tonics work much[N]
+
+less effectively than a staff.[AN]
+
+
+
+[MidRight]
+
+I guess she's safer[N]
+
+with us than by herself...[AN]
+
+Alright, fine. But[N]
+
+keep close to me, okay?[AN]
+
+
+
+[FarLeft]
+
+Okay...[A][X]
+

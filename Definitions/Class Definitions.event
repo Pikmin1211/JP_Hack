@@ -97,3 +97,11 @@
 #define MaidSwordAnim 0xEC
 #define MaidStaffAnim 0xED
 #define MaidClassCard 0x10E
+
+#define WyvernLordAxeAnim WyvernLordSwordAnim
+#define WyvernLordHandaxeAnim 0xEE
+
+#define DreadFighter 0x8E
+#define DreadFighterSwordAnim 0xEF
+#define DreadFighterMagicAnim 0xF0
+#define DreadFighterClassCard 0x10F

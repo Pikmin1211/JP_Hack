@@ -119,6 +119,22 @@
 [_Y] = [0xB1]
 [_Z] = [0xB2]
 
+[Clear] = [ClearFace]
+
 [CurrentPortrait] = [0xFF][0xFF]
+[LoadCurrent] = [LoadFace][CurrentPortrait]
 
 [LoadSanders] = [LoadFace][0x02][0x1]
+[LoadScott] = [LoadFace][0x04][0x1]
+[LoadFinn] = [LoadFace][0x03][0x1]
+[LoadRenge] = [LoadFace][0x05][0x1]
+[LoadMarisa] = [LoadFace][0x06][0x1]
+[LoadBatta] = [LoadFace][0x09][0x1]
+[LoadRedSoldier] = [LoadFace][0x6B][0x1]
+[LoadBrigand] = [LoadFace][0x4D][0x1]
+[LoadOskar] = [LoadFace][0x07][0x1]
+[LoadBlanc] = [LoadFace][0x08][0x1]
+[LoadGreenSoldier] = [LoadFace][0x6F][0x1]
+[LoadVillagerMan] = [LoadFace][0x5C][0x1]
+[LoadOldMan] = [LoadFace][0x59][0x1]
+[LoadVillagerGirl] = [LoadFace][0x61][0x1]

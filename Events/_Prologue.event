@@ -13,10 +13,21 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+	TurnEventPlayer(0x0,TurnOneEvent,1)
 	TurnEventPlayer(0xA,GalleyReinforcements,0,MaxTurns(0))
 	TurnEventPlayer(0x0,Reinforcements,3)
 	TurnEventPlayer(0x0,BrigandsAppear,6)
 	END_MAIN
+
+TurnOneEvent:
+	CAM1 Sanders
+	MUSC KnightErrandSong
+	FlashCursor(Scott,60)
+	Text(PrologueHint1)
+	CAM1 [1,9]
+	FlashCursor(1,9,60)
+	NoFade
+	ENDA
 
 GalleyReinforcements:
 	CHECK_EVENTID 0x9
@@ -67,17 +78,19 @@ LocationBasedEvents:
 
 LeftVillage:
 	MUSS SkyEventSong
-	Text(HouseBG,TestDialogue)
+	Text(HouseBG,PrologueOskarBlancHouse)
 	SpawnReinforcements(VillageUnits)
+	FlashCursor(Oskar,60)
+	Text(PrologueOskarBlancAfterRecruit)
 	MURE 2
 	NoFade
 	ENDA
 
 MidVillage:
-	VillageEventItem(TestDialogue,HouseBG,Thunder)
+	VillageEventItem(PrologueHouse2,HouseBG,Thunder)
 
 RightVillage:
-	VillageEventItem(TestDialogue,HouseBG,RedGem)
+	VillageEventItem(PrologueHouse1,HouseBG,RedGem)
 
 Dunno1:
 
@@ -97,10 +110,10 @@ Tutorial:
 
 Units1:
 	UNIT Sanders Mercenary 0x0 Level(1,Ally,0) [3,0] 0 0 1 REDA3R3 [IronSword,Vulnerary] NoAI
-	UNIT Finn LanceKnight 0x0 Level(3,Ally,0) [3,0] 0 0 1 REDA2R2 [IronLance,Javelin,Vulnerary] NoAI
-	UNIT Scott Cavalier 0x0 Level(2,Ally,0) [3,0] 0 0 1 REDA4R2 [IronSword,IronLance] NoAI
-	UNIT Renge Cleric 0x0 Level(1,Ally,0) [3,0] 0 0 1 REDA3R1 [Heal,Vulnerary] NoAI
-	UNIT Marisa MageF 0x0 Level(2,Ally,0) [3,0] 0 0 1 REDA3R2 [Fire,Vulnerary] NoAI
+	UNIT Finn LanceKnight 0x0 Level(3,Ally,0) [0,0] 0 0 1 REDA2R2 [IronLance,Javelin,Vulnerary] NoAI
+	UNIT Scott Cavalier 0x0 Level(2,Ally,0) [0,0] 0 0 1 REDA4R2 [IronSword,IronLance] NoAI
+	UNIT Renge Cleric 0x0 Level(1,Ally,0) [0,0] 0 0 1 REDA3R1 [Heal,Vulnerary] NoAI
+	UNIT Marisa MageF 0x0 Level(2,Ally,0) [0,0] 0 0 1 REDA3R2 [Fire,Vulnerary] NoAI
 	UNIT
 
 VillageUnits:
@@ -163,13 +176,38 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	LOAD1 0x1 Units1
-	ENUN
+	MUSC ASunnyPathSong
+	SetBackground(Castle_Garden_Past)
+	Text(PrologueOP)
+	FADI 16
+	MUSC 0x4C // birds
+	SetBackground(Salehs_House)
+	TEXTSTART
+		TEXTSHOW PrologueOP2
+		TEXTEND
+		MUSC InvestigationSong
+		TEXTCONT
+		TEXTEND
+	FADI 16
+	CLEAN
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	FADU 16
+	LOAD1 0x1 Units1
+	ENUN
+	FlashCursor(Sanders,60)
+	Text(PrologueOP3)
+	MUSC ToccataAndDoomSong
+	CAM1 Batta
+	FlashCursor(Batta,60)
+	Text(PrologueOP4)
+	NoFade
 	ENDA
 
 EndingScene:
+	MUSC WereRangersSong
+	SetBackground(Outside_Village_Evening)
+	Text(PrologueEnding)
 	MNC2 0x1
 	NoFade
 	ENDA

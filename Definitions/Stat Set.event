@@ -23,10 +23,15 @@ SetClassSwordRank(GreatKnight,DRank)
 SetClassSwordRank(General,CRank)
 SetClassAxeRank(General,CRank)
 
+SetClassSwordRank(WyvernLord,0)
+SetClassAxeRank(WyvernLord,DRank)
+SetClassDescription(WyvernLord,WyvernLordDescription)
+
 SetClassPromos(MageF,SageF,Witch)
 SetClassPromos(ShamanF,DruidF,Witch)
 SetClassPromos(PegasusKnight,Falcoknight,DarkFlier)
 SetClassPromos(Soldier,Halberdier,General)
+SetClassPromos(Myrmidon,Swordmaster,DreadFighter)
 SetClassPromos(MyrmidonF,SwordmasterF,DreadFighterF)
 SetClassPromos(Priest,SwordSaint,WarMonk)
 

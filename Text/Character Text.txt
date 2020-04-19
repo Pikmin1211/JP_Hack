@@ -245,3 +245,21 @@ Ky[X]
 
 ## KyDescription
 Placeholder[X]
+
+## GromellName
+Gromell[X]
+
+## GromellDescription
+Placeholder[X]
+
+## RaydrikName
+Raydrik[X]
+
+## RaydrikDescription
+Placeholder[X]
+
+## OfficerName
+Officer[X]
+
+## OfficerDescription
+Placeholder[X]

@@ -1,0 +1,60 @@
+[FarRight][LoadBlanc][Right][LoadOskar]
+
+Hmhmmhmm...[AN]
+
+
+
+[MoveMidLeft]
+
+There you are.[AN]
+
+Would you like[N]
+
+some water too?[AN]
+
+[Clear][LoadOskar][MoveRight]
+
+Oh, such a pretty[N]
+
+flower you're blooming![AN]
+
+
+
+[MidLeft][LoadCurrent]
+
+
+
+[Right][Clear][LoadOskar]
+
+Oh, hey. What's up?[AN]
+
+...Bandits? Oh, shoot![N]
+
+Blanc! Blanc!! Hey!![AN]
+
+
+
+[FarRight]
+
+...You know how I feel about[N]
+
+being interrupted, right?[AN]
+
+
+
+[Right]
+
+No time for that![N]
+
+The town is under attack![AN]
+
+
+
+[FarRight]
+
+Under attack? Crap![AN]
+
+Why didn't you just[N]
+
+say so? Let's go![A][X]
+

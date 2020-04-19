@@ -3,7 +3,7 @@
 
 ALIGN 4
 NewSoundRoom:
-#incbin "SoundRoomVanilla.bin"
+//#incbin "SoundRoomVanilla.bin"
 
 // new entries here
 SoundRoomEntry(KnightErrandSong,1,KnightErrandName)
@@ -33,6 +33,35 @@ SoundRoomEntry(JinTekken3Song,1,JinTekken3Name)
 SoundRoomEntry(RollingDiceSong,1,RollingDiceName)
 SoundRoomEntry(FragranceOfDarkCoffeeSong,1,FragranceOfDarkCoffeeName)
 SoundRoomEntry(JenovaSong,1,JenovaName)
+SoundRoomEntry(NeverGonnaGiveYouUpSong,1,NeverGonnaGiveYouUpName)
+SoundRoomEntry(ITRYOUTSong,1,ITRYOUTName)
+SoundRoomEntry(ToccataAndDoomSong,1,ToccataAndDoomName)
+SoundRoomEntry(AbandonedChurchSong,1,AbandonedChurchName)
+SoundRoomEntry(TheWorldIsTremblingSong,1,TheWorldIsTremblingName)
+SoundRoomEntry(TrainRushSong,1,TrainRushName)
+SoundRoomEntry(SomewhereToBelongSong,1,SomewhereToBelongName)
+SoundRoomEntry(FindTheTruthSong,1,FindTheTruthName)
+SoundRoomEntry(LonelyTownSoulBlazerSong,1,LonelyTownSoulBlazerName)
+SoundRoomEntry(WereRangersSong,1,WereRangersName)
+SoundRoomEntry(FuwaFuwaTimeSong,1,FuwaFuwaTimeName)
+SoundRoomEntry(GreenGardenNightSong,1,GreenGardenNightName)
+SoundRoomEntry(InheritorOfTheLightSong,1,InheritorOfTheLightName)
+SoundRoomEntry(Route209Song,1,Route209Name)
+SoundRoomEntry(StoryLangrisserSong,1,StoryLangrisserName)
+SoundRoomEntry(ASunnyPathSong,1,ASunnyPathName)
+SoundRoomEntry(DetectiveGumshoeSong,1,DetectiveGumshoeName)
+SoundRoomEntry(InvestigationSong,1,InvestigationName)
+SoundRoomEntry(KindredCrySong,1,KindredCryName)
+SoundRoomEntry(GeneralGuyPMSong,1,GeneralGuyPMName)
+SoundRoomEntry(MinibossPMSong,1,MinibossPMName)
+SoundRoomEntry(TubbaBlubbaPMSong,1,TubbaBlubbaPMName)
+SoundRoomEntry(FatefulShowdownSong,1,FatefulShowdownName)
+SoundRoomEntry(ArmyOfVerdaneSong,1,ArmyOfVerdaneName)
+SoundRoomEntry(ConfidenceInTheDominationSong,1,ConfidenceInTheDominationName)
+SoundRoomEntry(VsRaydrikSong,1,VsRaydrikName)
+SoundRoomEntry(ArmyASong,1,ArmyAName)
+SoundRoomEntry(MadouBossSong,1,MadouBossName)
+SoundRoomEntry(UndergroundLairSong,1,UndergroundLairName)
 
 SoundRoomTerminator
 
@@ -60,3 +89,5 @@ POIN NewSoundRoom
 ORG 0xB042C
 POIN NewSoundRoom
 POP
+
+#include "BossMusic.event"

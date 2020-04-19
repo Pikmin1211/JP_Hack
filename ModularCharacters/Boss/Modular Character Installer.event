@@ -17,3 +17,7 @@
 #include "Tim/Tim Installer.event"
 
 #include "Bit/Bit Installer.event"
+
+#include "Gromell/Gromell Installer.event"
+
+#include "Raydrik/Raydrik Installer.event"

@@ -39,3 +39,7 @@
 #include "Kohaku/Kohaku Installer.event"
 
 #include "Ky/Ky Installer.event"
+
+#include "Derek2/Derek Installer.event"
+
+#include "Eevster2/Eevster Installer.event"

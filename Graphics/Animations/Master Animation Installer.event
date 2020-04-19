@@ -49,3 +49,19 @@ WrysAnims:
 StaffAnim(WrysStaffAnim)
 UnarmedAnim(WrysUnarmedAnim)
 EndAnim
+
+ALIGN 4
+{
+	#include "bin/Wyvern Lord Axe Installer.event"
+	#include "bin/Wyvern Lord Handaxe Installer.event"
+}
+
+ALIGN 4
+WyvernLordAnims:
+LanceAnim(WyvernLordLanceAnim)
+AxeAnim(WyvernLordAxeAnim)
+HandaxeAnim(WyvernLordHandaxeAnim)
+UnarmedAnim(WyvernLordUnarmedAnim)
+EndAnim
+
+SetClassAnim(WyvernLord,WyvernLordAnims)

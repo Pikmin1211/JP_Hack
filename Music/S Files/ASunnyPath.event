@@ -1,0 +1,1369 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	ASunnyPath_grp  voicegroup000
+	#define	ASunnyPath_pri  0
+	#define	ASunnyPath_rev  0
+	#define	ASunnyPath_mvl  50
+	#define	ASunnyPath_key  0
+	#define	ASunnyPath_tbs  1
+	#define	ASunnyPath_exg  0
+	#define	ASunnyPath_cmp  1
+
+	// .rodata
+	//	ASunnyPath
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+ASunnyPath_1:
+	BYTE	KEYSH   ASunnyPath_key+0
+ASunnyPath_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   82*ASunnyPath_tbs/2
+	BYTE		VOICE   73
+	BYTE		VOL     100*ASunnyPath_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N68     En4   v064
+	BYTE	W72
+// 001   ----------------------------------------
+ASunnyPath_1_001:
+	BYTE		N23     Cn4   v064
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		N68   
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_001
+// 004   ----------------------------------------
+	BYTE		N68     En4   v064
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE		N23     An4 
+	BYTE	W24
+	BYTE		        Gn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		N92     Cn4 
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE	W72
+// 008   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 009   ----------------------------------------
+ASunnyPath_1_009:
+	BYTE		N23     Gn4   v064
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W24
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_009
+// 012   ----------------------------------------
+	BYTE		N68     Gn4   v064
+	BYTE	W72
+// 013   ----------------------------------------
+	BYTE		N23   
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+// 014   ----------------------------------------
+	BYTE		TIE     Dn4 
+	BYTE	W72
+// 015   ----------------------------------------
+	BYTE	W68
+	BYTE	W03
+	BYTE		EOT   
+	BYTE	W01
+// 016   ----------------------------------------
+	BYTE	W72
+// 017   ----------------------------------------
+	BYTE		N68     En4   v080
+	BYTE	W72
+// 018   ----------------------------------------
+ASunnyPath_1_018:
+	BYTE		N23     Cn4   v080
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE		N68   
+	BYTE	W72
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_018
+// 021   ----------------------------------------
+	BYTE		N68     En4   v080
+	BYTE	W72
+// 022   ----------------------------------------
+ASunnyPath_1_022:
+	BYTE		N23     An4   v080
+	BYTE	W24
+	BYTE		        Gn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE		N92     Cn4 
+	BYTE	W72
+// 024   ----------------------------------------
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 026   ----------------------------------------
+ASunnyPath_1_026:
+	BYTE		N23     Gn4   v080
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W24
+	BYTE	PEND
+// 027   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_026
+// 029   ----------------------------------------
+	BYTE		N68     Gn4   v080
+	BYTE	W72
+// 030   ----------------------------------------
+ASunnyPath_1_030:
+	BYTE		N23     Gn4   v080
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+	BYTE	PEND
+// 031   ----------------------------------------
+	BYTE		N92     Dn4 
+	BYTE	W72
+// 032   ----------------------------------------
+	BYTE	W72
+// 033   ----------------------------------------
+	BYTE	W72
+// 034   ----------------------------------------
+	BYTE	W72
+// 035   ----------------------------------------
+	BYTE	W72
+// 036   ----------------------------------------
+	BYTE	W72
+// 037   ----------------------------------------
+	BYTE	W72
+// 038   ----------------------------------------
+	BYTE	W72
+// 039   ----------------------------------------
+	BYTE	W72
+// 040   ----------------------------------------
+	BYTE	W72
+// 041   ----------------------------------------
+	BYTE		N68     En4 
+	BYTE	W72
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_018
+// 043   ----------------------------------------
+	BYTE		N68     En4   v080
+	BYTE	W72
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_018
+// 045   ----------------------------------------
+	BYTE		N68     En4   v080
+	BYTE	W72
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_022
+// 047   ----------------------------------------
+	BYTE		N92     Cn4   v080
+	BYTE	W72
+// 048   ----------------------------------------
+	BYTE	W72
+// 049   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_026
+// 051   ----------------------------------------
+	BYTE		N68     Gn4   v080
+	BYTE	W72
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_026
+// 053   ----------------------------------------
+	BYTE		N68     Gn4   v080
+	BYTE	W72
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_1_030
+// 055   ----------------------------------------
+	BYTE		N92     Dn4   v080
+	BYTE	W72
+// 056   ----------------------------------------
+	BYTE	W68
+	BYTE	GoTo
+	 POIN2	ASunnyPath_1_B1
+ASunnyPath_1_B2:
+	BYTE	W04
+// 057   ----------------------------------------
+	BYTE		TIE     Cn4   v080
+	BYTE	W72
+// 058   ----------------------------------------
+	BYTE	W72
+// 059   ----------------------------------------
+	BYTE	W72
+// 060   ----------------------------------------
+	BYTE	W68
+	BYTE	W03
+	BYTE		EOT   
+	BYTE	W01
+// 061   ----------------------------------------
+	BYTE	W72
+// 062   ----------------------------------------
+	BYTE	W72
+// 063   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+ASunnyPath_2:
+	BYTE		VOL     127*ASunnyPath_mvl/mxv
+	BYTE	KEYSH   ASunnyPath_key+0
+ASunnyPath_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   1
+	BYTE		N68     En3   v064
+	BYTE		N68     En4 
+	BYTE	W72
+// 001   ----------------------------------------
+ASunnyPath_2_001:
+	BYTE		N68     Gs3   v064
+	BYTE		N22     Cn4 
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		N68     Gn3 
+	BYTE		N68     En4 
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_001
+// 004   ----------------------------------------
+	BYTE		N68     Cn4   v064
+	BYTE		N68     En4 
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE		        As3 
+	BYTE		N68     Dn4 
+	BYTE		N22     An4 
+	BYTE	W24
+	BYTE		        Gn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		TIE     An3 
+	BYTE		TIE     Cn4 
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE	W64
+	BYTE		EOT     An3 
+	BYTE		        Cn4 
+	BYTE	W08
+// 008   ----------------------------------------
+	BYTE		N68     Dn4 
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 009   ----------------------------------------
+	BYTE		        Cn4 
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 011   ----------------------------------------
+ASunnyPath_2_011:
+	BYTE		N68     Cn4   v064
+	BYTE		N68     Dn4 
+	BYTE		N68     Gn4 
+	BYTE	W72
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE		        Dn4 
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_011
+// 014   ----------------------------------------
+	BYTE		N68     Cn4   v064
+	BYTE		N68     Dn4 
+	BYTE	W72
+// 015   ----------------------------------------
+	BYTE		TIE     Bn3 
+	BYTE	W72
+// 016   ----------------------------------------
+	BYTE	W64
+	BYTE		EOT   
+	BYTE	W08
+// 017   ----------------------------------------
+	BYTE		N68     Cn3   v080
+	BYTE		N68     En3 
+	BYTE	W72
+// 018   ----------------------------------------
+ASunnyPath_2_018:
+	BYTE		N22     Gs2   v080
+	BYTE		N22     Cn3 
+	BYTE	W24
+	BYTE		N11     Dn3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		N22     En3 
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE		N68     Cn3 
+	BYTE		N68     En3 
+	BYTE	W72
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_018
+// 021   ----------------------------------------
+	BYTE		N68     Cn3   v080
+	BYTE		N68     En3 
+	BYTE	W72
+// 022   ----------------------------------------
+	BYTE		N22     Dn3 
+	BYTE		N22     An3 
+	BYTE	W24
+	BYTE		        Gn3   v076
+	BYTE	W24
+	BYTE		        As2   v072
+	BYTE		N22     En3 
+	BYTE	W24
+// 023   ----------------------------------------
+	BYTE		        Gn2   v064
+	BYTE		N22     An2 
+	BYTE		N22     Cn3 
+	BYTE	W36
+	BYTE		N11     An2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+// 024   ----------------------------------------
+	BYTE		N68     Fn3 
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE		        Dn4   v080
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 026   ----------------------------------------
+	BYTE		N48     Cn4 
+	BYTE		N22     Gn4 
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		N20     Cn4 
+	BYTE	W24
+// 027   ----------------------------------------
+	BYTE		N68     Dn4 
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 028   ----------------------------------------
+ASunnyPath_2_028:
+	BYTE		N48     Cn4   v080
+	BYTE		N68     Dn4 
+	BYTE		N22     Gn4 
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		N20     Cn4 
+	BYTE	W24
+	BYTE	PEND
+// 029   ----------------------------------------
+	BYTE		N68     Dn4 
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_028
+// 031   ----------------------------------------
+	BYTE		N68     Cn4   v080
+	BYTE		N68     Dn4 
+	BYTE	W72
+// 032   ----------------------------------------
+	BYTE		        Bn3 
+	BYTE	W72
+// 033   ----------------------------------------
+ASunnyPath_2_033:
+	BYTE		N11     An4   v080
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE	PEND
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 039   ----------------------------------------
+	BYTE		N11     An4   v080
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        An4   v076
+	BYTE	W12
+	BYTE		        Gn4   v072
+	BYTE	W12
+	BYTE		        Bn4   v068
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+// 040   ----------------------------------------
+	BYTE		        An4   v064
+	BYTE	W12
+	BYTE		        En4   v060
+	BYTE	W12
+	BYTE		        An4   v056
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		N22     Bn4   v052
+	BYTE	W24
+// 041   ----------------------------------------
+ASunnyPath_2_041:
+	BYTE		N68     Gn4   v080
+	BYTE	W03
+	BYTE		        Bn4 
+	BYTE	W03
+	BYTE		N64     En5 
+	BYTE	W66
+	BYTE	PEND
+// 042   ----------------------------------------
+ASunnyPath_2_042:
+	BYTE		N68     Gn4   v080
+	BYTE		N68     Gs4 
+	BYTE		N22     Cn5 
+	BYTE	W24
+	BYTE		        Dn5 
+	BYTE	W24
+	BYTE		        En5 
+	BYTE	W24
+	BYTE	PEND
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_041
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_042
+// 045   ----------------------------------------
+	BYTE		N68     An4   v080
+	BYTE	W03
+	BYTE		        Cn5 
+	BYTE	W03
+	BYTE		N64     En5 
+	BYTE	W66
+// 046   ----------------------------------------
+	BYTE		N44     As4 
+	BYTE		N22     An5 
+	BYTE	W03
+	BYTE		N44     Dn5 
+	BYTE	W21
+	BYTE		N22     Gn5 
+	BYTE	W24
+	BYTE		        Gn4 
+	BYTE		N22     As4 
+	BYTE		N22     En5 
+	BYTE	W24
+// 047   ----------------------------------------
+	BYTE		N68     Fn4 
+	BYTE	W03
+	BYTE		        Gn4 
+	BYTE	W03
+	BYTE		N64     Cn5 
+	BYTE	W66
+// 048   ----------------------------------------
+	BYTE		N68     An3   v052
+	BYTE		N68     Cn4 
+	BYTE	W72
+// 049   ----------------------------------------
+	BYTE		        Dn4   v064
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 050   ----------------------------------------
+	BYTE		        An3 
+	BYTE	W03
+	BYTE		        Cn4 
+	BYTE	W03
+	BYTE		N64     Dn4 
+	BYTE	W03
+	BYTE		N60     Gn4 
+	BYTE	W60
+	BYTE	W03
+// 051   ----------------------------------------
+	BYTE		N44     Dn4 
+	BYTE		N44     Gn4 
+	BYTE	W60
+	BYTE		N05     Cn5   v080
+	BYTE	W06
+	BYTE		        Bn4 
+	BYTE	W06
+// 052   ----------------------------------------
+	BYTE		        An4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        An3 
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Dn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+// 053   ----------------------------------------
+	BYTE		N32     Gn4 
+	BYTE	W36
+	BYTE		N11     Gn3 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+// 054   ----------------------------------------
+	BYTE		N22     Fn3 
+	BYTE		N22     An3 
+	BYTE		N22     Cn4 
+	BYTE	W24
+	BYTE		N03     En3 
+	BYTE	W04
+	BYTE		        Fn3 
+	BYTE	W04
+	BYTE		        Gn3 
+	BYTE	W04
+	BYTE		        An3 
+	BYTE	W04
+	BYTE		        Bn3 
+	BYTE	W04
+	BYTE		        Cn4 
+	BYTE	W04
+	BYTE		        Dn4 
+	BYTE	W04
+	BYTE		        En4 
+	BYTE	W04
+	BYTE		        Fn4 
+	BYTE	W04
+	BYTE		        Gn4 
+	BYTE	W04
+	BYTE		        An4 
+	BYTE	W04
+	BYTE		        Bn4 
+	BYTE	W04
+// 055   ----------------------------------------
+	BYTE		N68     Cn5 
+	BYTE	W72
+// 056   ----------------------------------------
+	BYTE		        Gn4 
+	BYTE	W03
+	BYTE		        Dn5 
+	BYTE	W64
+	BYTE	W01
+	BYTE	GoTo
+	 POIN2	ASunnyPath_2_B1
+ASunnyPath_2_B2:
+	BYTE	W04
+// 057   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 058   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 059   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 060   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_2_033
+// 061   ----------------------------------------
+	BYTE		N68     Cn4   v080
+	BYTE		N68     Dn4 
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 062   ----------------------------------------
+	BYTE		N22   
+	BYTE	W24
+	BYTE		N44     Bn4 
+	BYTE		N44     Dn5 
+	BYTE		N44     Gn5 
+	BYTE	W48
+// 063   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+ASunnyPath_3:
+	BYTE	KEYSH   ASunnyPath_key+0
+ASunnyPath_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   24
+	BYTE		VOL     62*ASunnyPath_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N68     Cn4   v064
+	BYTE		N68     Gn4 
+	BYTE		N68     Bn4 
+	BYTE	W72
+// 001   ----------------------------------------
+ASunnyPath_3_001:
+	BYTE		N68     Fn4   v064
+	BYTE		N68     Gs4 
+	BYTE		N68     Cn5 
+	BYTE	W72
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE		        Cn4 
+	BYTE		N68     Gn4 
+	BYTE		N68     Bn4 
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_001
+// 004   ----------------------------------------
+	BYTE		N68     An4   v064
+	BYTE		N68     Cn5 
+	BYTE		N68     En5 
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE		N44     Gn4 
+	BYTE		N44     Dn5 
+	BYTE		N44     Fn5 
+	BYTE	W48
+	BYTE		N22     Gn4 
+	BYTE		N22     Cn5 
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		TIE     Fn4 
+	BYTE		TIE     Cn5 
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE	W64
+	BYTE		EOT     Fn4 
+	BYTE		        Cn5 
+	BYTE	W08
+// 008   ----------------------------------------
+ASunnyPath_3_008:
+	BYTE		N11     En4   v064
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		N22     Gn5 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+ASunnyPath_3_009:
+	BYTE		N11     Fn4   v064
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		N22     An5 
+	BYTE	W24
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_009
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_008
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_009
+// 014   ----------------------------------------
+	BYTE		N11     Gn4   v064
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		N22     Cn6 
+	BYTE	W24
+// 015   ----------------------------------------
+	BYTE		TIE     Gn3 
+	BYTE	W72
+// 016   ----------------------------------------
+	BYTE	W64
+	BYTE		EOT   
+	BYTE	W08
+// 017   ----------------------------------------
+ASunnyPath_3_017:
+	BYTE		N11     Cn3   v080
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N22     Gn4 
+	BYTE	W24
+	BYTE	PEND
+// 018   ----------------------------------------
+ASunnyPath_3_018:
+	BYTE		N11     Fn3   v080
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        Gs4 
+	BYTE	W12
+	BYTE		N22     Cn5 
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_017
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_018
+// 021   ----------------------------------------
+ASunnyPath_3_021:
+	BYTE		N11     An3   v080
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE	PEND
+// 022   ----------------------------------------
+	BYTE		N44     Gn3 
+	BYTE		N44     Dn4 
+	BYTE		N44     Fn4 
+	BYTE	W48
+	BYTE		N22     Cn4   v072
+	BYTE		N22     Gn4 
+	BYTE	W24
+// 023   ----------------------------------------
+	BYTE		N11     Fn3   v064
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		TIE     Fn4 
+	BYTE	W48
+// 024   ----------------------------------------
+	BYTE	W64
+	BYTE	W01
+	BYTE		EOT   
+	BYTE	W07
+// 025   ----------------------------------------
+ASunnyPath_3_025:
+	BYTE		N11     En4   v080
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		N22     Gn5 
+	BYTE	W24
+	BYTE	PEND
+// 026   ----------------------------------------
+ASunnyPath_3_026:
+	BYTE		N11     Fn4   v080
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		N22     An5 
+	BYTE	W24
+	BYTE	PEND
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_025
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_026
+// 029   ----------------------------------------
+	BYTE		N11     En4   v080
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		        An5 
+	BYTE	W12
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_026
+// 031   ----------------------------------------
+	BYTE		N11     Gn4   v080
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		N22     Cn6 
+	BYTE	W24
+// 032   ----------------------------------------
+	BYTE		N68     Gn3 
+	BYTE	W72
+// 033   ----------------------------------------
+	BYTE		TIE     Fn4   v064
+	BYTE		TIE     Cn5 
+	BYTE	W72
+// 034   ----------------------------------------
+	BYTE	W64
+	BYTE		EOT     Fn4 
+	BYTE		        Cn5 
+	BYTE	W08
+// 035   ----------------------------------------
+	BYTE		TIE     En4 
+	BYTE	W72
+// 036   ----------------------------------------
+	BYTE	W64
+	BYTE		EOT   
+	BYTE	W08
+// 037   ----------------------------------------
+	BYTE		N78     Dn4 
+	BYTE		N78     Fn4 
+	BYTE		N78     An4 
+	BYTE		N78     Cn5 
+	BYTE	W72
+// 038   ----------------------------------------
+	BYTE	W12
+	BYTE		N11     An4 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		N22     An5 
+	BYTE	W24
+// 039   ----------------------------------------
+	BYTE		N11     Gn3   v080
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        Gn4   v076
+	BYTE	W12
+	BYTE		        An4   v072
+	BYTE	W12
+	BYTE		        Cn5   v068
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+// 040   ----------------------------------------
+	BYTE		N68     Gn4   v064
+	BYTE	W72
+// 041   ----------------------------------------
+ASunnyPath_3_041:
+	BYTE		N11     Cn4   v080
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		N22     Gn5 
+	BYTE	W24
+	BYTE	PEND
+// 042   ----------------------------------------
+ASunnyPath_3_042:
+	BYTE		N11     Fn4   v080
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Fn5 
+	BYTE	W12
+	BYTE		N22     Gs5 
+	BYTE	W24
+	BYTE	PEND
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_041
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_042
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_3_021
+// 046   ----------------------------------------
+	BYTE		N11     Gn3   v080
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        As4 
+	BYTE	W12
+	BYTE		N22     Cn4 
+	BYTE	W24
+// 047   ----------------------------------------
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		        Cn4   v076
+	BYTE	W12
+	BYTE		        Gn4   v072
+	BYTE	W12
+	BYTE		        An4   v068
+	BYTE	W12
+	BYTE		        Cn5   v060
+	BYTE	W12
+	BYTE		        Gn5   v056
+	BYTE	W12
+// 048   ----------------------------------------
+	BYTE	W72
+// 049   ----------------------------------------
+	BYTE		        En3   v064
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+// 050   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N22     Cn5 
+	BYTE	W24
+// 051   ----------------------------------------
+	BYTE		N11     En3 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		N22     Bn4 
+	BYTE	W24
+// 052   ----------------------------------------
+	BYTE		N11     Fn3   v080
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		N22     Cn5 
+	BYTE	W24
+// 053   ----------------------------------------
+	BYTE		N11     En3 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE		N22     En4 
+	BYTE	W24
+// 054   ----------------------------------------
+	BYTE		N11     Fn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+// 055   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        An4 
+	BYTE	W12
+// 056   ----------------------------------------
+	BYTE		N68     Gn5 
+	BYTE		N68     Bn5 
+	BYTE	W68
+	BYTE	GoTo
+	 POIN2	ASunnyPath_3_B1
+ASunnyPath_3_B2:
+	BYTE	W04
+// 057   ----------------------------------------
+	BYTE		N68     En5   v080
+	BYTE		N68     Gn5 
+	BYTE		N68     Cn6 
+	BYTE	W72
+// 058   ----------------------------------------
+	BYTE		        Bn4 
+	BYTE		N68     Dn5 
+	BYTE		N68     Fn5 
+	BYTE	W72
+// 059   ----------------------------------------
+	BYTE		TIE     Cn5 
+	BYTE		TIE     Fn5 
+	BYTE		TIE     An5 
+	BYTE	W72
+// 060   ----------------------------------------
+	BYTE	W64
+	BYTE		EOT     Cn5 
+	BYTE		        Fn5 
+	BYTE		        An5 
+	BYTE	W08
+// 061   ----------------------------------------
+	BYTE		N11     Cn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        Dn5 
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		        Gn5 
+	BYTE	W12
+	BYTE		N78     Bn5 
+	BYTE	W12
+// 062   ----------------------------------------
+	BYTE	W72
+// 063   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+ASunnyPath_4:
+	BYTE	KEYSH   ASunnyPath_key+0
+ASunnyPath_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     84*ASunnyPath_mvl/mxv
+	BYTE	W72
+// 001   ----------------------------------------
+	BYTE	W72
+// 002   ----------------------------------------
+	BYTE	W72
+// 003   ----------------------------------------
+	BYTE		N23     Cn4   v064
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+// 004   ----------------------------------------
+	BYTE		N68   
+	BYTE	W72
+// 005   ----------------------------------------
+	BYTE		N23     An4 
+	BYTE	W24
+	BYTE		        Gn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+// 006   ----------------------------------------
+	BYTE		N92     Cn4 
+	BYTE	W72
+// 007   ----------------------------------------
+	BYTE	W72
+// 008   ----------------------------------------
+	BYTE	W72
+// 009   ----------------------------------------
+	BYTE	W72
+// 010   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 011   ----------------------------------------
+	BYTE		N23   
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W24
+// 012   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 013   ----------------------------------------
+	BYTE		N23   
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+// 014   ----------------------------------------
+	BYTE		TIE     Dn4 
+	BYTE	W72
+// 015   ----------------------------------------
+	BYTE	W68
+	BYTE	W03
+	BYTE		EOT   
+	BYTE	W01
+// 016   ----------------------------------------
+	BYTE	W72
+// 017   ----------------------------------------
+	BYTE	W72
+// 018   ----------------------------------------
+	BYTE	W72
+// 019   ----------------------------------------
+	BYTE	W72
+// 020   ----------------------------------------
+ASunnyPath_4_020:
+	BYTE		N23     Cn4   v080
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+	BYTE	PEND
+// 021   ----------------------------------------
+	BYTE		N68   
+	BYTE	W72
+// 022   ----------------------------------------
+ASunnyPath_4_022:
+	BYTE		N23     An4   v080
+	BYTE	W24
+	BYTE		        Gn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+	BYTE	PEND
+// 023   ----------------------------------------
+	BYTE		N92     Cn4 
+	BYTE	W72
+// 024   ----------------------------------------
+	BYTE	W72
+// 025   ----------------------------------------
+	BYTE	W72
+// 026   ----------------------------------------
+	BYTE	W72
+// 027   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 028   ----------------------------------------
+ASunnyPath_4_028:
+	BYTE		N23     Gn4   v080
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W24
+	BYTE	PEND
+// 029   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 030   ----------------------------------------
+ASunnyPath_4_030:
+	BYTE		N23     Gn4   v080
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+	BYTE	PEND
+// 031   ----------------------------------------
+	BYTE		N92     Dn4 
+	BYTE	W72
+// 032   ----------------------------------------
+	BYTE	W72
+// 033   ----------------------------------------
+	BYTE	W72
+// 034   ----------------------------------------
+	BYTE	W72
+// 035   ----------------------------------------
+	BYTE	W72
+// 036   ----------------------------------------
+	BYTE	W72
+// 037   ----------------------------------------
+	BYTE	W72
+// 038   ----------------------------------------
+	BYTE	W72
+// 039   ----------------------------------------
+	BYTE	W72
+// 040   ----------------------------------------
+	BYTE	W72
+// 041   ----------------------------------------
+	BYTE	W72
+// 042   ----------------------------------------
+	BYTE	W72
+// 043   ----------------------------------------
+	BYTE	W72
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_4_020
+// 045   ----------------------------------------
+	BYTE		N68     En4   v080
+	BYTE	W72
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_4_022
+// 047   ----------------------------------------
+	BYTE		N92     Cn4   v080
+	BYTE	W72
+// 048   ----------------------------------------
+	BYTE	W72
+// 049   ----------------------------------------
+	BYTE	W72
+// 050   ----------------------------------------
+	BYTE	W72
+// 051   ----------------------------------------
+	BYTE		N68     Gn4 
+	BYTE	W72
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_4_028
+// 053   ----------------------------------------
+	BYTE		N68     Gn4   v080
+	BYTE	W72
+// 054   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ASunnyPath_4_030
+// 055   ----------------------------------------
+	BYTE		N92     Dn4   v080
+	BYTE	W72
+// 056   ----------------------------------------
+	BYTE	W68
+	BYTE	GoTo
+	 POIN2	ASunnyPath_4_B1
+ASunnyPath_4_B2:
+	BYTE	W04
+// 057   ----------------------------------------
+	BYTE		TIE     Cn4   v080
+	BYTE	W72
+// 058   ----------------------------------------
+	BYTE	W72
+// 059   ----------------------------------------
+	BYTE	W72
+// 060   ----------------------------------------
+	BYTE	W68
+	BYTE	W03
+	BYTE		EOT   
+	BYTE	W01
+// 061   ----------------------------------------
+	BYTE	W72
+// 062   ----------------------------------------
+	BYTE	W72
+// 063   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+ASunnyPath:
+	BYTE	4	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	ASunnyPath_pri	// Priority
+	BYTE	ASunnyPath_rev	// Reverb.
+
+	POIN2	ASunnyPath_grp
+
+	POIN2	ASunnyPath_1
+	POIN2	ASunnyPath_2
+	POIN2	ASunnyPath_3
+	POIN2	ASunnyPath_4
+
+	

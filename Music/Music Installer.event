@@ -1,6 +1,9 @@
 //#define SongTableOffset 0x224470
 //#define SongTable(index,SongPointer,Group) "PUSH; ORG SongTableOffset+(8*index); POIN SongPointer; SHORT Group Group; POP"
 
+SongTable(0x1,Route209,1)
+SongTable(0x43,Route209,1)
+
 SongTable(KnightErrandSong,KnightErrand,1)
 #include "S Files/KnightErrand.event"
 
@@ -81,3 +84,91 @@ SongTable(FragranceOfDarkCoffeeSong,FragranceOfDarkCoffee,1)
 
 SongTable(JenovaSong,Jenova,1)
 #include "S Files/Jenova.event"
+
+SongTable(NeverGonnaGiveYouUpSong,NeverGonnaGiveYouUp,1)
+#include "S Files/NeverGonnaGiveYouUp.event"
+
+SongTable(ITRYOUTSong,ITRYOUT,1)
+#include "S Files/ITRYOUT.event"
+
+SongTable(ToccataAndDoomSong,ToccataAndDoom,1)
+#include "S Files/ToccataAndDoom.event"
+
+SongTable(AbandonedChurchSong,AbandonedChurch,1)
+#include "S Files/AbandonedChurch.event"
+
+SongTable(TheWorldIsTremblingSong,TheWorldIsTrembling,1)
+#include "S Files/TheWorldIsTrembling.event"
+
+SongTable(TrainRushSong,TrainRush,1)
+#include "S Files/TrainRush.event"
+
+SongTable(SomewhereToBelongSong,SomewhereToBelong,1)
+#include "S Files/SomewhereToBelong.event"
+
+SongTable(FindTheTruthSong,FindTheTruth,1)
+#include "S Files/FindTheTruth.event"
+
+SongTable(LonelyTownSoulBlazerSong,LonelyTownSoulBlazer,1)
+#include "S Files/LonelyTownSoulBlazer.event"
+
+SongTable(WereRangersSong,WereRangers,1)
+#include "S Files/WereRangers.event"
+
+SongTable(FuwaFuwaTimeSong,FuwaFuwaTime,1)
+#include "S Files/FuwaFuwaTime.event"
+
+SongTable(GreenGardenNightSong,GreenGardenNight,1)
+#include "S Files/GreenGardenNight.event"
+
+SongTable(InheritorOfTheLightSong,InheritorOfTheLight,1)
+#include "S Files/InheritorOfTheLight.event"
+
+SongTable(Route209Song,Route209,1)
+#include "S Files/Route209.event"
+
+SongTable(StoryLangrisserSong,StoryLangrisser,1)
+#include "S Files/StoryLangrisser.event"
+
+SongTable(ASunnyPathSong,ASunnyPath,1)
+#include "S Files/ASunnyPath.event"
+
+SongTable(DetectiveGumshoeSong,DetectiveGumshoe,1)
+#include "S Files/DetectiveGumshoe.event"
+
+SongTable(InvestigationSong,Investigation,1)
+#include "S Files/Investigation.event"
+
+SongTable(KindredCrySong,KindredCry,1)
+#include "S Files/KindredCry.event"
+
+SongTable(GeneralGuyPMSong,GeneralGuyPM,1)
+#include "S Files/GeneralGuyPM.event"
+
+SongTable(MinibossPMSong,MinibossPM,1)
+#include "S Files/MinibossPM.event"
+
+SongTable(TubbaBlubbaPMSong,TubbaBlubbaPM,1)
+#include "S Files/TubbaBlubbaPM.event"
+
+SongTable(FatefulShowdownSong,FatefulShowdown,1)
+#include "S Files/FatefulShowdown.event"
+
+SongTable(ArmyOfVerdaneSong,ArmyOfVerdane,1)
+#include "S Files/ArmyOfVerdane.event"
+
+SongTable(ConfidenceInTheDominationSong,ConfidenceInTheDomination,1)
+#include "S Files/ConfidenceInTheDomination.event"
+
+SongTable(VsRaydrikSong,VsRaydrik,1)
+#include "S Files/VsRaydrik.event"
+
+SongTable(ArmyASong,ArmyA,1)
+#include "S Files/ArmyA.event"
+
+SongTable(MadouBossSong,MadouBoss,1)
+#include "S Files/MadouBoss.event"
+
+SongTable(UndergroundLairSong,UndergroundLair,1)
+#include "S Files/UndergroundLair.event"
+

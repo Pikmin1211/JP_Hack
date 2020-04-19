@@ -1,5 +1,5 @@
-#define BaseClass 0x0
-#define PromotedClass1 0x0
-#define PromotedClass2 0x0
+#define BaseClass Myrmidon
+#define PromotedClass1 Swordmaster
+#define PromotedClass2 DreadFighter
 
 #include "Palette/Palette Setup.event"

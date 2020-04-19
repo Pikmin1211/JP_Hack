@@ -264,3 +264,8 @@
 #define HeimScrollMagicAnim 0xFF//MagicAnimationID here
 #define HeimScrollIcon 0x8E//ItemIconID here
 #define HeimScrollUseText 0x0//TextID here
+
+#define Resire 0xF0//ItemID here
+#define ResireMagicAnim NosferatuAnimation//MagicAnimationID here
+#define ResireIcon 0x97//ItemIconID here
+#define ResireUseText 0x0//TextID here

@@ -1,5 +1,341 @@
 ## PrologueName
-Prologue[X]
+Prologue: Rude Awakening[X]
 
 ## PrologueObjective
 Defeat Boss[X]
+
+
+
+
+
+## PrologueOP
+[MidRight][LoadSanders]
+[Beat]
+It seems so peaceful[N]
+here. I wonder...[AN]
+
+[FarFarLeft]
+My, you've grown into[N]
+such a fine young man.[AN]
+
+[MidRight]
+Huh...?[N]
+Is that...[AN]
+Is that you...?[N]
+...Mom?[AN]
+
+[FarFarLeft]
+Oh, you still recognize me![N]
+I'm so glad, Sanders.[AN]
+I was worried you would forget.[AN]
+
+[MidRight]
+Mom... how could[N]
+I forget you?[AN]
+It's... been so long.[AN]
+
+[FarFarLeft]
+While I would love more than[N]
+anything to chat with you,[AN]
+it seems it's almost time.[AN]
+
+[MidRight]
+Time? Time[N]
+for what?[AN]
+
+[FarFarLeft]
+[Beat]
+Sanders, dear, I need to warn you.[N]
+The road ahead of you will be long.[AN]
+And it won't be easy. There are[N]
+times you'll want to give up.[AN]
+But you have to keep trying.[AN]
+And, more than anything,[N]
+you can lean on your friends.[AN]
+
+[MidRight]
+I don't understand[N]
+what you mean, but...[AN]
+If there's something[N]
+you need me to do,[AN]
+then you just have to ask.[AN]
+
+[FarFarLeft]
+Such a caring boy...[AN]
+Maybe I was getting[N]
+worried for nothing.[AN]
+Sanders, I need you[N]
+to wake up, okay?[AN]
+
+[MidRight]
+[CloseEyes][Beat][A][X]
+
+
+
+
+
+## PrologueOP2
+[MidRight][LoadSanders][CloseEyes]
+Zzz...[AN]
+
+[MidLeft][LoadScott]
+Sanders...[N]
+Sanders![AN]
+
+[MidRight]
+[OpenEyes]
+Hmm? I'm up,[N]
+I'm up...[AN]
+
+[Event]
+
+[MidLeft]
+Pick up the pace,[N]
+we've got trouble![AN]
+
+[MidRight]
+Trouble?[AN]
+
+[MidLeft]
+A bunch of bandits just docked[N]
+their boat into the port,[AN]
+and started ransacking the town![AN]
+
+[MidRight]
+Well, bollocks. Go get Finn[N]
+and Marisa. I'll grab my sword.[AN]
+
+[MidLeft]
+On it![AN]
+[Clear]
+
+[MidRight]
+...Almost[N]
+time, huh.[A][X]
+
+
+
+
+## PrologueOP3
+[Left][LoadMarisa][MidRight][LoadSanders]
+You brought[N]
+her along?[AN]
+
+[Left]
+Well, I can't very well[N]
+leave her own her own, can I?[AN]
+
+[FarLeft][LoadRenge]
+I can help too...[N]
+If you get hurt...[AN]
+
+[Left][Clear][LoadFinn]
+I'm not comfortable with[N]
+it either, but she's right.[AN]
+Besides, these tonics work much[N]
+less effectively than a staff.[AN]
+
+[MidRight]
+I guess she's safer[N]
+with us than by herself...[AN]
+Alright, fine. But[N]
+keep close to me, okay?[AN]
+
+[FarLeft]
+Okay...[A][X]
+
+
+
+## PrologueOP4
+[Left][LoadRedSoldier][FarLeft][LoadBrigand][MidRight][LoadBatta]
+Alright, you lot![N]
+Let's get moving![AN]
+Batta's beasts show[N]
+nobody no mercy, ya hear?[AN]
+
+[Left]
+Yes sir![AN]
+[Clear]
+
+[MidRight]
+You there! Brigand boy![N]
+You're on collection duty, got it?[AN]
+Go grab any valuables you see![N]
+Burn the houses down if you have to![AN]
+
+[FarLeft]
+You got[N]
+it, boss![AN]
+[Clear]
+
+[MidRight]
+This oughta be a cinch.[AN]
+Nobody stands up[N]
+to Batta the Beast![A][X]
+
+
+
+## PrologueHint1
+[MidRight][LoadScott]
+Oskar and Blanc might be[N]
+in trouble on their own.[AN]
+We should go warn them[N]
+about these brigands.[AN]
+I think they lived in[N]
+the house down there...[A][X]
+
+
+
+
+## PrologueOskarBlancHouse
+[FarRight][LoadBlanc][Right][LoadOskar]
+Hmhmmhmm...[AN]
+
+[MoveMidLeft]
+There you are.[AN]
+Would you like[N]
+some water too?[AN]
+[Clear][LoadOskar][MoveRight]
+Oh, such a pretty[N]
+flower you're blooming![AN]
+
+[MidLeft][LoadCurrent]
+
+[Right][Clear][LoadOskar]
+Oh, hey. What's up?[AN]
+...Bandits? Oh, shoot![N]
+Blanc! Blanc!! Hey!![AN]
+
+[FarRight]
+...You know how I feel about[N]
+being interrupted, right?[AN]
+
+[Right]
+No time for that![N]
+The town is under attack![AN]
+
+[FarRight]
+Under attack? Crap![AN]
+Why didn't you just[N]
+say so? Let's go![A][X]
+
+
+
+
+## PrologueOskarBlancAfterRecruit
+[MidLeft][LoadOskar]
+Alright, leave the[N]
+heavy hitting to me![AN]
+I'll teach these punks[N]
+to mess with my plants![AN]
+
+[Clear][LoadBlanc]
+I'll take out my[N]
+rage on them...[AN]
+Get ready!![A][X]
+
+
+
+
+## PrologueHouse1
+[MidLeft][LoadCurrent][MidRight][LoadOldMan]
+Oh dear me, these men[N]
+seem like trouble...[AN]
+Thank you for protecting[N]
+me and my home from them.[AN]
+Please, take this.[AN]
+Were it not for you,[N]
+I'd have nothing left,[AN]
+so please accept it.[A][X]
+
+
+
+
+## PrologueHouse2
+[MidLeft][LoadCurrent][MidRight][LoadVillagerGirl]
+Eep! Huh...?[N]
+You guys aren't bandits...[AN]
+Thank goodness.[N]
+Here, take this.[AN]
+I used to study a[N]
+bit of magic, but...[AN]
+I gave up after I seared[N]
+my friend's hair off.[A][X]
+
+
+
+## PrologueBattaBattle
+[MidLeft][LoadBatta]
+Who in the heck are you guys?![AN]
+Argh, it doesn't matter.[N]
+I'll kick you outta here myself![A][X]
+
+
+
+
+## PrologueBattaDeath
+[MidLeft][LoadBatta]
+Damn, too strong...[AN]
+You better believe you haven't[N]
+seen the last of Batta's Beasts![A][X]
+
+
+
+
+## PrologueEnding
+[Left][LoadScott][FarLeft][LoadOskar][MidRight][LoadSanders]
+Looks like we finally[N]
+drove them off.[AN]
+
+[Left]
+What a fight.[AN]
+I'm gonna have to train harder[N]
+if I want to protect the people...[AN]
+
+[FarLeft]
+The important part is[N]
+that everyone is safe.[AN]
+My plants, too.[N]
+Thanks, guys.[AN]
+
+[Clear][LoadFinn]
+Unfortunately,[N]
+I've got bad news.[AN]
+Looks like this wasn't[N]
+an isolated incident.[AN]
+
+[MidRight]
+The other towns[N]
+too, then?[AN]
+
+[FarLeft]
+Yeah. Looks like we've[N]
+got another job, at least.[AN]
+
+[MidRight]
+Well, it was nice working[N]
+in this town and all...[AN]
+
+[MoveRight][FarRight][LoadMarisa]
+No way, buster. We're[N]
+coming with you.[AN]
+
+[Left]
+I'd never leave[N]
+people in need behind![AN]
+
+[FarLeft][Clear][LoadBlanc]
+And I've still got a lot[N]
+of anger to work out.[AN]
+
+[Left][Clear][LoadRenge]
+Yay, travel...[AN]
+
+[Right]
+Alright, alright.[AN]
+It's not like I could[N]
+stop you all anyways.[AN]
+Lead the way, Finn.[AN]
+
+[FarLeft][Clear][LoadFinn]
+Let's make haste, then.[A][X]

@@ -20,12 +20,12 @@
 #define BaseCon 1
 
 //Base Weapon Ranks
-#define BaseSwordRank CRank
+#define BaseSwordRank BRank
 #define BaseLanceRank 0
 #define BaseAxeRank 0
 #define BaseBowRank 0
 #define BaseStaffRank 0
-#define BaseAnimaRank CRank
+#define BaseAnimaRank 0
 #define BaseLightRank 0
 #define BaseDarkRank 0
 

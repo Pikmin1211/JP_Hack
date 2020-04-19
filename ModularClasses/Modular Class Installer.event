@@ -29,3 +29,5 @@
 #include "War Monk/War Monk Installer.event"
 
 #include "Maid/Maid Installer.event"
+
+#include "Dread Fighter/Dread Fighter Installer.event"
