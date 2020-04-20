@@ -1,0 +1,57 @@
+## SandersDeath
+[MidRight][LoadSanders]
+What a pathetic end...[N]
+Mother... I'm sorry...[Die][X]
+
+## ScottDeath
+[MidRight][LoadScott]
+Blast, still not[N]
+strong enough...[Die][X]
+
+## FinnDeath
+[MidRight][LoadFinn]
+I couldn't protect you...[N]
+I... I'm sorry...[Die][X]
+
+## MarisaDeath
+[MidRight][LoadMarisa]
+No, this can't be how[N]
+it ends... It can't...[Die][X]
+
+## RengeDeath
+[MidRight][LoadRenge]
+It hurts...[Die][X]
+
+## OskarDeath
+[MidRight][LoadOskar]
+They were tougher[N]
+than I thought...[AN]
+Make sure to...[N]
+water my plants...[Die][X]
+
+## BlancDeath
+[MidRight][LoadBlanc]
+I got cocky...[AN]
+I guess this is[N]
+my final chapter...[Die][X]
+
+## WoltDeath
+[MidRight][LoadWolt]
+I've failed...[N]
+I'm sorry... brother...[Die][X]
+
+## ArdenDeath
+[MidRight][LoadArden]
+And so the mighty fall...[N]
+Peace at last...[Die][X]
+
+## SayoriDeath
+[MidRight][LoadSayori]
+It feels so cold...[AN]
+And yet, somehow...[N]
+nostalgic too...[Die][X]
+
+## WrysDeath
+[MidRight][LoadWrys]
+May I be brought...[N]
+closer to the light...[Die][X]

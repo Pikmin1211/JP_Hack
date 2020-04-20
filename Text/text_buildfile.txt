@@ -20,3 +20,5 @@ Skill learned.[X]
 #include "Item Text.txt"
 
 #include "Song Text.txt"
+
+#include "Death Quotes.txt"

@@ -20,14 +20,16 @@ TurnBasedEvents:
 	END_MAIN
 
 VergilLeaves:
+	MUSS ArmyASong
 	SpawnReinforcements(CutsceneUnit)
 	FlashCursor(17,8,60)
-	Text(TestDialogue)
+	Text(Ch1VergilLeaves)
 	MoveCoords(17,9,18,9)
 	ENUN
 	REMU Vergil
 	FlashCursor(Derek,60)
-	Text(TestDialogue)
+	Text(Ch1VergilLeaves2)
+	MURE 2
 	NoFade
 	ENDA
 
@@ -58,7 +60,7 @@ CharacterBasedEvents:
 
 SandersArdenTalk:
 	MUSS SkyEventSong
-	Text(TestDialogue)
+	Text(Ch1SandersArdenTalk)
 	CUSA Arden
 	MURE 2
 	NoFade
@@ -66,7 +68,7 @@ SandersArdenTalk:
 
 SandersWoltTalk:
 	MUSS SkyEventSong
-	Text(TestDialogue)
+	Text(Ch1SandersWoltTalk)
 	CUSA Wolt
 	MURE 2
 	NoFade
@@ -89,21 +91,17 @@ EscapeCounter:
 
 LocationBasedEvents:
 	House(0x0,LeftHouseEvent,3,11)
-	House(0x0,InnEvent,16,7)
 	Village(0xB,LeftVillage,4,2)
 	Village(0xC,RightVillage,15,2)
 	Armory(Ch1Armory,11,7)
 	END_MAIN
 
 LeftHouseEvent:
-	HouseEvent(TestDialogue,HouseBG)
-
-InnEvent:
-	HouseEvent(TestDialogue,Inn)
+	HouseEvent(Ch1House,HouseBG)
 
 LeftVillage:
 	MUSS SkyEventSong
-	Text(HouseBG,TestDialogue)
+	Text(HouseBG,Ch1Sayori)
 	SpawnReinforcements(SayoriUnit)
 	MURE 2
 	NoFade
@@ -114,7 +112,7 @@ SayoriUnit:
 	UNIT
 
 RightVillage:
-	VillageEventItem(TestDialogue,HouseBG,Halberd)
+	VillageEventItem(Ch1Village,HouseBG,Halberd)
 
 Ch1Armory:
 	SHLI IronSword SteelSword SlimLance IronLance SteelLance IronAxe HandAxe IronBow SteelBow Vulnerary
@@ -138,21 +136,33 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	Unit(Sanders,3,13)
-	Unit(Finn,4,12)
-	Unit(Scott,4,14)
-	Unit(Renge,2,14)
-	Unit(Marisa,2,12)
-	Unit(Oskar,6,12)
-	Unit(Blanc,5,11)
+	UnitReda(Sanders,3,14,REDA3R13)
+	UnitReda(Finn,3,14,REDA4R12)
+	UnitReda(Scott,3,14,REDA4R14)
+	UnitReda(Renge,3,14,REDA2R14)
+	UnitReda(Marisa,3,14,REDA2R12)
+	UnitReda(Oskar,3,14,REDA6R12)
+	UnitReda(Blanc,3,14,REDA5R11)
 	UNIT
 
+Bosses:
+	
+	UNIT Vergil Paladin 0x0 Level(7,Enemy,0) [18,9] 0 0 1 REDA17R9 [Spear,SteelBlade,SilverLance] NeverMoveAI
+	UNIT Derek Cavalier 0x0 Level(7,Enemy,0) [18,9] 0 0 1 REDA16R8 [Javelin,SteelSword,IronLance] NeverMoveAI
+
+	UNIT
+
+Bandits:
+
+	UNIT Kekh Mercenary 0x0 Level(5,Enemy,0) [7,0] 0 0 1 REDA7R1 [IronSword,Vulnerary] DefaultAI
+
+	UNIT BattaBeast Mercenary 0x0 Level(1,Enemy,1) [7,0] 0 0 1 REDA6R0 [SlimSword] DefaultAI
+	UNIT BattaBeast Soldier 0x0 Level(1,Enemy,1) [7,0] 0 0 1 REDA8R0 [IronLance] DefaultAI
+
+	UNIT
+
+
 EnemyUnits:
-
-	UNIT Vergil Paladin 0x0 Level(7,Enemy,0) [17,9] 0 0 0 0 [Spear,SteelBlade,SilverLance] NeverMoveAI
-	UNIT Derek Cavalier 0x0 Level(7,Enemy,0) [16,8] 0 0 0 0 [Javelin,SteelSword,IronLance] NeverMoveAI
-
-	UNIT Kekh Mercenary 0x0 Level(5,Enemy,0) [7,1] 0 0 0 0 [IronSword,Vulnerary] DefaultAI
 
 	UNIT Imperial Cavalier 0x0 Level(2,Enemy,1) [13,12] 0 0 0 0 [IronLance] DefaultAI
 	UNIT Imperial LanceKnight 0x0 Level(2,Enemy,1) [12,13] 0 0 0 0 [IronLance] DefaultAI
@@ -166,9 +176,6 @@ EnemyUnits:
 	UNIT Imperial Archer 0x0 Level(4,Enemy,1) [13,6] 0 0 0 0 [IronBow] AttackInRangeAI
 
 	UNIT Imperial Mage 0x0 Level(4,Enemy,1) [17,12] 0 0 0 0 [Thunder] AttackInRangeAI
-
-	UNIT BattaBeast Mercenary 0x0 Level(1,Enemy,1) [6,0] 0 0 0 0 [SlimSword] DefaultAI
-	UNIT BattaBeast Soldier 0x0 Level(1,Enemy,1) [8,0] 0 0 0 0 [IronLance] DefaultAI
 
 	UNIT
 
@@ -206,16 +213,16 @@ ReinforcementUnits2:
 
 GreenUnits:
 
-	UNIT Arden Knight 0x0 Level(4,NPC,0) [7,3] 0 0 0 0 [IronLance,SteelSword,Vulnerary] DefaultAI
-	UNIT Wolt Archer 0x0 Level(2,NPC,0) [6,8] 0 0 0 0 [IronBow,PureWater] NeverMoveAI
+	UNIT Arden Knight 0x0 Level(4,NPC,0) [7,0] 0 0 1 REDA7R3 [IronLance,SteelSword,Vulnerary] DefaultAI
+	UNIT Wolt Archer 0x0 Level(2,NPC,0) [7,0] 0 0 1 REDA7R4 [IronBow,PureWater] NeverMoveAI
 
-	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [6,3] 0 0 0 0 [IronLance] DefaultAI
-	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [8,3] 0 0 0 0 [IronLance] DefaultAI
+	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [7,0] 0 0 1 REDA6R3 [IronLance] DefaultAI
+	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [7,0] 0 0 1 REDA8R3 [IronLance] DefaultAI
 
-	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [6,4] 0 0 0 0 [0x0] HastyAI
-	UNIT CivilianUnit Civilian2 0x0 Level(1,NPC,0) [6,5] 0 0 0 0 [0x0] HastyAI
-	UNIT CivilianUnit CivilianF 0x0 Level(1,NPC,0) [5,4] 0 0 0 0 [0x0] HastyAI
-	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [5,5] 0 0 0 0 [0x0] HastyAI
+	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA6R4 [0x0] HastyAI
+	UNIT CivilianUnit Civilian2 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA6R5 [0x0] HastyAI
+	UNIT CivilianUnit CivilianF 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA5R4 [0x0] HastyAI
+	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA5R5 [0x0] HastyAI
 
 	UNIT
 
@@ -228,21 +235,50 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	LOAD2 0x1 Units1
+	MUSC InvestigationSong
+	FADU 16
+	SpawnReinforcements(GreenUnits)
+	FlashCursor(Arden,60)
+	Text(Ch1OP)
+	MoveCoords(7,4,6,8)
 	ENUN
-	LOAD1 0x1 GreenUnits
-	ENUN
+	MUSC ToccataAndDoomSong
+	SpawnReinforcements(Bandits)
+	FlashCursor(Kekh,60)
+	Text(Ch1OP2)
+	MUSC ArmyASong
+	SpawnReinforcements(Bosses)
+	FlashCursor(Vergil,60)
+	Text(Ch1OP3)
+	CAM1 Arden
+	FlashCursor(Arden,60)
+	Text(Ch1OP4)
+	FADI 16
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	CAM1 [3,11]
+	STAL 20
+	MUSC StoryLangrisserSong
+	FADU 16
+	LOAD3 0x1 Units1
+	ENUN
+	FlashCursor(Sanders,60)
+	Text(Ch1OP5)
 	NoFade
 	ENDA
 
 EndingScene:
+	MUSC WereRangersSong
+	SetBackground(Outside_Village_Evening)
+	Text(Ch1Ending)
 	COUNTER_CHECK 1
 	SVAL 0x1 4
 	BNE 1 0xC 0x1 // branch label 1 if not all civs escaped
+		Text(Ch1GetItem)
 		GiveItem(RedGem,Sanders)
 		LABEL 1
+	MUSC ToccataAndDoomSong
+	Text(Ch1Ending2)
 	MNC2 2
 	NoFade
 	ENDA

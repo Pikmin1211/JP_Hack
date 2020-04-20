@@ -125,7 +125,7 @@ Route 209[X]
 Story (Langrisser)[X]
 
 ## ASunnyPathName
-A Sunny Path[X]
+Sunny Road[X]
 
 ## DetectiveGumshoeName
 Detective Gumshoe[X]

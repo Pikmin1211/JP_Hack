@@ -1,5 +1,395 @@
 ## Ch1Name
-Chapter 1[X]
+Chapter 1: Greener Pastures[X]
 
 ## Ch1Objective
 Defeat Derek[X]
+
+
+
+
+## Ch1OP
+[MidRight][LoadArden]
+Alright![N]
+This way![AN]
+
+[Left][LoadWolt][FarLeft][LoadVillagerMan]
+Huff, huff...[N]
+Coming![AN]
+
+[Left]
+Is this[N]
+everyone?[AN]
+
+[MidRight]
+Yeah, seems like.[AN]
+
+[MoveRight][FarRight][LoadGreenSoldier]
+Sir Arden, they're[N]
+gaining on us![AN]
+
+[Right]
+Blast. We'll have to[N]
+stand our ground then.[AN]
+[MoveRight]
+Men, at the ready![AN]
+
+[FarRight]
+Yes sir![AN]
+
+[Right]
+Wolt, I need you direct the[N]
+villagers out of here. Got it?[AN]
+
+[Left]
+Understood. This[N]
+way, you guys![AN]
+[Clear]
+
+[FarLeft]
+Ah, give me[N]
+a moment...[A][X]
+
+
+
+
+## Ch1OP2
+[MidLeft][LoadKekh]
+You can't run in that[N]
+armor forever, worm![AN]
+
+[MidRight][LoadArden]
+I don't intend to.[N]
+Have at me, scum![AN]
+
+[MidLeft]
+Big talk! We'll see how you and your[N]
+little men stand up to my blade![AN]
+Boys! Get those villagers![N]
+Don't let 'em get away![A][X]
+
+
+
+## Ch1OP3
+[MidLeft][LoadRedSoldier][Right][LoadVergil]
+This is the place.[AN]
+Men, be ready to search the homes.[N]
+Don't let anyone interfere.[AN]
+
+[MidLeft]
+Yes sir![AN]
+[Clear]
+
+[FarRight][LoadDerek]
+Are you really okay[N]
+with this, sir Vergil?[AN]
+
+[Right]
+...If I had the option,[N]
+I would not do this.[AN]
+However, orders are orders.[AN]
+As a knight, you must be ready[N]
+to do anything for your kingdom.[AN]
+Do you understand, Derek?[AN]
+
+[FarRight]
+...Yes, I think so.[AN]
+Let's proceed, then.[N]
+We must find it.[A][X]
+
+
+
+
+## Ch1OP4
+[MidLeft][LoadArden]
+Imperial soldiers?[AN]
+And they don't[N]
+look friendly...[AN]
+Damn, just my luck...[A][X]
+
+
+
+
+## Ch1OP5
+[Right][LoadScott][FarLeft][LoadOskar][Left][LoadFinn][FarRight][LoadSanders]
+Looks like we're in for[N]
+more than we bargained for.[AN]
+
+[FarLeft]
+What a commotion...[AN]
+
+[Right]
+Imperial soldiers...?[N]
+But what are they doing here?[AN]
+
+[Left]
+Does it matter?[AN]
+If they get in our way,[AN]
+we have no choice[N]
+but to eliminate them.[AN]
+
+[Right]
+Brigands and bandits[N]
+are one thing, but...[AN]
+
+[FarLeft]
+If they hurt anybody,[AN]
+or any plants, it's[N]
+still unforgivable![AN]
+Isn't that right?[AN]
+
+[Right]
+Yeah, you're[N]
+right, Oskar.[AN]
+
+[FarRight]
+Then let's move![A][X]
+
+
+
+
+## Ch1VergilLeaves
+[FarLeft][LoadDerek][Left][LoadVergil][MidRight][LoadRedSoldier]
+Sir Vergil![N]
+Urgent news![AN]
+
+[Left]
+Speak, soldier.[AN]
+
+[MidRight]
+It's those cursed[N]
+creatures again, sir.[AN]
+They're attacking[N]
+one of our forts![AN]
+The men won't last[N]
+much longer alone.[AN]
+
+[Left]
+What?! Blast![N]
+I understand.[AN]
+I ride to their aide.[AN]
+Derek, I'll entrust you[N]
+with finishing this task.[AN]
+
+[FarLeft]
+Me, sir?[AN]
+
+[Left]
+Are you unsure?[AN]
+
+[FarLeft]
+...No, it's[N]
+an honor, sir.[AN]
+You can rely on me.[AN]
+
+[Left]
+Excellent. Then I[N]
+must make haste.[A][X]
+
+
+
+## Ch1VergilLeaves2
+[MidRight][LoadDerek]
+[Beat][N]
+For my kingdom...[A][X]
+
+
+
+## Ch1Sayori
+[MidLeft][LoadCurrent][MidRight][LoadSayori]
+It's rather noisy outside...[N]
+Trouble? Oh, my... Here, let me help![AN]
+...No, please don't worry about me.[N]
+I'm stronger than I look, you know![A][X]
+
+
+
+## Ch1SandersWoltTalk
+[MidLeft][LoadSanders][MidRight][LoadWolt]
+Huh? Hey, who are you?[AN]
+You don't look like[N]
+bad guys, at least.[AN]
+
+[MidLeft]
+The name's Sanders.[N]
+I'm something of a mercenary.[AN]
+Looks like you have quite[N]
+the predicament on your hands.[AN]
+
+[MidRight]
+To put it lightly, yeah.[AN]
+Here, help me get these[N]
+villagers out of here,[AN]
+and then we can clean[N]
+these guys up together.[AN]
+You can count on my bow![A][X]
+
+
+
+## Ch1SandersArdenTalk
+[MidLeft][LoadSanders][MidRight][LoadArden]
+You here to[N]
+help us out?[AN]
+
+[MidLeft]
+Something[N]
+like that.[AN]
+
+[MidRight]
+Thanks, mac. Could use[N]
+it right about now.[AN]
+Keep close, and I'll[N]
+deflect blows for you.[A][X]
+
+
+
+## Ch1Village
+[MidLeft][LoadCurrent][MidRight][LoadGinger]
+Are you the ones fending[N]
+off all those bandits?[AN]
+What? Imperials too?[N]
+What has this world come to...?[AN]
+Here, take this as thanks.[N]
+It was my father's.[AN]
+He was a lanceman, but he was[N]
+never able to wield this thing.[AN]
+Maybe you'll have better luck.[A][X]
+
+
+
+## Ch1House
+[MidLeft][LoadCurrent][MidRight][LoadOldLady]
+They say in the olden days,[AN]
+the Demon King resurrected an[N]
+army of monsters to attack people.[AN]
+I used to say, "what hogwash!",[N]
+to all those kinds of old stories.[AN]
+But now, there really are[N]
+monsters sulking about.[AN]
+Be careful out there, kids.[A][X]
+
+
+
+## Ch1DerekBattle
+[MidLeft][LoadDerek]
+I wasn't expecting[N]
+reinforcements...[AN]
+No matter! I shall[N]
+handle you myself![A][X]
+
+
+
+## Ch1DerekDeath
+[MidLeft][LoadDerek]
+It seems I have[N]
+underestimated you.[AN]
+But, I shall not[N]
+fall here! Not yet![A][X]
+
+
+
+## Ch1KekhBattle
+[MidLeft][LoadKekh]
+Now, where to begin...[AN]
+How about you?[N]
+Are you ready to die?[A][X]
+
+
+
+## Ch1KekhDeath
+[MidLeft][LoadKekh]
+What?! Impossible...![A][X]
+
+
+
+## Ch1Ending
+[FarRight][LoadFinn][Right][LoadSanders][Left][LoadWolt][FarLeft][LoadArden]
+Thanks for[N]
+the support.[AN]
+
+[Right]
+Just doing[N]
+my job.[AN]
+
+[Left]
+So what's[N]
+next for us?[AN]
+
+[FarLeft]
+I'm not sure,[N]
+but I don't like the cut[N]
+of those imperial's gib...[AN]
+
+[FarRight]
+What do you suppose[N]
+they were after?[AN]
+
+[FarLeft][Clear][LoadSayori]
+If I might interject...[AN]
+There's supposedly some kind of[N]
+holy weapon at the temple nearby.[AN]
+At least, that's how those old[N]
+legends around here used to go.[AN]
+
+[Right]
+Are you suggesting[N]
+they were after it?[AN]
+
+[FarRight][Clear][LoadMarisa]
+Heck, if I knew there was some kind[N]
+of holy weapon, I'd be after it.[AN]
+
+[Left]
+Now that you mention it...[AN]
+I overheard one of the knights[N]
+saying something about monsters.[AN]
+
+[Right]
+Monsters?[AN]
+
+[FarLeft]
+If the empire's having[N]
+problems with monsters,[AN]
+then it'd only make sense[N]
+they'd want a holy weapon...[AN]
+Right?[AN]
+
+[Left][Clear][LoadBlanc]
+If that's true, then the[N]
+temple could be in danger.[AN]
+
+[FarRight]
+Oh, shoot![N]
+You're right![AN]
+
+[FarLeft][Clear][LoadArden]
+I guess that settles that, then.[AN]
+You don't mind if we tag along?[N]
+I know one of the priests there.[AN]
+
+[FarRight][Clear][LoadRenge]
+Yay, more[N]
+friends...[AN]
+
+[Right]
+Alright,[N]
+let's march.[A][X]
+
+
+
+
+## Ch1Ending2
+[MidLeft][LoadKekh]
+Holy weapon, eh...?[AN]
+A blade of that prestiege would be[N]
+well used by someone of my caliber...[A][X]
+
+
+
+## Ch1GetItem
+[MidRight][LoadSanders][MidLeft][LoadVillagerMan]
+Excuse me, sir! Thank you and[N]
+your friends for helping us.[AN]
+Heavens know what those barbarians[N]
+would have done to my family...[AN]
+Please, take this as payment.[N]
+It's the least I can offer you.[A][X]

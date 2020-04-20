@@ -1,0 +1,74 @@
+[Right][LoadSanders][FarRight][LoadArden][MidLeft][LoadOldMan]
+
+Ah, greetings, young ones.[AN]
+
+What brings you[N]
+
+to our humble temple?[AN]
+
+
+
+[Right]
+
+I'm afraid it's not[N]
+
+good news, Father.[AN]
+
+We have reason to believe the[N]
+
+imperial army may be coming here.[AN]
+
+Not for a friendly visit, either.[AN]
+
+
+
+[MidLeft]
+
+Oh? But whatever[N]
+
+would it be for?[AN]
+
+
+
+[FarRight]
+
+You wouldn't happen to know about[N]
+
+some kind of holy weapon, wouldja?[AN]
+
+
+
+[MidLeft]
+
+Hmm... I see. I'm[N]
+
+afraid I don't.[AN]
+
+
+
+[Right][Clear][LoadMarisa]
+
+Oh, darn! I was[N]
+
+hoping to see it...[AN]
+
+
+
+[FarRight]
+
+What's more important[N]
+
+is these people's safety.[AN]
+
+Whether or not that's true,[N]
+
+I doubt they'll believe you.[AN]
+
+
+
+[MidLeft][MoveLeft][FarLeft][LoadVillagerMan]
+
+Father! It's urgent![N]
+
+There's a commotion outside...[A][X]
+

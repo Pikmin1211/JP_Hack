@@ -2,7 +2,24 @@
 
 ALIGN 4
 BattleQuoteTable:
+
+// Prologue
 TwoWayBattleQuote(0x0,Batta,Prologue,PrologueBattaBattle)
+
+// Ch 1
+TwoWayBattleQuote(0x0,Derek,Ch1,Ch1DerekBattle)
+TwoWayBattleQuoteFlag(0xD,0x0,Kekh,Ch1,Ch1KekhBattle)
+
+// Ch2
+TwoWayBattleQuote(0x0,Batta,Ch2,Ch2BattaBattle)
+TwoWayBattleQuoteFlag(0xD,0x0,ONeill,Ch2,Ch2ONeillBattle)
+
+
+
+
+
+
+
 EndQuote
 
 PUSH

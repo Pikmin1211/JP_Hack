@@ -7,12 +7,13 @@ DeathQuoteTable:
 ChapterDeathQuote(Batta,Prologue,DefeatBossFlag,PrologueBattaDeath)
 
 // Ch1
-ChapterDeathQuote(Derek,Ch1,DefeatBossFlag,TestDialogue)
+ChapterDeathQuote(Derek,Ch1,DefeatBossFlag,Ch1DerekDeath)
+ChapterDeathQuote(Kekh,Ch1,0x0,Ch1KekhDeath)
 
 // Ch2
-ChapterDeathQuote(PriestUnit,Ch2,GameOverFlag,TestDialogue)
-ChapterDeathQuote(Batta,Ch2,0x9,TestDialogue)
-ChapterDeathQuote(ONeill,Ch2,0xA,TestDialogue)
+ChapterDeathQuote(PriestUnit,Ch2,GameOverFlag,Ch2PriestDeath)
+ChapterDeathQuote(Batta,Ch2,0x9,Ch2BattaDeath)
+ChapterDeathQuote(ONeill,Ch2,0xA,Ch2ONeillDeath)
 
 // Ch6
 ChapterDeathQuote(MonsterBoss,Ch5,DefeatBossFlag,0x0)
@@ -25,7 +26,17 @@ ChapterDeathQuote(Tim,0x8,0xB,TestDialogue)
 ChapterDeathQuote(Bit,0x8,0xC,TestDialogue)
 
 // Always
-AlwaysDeathQuote(Sanders,GameOverFlag,TestDialogue)
+AlwaysDeathQuote(Sanders,GameOverFlag,SandersDeath)
+AlwaysDeathQuote(Finn,0x0,FinnDeath)
+AlwaysDeathQuote(Scott,0x0,ScottDeath)
+AlwaysDeathQuote(Marisa,0x0,MarisaDeath)
+AlwaysDeathQuote(Renge,0x0,RengeDeath)
+AlwaysDeathQuote(Oskar,0x0,OskarDeath)
+AlwaysDeathQuote(Blanc,0x0,BlancDeath)
+AlwaysDeathQuote(Wolt,0x0,WoltDeath)
+AlwaysDeathQuote(Arden,0x0,ArdenDeath)
+AlwaysDeathQuote(Sayori,0x0,SayoriDeath)
+AlwaysDeathQuote(Wrys,0x0,WrysDeath)
 EndQuote
 
 PUSH

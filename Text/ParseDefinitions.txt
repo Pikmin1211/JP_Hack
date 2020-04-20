@@ -120,6 +120,7 @@
 [_Z] = [0xB2]
 
 [Clear] = [ClearFace]
+[Die] = [A][CloseEyes][.....]
 
 [CurrentPortrait] = [0xFF][0xFF]
 [LoadCurrent] = [LoadFace][CurrentPortrait]
@@ -138,3 +139,13 @@
 [LoadVillagerMan] = [LoadFace][0x5C][0x1]
 [LoadOldMan] = [LoadFace][0x59][0x1]
 [LoadVillagerGirl] = [LoadFace][0x61][0x1]
+[LoadArden] = [LoadFace][0x0C][0x1]
+[LoadWolt] = [LoadFace][0x0B][0x1]
+[LoadSayori] = [LoadFace][0x0A][0x1]
+[LoadDerek] = [LoadFace][0x0E][0x1]
+[LoadVergil] = [LoadFace][0x0F][0x1]
+[LoadKekh] = [LoadFace][0x0D][0x1]
+[LoadGinger] = [LoadFace][0x5D][0x1]
+[LoadOldLady] = [LoadFace][0x5F][0x1]
+[LoadONeill] = [LoadFace][0x10][0x1]
+[LoadWrys] = [LoadFace][0x11][0x1]

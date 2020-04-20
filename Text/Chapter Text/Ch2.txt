@@ -1,5 +1,240 @@
 ## Ch2Name
-Chapter 2[X]
+Chapter 2: Double Vision[X]
 
 ## Ch2Objective
 Protect[X]
+
+
+
+
+## Ch2OP
+[Right][LoadSanders][FarRight][LoadArden][MidLeft][LoadOldMan]
+Ah, greetings, young ones.[AN]
+What brings you[N]
+to our humble temple?[AN]
+
+[Right]
+I'm afraid it's not[N]
+good news, Father.[AN]
+We have reason to believe the[N]
+imperial army may be coming here.[AN]
+Not for a friendly visit, either.[AN]
+
+[MidLeft]
+Oh? But whatever[N]
+would it be for?[AN]
+
+[FarRight]
+You wouldn't happen to know about[N]
+some kind of holy weapon, wouldja?[AN]
+
+[MidLeft]
+Hmm... I see. I'm[N]
+afraid I don't.[AN]
+
+[Right][Clear][LoadMarisa]
+Oh, darn! I was[N]
+hoping to see it...[AN]
+
+[FarRight]
+What's more important[N]
+is these people's safety.[AN]
+Whether or not that's true,[N]
+I doubt they'll believe you.[AN]
+
+[MidLeft][MoveLeft][FarLeft][LoadVillagerMan]
+Father! It's urgent![N]
+There's a commotion outside...[A][X]
+
+
+
+## Ch2OP2
+[Left][LoadBatta][FarLeft][LoadONeill]
+Alright, you lot![AN]
+We know you gots that[N]
+magicy sword in there![AN]
+If ya give it here, we'll[N]
+only kill most of yas![AN]
+Gahaha![AN]
+
+[MidRight][LoadSanders]
+Bandits? Not exactly[N]
+who I was expecting...[AN]
+But I'll cut you[N]
+down all the same![AN]
+
+[Left]
+Huh? You again?![AN]
+Grrrargh! This time,[N]
+I'll really do you in![AN]
+Prepare to die, redhead![AN]
+Nobody makes a fool outta[N]
+Batta's Beasts and lives![A][X]
+
+
+
+
+## Ch2OP3
+[MidRight][LoadOldMan]
+Oh dear,[N]
+this is bad...[AN]
+
+[Left][LoadWolt][FarLeft][LoadScott]
+Stay inside, Father.[AN]
+Allow us to defend[N]
+you and the priory.[AN]
+
+[Left]
+We'll keep[N]
+you safe![AN]
+
+[MidRight]
+You are too kind...[AN]
+Alright, everyone,[N]
+keep safe inside.[AN]
+Don't move an inch![A][X]
+
+
+
+## Ch2PostPrep1
+[MidRight][LoadSanders]
+Looks like the priests[N]
+are going to stay inside.[AN]
+Let's make sure no stragglers[N]
+sneak inside and attack them.[A][X]
+
+## Ch2PostPrep2
+[MidRight][LoadSanders]
+Those two goons seem[N]
+to be calling the shots.[AN]
+Maybe if I take them out...[A][X]
+
+
+
+## Ch2Ending
+[FarLeft][LoadWrys][Right][LoadSanders][FarRight][LoadScott][Left][LoadOldMan]
+Thank you for[N]
+protecting us.[AN]
+Were it not for you,[AN] 
+well, we'd be closer[N]
+to God than we'd like.[AN]
+
+[FarRight]
+Our duty is to protect![N]
+Think nothing of it.[AN]
+
+[FarLeft]
+Father, they are[N]
+trustworthy young ones.[AN]
+I think we can tell them.[AN]
+
+[Left]
+...Yes, I think so, Brother Wrys.[AN]
+I do know of a holy weapon. Many,[N]
+in fact. There are twelve in total.[AN]
+Used by the heroes of legend to[N]
+defeat the Demon King, long ago.[AN]
+There used to be one of[N]
+those weapons housed here,[AN] 
+but it was relocated to a[N]
+forest nearby for safekeeping.[AN]
+
+[Right]
+I see. But why does[N]
+that concern us?[AN]
+
+[Left]
+Ohoho! I think your destiny is[N]
+greater than you believe it to be.[AN]
+
+[Right]
+[Beat][AN]
+
+[FarRight]
+In any case, if the imperials are[N]
+going to be looking for them,[AN]
+we may want to get to them first.[AN]
+
+[Right][Clear][LoadMarisa]
+Plus, I want to see them![N]
+They sound super cool![AN]
+
+[FarRight][Clear][LoadFinn]
+With that kind of weapon,[N]
+you could do terrible things.[AN]
+Let's not think of them as toys.[AN]
+
+[FarLeft]
+Please, allow me to[N]
+accompany them, Father.[AN] 
+I know the path to the[N]
+weapon through the woods.[AN]
+
+[Left]
+Are you certain? They are[N]
+teeming with monsters.[AN]
+It will be a perilous task.[N]
+I cannot guarentee your safety.[AN]
+
+[Right][Clear][LoadSanders]
+You've seen us handle ourselves.[N]
+I think we can manage fine.[AN]
+
+[Left]
+...Yes, I suppose you're right.[AN]
+Very well then! I bid you good luck.[N]
+May God watch over you all.[A][X]
+
+
+
+## Ch2ItemGet
+[MidRight][LoadSanders]
+Hm? What's this?[AN]
+Seems those bandits dropped[N]
+it when they scurried off...[A][X]
+
+
+
+
+## Ch2Wrys
+[MidRight][LoadWrys]
+Oh dear, what[N]
+is going on?[AN]
+
+[MidLeft][LoadArden]
+Ah, Father Wrys. Would you be[N]
+able to lend a hand here?[AN]
+
+[MidRight]
+But of course. Come[N]
+to me if you get hurt.[A][X]
+
+
+
+## Ch2BattaBattle
+[MidLeft][LoadBatta]
+I'll make you pay[N]
+for messin' with me![A][X]
+
+## Ch2BattaDeath
+[MidLeft][LoadBatta]
+Gaaah! Again?![N]
+Damn you...![A][X]
+
+## Ch2ONeillBattle
+[MidLeft][LoadONeill]
+Think you're tough[N]
+enough to handle me?[AN] 
+Don't make me laugh![A][X]
+
+## Ch2ONeillDeath
+[MidLeft][LoadONeill]
+Urg... that was just...[N]
+Beginner's luck![AN]
+Don't think I'll be going[N]
+easy on you next time, huh?![A][X]
+
+## Ch2PriestDeath
+[MidRight][LoadSanders]
+Damn... we weren't[N]
+able to save them...[A][X]

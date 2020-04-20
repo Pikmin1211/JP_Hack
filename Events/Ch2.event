@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+	TurnEventPlayer(0x0,PostPrep,1)
 	TurnEventPlayer(0x0,Reinforcements3,2)
 	TurnEventPlayer(0x0,WrysAppears,2)
 	TurnEventPlayer(0x0,Reinforcements1,4)
@@ -21,6 +22,20 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,Reinforcements1,8)
 	TurnEventPlayer(0x0,EndingScene,9)
 	END_MAIN
+
+PostPrep:
+	MUSC RedialSong
+	CAM1 [10,5]
+	FlashCursor(10,5,60)
+	Text(Ch2PostPrep1)
+	CAM1 Batta
+	FlashCursor(Batta,60)
+	CAM1 ONeill
+	FlashCursor(ONeill,60)
+	Text(Ch2PostPrep2)
+	CAM1 Sanders
+	NoFade
+	ENDA
 
 Reinforcements1:
 	CHECK_ALIVE Batta
@@ -38,7 +53,7 @@ WrysAppears:
 	MUSS SkyEventSong
 	SpawnReinforcements(WrysUnit)
 	FlashCursor(Wrys,60)
-	Text(TestDialogue)
+	Text(Ch2Wrys)
 	MURE 2
 	NoFade
 	ENDA
@@ -68,8 +83,20 @@ CharacterBasedEvents:
 	END_MAIN
 
 MiscBasedEvents:
+	AFEV 0xB CheckForWin 0x9
+	AFEV 0xC CheckForWin 0xA
 	CauseGameOverIfLordDies
 	END_MAIN
+
+CheckForWin:
+	CHECK_EVENTID 0x9
+	BEQ 1 0xC 0x0
+	CHECK_EVENTID 0xA
+	BEQ 1 0xC 0x0
+		CALL EndingScene
+		LABEL 1
+	NoFade
+	ENDA
 
 LocationBasedEvents:
 
@@ -192,6 +219,15 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	MUSC LonelyTownSoulBlazerSong
+	SetBackground(Castle_Hall_2)
+	Text(Ch2OP)
+	MUSC ToccataAndDoomSong
+	SetBackground(Plain_2)
+	Text(Ch2OP2)
+	SetBackground(Castle_Hall_2)
+	Text(Ch2OP3)
+	FADI 16
 	LOAD1 0x1 GreenUnits
 	ENUN
 	LOAD1 0x1 EnemyUnits
@@ -200,12 +236,24 @@ BeginningScene:
 	ENDA
 
 EndingScene:
+	MUSC UndergroundLairSong
+	SetBackground(Castle_Hall_2)
+	Text(Ch2Ending)
 	CHECK_EVENTID 0x9
 	BEQ 1 0xC 0x0
+		SetBackground(Plain_2)
+		MUSC 0x4C // birds
+		Text(Ch2ItemGet)
 		GiveItem(AngelicRobe,Sanders)
 		LABEL 1
 	CHECK_EVENTID 0xA
 	BEQ 2 0xC 0x0
+		CHECK_EVENTID 0x9
+		BNE 3 0xC 0x0 // make sure to not repeat the dialog
+			SetBackground(Plain_2)
+			MUSC 0x4C // birds
+			Text(Ch2ItemGet)
+			LABEL 3
 		GiveItem(BrightLance,Sanders)
 		LABEL 2
 	MNC2 3

@@ -1,0 +1,50 @@
+[MidLeft][LoadRedSoldier][Right][LoadVergil]
+
+This is the place.[AN]
+
+Men, be ready to search the homes.[N]
+
+Don't let anyone interfere.[AN]
+
+
+
+[MidLeft]
+
+Yes sir![AN]
+
+[Clear]
+
+
+
+[FarRight][LoadDerek]
+
+Are you really okay[N]
+
+with this, sir Vergil?[AN]
+
+
+
+[Right]
+
+...If I had the option,[N]
+
+I would not do this.[AN]
+
+However, orders are orders.[AN]
+
+As a knight, you must be ready[N]
+
+to do anything for your kingdom.[AN]
+
+Do you understand, Derek?[AN]
+
+
+
+[FarRight]
+
+...Yes, I think so.[AN]
+
+Let's proceed, then.[N]
+
+We must find it.[A][X]
+
