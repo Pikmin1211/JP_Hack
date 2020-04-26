@@ -1,0 +1,103 @@
+EventPointerTable(Ch9AEvent, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,PostPrep,1)
+	END_MAIN
+
+PostPrep:
+	MUSS SkyEventSong
+	SpawnReinforcements(NewAllies)
+	FlashCursor(Arle,60)
+	Text(TestDialogue)
+	SilentGiveItem(24,2,Vulnerary)
+	MURE 2
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(12,0)
+	Unit(10,0)
+	Unit(14,0)
+	Unit(9,1)
+	Unit(11,1)
+	Unit(13,1)
+	Unit(15,1)
+	Unit(12,2)
+	Unit(10,2)
+	Unit(14,2)
+	Unit(9,3)
+	Unit(11,3)
+	Unit(13,3)
+	Unit(15,3)
+	UNIT
+
+EnemyUnits:
+	
+	UNIT Todoroki Hero 0x0 Level(3,Enemy,1) [1,19] 0 0 0 0 [Flamberge,SilverSword,ShortAxe,Elixir] NeverMoveAI
+
+	UNIT
+
+NewAllies:
+	UNIT Arle LightMageF 0x0 Level(14,Ally,0) [25,0] 0 0 1 REDA24R2 [Bayoen,Sagittae,Resire,GuardRing] NoAI
+	UNIT Jason ArchKnight 0x0 Level(15,Ally,0) [25,0] 0 0 1 REDA23R2 [KillerBow,HuntingBow,OrionsBolt,Elixir] NoAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 11
+	NoFade
+	ENDA

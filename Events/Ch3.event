@@ -48,16 +48,25 @@ HurryUp:
 	ENDA
 
 GreensTurnBlue:
+
 	MUSC SkyEventSong
 	CAM1 Neptune
 	FlashCursor(Neptune,60)
-	Text(TestDialogue)
+	Text(Ch3PostPrep)
 	CUSA Neptune
 	CUSA Wilbell
 	MUSC FranticFactorySong
 	CAM1 [9,18]
 	FlashCursor(9,18,60)
-	Text(TestDialogue)
+	Text(Ch3PostPrep2)
+	CAM1 [2,1]
+	FlashCursor(2,1,60)
+	CAM1 [12,1]
+	FlashCursor(12,1,60)
+	CAM1 [1,17]
+	FlashCursor(1,17,60)
+	CAM1 [15,17]
+	FlashCursor(15,17,60)
 	NoFade
 	ENDA
 
@@ -218,24 +227,43 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	MUSC TheWorldIsTremblingSong
+	SetBackground(Forest_Dense)
+	Text(Ch3OP)
+	FADI 16
+	CLEAN
 	LOAD1 0x1 GreenUnits
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	MUSC TrainRushSong
 	CAM1 Neptune
-	FADU 16
-	CAM1 [2,1]
-	FlashCursor(2,1,60)
-	CAM1 [12,1]
-	FlashCursor(12,1,60)
-	CAM1 [1,17]
-	FlashCursor(1,17,60)
-	CAM1 [15,17]
-	FlashCursor(15,17,60)
+	FlashCursor(Neptune,60)
+	Text(Ch3OP2)
+	FADI 16
 	GotoPrepScreen
+	NoFade
 	ENDA
 
 EndingScene:
+	MUSC InvestigationSong
+	SetBackground(Forest_Dense)
+	TEXTSTART
+	TEXTSHOW Ch3Ending
+	TEXTEND
+	MuteMusic
+	STAL 100
+	SOUN 0x2ED // long shine
+	FAWI 16
+	STAL 60
+	SOUN 0xF0 // legendary weapon flash
+	STAL 100
+	FAWU 16
+	MUSC GreenGardenNightSong
+	TEXTCONT
+	TEXTEND
+	REMOVEPORTRAITS
+	GiveItem(Tyrfing,Sanders)
 	MNC2 4
 	NoFade
 	ENDA

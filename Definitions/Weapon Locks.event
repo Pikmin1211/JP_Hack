@@ -9,3 +9,17 @@ BYTE HardCharLock Milanor 0x0
 #define MilanorLock 0xD
 
 SetWeaponLockArray(MilanorLock,MilanorLockArray)
+
+SandersLockArray:
+BYTE HardCharLock Sanders 0x0
+
+#define SandersLock 0xE
+
+SetWeaponLockArray(SandersLock,SandersLockArray)
+
+ArleLockArray:
+BYTE HardCharLock Arle 0x0
+
+#define ArleLock 0xF
+
+SetWeaponLockArray(ArleLock,ArleLockArray)

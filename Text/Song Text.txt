@@ -165,3 +165,72 @@ Boss (Madou Monogatari)[X]
 
 ## UndergroundLairName
 Underground Lair[X]
+
+## LamentToTheMasterName
+Lament to the Master[X]
+
+## CorridorsOfTimeName
+Corridors of Time[X]
+
+## BabaYetuName
+Baba Yetu[X]
+
+## CrystalPalaceStage1Name
+Stage 1 (Crystal Palace)[X]
+
+## OnTheHuntName
+On the Hunt[X]
+
+## KitchenAceName
+Kitchen Ace[X]
+
+## LandOfSorrowName
+Land of Sorrow[X]
+
+## WhereTheWindRustlesName
+Where the Wind Rustles[X]
+
+## BelovedOneName
+Beloved One[X]
+
+## EnemyMessage3Name
+Enemy Message 3[X]
+
+## DecisiveBattleName
+Decisive Battle[X]
+
+## TrisectionName
+Trisection[X]
+
+## BattleFFTAName
+Battle (FFTA)[X]
+
+## PubName
+Pub[X]
+
+## SnowBattleName
+Snowball Fight[X]
+
+## EncounterName
+Encounter[X]
+
+## TheRaisingFightingSpiritName
+The Raising Fighting Spirit[X]
+
+## SeaShanty2Name
+Sea Shanty 2[X]
+
+## NuclearFusionName
+Nuclear Fusion[X]
+
+## LikeAGlintOfLightName
+Like a Glint of Light[X]
+
+## OffkeyName
+Offkey[X]
+
+## OldFamiliarScentName
+Old Familiar Scent[X]
+
+## MilanorThemeName
+Milanor Theme[X]

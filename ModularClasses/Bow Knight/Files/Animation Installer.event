@@ -1,0 +1,20 @@
+#ifdef AnimationSwitch
+
+ALIGN 4
+
+#include "Animations/Bow Installer.event"
+#include "Animations/Lance Installer.event"
+#include "Animations/Unarmed Installer.event"
+
+ClassAnim:
+LanceAnim(BowKnightLanceAnim)
+BowAnim(BowKnightBowAnim)
+UnarmedAnim(BowKnightUnarmedAnim)
+EndAnim
+
+#endif
+
+#ifndef AnimationSwitch
+ClassAnim:
+EndAnim
+#endif

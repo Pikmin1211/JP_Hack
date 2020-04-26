@@ -1,0 +1,127 @@
+[Left][LoadWrys]
+
+Looks like we made it...[N]
+
+and here we are.[AN]
+
+
+
+[FarLeft][LoadSanders][Right][LoadNeptune][FarRight][LoadWilbell]
+
+I knew we[N]
+
+were nearby![AN]
+
+
+
+[Right]
+
+Right, right...[AN]
+
+
+
+[FarLeft]
+
+Surely it wouldn't just be[N]
+
+in this stone case here.[AN]
+
+
+
+[Left]
+
+Right you are, Sanders.[N]
+
+It's magically sealed.[AN]
+
+Luckily for us, those cultists[N]
+
+weren't able to see it.[AN]
+
+
+
+[FarLeft]
+
+So, how do I[N]
+
+open this thing...[AN]
+
+
+
+[FarRight]
+
+I could use some levitation[N]
+
+magic to lift off the lid...[AN]
+
+
+
+[Right][Clear][LoadMarisa]
+
+C'mon, just bust it[N]
+
+open or something![AN]
+
+
+
+[FarLeft]
+
+I guess trying[N]
+
+wouldn't hurt...[AN]
+
+Here goes.[AN]
+
+
+
+[Event]
+
+
+
+[FarLeft]
+
+So this is a[N]
+
+holy weapon...[AN]
+
+
+
+[Left]
+
+This is called Tyrfing,[N]
+
+the holy blade.[AN]
+
+
+
+[Right]
+
+Whoa...[AN]
+
+
+
+[FarRight][Clear][LoadScott]
+
+It looks[N]
+
+powerful...[AN]
+
+
+
+[FarLeft]
+
+Well, we've got the sword.[AN]
+
+Those monsters were pretty[N]
+
+close behind, so let's get going.[AN]
+
+
+
+[Left][Clear][LoadFinn]
+
+As to the point as ever,[N]
+
+even after all that...[AN]
+
+Alright, everyone, march.[A][X]

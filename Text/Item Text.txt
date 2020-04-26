@@ -330,3 +330,27 @@ Resire[X]
 
 ## ResireDescription
 Drains enemy HP into caster.[X]
+
+## FalconBladeName
+Falcon Blade[X]
+
+## FalconBladeDescription
+Sanders' trusted blade.[X]
+
+## TyrfingName
+Tyrfing[X]
+
+## TyrfingDescription
+Grants Miracle. Spd/Res +5.[X]
+
+## SagittaeName
+Sagittae[X]
+
+## SagittaeDescription
+Effective against fliers.[X]
+
+## BayoenName
+Bayoen[X]
+
+## BayoenDescription
+Disables enemy counterattacks.[X]

@@ -1,0 +1,112 @@
+//General
+#undef ClassNumber
+#undef ClassName
+#undef ClassDescription
+#undef DefaultPromotion
+#undef WalkSpeed
+#undef ClassCard
+#undef UnitSortOrder
+#undef ClassRelativePower
+#undef MovementSound
+#undef ClassType
+#undef ClassAnim
+
+//Base Stats
+#undef BaseHP
+#undef BaseStr
+#undef BaseMag
+#undef BaseSkl
+#undef BaseSpd
+#undef BaseDef
+#undef BaseRes
+#undef BaseCon
+#undef BaseMov
+
+//Max Stats
+#undef MaxHP
+#undef MaxStr
+#undef MaxMag
+#undef MaxSkl
+#undef MaxSpd
+#undef MaxDef
+#undef MaxRes
+#undef MaxCon
+
+//Enemy Growths
+#undef HPGrowth
+#undef StrGrowth
+#undef MagGrowth
+#undef SklGrowth
+#undef SpdGrowth
+#undef DefGrowth
+#undef ResGrowth
+#undef LukGrowth
+
+//Promotion Bonuses
+#undef HPBonus
+#undef StrBonus
+#undef MagBonus
+#undef SklBonus
+#undef SpdBonus
+#undef DefBonus
+#undef ResBonus
+
+//Class Abilities
+#undef ClassAbilityOne
+#undef ClassAbilityTwo
+#undef ClassAbilityThree
+#undef ClassAbilityFour
+
+//Base Weapon Ranks
+#undef BaseSwordRank
+#undef BaseLanceRank
+#undef BaseAxeRank
+#undef BaseBowRank
+#undef BaseStaffRank
+#undef BaseAnimaRank
+#undef BaseLightRank
+#undef BaseDarkRank
+
+//Animation
+#undef BattleAnimation
+
+//Movement Type
+#undef MoveType
+#undef RainMoveType
+#undef SnowMoveType
+#undef TerrainAvoidBonus
+#undef TerrainDefenseBonus
+#undef TerrainResistanceBonus
+
+//Promotion Paths
+#undef PromotionOne
+#undef PromotionTwo
+
+//Skill Editor
+#undef ClassSkill
+#undef SkillList
+
+//Map Sprites
+#undef ClassStand
+#undef ClassWalk
+#undef MapSpriteSize
+#undef ClassAnimationPattern
+
+//Class Card
+#undef ClassCard
+#undef ClassCardFile
+#undef ClassCardPalette
+#undef ClassCardLocation
+
+//Text
+#undef UseClassText
+#undef NameTextData
+#undef DescriptionTextData
+#undef ClassNameLocation
+#undef ClassDescriptionLocation
+
+//EXP Operands
+#undef EXPGainMultiplier
+#undef EXPGainDivisor
+#undef EXPGrantMultiplier
+#undef EXPGrantDivisor

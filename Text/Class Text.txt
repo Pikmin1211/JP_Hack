@@ -99,3 +99,24 @@ their masters. Equip: Swords, staves.[X]
 ## WyvernLordDescription
 Wyvern-mounted knights of superior[N]
 skill. Equip: Lances, axes.[X]
+
+## LightMageName
+Light Mage[X]
+
+## LightMageDescription
+Casters skilled in the use of[N]
+holy light magic. Equip: Light.[X]
+
+## ArchKnightName
+Arch Knight[X]
+
+## ArchKnightDescription
+Mounted knights with swift[N]
+movement. Equip: Bows.[X]
+
+## BowKnightName
+Bow Knight[X]
+
+## BowKnightDescription
+Learned archers wielding special[N]
+horse-mounted bows. Equip: Lances, bows.[X]

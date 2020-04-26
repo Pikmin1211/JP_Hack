@@ -172,3 +172,65 @@ SongTable(MadouBossSong,MadouBoss,1)
 SongTable(UndergroundLairSong,UndergroundLair,1)
 #include "S Files/UndergroundLair.event"
 
+SongTable(LamentToTheMasterSong,LamentToTheMaster,1)
+#include "S Files/LamentToTheMaster.event"
+
+SongTable(CorridorsOfTimeSong,CorridorsOfTime,1)
+#include "S Files/CorridorsOfTime.event"
+
+SongTable(BabaYetuSong,BabaYetu,1)
+#include "S Files/BabaYetu.event"
+
+SongTable(CrystalPalaceStage1Song,CrystalPalaceStage1,1)
+#include "S Files/CrystalPalaceStage1.event"
+
+SongTable(OnTheHuntSong,OnTheHunt,1)
+#include "S Files/OnTheHunt.event"
+
+SongTable(LandOfSorrowSong,LandOfSorrow,1)
+#include "S Files/LandOfSorrow.event"
+
+SongTable(WhereTheWindRustlesSong,WhereTheWindRustles,1)
+#include "S Files/WhereTheWindRustles.event"
+
+SongTable(BelovedOneSong,BelovedOne,1)
+#include "S Files/BelovedOne.event"
+
+SongTable(EnemyMessage3Song,EnemyMessage3,1)
+#include "S Files/EnemyMessage3.event"
+
+SongTable(DecisiveBattleSong,DecisiveBattle,1)
+#include "S Files/DecisiveBattle.event"
+
+SongTable(TrisectionSong,Trisection,1)
+#include "S Files/Trisection.event"
+
+SongTable(BattleFFTASong,BattleFFTA,1)
+#include "S Files/BattleFFTA.event"
+
+SongTable(PubSong,Pub,1)
+#include "S Files/Pub.event"
+
+SongTable(SnowBattleSong,SnowBattle,1)
+#include "S Files/SnowBattle.event"
+
+SongTable(EncounterSong,Encounter,1)
+#include "S Files/Encounter.event"
+
+SongTable(TheRaisingFightingSpiritSong,TheRaisingFightingSpirit,1)
+#include "S Files/TheRaisingFightingSpirit.event"
+
+SongTable(SeaShanty2Song,SeaShanty2,1)
+#include "S Files/SeaShanty2.event"
+
+SongTable(NuclearFusionSong,NuclearFusion,1)
+#include "S Files/NuclearFusion.event"
+
+SongTable(LikeAGlintOfLightSong,LikeAGlintOfLight,1)
+#include "S Files/LikeAGlintOfLight.event"
+
+SongTable(OffkeySong,Offkey,1)
+#include "S Files/Offkey.event"
+
+SongTable(OldFamiliarScentSong,OldFamiliarScent,1)
+#include "S Files/OldFamiliarScent.event"

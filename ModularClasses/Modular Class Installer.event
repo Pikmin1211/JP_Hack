@@ -31,3 +31,9 @@
 #include "Maid/Maid Installer.event"
 
 #include "Dread Fighter/Dread Fighter Installer.event"
+
+#include "Light Mage F/Light Mage F Installer.event"
+
+#include "Arch Knight/Arch Knight Installer.event"
+
+#include "Bow Knight/Bow Knight Installer.event"

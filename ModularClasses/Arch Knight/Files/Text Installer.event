@@ -1,0 +1,11 @@
+#ifdef UseClassText
+
+NameTextData:
+#incext ParseFile "Text/ClassName.txt"
+setText(ClassNameLocation,NameTextData)
+
+DescriptionTextData:
+#incext ParseFile "Text/ClassDescription.txt"
+setText(ClassDescriptionLocation,DescriptionTextData)
+
+#endif

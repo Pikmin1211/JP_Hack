@@ -1,5 +1,5 @@
 ## Ch5Name
-Chapter 5[X]
+Chapter 5: Unsafe Passage[X]
 
 ## Ch5Objective
 Escort[X]

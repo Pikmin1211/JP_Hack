@@ -105,3 +105,11 @@
 #include "Tordo Scroll/Tordo Scroll Installer.event"
 
 #include "Resire/Resire Installer.event"
+
+#include "Falcon Blade/Falcon Blade Installer.event"
+
+#include "Tyrfing/Tyrfing Installer.event"
+
+#include "Sagittae/Sagittae Installer.event"
+
+#include "Bayoen/Bayoen Installer.event"

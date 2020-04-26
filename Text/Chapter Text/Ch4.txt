@@ -1,5 +1,421 @@
 ## Ch4Name
-Chapter 4[X]
+Chapter 4: Cell Room Floor[X]
 
 ## Ch4Objective
 Seize[X]
+
+
+
+
+## Ch4OP
+[Left][LoadTodoroki][FarLeft][LoadEevster]
+H-hey, c'mon,[N]
+let me go![AN]
+
+[Left]
+Yeah, right.[AN]
+I'll give you a[N]
+lollipop too.[AN]
+
+[FarLeft]
+This is just a big[N]
+misunderstanding![AN]
+You've got yourself the[N]
+wrong girl, mister.[AN]
+Do I really look old enough[N]
+to be leading anything?[AN]
+
+[Left]
+It seems looks[N]
+can be decieving.[AN]
+
+[MidRight][LoadDerek]
+Ah, Todoroki.[N]
+Is this her?[AN]
+
+[Left]
+In the flesh.[AN]
+
+[FarLeft]
+It's not me![AN]
+I don't even know what[N]
+this "basement" thing is![AN]
+
+[Left]
+Don't listen to her.[AN]
+
+[MidRight]
+I trust you.[AN]
+Excuse me, can I[N]
+get a guard here?[AN]
+
+[MoveRight][FarRight][LoadRedSoldier]
+Yes, sir![AN]
+Do you need me to escort[N]
+the prisoner to her cell?[AN]
+
+[Left]
+Please. Her whining[N]
+is unbearable.[AN]
+
+[FarRight][Clear][FarLeft][Clear]
+[FarFarLeft]
+Let me[N]
+goooo![AN]
+
+[Right]
+If it's really her,[AN]
+then at least we won't need[N]
+to put up with their meddling.[AN]
+
+[Left]
+Right. And that means we can[N]
+focus on finding those weapons.[AN]
+Any luck with that holy sword?[AN]
+
+[Right]
+Unfortunately not.[AN]
+A bunch of mercenaries showed[N]
+up and took me by surprise.[AN]
+It seems I was careless.[AN]
+
+[Left]
+Don't sweat it[N]
+too bad, kid.[AN]
+You're still new.[AN]
+You should head[N]
+on back for now.[AN]
+I'll take over here.[AN]
+
+[Right]
+Yeah. I'll just go outside[N]
+and get Missy ready then.[AN]
+
+[Left]
+...Missy?[AN]
+
+[Right]
+[Beat][AN]
+It's...[N]
+That's my horse.[AN]
+
+[Left][CloseEyes]
+[Beat]
+I see.[A][X]
+
+
+
+## Ch4OP2
+[Right][LoadSanders][FarRight][LoadNeptune][MidLeft][LoadOskar]
+Man, it's nice to see[N]
+some sunlight again![AN]
+I'm sure the plants[N]
+appreciate it too.[AN]
+
+[FarRight]
+No more creepy[N]
+monsters... finally![AN]
+
+[Right]
+...Is that man[N]
+heading towards us?[AN]
+
+[MidLeft][MoveLeft][FarLeft][LoadGreenSoldier]
+Excuse me, sir![AN]
+You wouldn't happen to be[N]
+a Mr. Sanders, would you?[AN]
+
+[Right]
+That's me, but... how[N]
+do you know my name?[AN]
+
+[FarLeft]
+We have our ways of[N]
+gathering information.[AN]
+[Beat][AN]
+But, we're not[N]
+against you or anything![AN]
+I was actually hoping to[N]
+ask for your assistance.[AN]
+
+[FarRight]
+Well, what's the[N]
+matter, Greenie?[AN]
+
+[FarLeft]
+Er, my name is Frankie...[AN]
+Anyways, our leader was recently[N]
+captured by the imperials.[AN]
+She's being held in a fort[N]
+nearby, but not for long.[AN]
+If we can break her out here,[AN]
+it'll be much easier than if she[N]
+was taken to the Imperial castle.[AN]
+
+[Left][Clear][LoadFinn]
+And I assume you're offering[N]
+some reward for this...?[AN]
+
+[FarLeft]
+We don't have much[N]
+in the way of funds...[AN]
+But what we do have[N]
+is information.[AN]
+Information that may be[N]
+of great interest to you.[AN]
+
+[Right]
+Go on.[AN]
+
+[FarLeft]
+About the Imperials,[N]
+and about those holy weapons.[AN]
+I've been told you're[N]
+already in possesion of one.[AN]
+
+[FarRight][Clear][LoadWrys]
+If they know that much, then[N]
+I think they may have merit.[AN]
+What do you think?[AN]
+
+[Right]
+You may be on to something.[N]
+Alright, Greenie.[AN]
+We'll help you out in[N]
+exchange for this information.[AN]
+Lead the way.[AN]
+
+[FarLeft]
+R-right! Thank you![N]
+Please, follow me![A][X]
+
+
+
+## Ch4OP3
+[MidLeft][LoadTodoroki][MidRight][LoadRedSoldier]
+Sir! Urgent news![AN]
+It seems some mercenaries[N]
+are approaching the fort![AN]
+They're armed as well![AN]
+
+[MidLeft]
+Mercenaries...?[N]
+It couldn't be...[AN]
+Alright, inform the men[N]
+to take defensive position![AN]
+
+[MidRight]
+Yes, sir![AN]
+[Clear]
+
+[MidLeft]
+Been a while since[N]
+I've had a challenge...[AN]
+If they really defeated Derek,[N]
+I might finally have some fun...[A][X]
+
+
+
+## Ch4OpenCell
+[MidRight][LoadSanders][MidLeft][LoadEevster]
+What the...[N]
+who are you?[AN]
+
+[MidRight]
+We're the ones here[N]
+to break you out.[AN]
+
+[MidLeft]
+Oh, Mr. Sanders, is it?[N]
+Heheh, thanks, bub.[AN]
+We'll be taking our leave, then.[N]
+I don't leave any debts unpaid.[A][X]
+
+
+
+
+## Ch4OpenCell2
+[MidRight][LoadGreenSoldier]
+Thank you! We'll be[N]
+heading to the exit now.[A][X]
+
+
+
+## Ch4SandersBrianTalk
+[MidRight][LoadBrian][MidLeft][LoadSanders]
+Hey, gutso. Shouldn't you[N]
+be escaping with the others?[AN]
+
+[MidRight]
+Well, I very well could be.[AN]
+However, as a gentleman,[AN]
+I feel uneasy turning tail when[N]
+I'm in such pristine condition.[AN]
+
+[MidLeft]
+...Right.[AN]
+
+[MidRight]
+To put it simply, my friend,[AN]
+I wish to fight alongside[N]
+you and your noble posse.[AN]
+My, how you say... abilities,[N]
+may be of some use to you.[AN]
+
+[MidLeft]
+I'm a little busy at the moment,[N]
+so I won't exactly stop you.[AN]
+Just make sure to pull your weight.[AN]
+
+[MidRight]
+A great task for a great man![N]
+I shall not disappoint, sir.[A][X]
+
+
+
+## Ch4PostPrep
+[MidLeft][LoadDerek]
+Whoa, easy, girl![AN]
+
+[MidRight][LoadRedSoldier]
+Sir, your Rapier.[AN]
+
+[MidLeft]
+Ah, thank you.[AN]
+We should be ready[N]
+to ride soon.[AN]
+Inform the others[N]
+for me, please.[AN]
+
+[MidRight]
+Right away![A][X]
+
+
+
+## Ch4DerekLeaves
+[MidLeft][LoadDerek]
+Alright, finally[N]
+good to go.[AN]
+Hyah![A][X]
+
+
+
+## Ch4TodorokiBattle
+[MidLeft][LoadTodoroki]
+So, you're the ones[N]
+who defeated Derek?[AN]
+This should be fun.[N]
+Come at me![A][X]
+
+## Ch4TodorokiDeath
+[MidLeft][LoadTodoroki]
+Heh... not too...[N]
+shabby... Phew...[A][X]
+
+## Ch4DerekBattle
+[MidLeft][LoadDerek]
+What the...?![N]
+You again?![A][X]
+
+## Ch4DerekDeath
+[MidLeft][LoadDerek]
+Am I truly...[N]
+So weak...?[A][X]
+
+## Ch4EevsterDeath
+[MidRight][LoadEevster]
+No... I can't...[N]
+Fall here... not yet...[A][X]
+
+
+
+
+## Ch4Ending
+[MidRight][LoadSanders][Left][LoadFinn][FarLeft][LoadScott]
+Looks like we managed[N]
+to get her out okay![AN]
+
+[MidRight]
+And the information[N]
+we were promised?[AN]
+
+[Left]
+She left us this note[N]
+on her cell floor.[AN]
+
+[MidRight]
+Let's see...[A][X]
+
+## Ch4Ending2
+To learn more of the holy weapons,[N]
+head to the sewers[N]
+of the town to the east.[AN]
+There you will find what you seek.[N]
+Beware of the monsters lurking below.[N]
+- Eevster[A][X]
+
+## Ch4Ending3
+[Left][LoadFinn][FarLeft][LoadScott][MidRight][LoadSanders]
+The town to the[N]
+east, huh...[AN]
+
+[Left]
+Should we prepare[N]
+to move, Sanders?[AN]
+
+[MidRight]
+It's not like we have any[N]
+other leads. Let's do it.[AN]
+
+[FarLeft][Clear][LoadBrian]
+Excuse me, sirs, but I[N]
+couldn't help but overhear.[AN]
+If it's not too much trouble,[N]
+I humbly request to join you.[AN]
+
+[Left]
+Whatever for?[AN]
+
+[FarLeft]
+You see, I'm something of[N]
+a treasure hunter myself.[AN]
+Hearing of such stories...[N]
+It fascinates me.[AN]
+
+[MidRight]
+You were pretty helpful[N]
+in that last battle.[AN]
+I've no problems with it.[AN]
+
+[FarLeft]
+Excellent! I[N]
+thank you, sir.[A][X]
+
+## Ch4Ending4
+[Left][LoadTodoroki][FarLeft][LoadDerek][MidRight][LoadRaydrik]
+So, she[N]
+escaped...[AN]
+
+[Left]
+My apologies,[N]
+Lord Raydrik.[AN]
+It seems they were[N]
+stronger than I expected.[AN]
+
+[MidRight]
+Hmph, fool.[N]
+Do not fail me again.[AN]
+You as well, Derek.[N]
+You both disappoint me.[AN]
+[Clear]
+
+[FarLeft]
+[Beat][A][X]
+
+
+## Ch4GetItem
+[MidRight][LoadSanders][MidLeft][LoadGreenSoldier]
+Excuse me, sir![AN]
+My brother was locked up in there.[AN]
+I don't know if this is enough,[N]
+but please take it. Thank you![A][X]

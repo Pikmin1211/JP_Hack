@@ -62,6 +62,32 @@ SoundRoomEntry(VsRaydrikSong,1,VsRaydrikName)
 SoundRoomEntry(ArmyASong,1,ArmyAName)
 SoundRoomEntry(MadouBossSong,1,MadouBossName)
 SoundRoomEntry(UndergroundLairSong,1,UndergroundLairName)
+SoundRoomEntry(LamentToTheMasterSong,1,LamentToTheMasterName)
+SoundRoomEntry(CorridorsOfTimeSong,1,CorridorsOfTimeName)
+SoundRoomEntry(BabaYetuSong,1,BabaYetuName)
+SoundRoomEntry(CrystalPalaceStage1Song,1,CrystalPalaceStage1Name)
+SoundRoomEntry(OnTheHuntSong,1,OnTheHuntName)
+//SoundRoomEntry(KitchenAceSong,1,KitchenAceName)
+SoundRoomEntry(LandOfSorrowSong,1,LandOfSorrowName)
+SoundRoomEntry(WhereTheWindRustlesSong,1,WhereTheWindRustlesName)
+SoundRoomEntry(BelovedOneSong,1,BelovedOneName)
+SoundRoomEntry(EnemyMessage3Song,1,EnemyMessage3Name)
+SoundRoomEntry(DecisiveBattleSong,1,DecisiveBattleName)
+SoundRoomEntry(TrisectionSong,1,TrisectionName)
+SoundRoomEntry(BattleFFTASong,1,BattleFFTAName)
+SoundRoomEntry(PubSong,1,PubName)
+SoundRoomEntry(SnowBattleSong,1,SnowBattleName)
+SoundRoomEntry(EncounterSong,1,EncounterName)
+SoundRoomEntry(TheRaisingFightingSpiritSong,1,TheRaisingFightingSpiritName)
+SoundRoomEntry(SeaShanty2Song,1,SeaShanty2Name)
+SoundRoomEntry(NuclearFusionSong,1,NuclearFusionName)
+SoundRoomEntry(LikeAGlintOfLightSong,1,LikeAGlintOfLightName)
+SoundRoomEntry(OffkeySong,1,OffkeyName)
+SoundRoomEntry(OldFamiliarScentSong,1,OldFamiliarScentName)
+//SoundRoomEntry(MilanorThemeSong,1,MilanorThemeName)
+
+
+
 
 SoundRoomTerminator
 

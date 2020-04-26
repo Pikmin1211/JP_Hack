@@ -55,3 +55,64 @@ nostalgic too...[Die][X]
 [MidRight][LoadWrys]
 May I be brought...[N]
 closer to the light...[Die][X]
+
+## WilbellDeath
+[MidRight][LoadWilbell]
+No... the great magician[N]
+Wilbell can't... fall here...[Die][X]
+
+## NeptuneDeath
+[MidRight][LoadNeptune]
+I'm gettin' real[N]
+beat up out here...[AN]
+Ohh... Can't... see...[Die][X]
+
+## BrianDeath
+[MidRight][LoadBrian]
+Oh, dear... it seems...[N]
+I've overexerted myself...[Die][X]
+
+## OtakuDeath
+[MidRight][LoadOtaku]
+Seems I expected too[N]
+much of myself...[Die][X]
+
+## GohardDeath
+[MidRight][LoadGohard]
+No way this is...[N]
+How this ends...[Die][X]
+
+## YandahlDeath
+[MidRight][LoadYandahl]
+I have made my...[N]
+final failure...[Die][X]
+
+## MilanorDeath
+[MidRight][LoadMilanor]
+This is no way for...[N]
+a King to fall... Urgh...[Die][X]
+
+## GutsDeath
+[MidRight][LoadGuts]
+Heh... it was...[N]
+a good run...[Die][X]
+
+## KohakuDeath
+[MidRight][LoadKohaku]
+Master... I'm sorry...[N]
+I've failed you...[Die][X]
+
+## DerekDeath
+[MidRight][LoadDerek]
+In the end, I was[N]
+still too weak...[Die][X]
+
+## EevsterDeath
+[MidRight][LoadEevster]
+No way I could fall here![N]
+I have to keep... urk...[Die][X]
+
+## KyDeath
+[MidRight][LoadKy]
+...May you all live on[N]
+to a more peaceful era.[Die][X]

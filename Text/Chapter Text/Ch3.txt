@@ -1,5 +1,212 @@
 ## Ch3Name
-Chapter 3[X]
+Chapter 3: Forest from the Trees[X]
 
 ## Ch3Objective
 Arrive[X]
+
+
+
+
+## Ch3OP
+[Left][LoadSanders][MidRight][LoadWrys]
+We're almost[N]
+there now.[AN]
+
+[Left]
+This forst is so dark...[AN]
+Can barely see a foot[N]
+in front of my face.[AN]
+
+[MidRight]
+It's quite dangerous with[N]
+the monsters roaming about.[AN]
+
+[Left]
+[Beat]
+Reveal yourself.[AN]
+
+[MidRight][Clear][FarLeft][LoadWrys][MidRight][LoadNovala]
+You're sharper than[N]
+you look, boy.[AN]
+
+[Left]
+Who are you?[AN]
+
+[FarLeft]
+I recognize those[N]
+robes anywhere.[AN]
+But why? That cult[N]
+should be long gone...[AN]
+
+[MidRight]
+Heheheh. Seems you're[N]
+older than you should be...[AN]
+Perhaps we can[N]
+put an end to that.[AN]
+[Clear]
+
+[FarLeft]
+Careful, Sanders.[AN]
+They're going to[N]
+attack us with monsters.[AN]
+
+[MidRight][LoadScott]
+Then let's proceed[N]
+with due caution.[AN]
+
+[Left]
+Right. We must move quickly,[AN]
+but remember not to get[N]
+too ahead of ourselves.[A][X]
+
+
+
+## Ch3OP2
+[MidLeft][LoadWilbell][MidRight][LoadNeptune]
+Just admit it![N]
+You're lost.[AN]
+
+[MidLeft]
+I am not! We're just...[N]
+taking a little detour.[AN]
+I'm sure that stupid thing[N]
+was around here somewhere...[AN]
+
+[MidRight]
+Argh, I knew coming here to see[N]
+this dumb weapon was a bad idea...[AN]
+It's all dark and cold... And I[N]
+think I just saw something moving?![AN]
+
+[MidLeft]
+Eek! Don't scare[N]
+me like that![AN]
+
+[MidRight]
+Just keep to[N]
+close to me, kay?[AN]
+I've handled my[N]
+fair share of baddies![AN]
+It would help if[N]
+I could see, though...[A][X]
+
+
+
+## Ch3PostPrep
+[MidLeft][LoadSanders][Right][LoadWilbell][FarRight][LoadNeptune]
+Hold on, are[N]
+those... people?[AN]
+
+[Right]
+Heyyy!![AN]
+
+[MidLeft]
+Huh? A couple of girls...[AN]
+They don't seem to[N]
+be enemies, at least.[AN]
+
+[MoveLeft][FarLeft][LoadBlanc]
+Neptune? What are[N]
+you doing here...?[AN]
+
+[FarRight]
+Oh, Blanny! Am I[N]
+glad to see you![AN]
+Help us out here,[N]
+huh? Pretty please?[AN]
+I think there's something[N]
+scary sulking around...[AN]
+
+[FarLeft]
+Hopeless, as always...[AN]
+I guess we should[N]
+help them, though.[A][X]
+
+
+
+## Ch3PostPrep2
+[MidRight][LoadNovala]
+We cannot allow them to pass alive...[AN]
+Hold the forts, my brothers.[N]
+Our legions shall soon arrive...[A][X]
+
+
+
+
+## Ch3NovalaBattle
+[MidLeft][LoadNovala]
+You shall proceed no further...[N]
+You shall return to the Earth![A][X]
+
+## Ch3NovalaDeath
+[MidLeft][LoadNovala]
+This... is...[N]
+Urrrgh...[A][X]
+
+
+
+## Ch3Ending
+[Left][LoadWrys]
+Looks like we made it...[N]
+and here we are.[AN]
+
+[FarLeft][LoadSanders][Right][LoadNeptune][FarRight][LoadWilbell]
+I knew we[N]
+were nearby![AN]
+
+[Right]
+Right, right...[AN]
+
+[FarLeft]
+Surely it wouldn't just be[N]
+in this stone case here.[AN]
+
+[Left]
+Right you are, Sanders.[N]
+It's magically sealed.[AN]
+Luckily for us, those cultists[N]
+weren't able to see it.[AN]
+
+[FarLeft]
+So, how do I[N]
+open this thing...[AN]
+
+[FarRight]
+I could use some levitation[N]
+magic to lift off the lid...[AN]
+
+[Right][Clear][LoadMarisa]
+C'mon, just bust it[N]
+open or something![AN]
+
+[FarLeft]
+I guess trying[N]
+wouldn't hurt...[AN]
+Here goes.[AN]
+
+[Event]
+
+[FarLeft]
+So this is a[N]
+holy weapon...[AN]
+
+[Left]
+This is called Tyrfing,[N]
+the holy blade.[AN]
+
+[Right]
+Whoa...[AN]
+
+[FarRight][Clear][LoadScott]
+It looks[N]
+powerful...[AN]
+
+[FarLeft]
+Well, we've got the sword.[AN]
+Those monsters were pretty[N]
+close behind, so let's get going.[AN]
+
+[Left][Clear][LoadFinn]
+As to the point as ever,[N]
+even after all that...[AN]
+Alright, everyone, march.[A][X]

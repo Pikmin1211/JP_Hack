@@ -93,7 +93,7 @@
 #define WarMonkUnarmedAnim 0xEB
 #define WarMonkClassCard 0x10D
 
-#define Maid 0xBD
+#define Maid 0x8D
 #define MaidSwordAnim 0xEC
 #define MaidStaffAnim 0xED
 #define MaidClassCard 0x10E
@@ -105,3 +105,20 @@
 #define DreadFighterSwordAnim 0xEF
 #define DreadFighterMagicAnim 0xF0
 #define DreadFighterClassCard 0x10F
+
+#define LightMageF 0x8F//ClassID here
+#define LightMageFMagicAnim 0xF1//AnimationID here
+#define LightMageFClassCard 0x110//MugID here
+#define LightMageFName LightMageName//TextID here
+#define LightMageFDescription LightMageDescription//TextID here
+
+#define ArchKnight 0x90
+#define ArchKnightBowAnim 0xF2
+#define ArchKnightUnarmedAnim 0xF3
+#define ArchKnightClassCard NomadClassCard
+
+#define BowKnight 0x91//ClassID here
+#define BowKnightBowAnim 0xF4//AnimationID here
+#define BowKnightLanceAnim 0xF5//AnimationID here
+#define BowKnightUnarmedAnim 0xF6//AnimationID here
+#define BowKnightClassCard 0x111//MugID here

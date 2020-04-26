@@ -43,3 +43,7 @@
 #include "Derek2/Derek Installer.event"
 
 #include "Eevster2/Eevster Installer.event"
+
+#include "Arle/Arle Installer.event"
+
+#include "Jason/Jason Installer.event"

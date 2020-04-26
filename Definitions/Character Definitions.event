@@ -152,6 +152,20 @@
 
 #define Eevster2 0x18
 
+#define Arle 0x19//UnitID here
+#define ArleClass LightMageF//ClassID here
+#define ArleMug 0x24//MugID here
+#define ArlePalette1 0x4F//PaletteID here
+#define ArlePalette2 0x50//PaletteID here
+#define ArlePalette3 0x52//PaletteID here
+
+#define Jason 0x1A//UnitID here
+#define JasonClass ArchKnight//ClassID here
+#define JasonMug 0x25//MugID here
+#define JasonPalette1 0x53//PaletteID here
+#define JasonPalette2 0x54//PaletteID here
+#define JasonPalette3 0x55//PaletteID here
+
 // Boss
 
 #define Batta 0x60//UnitID here
@@ -193,7 +207,7 @@
 #define TodorokiClass Mercenary//ClassID here
 #define TodorokiMug 0x15//MugID here
 #define TodorokiPalette1 0x30//PaletteID here
-#define TodorokiPalette2 0x0//PaletteID here
+#define TodorokiPalette2 0x51//PaletteID here
 #define TodorokiPalette3 0x0//PaletteID here
 
 #define Novala 0x66//UnitID here

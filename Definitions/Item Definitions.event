@@ -269,3 +269,23 @@
 #define ResireMagicAnim NosferatuAnimation//MagicAnimationID here
 #define ResireIcon 0x97//ItemIconID here
 #define ResireUseText 0x0//TextID here
+
+#define FalconBlade 0xF1//ItemID here
+#define FalconBladeMagicAnim 0xFF//MagicAnimationID here
+#define FalconBladeIcon 0x98//ItemIconID here
+#define FalconBladeUseText 0x0//TextID here
+
+#define Tyrfing Audhulma//ItemID here
+#define TyrfingMagicAnim 0x0//MagicAnimationID here
+#define TyrfingIcon AudhulmaIcon//ItemIconID here
+#define TyrfingUseText 0x0//TextID here
+
+#define Sagittae 0xF2//ItemID here
+#define SagittaeMagicAnim 0x4C//MagicAnimationID here
+#define SagittaeIcon 0x99//ItemIconID here
+#define SagittaeUseText 0x0//TextID here
+
+#define Bayoen 0xF3//ItemID here
+#define BayoenMagicAnim ShineAnimation//MagicAnimationID here
+#define BayoenIcon 0x9A//ItemIconID here
+#define BayoenUseText 0x0//TextID here

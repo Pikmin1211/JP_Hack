@@ -13,6 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+	TurnEventPlayer(0x0,PostPrep,1)
 	TurnEventPlayer(0xC,RightReinforcements,0,MaxTurns(0))
 	TurnEventPlayer(0x0,LeftReinforcements,4)
 	TurnEventPlayer(0x0,MidThief,6)
@@ -20,6 +21,14 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,TopThief,8)
 	TurnEventPlayer(0x0,DerekLeaves,11)
 	END_MAIN
+
+PostPrep:
+	MUSC DesertedChateauSong
+	CAM1 Derek
+	FlashCursor(Derek,60)
+	Text(Ch4PostPrep)
+	NoFade
+	ENDA
 
 RightReinforcements:
 	CHECK_EVENTID 0x9
@@ -54,7 +63,7 @@ DerekLeaves:
 	BEQ 1 0x0 0xC
 		CAM1 Derek
 		FlashCursor(Derek,60)
-		Text(TestDialogue)
+		Text(Ch4DerekLeaves)
 		MoveCoords(0,1,0,0)
 		ENUN
 		REMU Derek
@@ -69,7 +78,7 @@ CharacterBasedEvents:
 
 SandersBrianTalk:
 	MUSS SkyEventSong
-	Text(TestDialogue)
+	Text(Ch4SandersBrianTalk)
 	CUSA Brian
 	MURE 2
 	NoFade
@@ -93,7 +102,7 @@ GreenEscape:
 
 LeftDoorEvent:
 	FlashCursor(Eevster,60)
-	Text(TestDialogue)
+	Text(Ch4OpenCell)
 	SetAI(Eevster,0x6,0xC,0x0,0x0) // HastyAI
 	SetAI(Basement,0x6,0xC,0x0,0x0) // HastyAI
 	NoFade
@@ -101,7 +110,7 @@ LeftDoorEvent:
 
 RightDoorEvent:
 	FlashCursor(4,14,60)
-	Text(TestDialogue)
+	Text(Ch4OpenCell2)
 	SetAI(Basement2,0x6,0xC,0x0,0x0) // HastyAI
 	NoFade
 	ENDA
@@ -245,15 +254,33 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	MUSC BattleFFTASong
+	SetBackground(Castle_Hall_2)
+	Text(Ch4OP)
+	MUSC WhereTheWindRustlesSong
+	SetBackground(Plain)
+	Text(Ch4OP2)
+	MUSC ToccataAndDoomSong
+	SetBackground(Castle_Hall_2)
+	Text(Ch4OP3)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
+	MUSC StoryLangrisserSong
+	SetBackground(Castle_Hall_2)
+	Text(Ch4Ending)
+	CenterTextbox(Ch4Ending2)
+	Text(Ch4Ending3)
 	COUNTER_CHECK 1
 	SVAL 0x1 6
 	BNE 1 0xC 0x1 // branch label 1 if not all civs escaped
+		Text(Ch4GetItem)
 		GiveItem(Swordreaver,Sanders)
 		LABEL 1
+	MUSC EnemyMessage3Song
+	SetBackground(Castle_Hall)
+	Text(Ch4Ending4)
 	MNC2 5
 	NoFade
 	ENDA

@@ -81,6 +81,17 @@ SetItemValue(Hatchet,18)
 SetItemAbility1(Hatchet,IsWeapon)
 SetItemDurability(Hatchet,25)
 
+SetItemWeight(Lightning,2)
+SetItemWeight(Shine,4)
+SetItemWeight(Divine,6)
+SetItemWeight(Aura,10)
+
+NewThiefSkillList:
+BYTE 255 StealID
+BYTE 0 0
+
+SetClassLearnedSkills(Thief,NewThiefSkillList)
+
 // Lower throne avoid
 PUSH
 ORG 0x80C498
