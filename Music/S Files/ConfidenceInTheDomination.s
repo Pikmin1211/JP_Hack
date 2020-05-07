@@ -3,7 +3,7 @@
 	.equ	ConfidenceInTheDomination_grp, voicegroup000
 	.equ	ConfidenceInTheDomination_pri, 0
 	.equ	ConfidenceInTheDomination_rev, 0
-	.equ	ConfidenceInTheDomination_mvl, 127
+	.equ	ConfidenceInTheDomination_mvl, 80
 	.equ	ConfidenceInTheDomination_key, 0
 	.equ	ConfidenceInTheDomination_tbs, 1
 	.equ	ConfidenceInTheDomination_exg, 0

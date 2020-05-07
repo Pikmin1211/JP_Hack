@@ -65,3 +65,17 @@ UnarmedAnim(WyvernLordUnarmedAnim)
 EndAnim
 
 SetClassAnim(WyvernLord,WyvernLordAnims)
+
+ALIGN 4
+{
+	#include "bin/Falcoknight Staff Installer.event"
+}
+
+ALIGN 4
+FalcoknightAnims:
+LanceAnim(FalcoknightLanceAnim)
+StaffAnim(FalcoknightStaffAnim)
+UnarmedAnim(FalcoknightUnarmedAnim)
+EndAnim
+
+SetClassAnim(Falcoknight,FalcoknightAnims)

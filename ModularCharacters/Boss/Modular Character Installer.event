@@ -21,3 +21,5 @@
 #include "Gromell/Gromell Installer.event"
 
 #include "Raydrik/Raydrik Installer.event"
+
+#include "Cedwick/Cedwick Installer.event"

@@ -4,7 +4,7 @@
 	#define	StoryLangrisser_grp  voicegroup000
 	#define	StoryLangrisser_pri  0
 	#define	StoryLangrisser_rev  0
-	#define	StoryLangrisser_mvl  70
+	#define	StoryLangrisser_mvl  60
 	#define	StoryLangrisser_key  0
 	#define	StoryLangrisser_tbs  1
 	#define	StoryLangrisser_exg  0

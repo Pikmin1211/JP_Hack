@@ -4,7 +4,7 @@
 	#define	FatefulShowdown_grp  voicegroup000
 	#define	FatefulShowdown_pri  0
 	#define	FatefulShowdown_rev  0
-	#define	FatefulShowdown_mvl  110
+	#define	FatefulShowdown_mvl  100
 	#define	FatefulShowdown_key  0
 	#define	FatefulShowdown_tbs  1
 	#define	FatefulShowdown_exg  0

@@ -1,40 +1,40 @@
 	.include "MPlayDef.s"
 
-	.equ	L_FE4_Fateful_Showdown_grp, voicegroup000
-	.equ	L_FE4_Fateful_Showdown_pri, 0
-	.equ	L_FE4_Fateful_Showdown_rev, 0
-	.equ	L_FE4_Fateful_Showdown_mvl, 127
-	.equ	L_FE4_Fateful_Showdown_key, 0
-	.equ	L_FE4_Fateful_Showdown_tbs, 1
-	.equ	L_FE4_Fateful_Showdown_exg, 0
-	.equ	L_FE4_Fateful_Showdown_cmp, 1
+	.equ	FatefulShowdown_grp, voicegroup000
+	.equ	FatefulShowdown_pri, 0
+	.equ	FatefulShowdown_rev, 0
+	.equ	FatefulShowdown_mvl, 127
+	.equ	FatefulShowdown_key, 0
+	.equ	FatefulShowdown_tbs, 1
+	.equ	FatefulShowdown_exg, 0
+	.equ	FatefulShowdown_cmp, 1
 
 	.section .rodata
-	.global	L_FE4_Fateful_Showdown
+	.global	FatefulShowdown
 	.align	2
 
 @**************** Track 1 (Midi-Chn.1) ****************@
 
-L_FE4_Fateful_Showdown_1:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_1:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
-	.byte	TEMPO , 160*L_FE4_Fateful_Showdown_tbs/2
+	.byte	TEMPO , 160*FatefulShowdown_tbs/2
 	.byte		VOICE , 36
-	.byte		VOL   , 57*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 57*FatefulShowdown_mvl/mxv
 	.byte		N96   , Gn0 , v100
 	.byte		N96   , Gn1 
 	.byte		N96   , Gn2 
 	.byte	W96
 @ 001   ----------------------------------------
-L_FE4_Fateful_Showdown_1_001:
+FatefulShowdown_1_001:
 	.byte		N96   , Gs0 , v100
 	.byte		N96   , Gs1 
 	.byte		N96   , Gs2 
 	.byte	W96
 	.byte	PEND
-L_FE4_Fateful_Showdown_1_B1:
+FatefulShowdown_1_B1:
 @ 002   ----------------------------------------
-L_FE4_Fateful_Showdown_1_002:
+FatefulShowdown_1_002:
 	.byte		N12   , Gn1 , v100
 	.byte	W36
 	.byte		N12   
@@ -43,7 +43,7 @@ L_FE4_Fateful_Showdown_1_002:
 	.byte	W24
 	.byte	PEND
 @ 003   ----------------------------------------
-L_FE4_Fateful_Showdown_1_003:
+FatefulShowdown_1_003:
 	.byte	W12
 	.byte		N12   , Gn1 , v100
 	.byte	W36
@@ -54,10 +54,10 @@ L_FE4_Fateful_Showdown_1_003:
 	.byte	PEND
 @ 004   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_1_002
+	 .word	FatefulShowdown_1_002
 @ 005   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_1_003
+	 .word	FatefulShowdown_1_003
 @ 006   ----------------------------------------
 	.byte		N96   , Gn0 , v100
 	.byte		N96   , Gn1 
@@ -65,7 +65,7 @@ L_FE4_Fateful_Showdown_1_003:
 	.byte	W96
 @ 007   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_1_001
+	 .word	FatefulShowdown_1_001
 @ 008   ----------------------------------------
 	.byte		N12   , As1 , v100
 	.byte	W12
@@ -116,7 +116,7 @@ L_FE4_Fateful_Showdown_1_003:
 	.byte		N06   
 	.byte	W06
 @ 011   ----------------------------------------
-L_FE4_Fateful_Showdown_1_011:
+FatefulShowdown_1_011:
 	.byte		N06   , Fn1 , v120
 	.byte	W06
 	.byte		        Fn1 , v072
@@ -218,7 +218,7 @@ L_FE4_Fateful_Showdown_1_011:
 	.byte	W06
 @ 014   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_1_011
+	 .word	FatefulShowdown_1_011
 @ 015   ----------------------------------------
 	.byte		N06   , An1 , v120
 	.byte	W06
@@ -276,19 +276,19 @@ L_FE4_Fateful_Showdown_1_011:
 @ 019   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_1_B1
-L_FE4_Fateful_Showdown_1_B2:
+	 .word	FatefulShowdown_1_B1
+FatefulShowdown_1_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.2) ****************@
 
-L_FE4_Fateful_Showdown_2:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_2:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 41
 	.byte		PAN   , c_v-26
-	.byte		VOL   , 51*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 51*FatefulShowdown_mvl/mxv
 	.byte	W24
 	.byte		N24   , As2 , v088
 	.byte		N24   , As3 , v100
@@ -306,7 +306,7 @@ L_FE4_Fateful_Showdown_2:
 	.byte		N96   , Cs3 , v088
 	.byte		N96   , Cs4 , v100
 	.byte	W96
-L_FE4_Fateful_Showdown_2_B1:
+FatefulShowdown_2_B1:
 @ 002   ----------------------------------------
 	.byte		N12   , As2 , v100
 	.byte	W12
@@ -459,7 +459,7 @@ L_FE4_Fateful_Showdown_2_B1:
 	.byte		N96   , Ds4 , v080
 	.byte	W96
 @ 016   ----------------------------------------
-L_FE4_Fateful_Showdown_2_016:
+FatefulShowdown_2_016:
 	.byte		N06   , Dn4 , v100
 	.byte	W06
 	.byte		        Dn4 , v056
@@ -477,10 +477,10 @@ L_FE4_Fateful_Showdown_2_016:
 	.byte	PEND
 @ 017   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_2_016
+	 .word	FatefulShowdown_2_016
 @ 018   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_2_016
+	 .word	FatefulShowdown_2_016
 @ 019   ----------------------------------------
 	.byte		N48   , Gn2 , v100
 	.byte		N48   , Gn3 
@@ -489,24 +489,24 @@ L_FE4_Fateful_Showdown_2_016:
 	.byte		N48   , Fs3 
 	.byte	W48
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_2_B1
-L_FE4_Fateful_Showdown_2_B2:
+	 .word	FatefulShowdown_2_B1
+FatefulShowdown_2_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.3) ****************@
 
-L_FE4_Fateful_Showdown_3:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_3:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 41
-	.byte		VOL   , 51*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 51*FatefulShowdown_mvl/mxv
 	.byte		N96   , Gn1 , v100
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte		        Gs1 
 	.byte	W96
-L_FE4_Fateful_Showdown_3_B1:
+FatefulShowdown_3_B1:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
@@ -603,19 +603,19 @@ L_FE4_Fateful_Showdown_3_B1:
 @ 019   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_3_B1
-L_FE4_Fateful_Showdown_3_B2:
+	 .word	FatefulShowdown_3_B1
+FatefulShowdown_3_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.4) ****************@
 
-L_FE4_Fateful_Showdown_4:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_4:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 57
 	.byte		PAN   , c_v+26
-	.byte		VOL   , 51*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 51*FatefulShowdown_mvl/mxv
 	.byte	W24
 	.byte		N24   , As2 , v088
 	.byte		N24   , As3 , v100
@@ -633,7 +633,7 @@ L_FE4_Fateful_Showdown_4:
 	.byte		N96   , Cs3 , v088
 	.byte		N96   , Cs4 , v100
 	.byte	W96
-L_FE4_Fateful_Showdown_4_B1:
+FatefulShowdown_4_B1:
 @ 002   ----------------------------------------
 	.byte		N12   , As3 , v100
 	.byte	W12
@@ -774,24 +774,24 @@ L_FE4_Fateful_Showdown_4_B1:
 @ 019   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_4_B1
-L_FE4_Fateful_Showdown_4_B2:
+	 .word	FatefulShowdown_4_B1
+FatefulShowdown_4_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.5) ****************@
 
-L_FE4_Fateful_Showdown_5:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_5:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 28
-	.byte		VOL   , 51*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 51*FatefulShowdown_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
-L_FE4_Fateful_Showdown_5_B1:
+FatefulShowdown_5_B1:
 @ 002   ----------------------------------------
-L_FE4_Fateful_Showdown_5_002:
+FatefulShowdown_5_002:
 	.byte		N12   , Gn1 , v100
 	.byte	W12
 	.byte		        Fs0 
@@ -810,7 +810,7 @@ L_FE4_Fateful_Showdown_5_002:
 	.byte	W12
 	.byte	PEND
 @ 003   ----------------------------------------
-L_FE4_Fateful_Showdown_5_003:
+FatefulShowdown_5_003:
 	.byte		N12   , Fs0 , v100
 	.byte	W12
 	.byte		        Gn1 
@@ -830,10 +830,10 @@ L_FE4_Fateful_Showdown_5_003:
 	.byte	PEND
 @ 004   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_5_002
+	 .word	FatefulShowdown_5_002
 @ 005   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_5_003
+	 .word	FatefulShowdown_5_003
 @ 006   ----------------------------------------
 	.byte		N96   , Gn0 , v100
 	.byte		N96   , Gn1 
@@ -890,7 +890,7 @@ L_FE4_Fateful_Showdown_5_003:
 	.byte		N06   
 	.byte	W06
 @ 011   ----------------------------------------
-L_FE4_Fateful_Showdown_5_011:
+FatefulShowdown_5_011:
 	.byte		N12   , Fn1 , v100
 	.byte	W12
 	.byte		N06   , Fn1 , v072
@@ -968,7 +968,7 @@ L_FE4_Fateful_Showdown_5_011:
 	.byte	W06
 @ 014   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_5_011
+	 .word	FatefulShowdown_5_011
 @ 015   ----------------------------------------
 	.byte		N12   , An1 , v100
 	.byte	W12
@@ -1018,22 +1018,22 @@ L_FE4_Fateful_Showdown_5_011:
 @ 019   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_5_B1
-L_FE4_Fateful_Showdown_5_B2:
+	 .word	FatefulShowdown_5_B1
+FatefulShowdown_5_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.6) ****************@
 
-L_FE4_Fateful_Showdown_6:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_6:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 61
-	.byte		VOL   , 51*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 51*FatefulShowdown_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
-L_FE4_Fateful_Showdown_6_B1:
+FatefulShowdown_6_B1:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
@@ -1093,7 +1093,7 @@ L_FE4_Fateful_Showdown_6_B1:
 @ 015   ----------------------------------------
 	.byte	W96
 @ 016   ----------------------------------------
-L_FE4_Fateful_Showdown_6_016:
+FatefulShowdown_6_016:
 	.byte		N06   , Dn4 , v100
 	.byte	W06
 	.byte		        Dn4 , v056
@@ -1109,29 +1109,29 @@ L_FE4_Fateful_Showdown_6_016:
 	.byte	PEND
 @ 017   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_6_016
+	 .word	FatefulShowdown_6_016
 @ 018   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_6_016
+	 .word	FatefulShowdown_6_016
 @ 019   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_6_B1
-L_FE4_Fateful_Showdown_6_B2:
+	 .word	FatefulShowdown_6_B1
+FatefulShowdown_6_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 7 (Midi-Chn.7) ****************@
 
-L_FE4_Fateful_Showdown_7:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_7:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 52
-	.byte		VOL   , 51*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 51*FatefulShowdown_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
-L_FE4_Fateful_Showdown_7_B1:
+FatefulShowdown_7_B1:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
@@ -1173,26 +1173,26 @@ L_FE4_Fateful_Showdown_7_B1:
 @ 019   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_7_B1
-L_FE4_Fateful_Showdown_7_B2:
+	 .word	FatefulShowdown_7_B1
+FatefulShowdown_7_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 8 (Midi-Chn.8) ****************@
 
-L_FE4_Fateful_Showdown_8:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_8:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 30
-	.byte		VOL   , 63*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 63*FatefulShowdown_mvl/mxv
 	.byte		N96   , Gn1 , v112
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte		        Gs1 
 	.byte	W96
-L_FE4_Fateful_Showdown_8_B1:
+FatefulShowdown_8_B1:
 @ 002   ----------------------------------------
-L_FE4_Fateful_Showdown_8_002:
+FatefulShowdown_8_002:
 	.byte		N12   , Gn1 , v112
 	.byte	W12
 	.byte		N06   , Gn0 
@@ -1211,7 +1211,7 @@ L_FE4_Fateful_Showdown_8_002:
 	.byte	W12
 	.byte	PEND
 @ 003   ----------------------------------------
-L_FE4_Fateful_Showdown_8_003:
+FatefulShowdown_8_003:
 	.byte		N06   , Gn0 , v112
 	.byte	W12
 	.byte		N12   , Gn1 
@@ -1230,10 +1230,10 @@ L_FE4_Fateful_Showdown_8_003:
 	.byte	PEND
 @ 004   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_8_002
+	 .word	FatefulShowdown_8_002
 @ 005   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_8_003
+	 .word	FatefulShowdown_8_003
 @ 006   ----------------------------------------
 	.byte		N96   , Gn1 , v100
 	.byte	W96
@@ -1274,7 +1274,7 @@ L_FE4_Fateful_Showdown_8_003:
 	.byte		N06   
 	.byte	W06
 @ 011   ----------------------------------------
-L_FE4_Fateful_Showdown_8_011:
+FatefulShowdown_8_011:
 	.byte		N12   , Fn1 , v112
 	.byte	W12
 	.byte		N06   , Fn1 , v072
@@ -1352,7 +1352,7 @@ L_FE4_Fateful_Showdown_8_011:
 	.byte	W06
 @ 014   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_8_011
+	 .word	FatefulShowdown_8_011
 @ 015   ----------------------------------------
 	.byte		N12   , An1 , v112
 	.byte	W12
@@ -1393,22 +1393,22 @@ L_FE4_Fateful_Showdown_8_011:
 	.byte		        Fs1 
 	.byte	W48
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_8_B1
-L_FE4_Fateful_Showdown_8_B2:
+	 .word	FatefulShowdown_8_B1
+FatefulShowdown_8_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 9 (Midi-Chn.9) ****************@
 
-L_FE4_Fateful_Showdown_9:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_9:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 31
-	.byte		VOL   , 51*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 51*FatefulShowdown_mvl/mxv
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
-L_FE4_Fateful_Showdown_9_B1:
+FatefulShowdown_9_B1:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
@@ -1450,18 +1450,18 @@ L_FE4_Fateful_Showdown_9_B1:
 	.byte		N24   , En3 
 	.byte	W24
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_9_B1
-L_FE4_Fateful_Showdown_9_B2:
+	 .word	FatefulShowdown_9_B1
+FatefulShowdown_9_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 10 (Midi-Chn.10) ****************@
 
-L_FE4_Fateful_Showdown_10:
-	.byte	KEYSH , L_FE4_Fateful_Showdown_key+0
+FatefulShowdown_10:
+	.byte	KEYSH , FatefulShowdown_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 127
-	.byte		VOL   , 57*L_FE4_Fateful_Showdown_mvl/mxv
+	.byte		VOL   , 57*FatefulShowdown_mvl/mxv
 	.byte		N96   , Cs2 , v100
 	.byte		N96   , Gn2 
 	.byte		N96   , An2 , v072
@@ -1495,7 +1495,7 @@ L_FE4_Fateful_Showdown_10:
 	.byte	W06
 	.byte		N06   
 	.byte	W06
-L_FE4_Fateful_Showdown_10_B1:
+FatefulShowdown_10_B1:
 @ 002   ----------------------------------------
 	.byte		N12   , Cn1 , v100
 	.byte		N96   , Cs2 
@@ -1630,7 +1630,7 @@ L_FE4_Fateful_Showdown_10_B1:
 	.byte		N12   
 	.byte	W24
 @ 011   ----------------------------------------
-L_FE4_Fateful_Showdown_10_011:
+FatefulShowdown_10_011:
 	.byte		N12   , Cn1 , v100
 	.byte		N12   , As1 
 	.byte	W24
@@ -1655,9 +1655,9 @@ L_FE4_Fateful_Showdown_10_011:
 	.byte	W24
 @ 013   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_10_011
+	 .word	FatefulShowdown_10_011
 @ 014   ----------------------------------------
-L_FE4_Fateful_Showdown_10_014:
+FatefulShowdown_10_014:
 	.byte		N12   , Cn1 , v100
 	.byte		N12   , Dn1 
 	.byte		N12   , As1 
@@ -1677,9 +1677,9 @@ L_FE4_Fateful_Showdown_10_014:
 	.byte	PEND
 @ 015   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_10_014
+	 .word	FatefulShowdown_10_014
 @ 016   ----------------------------------------
-L_FE4_Fateful_Showdown_10_016:
+FatefulShowdown_10_016:
 	.byte		N96   , Cs2 , v100
 	.byte		N96   , Gn2 
 	.byte		N96   , An2 , v072
@@ -1693,10 +1693,10 @@ L_FE4_Fateful_Showdown_10_016:
 	.byte	PEND
 @ 017   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_10_016
+	 .word	FatefulShowdown_10_016
 @ 018   ----------------------------------------
 	.byte	PATT
-	 .word	L_FE4_Fateful_Showdown_10_016
+	 .word	FatefulShowdown_10_016
 @ 019   ----------------------------------------
 	.byte		N12   , Cn1 , v100
 	.byte		N12   , Dn1 
@@ -1711,31 +1711,31 @@ L_FE4_Fateful_Showdown_10_016:
 	.byte		N12   , Dn1 
 	.byte	W24
 	.byte	GOTO
-	 .word	L_FE4_Fateful_Showdown_10_B1
-L_FE4_Fateful_Showdown_10_B2:
+	 .word	FatefulShowdown_10_B1
+FatefulShowdown_10_B2:
 @ 020   ----------------------------------------
 	.byte	FINE
 
 @******************************************************@
 	.align	2
 
-L_FE4_Fateful_Showdown:
+FatefulShowdown:
 	.byte	10	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	L_FE4_Fateful_Showdown_pri	@ Priority
-	.byte	L_FE4_Fateful_Showdown_rev	@ Reverb.
+	.byte	FatefulShowdown_pri	@ Priority
+	.byte	FatefulShowdown_rev	@ Reverb.
 
-	.word	L_FE4_Fateful_Showdown_grp
+	.word	FatefulShowdown_grp
 
-	.word	L_FE4_Fateful_Showdown_1
-	.word	L_FE4_Fateful_Showdown_2
-	.word	L_FE4_Fateful_Showdown_3
-	.word	L_FE4_Fateful_Showdown_4
-	.word	L_FE4_Fateful_Showdown_5
-	.word	L_FE4_Fateful_Showdown_6
-	.word	L_FE4_Fateful_Showdown_7
-	.word	L_FE4_Fateful_Showdown_8
-	.word	L_FE4_Fateful_Showdown_9
-	.word	L_FE4_Fateful_Showdown_10
+	.word	FatefulShowdown_1
+	.word	FatefulShowdown_2
+	.word	FatefulShowdown_3
+	.word	FatefulShowdown_4
+	.word	FatefulShowdown_5
+	.word	FatefulShowdown_6
+	.word	FatefulShowdown_7
+	.word	FatefulShowdown_8
+	.word	FatefulShowdown_9
+	.word	FatefulShowdown_10
 
 	.end

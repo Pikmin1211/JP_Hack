@@ -27,6 +27,11 @@ SetClassSwordRank(WyvernLord,0)
 SetClassAxeRank(WyvernLord,DRank)
 SetClassDescription(WyvernLord,WyvernLordDescription)
 
+SetClassSwordRank(Falcoknight,0)
+SetClassStaffRank(Falcoknight,DRank)
+SetClassDescription(Falcoknight,FalcoknightDescription)
+SetClassClassType(Falcoknight,MageType|FlierType)
+
 SetClassPromos(MageF,SageF,Witch)
 SetClassPromos(ShamanF,DruidF,Witch)
 SetClassPromos(PegasusKnight,Falcoknight,DarkFlier)
@@ -85,6 +90,8 @@ SetItemWeight(Lightning,2)
 SetItemWeight(Shine,4)
 SetItemWeight(Divine,6)
 SetItemWeight(Aura,10)
+
+SetItemAccuracy(Ballista,80)
 
 NewThiefSkillList:
 BYTE 255 StealID

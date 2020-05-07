@@ -7,7 +7,7 @@
 #undef NovalaMug
 
 #define MautheDoog 0x5B
-#define FieryFang 0xB1
+//#define FieryFang 0xB1
 
 #include "Item Definitions.event"
 #include "Class Definitions.event"

@@ -122,3 +122,34 @@
 #define BowKnightLanceAnim 0xF5//AnimationID here
 #define BowKnightUnarmedAnim 0xF6//AnimationID here
 #define BowKnightClassCard 0x111//MugID here
+
+#undef Tent
+#define Tent 0x92//ClassID here
+#define TentClassCard 0x112//MugID here
+
+#define Medic 0x93//ClassID here
+#define MedicStaffAnim 0xF7//AnimationID here
+#define MedicUnarmedAnim PegasusKnightUnarmedAnim//AnimationID here
+#define MedicClassCard 0x113//MugID here
+
+#define FalcoknightStaffAnim FalcoknightSwordAnim
+
+#define Harrier 0x94//ClassID here
+#define HarrierMagicAnim 0xF9//AnimationID here
+#define HarrierClassCard 0x114//MugID here
+
+#define Wanderer 0x95//ClassID here
+#define WandererSwordAnim 0xFA//AnimationID here
+#define WandererLanceAnim 0xFB//AnimationID here
+#define WandererUnarmedAnim 0xFC//AnimationID here
+#define WandererClassCard 0x115//MugID here
+
+#define StarLion 0x96
+
+#define Brawler 0x97//ClassID here
+#define BrawlerAxeAnim 0xFD//AnimationID here
+#define BrawlerHandaxeAnim 0xF8//AnimationID here
+#define BrawlerUnarmedAnim 0xFE//AnimationID here
+#define BrawlerClassCard 0x116//MugID here
+
+#define Gladiator 0x98

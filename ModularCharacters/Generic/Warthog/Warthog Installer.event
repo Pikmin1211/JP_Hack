@@ -1,0 +1,12 @@
+
+
+{
+	#define UnitID Warthog
+	#define UnitNameLocation WarthogName
+	#define UnitDescriptionLocation WarthogDescription
+	#define UnitFaction WarthogFaction
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

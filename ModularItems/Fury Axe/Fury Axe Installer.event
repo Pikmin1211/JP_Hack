@@ -1,0 +1,15 @@
+
+
+{
+	#define ItemNumber FuryAxe
+	#define ItemIcon FuryAxeIcon
+	#define ItemMagicAnimation FuryAxeMagicAnim
+	#define ItemNameLocation FuryAxeName
+	#define ItemDescriptionLocation FuryAxeDescription
+	#define ItemUseTextLocation FuryAxeUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

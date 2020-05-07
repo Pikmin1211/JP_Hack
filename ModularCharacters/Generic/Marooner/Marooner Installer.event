@@ -1,0 +1,12 @@
+
+
+{
+	#define UnitID Marooner
+	#define UnitNameLocation MaroonerName
+	#define UnitDescriptionLocation MaroonerDescription
+	#define UnitFaction MaroonerFaction
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

@@ -276,6 +276,7 @@ EndingScene:
 	SVAL 0x1 6
 	BNE 1 0xC 0x1 // branch label 1 if not all civs escaped
 		Text(Ch4GetItem)
+		REMOVEPORTRAITS
 		GiveItem(Swordreaver,Sanders)
 		LABEL 1
 	MUSC EnemyMessage3Song

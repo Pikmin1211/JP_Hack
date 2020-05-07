@@ -275,3 +275,105 @@ Jason[X]
 
 ## JasonDescription
 Placeholder[X]
+
+## StallionName
+Stallion[X]
+
+## StallionDescription
+Placeholder[X]
+
+## AlbatrossName
+Albatross[X]
+
+## AlbatrossDescription
+Placeholder[X]
+
+## WarthogName
+Warthog[X]
+
+## WarthogDescription
+Placeholder[X]
+
+## CobraName
+Cobra[X]
+
+## CobraDescription
+Placeholder[X]
+
+## PantherName
+Panther[X]
+
+## PantherDescription
+Placeholder[X]
+
+## DonnalenName
+Donnalen[X]
+
+## DonnalenDescription
+Placeholder[X]
+
+## DevvyName
+Devvy[X]
+
+## DevvyDescription
+Placeholder[X]
+
+## NorneName
+Norne[X]
+
+## NorneDescription
+Placeholder[X]
+
+## DracoName
+Draco[X]
+
+## DracoDescription
+Placeholder[X]
+
+## PanielName
+Paniel[X]
+
+## PanielDescription
+Placeholder[X]
+
+## GinkoName
+Ginko[X]
+
+## GinkoDescription
+Placeholder[X]
+
+## NaotoName
+Naoto[X]
+
+## NaotoDescription
+Placeholder[X]
+
+## NatsukiName
+Natsuki[X]
+
+## NatsukiDescription
+Placeholder[X]
+
+## MaroonerName
+Marooner[X]
+
+## MaroonerDescription
+Placeholder[X]
+
+## CedwickName
+Cedwick[X]
+
+## CedwickDescription
+Placeholder[X]
+
+## WendyName
+Wendy[X]
+
+## WendyDescription
+Placeholder[X]
+
+## AnabelleName
+Anabelle[X]
+
+## AnabelleDescription
+Placeholder[X]

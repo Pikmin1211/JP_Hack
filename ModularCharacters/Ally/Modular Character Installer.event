@@ -47,3 +47,25 @@
 #include "Arle/Arle Installer.event"
 
 #include "Jason/Jason Installer.event"
+
+#include "Donnalen/Donnalen Installer.event"
+
+#include "Devvy/Devvy Installer.event"
+
+#include "Norne/Norne Installer.event"
+
+#include "Draco/Draco Installer.event"
+
+#include "Ginko/Ginko Installer.event"
+
+#include "Schezo2/Schezo2 Installer.event"
+
+#include "Naoto/Naoto Installer.event"
+
+#include "Natsuki/Natsuki Installer.event"
+
+#include "Paniel/Paniel Installer.event"
+
+#include "Anabelle/Anabelle Installer.event"
+
+#include "Wendy/Wendy Installer.event"

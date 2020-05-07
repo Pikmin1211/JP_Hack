@@ -1,0 +1,22 @@
+ALIGN 4
+
+MESSAGE Thing at currentOffset
+
+SaveSecondGoldASMC:
+#incbin "SaveSecondGold.dmp"
+
+SetupUnitASMC:
+#incbin "SetupUnit.dmp"
+
+CombineGoldASMC:
+#incbin "CombineGold.dmp"
+
+#define ChangeGold "ASMC SaveSecondGoldASMC|1"
+
+DummyUnit:
+UNIT 0x3D Cavalier 0x0 Level(1,Ally,0) [0,0] 0 0 0 0 [0x0] NoAI
+UNIT
+
+#define SetupGold "LOAD1 0x1 DummyUnit; ENUN; REMU 0x3D; ASMC SetupUnitASMC|1"
+
+#define CombineGold "ASMC CombineGoldASMC|1"

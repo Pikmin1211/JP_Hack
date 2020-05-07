@@ -33,15 +33,7 @@ WagonsAppear:
 	SpawnReinforcements(WagonUnits)
 	FlashCursor(Wagon,60)
 	FlashCursor(Wagon2,60)
-	Text(TestDialogue)
-	CAM1 Kekh
-	FlashCursor(Kekh,60)
-	Text(TestDialogue)
-	CAM1 [6,19]
-	FlashCursor(Batta,60)
-	Text(TestDialogue)
-	FlashCursor(ONeill,60)
-	Text(TestDialogue)
+	Text(Ch5Turn1Event)
 	NoFade
 	ENDA
 
@@ -204,13 +196,13 @@ LocationBasedEvents:
 	END_MAIN
 
 LeftVillage:
-	VillageEventItem(TestDialogue,HouseBG,KillerBow)
+	VillageEventItem(Ch5Village1,HouseBG,KillerBow)
 
 MidVillage:
-	VillageEventItem(TestDialogue,HouseBG,RedGem)
+	VillageEventItem(Ch5Village2,Salehs_House,RedGem)
 
 RightVillage:
-	VillageEventItem(TestDialogue,HouseBG,Lancereaver)
+	VillageEventItem(Ch5Village3,HouseBG,Lancereaver)
 
 Ch5Armory:
 	SHLI IronSword SteelSword SlimSword LightBrand IronLance SteelLance SlimLance Javelin IronAxe SteelAxe HandAxe Hammer IronBow SteelBow ShortBow
@@ -375,16 +367,34 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	MUSC LonelyTownSoulBlazerSong
+	SetBackground(Outside_Village_Day)
+	Text(Ch5OP)
+	MUSC ToccataAndDoomSong
+	SetBackground(Plain)
+	Text(Ch5OP2)
+	MUSC StoryLangrisserSong
+	SetBackground(Village)
+	Text(Ch5OP3)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
+	FADI 16
 	SendAll(Wagon)
 	SendAll(Wagon2)
-	CALL CounterChecker
-	FADI 16
 	DISA Wagon
 	DISA Wagon2
+	MUSC WhereTheWindRustlesSong
+	SetBackground(Village)
+	Text(Ch5Ending)
+	COUNTER_CHECK 1
+	SVAL 0x1 4
+	BLT 1 0xC 0x1
+		Text(Ch5ItemGet)
+		REMOVEPORTRAITS
+		CALL CounterChecker
+	LABEL 1
 	MNC2 6
 	NoFade
 	ENDA

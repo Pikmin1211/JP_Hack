@@ -1,0 +1,1948 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	ACrisis_grp  voicegroup000
+	#define	ACrisis_pri  0
+	#define	ACrisis_rev  0
+	#define	ACrisis_mvl  80
+	#define	ACrisis_key  0
+	#define	ACrisis_tbs  1
+	#define	ACrisis_exg  0
+	#define	ACrisis_cmp  1
+
+	// .rodata
+	//	ACrisis
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+ACrisis_1:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   173*ACrisis_tbs/2
+	BYTE		VOICE   29
+	BYTE		VOL     82*ACrisis_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N36     Dn3   v127
+	BYTE		N36     Fn3 
+	BYTE	W36
+	BYTE		N24     Cn3 
+	BYTE		N24     Ds3 
+	BYTE	W36
+	BYTE		N36     Fn3 
+	BYTE		N36     Gs3 
+	BYTE	W24
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		N24     Ds3 
+	BYTE		N24     Gn3 
+	BYTE	W36
+	BYTE		N12   
+	BYTE		N12     As3 
+	BYTE	W24
+	BYTE		        Fn3 
+	BYTE		N12     Gs3 
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE		N84     Gn3 
+	BYTE		N84     Bn3 
+	BYTE	W84
+	BYTE		TIE     Dn3 
+	BYTE		TIE     Gn3 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Dn3 
+	BYTE		        Gn3 
+// 004   ----------------------------------------
+ACrisis_1_004:
+	BYTE		N36     Gn3   v127
+	BYTE	W36
+	BYTE		N12     Gs3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+ACrisis_1_005:
+	BYTE	W12
+	BYTE		N12     Gs3   v127
+	BYTE	W24
+	BYTE		        An3 
+	BYTE	W24
+	BYTE		        As3 
+	BYTE	W24
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_005
+// 008   ----------------------------------------
+ACrisis_1_008:
+	BYTE		N36     Cn4   v127
+	BYTE	W36
+	BYTE		N12     Cs4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+ACrisis_1_009:
+	BYTE	W12
+	BYTE		N12     Cs4   v127
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W24
+	BYTE		        Ds4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_009
+// 012   ----------------------------------------
+	BYTE	W24
+ACrisis_1_B1:
+	BYTE		N24     Gs2   v127
+	BYTE		N24     Dn3 
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		N12     Gn2 
+	BYTE		N12     Cn3 
+	BYTE		N12     Ds3 
+	BYTE	W24
+// 013   ----------------------------------------
+ACrisis_1_013:
+	BYTE	W24
+	BYTE		N24     Cn3   v127
+	BYTE		N24     Fn3 
+	BYTE		N24     Gs3 
+	BYTE	W24
+	BYTE		N12     Cn3 
+	BYTE		N12     En3 
+	BYTE		N12     Gn3 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+ACrisis_1_014:
+	BYTE	W24
+	BYTE		N24     En3   v127
+	BYTE		N24     Gn3 
+	BYTE		N24     As3 
+	BYTE	W24
+	BYTE		N12     Cn3 
+	BYTE		N12     Fn3 
+	BYTE		N12     Gs3 
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE		N12     An3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE		N12     Ds4 
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE		N12     Fn4 
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_005
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_004
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_005
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_009
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_009
+// 024   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ACrisis_1_B1
+ACrisis_1_B2:
+	BYTE		N24     Gs2   v127
+	BYTE		N24     Dn3 
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		N12     Gn2 
+	BYTE		N12     Cn3 
+	BYTE		N12     Ds3 
+	BYTE	W24
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_1_014
+// 027   ----------------------------------------
+	BYTE	W68
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+ACrisis_2:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   40
+	BYTE		VOL     66*ACrisis_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N36     Dn3   v116
+	BYTE		N36     Fn3 
+	BYTE	W36
+	BYTE		N24     Cn3 
+	BYTE		N24     Ds3 
+	BYTE	W36
+	BYTE		N36     Fn3 
+	BYTE		N36     Gs3 
+	BYTE	W24
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		N24     Ds3 
+	BYTE		N24     Gn3 
+	BYTE	W36
+	BYTE		N12   
+	BYTE		N12     As3 
+	BYTE	W24
+	BYTE		        Fn3 
+	BYTE		N12     Gs3 
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE		N84     Gn3 
+	BYTE		N84     Bn3 
+	BYTE	W84
+	BYTE		TIE     Dn3 
+	BYTE		TIE     Gn3 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Dn3 
+	BYTE		        Gn3 
+// 004   ----------------------------------------
+ACrisis_2_004:
+	BYTE		N36     Gn3   v116
+	BYTE	W36
+	BYTE		N12     Gs3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+ACrisis_2_005:
+	BYTE	W12
+	BYTE		N12     Gs3   v116
+	BYTE	W24
+	BYTE		        An3 
+	BYTE	W24
+	BYTE		        As3 
+	BYTE	W24
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_005
+// 008   ----------------------------------------
+ACrisis_2_008:
+	BYTE		N36     Cn4   v116
+	BYTE	W36
+	BYTE		N12     Cs4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+ACrisis_2_009:
+	BYTE	W12
+	BYTE		N12     Cs4   v116
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W24
+	BYTE		        Ds4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_009
+// 012   ----------------------------------------
+	BYTE	W24
+ACrisis_2_B1:
+	BYTE		N24     Gs2   v116
+	BYTE		N24     Dn3 
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		N12     Gn2 
+	BYTE		N12     Cn3 
+	BYTE		N12     Ds3 
+	BYTE	W24
+// 013   ----------------------------------------
+ACrisis_2_013:
+	BYTE	W24
+	BYTE		N24     Cn3   v116
+	BYTE		N24     Fn3 
+	BYTE		N24     Gs3 
+	BYTE	W24
+	BYTE		N12     Cn3 
+	BYTE		N12     En3 
+	BYTE		N12     Gn3 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+ACrisis_2_014:
+	BYTE	W24
+	BYTE		N24     En3   v116
+	BYTE		N24     Gn3 
+	BYTE		N24     As3 
+	BYTE	W24
+	BYTE		N12     Cn3 
+	BYTE		N12     Fn3 
+	BYTE		N12     Gs3 
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE		N12     An3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE		N12     Ds4 
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE		N12     Fn4 
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_005
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_004
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_005
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_009
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_009
+// 024   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ACrisis_2_B1
+ACrisis_2_B2:
+	BYTE		N24     Gs2   v116
+	BYTE		N24     Dn3 
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		N12     Gn2 
+	BYTE		N12     Cn3 
+	BYTE		N12     Ds3 
+	BYTE	W24
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_2_014
+// 027   ----------------------------------------
+	BYTE	W68
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+ACrisis_3:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   30
+	BYTE		VOL     44*ACrisis_mvl/mxv
+	BYTE		PAN     c_v+6
+	BYTE		N12     Fn2   v120
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W60
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W48
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		TIE   
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+// 004   ----------------------------------------
+ACrisis_3_004:
+	BYTE		N05     Cn2   v100
+	BYTE	W12
+	BYTE		N11     Cn2   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Cn2   v100
+	BYTE	W12
+	BYTE		N11     Cn2   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Cn2   v100
+	BYTE	W12
+	BYTE		N11     Cn2   v120
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_004
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_004
+// 008   ----------------------------------------
+ACrisis_3_008:
+	BYTE		N05     Fn1   v100
+	BYTE	W12
+	BYTE		N11     Fn1   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Fn1   v100
+	BYTE	W12
+	BYTE		N11     Fn1   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Fn1   v100
+	BYTE	W12
+	BYTE		N11     Fn1   v120
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_008
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_008
+// 012   ----------------------------------------
+ACrisis_3_012:
+	BYTE		N11     Cn2   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+ACrisis_3_B1:
+	BYTE	W48
+// 013   ----------------------------------------
+ACrisis_3_013:
+	BYTE		N11     Cn2   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W60
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_013
+// 015   ----------------------------------------
+	BYTE		N11     Gn1   v120
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Gn1   v100
+	BYTE	W12
+	BYTE		N11     Gn1   v120
+	BYTE	W12
+	BYTE		N05     Gn1   v100
+	BYTE	W12
+	BYTE		N11     Gn1   v120
+	BYTE	W12
+	BYTE		N05     Gn1   v100
+	BYTE	W12
+	BYTE		N11     Gn1   v120
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_004
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_004
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_004
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_008
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_008
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_012
+	BYTE	GoTo
+	 POIN2	ACrisis_3_B1
+ACrisis_3_B2:
+	BYTE	W48
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_3_013
+// 027   ----------------------------------------
+	BYTE	W68
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+ACrisis_4:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   36
+	BYTE		VOL     101*ACrisis_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N32     Fn2   v127
+	BYTE	W36
+	BYTE		N22     Cn2 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N32     Fn2 
+	BYTE	W24
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		N22     Cn2 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		N22     Gn1 
+	BYTE	W24
+	BYTE		N22   
+	BYTE	W24
+	BYTE		N22   
+	BYTE	W24
+	BYTE		N22   
+	BYTE	W24
+// 003   ----------------------------------------
+ACrisis_4_003:
+	BYTE		N04     Gn2   v127
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE	PEND
+// 004   ----------------------------------------
+ACrisis_4_004:
+	BYTE		N22     Cn2   v127
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04     Cn3 
+	BYTE	W12
+	BYTE		N22     Cn2 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+ACrisis_4_005:
+	BYTE		N10     Cn2   v127
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		        Cn2   v108
+	BYTE	W12
+	BYTE		        Cn2   v127
+	BYTE	W12
+	BYTE		N04     Cn3 
+	BYTE	W12
+	BYTE		N10     Cn2 
+	BYTE	W12
+	BYTE		N04     Cn3 
+	BYTE	W12
+	BYTE		N10     Cn2 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_005
+// 008   ----------------------------------------
+ACrisis_4_008:
+	BYTE		N22     Fn1   v127
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04     Fn2 
+	BYTE	W12
+	BYTE		N22     Fn1 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+ACrisis_4_009:
+	BYTE		N10     Fn1   v127
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		        Fn1   v108
+	BYTE	W12
+	BYTE		        Fn1   v127
+	BYTE	W12
+	BYTE		N04     Fn2 
+	BYTE	W12
+	BYTE		N10     Fn1 
+	BYTE	W12
+	BYTE		N04     Fn2 
+	BYTE	W12
+	BYTE		N10     Fn1 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_009
+// 012   ----------------------------------------
+ACrisis_4_012:
+	BYTE		N10     Cn2   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE	PEND
+ACrisis_4_B1:
+	BYTE		N22     Fn2   v127
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+// 013   ----------------------------------------
+ACrisis_4_013:
+	BYTE		N10     Cn2   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N22     Fn2 
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+ACrisis_4_014:
+	BYTE		N10     Cn2   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N22     En2 
+	BYTE	W24
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_003
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_005
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_004
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_005
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_009
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_009
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_012
+	BYTE	GoTo
+	 POIN2	ACrisis_4_B1
+ACrisis_4_B2:
+	BYTE		N22     Fn2   v127
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_4_014
+// 027   ----------------------------------------
+	BYTE		N04     Gn2   v127
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W10
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+ACrisis_5:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     45*ACrisis_mvl/mxv
+	BYTE		PAN     c_v-8
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+ACrisis_5_004:
+	BYTE		N06     Gn3   v116
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE		        Gs3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_004
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_004
+// 008   ----------------------------------------
+ACrisis_5_008:
+	BYTE		N06     Cn4   v116
+	BYTE	W06
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Ds4 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Ds4 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Ds4 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		        Cn4 
+	BYTE	W06
+	BYTE		        Ds4 
+	BYTE	W06
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_008
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_008
+// 012   ----------------------------------------
+	BYTE	W24
+ACrisis_5_B1:
+	BYTE	W48
+// 013   ----------------------------------------
+	BYTE	W72
+// 014   ----------------------------------------
+	BYTE	W72
+// 015   ----------------------------------------
+	BYTE		N06     Bn2   v116
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_004
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_004
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_004
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_008
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_5_008
+// 024   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ACrisis_5_B1
+ACrisis_5_B2:
+	BYTE	W48
+// 025   ----------------------------------------
+	BYTE	W72
+// 026   ----------------------------------------
+	BYTE	W72
+// 027   ----------------------------------------
+	BYTE	W68
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+ACrisis_6:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   30
+	BYTE		VOL     45*ACrisis_mvl/mxv
+	BYTE		PAN     c_v+6
+	BYTE		N12     Fn1   v092
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W60
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W48
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		        Fn0 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE	W12
+	BYTE		        Gn0 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W24
+	BYTE		TIE   
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT   
+// 004   ----------------------------------------
+ACrisis_6_004:
+	BYTE		N05     Cn1   v072
+	BYTE	W12
+	BYTE		N11     Cn1   v092
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Cn1   v072
+	BYTE	W12
+	BYTE		N11     Cn1   v092
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Cn1   v072
+	BYTE	W12
+	BYTE		N11     Cn1   v092
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_004
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_004
+// 008   ----------------------------------------
+ACrisis_6_008:
+	BYTE		N05     Fn0   v072
+	BYTE	W12
+	BYTE		N11     Fn0   v092
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Fn0   v072
+	BYTE	W12
+	BYTE		N11     Fn0   v092
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Fn0   v072
+	BYTE	W12
+	BYTE		N11     Fn0   v092
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_008
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_008
+// 012   ----------------------------------------
+ACrisis_6_012:
+	BYTE		N11     Cn1   v092
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE	PEND
+ACrisis_6_B1:
+	BYTE	W48
+// 013   ----------------------------------------
+ACrisis_6_013:
+	BYTE		N11     Cn1   v092
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W60
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_013
+// 015   ----------------------------------------
+	BYTE		N11     Gn0   v092
+	BYTE	W12
+	BYTE		N11   
+	BYTE	W12
+	BYTE		N05     Gn0   v072
+	BYTE	W12
+	BYTE		N11     Gn0   v092
+	BYTE	W12
+	BYTE		N05     Gn0   v072
+	BYTE	W12
+	BYTE		N11     Gn0   v092
+	BYTE	W12
+	BYTE		N05     Gn0   v072
+	BYTE	W12
+	BYTE		N11     Gn0   v092
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_004
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_004
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_004
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_008
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_008
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_012
+	BYTE	GoTo
+	 POIN2	ACrisis_6_B1
+ACrisis_6_B2:
+	BYTE	W48
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_6_013
+// 027   ----------------------------------------
+	BYTE	W68
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+ACrisis_7:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   123
+	BYTE		VOL     127*ACrisis_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N01     Cs2   v116
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W06
+	BYTE		        An1 
+	BYTE	W06
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE		N01     Cs2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W06
+	BYTE		        An1 
+	BYTE	W06
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE		N01     Cs2 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE		N01     Cs2 
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE		        Cn1 
+	BYTE		N01     Cs2 
+	BYTE	W24
+	BYTE		        Cn1 
+	BYTE	W24
+	BYTE		N01   
+	BYTE	W24
+	BYTE		N01   
+	BYTE	W24
+// 003   ----------------------------------------
+	BYTE		N01   
+	BYTE	W24
+	BYTE		N01   
+	BYTE	W24
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Cn2 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Bn1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        An1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Fn1 
+	BYTE	W06
+// 004   ----------------------------------------
+ACrisis_7_004:
+	BYTE		N01     Cn1   v116
+	BYTE		N01     Cs2 
+	BYTE	W24
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		        Fs1   v076
+	BYTE	W12
+	BYTE		        Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Dn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+ACrisis_7_005:
+	BYTE		N01     Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Dn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Dn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+ACrisis_7_006:
+	BYTE		N01     Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Dn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Dn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_005
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_004
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_005
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_006
+// 011   ----------------------------------------
+ACrisis_7_011:
+	BYTE		N01     Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Dn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W12
+	BYTE		        Cn1   v116
+	BYTE		N01     Fs1   v076
+	BYTE	W18
+	BYTE		        Bn1   v116
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        An1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Fn1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE	PEND
+// 012   ----------------------------------------
+ACrisis_7_012:
+	BYTE		N01     Cn1   v116
+	BYTE		N01     Cs2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE	PEND
+ACrisis_7_B1:
+	BYTE		N01     Dn1   v116
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+// 013   ----------------------------------------
+ACrisis_7_013:
+	BYTE		N01     Cn1   v116
+	BYTE		N01     Cs2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+	BYTE	PEND
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_013
+// 015   ----------------------------------------
+	BYTE		N01     Cn1   v116
+	BYTE		N01     Cs2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		        Cs2 
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE		N01     Cs2 
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE		N01     Cs2 
+	BYTE	W06
+	BYTE		        Dn1 
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_005
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_006
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_005
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_004
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_005
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_006
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_011
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_012
+	BYTE	GoTo
+	 POIN2	ACrisis_7_B1
+ACrisis_7_B2:
+	BYTE		N01     Dn1   v116
+	BYTE	W12
+	BYTE		        Cn1 
+	BYTE	W12
+	BYTE		N01   
+	BYTE	W12
+	BYTE		        Dn1 
+	BYTE	W12
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_7_013
+// 027   ----------------------------------------
+	BYTE	W68
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 8 (Midi-Chn.8) ****************//
+
+ACrisis_8:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   81
+	BYTE		VOL     64*ACrisis_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N36     Dn3   v127
+	BYTE		N36     Fn3 
+	BYTE	W36
+	BYTE		N24     Cn3 
+	BYTE		N24     Ds3 
+	BYTE	W36
+	BYTE		N36     Fn3 
+	BYTE		N36     Gs3 
+	BYTE	W24
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		N24     Ds3 
+	BYTE		N24     Gn3 
+	BYTE	W36
+	BYTE		N12   
+	BYTE		N12     As3 
+	BYTE	W24
+	BYTE		        Fn3 
+	BYTE		N12     Gs3 
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE		N84     Gn3 
+	BYTE		N84     Bn3 
+	BYTE	W84
+	BYTE		TIE     Dn3 
+	BYTE		TIE     Gn3 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE	W96
+	BYTE		EOT     Dn3 
+	BYTE		        Gn3 
+// 004   ----------------------------------------
+ACrisis_8_004:
+	BYTE		N36     Gn3   v127
+	BYTE	W36
+	BYTE		N12     Gs3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+ACrisis_8_005:
+	BYTE	W12
+	BYTE		N12     Gs3   v127
+	BYTE	W24
+	BYTE		        An3 
+	BYTE	W24
+	BYTE		        As3 
+	BYTE	W24
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_005
+// 008   ----------------------------------------
+ACrisis_8_008:
+	BYTE		N36     Cn4   v127
+	BYTE	W36
+	BYTE		N12     Cs4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+ACrisis_8_009:
+	BYTE	W12
+	BYTE		N12     Cs4   v127
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W24
+	BYTE		        Ds4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_009
+// 012   ----------------------------------------
+	BYTE	W24
+ACrisis_8_B1:
+	BYTE		N24     Gs2   v127
+	BYTE		N24     Dn3 
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		N12     Gn2 
+	BYTE		N12     Cn3 
+	BYTE		N12     Ds3 
+	BYTE	W24
+// 013   ----------------------------------------
+ACrisis_8_013:
+	BYTE	W24
+	BYTE		N24     Cn3   v127
+	BYTE		N24     Fn3 
+	BYTE		N24     Gs3 
+	BYTE	W24
+	BYTE		N12     Cn3 
+	BYTE		N12     En3 
+	BYTE		N12     Gn3 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+ACrisis_8_014:
+	BYTE	W24
+	BYTE		N24     En3   v127
+	BYTE		N24     Gn3 
+	BYTE		N24     As3 
+	BYTE	W24
+	BYTE		N12     Cn3 
+	BYTE		N12     Fn3 
+	BYTE		N12     Gs3 
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE		        Gn3 
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE		N12     An3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE		N12     Ds4 
+	BYTE	W12
+	BYTE		        Cs4 
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE		N12     Fn4 
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_005
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_004
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_005
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_009
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_009
+// 024   ----------------------------------------
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	ACrisis_8_B1
+ACrisis_8_B2:
+	BYTE		N24     Gs2   v127
+	BYTE		N24     Dn3 
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		N12     Gn2 
+	BYTE		N12     Cn3 
+	BYTE		N12     Ds3 
+	BYTE	W24
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_8_014
+// 027   ----------------------------------------
+	BYTE	W68
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 9 (Midi-Chn.9) ****************//
+
+ACrisis_9:
+	BYTE	KEYSH   ACrisis_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   36
+	BYTE		VOL     100*ACrisis_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N32     Fn2   v127
+	BYTE	W36
+	BYTE		N22     Cn2 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N32     Fn2 
+	BYTE	W24
+// 001   ----------------------------------------
+	BYTE	W12
+	BYTE		N22     Cn2 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W24
+	BYTE		        As1 
+	BYTE	W24
+	BYTE		        Fn1 
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		N22     Gn1 
+	BYTE	W24
+	BYTE		N22   
+	BYTE	W24
+	BYTE		N22   
+	BYTE	W24
+	BYTE		N22   
+	BYTE	W24
+// 003   ----------------------------------------
+ACrisis_9_003:
+	BYTE		N04     Gn2   v127
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE	PEND
+// 004   ----------------------------------------
+ACrisis_9_004:
+	BYTE		N22     Cn2   v127
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04     Cn3 
+	BYTE	W12
+	BYTE		N22     Cn2 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+ACrisis_9_005:
+	BYTE		N10     Cn2   v127
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		        Cn2   v108
+	BYTE	W12
+	BYTE		        Cn2   v127
+	BYTE	W12
+	BYTE		N04     Cn3 
+	BYTE	W12
+	BYTE		N10     Cn2 
+	BYTE	W12
+	BYTE		N04     Cn3 
+	BYTE	W12
+	BYTE		N10     Cn2 
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_004
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_005
+// 008   ----------------------------------------
+ACrisis_9_008:
+	BYTE		N22     Fn1   v127
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		N04     Fn2 
+	BYTE	W12
+	BYTE		N22     Fn1 
+	BYTE	W24
+	BYTE		N10   
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+ACrisis_9_009:
+	BYTE		N10     Fn1   v127
+	BYTE	W12
+	BYTE		N10   
+	BYTE	W12
+	BYTE		        Fn1   v108
+	BYTE	W12
+	BYTE		        Fn1   v127
+	BYTE	W12
+	BYTE		N04     Fn2 
+	BYTE	W12
+	BYTE		N10     Fn1 
+	BYTE	W12
+	BYTE		N04     Fn2 
+	BYTE	W12
+	BYTE		N10     Fn1 
+	BYTE	W12
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_009
+// 012   ----------------------------------------
+ACrisis_9_012:
+	BYTE		N10     Cn2   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE	PEND
+ACrisis_9_B1:
+	BYTE		N22     Fn2   v127
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+// 013   ----------------------------------------
+ACrisis_9_013:
+	BYTE		N10     Cn2   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N22     Fn2 
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+ACrisis_9_014:
+	BYTE		N10     Cn2   v127
+	BYTE	W12
+	BYTE		N04   
+	BYTE	W12
+	BYTE		N22     En2 
+	BYTE	W24
+	BYTE		        Fn2 
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_003
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_004
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_005
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_004
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_005
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_008
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_009
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_008
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_009
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_012
+	BYTE	GoTo
+	 POIN2	ACrisis_9_B1
+ACrisis_9_B2:
+	BYTE		N22     Fn2   v127
+	BYTE	W24
+	BYTE		        Cn2 
+	BYTE	W24
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_013
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	ACrisis_9_014
+// 027   ----------------------------------------
+	BYTE		N04     Gn2   v127
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W12
+	BYTE		N04     Gn2 
+	BYTE	W12
+	BYTE		N10     Gn1 
+	BYTE	W10
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+ACrisis:
+	BYTE	9	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	ACrisis_pri	// Priority
+	BYTE	ACrisis_rev	// Reverb.
+
+	POIN2	ACrisis_grp
+
+	POIN2	ACrisis_1
+	POIN2	ACrisis_2
+	POIN2	ACrisis_3
+	POIN2	ACrisis_4
+	POIN2	ACrisis_5
+	POIN2	ACrisis_6
+	POIN2	ACrisis_7
+	POIN2	ACrisis_8
+	POIN2	ACrisis_9
+
+	

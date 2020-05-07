@@ -59,3 +59,11 @@ POP
 #include "mug_exceed/EA.txt"
 
 #include "NosResire/NosResire.event"
+
+#include "SecondGold/Installer.event"
+
+#include "FE8-Convoy_Stuff/FE8-Convoy_Stuff_EA.event"
+
+#include "SeizeFix/SeizeFix.event"
+
+#include "MultiSupplyUnits/Installer.event"

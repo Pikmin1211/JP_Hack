@@ -1,0 +1,5 @@
+#define Class1 0x0
+#define Class2 0x0
+#define Class3 0x0
+
+#include "Palette/Palette Setup.event"

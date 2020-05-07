@@ -1,0 +1,98 @@
+[MidLeft][LoadSanders][Right][LoadFinn][FarRight][LoadOskar]
+
+That the[N]
+
+last of them?[AN]
+
+
+
+[Right]
+
+Seems so. Whoever remained[N]
+
+appears to be fleeing.[AN]
+
+
+
+[FarRight][Clear][LoadWolt]
+
+Should we go[N]
+
+after them?[AN]
+
+
+
+[MidLeft]
+
+Let them go.[AN]
+
+Remember why we came[N]
+
+in the first place.[AN]
+
+We still need to[N]
+
+find those sewers.[AN]
+
+
+
+[MoveLeft][FarLeft][LoadVillagerMan]
+
+The sewers? They're[N]
+
+just over there.[AN]
+
+I'm not sure you'd want to[N]
+
+be heading down there, though.[AN]
+
+They're teeming with monsters.[AN]
+
+
+
+[Right]
+
+Thank you for the concern,[N]
+
+but we're aptly prepared.[AN]
+
+Shall we be off, then?[AN]
+
+
+
+[Left]
+
+Right.[N]
+
+Let's move.[AN]
+
+
+
+[Left][Clear][Right][Clear][FarRight][Clear]
+
+[MidRight][LoadVergil]
+
+[FarLeft][MoveMidLeft]
+
+Oh, sir Vergil![AN]
+
+
+
+[MidRight]
+
+What happened here, citizen?[AN]
+
+I came to investigate the[N]
+
+reports of monster attacks,[AN]
+
+but... I haven't seen so much[N]
+
+as a single soul around town.[AN]
+
+
+
+[MidLeft]
+
+Well, you see...[A][X]
+

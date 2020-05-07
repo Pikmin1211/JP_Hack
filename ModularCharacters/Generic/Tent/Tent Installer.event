@@ -1,0 +1,12 @@
+
+
+{
+	#define UnitID TentUnit
+	#define UnitNameLocation TentUnitName
+	#define UnitDescriptionLocation TentUnitDescription
+	#define UnitFaction TentUnitFaction
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

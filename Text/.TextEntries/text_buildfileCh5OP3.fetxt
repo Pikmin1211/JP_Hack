@@ -1,0 +1,48 @@
+[MidRight][LoadSanders][MidLeft][LoadMoustacheVillager]
+
+Eh? Who are you?[AN]
+
+Are you here[N]
+
+to help us out?[AN]
+
+
+
+[MidRight]
+
+Help you out...?[AN]
+
+
+
+[MidLeft]
+
+We're trying to escort the[N]
+
+villagers in our wagons, here.[AN]
+
+But we're not much for fightin'.[AN]
+
+You fellas, on the other hand,[N]
+
+seem capable. What do ya say?[AN]
+
+
+
+[MidRight]
+
+We're going to be fighting[N]
+
+these bandits anyways.[AN]
+
+I have no problem with it.[AN]
+
+
+
+[MidLeft]
+
+Thank you, sir! We just need to[N]
+
+carry them to the gates here.[AN]
+
+The road will lead them to safety.[A][X]
+

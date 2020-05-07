@@ -42,6 +42,7 @@ GalleyReinforcements:
 
 Reinforcements:
 	SpawnReinforcements(ExtraUnits)
+	SpawnReinforcements(ExtraUnits2)
 	NoFade
 	ENDA
 
@@ -157,6 +158,9 @@ StairUnits:
 ExtraUnits:
 	UNIT BattaBeast Cavalier 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [IronLance] DefaultAI
 	UNIT BattaBeast FreeKnight 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [IronSword] DefaultAI
+	UNIT
+
+ExtraUnits2:
 	UNIT BattaBeast Fighter 0x0 Level(2,Enemy,1) [0,12] 0 0 1 REDA0R12 [IronAxe] DefaultAI
 	UNIT BattaBeast Mercenary 0x0 Level(3,Enemy,1) [0,12] 0 0 1 REDA0R12 [SlimSword] DefaultAI
 	UNIT

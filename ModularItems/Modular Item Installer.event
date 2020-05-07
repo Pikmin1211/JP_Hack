@@ -113,3 +113,7 @@
 #include "Sagittae/Sagittae Installer.event"
 
 #include "Bayoen/Bayoen Installer.event"
+
+#include "Basilisk/Basilisk Installer.event"
+
+#include "Fury Axe/Fury Axe Installer.event"

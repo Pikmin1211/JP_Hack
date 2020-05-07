@@ -234,3 +234,28 @@ SongTable(OffkeySong,Offkey,1)
 
 SongTable(OldFamiliarScentSong,OldFamiliarScent,1)
 #include "S Files/OldFamiliarScent.event"
+
+SongTable(FillmoreSong,Fillmore,1)
+#include "S Files/Fillmore.event"
+
+SongTable(StrongerMonstersSong,StrongerMonsters,1)
+#include "S Files/StrongerMonsters.event"
+
+SongTable(DurantSortieSong,DurantSortie,1)
+#include "S Files/DurantSortie.event"
+
+SongTable(Lufia2Battle2Song,Lufia2Battle2,1)
+#include "S Files/Lufia2Battle2.event"
+
+SongTable(BonusStageDKCSong,BonusStageDKC,1)
+#include "S Files/BonusStageDKC.event"
+
+SongTable(InescapableSong,Inescapable,1)
+#include "S Files/Inescapable.event"
+
+SongTable(MilanorSortieSong,MilanorSortie,1)
+#include "S Files/MilanorSortie.event"
+
+SongTable(ACrisisSong,ACrisis,1)
+#include "S Files/ACrisis.event"
+

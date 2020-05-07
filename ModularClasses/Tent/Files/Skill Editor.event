@@ -1,0 +1,14 @@
+#define ClassSkill 0x0
+
+ALIGN 4
+SkillList:
+//BYTE Level SkillID
+BYTE 00 00
+ALIGN 4
+
+PUSH
+ORG (ClassLevelUpSkillTable + (ClassNumber * 4))
+POIN SkillList
+ORG (ClassSkillTable + ClassNumber)
+BYTE ClassSkill
+POP

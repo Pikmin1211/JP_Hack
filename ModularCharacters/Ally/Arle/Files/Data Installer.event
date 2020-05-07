@@ -11,13 +11,13 @@
 #define UnitLevel 14
 #define BaseHP 11
 #define BaseStr 3
-#define BaseMag 11
-#define BaseSkl 12
+#define BaseMag 9
+#define BaseSkl 10
 #define BaseSpd 10
-#define BaseDef 5
+#define BaseDef 3
 #define BaseRes 7
 #define BaseLuk 13
-#define BaseCon 2
+#define BaseCon 3
 
 //Base Weapon Ranks
 #define BaseSwordRank 0

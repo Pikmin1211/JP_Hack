@@ -275,6 +275,7 @@ EndingScene:
 	SVAL 0x1 4
 	BNE 1 0xC 0x1 // branch label 1 if not all civs escaped
 		Text(Ch1GetItem)
+		REMOVEPORTRAITS
 		GiveItem(RedGem,Sanders)
 		LABEL 1
 	MUSC ToccataAndDoomSong

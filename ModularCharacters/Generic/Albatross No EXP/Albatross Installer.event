@@ -1,0 +1,11 @@
+
+{
+	#define UnitID AlbatrossNoEXP
+	#define UnitNameLocation AlbatrossName
+	#define UnitDescriptionLocation AlbatrossDescription
+	#define UnitFaction AlbatrossFaction
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

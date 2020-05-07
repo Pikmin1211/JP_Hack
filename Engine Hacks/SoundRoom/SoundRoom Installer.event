@@ -67,7 +67,6 @@ SoundRoomEntry(CorridorsOfTimeSong,1,CorridorsOfTimeName)
 SoundRoomEntry(BabaYetuSong,1,BabaYetuName)
 SoundRoomEntry(CrystalPalaceStage1Song,1,CrystalPalaceStage1Name)
 SoundRoomEntry(OnTheHuntSong,1,OnTheHuntName)
-//SoundRoomEntry(KitchenAceSong,1,KitchenAceName)
 SoundRoomEntry(LandOfSorrowSong,1,LandOfSorrowName)
 SoundRoomEntry(WhereTheWindRustlesSong,1,WhereTheWindRustlesName)
 SoundRoomEntry(BelovedOneSong,1,BelovedOneName)
@@ -84,10 +83,14 @@ SoundRoomEntry(NuclearFusionSong,1,NuclearFusionName)
 SoundRoomEntry(LikeAGlintOfLightSong,1,LikeAGlintOfLightName)
 SoundRoomEntry(OffkeySong,1,OffkeyName)
 SoundRoomEntry(OldFamiliarScentSong,1,OldFamiliarScentName)
-//SoundRoomEntry(MilanorThemeSong,1,MilanorThemeName)
-
-
-
+SoundRoomEntry(FillmoreSong,1,FillmoreName)
+SoundRoomEntry(StrongerMonstersSong,1,StrongerMonstersName)
+SoundRoomEntry(DurantSortieSong,1,DurantSortieName)
+SoundRoomEntry(Lufia2Battle2Song,1,Lufia2Battle2Name)
+SoundRoomEntry(BonusStageDKCSong,1,BonusStageDKCName)
+SoundRoomEntry(InescapableSong,1,InescapableName)
+SoundRoomEntry(MilanorSortieSong,1,MilanorSortieName)
+SoundRoomEntry(ACrisisSong,1,ACrisisName)
 
 SoundRoomTerminator
 

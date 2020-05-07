@@ -37,3 +37,13 @@
 #include "Arch Knight/Arch Knight Installer.event"
 
 #include "Bow Knight/Bow Knight Installer.event"
+
+#include "Tent/Tent Installer.event"
+
+#include "Medic/Medic Installer.event"
+
+#include "Harrier/Harrier Installer.event"
+
+#include "Brawler/Brawler Installer.event"
+
+#include "Wanderer/Wanderer Installer.event"

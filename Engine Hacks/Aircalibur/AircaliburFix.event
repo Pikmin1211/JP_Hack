@@ -1,7 +1,7 @@
 //#define SongTableOffset 0x224470
 //#define SongTable(index,SongPointer,Group) "PUSH; ORG SongTableOffset+(8*index); POIN SongPointer; SHORT Group Group; POP"
 
-#include "Instrument Set Definitions.event"
+//#include "Instrument Set Definitions.event"
 #include "Aircalibur Sets.event"
 
 SongTable(0x108,Aircalibur1,7)

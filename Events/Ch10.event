@@ -13,9 +13,150 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+	InfiniteTurnEventPlayer(0x0,SpawnAlbatross,2)
+	InfiniteTurnEventPlayer(0x0,SpawnCobra,3)
+	InfiniteTurnEventPlayer(0x0,SpawnPanther,3)
+	InfiniteTurnEventPlayer(0x0,SpawnStallion,4)
+	InfiniteTurnEventPlayer(0x0,SpawnWarthog,5)
 	TurnEventPlayer(0x0,PostPrep,1)
 	END_MAIN
 
+#define SpawnOffset 3 // number of turns to wait before spawning units
+#define ExpDeadline 5 // number of turns before spawning the no_exp_units
+
+#define CheckForTent(xcoord,ycoord) "SVAL 0xB Coords(xcoord,ycoord); CHECK_EXISTS 0xFFFE; BEQ 99 0x0 0xC; CHECK_CLASS 0xFFFE; SVAL 0x1 Tent; BNE 99 0x1 0xC; SVAL 0xC 1; GOTO 98; LABEL 99; SVAL 0xC 0; LABEL 98"
+
+/*
+SVAL 0xB Coords(xcoord,ycoord)
+CHECK_EXISTS 0xFFFE
+BEQ 99 0x0 0xC // branch label 99 if no unit in position
+	CHECK_CLASS 0xFFFE
+	SVAL 0x1 Tent
+	BNE 99 0x1 0xC // branch label 99 if unit is not tent
+		// if tent
+		SVAL 0xC 1
+		GOTO 98
+LABEL 99
+// if no tent
+SVAL 0xC 0
+LABEL 98
+*/
+
+#define SpawnTentUnits(counter_id,exp_units,no_exp_units) "Increment(counter_id); COUNTER_CHECK counter_id; SVAL 1 SpawnOffset; BLT 97 0xC 0x1; COUNTER_SET counter_id 0; CHECK_TURNS; SVAL 1 ExpDeadline; BEQ 96 0x1 0xC; SpawnReinforcements(exp_units); GOTO 97; LABEL 96; SpawnReinforcements(no_exp_units); LABEL 97"
+
+/*
+Increment(counter_id)
+COUNTER_CHECK counter_id
+SVAL 1 SpawnOffset
+BLT 97 0xC 0x1 // branch label 97 if we dont meet the spawn offset
+	COUNTER_SET counter_id 0
+	CHECK_TURNS
+	SVAL 1 ExpDeadline
+	BEQ 96 0x1 0xC // branch label 96 if we are past the exp deadline
+		// else spawn normal units
+		SpawnReinforcements(exp_units)
+		GOTO 97
+	LABEL 96
+		SpawnReinforcements(no_exp_units)
+LABEL 97
+*/
+
+SpawnAlbatross:
+	CheckForTent(19,6)
+	BEQ 1 0x0 0xC
+		SpawnTentUnits(2,AlbatrossUnits,AlbatrossUnitsNoEXP)
+	LABEL 1
+	NoFade
+	ENDA
+
+AlbatrossUnits:
+	UNIT Albatross Archer 0 Level(13,Enemy,1) [19,6] 0 0 1 REDA18R5 [SteelBow] DefaultAI
+	UNIT Albatross ArchKnight 0 Level(13,Enemy,1) [19,6] 0 0 1 REDA17R6 [ShortBow] DefaultAI
+	UNIT
+
+AlbatrossUnitsNoEXP:
+	UNIT AlbatrossNoEXP Archer 0 Level(15,Enemy,1) [19,6] 0 0 1 REDA18R5 [SteelBow] DefaultAI
+	UNIT AlbatrossNoEXP ArchKnight 0 Level(15,Enemy,1) [19,6] 0 0 1 REDA17R6 [ShortBow] DefaultAI
+	UNIT
+
+SpawnCobra:
+	CheckForTent(22,13)
+	BEQ 1 0x0 0xC
+		SpawnTentUnits(3,CobraUnits,CobraUnitsNoEXP)
+	LABEL 1
+	NoFade
+	ENDA
+
+CobraUnits:
+	UNIT Cobra Mage 0 Level(13,Enemy,1) [22,13] 0 0 1 REDA21R12 [Thunder] DefaultAI
+	UNIT Cobra Mage 0 Level(13,Enemy,1) [22,13] 0 0 1 REDA23R12 [Elfire] DefaultAI
+	UNIT Cobra Shaman 0 Level(13,Enemy,1) [22,13] 0 0 1 REDA22R11 [Miasma] DefaultAI
+	UNIT
+
+CobraUnitsNoEXP:
+	UNIT CobraNoEXP Mage 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA21R12 [Thunder] DefaultAI
+	UNIT CobraNoEXP Mage 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA23R12 [Elfire] DefaultAI
+	UNIT CobraNoEXP Shaman 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA22R11 [Miasma] DefaultAI
+	UNIT
+
+SpawnPanther:
+	CheckForTent(2,1)
+	BEQ 1 0x0 0xC
+		SpawnTentUnits(4,PantherUnits,PantherUnitsNoEXP)
+	LABEL 1
+	NoFade
+	ENDA
+
+PantherUnits:
+	UNIT Panther Mercenary 0 Level(13,Enemy,1) [2,1] 0 0 1 REDA1R2 [SteelSword] DefaultAI
+	UNIT Panther Mercenary 0 Level(13,Enemy,1) [2,1] 0 0 1 REDA3R2 [RubySword] DefaultAI
+	UNIT Panther Fighter 0 Level(13,Enemy,1) [2,1] 0 0 1 REDA2R2 [Greataxe] DefaultAI
+	UNIT
+
+PantherUnitsNoEXP:
+	UNIT PantherNoEXP Mercenary 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA1R2 [SteelSword] DefaultAI
+	UNIT PantherNoEXP Mercenary 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA3R2 [RubySword] DefaultAI
+	UNIT PantherNoEXP Fighter 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA2R2 [Greataxe] DefaultAI
+	UNIT
+
+SpawnStallion:
+	CheckForTent(9,18)
+	BEQ 1 0x0 0xC
+		SpawnTentUnits(5,StallionUnits,StallionUnitsNoEXP)
+	LABEL 1
+	NoFade
+	ENDA
+
+StallionUnits:
+	UNIT Stallion Cavalier 0 Level(13,Enemy,1) [9,18] 0 0 1 REDA8R19 [SteelSword,Javelin] DefaultAI
+	UNIT Stallion Cavalier 0 Level(13,Enemy,1) [9,18] 0 0 1 REDA10R19 [SapphireLance,SlimSword] DefaultAI
+	UNIT Stallion AxeKnight 0 Level(13,Enemy,1) [9,18] 0 0 1 REDA9R19 [SteelAxe,HandAxe] DefaultAI
+	UNIT
+
+StallionUnitsNoEXP:
+	UNIT StallionNoEXP Cavalier 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA8R19 [SteelSword,Javelin] DefaultAI
+	UNIT StallionNoEXP Cavalier 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA10R19 [SapphireLance,SlimSword] DefaultAI
+	UNIT StallionNoEXP AxeKnight 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA9R19 [SteelAxe,HandAxe] DefaultAI
+	UNIT
+
+SpawnWarthog:
+	CheckForTent(2,15)
+	BEQ 1 0x0 0xC
+		SpawnTentUnits(6,WarthogUnits,WarthogUnitsNoEXP)
+	LABEL 1
+	NoFade
+	ENDA
+
+WarthogUnits:
+	UNIT Warthog AxeArmor 0 Level(13,Enemy,1) [2,15] 0 0 1 REDA1R14 [ShortAxe,SteelLance] DefaultAI
+	UNIT Warthog LanceArmor 0 Level(13,Enemy,1) [2,15] 0 0 1 REDA3R14 [ShortSpear,IronBlade] DefaultAI
+	UNIT
+
+WarthogUnitsNoEXP:
+	UNIT WarthogNoEXP AxeArmor 0 Level(15,Enemy,1) [2,15] 0 0 1 REDA1R14 [ShortAxe,SteelLance] DefaultAI
+	UNIT WarthogNoEXP LanceArmor 0 Level(15,Enemy,1) [2,15] 0 0 1 REDA3R14 [ShortSpear,IronBlade] DefaultAI
+	UNIT
+	
 PostPrep:
 	MUSS SkyEventSong
 	SpawnReinforcements(NewAllies)
@@ -32,12 +173,35 @@ CharacterBasedEvents:
 	END_MAIN
 
 MiscBasedEvents:
+	AFEV 0x0 TentCheck 0x9
 	CauseGameOverIfLordDies
 	END_MAIN
 
-LocationBasedEvents:
+TentCheck:
+	Increment(1)
+	SVAL 0x1 5 // 5 tents
+	COUNTER_CHECK 1
+	BLT 1 0xC 0x1 // branch label 1 if all tents not ded
+		CALL EndingScene
+		LABEL 1
+	ENUF 0x9
+	NoFade
+	ENDA
 
+LocationBasedEvents:
+	Armory(Ch10Armory,12,6)
+	Vendor(Ch10Vendor,18,2)
 	END_MAIN
+
+Ch10Armory:
+	SHLI SteelSword RubySword KillingEdge LevinSword Runesword SteelLance SapphireLance KillerLance Javelin FlameLance SteelAxe EmeraldAxe KillerAxe HandAxe BoltAxe SteelBow ShortBow KillerBow ShiningBow
+	BYTE 0x0 0x0
+	ALIGN 4
+
+Ch10Vendor:
+	SHLI Thunder Elfire Aircalibur Miasma Nosferatu Ruin Lightning Shine Resire Heal Mend Physic Restore TorchStaff Barrier Vulnerary Elixir SecretBook GoddessIcon
+	BYTE 0x0 0x0
+	ALIGN 4
 
 Dunno1:
 
@@ -74,7 +238,52 @@ Units1:
 
 EnemyUnits:
 	
-	UNIT Todoroki Hero 0x0 Level(3,Enemy,1) [1,19] 0 0 0 0 [Flamberge,SilverSword,ShortAxe,Elixir] NeverMoveAI
+	UNIT Todoroki Hero 0x0 Level(3,Enemy,1) [1,19] 2 0 0 0 [Flamberge,SilverSword,ShortAxe,AngelicRobe] NeverMoveAI
+
+	UNIT Warthog LanceArmor 0x0 Level(15,Enemy,1) [3,15] 0 0 0 0 [ShortSpear,Greatlance] NeverMoveAI
+	UNIT Warthog LanceArmor 0x0 Level(15,Enemy,1) [1,15] 0 0 0 0 [ShortSpear,SilverSword] NeverMoveAI
+
+	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [2,1] 2 0 0 0 [MasterSeal] NeverMoveAI
+	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [9,18] 2 0 0 0 [RenewalManual] NeverMoveAI
+	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [19,6] 2 0 0 0 [BlueGem] NeverMoveAI
+	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [22,13] 2 0 0 0 [Swiftsoles] NeverMoveAI
+	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [2,15] 2 0 0 0 [BraveSword] NeverMoveAI
+
+	UNIT Panther Hero 0x0 Level(5,Enemy,1) [2,3] 0 0 0 0 [KillingEdge,ShortAxe] AttackInRangeAI
+	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [3,5] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [2,6] 0 0 0 0 [EmeraldAxe] AttackInRangeAI
+	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [8,4] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Panther Mercenary 0x0 Level(13,Enemy,1) [10,5] 0 0 0 0 [IronBlade,Armorslayer] AttackInRangeAI
+	UNIT Panther Mercenary 0x0 Level(13,Enemy,1) [7,6] 0 0 0 0 [LightBrand,SteelSword] AttackInRangeAI
+	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [4,10] 0 0 0 0 [HandAxe,IronAxe] AttackInRangeAI
+	UNIT Panther Mercenary 0x0 Level(13,Enemy,1) [3,9] 0 0 0 0 [SteelSword] AttackInRangeAI
+
+	UNIT Stallion Paladin 0x0 Level(5,Enemy,1) [9,16] 0 0 0 0 [SilverLance,Flamberge,Horseslayer] AttackInRangeAI
+	UNIT Stallion Cavalier 0x0 Level(13,Enemy,1) [6,13] 0 0 0 0 [Armorslayer,Javelin] AttackInRangeAI
+	UNIT Stallion Cavalier 0x0 Level(13,Enemy,1) [10,11] 0 0 0 0 [SteelLance,IronSword] AttackInRangeAI
+	UNIT Stallion AxeKnight 0x0 Level(13,Enemy,1) [11,11] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Stallion Cavalier 0x0 Level(13,Enemy,1) [8,15] 0 0 0 0 [SapphireLance] AttackInRangeAI
+	UNIT Stallion AxeKnight 0x0 Level(13,Enemy,1) [10,15] 0 0 0 0 [Greataxe,IronLance] AttackInRangeAI
+
+	UNIT Albatross Sniper 0x0 Level(5,Enemy,1) [20,5] 0 0 0 0 [SilverBow,ShiningBow] AttackInRangeAI
+	UNIT Albatross Archer 0x0 Level(13,Enemy,1) [18,9] 0 0 0 0 [Longbow,HuntingBow] AttackInRangeAI
+	UNIT Albatross Archer 0x0 Level(13,Enemy,1) [20,7] 0 0 0 0 [Greatbow] AttackInRangeAI
+	UNIT Albatross Archer 0x0 Level(13,Enemy,1) [25,4] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Albatross ArchKnight 0x0 Level(13,Enemy,1) [24,11] 0 0 0 0 [ShortBow] AttackInRangeAI
+	UNIT Albatross ArchKnight 0x0 Level(14,Enemy,1) [21,11] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Albatross ArchKnight 0x0 Level(13,Enemy,1) [24,5] 0 0 0 0 [IronBow] AttackInRangeAI
+
+	UNIT Cobra Sage 0x0 Level(5,Enemy,1) [18,14] 0 0 0 0 [Aircalibur,Thoron,Physic] AttackInRangeAI
+	UNIT Cobra Mage 0x0 Level(13,Enemy,1) [17,13] 0 0 0 0 [Elfire] AttackInRangeAI
+	UNIT Cobra Mage 0x0 Level(13,Enemy,1) [19,13] 0 0 0 0 [Thunder,Fimbulvetr] AttackInRangeAI
+	UNIT Cobra Shaman 0x0 Level(14,Enemy,1) [19,15] 0 0 0 0 [Jormungandr,Flux] AttackInRangeAI
+	UNIT Cobra Shaman 0x0 Level(14,Enemy,1) [17,15] 0 0 0 0 [Ruin] AttackInRangeAI
+	UNIT Cobra Mage 0x0 Level(13,Enemy,1) [14,16] 0 0 0 0 [Bolting,Aircalibur] NeverMoveAI
+	UNIT Cobra Shaman 0x0 Level(13,Enemy,1) [15,11] 0 0 0 0 [Miasma] AttackInRangeAI
+	UNIT Cobra Shaman 0x0 Level(13,Enemy,1) [14,10] 0 0 0 0 [Flux,Nosferatu] AttackInRangeAI
+
+	UNIT Warthog General 0x0 Level(6,Enemy,1) [1,17] 0 0 0 0 [BraveAxe,ShortSpear,SilverBlade] NeverMoveAI
+	UNIT Warthog AxeArmor 0x0 Level(15,Enemy,1) [2,13] 0 0 0 0 [SilverAxe,ShortAxe] NeverMoveAI
 
 	UNIT
 
@@ -94,6 +303,12 @@ Traps2:
 BeginningScene:
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	// have the tents immediately ready to spawn units
+	COUNTER_SET 2 SpawnOffset
+	COUNTER_SET 3 SpawnOffset
+	COUNTER_SET 4 SpawnOffset
+	COUNTER_SET 5 SpawnOffset
+	COUNTER_SET 6 SpawnOffset
 	GotoPrepScreen
 	ENDA
 
@@ -101,3 +316,6 @@ EndingScene:
 	MNC2 11
 	NoFade
 	ENDA
+
+#undef SpawnOffset
+#undef ExpDeadline

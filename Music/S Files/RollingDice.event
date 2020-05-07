@@ -4,7 +4,7 @@
 	#define	RollingDice_grp  voicegroup000
 	#define	RollingDice_pri  0
 	#define	RollingDice_rev  0
-	#define	RollingDice_mvl  45
+	#define	RollingDice_mvl  65
 	#define	RollingDice_key  0
 	#define	RollingDice_tbs  1
 	#define	RollingDice_exg  0

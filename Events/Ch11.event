@@ -1,0 +1,285 @@
+EventPointerTable(Ch10AEvent, PointerList)
+SetChapterConvoy(11,1)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,ShipAppears,3)
+	TurnEventPlayer(0x0,Turn5Event,5)
+	TurnEventPlayer(0x0,Turn7Event,7)
+	TurnEventPlayer(0x0,Turn9Event,9)
+	TurnEventPlayer(0x0,Turn9Event,11)
+	TurnEventPlayer(0x0,EndingScene,12)
+	END_MAIN
+
+Turn5Event:
+	CALL ExtraPlanksAppear
+	SpawnReinforcements(TopRightPegs)
+	SpawnReinforcements(RightBoatBottomStairs)
+	SpawnReinforcements(RightBoatTopStairs)
+	SpawnReinforcements(LeftBoatTopUnits)
+	SpawnReinforcements(LeftBoatStairs)
+	NoFade
+	ENDA
+
+Turn7Event:
+	SpawnReinforcements(BottomLeftPegs)
+	SpawnReinforcements(LeftBoatStairs)
+	SpawnReinforcements(RightBoatMidStairs)
+	NoFade
+	ENDA
+
+Turn9Event:
+	SpawnReinforcements(BottomLeftPegs)
+	SpawnReinforcements(TopRightPegs)
+	SpawnReinforcements(LeftBoatStairs)
+	SpawnReinforcements(RightBoatTopStairs)
+	SpawnReinforcements(RightBoatBottomStairs)
+	NoFade
+	ENDA
+
+ShipAppears:
+	CAM1 [1,4]
+	EARTHQUAKE_START 0x100
+	STAL 30
+	FADI 16
+	LOAD1 0x1 LeftBoatUnits
+	ENUN
+	TILEREVERSE 2
+	STAL 30
+	FADU 16
+	STAL 30
+	EARTHQUAKE_END
+	TILECHANGE 3
+	SpawnReinforcements(BridgePirates)
+	CAM1 Donnalen
+	FlashCursor(Donnalen,60)
+	Text(TestDialogue)
+	CAM1 [11,4]
+	SpawnReinforcements(MoreUnits)
+	FlashCursor(Anabelle,60)
+	Text(TestDialogue)
+	SpawnReinforcements(RightBoatMidStairs)
+	SpawnReinforcements(BottomLeftPegs)
+	NoFade
+	ENDA
+
+ExtraPlanksAppear:
+	CAM1 [16,13]
+	TILECHANGE 4
+	TILECHANGE 5
+	CAM1 [5,9]
+	TILECHANGE 6
+	NoFade
+	ENDA
+
+LeftBoatUnits:
+	UNIT Marooner Pirate 0x0 Level(5,Enemy,1) [2,1] 2 0 0 0 [SteelAxe,HandAxe,RedGem] NeverMoveAI
+	UNIT Marooner Pirate 0x0 Level(4,Enemy,1) [1,1] 2 0 0 0 [HandAxe,Halberd] NeverMoveAI
+	UNIT Marooner Pirate 0x0 Level(4,Enemy,1) [3,1] 2 0 0 0 [HandAxe,IronAxe,Vulnerary] NeverMoveAI
+
+	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [1,3] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Marooner Mercenary 0x0 Level(3,Enemy,1) [0,4] 0 0 0 0 [IronSword] DefaultAI
+
+	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [0,8] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Marooner Mercenary 0x0 Level(3,Enemy,1) [1,9] 0 0 0 0 [IronSword] DefaultAI
+
+	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [3,3] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT Marooner Fighter 0x0 Level(3,Enemy,1) [2,6] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Marooner Mage 0x0 Level(3,Enemy,1) [2,7] 0 0 0 0 [Fire] DefaultAI
+	UNIT
+
+BridgePirates:
+	UNIT Marooner Pirate 0x0 Level(3,Enemy,1) [2,8] 0 0 1 REDA5R5 [IronAxe] DefaultAI
+	UNIT Marooner Pirate 0x0 Level(3,Enemy,1) [2,8] 0 0 1 REDA5R6 [IronAxe] DefaultAI
+	UNIT
+
+BottomLeftPegs:
+	UNIT Marooner PegasusKnight 0x0 Level(3,Enemy,1) [0,23] 0 0 1 REDA1R22 [SlimLance] DefaultAI
+	UNIT Marooner PegasusKnight 0x0 Level(3,Enemy,1) [0,23] 0 0 1 REDA2R23 [SlimLance] DefaultAI
+	UNIT
+
+TopRightPegs:
+	UNIT Marooner PegasusKnight 0x0 Level(3,Enemy,1) [16,0] 0 0 1 REDA15R0 [SlimLance] DefaultAI
+	UNIT Marooner PegasusKnight 0x0 Level(3,Enemy,1) [16,0] 0 0 1 REDA16R1 [SlimLance] DefaultAI
+	UNIT
+
+RightBoatMidStairs:
+	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [23,12] 0 0 1 REDA23R11 [IronLance] DefaultAI
+	UNIT Marooner Fighter 0x0 Level(3,Enemy,1) [23,12] 0 0 1 REDA23R13 [IronAxe] DefaultAI
+	UNIT
+
+RightBoatTopStairs:
+	UNIT Marooner Cavalier 0x0 Level(3,Enemy,1) [23,2] 0 0 0 0 [IronLance,SlimSword] DefaultAI
+	UNIT Marooner Cavalier 0x0 Level(3,Enemy,1) [23,3] 0 0 0 0 [Javelin,SteelSword] DefaultAI
+	UNIT
+
+RightBoatBottomStairs:
+	UNIT Marooner Fighter 0x0 Level(3,Enemy,1) [23,17] 0 0 1 REDA23R16 [IronAxe] DefaultAI
+	UNIT Marooner Fighter 0x0 Level(3,Enemy,1) [23,17] 0 0 1 REDA22R17 [SteelAxe] DefaultAI
+	UNIT Marooner Mage 0x0 Level(3,Enemy,1) [23,17] 0 0 0 0 [Thunder] DefaultAI
+	UNIT
+
+LeftBoatStairs:
+	UNIT Marooner Pirate 0x0 Level(3,Enemy,1) [1,8] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Marooner Pirate 0x0 Level(3,Enemy,1) [2,8] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT
+
+LeftBoatTopUnits:
+	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [2,0] 0 0 1 REDA2R0 [IronLance] DefaultAI
+	UNIT Marooner Mercenary 0x0 Level(3,Enemy,1) [2,0] 0 0 0 REDA3R0 [IronSword] DefaultAI
+	UNIT
+
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	DefeatBoss(EndingScene)
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	UNIT Donnalen Brawler 0x0 Level(3,Ally,0) [11,13] 0 0 0 0 [FuryAxe,HandAxe,Vulnerary] NoAI
+	UNIT Devvy Wanderer 0x0 Level(2,Ally,0) [10,13] 0 0 0 0 [Basilisk,SteelSword,Javelin,Vulnerary] NoAI
+	UNIT Natsuki Medic 0x0 Level(1,Ally,0) [9,12] 0 0 0 0 [Mend,Vulnerary] NoAI
+	UNIT Ginko Mage 0x0 Level(2,Ally,0) [13,14] 0 0 0 0 [Thunder,Vulnerary] NoAI
+	UNIT Draco WyvernRider 0x0 Level(3,Ally,0) [12,12] 0 0 0 0 [IronLance,Javelin,Vulnerary] NoAI
+	UNIT Paniel Pirate 0x0 Level(3,Ally,0) [12,15] 0 0 0 0 [SteelAxe,Hatchet] NoAI
+	UNIT Naoto Mercenary 0x0 Level(3,Ally,0) [9,15] 0 0 0 0 [IronBlade,Vulnerary] NoAI
+	UNIT Schezo2 Battlemage 0x0 Level(1,Ally,0) [8,14] 0 0 0 0 [Thunder,Miasma,RubySword,Elixir] NoAI
+	UNIT Norne ArcherF 0x0 Level(1,Ally,0) [12,4] 0 0 0 0 [IronBow,HuntingBow] NoAI
+	UNIT
+
+MoreUnits:
+	UNIT Anabelle AxeKnight 0x0 Level(3,Ally,1) [11,4] 0 0 1 REDA11R5 [IronAxe,Javelin,Vulnerary] NoAI
+	UNIT Wendy Recruit2 0x0 Level(1,Ally,1) [11,4] 0 0 1 REDA10R4 [IronLance,Horseslayer,Vulnerary] NoAI
+	UNIT
+
+EnemyUnits:
+
+	UNIT Cedwick Pirate 0x0 Level(5,Enemy,0) [22,1] 2 0 0 0 [SteelAxe,HandAxe,LunaManual] NeverMoveAI
+	UNIT Marooner Pirate 0x0 Level(3,Enemy,1) [22,0] 0 0 0 0 [HandAxe] NeverMoveAI
+	UNIT Marooner Pirate 0x0 Level(3,Enemy,1) [23,1] 0 0 0 0 [HandAxe] NeverMoveAI
+	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [20,2] 0 0 0 0 [IronLance] AttackInRangeAI
+
+	UNIT Marooner AxeArmor 0x0 Level(4,Enemy,1) [19,5] 0 0 0 0 [IronAxe,Javelin] NeverMoveAI
+	UNIT Marooner LanceArmor 0x0 Level(4,Enemy,1) [20,5] 0 0 0 0 [SteelSword,Javelin] NeverMoveAI
+
+	UNIT Marooner Pirate 0x0 Level(2,Enemy,1) [16,12] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Marooner Pirate 0x0 Level(2,Enemy,1) [16,13] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Marooner Pirate 0x0 Level(2,Enemy,1) [16,10] 0 0 0 0 [HandAxe] DefaultAI
+	UNIT Marooner Archer 0x0 Level(2,Enemy,1) [19,12] 0 0 0 0 [IronBow] DefaultAI
+
+	UNIT Marooner Mercenary 0x0 Level(2,Enemy,1) [21,17] 0 0 0 0 [IronBlade] DefaultAI
+	UNIT Marooner Mercenary 0x0 Level(2,Enemy,1) [22,16] 0 0 0 0 [IronSword] DefaultAI
+	UNIT Marooner Mage 0x0 Level(2,Enemy,1) [22,17] 0 0 0 0 [Fire] DefaultAI
+
+	UNIT Marooner Soldier 0x0 Level(2,Enemy,1) [23,7] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Marooner Soldier 0x0 Level(2,Enemy,1) [22,7] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT Marooner Fighter 0x0 Level(2,Enemy,1) [18,9] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [19,8] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT Marooner Mercenary 0x0 Level(2,Enemy,1) [21,11] 0 0 0 0 [IronSword] DefaultAI
+	UNIT Marooner Fighter 0x0 Level(2,Enemy,1) [21,13] 0 0 0 0 [IronAxe] DefaultAI
+
+	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [18,18] 0 0 0 0 [SteelLance] DefaultAI
+
+	UNIT Marooner PegasusKnight 0x0 Level(2,Enemy,1) [4,1] 0 0 0 0 [SlimLance] DefaultAI
+	UNIT Marooner PegasusKnight 0x0 Level(2,Enemy,1) [5,0] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Marooner PegasusKnight 0x0 Level(2,Enemy,1) [4,20] 0 0 0 0 [SlimLance] DefaultAI
+	UNIT Marooner PegasusKnight 0x0 Level(2,Enemy,1) [5,21] 0 0 0 0 [IronLance] DefaultAI
+
+	UNIT
+
+Traps1:
+	BLST [14,7] Ballista
+	BLST [7,7] Ballista
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	CALL PartySwap
+	LOAD1 0x1 Units1
+	ENUN
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	TILECHANGE 1
+	TILECHANGE 2
+	ENDA
+
+EndingScene:
+	MNC2 12
+	NoFade
+	ENDA
+
+#define QuickRemu(unitID,labelID) "CHECK_EXISTS unitID; BEQ labelID 0xC 0x0; CHECK_ALIVE unitID; BEQ labelID 0xC 0x0; REMU unitID; LABEL labelID"
+
+PartySwap:
+	SetupGold
+	ChangeGold
+	QuickRemu(Sanders,1)
+	QuickRemu(Finn,2)
+	QuickRemu(Marisa,3)
+	QuickRemu(Scott,4)
+	QuickRemu(Renge,5)
+	QuickRemu(Oskar,6)
+	QuickRemu(Blanc,7)
+	QuickRemu(Sayori,8)
+	QuickRemu(Wolt,9)
+	QuickRemu(Arden,10)
+	QuickRemu(Wrys,11)
+	QuickRemu(Neptune,12)
+	QuickRemu(Wilbell,13)
+	QuickRemu(Brian,14)
+	QuickRemu(Otaku,15)
+	QuickRemu(Gohard,16)
+	QuickRemu(Yandahl,17)
+	QuickRemu(Milanor,18)
+	QuickRemu(Guts,19)
+	QuickRemu(Kohaku,20)
+	QuickRemu(Ky,21)
+	QuickRemu(Derek2,22)
+	QuickRemu(Eevster2,23)
+	QuickRemu(Arle,24)
+	QuickRemu(Jason,25)
+	NoFade
+	ENDA

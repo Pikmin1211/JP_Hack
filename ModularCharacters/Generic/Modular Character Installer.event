@@ -21,3 +21,27 @@
 #include "Whitewolf/Whitewolf Installer.event"
 
 #include "Officer/Officer Installer.event"
+
+#include "Tent/Tent Installer.event"
+
+#include "Stallion/Stallion Installer.event"
+
+#include "Cobra/Cobra Installer.event"
+
+#include "Warthog/Warthog Installer.event"
+
+#include "Albatross/Albatross Installer.event"
+
+#include "Panther/Panther Installer.event"
+
+#include "Stallion No EXP/Stallion Installer.event"
+
+#include "Cobra No EXP/Cobra Installer.event"
+
+#include "Warthog No EXP/Warthog Installer.event"
+
+#include "Albatross No EXP/Albatross Installer.event"
+
+#include "Panther No EXP/Panther Installer.event"
+
+#include "Marooner/Marooner Installer.event"

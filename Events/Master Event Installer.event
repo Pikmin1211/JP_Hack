@@ -52,3 +52,8 @@ ALIGN 4
 {
 	#include "Ch10.event"
 }
+
+ALIGN 4
+{
+	#include "Ch11.event"
+}

@@ -1,0 +1,36 @@
+WriteSramFast          = 0x080D1725
+r0 - source, r1 - dest, r2 - size
+
+ReadSramFastAddr       = 0x030067A0   @ pointer to the actual ReadSramFast function (use ldr)
+r0 - source, r1 - dest, r2 - size
+
+SRAM is the area in memory mapped to  0E000000-0E00FFFF
+SRAM struct in EMS event file
+(every offset it lists is there + 0xE000000)
+
+080A3064 | GetSaveDataLocation
+
+
+
+
+08024de8 GetPartyGoldAmount
+08024e04 .thumb
+08024e04 SetPartyGoldAmount
+08024e20 .thumb
+08024e20 AddPartyGoldAmount
+08024eac .thumb
+
+0202bcf0 gChapterData
+
+
+r0=SRAM offset
+r1=gGenericBuffer / whatever WRAM address
+r2 = size
+ReadSramFast
+ldrb r3, gGenericBuffer+offset
+//do whatever operation to r3
+strb r3, gGenericBuffer+offset
+r0=gGenericBuffer
+r1=SRAM offset
+r2=size
+WriteSramFast

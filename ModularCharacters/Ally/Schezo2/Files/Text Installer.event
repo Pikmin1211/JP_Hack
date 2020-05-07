@@ -1,0 +1,11 @@
+#ifdef UseUnitText
+
+NameTextData:
+#incext ParseFile "Text/UnitName.txt"
+setText(UnitNameLocation,NameTextData)
+
+DescriptionTextData:
+#incext ParseFile "Text/UnitDescription.txt"
+setText(UnitDescriptionLocation,DescriptionTextData)
+
+#endif

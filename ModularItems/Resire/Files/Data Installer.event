@@ -14,7 +14,7 @@
 #define Durability 20
 #define Might 7
 #define Hit 80
-#define Weight 12
+#define Weight 9
 #define Crit 5
 #define Range OneTwoRange
 #define CostPerUse 130

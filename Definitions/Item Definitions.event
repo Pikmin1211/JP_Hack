@@ -2,290 +2,300 @@
 
 #define AdeptManual 0xBD//ItemID here
 #define AdeptManualMagicAnim 0xFF//MagicAnimationID here
-#define AdeptManualIcon 0xAD//ItemIconID here
+#define AdeptManualIcon (AdeptManual-1)//ItemIconID here
 #define AdeptManualDescription SD_Adept//TextID here
 
 #define SpeedRing 0xBE//ItemID here
 #define SpeedRingMagicAnim 0xFF//MagicAnimationID here
-#define SpeedRingIcon 0xAE//ItemIconID here
+#define SpeedRingIcon (SpeedRing-1)//ItemIconID here
 #define SpeedRingUseText 0x0//TextID here
 
 #define RubySword 0xBF
 #define RubySwordMagicAnim 0xFF
-#define RubySwordIcon 0xAF
+#define RubySwordIcon (RubySword-1)
 #define RubySwordUseText 0x0
 
 #define SapphireLance 0xC0
 #define SapphireLanceMagicAnim 0xFF
-#define SapphireLanceIcon 0xCA
+#define SapphireLanceIcon (SapphireLance-1)
 #define SapphireLanceUseText 0x0
 
 #define EmeraldAxe 0xC1
 #define EmeraldAxeMagicAnim 0xFF
-#define EmeraldAxeIcon 0xCB
+#define EmeraldAxeIcon (EmeraldAxe-1)
 #define EmeraldAxeUseText 0x0
 
 #define HuntingBow 0xC2
 #define HuntingBowMagicAnim ArrowAnimation
-#define HuntingBowIcon 0xCC
+#define HuntingBowIcon (HuntingBow-1)
 #define HuntingBowUseText 0x0
 
 #define ShiningBow 0xC3
 #define ShiningBowMagicAnim LightningAnimation
-#define ShiningBowIcon 0xCD
+#define ShiningBowIcon (ShiningBow-1)
 #define ShiningBowUseText 0x0
 
 //#define Aircalibur //ItemID here
 #define AircaliburMagicAnim AircaliburAnimation//MagicAnimationID here
-#define AircaliburIcon 0xCE//ItemIconID here
+#define AircaliburIcon (Aircalibur-1)//ItemIconID here
 #define AircaliburUseText 0x0//TextID here
 
 #define Thoron 0xC4//ItemID here
 #define ThoronMagicAnim 0x48//MagicAnimationID here
-#define ThoronIcon 0xCF//ItemIconID here
+#define ThoronIcon (Thoron-1)//ItemIconID here
 #define ThoronUseText 0x0//TextID here
 
 #define Bolganone 0xC5//ItemID here
 #define BolganoneMagicAnim 0x49//MagicAnimationID here
-#define BolganoneIcon 0xDE//ItemIconID here
+#define BolganoneIcon (Bolganone-1)//ItemIconID here
 #define BolganoneUseText 0x0//TextID here
 
 #define Ruin 0xC6//ItemID here
 #define RuinMagicAnim 0x4A//MagicAnimationID here
-#define RuinIcon 0xDF//ItemIconID here
+#define RuinIcon (Ruin-1)//ItemIconID here
 #define RuinUseText 0x0//TextID here
 
 #define Miasma 0xC7//ItemID here
 #define MiasmaMagicAnim EvilEyeAnimation//MagicAnimationID here
-#define MiasmaIcon 0xE0//ItemIconID here
+#define MiasmaIcon (Miasma-1)//ItemIconID here
 #define MiasmaUseText 0x0//TextID here
 
 #define Jormungandr 0xC8//ItemID here
 #define JormungandrMagicAnim 0x4B//MagicAnimationID here
-#define JormungandrIcon 0xE1//ItemIconID here
+#define JormungandrIcon (Jormungandr-1)//ItemIconID here
 #define JormungandrUseText 0x0//TextID here
 
 #define Greatsword 0xC9//ItemID here
 #define GreatswordMagicAnim 0xFF//MagicAnimationID here
-#define GreatswordIcon 0xE2//ItemIconID here
+#define GreatswordIcon (Greatsword-1)//ItemIconID here
 #define GreatswordUseText 0x0//TextID here
 
 #define Greatlance 0xCA//ItemID here
 #define GreatlanceMagicAnim 0xFF//MagicAnimationID here
-#define GreatlanceIcon 0xE3//ItemIconID here
+#define GreatlanceIcon (Greatlance-1)//ItemIconID here
 #define GreatlanceUseText 0x0//TextID here
 
 #define Greataxe 0xCB//ItemID here
 #define GreataxeMagicAnim 0xFF//MagicAnimationID here
-#define GreataxeIcon 0xE4//ItemIconID here
+#define GreataxeIcon (Greataxe-1)//ItemIconID here
 #define GreataxeUseText 0x0//TextID here
 
 #define Greatbow 0xCC//ItemID here
 #define GreatbowMagicAnim ArrowAnimation//MagicAnimationID here
-#define GreatbowIcon 0xE5//ItemIconID here
+#define GreatbowIcon (Greatbow-1)//ItemIconID here
 #define GreatbowUseText 0x0//TextID here
 
 #define NobleRapier 0xCD//ItemID here
 #define NobleRapierMagicAnim 0xFF//MagicAnimationID here
-#define NobleRapierIcon 0xE6//ItemIconID here
+#define NobleRapierIcon (NobleRapier-1)//ItemIconID here
 #define NobleRapierUseText 0x0//TextID here
 
 #define LevinSword 0xCE//ItemID here
 #define LevinSwordMagicAnim ThunderAnimation//MagicAnimationID here
-#define LevinSwordIcon 0xE7//ItemIconID here
+#define LevinSwordIcon (LevinSword-1)//ItemIconID here
 #define LevinSwordUseText 0x0//TextID here
 
 #define AegisManual 0xCF//ItemID here
 #define AegisManualMagicAnim 0xFF//MagicAnimationID here
-#define AegisManualIcon 0xE8//ItemIconID here
+#define AegisManualIcon (AegisManual-1)//ItemIconID here
 #define AegisManualDescription SD_Aegis//TextID here
 
 #define AstraManual 0xD0//ItemID here
 #define AstraManualMagicAnim 0xFF//MagicAnimationID here
-#define AstraManualIcon 0xE9//ItemIconID here
+#define AstraManualIcon (AstraManual-1)//ItemIconID here
 #define AstraManualDescription SD_Astra//TextID here
 
 #define BoonManual 0xD1//ItemID here
 #define BoonManualMagicAnim 0xFF//MagicAnimationID here
-#define BoonManualIcon 0xEA//ItemIconID here
+#define BoonManualIcon (BoonManual-1)//ItemIconID here
 #define BoonManualDescription SD_Boon//TextID here
 
 #define CantoPlusManual 0xD2//ItemID here
 #define CantoPlusManualMagicAnim 0xFF//MagicAnimationID here
-#define CantoPlusManualIcon 0xEB//ItemIconID here
+#define CantoPlusManualIcon (CantoPlusManual-1)//ItemIconID here
 #define CantoPlusManualDescription SD_CantoPlus//TextID here
 
 #define LunaManual 0xD3//ItemID here
 #define LunaManualMagicAnim 0xFF//MagicAnimationID here
-#define LunaManualIcon 0xEC//ItemIconID here
+#define LunaManualIcon (LunaManual-1)//ItemIconID here
 #define LunaManualDescription SD_Luna//TextID here
 
 #define NihilManual 0xD4//ItemID here
 #define NihilManualMagicAnim 0xFF//MagicAnimationID here
-#define NihilManualIcon 0xED//ItemIconID here
+#define NihilManualIcon (NihilManual-1)//ItemIconID here
 #define NihilManualDescription SD_Nihil//TextID here
 
 #define NullifyManual 0xD5//ItemID here
 #define NullifyManualMagicAnim 0xFF//MagicAnimationID here
-#define NullifyManualIcon 0xEE//ItemIconID here
+#define NullifyManualIcon (NullifyManual-1)//ItemIconID here
 #define NullifyManualDescription SD_Nullify//TextID here
 
 #define ParagonManual 0xD6//ItemID here
 #define ParagonManualMagicAnim 0xFF//MagicAnimationID here
-#define ParagonManualIcon 0xEF//ItemIconID here
+#define ParagonManualIcon (ParagonManual-1)//ItemIconID here
 #define ParagonManualDescription SD_Paragon//TextID here
 
 #define PassManual 0xD7//ItemID here
 #define PassManualMagicAnim 0xFF//MagicAnimationID here
-#define PassManualIcon 0xF0//ItemIconID here
+#define PassManualIcon (PassManual-1)//ItemIconID here
 #define PassManualDescription SD_Pass//TextID here
 
 #define PaviseManual 0xD8//ItemID here
 #define PaviseManualMagicAnim 0xFF//MagicAnimationID here
-#define PaviseManualIcon 0xF1//ItemIconID here
+#define PaviseManualIcon (PaviseManual-1)//ItemIconID here
 #define PaviseManualDescription SD_Pavise//TextID here
 
 #define RenewalManual 0xD9//ItemID here
 #define RenewalManualMagicAnim 0xFF//MagicAnimationID here
-#define RenewalManualIcon 0xF2//ItemIconID here
+#define RenewalManualIcon (RenewalManual-1)//ItemIconID here
 #define RenewalManualDescription SD_Renewal//TextID here
 
 #define SolManual 0xDA//ItemID here
 #define SolManualMagicAnim 0xFF//MagicAnimationID here
-#define SolManualIcon 0xF3//ItemIconID here
+#define SolManualIcon (SolManual-1)//ItemIconID here
 #define SolManualDescription SD_Sol//TextID here
 
 #define WrathManual 0xDB//ItemID here
 #define WrathManualMagicAnim 0xFF//MagicAnimationID here
-#define WrathManualIcon 0xF4//ItemIconID here
+#define WrathManualIcon (WrathManual-1)//ItemIconID here
 #define WrathManualDescription SD_Wrath//TextID here
 
 #define StrengthRing 0xDC//ItemID here
 #define StrengthRingMagicAnim 0xFF//MagicAnimationID here
-#define StrengthRingIcon 0xF5//ItemIconID here
+#define StrengthRingIcon (StrengthRing-1)//ItemIconID here
 #define StrengthRingUseText 0x0//TextID here
 
 #define MagicRing 0xDD//ItemID here
 #define MagicRingMagicAnim 0xFF//MagicAnimationID here
-#define MagicRingIcon 0xF6//ItemIconID here
+#define MagicRingIcon (MagicRing-1)//ItemIconID here
 #define MagicRingUseText 0x0//TextID here
 
 #define GuardRing 0xDE//ItemID here
 #define GuardRingMagicAnim 0xFF//MagicAnimationID here
-#define GuardRingIcon 0xF7//ItemIconID here
+#define GuardRingIcon (GuardRing-1)//ItemIconID here
 #define GuardRingUseText 0x0//TextID here
 
 #define LegRing 0xDF//ItemID here
 #define LegRingMagicAnim 0xFF//MagicAnimationID here
-#define LegRingIcon 0xF8//ItemIconID here
+#define LegRingIcon (LegRing-1)//ItemIconID here
 #define LegRingUseText 0x0//TextID here
 
 #define RazorAxe 0xE0//ItemID here
 #define RazorAxeMagicAnim 0xFF//MagicAnimationID here
-#define RazorAxeIcon 0xF9//ItemIconID here
+#define RazorAxeIcon (RazorAxe-1)//ItemIconID here
 #define RazorAxeUseText 0x0//TextID here
 
 #define Flamberge 0xE1//ItemID here
 #define FlambergeMagicAnim ElfireAnimation//MagicAnimationID here
-#define FlambergeIcon 0xFA//ItemIconID here
+#define FlambergeIcon (Flamberge-1)//ItemIconID here
 #define FlambergeUseText 0x0//TextID here
 
 #define FlameLance 0xE2//ItemID here
 #define FlameLanceMagicAnim ElfireAnimation//MagicAnimationID here
-#define FlameLanceIcon 0xFB//ItemIconID here
+#define FlameLanceIcon (FlameLance-1)//ItemIconID here
 #define FlameLanceUseText 0x0//TextID here
 
 #define ShortAxe 0xE3//ItemID here
 #define ShortAxeMagicAnim HandaxeAnimation//MagicAnimationID here
-#define ShortAxeIcon 0xFC//ItemIconID here
+#define ShortAxeIcon (ShortAxe-1)//ItemIconID here
 #define ShortAxeUseText 0x0//TextID here
 
 #define BoltAxe 0xE4//ItemID here
 #define BoltAxeMagicAnim ThunderAnimation//MagicAnimationID here
-#define BoltAxeIcon 0xFD//ItemIconID here
+#define BoltAxeIcon (BoltAxe-1)//ItemIconID here
 #define BoltAxeUseText 0x0//TextID here
 
 #define HezulScroll 0xE5//ItemID here
 #define HezulScrollMagicAnim 0xFF//MagicAnimationID here
-#define HezulScrollIcon 0xFE//ItemIconID here
+#define HezulScrollIcon (HezulScroll-1)//ItemIconID here
 #define HezulScrollUseText 0x0//TextID here
 
 #define OdoScroll 0xE6//ItemID here
 #define OdoScrollMagicAnim 0xFF//MagicAnimationID here
-#define OdoScrollIcon 0xFF//ItemIconID here
+#define OdoScrollIcon (OdoScroll-1)//ItemIconID here
 #define OdoScrollUseText 0x0//TextID here
 
 #define BaldoScroll 0xE6//ItemID here
 #define BaldoScrollMagicAnim 0xFF//MagicAnimationID here
-#define BaldoScrollIcon 0x9//ItemIconID here
+#define BaldoScrollIcon (BaldoScroll-1)//ItemIconID here
 #define BaldoScrollUseText 0x0//TextID here
 
 #define DainScroll 0xE7//ItemID here
 #define DainScrollMagicAnim 0xFF//MagicAnimationID here
-#define DainScrollIcon 0xB//ItemIconID here
+#define DainScrollIcon (DainScroll-1)//ItemIconID here
 #define DainScrollUseText 0x0//TextID here
 
 #define NobaScroll 0xE8//ItemID here
 #define NobaScrollMagicAnim 0xFF//MagicAnimationID here
-#define NobaScrollIcon 0x3B//ItemIconID here
+#define NobaScrollIcon (NobaScroll-1)//ItemIconID here
 #define NobaScrollUseText 0x0//TextID here
 
 #define NeirScroll 0xE9//ItemID here
 #define NeirScrollMagicAnim 0xFF//MagicAnimationID here
-#define NeirScrollIcon 0x42//ItemIconID here
+#define NeirScrollIcon (NeirScroll-1)//ItemIconID here
 #define NeirScrollUseText 0x0//TextID here
 
 #define UlirScroll 0xEA//ItemID here
 #define UlirScrollMagicAnim 0xFF//MagicAnimationID here
-#define UlirScrollIcon 0x48//ItemIconID here
+#define UlirScrollIcon (UlirScroll-1)//ItemIconID here
 #define UlirScrollUseText 0x0//TextID here
 
 #define TordoScroll 0xEB//ItemID here
 #define TordoScrollMagicAnim 0xFF//MagicAnimationID here
-#define TordoScrollIcon 0x6F//ItemIconID here
+#define TordoScrollIcon (TordoScroll-1)//ItemIconID here
 #define TordoScrollUseText 0x0//TextID here
 
 #define FalaScroll 0xEC//ItemID here
 #define FalaScrollMagicAnim 0xFF//MagicAnimationID here
-#define FalaScrollIcon 0x78//ItemIconID here
+#define FalaScrollIcon (FalaScroll-1)//ItemIconID here
 #define FalaScrollUseText 0x0//TextID here
 
 #define SetyScroll 0xED//ItemID here
 #define SetyScrollMagicAnim 0xFF//MagicAnimationID here
-#define SetyScrollIcon 0x8A//ItemIconID here
+#define SetyScrollIcon (SetyScroll-1)//ItemIconID here
 #define SetyScrollUseText 0x0//TextID here
 
 #define BlaggiScroll 0xEE//ItemID here
 #define BlaggiScrollMagicAnim 0xFF//MagicAnimationID here
-#define BlaggiScrollIcon 0x8B//ItemIconID here
+#define BlaggiScrollIcon (BlaggiScroll-1)//ItemIconID here
 #define BlaggiScrollUseText 0x0//TextID here
 
 #define HeimScroll 0xEF//ItemID here
 #define HeimScrollMagicAnim 0xFF//MagicAnimationID here
-#define HeimScrollIcon 0x8E//ItemIconID here
+#define HeimScrollIcon (HeimScroll-1)//ItemIconID here
 #define HeimScrollUseText 0x0//TextID here
 
 #define Resire 0xF0//ItemID here
 #define ResireMagicAnim NosferatuAnimation//MagicAnimationID here
-#define ResireIcon 0x97//ItemIconID here
+#define ResireIcon (Resire-1)//ItemIconID here
 #define ResireUseText 0x0//TextID here
 
 #define FalconBlade 0xF1//ItemID here
 #define FalconBladeMagicAnim 0xFF//MagicAnimationID here
-#define FalconBladeIcon 0x98//ItemIconID here
+#define FalconBladeIcon (FalconBlade-1)//ItemIconID here
 #define FalconBladeUseText 0x0//TextID here
 
 #define Tyrfing Audhulma//ItemID here
 #define TyrfingMagicAnim 0x0//MagicAnimationID here
-#define TyrfingIcon AudhulmaIcon//ItemIconID here
+#define TyrfingIcon (Tyrfing-1)//ItemIconID here
 #define TyrfingUseText 0x0//TextID here
 
 #define Sagittae 0xF2//ItemID here
 #define SagittaeMagicAnim 0x4C//MagicAnimationID here
-#define SagittaeIcon 0x99//ItemIconID here
+#define SagittaeIcon (Sagittae-1)//ItemIconID here
 #define SagittaeUseText 0x0//TextID here
 
 #define Bayoen 0xF3//ItemID here
 #define BayoenMagicAnim ShineAnimation//MagicAnimationID here
-#define BayoenIcon 0x9A//ItemIconID here
+#define BayoenIcon (Bayoen-1)//ItemIconID here
 #define BayoenUseText 0x0//TextID here
+
+#define Basilisk 0xF4//ItemID here
+#define BasiliskMagicAnim CrimsonEyeAnimation//MagicAnimationID here
+#define BasiliskIcon (Basilisk-1)//ItemIconID here
+#define BasiliskUseText 0x0//TextID here
+
+#define FuryAxe 0xF5//ItemID here
+#define FuryAxeMagicAnim 0xFF//MagicAnimationID here
+#define FuryAxeIcon (FuryAxe-1)//ItemIconID here
+#define FuryAxeUseText 0x0//TextID here

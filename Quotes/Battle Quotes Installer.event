@@ -21,6 +21,11 @@ TwoWayBattleQuote(0x0,Novala,Ch3,Ch3NovalaBattle)
 TwoWayBattleQuote(0x0,Todoroki,Ch4,Ch4TodorokiBattle)
 TwoWayBattleQuoteFlag(0xF,0x0,Derek,Ch4,Ch4DerekBattle)
 
+// Ch5
+TwoWayBattleQuote(0x0,Batta,5,Ch5BattaBattle)
+TwoWayBattleQuoteFlag(0xC,0x0,ONeill,5,Ch5ONeillBattle)
+TwoWayBattleQuoteFlag(0xD,0x0,Kekh,5,Ch5KekhBattle)
+
 
 
 

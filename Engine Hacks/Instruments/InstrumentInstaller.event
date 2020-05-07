@@ -1,3 +1,9 @@
+#include "Instrument Set Definitions.event"
+
 ALIGN 4
 Old_Nimap:
 #incbin "FE8_NI_Map.bin"
+
+#include "Inescapable/InescapableInstrument.event"
+
+#include "MilanorSortie/MilanorSortieInstrument.event"

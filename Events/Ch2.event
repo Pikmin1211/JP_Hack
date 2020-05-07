@@ -244,6 +244,7 @@ EndingScene:
 		SetBackground(Plain_2)
 		MUSC 0x4C // birds
 		Text(Ch2ItemGet)
+		REMOVEPORTRAITS
 		GiveItem(AngelicRobe,Sanders)
 		LABEL 1
 	CHECK_EVENTID 0xA
@@ -253,6 +254,7 @@ EndingScene:
 			SetBackground(Plain_2)
 			MUSC 0x4C // birds
 			Text(Ch2ItemGet)
+			REMOVEPORTRAITS
 			LABEL 3
 		GiveItem(BrightLance,Sanders)
 		LABEL 2

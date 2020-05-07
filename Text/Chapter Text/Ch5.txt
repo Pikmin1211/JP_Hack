@@ -3,3 +3,263 @@ Chapter 5: Unsafe Passage[X]
 
 ## Ch5Objective
 Escort[X]
+
+
+##Ch5OP
+[Right][LoadScott][FarRight][LoadMarisa][MidLeft][LoadSanders]
+Seems we finally[N]
+made it here.[AN]
+
+[FarRight]
+Ehh? But there's[N]
+nobody around...[AN]
+
+[Right]
+This gives me[N]
+a bad feeling.[AN]
+Did something happen?[AN]
+
+[FarRight]
+Oh, here[N]
+comes someone.[AN]
+Heeey! Mister![AN]
+
+[MidLeft][MoveLeft][FarLeft][LoadVillagerMan]
+Huh? What do you want?[N]
+I'm in a bit of a hurry...[AN]
+
+[Right][Clear][LoadFinn]
+What exactly is[N]
+going on around here?[AN]
+
+[FarLeft]
+You haven't heard?[AN]
+Those beasts are[N]
+coming around![AN]
+If we don't run[N]
+away quick,[AN]
+they'll tear us[N]
+to shreds...[AN]
+Now, if you'll[N]
+excuse me,[AN]
+I have to go.[AN]
+
+[Clear][LoadSayori]
+Beasts? You don't[N]
+think he means...[AN]
+
+[Left]
+There's only one bunch[N]
+of beasts we know.[AN]
+
+[Right]
+Looks like we've[N]
+got another job.[AN]
+
+[FarRight][Clear][LoadNeptune]
+Aw, can't I catch a[N]
+break around here...?[A][X]
+
+
+
+## Ch5OP2
+[Right][LoadMoneyman][FarRight][LoadLoli][MidLeft][LoadBatta]
+Alright, you louts.[AN]
+Hand over yer' treasure and I[N]
+won't be havin' to split heads![AN]
+
+[Right]
+B-but sir, we have[N]
+nothing left to give...[AN]
+
+[MidLeft]
+Ya takin' me for a fool?[AN]
+I'll teach ya ta mess[N]
+with Batta the beast!![AN]
+
+[FarRight]
+Eeep!![AN]
+
+[FarFarRight]
+Quickly, into[N]
+the carriage![AN]
+
+[Right][Clear][FarRight][Clear]
+
+[MidLeft]
+Huh?! A wagon?! Blast![AN]
+Alright, boys, don't[N]
+let them get away![AN]
+Burn their little[N]
+carriages to ash![A][X]
+
+
+
+## Ch5OP3
+[MidRight][LoadSanders][MidLeft][LoadMoustacheVillager]
+Eh? Who are you?[AN]
+Are you here[N]
+to help us out?[AN]
+
+[MidRight]
+Help you out...?[AN]
+
+[MidLeft]
+We're trying to escort the[N]
+villagers in our wagons, here.[AN]
+But we're not much for fightin'.[AN]
+You fellas, on the other hand,[N]
+seem capable. What do ya say?[AN]
+
+[MidRight]
+We're going to be fighting[N]
+these bandits anyways.[AN]
+I have no problem with it.[AN]
+
+[MidLeft]
+Thank you, sir! We just need to[N]
+carry them to the gates here.[AN]
+The road will lead them to safety.[A][X]
+
+
+
+## Ch5Turn1Event
+[MidLeft][LoadSanders]
+Those must be the wagons.[N]
+The gate is behind them.[AN]
+If we can [Red]drop [Red]off[N]
+the villagers there,[AN]
+they can escape.[AN]
+Let's try and [Red]rescue[Red][N]
+as many as we can.[A][X]
+
+
+
+## Ch5Village1
+[MidLeft][LoadCurrent]
+Seems they've already evacuated.[AN]
+Oh? They left something here.[N]
+Guess nobody will miss it...[A][X]
+
+
+
+## Ch5Village2
+[MidLeft][LoadCurrent]
+Looks like the owner and[N]
+their things are already gone.[AN]
+...But, what's this?[A][X]
+
+
+
+## Ch5Village3
+[MidLeft][LoadCurrent][MidRight][LoadOldMan]
+Oho! Don't worry[N]
+about little old me.[AN]
+These bones are too weary to[N]
+be running around anywho.[AN]
+Here. Take this as my way of[N]
+saying thanks for the villagers.[A][X]
+
+
+
+## Ch5BattaBattle
+[MidLeft][LoadBatta]
+Like hell I'd let you[N]
+punks mess with my messin'![AN]
+Bring it on![A][X]
+
+## Ch5BattaDeath
+[MidLeft][LoadBatta]
+Urgh... no good...[Die][X]
+
+## Ch5ONeillBattle
+[MidLeft][LoadONeill]
+Think you're tough 'cuz[N]
+you got lucky last time?[AN]
+I'll teach you[N]
+not ta mess wit' us![A][X]
+
+## Ch5ONeillDeath
+[MidLeft][LoadONeill]
+Just how...[N]
+lucky can ya get...?[Die][X]
+
+## Ch5KekhBattle
+[MidLeft][LoadKekh]
+Ah, you again...[AN]
+My blade has hungered[N]
+for another bout.[A][X]
+
+## Ch5KekhDeath
+[MidLeft][LoadKekh]
+Heh, as I expected...[N]
+You're pretty tough.[Die][X]
+
+
+
+## Ch5Ending
+[MidLeft][LoadSanders][Right][LoadFinn][FarRight][LoadOskar]
+That the[N]
+last of them?[AN]
+
+[Right]
+Seems so. Whoever remained[N]
+appears to be fleeing.[AN]
+
+[FarRight][Clear][LoadWolt]
+Should we go[N]
+after them?[AN]
+
+[MidLeft]
+Let them go.[AN]
+Remember why we came[N]
+in the first place.[AN]
+We still need to[N]
+find those sewers.[AN]
+
+[MoveLeft][FarLeft][LoadVillagerMan]
+The sewers? They're[N]
+just over there.[AN]
+I'm not sure you'd want to[N]
+be heading down there, though.[AN]
+They're teeming with monsters.[AN]
+
+[Right]
+Thank you for the concern,[N]
+but we're aptly prepared.[AN]
+Shall we be off, then?[AN]
+
+[Left]
+Right.[N]
+Let's move.[AN]
+
+[Left][Clear][Right][Clear][FarRight][Clear]
+[MidRight][LoadVergil]
+[FarLeft][MoveMidLeft]
+Oh, sir Vergil![AN]
+
+[MidRight]
+What happened here, citizen?[AN]
+I came to investigate the[N]
+reports of monster attacks,[AN]
+but... I haven't seen so much[N]
+as a single soul around town.[AN]
+
+[MidLeft]
+Well, you see...[A][X]
+
+
+## Ch5ItemGet
+[MidLeft][LoadSanders][MidRight][LoadMoustacheVillager]
+Ah, sir![AN]
+You were the mercenaries[N]
+assisting us, correct?[AN]
+
+[MidLeft]
+That'd be us.[AN]
+
+[MidRight]
+The villagers asked us to[N]
+deliver this to you,[AN]
+for helping them escape.[AN]
+Please, take it.[A][X]

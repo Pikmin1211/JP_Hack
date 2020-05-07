@@ -23,3 +23,17 @@ BYTE HardCharLock Arle 0x0
 #define ArleLock 0xF
 
 SetWeaponLockArray(ArleLock,ArleLockArray)
+
+DevvyLockArray:
+BYTE HardCharLock Devvy 0x0
+
+#define DevvyLock 0x10
+
+SetWeaponLockArray(DevvyLock,DevvyLockArray)
+
+DonnalenLockArray:
+BYTE HardCharLock Donnalen 0x0
+
+#define DonnalenLock 0x11
+
+SetWeaponLockArray(DonnalenLock,DonnalenLockArray)

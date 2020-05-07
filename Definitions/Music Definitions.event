@@ -59,7 +59,6 @@
 #define BabaYetuSong 0x148
 #define CrystalPalaceStage1Song 0x149
 #define OnTheHuntSong 0x152
-//#define KitchenAceSong 0x153
 #define LandOfSorrowSong 0x15C
 #define WhereTheWindRustlesSong 0x15D
 #define BelovedOneSong 0x166
@@ -76,4 +75,11 @@
 #define LikeAGlintOfLightSong 0x197
 #define OffkeySong 0x198
 #define OldFamiliarScentSong 0x199
-//#define MilanorThemeSong 0x1A0
+#define FillmoreSong 0x153
+#define StrongerMonstersSong 0x1A1
+#define DurantSortieSong 0x1A2
+#define Lufia2Battle2Song 0x1A3
+#define BonusStageDKCSong 0x1AA
+#define InescapableSong 0x1AB
+#define MilanorSortieSong 0x1AC
+#define ACrisisSong 0x1AD

@@ -1,0 +1,15 @@
+
+
+{
+	#define ItemNumber Basilisk
+	#define ItemIcon BasiliskIcon
+	#define ItemMagicAnimation BasiliskMagicAnim
+	#define ItemNameLocation BasiliskName
+	#define ItemDescriptionLocation BasiliskDescription
+	#define ItemUseTextLocation BasiliskUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}
