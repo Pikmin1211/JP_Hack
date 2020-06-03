@@ -40,6 +40,13 @@ SetClassPromos(Myrmidon,Swordmaster,DreadFighter)
 SetClassPromos(MyrmidonF,SwordmasterF,DreadFighterF)
 SetClassPromos(Priest,SwordSaint,WarMonk)
 
+SetClassHPPromoBonus(DruidF,3)
+SetClassStrPromoBonus(DruidF,0)
+SetClassMagPromoBonus(DruidF,1)
+SetClassSklPromoBonus(DruidF,1)
+SetClassSpdPromoBonus(DruidF,3)
+SetClassDefPromoBonus(DruidF,2)
+SetClassResPromoBonus(DruidF,2)
 
 // Killing Trainee Palettes
 setCBSP(0x00, Ross, 0x00, 0x00)
@@ -81,6 +88,7 @@ SetItemRank(SteelAxe,DRank) //wtf IS
 SetItemDurability(ChestKey_5,3)
 
 SetItemValue(MasterSeal,10000)
+SetItemValue(ShortBow,28)
 
 SetItemValue(Hatchet,18)
 SetItemAbility1(Hatchet,IsWeapon)
@@ -93,11 +101,15 @@ SetItemWeight(Aura,10)
 
 SetItemAccuracy(Ballista,80)
 
+ALIGN 4
 NewThiefSkillList:
 BYTE 255 StealID
 BYTE 0 0
 
 SetClassLearnedSkills(Thief,NewThiefSkillList)
+SetClassLearnedSkills(Assassin,NewThiefSkillList)
+SetClassLearnedSkills(AssassinF,NewThiefSkillList)
+SetClassLearnedSkills(Rogue,NewThiefSkillList)
 
 // Lower throne avoid
 PUSH

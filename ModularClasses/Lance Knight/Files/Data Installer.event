@@ -77,7 +77,7 @@
 #define TerrainResistanceBonus GetResBonus
 
 //Promotion Paths
-#define PromotionOne EphraimMasterLord
+#define PromotionOne DukeKnight
 #define PromotionTwo Paladin
 
 //EXP Operands

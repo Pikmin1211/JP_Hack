@@ -180,6 +180,10 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	#ifdef _DEBUG_ROOM_
+		MNC2 0x4E //debug room
+	#endif
+	#ifndef _DEBUG_ROOM_
 	MUSC ASunnyPathSong
 	SetBackground(Castle_Garden_Past)
 	Text(PrologueOP)
@@ -206,6 +210,7 @@ BeginningScene:
 	FlashCursor(Batta,60)
 	Text(PrologueOP4)
 	NoFade
+	#endif
 	ENDA
 
 EndingScene:

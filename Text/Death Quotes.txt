@@ -116,3 +116,13 @@ I have to keep... urk...[Die][X]
 [MidRight][LoadKy]
 ...May you all live on[N]
 to a more peaceful era.[Die][X]
+
+## ArleDeath
+[MidRight][LoadArle]
+This is...[N]
+N-no, I can't...[Die][X]
+
+## JasonDeath
+[MidRight][LoadJason]
+I-I'm sorry...[N]
+Eve...[Die][X]

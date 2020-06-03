@@ -299,3 +299,36 @@
 #define FuryAxeMagicAnim 0xFF//MagicAnimationID here
 #define FuryAxeIcon (FuryAxe-1)//ItemIconID here
 #define FuryAxeUseText 0x0//TextID here
+
+#define Entrap 0xF6
+#define EntrapMagicAnim 0xFF
+#define EntrapIcon (Entrap-1)
+
+#define Soothe 0xF7//ItemID here
+#define SootheMagicAnim 0xFF//MagicAnimationID here
+#define SootheIcon (Soothe-1)//ItemIconID here
+
+#define Remedy 0xF8//ItemID here
+#define RemedyMagicAnim 0xFF//MagicAnimationID here
+#define RemedyIcon (Remedy-1)//ItemIconID here
+
+#define Alleviate 0xF9//ItemID here
+#define AlleviateMagicAnim 0xFF//MagicAnimationID here
+#define AlleviateIcon (Alleviate-1)//ItemIconID here
+
+#define Petrify 0xFA//ItemID here
+#define PetrifyMagicAnim StoneAnimation//MagicAnimationID here
+#define PetrifyIcon (Petrify-1)//ItemIconID here
+
+#define Gungnir Vidofnir//ItemID here
+#define GungnirMagicAnim 0xFF//MagicAnimationID here
+#define GungnirIcon (Gungnir-1)//ItemIconID here
+#define GungnirUseText 0x0//TextID here
+
+#define Again 0xFB//ItemID here
+#define AgainMagicAnim 0xFF//MagicAnimationID here
+#define AgainIcon (Again-1)//ItemIconID here
+
+#define Rune 0xFC//ItemID here
+#define RuneMagicAnim 0xFF//MagicAnimationID here
+#define RuneIcon (Rune-1)//ItemIconID here

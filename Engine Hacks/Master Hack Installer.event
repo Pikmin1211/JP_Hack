@@ -67,3 +67,11 @@ POP
 #include "SeizeFix/SeizeFix.event"
 
 #include "MultiSupplyUnits/Installer.event"
+
+#include "CustomHealAmounts/healingstuff.event"
+
+#include "ChangeBadStatus/Installer.event"
+
+#include "SRankWeight/SRankWeight.event"
+
+#include "HardModeShop/Installer.event"

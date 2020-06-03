@@ -1,0 +1,9 @@
+ALIGN 4
+NewExecRestore:
+#incbin "ExecRestore.dmp"
+POIN Item_TURange
+
+ALIGN 4
+AlleviateEffect:
+#incbin "AlleviateEffect.dmp"
+POIN NewExecRestore

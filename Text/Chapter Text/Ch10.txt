@@ -3,3 +3,130 @@ Chapter 10: Cold New Winds[X]
 
 ## Ch10Objective
 Destroy[X]
+
+
+
+
+## Ch10OP
+[MidLeft][LoadSanders][FarRight][LoadKy][Right][LoadDerek]
+Seems we're here.[N]
+Notice the tents?[AN]
+
+[MidLeft]
+Yeah. There looks to[N]
+be about five of them.[AN]
+
+[Right]
+The weapon supplies[N]
+are stored inside.[AN]
+If we can take out the tents,[AN]
+it should prevent the[N]
+imperials from reinforcing.[AN]
+
+[FarRight]
+Each tent seems to be[N]
+holding specific units.[AN]
+We should consider which[N]
+we want to destroy first...[A][X]
+
+
+
+## Ch10OP2
+[MidLeft][LoadTodoroki]
+So, they came this[N]
+way after all.[AN]
+Alright, men! They shall[N]
+go no further![A][X]
+
+
+
+## Ch10JasonArle
+[FarRight][LoadArle][Right][LoadJason]
+You alright, Arle?[AN]
+
+[FarRight]
+Yeah, I think so...[AN]
+I wasn't expecting those[N]
+guys to start attacking us![AN]
+What's their problem?[AN]
+
+[MidLeft][LoadSanders]
+These imperials giving[N]
+you a hard time?[AN]
+
+[Right]
+We passed through here[N]
+last time no problem.[AN]
+Did something happen?[AN]
+
+[MidLeft]
+That... may be our fault.[AN]
+Either way, if you guys[N]
+need to get through here,[AN]
+your best bet may be[N]
+to stick with us.[AN]
+
+[FarRight]
+Hey, thanks![AN]
+We can help out[N]
+too, right Jason?[AN]
+
+[Right]
+Prepped for combat.[AN]
+Just tell me[N]
+where to aim![A][X]
+
+
+
+## Ch10TodorokiBattle
+[MidLeft][LoadTodoroki]
+You bunch again...[AN]
+Let's see if you[N]
+can keep up![A][X]
+
+## Ch10TodorokiDeath
+[MidLeft][LoadTodoroki]
+Heh, just as good[N]
+as I remembered...[A][X]
+
+
+## Ch10Ending
+[FarLeft][LoadArle][Left][LoadSanders][FarRight][LoadMilanor][Right][LoadDerek]
+That ought to slow them down enough.[N]
+We can get through without much trouble.[AN]
+
+[Left]
+Great. Then let's get going.[AN]
+I'm starting to get[N]
+sick of all this snow.[AN]
+
+[FarRight]
+But where are we[N]
+going after this?[AN]
+
+[FarLeft]
+Well, me and Jason were going to head down[N]
+to a temple by the base of the mountain.[AN]
+Maybe you could join us?[AN]
+
+[Left]
+Sounds like something[N]
+worth checking out.[AN]
+
+[Right][Clear][LoadWrys]
+You're supposing another[N]
+weapon could be there?[AN]
+
+[FarLeft]
+A weapon...[AN]
+I think we heard something about[N]
+that when we were asking around.[AN]
+
+[FarRight]
+Sounds like a[N]
+good lead then.[AN]
+
+[Left]
+Looks like we're taking[N]
+you two there then.[AN]
+Let's move.[A][X]

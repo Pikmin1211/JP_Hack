@@ -175,12 +175,13 @@ gSuspendSaveChunks:
 	DeclSaveChunk($088C, $00C0, $0A4288+1,            $0A4248+1)            // Previous chapters turn count & time & stuff
 	DeclSaveChunk($094C, $0010, MSu_SaveMenuRelated,  MSu_LoadMenuRelated)  // "menu related list" related
 	DeclSaveChunk($095C, $0019, $0A3150+1,            $0A3198+1)            // Permanent eids
-	DeclSaveChunk($0965, $0005, $0A3130+1,            $0A3170+1)            // Temporary eids
-	DeclSaveChunk($096C, $0024, MSa_SaveWMStuff,      MSa_LoadWMStuff,      EMS_CHUNK_WMDATA)
-	DeclSaveChunk($0990, $000C, MSu_SaveDungeonState, MSu_LoadDungeonState) // Valni/Lagdou active run data
-	DeclSaveChunk($099C, $0004, MSu_SaveEventCounter, MSu_LoadEventCounter) // Event counter
+	DeclSaveChunk($0975, $0005, $0A3130+1,            $0A3170+1)            // Temporary eids
+	DeclSaveChunk($097C, $0024, MSa_SaveWMStuff,      MSa_LoadWMStuff,      EMS_CHUNK_WMDATA)
+	DeclSaveChunk($09A0, $000C, MSu_SaveDungeonState, MSu_LoadDungeonState) // Valni/Lagdou active run data
+	DeclSaveChunk($09AC, $0004, MSu_SaveEventCounter, MSu_LoadEventCounter) // Event counter
 
-	// $0970
+	// $0970 
+	// ^ is wrong, it's $09A0
 
 	// Vanilla (replaced):
 	// DeclSaveChunk($08C0, $0A5C, MSu_SavePlayerUnits,  MSu_LoadPlayerUnits)  // Player Units
@@ -194,18 +195,23 @@ gSuspendSaveChunks:
 	// This saves *all* of them
 
 	// Save 62 blue units (62 * 0x34 = $0C98)
-	DeclSaveChunk($0970, $0C98, ESU_SavePlayerSuspendUnits, ESU_LoadPlayerSuspendUnits)
+	DeclSaveChunk($09B0, $0C98, ESU_SavePlayerSuspendUnits, ESU_LoadPlayerSuspendUnits)
 
 	// Save 50 red units (50 * 0x38 = $0AF0)
-	DeclSaveChunk($1608, $0AF0, ESU_SaveRedSuspendUnits,    ESU_LoadRedSuspendUnits)
+	DeclSaveChunk($1648, $0AF0, ESU_SaveRedSuspendUnits,    ESU_LoadRedSuspendUnits)
 
 	// Save 20 green units (20 * 0x38 = $0460)
-	DeclSaveChunk($20F8, $0460, ESU_SaveGreenSuspendUnits,  ESU_LoadGreenSuspendUnits)
+	DeclSaveChunk($2138, $0460, ESU_SaveGreenSuspendUnits,  ESU_LoadGreenSuspendUnits)
 
 	// Save Debuffs (TODO: maybe reduce size)
-	DeclSaveChunk($2558, DebuffTableSize, SUD_SaveDebuffs,  SUD_LoadDebuffs)
+	DeclSaveChunk($2598, DebuffTableSize, SUD_SaveDebuffs,  SUD_LoadDebuffs)
 
-	// ends at $2E58
+	// ends at $2E98
+	// free up to $2E78	
+
+	//DEBUFF TABLE SPACE IS ONLY USED FOR 0x5A0 BYTES!
+	//LOWER SIZE AND THIS ENDS AT $2B38!	
+	
 
 	DeclSaveChunk(0, 0, 0, MSu_LoadClaimFlagsFromParentSave) // Load Bonus Claim flags from parent save
 

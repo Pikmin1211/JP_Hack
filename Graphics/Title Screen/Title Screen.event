@@ -1,0 +1,17 @@
+#include "256 Title Screen/titlebackgroundinstaller.event"
+
+ALIGN 4
+GameLogo:
+#incext Png2Dmp "Logo.png" --lz77
+
+ALIGN 4
+GameTitle:
+#incext Png2Dmp "TitleObjectGraphics.png" --lz77
+
+PUSH
+ORG 0xC5808
+POIN GameLogo
+
+ORG 0xC5830
+POIN GameTitle
+POP

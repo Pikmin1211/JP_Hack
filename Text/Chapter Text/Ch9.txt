@@ -3,3 +3,393 @@ Chapter 9: In the Basement[X]
 
 ## Ch9Objective
 Escape[X]
+
+
+
+## Ch9OP
+[Left][LoadSanders][FarLeft][LoadMilanor]
+...Something[N]
+seems off.[AN]
+
+[Left]
+What's wrong?[AN]
+
+[FarLeft]
+Usually by now we would[N]
+have met with someone.[AN]
+
+[Right][LoadFinn][FarRight][LoadOtaku]
+Seems like a bad[N]
+sign, then.[AN]
+
+[Right]
+Should we get[N]
+prepared?[AN]
+
+[Left]
+Always better[N]
+to be cautious.[AN]
+
+[FarLeft]
+I hope everyone's[N]
+alright...[A][X]
+
+
+
+## Ch9OP2
+[Left][LoadVergil][FarLeft][LoadDerek][MidRight][LoadGromell]
+Hahaha! Looks like that intel we[N]
+got was on the mark after all.[AN]
+
+[Left]
+Right you are. This will remove[N]
+a major thorn in our side.[AN]
+
+[MidRight]
+Alright, men! These are[N]
+enemies of the Empire![AN]
+For too long have[N]
+they interfered![AN]
+We shall rid ourselves[N]
+of that monster scourge![AN]
+We shall obtain[N]
+those holy weapons![AN]
+Show no mercy![AN]
+[Clear]
+
+[FarLeft]
+[Beat][AN]
+
+[Left]
+...Derek, you've seemed off ever[N]
+since that caravan mission.[AN]
+
+[FarLeft]
+That man I fought...[N]
+who was he?[AN]
+
+[Left]
+I don't have answers[N]
+for you, Derek.[AN]
+
+[FarLeft]
+Yes... and neither[N]
+did Lord Raydrik...[A][X]
+
+
+
+
+## Ch9OP3
+[MidLeft][LoadEevster][MidRight][LoadKy]
+Eev! Are you[N]
+alright?![AN]
+
+[MidLeft]
+For now, yes...[N]
+But the guards...[AN]
+
+[MidRight]
+...I'm afraid[N]
+there's no time.[AN]
+
+[MidLeft]
+Right...[A][X]
+
+
+
+
+## Ch9OP4
+[MidLeft][LoadEevster][MidRight][LoadKy]
+Shit, the gates![AN]
+They must have figured[N]
+out our mechanism already...[AN]
+
+[MidLeft]
+Then we'll have to[N]
+stand our ground.[AN]
+
+[MidRight]
+It's a deathtrap.[AN]
+Looks like we've played[N]
+right into their hands.[AN]
+
+[MidLeft]
+[Beat][AN]
+
+[MidRight]
+Whatever happens here...[N]
+It's been an honor, Eev.[AN]
+Alright, guys![N]
+We hold here![A][X]
+
+
+
+
+## Ch9OP5
+[MidLeft][LoadSanders][MidRight][LoadMilanor]
+I wasn't expecting things[N]
+to be this bad...[AN]
+
+[MidLeft]
+Guess things can never[N]
+go our way, huh.[AN]
+Looks like we're[N]
+helping you out again.[A][X]
+
+
+
+
+## Ch9DerekTurns
+[MidLeft][LoadDerek][MidRight][LoadVergil]
+I understand that look in your eyes.[N]
+You need answers, don't you?[AN]
+
+[MidLeft]
+[Beat][AN]
+
+[MidRight]
+If you go, there's no turning back.[AN]
+I won't stop you here, but...[N]
+Eventually, our blades will cross.[AN]
+
+[MidLeft]
+Thank you, sir Vergil.[N]
+It's been an honor.[AN]
+
+[MidRight]
+Find your destiny.[A][X]
+
+
+
+
+
+## Ch9DerekTurns2
+[MidLeft][LoadDerek][MidRight][LoadEevster]
+Your blade[N]
+is sheathed...[AN]
+
+[MidLeft]
+I'm not here to fight you.[N]
+If I may, allow me to protect you.[AN]
+
+[MidRight][MoveRight][FarRight][LoadKy]
+You're the enemy.[AN]
+Give me one good[N]
+reason to trust you.[AN]
+
+[Right]
+Do we have[N]
+much choice?[AN]
+
+[FarRight]
+...One false move,[N]
+and it's your head.[AN]
+
+[MidLeft]
+I understand.[A][X]
+
+
+
+## Ch9TurnOne
+[MidLeft][LoadSanders]
+Yandahl and Milanor told me[N]
+about the gate mechanism.[AN]
+As I understand it,[AN]
+we're going to need to hit both[N]
+switches to open the doors.[A][X]
+
+
+## Ch9TurnOne2
+[MidLeft][LoadSanders]
+There's way too many of[N]
+them for us to handle,[AN]
+so we should just hurry[N]
+out of here after that.[A][X]
+
+
+
+## Ch9GromellTalks
+[MidRight][LoadGromell]
+Looks like they're putting[N]
+up more fight than I expected...[AN]
+Call in for the elites![N]
+We'll crush them with force![A][X]
+
+
+## Ch9RaydrikMoves
+[MidRight][LoadRaydrik]
+Useless pawns...[AN]
+Looks like I must dispose[N]
+of these vermin myself.[A][X]
+
+
+## Ch9Recruitment
+[Right][LoadEevster][FarRight][LoadDerek][MidLeft][LoadSanders]
+Looks like you're[N]
+still in one piece.[AN]
+
+[Right]
+I don't go down[N]
+that easily.[AN]
+
+[MidLeft]
+And what are you[N]
+doing here?[AN]
+
+[FarRight]
+Peace, friend.[AN]
+I seek no[N]
+quarrel with you.[AN]
+
+[MidLeft]
+So you're[N]
+helping us now?[AN]
+I'll be keeping my[N]
+eyes on you, then.[AN]
+
+[FarRight][Clear][LoadKy]
+We can converse[N]
+more later.[AN]
+
+[MidLeft]
+Right. Let's move.[A][X]
+
+
+## Ch9Ending
+[FarLeft][LoadKy][Right][LoadEevster][FarRight][LoadDerek][Left][LoadSanders]
+Is everyone[N]
+alright?[AN]
+
+[FarLeft]
+Looks like we've[N]
+mostly made it out.[AN]
+
+[Right]
+What a disaster...[AN]
+
+[Left]
+And you...[AN]
+
+[FarRight]
+I'm sure you remember.[AN]
+Back with the caravans.[N]
+That... man.[AN]
+
+[Left]
+He seemed hell-bent on[N]
+killing anyone in his path.[AN]
+
+[FarRight]
+It's more than that.[N]
+He seemed... unhuman.[AN]
+
+[Right]
+I've heard a bit about this.[AN]
+Something the empire does with[N]
+black magic behind closed doors.[AN]
+
+[FarRight]
+So it's as I feared...[AN]
+
+[Right]
+Well, it's all just[N]
+rumors and speculation.[AN]
+We haven't been able to find[N]
+any reliable source about it...[AN]
+
+[FarLeft]
+We should probably[N]
+focus on moving forwards.[AN]
+No doubt they're[N]
+following close behind.[AN]
+
+[Left]
+Right. Let's get[N]
+going then.[AN]
+
+[FarRight]
+You may want to prepare ahead.[AN]
+There's an imperial encampment[N]
+not too far down the road.[AN]
+
+[FarLeft]
+More fighting, then.[N]
+Allow me to lend my blade.[A][X]
+
+
+
+## Ch9Ending2
+[Left][LoadGromell][FarLeft][LoadVergil][MidRight][LoadRaydrik]
+So they've escaped[N]
+once more...[AN]
+
+[Left]
+Apologies,[N]
+lord Raydrik...[AN]
+I underestimated[N]
+their abilities.[AN]
+
+[FarLeft]
+Fear not.[AN]
+The route is blocked[N]
+by our encampment.[AN]
+They'll be walking[N]
+back into our hands.[AN]
+
+[MidRight]
+Hmph. Very well.[N]
+You are both dismissed.[AN]
+
+[Left][Clear][FarLeft][Clear]
+
+[MidRight]
+Another failure.[AN]
+
+[MidLeft][ToggleColorInvert]
+Fear not, lord Raydrik.[AN]
+The ultimate power will[N]
+soon be in your hands.[AN]
+Then you can be rid of[N]
+those that would oppose you.[AN]
+[ToggleColorInvert]
+
+[MidRight]
+Yes...[N]
+Yes, you are right.[AN]
+I shall carry out[N]
+the dark ritual.[AN]
+And then...[A][X]
+
+
+## Ch9VergilBattle
+[MidLeft][LoadVergil]
+So you would be foolish[N]
+enough to challenge me?[AN]
+En garde![A][X]
+
+## Ch9VergilDeath
+[MidLeft][LoadVergil]
+Impossible...[AN]
+You've grown[N]
+this strong...?[A][X]
+
+## Ch9GromellBattle
+[MidLeft][LoadGromell]
+Looking for a challenge?[N]
+Ha! You've got guts, kid.[AN]
+Bring it on, then![A][X]
+
+## Ch9GromellDeath
+[MidLeft][LoadGromell]
+N-no way...[AN]
+Looks like I'll[N]
+have to back out...[A][X]
+
+## Ch9RaydrikBattle
+[MidLeft][LoadRaydrik]
+You shall bend before my will.[N]
+Begone from my sight, pawn![A][X]
+
+## Ch9RaydrikDeath
+[MidLeft][LoadRaydrik]
+Hmph. A foolish effort.[A][X]

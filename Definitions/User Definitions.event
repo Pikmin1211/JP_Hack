@@ -6,6 +6,8 @@
 #undef Novala
 #undef NovalaMug
 
+//#define _DEBUG_ROOM_
+
 #define MautheDoog 0x5B
 //#define FieryFang 0xB1
 
@@ -21,5 +23,5 @@
 #define DelayedDefaultAI [AttackInRange,WaitOneTurn,DefaultRecovery,DefaultAI4]
 #define HastyAI [NoAI1,GoToEscapePoint,DefaultRecovery,DefaultAI4]
 
-#define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB) "BYTE 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 HPB StrB SklB SpdB DefB ResB LckB MagB"
+#define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB) "BYTE 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 HPB StrB SklB SpdB DefB ResB LckB MagB"
 #define PassiveGrowths 1 // in ier extra byte field

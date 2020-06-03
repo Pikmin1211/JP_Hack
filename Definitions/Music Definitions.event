@@ -83,3 +83,7 @@
 #define InescapableSong 0x1AB
 #define MilanorSortieSong 0x1AC
 #define ACrisisSong 0x1AD
+#define DefaultDuelSong 0x1B4
+#define RebelstarBGM1Song 0x1B5
+#define RebelstarBGM6Song 0x1B6
+#define Route120Song 0x1B7

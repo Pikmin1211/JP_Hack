@@ -47,3 +47,5 @@
 #include "Brawler/Brawler Installer.event"
 
 #include "Wanderer/Wanderer Installer.event"
+
+#include "Duke Knight/Duke Knight Installer.event"

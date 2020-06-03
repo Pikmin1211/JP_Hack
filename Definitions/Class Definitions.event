@@ -153,3 +153,8 @@
 #define BrawlerClassCard 0x116//MugID here
 
 #define Gladiator 0x98
+
+#define DukeKnight EphraimMasterLord//ClassID here
+#define DukeKnightLanceAnim GreatLordLanceAnim//AnimationID here
+#define DukeKnightUnarmedAnim GreatLordUnarmedAnim//AnimationID here
+#define DukeKnightClassCard 0x117//MugID here

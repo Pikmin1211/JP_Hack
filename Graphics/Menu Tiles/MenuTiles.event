@@ -1,0 +1,11 @@
+MenuTiles:
+#incext Png2Dmp "NoDragons.png" --lz77
+
+PUSH
+ORG 0x5B6470
+// For each color style?
+POIN MenuTiles // Battle Preview?
+POIN MenuTiles // Minimug Box?
+POIN MenuTiles // Terrain Window?
+POIN MenuTiles // Objective Window?
+POP

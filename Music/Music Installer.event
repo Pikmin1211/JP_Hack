@@ -259,3 +259,15 @@ SongTable(MilanorSortieSong,MilanorSortie,1)
 SongTable(ACrisisSong,ACrisis,1)
 #include "S Files/ACrisis.event"
 
+SongTable(DefaultDuelSong,DefaultDuel,1)
+#include "S Files/DefaultDuel.event"
+
+SongTable(RebelstarBGM1Song,RebelstarBGM1,1)
+#include "S Files/RebelstarBGM1.event"
+
+SongTable(RebelstarBGM6Song,RebelstarBGM6,1)
+#include "S Files/RebelstarBGM6.event"
+
+SongTable(Route120Song,Route120,1)
+#include "S Files/Route120.event"
+

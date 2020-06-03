@@ -2,43 +2,50 @@
 Sanders[X]
 
 ## SandersDescription
-Placeholder[X]
+A mercenary from a small town.[N]
+Cold and calculating.[X]
 
 ## FinnName
 Finn[X]
 
 ## FinnDescription
-Placeholder[X]
+Sanders' friend and guardian.[N]
+Dedicated to protecting people.[X]
 
 ## ScottName
 Scott[X]
 
 ## ScottDescription
-Placeholder[X]
+An aspiring knight who wishes for[N]
+the strength to defend his friends.[X]
 
 ## RengeName
 Renge[X]
 
 ## RengeDescription
-Placeholder[X]
+A young girl from a simple village.[N]
+Her expression betrays her emotions.[X]
 
 ## MarisaName
 Marisa[X]
 
 ## MarisaDescription
-Placeholder[X]
+An energetic witch with a love for[N]
+spellcasting and potion brewing.[X]
 
 ## OskarName
 Oskar[X]
 
 ## OskarDescription
-Placeholder[X]
+A simple village man who[N]
+is overly fond of plants.[X]
 
 ## BlancName
 Blanc[X]
 
 ## BlancDescription
-Placeholder[X]
+A quiet girl who enjoys reading.[N]
+Her rage changes her personality.[X]
 
 ## BattaName
 Batta[X]
@@ -58,253 +65,295 @@ Savage, unremorseful brutes.[X]
 Sayori[X]
 
 ## SayoriDescription
-Placeholder[X]
+A girl who always puts out a happy smile[N]
+despite the way she feels inside.[X]
 
 ## WoltName
 Wolt[X]
 
 ## WoltDescription
-Placeholder[X]
+Roy's close friend and milk brother.[N]
+Has great potential with his bowmanship.[X]
 
 ## ArdenName
 Arden[X]
 
 ## ArdenDescription
-Placeholder[X]
+A knight from a small town who strives[N]
+to protect his friends and family.[X]
 
 ## KekhName
 K'ekh[X]
 
 ## KekhDescription
-Placeholder[X]
+A scheming memeber of Batta's beasts.[N]
+Overconfident in his swordsmanship.[X]
 
 ## DerekName
 Derek[X]
 
 ## DerekDescription
-Placeholder[X]
+An imperial knight from a noble family.[N]
+Always tries to do the right thing.[X]
 
 ## VergilName
 Vergil[X]
 
 ## VergilDescription
-Placeholder[X]
+A famed veteran imperial knight. Known[N]
+for chivalrous deeds across the land.[X]
 
 ## ImperialName
 Imperial[X]
 
 ## ImperialDescription
-Placeholder[X]
+Soldiers of the empire,[N]
+ruled by lord Raydrik.[X]
 
 ## TownGuardName
 Town Grd.[X]
 
 ## TownGuardDescription
-Placeholder[X]
+Guardsmen of[N]
+a small town.[X]
 
 ## ONeillName
 O'Neill[X]
 
 ## ONeillDescription
-Placeholder[X]
+One of Batta's Beasts. Dumb as[N]
+a brick, and hits just as hard.[X]
 
 ## PriestUnitName
 Priest[X]
 
 ## PriestUnitDescription
-Placeholder[X]
+A hapless priest[N]
+from the local temple.[X]
 
 ## WrysName
 Wrys[X]
 
 ## WrysDescription
-Placeholder[X]
+A wise old priest with a mysterious[N]
+past. Knowledgable and kind.[X]
 
 ## NeptuneName
 Neptune[X]
 
 ## NeptuneDescription
-Placeholder[X]
+A flighty, lazy girl. Would rather[N]
+be goofing off than fighting.[X]
 
 ## WilbellName
 Wilbell[X]
 
 ## WilbellDescription
-Placeholder[X]
+A self acclaimed great witch.[N]
+Afraid to admit her own mistakes.[X]
 
 ## MonsterName
 Monster[X]
 
 ## MonsterDescription
-Placeholder[X]
+Mysterious creatures that seem[N]
+bent on wanton destruction.[X]
 
 ## CultistName
 Cultist[X]
 
 ## CultistDescription
-Placeholder[X]
+Members of a dark[N]
+and mysterious cult.[X]
 
 ## NovalaName
 Novala[X]
 
 ## NovalaDescription
-Placeholder[X]
+A member of an old cult said[N]
+to have died off long ago.[X]
 
 ## BrianName
 Brian[X]
 
 ## BrianDescription
-Placeholder[X]
+A stray thief with a rotund figure.[N]
+He is elegant and charming.[X]
 
 ## TodorokiName
 Todoroki[X]
 
 ## TodorokiDescription
-Placeholder[X]
+An imperial mercenary[N]
+who enjoys a challenge.[X]
 
 ## EevsterName
 Eevster[X]
 
 ## EevsterDescription
-Placeholder[X]
+Leader of the Basement,[N]
+an underground association.[X]
 
 ## BasementName
 Basement[X]
 
 ## BasementDescription
-Placeholder[X]
+Members of[N]
+the Basement.[X]
 
 ## OtakuName
 Otaku[X]
 
 ## OtakuDescription
-Placeholder[X]
+A wandering mercenary with a[N]
+mysterious past. Has a soft heart.[X]
 
 ## GohardName
 Gohard[X]
 
 ## GohardDescription
-Placeholder[X]
+A wandering girl who loves a good[N]
+fight. Easily flustered.[X]
 
 ## YanndahlName
 Yandahl[X]
 
 ## YanndahlDescription
-Placeholder[X]
+A soldier working with the Basement.[N]
+Always focused and to the point.[X]
 
 ## SchezoName
 Schezo[X]
 
 ## SchezoDescription
-Placeholder[X]
+A dark mage who seems bent[N]
+on killing those in his path.[X]
 
 ## DarkKnightUnitName
 Dark Knight[X]
 
 ## DarkKnightUnitDescription
-Placeholder[X]
+One of Schezo's[N]
+dark knights.[X]
 
 ## WhitewolfName
 Whitewolf[X]
 
 ## WhitewolfDescription
-Placeholder[X]
+A member of a bandit clan[N]
+from the far north.[X]
 
 ## TimName
 Tim[X]
 
 ## TimDescription
-Placeholder[X]
+Bit's brother.[N]
+Intelligent and composed.[X]
 
 ## BitName
 Bit[X]
 
 ## BitDescription
-Placeholder[X]
+Tim's brother.[N]
+A bit of a blockhead.[X]
 
 ## MilanorName
 Milanor[X]
 
 ## MilanorDescription
-Placeholder[X]
+A former bandit from the mountains.[N]
+Joined the Basement afterwards.[X]
 
 ## GutsName
 Guts[X]
 
 ## GutsDescription
-Placeholder[X]
+A knight from the Basement.[N]
+Has an intimidating aura.[X]
 
 ## KohakuName
 Kohaku[X]
 
 ## KohakuDescription
-Placeholder[X]
+A maid from the Basement.[N]
+Dedicated to serving her peers.[X]
 
 ## KyName
 Ky[X]
 
 ## KyDescription
-Placeholder[X]
+A warrior from the Basement.[N]
+Stern, but a kind man underneath.[X]
 
 ## GromellName
 Gromell[X]
 
 ## GromellDescription
-Placeholder[X]
+The famed Bolt Axe General. Works[N]
+for the empire under lord Raydrik.[X]
 
 ## RaydrikName
 Raydrik[X]
 
 ## RaydrikDescription
-Placeholder[X]
+The lord and leader of the empire.[N]
+Has a dark and unnerving aura.[X]
 
 ## OfficerName
 Officer[X]
 
 ## OfficerDescription
-Placeholder[X]
+Imperial officers who are more[N]
+skilled than their peers.[X]
 
 ## ArleName
 Arle[X]
 
 ## ArleDescription
-Placeholder[X]
+A traveling mage who has been[N]
+practicing from a very early age.[X]
 
 ## JasonName
 Jason[X]
 
 ## JasonDescription
-Placeholder[X]
+A scientist with a cool demeanor.[N]
+Always willing to help people in need.[X]
 
 ## StallionName
 Stallion[X]
 
 ## StallionDescription
-Placeholder[X]
+Members of an elite[N]
+imperial cavalry unit.[X]
 
 ## AlbatrossName
 Albatross[X]
 
 ## AlbatrossDescription
-Placeholder[X]
+Members of an elite[N]
+imperial archery unit.[X]
 
 ## WarthogName
 Warthog[X]
 
 ## WarthogDescription
-Placeholder[X]
+Members of an elite[N]
+imperial armored unit.[X]
 
 ## CobraName
 Cobra[X]
 
 ## CobraDescription
-Placeholder[X]
+Members of an elite[N]
+imperial spellcasting unit.[X]
 
 ## PantherName
 Panther[X]
 
 ## PantherDescription
-Placeholder[X]
+Members of an elite[N]
+imperial mercenary unit.[X]
 
 ## DonnalenName
 Donnalen[X]

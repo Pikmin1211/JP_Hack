@@ -1,3 +1,5 @@
+#include "Fixed Text.txt"
+
 #0xD4C ZeroEntry
 [X]
 
@@ -22,3 +24,13 @@ Skill learned.[X]
 #include "Song Text.txt"
 
 #include "Death Quotes.txt"
+
+## ThanksForPlayingText
+This is the end of[N]
+the current version.[N]
+Thank you for playing![AN]
+If you would like to report[N]
+bugs or leave feedback,[AN]
+feel free to do so[N]
+in the FEU thread,[N]
+or on our Discord.[A][X]

@@ -258,3 +258,15 @@ Milanor Sortie[X]
 
 ## ACrisisName
 A Crisis[X]
+
+## DefaultDuelName
+Default Duel[X]
+
+## RebelstarBGM1Name
+Rebelstar BGM1[X]
+
+## RebelstarBGM6Name
+Rebelstar BGM6[X]
+
+## Route120Name
+Route 120[X]

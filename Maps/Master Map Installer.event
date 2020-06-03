@@ -43,5 +43,8 @@
 #include "Ch9.event"
 }
 {
+#include "DebugMap.event"
+}
+{
 #include "_Prologue.event"
 }

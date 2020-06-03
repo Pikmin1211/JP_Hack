@@ -77,14 +77,14 @@ BossesCharge:
 	BEQ 1 0x0 0xC
 		CAM1 [6,19]
 		FlashCursor(Batta,60)
-		Text(TestDialogue)
+		Text(Ch5BattaCharge)
 		SetAI(Batta,0,0,0,0)
 		LABEL 1
 	CHECK_ALIVE ONeill
 	BEQ 2 0x0 0xC
 		CAM1 [6,19]
 		FlashCursor(ONeill,60)
-		Text(TestDialogue)
+		Text(Ch5ONeillCharge)
 		SetAI(ONeill,0,0,0,0)
 		LABEL 2
 	NoFade
@@ -359,6 +359,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	COUNTER_SET 1 0
 	LOAD1 0x1 RightHouseCivs
 	ENUN
 	LOAD1 0x1 LeftHouseCivs

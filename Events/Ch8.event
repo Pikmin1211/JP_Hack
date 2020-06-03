@@ -63,13 +63,10 @@ Turn8Reinforcements:
 
 TimBitCharge:
 	MUSS Laughter
-	Text(0x20,TestDialogue)
+	Text(NightSnowFieldBG,Ch8TimBitCharge)
 	SetAI(Tim,0,0,0,0)
 	SetAI(Bit,0,0,0,0)
 	SetAI(Whitewolf,0,0,0,0)
-	CAM1 Sanders
-	FlashCursor(Sanders,60)
-	Text(TestDialogue)
 	MURE 2
 	NoFade
 	ENDA
@@ -90,12 +87,14 @@ Turn12Reinforcements:
 	ENDA
 
 MilanorAppears:
-	MUSS SkyEventSong
+	MUSC SkyEventSong
 	SpawnReinforcements(MilanorUnit)
-	SilentGiveItem(13,11,NeirScroll)
 	FlashCursor(Milanor,60)
-	Text(TestDialogue)
-	MURE 2
+	Text(Ch8MilanorJoins)
+	MUSC BelovedTomboyishGirlSong
+	CAM1 Sanders
+	FlashCursor(Sanders,60)
+	Text(Ch8TurnOne)
 	NoFade
 	ENDA
 
@@ -103,7 +102,7 @@ MoreUnitsAppear:
 	MUSS SkyEventSong
 	SpawnReinforcements(NewUnits)
 	FlashCursor(Guts,60)
-	Text(TestDialogue)
+	Text(Ch8GutsKohakuJoin)
 	MURE 2
 	NoFade
 	ENDA
@@ -140,10 +139,10 @@ LocationBasedEvents:
 	END_MAIN
 
 TopLeftVillage:
-	VillageEventItem(TestDialogue,HouseBG,SolManual)
+	VillageEventItem(Ch8Village1,HouseBG,SolManual)
 
 BottomRightVillage:
-	VillageEventItem(TestDialogue,HouseBG,GuidingRing)
+	VillageEventItem(Ch8Village2,HouseBG,GuidingRing)
 
 Ch8Armory:
 	SHLI IronSword SteelSword IronLance SteelLance IronAxe SteelAxe IronBow SteelBow
@@ -151,7 +150,7 @@ Ch8Armory:
 	ALIGN 4
 
 Ch8Vendor:
-	SHLI Fire Thunder Flux Miasma Heal Mend TorchStaff Vulnerary Torch
+	SHLI Fire Thunder Flux Miasma Lightning Shine Heal Mend TorchStaff Vulnerary Torch
 	BYTE 0x0 0x0
 	ALIGN 4
 
@@ -317,11 +316,11 @@ BrigandUnit:
 	UNIT
 
 MilanorUnit:
-	UNIT Milanor Brigand 0x0 Level(13,Ally,0) [12,9] 0 0 1 REDA13R11 [RazorAxe,Hatchet,Halberd,MasterSeal] NoAI
+	UNIT Milanor Brigand 0x0 Level(13,Ally,0) [12,9] 0 0 1 REDA13R11 [RazorAxe,Hatchet,Halberd,NeirScroll] NoAI
 	UNIT
 
 NewUnits:
-	UNIT Guts FreeKnight 0x0 Level(12,Ally,0) [12,9] 0 0 1 REDA11R9 [Greatsword,IronBlade,WrathManual,Vulnerary] NoAI
+	UNIT Guts FreeKnight 0x0 Level(12,Ally,0) [12,9] 0 0 1 REDA11R9 [Greatsword,IronBlade,WrathManual,MasterSeal] NoAI
 	UNIT Kohaku Maid 0x0 Level(1,Ally,0) [12,9] 0 0 1 REDA13R9 [LevinSword,Physic,Heal,TorchStaff] NoAI
 	UNIT
 
@@ -340,10 +339,28 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits2
 	ENUN
+	MUSC 0x47 // wind
+	SetBackground(NightSnowFieldBG)
+	Text(Ch8OP)
+	MUSC OldFamiliarScentSong
+	SetBackground(Inn)
+	Text(Ch8OP2)
+	MUSC TrainRushSong
+	SetBackground(NightSnowFieldBG)
+	Text(Ch8OP3)
+	MUSC EncounterSong
+	SetBackground(Inn)
+	Text(Ch8OP4)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
+	MUSC 0x47 // wind
+	SetBackground(NightSnowFieldBG)
+	Text(Ch8Ending)
+	MUSC WereRangersSong
+	SetBackground(Inn)
+	Text(Ch8Ending2)
 	MNC2 9
 	NoFade
 	ENDA

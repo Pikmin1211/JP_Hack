@@ -115,7 +115,7 @@ Maybe if I take them out...[A][X]
 [FarLeft][LoadWrys][Right][LoadSanders][FarRight][LoadScott][Left][LoadOldMan]
 Thank you for[N]
 protecting us.[AN]
-Were it not for you,[AN] 
+Were it not for you,[AN]
 well, we'd be closer[N]
 to God than we'd like.[AN]
 
@@ -135,7 +135,7 @@ in fact. There are twelve in total.[AN]
 Used by the heroes of legend to[N]
 defeat the Demon King, long ago.[AN]
 There used to be one of[N]
-those weapons housed here,[AN] 
+those weapons housed here,[AN]
 but it was relocated to a[N]
 forest nearby for safekeeping.[AN]
 
@@ -166,7 +166,7 @@ Let's not think of them as toys.[AN]
 
 [FarLeft]
 Please, allow me to[N]
-accompany them, Father.[AN] 
+accompany them, Father.[AN]
 I know the path to the[N]
 weapon through the woods.[AN]
 
@@ -224,7 +224,7 @@ Damn you...![A][X]
 ## Ch2ONeillBattle
 [MidLeft][LoadONeill]
 Think you're tough[N]
-enough to handle me?[AN] 
+enough to handle me?[AN]
 Don't make me laugh![A][X]
 
 ## Ch2ONeillDeath

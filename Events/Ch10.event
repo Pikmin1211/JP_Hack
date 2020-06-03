@@ -161,7 +161,7 @@ PostPrep:
 	MUSS SkyEventSong
 	SpawnReinforcements(NewAllies)
 	FlashCursor(Arle,60)
-	Text(TestDialogue)
+	Text(Ch10JasonArle)
 	SilentGiveItem(24,2,Vulnerary)
 	MURE 2
 	NoFade
@@ -304,16 +304,27 @@ BeginningScene:
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	// have the tents immediately ready to spawn units
+	COUNTER_SET 1 0
 	COUNTER_SET 2 SpawnOffset
 	COUNTER_SET 3 SpawnOffset
 	COUNTER_SET 4 SpawnOffset
 	COUNTER_SET 5 SpawnOffset
 	COUNTER_SET 6 SpawnOffset
+	MUSC StoryLangrisserSong
+	SetBackground(SnowFieldBG)
+	Text(Ch10OP)
+	MUSC ArmyASong
+	Text(Ch10OP2)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
-	MNC2 11
+	MUSC WereRangersSong
+	SetBackground(SnowFieldBG)
+	Text(Ch10Ending)
+	CenterTextbox(ThanksForPlayingText)
+	MNTS 0
+	//MNC2 11
 	NoFade
 	ENDA
 

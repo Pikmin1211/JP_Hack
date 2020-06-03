@@ -30,16 +30,25 @@ ChapterDeathQuote(Kekh,5,0x0,Ch5KekhDeath)
 
 // Ch6
 ChapterDeathQuote(MonsterBoss,6,DefeatBossFlag,0x0)
+ChapterDeathQuote(Vergil,6,0x0,Ch6VergilDeath)
 
 // Ch7
 ChapterDeathQuote(Imperial,7,0xA,0x0)
+ChapterDeathQuote(Schezo,7,0x0,Ch7SchezoDeath)
+ChapterDeathQuote(Derek,7,0x0,Ch7DerekDeath)
 
 // Ch8
-ChapterDeathQuote(Tim,8,0xB,TestDialogue)
-ChapterDeathQuote(Bit,8,0xC,TestDialogue)
+ChapterDeathQuote(Tim,8,0xB,Ch8TimDeath)
+ChapterDeathQuote(Bit,8,0xC,Ch8BitDeath)
+
+// Ch9
+ChapterDeathQuote(Raydrik,9,0x0,Ch9RaydrikDeath)
+ChapterDeathQuote(Vergil,9,0x0,Ch9VergilDeath)
+ChapterDeathQuote(Gromell,9,0x0,Ch9GromellDeath)
 
 // Ch10
 ChapterDeathQuote(TentUnit,10,0x9,0x0)
+ChapterDeathQuote(Todoroki,10,0x0,Ch10TodorokiDeath)
 
 // Ch11
 ChapterDeathQuote(Cedwick,11,DefeatBossFlag,TestDialogue)
@@ -68,8 +77,8 @@ AlwaysDeathQuote(Kohaku,0x0,KohakuDeath)
 AlwaysDeathQuote(Ky,0x0,KyDeath)
 AlwaysDeathQuote(Eevster2,0x0,EevsterDeath)
 AlwaysDeathQuote(Derek2,0x0,DerekDeath)
-AlwaysDeathQuote(Arle,0x0,TestDialogue)
-AlwaysDeathQuote(Jason,0x0,TestDialogue)
+AlwaysDeathQuote(Arle,0x0,ArleDeath)
+AlwaysDeathQuote(Jason,0x0,JasonDeath)
 EndQuote
 
 PUSH

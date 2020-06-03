@@ -91,6 +91,11 @@ SoundRoomEntry(BonusStageDKCSong,1,BonusStageDKCName)
 SoundRoomEntry(InescapableSong,1,InescapableName)
 SoundRoomEntry(MilanorSortieSong,1,MilanorSortieName)
 SoundRoomEntry(ACrisisSong,1,ACrisisName)
+SoundRoomEntry(DefaultDuelSong,1,DefaultDuelName)
+SoundRoomEntry(RebelstarBGM1Song,1,RebelstarBGM1Name)
+SoundRoomEntry(RebelstarBGM6Song,1,RebelstarBGM6Name)
+SoundRoomEntry(Route120Song,1,Route120Name)
+
 
 SoundRoomTerminator
 

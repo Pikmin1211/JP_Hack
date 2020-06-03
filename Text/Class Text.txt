@@ -173,3 +173,10 @@ Gladiator[X]
 ## GladiatorDesciption
 A noble with a fiery rage awoken in[N]
 their heart. Equip: Swords, axes.[X]
+
+## DukeKnightName
+Duke Knight[X]
+
+## DukeKnightDescription
+Regal knights with great skill in[N]
+mounted lancefighting. Equip: Lances.[X]

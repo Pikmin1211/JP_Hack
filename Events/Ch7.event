@@ -16,7 +16,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,YanndahlEvent,1)
 	TurnEventPlayer(0x0,Turn3Reinforcement,3)
 	TurnEventPlayer(0x0,Turn5Reinforcement,5)
-	TurnEventPlayer(0x0,SchezoAppears,7)
+	TurnEventPlayer(0x0,SchezoAppears,6)
 	InfiniteTurnEventPlayer(0x0,DarkKnightsAppear,8)
 	END_MAIN
 
@@ -40,7 +40,7 @@ YanndahlEvent:
 	MUSS SkyEventSong
 	SpawnReinforcements(YanndahlUnit)
 	FlashCursor(Yanndahl,60)
-	Text(TestDialogue)
+	Text(Ch7Yandahl)
 	MURE 2
 	NoFade
 	ENDA
@@ -49,7 +49,13 @@ SchezoAppears:
 	MUSS LegendThemeSong
 	SpawnReinforcements(SchezoUnit)
 	FlashCursor(Schezo,60)
-	Text(TestDialogue)
+	Text(Ch7SchezoAppears)
+	CHECK_ALIVE Derek
+	BEQ 1 0xC 0x0
+		CAM1 Derek
+		FlashCursor(Derek,60)
+		Text(Ch7SchezoAppears2)
+	LABEL 1
 	MURE 2
 	NoFade
 	ENDA
@@ -100,7 +106,7 @@ CheckGameOver:
 GameOverEvent:
 	CAM1 Sanders
 	FlashCursor(Sanders,60)
-	Text(TestDialogue)
+	Text(Ch7WagonEscape)
 	ASMC 0x00D391 //game over
 	NoFade
 	ENDA
@@ -131,12 +137,12 @@ Ch7Armory:
 	ALIGN 4
 
 Ch7Vendor:
-	SHLI Fire Thunder Elfire Aircalibur Flux Miasma Nosferatu Ruin Heal Mend Restore Barrier Vulnerary Elixir PureWater
+	SHLI Fire Thunder Elfire Aircalibur Flux Miasma Nosferatu Ruin Heal Mend Soothe Restore Barrier Vulnerary Elixir PureWater
 	BYTE 0x0 0x0
 	ALIGN 4
 
 RightVillage:
-	VillageEventItem(TestDialogue,HouseBG,SpiritDust)
+	VillageEventItem(Ch7Village,HouseBG,SpiritDust)
 
 Dunno1:
 
@@ -288,12 +294,23 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	COUNTER_SET 1 0
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	LOAD1 0x1 EnemyUnits2
 	ENUN
 	LOAD1 0x1 EnemyUnits3
 	ENUN
+	MUSC ArmyASong
+	SetBackground(Woodland)
+	Text(Ch7OP)
+	Text(Ch7OP2)
+	MUSC StoryLangrisserSong
+	SetBackground(Plain_2)
+	Text(Ch7OP3)
+	MUSC ToccataAndDoomSong
+	SetBackground(Woodland)
+	Text(Ch7OP4)
 	CALL SetTransporterMove
 	GotoPrepScreen
 	ENDA
@@ -309,6 +326,12 @@ SetTransporterMove:
 	ENDA
 
 EndingScene:
+	MUSC WereRangersSong
+	SetBackground(Plain_Evening)
+	Text(Ch7Ending)
+	MUSC TheWorldIsTremblingSong
+	SetBackground(Woodland_Evening)
+	Text(Ch7Ending2)
 	MNC2 8
 	NoFade
 	ENDA

@@ -3,3 +3,264 @@ Chapter 7: Four Wagon Wheels[X]
 
 ## Ch7Objective
 Pursue[X]
+
+
+
+
+## Ch7OP
+[MidLeft][LoadDerek][Right][LoadRedSoldier][FarRight][LoadRedSoldier]
+Sir Derek! The supply caravan[N]
+is proceeding as planned.[AN]
+
+[MidLeft]
+Good work, soldiers.[AN]
+Send out some men to make[N]
+sure it arrives safely.[AN]
+
+[FarRight]
+Yes, sir![AN]
+[Clear]
+
+[MidLeft]
+I can't shake[N]
+this feeling...[AN]
+Someone is approaching.[AN]
+
+[Right]
+Someone, sir? Could it be[N]
+those mercenaries again?[AN]
+
+[MidLeft]
+No, this feels... different.[AN]
+I can't describe it,[N]
+but they feel... dreadful.[AN]
+
+[Right]
+Don't worry, sir Derek.[AN]
+Our scouts will report[N]
+back if they find anything.[AN]
+
+[MidLeft]
+Yes, I suppose[N]
+you're right.[A][X]
+
+
+
+
+## Ch7OP2
+[MidLeft][LoadYandahl]
+Supply caravans, hm...[A][X]
+
+
+
+## Ch7OP3
+[MidLeft][LoadSanders][Right][LoadFinn][FarRight][LoadNeptune]
+Ahh! Fresh air at last...[AN]
+That sewer smell was[N]
+starting to get to me...[AN]
+
+[Right]
+What should we[N]
+do now, Sanders?[AN]
+
+[MidLeft]
+I'm not sure.[AN]
+We got the second weapon,[AN]
+but that's the end of[N]
+the line for that lead.[AN]
+
+[FarRight]
+What's up with[N]
+that guy?[AN]
+
+[MidLeft][MoveLeft][FarLeft][LoadYandahl]
+Oh, you are...[N]
+Sanders, correct?[AN]
+
+[Left]
+You know me?[AN]
+
+[FarRight][Clear][LoadBrian]
+He must be with[N]
+the Basement.[AN]
+
+[Left]
+The... what?[AN]
+
+[FarRight]
+Oh, have I not told you?[AN]
+That's the organization[N]
+Eevster is in charge of.[AN]
+
+[Right]
+An organization... sounds shady,[AN]
+but I suppose that's where[N]
+the information comes from.[AN]
+
+[FarLeft]
+Indeed I am.[AN]
+And on the topic[N]
+of information,[AN]
+I have some for you.[AN]
+
+[Left]
+Go on.[AN]
+
+[FarLeft]
+It seems the imperials are moving[N]
+a caravan through this valley.[AN]
+If you were able to interrupt it...[AN]
+
+[Right][Clear][LoadOtaku]
+Then we could make[N]
+use of their supplies.[AN]
+
+[FarLeft]
+Right.[AN]
+
+[Left]
+It's not much, but it's a plan.[AN]
+We've trusted them before[N]
+and it's worked out. Let's go.[A][X]
+
+
+
+## Ch7OP4
+[MidRight][LoadDerek][MidLeft][LoadRedSoldier]
+Sir! Urgent news![AN]
+Our scouts have spotted an armed[N]
+group approaching the caravan![AN]
+
+[MidRight]
+Blast! Move out whoever is[N]
+available, double time![AN]
+Prepare units for combat![AN]
+
+[MidLeft]
+Sir, yes sir![A][X]
+
+
+
+
+## Ch7Yandahl
+[MidLeft][LoadYandahl]
+Allow me to accompany you.[AN]
+I trust you shall[N]
+guide my spear well.[A][X]
+
+
+
+## Ch7WagonEscape
+[MidRight][LoadSanders]
+Damnit, they[N]
+escaped...[A][X]
+
+
+## Ch7Village
+[MidLeft][LoadCurrent][MidRight][LoadKid]
+Howdy there! Sorry, but ma[N]
+and pa aren't here right now...[AN]
+Say, do you want this stuff?[AN]
+I found it by the beach and[N]
+thought it looked real shiny,[AN]
+but I think I'm a-a...[.....][N]
+[MoveMidRight]ACHOO![AN]
+Allergic...[A][X]
+
+
+
+## Ch7SchezoAppears
+[MidLeft][LoadSchezo]
+[Beat][AN]
+Arise, my knights...[N]
+Kill... Kill...!![A][X]
+
+## Ch7SchezoAppears2
+[MidRight][LoadDerek]
+That prescence...[N]
+Who is that man?[AN]
+I tremble just[N]
+looking at him...[A][X]
+
+
+
+## Ch7DerekBattle
+[MidLeft][LoadDerek]
+You would come so far?[AN]
+I shall defend the[N]
+checkpoint from you, then![A][X]
+
+## Ch7DerekDeath
+[MidLeft][LoadDerek]
+As expected of...[N]
+your strength...[A][X]
+
+## Ch7SchezoBattle
+[MidLeft][LoadSchezo]
+[Beat][N]
+Destroy![A][X]
+
+## Ch7SchezoDeath
+[MidLeft][LoadSchezo]
+This is...[N]
+Meaningless...[A][X]
+
+
+
+## Ch7Ending
+[MidLeft][LoadSanders][FarRight][LoadYandahl][Right][LoadMarisa]
+Phew! Okay![AN]
+That's the last of[N]
+the wagons, I think![AN]
+
+[MidLeft]
+Then let's leave before[N]
+we get overwhelmed.[AN]
+
+[FarRight]
+We have a camp up[N]
+to the north.[AN]
+You are more than[N]
+welcome to rest there.[AN]
+
+[MidLeft]
+That works for me. But isn't[N]
+the path north blocked?[AN]
+
+[FarRight]
+There are many paths up[N]
+the mountains. Follow me.[A][X]
+
+
+
+## Ch7Ending2
+[MidLeft][LoadSchezo][MidRight][LoadDerek]
+You... what[N]
+are you...?[AN]
+
+[MidLeft]
+[Beat][N]
+Kill...[AN]
+
+[MidRight]
+Can he even[N]
+understand me?[AN]
+
+[MoveRight][FarRight][LoadRedSoldier]
+Sir, he's slaughtering our men![N]
+I need orders, and quickly![AN]
+
+[Right]
+Gah! Full retreat![N]
+I'll hold him off![AN]
+
+[FarRight]
+Yes sir![AN]
+[Clear]
+
+[MidLeft][MoveLeft]
+You are...[N]
+finished!![AN]
+
+[Right]
+Grrr![A][X]

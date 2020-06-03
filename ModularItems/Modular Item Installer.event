@@ -117,3 +117,19 @@
 #include "Basilisk/Basilisk Installer.event"
 
 #include "Fury Axe/Fury Axe Installer.event"
+
+#include "Entrap/Entrap Installer.event"
+
+#include "Soothe/Soothe Installer.event"
+
+#include "Remedy/Remedy Installer.event"
+
+#include "Alleviate/Alleviate Installer.event"
+
+#include "Petrify/Petrify Installer.event"
+
+#include "Gungnir/Gungnir Installer.event"
+
+#include "Again/Again Installer.event"
+
+#include "Rune/Rune Installer.event"

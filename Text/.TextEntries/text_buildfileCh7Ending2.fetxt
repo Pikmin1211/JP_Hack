@@ -1,0 +1,59 @@
+[MidLeft][LoadSchezo][MidRight][LoadDerek]
+
+You... what[N]
+
+are you...?[AN]
+
+
+
+[MidLeft]
+
+[Beat][N]
+
+Kill...[AN]
+
+
+
+[MidRight]
+
+Can he even[N]
+
+understand me?[AN]
+
+
+
+[MoveRight][FarRight][LoadRedSoldier]
+
+Sir, he's slaughtering our men![N]
+
+I need orders, and quickly![AN]
+
+
+
+[Right]
+
+Gah! Full retreat![N]
+
+I'll hold him off![AN]
+
+
+
+[FarRight]
+
+Yes sir![AN]
+
+[Clear]
+
+
+
+[MidLeft][MoveLeft]
+
+You are...[N]
+
+finished!![AN]
+
+
+
+[Right]
+
+Grrr![A][X]

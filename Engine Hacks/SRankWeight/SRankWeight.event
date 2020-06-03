@@ -1,0 +1,11 @@
+//0802AB74 BattleLoadAS
+
+ALIGN 4
+NewBattleLoadAS:
+#incbin "BattleLoadAS.dmp"
+POIN ItemTable
+
+PUSH
+ORG 0x2AB74
+jumpToHack(NewBattleLoadAS)
+POP

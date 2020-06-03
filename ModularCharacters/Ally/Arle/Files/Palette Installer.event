@@ -1,5 +1,5 @@
-#define BaseClass 0x0
-#define PromotedClass1 0x0
-#define PromotedClass2 0x0
+#define BaseClass LightMageF
+#define PromotedClass1 SageF
+#define PromotedClass2 Valkyrie
 
 #include "Palette/Palette Setup.event"

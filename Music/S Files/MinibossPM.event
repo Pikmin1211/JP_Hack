@@ -4,7 +4,7 @@
 	#define	MinibossPM_grp  voicegroup000
 	#define	MinibossPM_pri  0
 	#define	MinibossPM_rev  0
-	#define	MinibossPM_mvl  70
+	#define	MinibossPM_mvl  45
 	#define	MinibossPM_key  0
 	#define	MinibossPM_tbs  1
 	#define	MinibossPM_exg  0

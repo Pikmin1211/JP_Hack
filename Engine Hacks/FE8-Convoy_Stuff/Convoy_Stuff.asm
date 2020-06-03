@@ -708,7 +708,7 @@ ldr		r0,=gpConvoyItemArray
 ldr		r0,[r0]
 add		r7,r0,r1			@ start offset
 cmp		r3,r6
-ble		ClearTargetPartition
+bge		ClearTargetPartition
 mov		r6,r3
 ClearTargetPartition:
 @ clear the target partition

@@ -1,0 +1,16 @@
+
+
+{
+	#define ItemNumber Entrap
+	#define ItemIcon EntrapIcon
+	#define ItemMagicAnimation EntrapMagicAnim
+	#define ItemNameLocation EntrapName
+	#define ItemDescriptionLocation EntrapDescription
+	#define ItemUseTextLocation EntrapUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/ASM/Installer.event"
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

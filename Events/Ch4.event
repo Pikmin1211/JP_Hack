@@ -250,6 +250,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	COUNTER_SET 1 0
 	LOAD1 0x1 GreenUnits
 	ENUN
 	LOAD1 0x1 EnemyUnits

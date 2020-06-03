@@ -1,0 +1,136 @@
+[MidLeft][LoadSanders][Right][LoadFinn][FarRight][LoadNeptune]
+
+Ahh! Fresh air at last...[AN]
+
+That sewer smell was[N]
+
+starting to get to me...[AN]
+
+
+
+[Right]
+
+What should we[N]
+
+do now, Sanders?[AN]
+
+
+
+[MidLeft]
+
+I'm not sure.[AN]
+
+We got the second weapon,[AN]
+
+but that's the end of[N]
+
+the line for that lead.[AN]
+
+
+
+[FarRight]
+
+What's up with[N]
+
+that guy?[AN]
+
+
+
+[MidLeft][MoveLeft][FarLeft][LoadYandahl]
+
+Oh, you are...[N]
+
+Sanders, correct?[AN]
+
+
+
+[Left]
+
+You know me?[AN]
+
+
+
+[FarRight][Clear][LoadBrian]
+
+He must be with[N]
+
+the Basement.[AN]
+
+
+
+[Left]
+
+The... what?[AN]
+
+
+
+[FarRight]
+
+Oh, have I not told you?[AN]
+
+That's the organization[N]
+
+Eevster is in charge of.[AN]
+
+
+
+[Right]
+
+An organization... sounds shady,[AN]
+
+but I suppose that's where[N]
+
+the information comes from.[AN]
+
+
+
+[FarLeft]
+
+Indeed I am.[AN]
+
+And on the topic[N]
+
+of information,[AN]
+
+I have some for you.[AN]
+
+
+
+[Left]
+
+Go on.[AN]
+
+
+
+[FarLeft]
+
+It seems the imperials are moving[N]
+
+a caravan through this valley.[AN]
+
+If you were able to interrupt it...[AN]
+
+
+
+[Right][Clear][LoadOtaku]
+
+Then we could make[N]
+
+use of their supplies.[AN]
+
+
+
+[FarLeft]
+
+Right.[AN]
+
+
+
+[Left]
+
+It's not much, but it's a plan.[AN]
+
+We've trusted them before[N]
+
+and it's worked out. Let's go.[A][X]
+

@@ -263,3 +263,20 @@ The villagers asked us to[N]
 deliver this to you,[AN]
 for helping them escape.[AN]
 Please, take it.[A][X]
+
+
+
+## Ch5BattaCharge
+[MidLeft][LoadBatta]
+Damned good for nothing goons...[AN]
+Rargh! If you want something done[N]
+right, gotta do it yourself.[A][X]
+
+
+
+## Ch5ONeillCharge
+[MidRight][LoadONeill]
+I'm getting bored of[N]
+just sitting here.[AN]
+I'll just bring on[N]
+the pain myself![A][X]

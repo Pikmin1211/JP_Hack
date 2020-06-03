@@ -26,7 +26,21 @@ TwoWayBattleQuote(0x0,Batta,5,Ch5BattaBattle)
 TwoWayBattleQuoteFlag(0xC,0x0,ONeill,5,Ch5ONeillBattle)
 TwoWayBattleQuoteFlag(0xD,0x0,Kekh,5,Ch5KekhBattle)
 
+// Ch7
+TwoWayBattleQuote(0x0,Derek,7,Ch7DerekBattle)
+TwoWayBattleQuoteFlag(0xD,0x0,Schezo,7,Ch7SchezoBattle)
 
+// Ch8
+TwoWayBattleQuote(0x0,Tim,8,Ch8TimBattle)
+TwoWayBattleQuoteFlag(0xE,0x0,Bit,8,Ch8BitBattle)
+
+// Ch9
+TwoWayBattleQuote(0x0,Raydrik,9,Ch9RaydrikBattle)
+TwoWayBattleQuoteFlag(0xD,0x0,Vergil,9,Ch9VergilBattle)
+TwoWayBattleQuoteFlag(0xE,0x0,Gromell,9,Ch9GromellBattle)
+
+// Ch10
+TwoWayBattleQuote(0x0,Todoroki,10,Ch10TodorokiBattle)
 
 
 EndQuote

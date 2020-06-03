@@ -1,0 +1,15 @@
+
+
+{
+	#define ItemNumber Remedy
+	#define ItemIcon RemedyIcon
+	#define ItemMagicAnimation RemedyMagicAnim
+	#define ItemNameLocation RemedyName
+	#define ItemDescriptionLocation RemedyDescription
+	#define ItemUseTextLocation RemedyUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

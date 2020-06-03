@@ -366,3 +366,94 @@ Basilisk[X]
 
 ## BasiliskDescription
 Mag/Skl/Spd +3. Magic weapon.[X]
+
+## EntrapName
+Entrap[X]
+
+## EntrapDescription
+Moves enemies from distant[N]
+spaces to adjacent ones.[X]
+
+## EntrapUseText
+Warps enemies to a[N]
+space adjacent to[N]
+the staff wielder.[X]
+
+## SootheName
+Soothe[X]
+
+## SootheDescription
+Restores HP to allies[N]
+from a short distance.[X]
+
+## SootheUseText
+Restores HP at[N]
+a short distance.[X]
+
+## RemedyName
+Remedy[X]
+
+## RemedyDescription
+Restores all HP to allies[N]
+from a short distance.[X]
+
+## RemedyUseText
+Restores all HP at[N]
+a short distance.[X]
+
+## AlleviateName
+Alleviate[X]
+
+## AlleviateDescription
+Returns allies in range to normal[N]
+condition. (Cures sleep, etc.)[X]
+
+## AlleviateUseText
+Restores allies[N]
+in range to[N]
+normal status.[X]
+
+## PetrifyName
+Petrify[X]
+
+## PetrifyDescription
+Turns enemies to stone[N]
+for several turns.[X]
+
+## PetrifyUseText
+Turns enemies[N]
+to stone.[X]
+
+## GungnirName
+Gungnir[X]
+
+## GungnirDescription
+Grants Adept. Str/Spd +5.[X]
+
+## GaeBolgName
+Gae Bolg[X]
+
+## GaeBolgDescription
+Grants Renewal. Str/Def +5.[X]
+
+## AgainName
+Again[X]
+
+## AgainDescription
+Allows a distant[N]
+ally to move again.[X]
+
+## AgainUseText
+Refreshes an ally[N]
+from far away.[X]
+
+## RuneName
+Rune[X]
+
+## RuneDescription
+Summons a light rune to[N]
+block enemy movement.[X]
+
+## RuneUseText
+Place a light rune[N]
+from far away.[X]

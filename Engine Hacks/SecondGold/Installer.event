@@ -1,7 +1,5 @@
 ALIGN 4
 
-MESSAGE Thing at currentOffset
-
 SaveSecondGoldASMC:
 #incbin "SaveSecondGold.dmp"
 

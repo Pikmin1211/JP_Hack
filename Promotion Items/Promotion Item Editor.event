@@ -2,13 +2,13 @@ HeroCrestList:
 BYTE Mercenary MercenaryF Myrmidon MyrmidonF Fighter Journeyman2 FighterF 0x0
 
 KnightCrestList:
-BYTE Cavalier CavalierF Knight KnightF Recruit2 FreeKnight LanceKnight AxeKnight AxeArmor Soldier 0x0
+BYTE Cavalier CavalierF LanceArmor AxeArmor Recruit2 FreeKnight LanceKnight AxeKnight Soldier 0x0
 
 OrionsBoltList:
 BYTE Archer ArcherF ArchKnight 0x0
 
 ElysianWhipList:
-BYTE PegasusKnight WyvernRider WyvernRiderF 0x0
+BYTE PegasusKnight Medic WyvernRider WyvernRiderF 0x0
 
 GuidingRingList:
 BYTE Priest Cleric Mage MageF Monk Shaman ShamanF Troubadour Pupil2 LightMageF 0x0

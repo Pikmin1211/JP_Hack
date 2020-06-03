@@ -47,10 +47,13 @@ DrainMonsters:
 	SpawnReinforcements(MoreMonsterUnits)
 	CAM1 Sanders
 	FlashCursor(Sanders,60)
-	Text(TestDialogue)
+	Text(Ch6WaterDrain)
 	SpawnReinforcements(NPCUnits)
 	FlashCursor(Vergil,60)
-	Text(TestDialogue)
+	Text(Ch6Vergil)
+	CAM1 Sanders
+	FlashCursor(Sanders,60)
+	Text(Ch6Vergil2)
 	NoFade
 	ENDA
 
@@ -94,7 +97,7 @@ NewUnitsAppear:
 	MUSS SkyEventSong
 	SpawnReinforcements(NewUnits)
 	FlashCursor(Otaku,60)
-	Text(TestDialogue)
+	Text(Ch6OtakuGohard)
 	MURE 2
 	NoFade
 	ENDA
@@ -236,10 +239,41 @@ BeginningScene:
 	TILECHANGE 8
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	MUSC EncounterSong
+	SetBackground(Fort_2)
+	Text(Ch6OP)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
+	MUSC InvestigationSong
+	SetBackground(Fort_2)
+	TEXTSTART
+	TEXTSHOW Ch6Ending
+	TEXTEND
+	MuteMusic
+	STAL 100
+	SOUN 0x2ED // long shine
+	FAWI 16
+	STAL 60
+	SOUN 0xF0 // legendary weapon flash
+	STAL 100
+	FAWU 16
+	MUSC LonelyTownSoulBlazerSong
+	TEXTCONT
+	TEXTEND
+	REMOVEPORTRAITS
+	GiveItem(Gungnir,Sanders)
+	CHECK_ALIVE Otaku
+	BEQ 1 0xC 0x0
+	CHECK_ALIVE Gohard
+	BEQ 1 0xC 0x0
+		Text(Ch6ItemGet)
+		REMOVEPORTRAITS
+		GiveItem(DainScroll,Gohard)
+	LABEL 1
+	MUSC ArmyASong
+	Text(Ch6Ending2)
 	MNC2 7
 	NoFade
 	ENDA

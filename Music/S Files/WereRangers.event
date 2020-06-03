@@ -4,7 +4,7 @@
 	#define	WereRangers_grp  voicegroup000
 	#define	WereRangers_pri  0
 	#define	WereRangers_rev  0
-	#define	WereRangers_mvl  40
+	#define	WereRangers_mvl  30
 	#define	WereRangers_key  0
 	#define	WereRangers_tbs  1
 	#define	WereRangers_exg  0

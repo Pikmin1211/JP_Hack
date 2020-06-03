@@ -1,0 +1,36 @@
+// Usability - 0x28bb8
+// Targetting - 0x2902c
+// Make Target List - 0x26580
+// Effect - 0x2ff58
+// Effect Exec - 0x2FA90
+
+ALIGN 4
+LightRuneStaff_RangeSetup:
+//rfItemRangeSetup($25B18+1,Item_TURange)
+#incbin "GenericRangeSetup.dmp"
+// POIN 0x26580 + 1
+POIN LightRuneStaffTargetList + 1
+POIN Item_TTRange
+
+ALIGN 4
+LightRuneStaffUsability:
+#incbin "GenericUsability.dmp"
+POIN LightRuneStaff_RangeSetup + 1
+
+ALIGN 4
+LightRuneStaffEffectFunc:
+#incbin "GenericEffectFunc.dmp"
+POIN 0x2FA90
+
+//ALIGN 4
+//LightRuneEffect:
+//#incbin "LightRuneSetup.dmp"
+
+ALIGN 4
+LightRuneStaffTargetting:
+#incbin "LightRuneTargetting.dmp"
+POIN LightRuneStaff_RangeSetup + 1
+
+ALIGN 4
+LightRuneStaffTargetList:
+#incbin "LightRuneTargetList.dmp"

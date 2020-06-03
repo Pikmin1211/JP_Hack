@@ -3,3 +3,206 @@ Chapter 6: Them of the Dark[X]
 
 ## Ch6Objective
 Defeat Boss[X]
+
+
+
+
+## Ch6OP
+[FarRight][LoadBrian][MidLeft][LoadSanders][Right][LoadWrys]
+Mmm... this must be the place.[AN]
+I can feel something's[N]
+power in the air here.[AN]
+
+[FarRight]
+Good thing you can, sir.[N]
+It's rather dark here...[AN]
+Luckily, my eyes are[N]
+sharp as a hawk's.[AN]
+
+[MidLeft]
+We'll have to do[N]
+our best to naviagte.[AN]
+I can hear the monsters[N]
+shuffling about in the dark.[AN]
+
+[Right][Clear][LoadArden]
+I'll clear us a[N]
+path. Let's move![A][X]
+
+
+
+## Ch6WaterDrain
+[MidLeft][LoadSanders]
+The water...![N]
+Stay on guard, everyone![AN]
+They can attack us[N]
+from all angles now![A][X]
+
+
+
+## Ch6Vergil
+[MidRight][LoadVergil]
+So they were lurking[N]
+in the sewers indeed...[AN]
+Begone, foul demons![N]
+I shall strike you down![A][X]
+
+
+
+## Ch6Vergil2
+[MidLeft][LoadSanders]
+I recognize that imperial[N]
+knight from somewhere...[AN]
+It seems he doesn't[N]
+notice we're here.[AN]
+I'll just let him deal[N]
+with those monsters.[A][X]
+
+
+
+## Ch6OtakuGohard
+[Left][LoadOtaku][FarLeft][LoadGohard]
+Ugh! Isn't this[N]
+just great...[AN]
+My armor is soaked,[N]
+and that smell...[AN]
+
+[Left]
+Try and focus. We've[N]
+been through worse before.[AN]
+If those monsters catch[N]
+you off guard, then...[AN]
+
+[FarLeft]
+I can handle[N]
+myself, you know![AN]
+
+[Left]
+I know that, but I can't help[N]
+but be worried about you.[AN]
+
+[FarLeft]
+[Beat][AN]
+
+[MidRight][LoadSanders]
+Who are[N]
+you two?[AN]
+
+[Left]
+Huh? What are you[N]
+doing down here?[AN]
+
+[MidRight]
+I could ask[N]
+you the same.[AN]
+
+[Left]
+We're looking for something.[AN]
+I take it you're not allied[N]
+with these monsters?[AN]
+
+[MidRight]
+Not a chance.[AN]
+
+[Left]
+How about we work[N]
+together, then?[AN]
+
+[MidLeft]
+Ooh, new friends?[AN]
+Let me see what[N]
+you guys are made of![A][X]
+
+
+
+## Ch6Ending
+[Right][LoadWrys][FarRight][LoadOtaku][Left][LoadSanders][FarLeft][LoadWolt]
+That was one[N]
+big spider...![AN]
+
+[Left]
+Looks like he was holding[N]
+onto something...[A][Event][N]
+What do you think, Wrys?[N]
+Look like a holy weapon?[AN]
+
+[Right]
+Ah, the holy lance, Gungnir.[AN]
+I'm not sure you can[N]
+make use of it yourself,[AN]
+but it will serve one[N]
+of your allies well.[AN]
+
+[FarRight]
+To think something like[N]
+that was down here...[AN]
+
+[FarLeft]
+I can feel its[N]
+power from here.[AN]
+
+[Right][Clear][LoadFinn]
+In fact, it might be[N]
+a little too powerful.[AN]
+With all these monsters[N]
+still around...[AN]
+
+[FarRight]
+It'll draw them[N]
+right to us.[AN]
+We should be[N]
+getting out of here.[AN]
+
+[Left]
+Right. Onwards, then.[A][X]
+
+
+## Ch6ItemGet
+[MidRight][LoadGohard]
+Otaku!! Hey!![AN]
+
+[MidLeft][LoadOtaku]
+Gohard...[N]
+did you find it?[AN]
+
+[MidRight]
+Sure did! It's still[N]
+in one piece too![AN]
+Here, take it.[AN]
+
+[MidLeft]
+[Beat][AN]
+
+[MidRight]
+Is... something wrong?[AN]
+
+[MidLeft]
+Why don't you hold[N]
+onto it for now?[AN]
+
+[MidRight]
+Ehhh?! Isn't this scroll[N]
+really important to you?[AN]
+
+[MidLeft]
+It is. It's supposed to keep[N]
+you safe if you hold onto it.[AN]
+So, I want you to keep it.[AN]
+
+[MidRight]
+Otaku...[A][X]
+
+
+## Ch6VergilDeath
+[MidRight][LoadVergil]
+Tsk...![AN]
+I got carried away.[N]
+I shall retreat, then.[A][X]
+
+
+## Ch6Ending2
+[MidRight][LoadVergil]
+Those mercenaries...[N]
+To think I'd see them again here.[AN]
+And with holy weapons, no less.[N]
+I'll need to think this over...[A][X]

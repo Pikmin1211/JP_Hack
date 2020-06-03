@@ -1,0 +1,85 @@
+EventPointerTable(0xE8, PointerList)
+PUSH
+ORG $8B361C //lazy change of event plist entry
+BYTE 0xE8
+POP
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+DefeatBoss(EndingScene)
+END_MAIN
+
+LocationBasedEvents:
+Seize(10,6)
+Stairs(1,7,12,7,2)
+Door(7,6)
+Chest(BlackGem,4,6)
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+EnemyUnits:
+UNIT ONeill Warrior 0x0 Level(20,Enemy,0) [11,8] 0x00 0x00 0x00 0x00 [IronAxe] LootingThiefAI
+UNIT 0x81 Sage 0x0 Level(20,Enemy,1) [12,8] 0 0 0 0 [Petrify] NoAI
+UNIT
+
+Units1:
+UNIT Derek2 Warrior 0x0 Level(20,Ally,1) [10,10] 0 0 0 0 [Vulnerary,Elixir] NoAI
+UNIT Sanders Hero 0x0 Level(20,Ally,1) [8,10] 0 0 0 0 [Tyrfing,SteelBlade,IronSword,BattleAxe] NoAI
+UNIT Renge BishopF 0x0 Level(20,Ally,1) [9,10] 0 0 0 0 [Again,Rune] NoAI
+UNIT
+
+Traps1:
+Vein(10,7,0,0x1)
+BLST [1,1] Ballista
+BLST [1,2] KillerBallista
+BLST [1,3] IronBallista
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+LOAD1 0x1 EnemyUnits
+ENUN
+LOAD1 0x1 Units1
+ENUN
+//SetHP(1,10,10)
+SetBadStatus(Sanders,1)
+SetBadStatus(Derek2,1)
+ENDA
+
+EndingScene:
+MNC2 0
+NoFade
+ENDA

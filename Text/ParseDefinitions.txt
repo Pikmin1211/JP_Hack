@@ -182,3 +182,5 @@
 [LoadPurpleSoldier] = [LoadFace][0x70][0x1]
 [LoadWhiteSoldier] = [LoadFace][0x71][0x1]
 [LoadPirate] = [LoadFace][0x4C][0x1]
+[LoadArle] = [LoadFace][0x24][0x1]
+[LoadJason] = [LoadFace][0x25][0x1]

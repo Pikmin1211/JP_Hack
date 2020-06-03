@@ -28,7 +28,7 @@ DerekGoes:
 	MUSC JenovaSong
 	CAM1 Derek2
 	FlashCursor(Derek2,60)
-	Text(TestDialogue)
+	Text(Ch9DerekTurns)
 	FlashCursor(Derek2,60)
 	CUSN Derek2
 	CamOn
@@ -36,15 +36,17 @@ DerekGoes:
 	ENUN
 	CamOff
 	FlashCursor(Eevster2,60)
-	Text(TestDialogue)
+	Text(Ch9DerekTurns2)
 	CAM1 Sanders
-	Text(TestDialogue)
+	Text(Ch9TurnOne)
 	CAM1 [1,12]
 	FlashCursor(1,12,60)
 	CAM1 [19,16]
 	FlashCursor(19,16,60)
 	CAM1 [10,19]
 	STAL 60
+	CAM1 Sanders
+	Text(Ch9TurnOne2)
 	NoFade
 	ENDA
 
@@ -65,7 +67,7 @@ Turn6Event:
 	BEQ 1 0x0 0xC
 		CAM1 Gromell
 		FlashCursor(Gromell,60)
-		Text(TestDialogue)
+		Text(Ch9GromellTalks)
 		LABEL 1
 	SpawnReinforcements(WyvernReinforcement)
 	SpawnReinforcements(ThiefUnit)
@@ -83,7 +85,7 @@ RaydrikCharges:
 	BEQ 1 0x0 0xC
 		CAM1 Raydrik
 		FlashCursor(Raydrik,60)
-		Text(TestDialogue)
+		Text(Ch9RaydrikMoves)
 		MoveCoords(19,23,20,24)
 		ENUN
 		DISA Raydrik
@@ -137,7 +139,7 @@ CharacterBasedEvents:
 
 RecruitmentEvent:
 	MUSS SkyEventSong
-	Text(TestDialogue)
+	Text(Ch9Recruitment)
 	CUSA Eevster2
 	CUSA Ky
 	CUSA Derek2
@@ -296,7 +298,7 @@ EnemyUnits:
 	UNIT
 
 GreenUnits:
-	UNIT Eevster2 Troubadour 0x0 Level(10,NPC,0) [10,15] 0 0 0 0 [Physic,Mend,Vulnerary,NihilManual] NeverMoveAI
+	UNIT Eevster2 Troubadour 0x0 Level(10,NPC,0) [10,15] 0 0 0 0 [Soothe,Mend,Vulnerary,NihilManual] NeverMoveAI
 	UNIT Ky Myrmidon 0x0 Level(13,NPC,0) [11,15] 0 0 0 0 [LevinSword,SteelSword,Elixir] NeverMoveAI
 
 	UNIT Basement3 Mercenary 0x0 Level(10,NPC,1) [7,12] 0 0 0 0 [SteelSword] DefaultAI
@@ -400,15 +402,34 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	Increment(1)
+	COUNTER_SET 1 1
 	LOAD1 0x1 EnemyUnits
 	ENUN
 	LOAD1 0x1 GreenUnits
 	ENUN
+	MUSC 0x47 // wind
+	SetBackground(SnowFieldBG)
+	Text(Ch9OP)
+	MUSC ArmyASong
+	SetBackground(Castle_Hall)
+	Text(Ch9OP2)
+	MUSC EncounterSong
+	SetBackground(Castle_Hall_3)
+	Text(Ch9OP3)
+	SetBackground(Castle_Hall_4)
+	Text(Ch9OP4)
+	SetBackground(Castle_Hall)
+	Text(Ch9OP5)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
+	MUSC ITRYOUTSong
+	SetBackground(SnowFieldBG)
+	Text(Ch9Ending)
+	MUSC TheWorldIsTremblingSong
+	SetBackground(Castle_Hall)
+	Text(Ch9Ending2)
 	MNC2 10
 	NoFade
 	ENDA

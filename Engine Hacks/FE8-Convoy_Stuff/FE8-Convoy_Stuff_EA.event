@@ -31,8 +31,8 @@ WORD 0 //terminator
 PUSH
 
 //GetConvoyItemArray
-ORG $31500
-jumpToHack(GetConvoyPartitionStartOffset)
+ORG $31504
+WORD gConvoyItemArray
 
 //ClearConvoyItems (all items)
 ORG $31524
@@ -49,9 +49,8 @@ jumpToHack(GetConvoyItemCount)
 
 ORG $31594
 jumpToHack(AddItemToConvoy)
-GetConvoyItemArrayStart:		//Adding this here because there's room
-SHORT 0x4800 0x4770
-WORD gConvoyItemArray
+Call_GetConvoyItemArrayStart:		//Adding this here because there's room
+jumpToHack(GetConvoyPartitionStartOffset)
 jumpToClearConvoyPartition:		//^
 jumpToHack(ClearConvoyPartition)
 jumpToStartCombine:				//^
@@ -117,15 +116,15 @@ jumpToHack(Hook_B4730)
 //SaveConvoyItems
 ORG $A324A
 BYTE ConvoyTotalSize-1
-ORG $A31EE
-BL(GetConvoyItemArrayStart)
 
 //LoadConvoyItems
 ORG $A32D2
 BYTE ConvoyTotalSize-1
-ORG $A327C
-BL(GetConvoyItemArrayStart)
 
+ORG $17380; BL(Call_GetConvoyItemArrayStart) //GetConvoyTotalGoldValue
+ORG $31532; BL(Call_GetConvoyItemArrayStart) //ShrinkConvoyItemList, which never seems to be used, but including this anyway
+ORG $31558; BL(Call_GetConvoyItemArrayStart) //^
+ORG $98268; BL(Call_GetConvoyItemArrayStart) //SomethingPrepListRelated
 
 
 //Combine items when taking them out of the convoy

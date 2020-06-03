@@ -3,3 +3,9 @@
 #include "Map Sprites/Map Sprite Installer.event"
 
 #include "Animations/Master Animation Installer.event"
+
+#include "Backgrounds/_BG Installer.event"
+
+#include "Title Screen/Title Screen.event"
+
+#include "Menu Tiles/MenuTiles.event"

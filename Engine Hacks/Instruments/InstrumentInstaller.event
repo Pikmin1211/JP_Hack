@@ -7,3 +7,7 @@ Old_Nimap:
 #include "Inescapable/InescapableInstrument.event"
 
 #include "MilanorSortie/MilanorSortieInstrument.event"
+
+#include "RebelstarBGM1/RebelstarBGM1Instrument.event"
+
+#include "RebelstarBGM6/RebelstarBGM6Instrument.event"

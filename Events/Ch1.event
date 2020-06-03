@@ -235,6 +235,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
+	COUNTER_SET 1 0
 	MUSC InvestigationSong
 	FADU 16
 	SpawnReinforcements(GreenUnits)

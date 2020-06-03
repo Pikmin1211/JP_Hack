@@ -1,0 +1,46 @@
+[MidLeft][LoadDerek][MidRight][LoadEevster]
+
+Your blade[N]
+
+is sheathed...[AN]
+
+
+
+[MidLeft]
+
+I'm not here to fight you.[N]
+
+If I may, allow me to protect you.[AN]
+
+
+
+[MidRight][MoveRight][FarRight][LoadKy]
+
+You're the enemy.[AN]
+
+Give me one good[N]
+
+reason to trust you.[AN]
+
+
+
+[Right]
+
+Do we have[N]
+
+much choice?[AN]
+
+
+
+[FarRight]
+
+...One false move,[N]
+
+and it's your head.[AN]
+
+
+
+[MidLeft]
+
+I understand.[A][X]
+
