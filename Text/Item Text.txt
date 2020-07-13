@@ -457,3 +457,104 @@ block enemy movement.[X]
 ## RuneUseText
 Place a light rune[N]
 from far away.[X]
+
+## AbortName
+Abort[X]
+
+## AbortDescription
+Moves enemies in adjacent[N]
+spaces instantly elsewhere.[X]
+
+## AbortUseText
+Warps enemies[N]
+to other spaces.[X]
+
+## PilumName
+Pilum[X]
+
+## PilumDescription
+Doubles as ranged attack.[X]
+
+## BanditAxeName
+Bandit Axe[X]
+
+## LogSplitterName
+Log Splitter[X]
+
+## BastardSwordName
+Bastard Sw.[X]
+
+## EstocName
+Estoc[X]
+
+## CutlassName
+Cutlass[X]
+
+## CompositeBowName
+Comp. Bow[X]
+
+## WarhammerName
+Warhammer[X]
+
+## WarhammerDescription
+Effective against knights.[X]
+
+## ScimitarName
+Scimitar[X]
+
+## PoleaxName
+Poleax[X]
+
+## FranciscaName
+Francisca[X]
+
+## FranciscaDescription
+Doubles as ranged attack.[X]
+
+## PartisanName
+Partisan[X]
+
+## GlaiveName
+Glaive[X]
+
+## EspontoonName
+Espontoon[X]
+
+## ShortswordName
+Shortsword[X]
+
+## HandBowName
+Hand Bow[X]
+
+## ScissorAxeName
+Scissor Axe[X]
+
+## ShieldswordName
+Shieldsword[X]
+
+## ShieldswordDescription
+Grants Def +2.[X]
+
+## IronArrowName
+Iron Arrow[X]
+
+## IronArrowDescription
+Standard arrow.[X]
+
+## SteelArrowName
+Steel Arrow[X]
+
+## SteelArrowDescription
++2 Atk.[X]
+
+## SilverArrowName
+Silver Arrow[X]
+
+## SilverArrowDescription
++3 Atk, +15 Hit.[X]
+
+## KillerArrowName
+Killer Arrow[X]
+
+## KillerArrowDescription
++15 Crit.[X]

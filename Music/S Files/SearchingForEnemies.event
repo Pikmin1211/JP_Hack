@@ -1,0 +1,826 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	SearchingForEnemies_grp  voicegroup000
+	#define	SearchingForEnemies_pri  0
+	#define	SearchingForEnemies_rev  0
+	#define	SearchingForEnemies_mvl  50
+	#define	SearchingForEnemies_key  0
+	#define	SearchingForEnemies_tbs  1
+	#define	SearchingForEnemies_exg  0
+	#define	SearchingForEnemies_cmp  1
+
+	// .rodata
+	//	SearchingForEnemies
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+SearchingForEnemies_1:
+	BYTE	KEYSH   SearchingForEnemies_key+0
+SearchingForEnemies_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   112*SearchingForEnemies_tbs/2
+	BYTE		VOICE   57
+	BYTE		VOL     127*SearchingForEnemies_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N24     An2   v127
+	BYTE	W42
+	BYTE		N06   
+	BYTE	W06
+	BYTE		TIE     Bn2 
+	BYTE	W48
+// 001   ----------------------------------------
+	BYTE	W72
+	BYTE		EOT   
+	BYTE	W24
+// 002   ----------------------------------------
+SearchingForEnemies_1_002:
+	BYTE		N24     An2   v127
+	BYTE	W42
+	BYTE		N06     Bn2 
+	BYTE	W06
+	BYTE		N60     Cn3 
+	BYTE	W48
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	W24
+	BYTE		N18     Gn3 
+	BYTE	W24
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE	W24
+// 004   ----------------------------------------
+	BYTE		N96     En3 
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE		N72     An2 
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE		N24   
+	BYTE	W42
+	BYTE		N06   
+	BYTE	W06
+	BYTE		TIE     Bn2 
+	BYTE	W48
+// 007   ----------------------------------------
+	BYTE	W72
+	BYTE		EOT   
+	BYTE	W24
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_1_002
+// 009   ----------------------------------------
+	BYTE	W24
+	BYTE		N18     Bn2   v127
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE	W24
+// 010   ----------------------------------------
+	BYTE		N36   
+	BYTE	W36
+	BYTE		N12     Cn3 
+	BYTE	W12
+	BYTE		N72   
+	BYTE	W48
+// 011   ----------------------------------------
+	BYTE	W48
+	BYTE		N18     En3 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE	W24
+// 012   ----------------------------------------
+	BYTE		N36     Fs3 
+	BYTE	W48
+	BYTE		        Dn3 
+	BYTE	W48
+// 013   ----------------------------------------
+	BYTE		N72     En3 
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W84
+	BYTE		N06     En2 
+	BYTE	W06
+	BYTE		        An2 
+	BYTE	W06
+// 021   ----------------------------------------
+	BYTE		N72     Bn2 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	SearchingForEnemies_1_B1
+SearchingForEnemies_1_B2:
+// 022   ----------------------------------------
+	BYTE	TEMPO   112*SearchingForEnemies_tbs/2
+	BYTE		PAN     c_v+0
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+SearchingForEnemies_2:
+	BYTE	KEYSH   SearchingForEnemies_key+0
+SearchingForEnemies_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   58
+	BYTE		VOL     127*SearchingForEnemies_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N24     En2   v127
+	BYTE	W42
+	BYTE		N06   
+	BYTE	W06
+	BYTE		TIE     Fs2 
+	BYTE	W48
+// 001   ----------------------------------------
+	BYTE	W72
+	BYTE		EOT   
+	BYTE	W24
+// 002   ----------------------------------------
+SearchingForEnemies_2_002:
+	BYTE		N24     En2   v127
+	BYTE	W42
+	BYTE		N06     Fs2 
+	BYTE	W06
+	BYTE		N60     Gn2 
+	BYTE	W48
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE		N96     An2 
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE		N72     En2 
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE		N24   
+	BYTE	W42
+	BYTE		N06   
+	BYTE	W06
+	BYTE		TIE     Fs2 
+	BYTE	W48
+// 007   ----------------------------------------
+	BYTE	W72
+	BYTE		EOT   
+	BYTE	W24
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_2_002
+// 009   ----------------------------------------
+	BYTE	W24
+	BYTE		N18     Fs2   v127
+	BYTE	W24
+	BYTE		        Gn2 
+	BYTE	W24
+	BYTE		        An2 
+	BYTE	W24
+// 010   ----------------------------------------
+	BYTE		N36   
+	BYTE	W36
+	BYTE		N12     Gn2 
+	BYTE	W12
+	BYTE		N72   
+	BYTE	W48
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE		        En2 
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	SearchingForEnemies_2_B1
+SearchingForEnemies_2_B2:
+// 022   ----------------------------------------
+	BYTE		PAN     c_v+0
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+SearchingForEnemies_3:
+	BYTE	KEYSH   SearchingForEnemies_key+0
+SearchingForEnemies_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     127*SearchingForEnemies_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W84
+	BYTE		N06     En3   v127
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+// 014   ----------------------------------------
+	BYTE		N36     Gn3 
+	BYTE	W36
+	BYTE		N12     Cn3 
+	BYTE	W12
+	BYTE		N24   
+	BYTE	W24
+	BYTE		        An3 
+	BYTE	W24
+// 015   ----------------------------------------
+	BYTE		N36     Gn3 
+	BYTE	W36
+	BYTE		N12     Fn3 
+	BYTE	W12
+	BYTE		N24   
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+// 016   ----------------------------------------
+	BYTE		N36     Gn3 
+	BYTE	W36
+	BYTE		        Cn3 
+	BYTE	W36
+	BYTE		N24     Dn3 
+	BYTE	W24
+// 017   ----------------------------------------
+	BYTE		N36     En3 
+	BYTE	W36
+	BYTE		        Dn3 
+	BYTE	W36
+	BYTE		N24     Gn3 
+	BYTE	W24
+// 018   ----------------------------------------
+	BYTE		TIE     En4 
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W72
+	BYTE		EOT   
+	BYTE	W12
+	BYTE		N06   
+	BYTE	W06
+	BYTE		        An4 
+	BYTE	W06
+// 020   ----------------------------------------
+	BYTE		TIE     Bn4 
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W72
+	BYTE		EOT   
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	SearchingForEnemies_3_B1
+SearchingForEnemies_3_B2:
+// 022   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		PAN     c_v+0
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+SearchingForEnemies_4:
+	BYTE	KEYSH   SearchingForEnemies_key+0
+SearchingForEnemies_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		VOL     127*SearchingForEnemies_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W84
+	BYTE		N06     En2   v127
+	BYTE	W06
+	BYTE		        An2 
+	BYTE	W06
+// 001   ----------------------------------------
+	BYTE		N72     Bn2 
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W84
+	BYTE		N06     An2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+// 003   ----------------------------------------
+	BYTE		N12     Cn3 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE	W24
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        Dn3 
+	BYTE	W24
+// 004   ----------------------------------------
+	BYTE		N96     En3 
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W84
+	BYTE		N06     En2 
+	BYTE	W06
+	BYTE		        An2 
+	BYTE	W06
+// 007   ----------------------------------------
+	BYTE		N72     Bn2 
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W84
+	BYTE		N06     Cn3 
+	BYTE	W06
+	BYTE		        Dn3 
+	BYTE	W06
+// 009   ----------------------------------------
+	BYTE		N36     En3 
+	BYTE	W48
+	BYTE		        Gn3 
+	BYTE	W48
+// 010   ----------------------------------------
+	BYTE		        Fs3 
+	BYTE	W48
+	BYTE		        Dn3 
+	BYTE	W48
+// 011   ----------------------------------------
+	BYTE		N96     En3 
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W48
+	BYTE		N06     An1 
+	BYTE	W06
+	BYTE		        Bn1 
+	BYTE	W06
+	BYTE		        Cn2 
+	BYTE	W06
+	BYTE		        Dn2 
+	BYTE	W06
+	BYTE		        En2 
+	BYTE	W06
+	BYTE		        Fs2 
+	BYTE	W06
+	BYTE		        Gn2 
+	BYTE	W06
+	BYTE		        An2 
+	BYTE	W06
+// 014   ----------------------------------------
+SearchingForEnemies_4_014:
+	BYTE		N48     Bn2   v127
+	BYTE	W48
+	BYTE		        An2 
+	BYTE	W48
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE		        En2 
+	BYTE	W48
+	BYTE		        An2 
+	BYTE	W48
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_4_014
+// 017   ----------------------------------------
+	BYTE		N48     Cn3   v127
+	BYTE	W48
+	BYTE		        Bn2 
+	BYTE	W48
+// 018   ----------------------------------------
+	BYTE		TIE     An3 
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W72
+	BYTE		EOT   
+	BYTE	W24
+// 020   ----------------------------------------
+	BYTE		TIE     En4 
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W72
+	BYTE		EOT   
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	SearchingForEnemies_4_B1
+SearchingForEnemies_4_B2:
+// 022   ----------------------------------------
+	BYTE		VOICE   48
+	BYTE		PAN     c_v+0
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+SearchingForEnemies_5:
+	BYTE	KEYSH   SearchingForEnemies_key+0
+SearchingForEnemies_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   33
+	BYTE		VOL     127*SearchingForEnemies_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N12     An1   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 001   ----------------------------------------
+SearchingForEnemies_5_001:
+	BYTE		N12     An1   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 014   ----------------------------------------
+SearchingForEnemies_5_014:
+	BYTE		N12     Fn1   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_014
+// 016   ----------------------------------------
+	BYTE		N12     Dn1   v127
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 017   ----------------------------------------
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_5_001
+	BYTE	GoTo
+	 POIN2	SearchingForEnemies_5_B1
+SearchingForEnemies_5_B2:
+// 022   ----------------------------------------
+	BYTE		VOICE   33
+	BYTE		PAN     c_v+0
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.6) ****************//
+
+SearchingForEnemies_6:
+	BYTE	KEYSH   SearchingForEnemies_key+0
+SearchingForEnemies_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   58
+	BYTE		VOL     127*SearchingForEnemies_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N12     An0   v127
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W24
+// 001   ----------------------------------------
+SearchingForEnemies_6_001:
+	BYTE		N12     An0   v127
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 014   ----------------------------------------
+SearchingForEnemies_6_014:
+	BYTE		N12     Fn0   v127
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_014
+// 016   ----------------------------------------
+	BYTE		N12     Dn0   v127
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W24
+// 017   ----------------------------------------
+	BYTE		        Gn0 
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W24
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_6_001
+	BYTE	GoTo
+	 POIN2	SearchingForEnemies_6_B1
+SearchingForEnemies_6_B2:
+// 022   ----------------------------------------
+	BYTE		PAN     c_v+0
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.7) ****************//
+
+SearchingForEnemies_7:
+	BYTE	KEYSH   SearchingForEnemies_key+0
+SearchingForEnemies_7_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		VOL     127*SearchingForEnemies_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N06     En1   v127
+	BYTE	W36
+	BYTE		N06   
+	BYTE	W48
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+// 001   ----------------------------------------
+SearchingForEnemies_7_001:
+	BYTE		N06     En1   v127
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W72
+	BYTE	PEND
+// 002   ----------------------------------------
+SearchingForEnemies_7_002:
+	BYTE		N06     En1   v127
+	BYTE	W36
+	BYTE		N06   
+	BYTE	W48
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_002
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_001
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_002
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_001
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_002
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_001
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_001
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_002
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	SearchingForEnemies_7_001
+	BYTE	GoTo
+	 POIN2	SearchingForEnemies_7_B1
+SearchingForEnemies_7_B2:
+// 022   ----------------------------------------
+	BYTE		VOICE   127
+	BYTE		PAN     c_v+0
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+SearchingForEnemies:
+	BYTE	7	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	SearchingForEnemies_pri	// Priority
+	BYTE	SearchingForEnemies_rev	// Reverb.
+
+	POIN2	SearchingForEnemies_grp
+
+	POIN2	SearchingForEnemies_1
+	POIN2	SearchingForEnemies_2
+	POIN2	SearchingForEnemies_3
+	POIN2	SearchingForEnemies_4
+	POIN2	SearchingForEnemies_5
+	POIN2	SearchingForEnemies_6
+	POIN2	SearchingForEnemies_7
+
+	

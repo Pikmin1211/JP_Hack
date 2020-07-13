@@ -49,3 +49,7 @@
 #include "Wanderer/Wanderer Installer.event"
 
 #include "Duke Knight/Duke Knight Installer.event"
+
+#include "Telos/Telos Installer.event"
+
+#include "Butler/Butler Installer.event"

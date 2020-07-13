@@ -12,23 +12,11 @@ ORG 0xB4C0C
 BYTE RollingDiceSong
 POP
 
-// Title Screen Music
-/*
+// Smmoth Autolevel
 PUSH
-ORG 0xC5C9C
-BYTE Route209Song
-ORG 0x9ABE
-BYTE Route209Song
-ORG 0xC640A
-BYTE Route209Song
-ORG 0xC6436
-BYTE Route209Song
-ORG 0xA1946
-BYTE Route209Song
-ORG 0xAFA78
-BYTE Route209Song
+ORG $18138
+SHORT $7914
 POP
-*/
 
 #include "Instruments/InstrumentInstaller.event"
 
@@ -75,3 +63,11 @@ POP
 #include "SRankWeight/SRankWeight.event"
 
 #include "HardModeShop/Installer.event"
+
+#include "StaffBGM/Installer.event"
+
+#include "FancyStaff/FancyStaff.event"
+
+#include "FogRange/Installer.event"
+
+//#include "BaseConversations/BaseConvos.event"

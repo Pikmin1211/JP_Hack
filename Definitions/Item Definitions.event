@@ -332,3 +332,122 @@
 #define Rune 0xFC//ItemID here
 #define RuneMagicAnim 0xFF//MagicAnimationID here
 #define RuneIcon (Rune-1)//ItemIconID here
+
+#define Abort 0xFD//ItemID here
+#define AbortMagicAnim 0xFF//MagicAnimationID here
+#define AbortIcon (Abort-1)//ItemIconID here
+
+#define BanditAxe 0x3D//ItemID here
+#define BanditAxeMagicAnim 0xFF//MagicAnimationID here
+#define BanditAxeIcon (BanditAxe-1)//ItemIconID here
+#define BanditAxeDescription 0x1//TextID here
+#define BanditAxeUseText 0x0//TextID here
+
+#define LogSplitter 0x44//ItemID here
+#define LogSplitterMagicAnim 0xFF//MagicAnimationID here
+#define LogSplitterIcon (LogSplitter-1)//ItemIconID here
+#define LogSplitterDescription 0x1//TextID here
+#define LogSplitterUseText 0x0//TextID here
+
+#define BastardSword 0x77//ItemID here
+#define BastardSwordMagicAnim 0xFF//MagicAnimationID here
+#define BastardSwordIcon (BastardSword-1)//ItemIconID here
+#define BastardSwordDescription 0x1//TextID here
+#define BastardSwordUseText 0x0//TextID here
+
+#define Estoc 0x8A//ItemID here
+#define EstocMagicAnim 0xFF//MagicAnimationID here
+#define EstocIcon (Estoc-1)//ItemIconID here
+#define EstocDescription 0x1//TextID here
+#define EstocUseText 0x0//TextID here
+
+#define Cutlass 0x9A//ItemID here
+#define CutlassMagicAnim 0xFF//MagicAnimationID here
+#define CutlassIcon (Cutlass-1)//ItemIconID here
+#define CutlassDescription 0x1//TextID here
+#define CutlassUseText 0x0//TextID here
+
+#define CompositeBow 0x9B//ItemID here
+#define CompositeBowMagicAnim ArrowAnimation//MagicAnimationID here
+#define CompositeBowIcon (CompositeBow-1)//ItemIconID here
+#define CompositeBowDescription 0x1//TextID here
+#define CompositeBowUseText 0x0//TextID here
+
+#define Warhammer 0x9C//ItemID here
+#define WarhammerMagicAnim 0xFF//MagicAnimationID here
+#define WarhammerIcon (Warhammer-1)//ItemIconID here
+#define WarhammerUseText 0x0//TextID here
+
+#define Pilum 0x9D//ItemID here
+#define PilumMagicAnim JavelinAnimation//MagicAnimationID here
+#define PilumIcon (Pilum-1)//ItemIconID here
+#define PilumUseText 0x0//TextID here
+
+#define Poleax 0x9E//ItemID here
+#define PoleaxMagicAnim 0xFF//MagicAnimationID here
+#define PoleaxIcon (Poleax-1)//ItemIconID here
+#define PoleaxDescription 0x1//TextID here
+#define PoleaxUseText 0x0//TextID here
+
+#define Francisca 0x9F//ItemID here
+#define FranciscaMagicAnim HandaxeAnimation//MagicAnimationID here
+#define FranciscaIcon (Francisca-1)//ItemIconID here
+#define FranciscaUseText 0x0//TextID here
+
+#define Partisan 0xA0//ItemID here
+#define PartisanMagicAnim 0xFF//MagicAnimationID here
+#define PartisanIcon (Partisan-1)//ItemIconID here
+#define PartisanDescription 0x1//TextID here
+#define PartisanUseText 0x0//TextID here
+
+#define Glaive 0xA2//ItemID here
+#define GlaiveMagicAnim 0xFF//MagicAnimationID here
+#define GlaiveIcon (Glaive-1)//ItemIconID here
+#define GlaiveDescription 0x1//TextID here
+#define GlaiveUseText 0x0//TextID here
+
+#define Espontoon 0xA3//ItemID here
+#define EspontoonMagicAnim 0xFF //MagicAnimationID here
+#define EspontoonIcon (Espontoon-1) //ItemIconID here
+#define EspontoonDescription 0x1//TextID here
+#define EspontoonUseText 0x0//TextID here
+
+#define HandBow 0xA4//ItemID here
+#define HandBowMagicAnim ArrowAnimation//MagicAnimationID here
+#define HandBowIcon (HandBow-1)//ItemIconID here
+#define HandBowDescription 0x1//TextID here
+#define HandBowUseText 0x0//TextID here
+
+#define ScissorAxe 0xA5//ItemID here
+#define ScissorAxeMagicAnim 0xFF//MagicAnimationID here
+#define ScissorAxeIcon (ScissorAxe-1)//ItemIconID here
+#define ScissorAxeDescription 0x1//TextID here
+#define ScissorAxeUseText 0x0//TextID here
+
+#define Shortsword 0xA7//ItemID here
+#define ShortswordMagicAnim 0xFF//MagicAnimationID here
+#define ShortswordIcon (Shortsword-1)//ItemIconID here
+#define ShortswordDescription 0x1//TextID here
+#define ShortswordUseText 0x0//TextID here
+
+/*
+#define IronArrow 0xB8//ItemID here
+#define IronArrowMagicAnim 0xFF//MagicAnimationID here
+#define IronArrowIcon (IronArrow-1)//ItemIconID here
+#define IronArrowUseText 0x0//TextID here
+
+#define SteelArrow 0xB9//ItemID here
+#define SteelArrowMagicAnim 0xFF//MagicAnimationID here
+#define SteelArrowIcon (SteelArrow-1)//ItemIconID here
+#define SteelArrowUseText 0x0//TextID here
+
+#define SilverArrow 0xBA//ItemID here
+#define SilverArrowMagicAnim 0xFF//MagicAnimationID here
+#define SilverArrowIcon (SilverArrow-1)//ItemIconID here
+#define SilverArrowUseText 0x0//TextID here
+
+#define KillerArrow 0xBB//ItemID here
+#define KillerArrowMagicAnim 0xFF//MagicAnimationID here
+#define KillerArrowIcon (KillerArrow-1)//ItemIconID here
+#define KillerArrowUseText 0x0//TextID here
+*/

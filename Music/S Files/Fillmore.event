@@ -4,7 +4,7 @@
 	#define	Fillmore_grp  voicegroup000
 	#define	Fillmore_pri  0
 	#define	Fillmore_rev  0
-	#define	Fillmore_mvl  60
+	#define	Fillmore_mvl  55
 	#define	Fillmore_key  0
 	#define	Fillmore_tbs  1
 	#define	Fillmore_exg  0

@@ -280,7 +280,7 @@ BYTE 0x01 0x6A IronSword 0; POIN GetBallistaMapSprite 0//blue sigil
 BYTE 0x01 0x33 SteelSword 0; POIN GetBallistaMapSprite MakeSigilRed//Red sigil
 BYTE 0x01 0x61 SilverSword 0; POIN GetBallistaMapSprite MakeSigilGreen//Green sigil
 BYTE 0x01 0x78 SlimSword 0; POIN GetBallistaMapSprite MakeTorchRed // torch
-BYTE 0x0D 0x66 0 0; POIN 0 0//Light Rune
+BYTE 0x0D 0x76 0 0; POIN 0 0//Light Rune
 #ifdef VeinDefinitions
 BYTE DragonVeinTrapID Vein_Map_Sprite_Number 0 0; POIN 0 ChangeTrapPalette//Dragon Veins, if defined
 #endif

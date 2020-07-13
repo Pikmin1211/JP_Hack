@@ -1,0 +1,275 @@
+EventPointerTable(Ch13AEvent, PointerList)
+SetChapterConvoy(13,1)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,NanayaJoins,3)
+	TurnEventPlayer(0x0,Turn4Reinforcements,4)
+	TurnEventPlayer(0x0,Turn5Reinforcements,5)
+	TurnEventPlayer(0x0,Turn7Reinforcements,7)
+	TurnEventPlayer(0x0,Turn9Reinforcements,9)
+	TurnEventPlayer(0x0,Turn12Reinforcements,12)
+	END_MAIN
+
+NanayaJoins:
+	MUSS LikeAGlintOfLightSong
+	SpawnReinforcements(NanayaUnit)
+	FlashCursor(Nanaya,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+Turn4Reinforcements:
+	SpawnReinforcements(BottomReinforcements)
+	SpawnReinforcements(RightReinforcements)
+	NoFade
+	ENDA
+
+Turn5Reinforcements:
+	SpawnReinforcements(TopRightThief)
+	NoFade
+	ENDA
+
+Turn7Reinforcements:
+	SpawnReinforcements(Wallbreakers)
+	NoFade
+	ENDA
+
+Turn9Reinforcements:
+	SpawnReinforcements(TopLeftThief)
+	SpawnReinforcements(BottomLeftThief)
+	SpawnReinforcements(TopRightReinforcements)
+	NoFade
+	ENDA
+
+Turn12Reinforcements:
+	SpawnReinforcements(BottomReinforcements)
+	SpawnReinforcements(RightReinforcements)
+	SpawnReinforcements(TopRightReinforcements)
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	AFEV 0x9 ZaneDeath 0xA
+	CauseGameOverIfLordDies
+	END_MAIN
+
+ZaneDeath:
+	IncreaseFogRange
+	Increment(1)
+	SVAL 0x1 5
+	COUNTER_CHECK 1
+	BNE 1 0xC 0x1
+		CALL EndingScene
+		LABEL 1
+	ENUF 0x9
+	ENUF 0xA
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	Door(2,2)
+	Door(17,2)
+	Door(18,5)
+	Door(19,5)
+	Door(5,8)
+	Door(6,8)
+	Door(11,12)
+	Door(12,12)
+	Door(13,12)
+	Door(11,13)
+	Door(12,13)
+	Door(13,13)
+	Door(4,13)
+	Chest(GuardRing,0,0)
+	Chest(LevinSword,20,2)
+	Chest(RedGem,19,3)
+	Chest(AngelicRobe,0,14)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(12,9)
+	Unit(11,8)
+	Unit(13,8)
+	Unit(11,10)
+	Unit(13,10)
+	Unit(12,11)
+	Unit(12,7)
+	Unit(10,9)
+	Unit(14,9)
+	Unit(9,8)
+	Unit(15,10)
+	Unit(9,10)
+	Unit(15,8)
+	UNIT
+
+NanayaUnit:
+	UNIT Nanaya Thief 0x0 Level(5,Ally,0) [15,0] 0 0 1 REDA15R0 [Cutlass,Lockpick,Vulnerary] NoAI
+	UNIT
+
+TopLeftThief:
+	UNIT Unknown Thief 0x0 Level(3,Enemy,1) [2,0] 0 0 0 0 [IronSword,ChestKey] LootingThiefAI
+	UNIT
+
+TopRightThief:
+	UNIT Unknown Thief 0x0 Level(3,Enemy,1) [20,3] 0 0 0 0 [IronSword,ChestKey,ChestKey] LootingThiefAI
+	UNIT
+
+BottomLeftThief:
+	UNIT Unknown Thief 0x0 Level(3,Enemy,1) [4,7] 0 0 0 0 [IronSword,ChestKey] LootingThiefAI
+	UNIT
+
+Wallbreakers:
+	UNIT Unknown Fighter 0x0 Level(6,Enemy,1) [24,1] 0 0 1 REDA24R1 [BanditAxe] WallAI
+	UNIT Unknown Soldier 0x0 Level(6,Enemy,1) [24,2] 0 0 1 REDA24R2 [IronLance] WallAI
+	UNIT Unknown Thief 0x0 Level(3,Enemy,1) [24,3] 0 0 1 REDA24R3 [IronSword,DoorKey] DefaultAI
+	UNIT
+
+TopRightReinforcements:
+	UNIT Unknown AxeKnight 0x0 Level(6,Enemy,1) [23,0] 0 0 1 REDA23R0 [IronAxe] DefaultAI
+	UNIT Unknown LanceKnight 0x0 Level(6,Enemy,1) [24,0] 0 0 1 REDA24R0 [SteelLance] DefaultAI
+	UNIT
+
+RightReinforcements:
+	UNIT Unknown Mercenary 0x0 Level(6,Enemy,1) [24,8] 0 0 1 REDA24R8 [IronBlade] DefaultAI
+	UNIT Unknown Mercenary 0x0 Level(6,Enemy,1) [24,10] 0 0 1 REDA24R10 [Shortsword] DefaultAI
+	UNIT Unknown Mage 0x0 Level(5,Enemy,1) [24,14] 0 0 1 REDA24R14 [Fire] DefaultAI
+	UNIT
+
+BottomReinforcements:
+	UNIT Unknown Cavalier 0x0 Level(6,Enemy,1) [11,21] 0 0 1 REDA11R21 [SteelLance,LightBrand] DefaultAI
+	UNIT Unknown FreeKnight 0x0 Level(6,Enemy,1) [13,21] 0 0 1 REDA13R21 [SteelBlade] DefaultAI
+	UNIT
+
+EnemyUnits:
+
+	UNIT Zane Monk 0x0 Level(8,Enemy,1) [12,2] 0 0 0 0 [Shine] NeverMoveAI
+	UNIT Zane Monk 0x0 Level(8,Enemy,1) [12,15] 0 0 0 0 [Shine] NeverMoveAI
+	UNIT Zane Monk 0x0 Level(8,Enemy,1) [2,4] 0 0 0 0 [Shine] NeverMoveAI
+	UNIT Zane Monk 0x0 Level(8,Enemy,1) [1,19] 0 0 0 0 [Shine] NeverMoveAI
+	UNIT Zane Monk 0x0 Level(8,Enemy,1) [23,14] 0 0 0 0 [Shine] NeverMoveAI
+
+	UNIT Unknown Fighter 0x0 Level(3,Enemy,1) [10,3] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT Unknown Fighter 0x0 Level(3,Enemy,1) [15,4] 0 0 0 0 [SteelAxe] DefaultAI
+	UNIT Unknown Soldier 0x0 Level(3,Enemy,1) [14,3] 0 0 0 0 [Pilum] DefaultAI
+	UNIT Unknown Mercenary 0x0 Level(3,Enemy,1) [9,4] 0 0 0 0 [IronSword] DefaultAI
+
+	UNIT Unknown Mercenary 0x0 Level(3,Enemy,1) [22,8] 0 0 0 0 [Shortsword] DefaultAI
+	UNIT Unknown Mercenary 0x0 Level(3,Enemy,1) [22,9] 0 0 0 0 [IronBlade] DefaultAI
+
+	UNIT Unknown Soldier 0x0 Level(3,Enemy,1) [5,11] 0 0 0 0 [SteelLance] DefaultAI
+	UNIT Unknown Fighter 0x0 Level(4,Enemy,1) [6,13] 2 0 0 0 [Hammer] DefaultAI
+
+	UNIT Unknown Mage 0x0 Level(4,Enemy,1) [16,1] 0 0 0 0 [Thunder] AttackInRangeAI
+	UNIT Unknown Soldier 0x0 Level(5,Enemy,1) [6,3] 0 0 0 0 [SteelLance] AttackInRangeAI
+
+	UNIT Unknown LanceArmor 0x0 Level(4,Enemy,1) [6,16] 0 0 0 0 [IronBlade,Javelin] AttackInRangeAI
+	UNIT Unknown AxeArmor 0x0 Level(4,Enemy,1) [18,16] 0 0 0 0 [Greataxe,HandAxe] AttackInRangeAI
+
+	UNIT Unknown Fighter 0x0 Level(4,Enemy,1) [11,17] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Unknown Soldier 0x0 Level(5,Enemy,1) [13,17] 0 0 0 0 [Javelin] AttackInRangeAI
+
+	UNIT Unknown FreeKnight 0x0 Level(4,Enemy,1) [11,21] 0 0 0 0 [LightBrand] DefaultAI
+	UNIT Unknown Cavalier 0x0 Level(4,Enemy,1) [13,21] 0 0 0 0 [Horseslayer,SlimSword] DefaultAI
+
+	UNIT Unknown AxeKnight 0x0 Level(4,Enemy,1) [24,0] 0 0 0 0 [HandAxe,SteelLance] DefaultAI
+	UNIT Unknown AxeKnight 0x0 Level(4,Enemy,1) [24,21] 0 0 0 0 [SteelAxe] DefaultAI
+
+	UNIT Unknown Mercenary 0x0 Level(7,Enemy,1) [23,20] 2 0 0 0 [IronBlade,Zanbato] AttackInRangeAI
+	UNIT Unknown Archer 0x0 Level(5,Enemy,1) [24,20] 0 0 0 0 [SteelBow] AttackInRangeAI
+
+	UNIT Unknown Shaman 0x0 Level(6,Enemy,1) [1,21] 0 0 0 0 [Miasma] AttackInRangeAI
+	UNIT Unknown Archer 0x0 Level(6,Enemy,1) [7,19] 0 0 0 0 [IronBow] AttackInRangeAI
+	UNIT Unknown Fighter 0x0 Level(6,Enemy,1) [4,20] 0 0 0 0 [SteelAxe,Francisca] AttackInRangeAI
+
+	UNIT Unknown Fighter 0x0 Level(4,Enemy,1) [18,14] 0 0 0 0 [ScissorAxe] AttackInRangeAI
+	UNIT Unknown Soldier 0x0 Level(5,Enemy,1) [19,14] 0 0 0 0 [IronLance] AttackInRangeAI
+
+	UNIT Unknown Soldier 0x0 Level(6,Enemy,1) [24,13] 0 0 0 0 [Axereaver] AttackInRangeAI
+	UNIT Unknown Soldier 0x0 Level(6,Enemy,1) [24,15] 0 0 0 0 [ShortSpear] AttackInRangeAI
+
+	UNIT Unknown LanceArmor 0x0 Level(5,Enemy,1) [1,13] 0 0 0 0 [Greatlance] AttackInRangeAI
+	UNIT Unknown AxeArmor 0x0 Level(5,Enemy,1) [0,15] 0 0 0 0 [ShortAxe,IronLance] AttackInRangeAI
+
+	UNIT Unknown Shaman 0x0 Level(6,Enemy,1) [4,4] 0 0 0 0 [Miasma] NeverMoveAI
+	UNIT Unknown Shaman 0x0 Level(6,Enemy,1) [0,4] 0 0 0 0 [Nosferatu] NeverMoveAI
+	UNIT Unknown LanceArmor 0x0 Level(5,Enemy,1) [2,3] 2 0 0 0 [ShortSpear,MasterKey] NeverMoveAI
+	UNIT Unknown Mercenary 0x0 Level(4,Enemy,1) [0,6] 0 0 0 0 [SteelSword] AttackInRangeAI
+
+	UNIT Unknown Mage 0x0 Level(4,Enemy,1) [18,6] 0 0 0 0 [Elfire] AttackInRangeAI
+	UNIT Unknown Soldier 0x0 Level(4,Enemy,1) [19,7] 0 0 0 0 [Glaive] AttackInRangeAI
+
+	UNIT Unknown Archer 0x0 Level(4,Enemy,1) [19,2] 0 0 0 0 [IronBow] AttackInRangeAI
+	UNIT Unknown Fighter 0x0 Level(4,Enemy,1) [20,4] 0 0 0 0 [SteelAxe] AttackInRangeAI
+
+	UNIT Unknown Archer 0x0 Level(4,Enemy,1) [10,1] 0 0 0 0 [SteelBow] AttackInRangeAI
+
+	UNIT Unknown Mercenary 0x0 Level(4,Enemy,1) [6,7] 0 0 0 0 [IronSword] AttackInRangeAI
+
+	UNIT Unknown Soldier 0x0 Level(5,Enemy,1) [0,9] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT Unknown Fighter 0x0 Level(5,Enemy,1) [1,10] 0 0 0 0 [IronAxe] AttackInRangeAI
+
+	UNIT Unknown Mage 0x0 Level(4,Enemy,1) [9,14] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+#define WarpEffect(xcoord,ycoord) "CAM1 [xcoord,ycoord]; STAL 10; WARP_IN [xcoord,ycoord]; STAL 20"
+
+BeginningScene:
+	COUNTER_SET 1 0
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	FADU 16
+	/*WarpEffect(12,2)
+	WarpEffect(12,15)
+	WarpEffect(2,4)
+	WarpEffect(1,19)
+	WarpEffect(23,14)*/
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 14
+	NoFade
+	ENDA

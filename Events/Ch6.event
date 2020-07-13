@@ -154,12 +154,12 @@ EnemyUnits:
 
 	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [22,9] 0 0 0 0 [RottenClaw] DefaultAI
 	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [21,12] 0 0 0 0 [FetidClaw] DefaultAI
-	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [23,11] 0 0 0 0 [SteelSword] DefaultAI
+	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [23,11] 0 0 0 0 [Shortsword] DefaultAI
 	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [24,12] 0 0 0 0 [IronLance,Lancereaver] DefaultAI
 
 	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [14,14] 2 0 0 0 [Javelin,SteelSword,ChestKey_5] AttackInRangeAI
 	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [15,15] 0 0 0 0 [LightBrand,SapphireLance] AttackInRangeAI
-	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [13,14] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [13,14] 0 0 0 0 [CompositeBow] AttackInRangeAI
 
 	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [12,2] 0 0 0 0 [SharpClaw] AttackInRangeAI
 	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [12,3] 0 0 0 0 [RottenClaw] AttackInRangeAI
@@ -207,7 +207,7 @@ EnemyUnits:
 
 NewUnits:
 
-	UNIT Otaku Mercenary 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA16R1 [IronBlade,RubySword,Vulnerary] NoAI
+	UNIT Otaku Mercenary 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA16R1 [BastardSword,RubySword,Vulnerary] NoAI
 	UNIT Gohard AxeArmor 0x0 Level(10,Ally,0) [16,0] 0 0 1 REDA17R1 [SteelAxe,HandAxe,Fiendcleaver,Elixir] NoAI
 
 	UNIT

@@ -21,7 +21,7 @@ TurnBasedEvents:
 	TurnEventPlayer(0x0,RaydrikCharges,10)
 	TurnEventPlayer(0x0,Turn12Event,12)
 	InfiniteTurnEventPlayer(0xC,DoorUnits,0)
-	InfiniteTurnEventPlayer(0x0,AlwaysReinforcements,2)
+	InfiniteTurnEventPlayer(0x0,AlwaysReinforcements,3)
 	END_MAIN
 
 DerekGoes:
@@ -51,6 +51,7 @@ DerekGoes:
 	ENDA
 
 Turn3Event:
+	SetAI(19,13,0x0,0x0,0x0,0x0)
 	SpawnReinforcements(Reinforcement1)
 	SpawnReinforcements(Reinforcement2)
 	NoFade
@@ -247,7 +248,7 @@ EnemyUnits:
 
 	UNIT Raydrik General 0x0 Level(15,Enemy,0) [19,23] 0 0 0 0 [Runesword,BraveLance,Tomahawk,NobleRapier] NeverMoveAI
 
-	UNIT Officer Hero 0x0 Level(3,Enemy,1) [19,13] 0 0 0 0 [SteelSword,HandAxe,IronAxe] AttackInRangeAI
+	UNIT Officer Hero 0x0 Level(3,Enemy,1) [19,13] 0 0 0 0 [BastardSword,HandAxe,ScissorAxe] [0x6,0x3,0x0,0x0]
 	UNIT Officer Sniper 0x0 Level(1,Enemy,1) [1,9] 0 0 0 0 [ShiningBow,SteelBow] AttackInRangeAI
 	UNIT Officer Warrior 0x0 Level(3,Enemy,1) [3,24] 0 0 0 0 [EmeraldAxe,ShortAxe,Greatbow] AttackInRangeAI
 
@@ -258,7 +259,7 @@ EnemyUnits:
 	UNIT Imperial2 Archer 0x0 Level(10,Enemy,1) [0,8] 0 0 0 0 [ShortBow] AttackInRangeAI
 
 	UNIT Imperial2 LanceKnight 0x0 Level(10,Enemy,1) [0,12] 0 0 0 0 [SteelLance,HeavySpear] AttackInRangeAI
-	UNIT Imperial2 AxeKnight 0x0 Level(10,Enemy,1) [1,13] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Imperial2 AxeKnight 0x0 Level(10,Enemy,1) [1,13] 0 0 0 0 [Poleax] AttackInRangeAI
 	UNIT Imperial2 AxeKnight 0x0 Level(10,Enemy,1) [1,11] 0 0 0 0 [SapphireLance,IronAxe] AttackInRangeAI
 
 	UNIT Imperial2 LanceArmor 0x0 Level(12,Enemy,1) [6,6] 0 0 0 0 [ShortSpear,SteelBlade] NeverMoveAI
@@ -289,7 +290,7 @@ EnemyUnits:
 	UNIT Imperial2 AxeArmor 0x0 Level(12,Enemy,1) [9,20] 0 0 0 0 [ShortAxe,IronLance] NeverMoveAI
 	UNIT Imperial2 AxeArmor 0x0 Level(12,Enemy,1) [12,20] 0 0 0 0 [HandAxe,SteelLance] NeverMoveAI
 
-	UNIT Imperial2 Fighter 0x0 Level(11,Enemy,1) [17,8] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(11,Enemy,1) [17,8] 0 0 0 0 [BanditAxe] AttackInRangeAI
 
 	UNIT Imperial2 Archer 0x0 Level(11,Enemy,1) [1,24] 0 0 0 0 [SilverBow] AttackInRangeAI
 
@@ -314,30 +315,30 @@ GreenUnits:
 
 Reinforcement1:
 	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [21,10] 0 0 1 REDA21R11 [SteelAxe,HandAxe] DefaultAI
-	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [21,10] 0 0 1 REDA21R9 [IronAxe] DefaultAI
+	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [21,10] 0 0 1 REDA21R9 [BanditAxe] DefaultAI
 	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [21,10] 0 0 1 REDA21R10 [SteelBlade,RubySword] DefaultAI
 	UNIT
 
 Reinforcement2:
 	UNIT Imperial2 Soldier 0x0 Level(12,Enemy,1) [0,12] 0 0 1 REDA0R12 [SilverLance] DefaultAI
-	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [0,12] 0 0 1 REDA0R11 [IronSword] DefaultAI
+	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [0,12] 0 0 1 REDA0R11 [Shortsword] DefaultAI
 	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [0,12] 0 0 1 REDA0R13 [SteelSword] DefaultAI
 	UNIT
 
 Reinforcement3:
 	UNIT Imperial2 Cavalier 0x0 Level(12,Enemy,1) [5,0] 0 0 1 REDA5R1 [SteelSword,IronLance] DefaultAI
-	UNIT Imperial2 AxeKnight 0x0 Level(12,Enemy,1) [5,0] 0 0 1 REDA6R1 [SteelAxe] DefaultAI
+	UNIT Imperial2 AxeKnight 0x0 Level(12,Enemy,1) [5,0] 0 0 1 REDA6R1 [Poleax] DefaultAI
 	UNIT Imperial2 FreeKnight 0x0 Level(12,Enemy,1) [5,0] 0 0 1 REDA4R1 [LevinSword,IronBlade] DefaultAI
 	UNIT
 
 Reinforcement4:
 	UNIT Imperial2 AxeKnight 0x0 Level(12,Enemy,1) [16,0] 0 0 1 REDA16R1 [SilverAxe] DefaultAI
-	UNIT Imperial2 LanceKnight 0x0 Level(12,Enemy,1) [16,0] 0 0 1 REDA15R1 [IronLance,Javelin] DefaultAI
+	UNIT Imperial2 LanceKnight 0x0 Level(12,Enemy,1) [16,0] 0 0 1 REDA15R1 [Glaive,Javelin] DefaultAI
 	UNIT Imperial2 LanceKnight 0x0 Level(12,Enemy,1) [16,0] 0 0 1 REDA17R1 [SteelLance] DefaultAI
 	UNIT
 
 WyvernReinforcement:
-	UNIT Imperial2 WyvernRider 0x0 Level(13,Enemy,1) [10,0] 0 0 1 REDA10R4 [SteelLance,Javelin] DefaultAI
+	UNIT Imperial2 WyvernRider 0x0 Level(13,Enemy,1) [10,0] 0 0 1 REDA10R4 [Espontoon,Javelin] DefaultAI
 	UNIT Imperial2 WyvernRider 0x0 Level(13,Enemy,1) [11,0] 0 0 1 REDA11R4 [Greatlance] DefaultAI
 	UNIT
 
@@ -354,7 +355,7 @@ ScaryReinforcement1:
 ScaryReinforcement2:
 	UNIT Officer General 0x0 Level(5,Enemy,1) [16,0] 0 0 1 REDA16R1 [BraveSword,Spear,Hammer,Zanbato] DefaultAI
 	UNIT Officer Halberdier 0x0 Level(5,Enemy,1) [16,0] 0 0 1 REDA15R1 [SilverLance,ShortSpear] DefaultAI
-	UNIT Officer Halberdier 0x0 Level(5,Enemy,1) [16,0] 0 0 1 REDA17R1 [Dragonspear,FlameLance] DefaultAI
+	UNIT Officer Halberdier 0x0 Level(5,Enemy,1) [16,0] 0 0 1 REDA17R1 [Espontoon,FlameLance] DefaultAI
 	UNIT
 
 ScaryWyvernReinforcement:
@@ -375,7 +376,7 @@ Reinforcement6:
 	UNIT
 
 Reinforcement7:
-	UNIT Imperial2 Soldier 0x0 Level(12,Enemy,1) [14,17] 0 0 1 REDA13R17 [SteelLance] DefaultAI
+	UNIT Imperial2 Soldier 0x0 Level(12,Enemy,1) [14,17] 0 0 1 REDA13R17 [Glaive] DefaultAI
 	UNIT Imperial2 Mercenary 0x0 Level(12,Enemy,1) [14,17] 0 0 1 REDA14R17 [RubySword] DefaultAI
 	UNIT
 
@@ -385,7 +386,7 @@ Reinforcement8:
 	UNIT
 
 ThiefUnit:
-	UNIT Imperial2 Thief 0x0 Level(10,Enemy,1) [0,16] 0 0 0 0 [ChestKey,ChestKey] LootingThiefAI
+	UNIT Imperial2 Thief 0x0 Level(10,Enemy,1) [0,16] 0 0 0 0 [IronSword,ChestKey,ChestKey] LootingThiefAI
 	UNIT
 
 Traps1:

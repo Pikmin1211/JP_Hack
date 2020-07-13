@@ -9,3 +9,5 @@
 #include "Title Screen/Title Screen.event"
 
 #include "Menu Tiles/MenuTiles.event"
+
+#include "Mugs/Master Mug Installer.event"

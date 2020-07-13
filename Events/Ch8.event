@@ -191,7 +191,7 @@ EnemyUnits:
 	UNIT Tim Warrior 0x0 Level(1,Enemy,0) [1,16] 2 0 0 0 [SteelAxe,Greatbow,RedGem,StrengthRing] NeverMoveAI
 	UNIT Bit Berserker 0x0 Level(1,Enemy,0) [22,1] 2 0 0 0 [BattleAxe,ShortAxe,Elixir,Talisman] NeverMoveAI
 
-	UNIT Whitewolf Brigand 0x0 Level(10,Enemy,1) [10,5] 0 0 0 0 [SteelAxe,Elixir] BrigandAI
+	UNIT Whitewolf Brigand 0x0 Level(10,Enemy,1) [10,5] 0 0 0 0 [BanditAxe,Elixir] BrigandAI
 	UNIT Whitewolf Brigand 0x0 Level(10,Enemy,1) [14,13] 0 0 0 0 [SteelAxe,RedGem] BrigandAI
 
 	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [16,3] 0 0 0 0 [Longbow,ShiningBow] AttackInRangeAI
@@ -200,14 +200,14 @@ EnemyUnits:
 	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [6,13] 0 0 0 0 [Longbow,SteelBow] AttackInRangeAI
 	UNIT Whitewolf Mage 0x0 Level(10,Enemy,1) [7,14] 0 0 0 0 [Elfire,Fire] AttackInRangeAI
 
-	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [5,16] 0 0 0 0 [SteelBow,ShortBow] AttackInRangeAI
+	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [5,16] 0 0 0 0 [CompositeBow,ShortBow] AttackInRangeAI
 	UNIT Whitewolf Archer 0x0 Level(10,Enemy,1) [18,0] 0 0 0 0 [IronBow] AttackInRangeAI
 
 	UNIT Whitewolf Mage 0x0 Level(11,Enemy,1) [21,15] 2 0 0 0 [Aircalibur] AttackInRangeAI
 	UNIT Whitewolf Monk 0x0 Level(11,Enemy,1) [4,2] 0 0 0 0 [Shine] AttackInRangeAI
 
-	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [4,4] 0 0 0 0 [IronAxe,HandAxe] DefaultAI
-	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [5,3] 0 0 0 0 [SteelLance] DefaultAI
+	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [4,4] 0 0 0 0 [IronAxe,Francisca] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [5,3] 0 0 0 0 [Espontoon] DefaultAI
 
 	UNIT Whitewolf Mercenary 0x0 Level(10,Enemy,1) [22,7] 0 0 0 0 [RubySword] DefaultAI
 	UNIT Whitewolf Mercenary 0x0 Level(10,Enemy,1) [22,8] 0 0 0 0 [IronBlade] DefaultAI
@@ -215,14 +215,14 @@ EnemyUnits:
 	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [16,15] 0 0 0 0 [SteelAxe] DefaultAI
 
 	UNIT Whitewolf FreeKnight 0x0 Level(9,Enemy,1) [12,18] 0 0 0 0 [SteelSword,Vulnerary] DefaultAI
-	UNIT Whitewolf LanceKnight 0x0 Level(9,Enemy,1) [13,18] 0 0 0 0 [IronLance,Javelin] DefaultAI
+	UNIT Whitewolf LanceKnight 0x0 Level(9,Enemy,1) [13,18] 0 0 0 0 [IronLance,Pilum] DefaultAI
 	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [24,2] 0 0 0 0 [HandAxe,HeavySpear] DefaultAI
 	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [1,3] 0 0 0 0 [SteelAxe] DefaultAI
 	UNIT Whitewolf Cavalier 0x0 Level(10,Enemy,1) [0,4] 0 0 0 0 [Horseslayer,SlimSword] DefaultAI
 
 	UNIT Whitewolf Soldier 0x0 Level(9,Enemy,1) [4,8] 0 0 0 0 [Javelin] DefaultAI
 	UNIT Whitewolf Fighter 0x0 Level(9,Enemy,1) [3,9] 0 0 0 0 [Hammer] DefaultAI
-	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [4,10] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [4,10] 0 0 0 0 [Glaive] DefaultAI
 
 	UNIT Whitewolf Mercenary 0x0 Level(11,Enemy,1) [3,13] 0 0 0 0 [Greatsword] DefaultAI
 	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [1,7] 0 0 0 0 [EmeraldAxe] DefaultAI
@@ -235,7 +235,7 @@ EnemyUnits:
 
 	UNIT Whitewolf Fighter 0x0 Level(9,Enemy,1) [20,11] 0 0 0 0 [SteelAxe] DelayedDefaultAI
 	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [19,12] 0 0 0 0 [EmeraldAxe,HandAxe] DelayedDefaultAI
-	UNIT Whitewolf Myrmidon 0x0 Level(11,Enemy,1) [20,13] 0 0 0 0 [Rapier,SteelSword] DelayedDefaultAI
+	UNIT Whitewolf Myrmidon 0x0 Level(11,Enemy,1) [20,13] 0 0 0 0 [Rapier,Estoc] DelayedDefaultAI
 	UNIT Whitewolf Soldier 0x0 Level(10,Enemy,1) [21,12] 0 0 0 0 [SteelLance] DelayedDefaultAI
 
 	UNIT Whitewolf Mercenary 0x0 Level(9,Enemy,1) [8,11] 2 0 0 0 [Zanbato] DefaultAI
@@ -272,29 +272,29 @@ TopCavs:
 	UNIT
 
 LeftCavs:
-	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [0,4] 0 0 1 REDA0R4 [SteelAxe,HandAxe] DefaultAI
-	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [0,4] 0 0 1 REDA0R3 [SteelLance,IronAxe] DefaultAI
+	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [0,4] 0 0 1 REDA0R4 [Poleax,HandAxe] DefaultAI
+	UNIT Whitewolf AxeKnight 0x0 Level(10,Enemy,1) [0,4] 0 0 1 REDA0R3 [Glaive,IronAxe] DefaultAI
 	UNIT Whitewolf FreeKnight 0x0 Level(10,Enemy,1) [0,4] 0 0 1 REDA0R5 [IronBlade] DefaultAI
 	UNIT
 
 BottomCavs:
-	UNIT Whitewolf FreeKnight 0x0 Level(10,Enemy,1) [12,18] 0 0 1 REDA12R18 [SteelSword] DefaultAI
+	UNIT Whitewolf FreeKnight 0x0 Level(10,Enemy,1) [12,18] 0 0 1 REDA12R18 [Shortsword] DefaultAI
 	UNIT Whitewolf LanceKnight 0x0 Level(10,Enemy,1) [12,18] 0 0 1 REDA11R18 [SapphireLance] DefaultAI
 	UNIT Whitewolf LanceKnight 0x0 Level(10,Enemy,1) [12,18] 0 0 1 REDA13R18 [Javelin,SteelLance] DefaultAI
 	UNIT
 
 RightCavs:
 	UNIT Whitewolf Cavalier 0x0 Level(11,Enemy,1) [24,2] 0 0 1 REDA24R2 [LightBrand,IronLance] DefaultAI
-	UNIT Whitewolf AxeKnight 0x0 Level(11,Enemy,1) [24,2] 0 0 1 REDA24R3 [SteelAxe,Javelin] DefaultAI
+	UNIT Whitewolf AxeKnight 0x0 Level(11,Enemy,1) [24,2] 0 0 1 REDA24R3 [SteelAxe,Pilum] DefaultAI
 	UNIT
 
 FortGuys:
-	UNIT Whitewolf Mercenary 0x0 Level(10,Enemy,1) [1,9] 0 0 0 0 [SteelSword] DefaultAI
+	UNIT Whitewolf Mercenary 0x0 Level(10,Enemy,1) [1,9] 0 0 0 0 [BastardSword] DefaultAI
 	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [1,12] 0 0 0 0 [EmeraldAxe] DefaultAI
 	UNIT
 
 BottomLeftGuys:
-	UNIT Whitewolf Soldier 0x0 Level(11,Enemy,1) [1,18] 0 0 1 REDA1R18 [SteelLance] DefaultAI
+	UNIT Whitewolf Soldier 0x0 Level(11,Enemy,1) [1,18] 0 0 1 REDA1R18 [Espontoon] DefaultAI
 	UNIT Whitewolf Mage 0x0 Level(10,Enemy,1) [1,18] 0 0 1 REDA0R18 [Thunder] DefaultAI
 	UNIT Whitewolf Fighter 0x0 Level(10,Enemy,1) [1,18] 0 0 1 REDA3R18 [IronAxe] DefaultAI
 	UNIT
@@ -312,7 +312,7 @@ TopGuys:
 
 BrigandUnit:
 	UNIT Whitewolf Brigand 0x0 Level(9,Enemy,1) [4,13] 0 0 0 0 [IronAxe] BrigandAI
-	UNIT Whitewolf Brigand 0x0 Level(9,Enemy,1) [24,12] 0 0 1 REDA24R12 [IronAxe] BrigandAI
+	UNIT Whitewolf Brigand 0x0 Level(9,Enemy,1) [24,12] 0 0 1 REDA24R12 [BanditAxe] BrigandAI
 	UNIT
 
 MilanorUnit:

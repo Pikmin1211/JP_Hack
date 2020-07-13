@@ -426,3 +426,59 @@ Anabelle[X]
 
 ## AnabelleDescription
 Placeholder[X]
+
+## DarkMarlenName
+D. Marlen[X]
+
+## DarkMarlenDescription
+An unholy abhorration born[N]
+of a young man's inner demons.[X]
+
+## ErmineName
+Ermine[X]
+
+## ErmineDescription
+Placeholder[X]
+
+## ZaneName
+Zane[X]
+
+## ZaneDescription
+Placeholder[X]
+
+## ValerieName
+Valerie[X]
+
+## ValerieDescription
+Placeholder[X]
+
+## SadaoName
+Sadao[X]
+
+## SadaoDescription
+Placeholder[X]
+
+## NanayaName
+Nanaya[X]
+
+## NanayaDescription
+Placeholder[X]
+
+## UnknownName
+Unknown[X]
+
+## UnknownDescription
+Placeholder[X]
+
+## ViridianName
+Viridian[X]
+
+## ViridianDescription
+Placeholder[X]
+
+## ArthurName
+Arthur[X]
+
+## ArthurDescription
+Placeholder[X]
+

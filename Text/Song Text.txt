@@ -270,3 +270,22 @@ Rebelstar BGM6[X]
 
 ## Route120Name
 Route 120[X]
+
+## XpField4Name
+Xp Field 4[X]
+
+## BrianHealUsName
+Brian, Heal Us![X]
+
+## TrickstersLamentName
+Trickster's Lament[X]
+
+## SearchingForEnemiesName
+Searching for Enemies[X]
+
+## AccursedCombatName
+Accursed Combat[X]
+
+## ResolutionName
+Resolution[X]
+

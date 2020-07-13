@@ -137,11 +137,11 @@ WrysUnit:
 
 EnemyUnits:
 
-	UNIT Batta Brigand 0x0 Level(8,Enemy,1) [1,16] 0 0 0 0 [SteelAxe,HandAxe] NeverMoveAI
+	UNIT Batta Brigand 0x0 Level(8,Enemy,1) [1,16] 0 0 0 0 [BanditAxe,HandAxe] NeverMoveAI
 	UNIT ONeill Fighter 0x0 Level(8,Enemy,0) [19,16] 0 0 0 0 [SteelAxe,Vulnerary] NeverMoveAI
 
 	UNIT BattaBeast Cavalier 0x0 Level(3,Enemy,1) [9,17] 0 0 0 0 [IronLance] DefaultAI
-	UNIT BattaBeast FreeKnight 0x0 Level(3,Enemy,1) [10,17] 0 0 0 0 [IronSword] DefaultAI
+	UNIT BattaBeast FreeKnight 0x0 Level(3,Enemy,1) [10,17] 0 0 0 0 [Shortsword] DefaultAI
 	UNIT BattaBeast LanceKnight 0x0 Level(3,Enemy,1) [11,17] 0 0 0 0 [IronLance] DefaultAI
 	UNIT BattaBeast AxeKnight 0x0 Level(3,Enemy,1) [0,14] 0 0 0 0 [IronAxe] DefaultAI
 
@@ -150,16 +150,16 @@ EnemyUnits:
 	UNIT BattaBeast Mercenary 0x0 Level(5,Enemy,1) [19,15] 2 0 0 0 [LightBrand] NeverMoveAI
 
 	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [3,14] 0 0 0 0 [IronLance] DefaultAI
-	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [4,13] 0 0 0 0 [IronLance] DefaultAI
+	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [4,13] 0 0 0 0 [Glaive] DefaultAI
 	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [14,12] 0 0 0 0 [IronLance] DefaultAI
 	UNIT BattaBeast Soldier 0x0 Level(5,Enemy,1) [1,15] 0 0 0 0 [Javelin] NeverMoveAI
-	UNIT BattaBeast Soldier 0x0 Level(5,Enemy,1) [2,16] 0 0 0 0 [Javelin,Horseslayer] NeverMoveAI
+	UNIT BattaBeast Soldier 0x0 Level(5,Enemy,1) [2,16] 0 0 0 0 [Pilum,Horseslayer] NeverMoveAI
 
 	UNIT BattaBeast Fighter 0x0 Level(3,Enemy,1) [9,13] 0 0 0 0 [IronAxe] DefaultAI
-	UNIT BattaBeast Fighter 0x0 Level(3,Enemy,1) [18,15] 0 0 0 0 [IronAxe] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(3,Enemy,1) [18,15] 0 0 0 0 [ScissorAxe] DefaultAI
 
 	UNIT BattaBeast Archer 0x0 Level(3,Enemy,1) [10,15] 0 0 0 0 [IronBow] DefaultAI
-	UNIT BattaBeast Archer 0x0 Level(3,Enemy,1) [19,14] 0 0 0 0 [IronBow] DefaultAI
+	UNIT BattaBeast Archer 0x0 Level(3,Enemy,1) [19,14] 0 0 0 0 [HandBow] DefaultAI
 	UNIT BattaBeast Archer 0x0 Level(3,Enemy,1) [0,17] 0 0 0 0 [Longbow] NeverMoveAI
 	UNIT BattaBeast Archer 0x0 Level(3,Enemy,1) [20,17] 0 0 0 0 [Longbow] NeverMoveAI
 
@@ -170,9 +170,9 @@ EnemyUnits:
 	UNIT
 
 LeftReinforcementUnits:
-	UNIT BattaBeast Cavalier 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R14 [IronLance,IronSword] DefaultAI
+	UNIT BattaBeast Cavalier 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R14 [IronLance,Shortsword] DefaultAI
 	UNIT BattaBeast Mercenary 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R13 [IronSword] DefaultAI
-	UNIT BattaBeast Soldier 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R15 [IronLance] DefaultAI
+	UNIT BattaBeast Soldier 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R15 [Glaive] DefaultAI
 	UNIT
 
 RightReinforcementUnits:
@@ -184,7 +184,7 @@ RightReinforcementUnits:
 LeftReinforcementUnits2:
 	UNIT BattaBeast Archer 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R14 [IronBow] DefaultAI
 	UNIT BattaBeast Fighter 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R13 [IronAxe] DefaultAI
-	UNIT BattaBeast Fighter 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R15 [HandAxe] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(4,Enemy,1) [0,14] 0 0 1 REDA0R15 [Francisca] DefaultAI
 	UNIT
 
 RightReinforcementUnits2:
@@ -194,8 +194,8 @@ RightReinforcementUnits2:
 	UNIT
 
 CenterReinforcementUnits:
-	UNIT BattaBeast Cavalier 0x0 Level(4,Enemy,1) [10,17] 0 0 1 REDA10R17 [Javelin,IronSword] DefaultAI
-	UNIT BattaBeast AxeKnight 0x0 Level(4,Enemy,1) [10,17] 0 0 1 REDA9R17 [IronAxe,IronLance] DefaultAI
+	UNIT BattaBeast Cavalier 0x0 Level(4,Enemy,1) [10,17] 0 0 1 REDA10R17 [Pilum,IronSword] DefaultAI
+	UNIT BattaBeast AxeKnight 0x0 Level(4,Enemy,1) [10,17] 0 0 1 REDA9R17 [IronAxe,Glaive] DefaultAI
 	UNIT BattaBeast LanceKnight 0x0 Level(4,Enemy,1) [10,17] 0 0 1 REDA11R17 [IronLance] DefaultAI
 	UNIT
 

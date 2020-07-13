@@ -1,0 +1,134 @@
+EventPointerTable(Ch14AEvent, PointerList)
+SetChapterConvoy(14,1)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,ArthurJoins,1)
+	END_MAIN
+
+ArthurJoins:
+	MUSS LikeAGlintOfLightSong
+	SpawnReinforcements(ArthurUnit)
+	FlashCursor(Arthur,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+ArthurUnit:
+	UNIT Arthur FreeKnight 0x0 Level(8,Ally,0) [0,12] 0 0 1 REDA1R12 [Shortsword,Flamberge,Vulnerary,HezulScroll] NoAI
+	UNIT
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	AFEV 0x9 DoorOpened 0x8
+	END_MAIN
+
+DoorOpened:
+	CAM1 [2,1]
+	FlashCursor(2,1,60)
+	Text(TestDialogue)
+	SetAI(CivilianUnit,0x6,0xC,0x0,0x0) //EscapeAI
+	NoFade
+	ENDA
+
+LocationBasedEvents:
+	Seize(13,3)
+	DoorFlag(0x8,2,3)
+	Door(9,7)
+	Door(9,8)
+	Chest(BoonManual,17,13)
+	Chest(KillerAxe,22,11)
+	Chest(Dragonshield,20,13)
+	Chest(Rune,16,15)
+	Chest(Elixir,18,16)
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(1,16)
+	Unit(0,15)
+	Unit(2,17)
+	Unit(0,17)
+	Unit(2,15)
+	Unit(3,16)
+	Unit(4,15)
+	Unit(0,13)
+	Unit(2,13)
+	Unit(4,13)
+	Unit(3,14)
+	UNIT
+
+EnemyUnits:
+	UNIT Viridian Pirate 0x0 Level(11,Enemy,0) [13,3] 0 0 0 0 [ShortAxe,BattleAxe] NeverMoveAI
+
+	UNIT Marooner2 Pirate 0x0 Level(6,Enemy,1) [3,9] 0 0 0 0 [BanditAxe] NoAI
+
+	UNIT Marooner2 FreeKnight 0x0 Level(7,Enemy,1) [13,13] 0 0 0 0 [Shortsword,Talisman] AttackInRangeAI
+
+	UNIT Marooner2 LanceArmor 0x0 Level(8,Enemy,1) [2,4] 0 0 0 0 [ShortSpear,IronBlade,Vulnerary] NeverMoveAI
+
+	UNIT
+
+ThiefUnits:
+	UNIT Marooner2 Thief 0x0 Level(6,Enemy,1) [13,0] 0 0 1 REDA12R0 [IronSword,ChestKey] LootingThiefAI
+	UNIT Marooner2 Thief 0x0 Level(6,Enemy,1) [13,0] 0 0 1 REDA14R0 [IronSword,ChestKey] LootingThiefAI
+	UNIT
+
+GreenUnits:
+	UNIT CivilianUnit Civilian 0x0 Level(5,NPC,1) [1,0] 0 0 0 0 [0x0] DoNothing
+	UNIT CivilianUnit CivilianF2 0x0 Level(5,NPC,1) [2,1] 0 0 0 0 [0x0] DoNothing
+	UNIT CivilianUnit CivilianF 0x0 Level(5,NPC,1) [3,0] 0 0 0 0 [0x0] DoNothing
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	LOAD1 0x1 GreenUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 15
+	NoFade
+	ENDA

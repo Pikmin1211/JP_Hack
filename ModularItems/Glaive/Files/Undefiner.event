@@ -1,0 +1,92 @@
+//Genral
+#undef ItemNumber
+#undef ItemIcon
+#undef ItemNameLocation
+#undef ItemDescriptionLocation
+#undef ItemUseTextLocation
+#undef ItemMagicAnimation
+#undef UseItemText
+#undef ItemName
+#undef ItemDescription
+#undef UseDescription
+#undef ItemWeaponType
+
+//Weapon Abilities
+#undef WeaponAbilityOne
+#undef WeaponAbilityTwo
+#undef WeaponAbilityThree
+#undef WeaponAbilityFour
+
+//Stats
+#undef Durability
+#undef Might
+#undef Hit
+#undef Weight
+#undef Crit
+#undef Range
+#undef CostPerUse
+#undef WeaponRank
+#undef HasEffectiveness
+#undef ItemEffectiveness
+#undef WeaponEffect
+#undef WeaponEXP
+#undef StaffUseEffect
+#undef DebuffType
+#undef ItemSkill
+
+//Spell Associaiton
+#undef IsMapOnly
+#undef RangedAnimation
+#undef EnableRangedAnimation
+#undef MapAnimation
+#undef DirectHPChange
+#undef MapSpriteDirection
+#undef AttackColor
+
+//Item Effect
+#undef HasItemEffect
+#undef ItemEffect
+#undef ItemUsability
+#undef ItemPrepScreenUsability
+#undef ItemTargeting
+#undef ItemStaffAI
+#undef ItemEffectExtra
+
+//Item Effect Association
+#undef ItemEffectIsMapOnly
+#undef ItemEffectRangedAnimation
+#undef ItemEffectEnableRangedAnimation DisableRanged
+#undef ItemEffectMapAnimation
+#undef ItemEffectDirectHPChange
+#undef ItemEffectMapSpriteDirection
+#undef ItemEffectColor WhiteAttack
+
+//Stat Bonus
+#undef ItemHPBonus
+#undef ItemStrBonus
+#undef ItemMagBonus
+#undef ItemSklBonus
+#undef ItemSpdBonus
+#undef ItemDefBonus
+#undef ItemResBonus
+#undef ItemLukBonus
+#undef ItemMovBonus
+#undef ItemConBonus
+#undef HasStatBonus
+
+//Debuffs
+#undef StrDebuff
+#undef MagDebuff
+#undef SklDebuff
+#undef SpdDebuff
+#undef DefDebuff
+#undef ResDebuff
+#undef LukDebuff
+
+//Text
+#undef NameTextData
+#undef DescriptionTextData
+#undef UseTextData
+
+//Poison Amount
+#undef PoisonStrength

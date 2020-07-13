@@ -32,6 +32,10 @@ SetClassStaffRank(Falcoknight,DRank)
 SetClassDescription(Falcoknight,FalcoknightDescription)
 SetClassClassType(Falcoknight,MageType|FlierType)
 
+SetClassBowRank(Assassin,DRank)
+SetClassDescription(Assassin,AssassinDescription)
+SetClassMaxStr(Assassin,27)
+
 SetClassPromos(MageF,SageF,Witch)
 SetClassPromos(ShamanF,DruidF,Witch)
 SetClassPromos(PegasusKnight,Falcoknight,DarkFlier)
@@ -39,6 +43,7 @@ SetClassPromos(Soldier,Halberdier,General)
 SetClassPromos(Myrmidon,Swordmaster,DreadFighter)
 SetClassPromos(MyrmidonF,SwordmasterF,DreadFighterF)
 SetClassPromos(Priest,SwordSaint,WarMonk)
+SetClassPromos(Thief,Assassin,Butler)
 
 SetClassHPPromoBonus(DruidF,3)
 SetClassStrPromoBonus(DruidF,0)

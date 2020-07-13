@@ -238,6 +238,34 @@
 #define AnabellePalette2 0x71//PaletteID here
 #define AnabellePalette3 0x72//PaletteID here
 
+#define Valerie 0x25//UnitID here
+#define ValerieClass Telos//ClassID here
+#define ValerieMug 0x34//MugID here
+#define ValeriePalette1 0x78//PaletteID here
+#define ValeriePalette2 0x79//PaletteID here
+#define ValeriePalette3 0x0//PaletteID here
+
+#define Sadao 0x26//UnitID here
+#define SadaoClass Shaman//ClassID here
+#define SadaoMug 0x35//MugID here
+#define SadaoPalette1 0x7A//PaletteID here
+#define SadaoPalette2 0x7B//PaletteID here
+#define SadaoPalette3 0x7C//PaletteID here
+
+#define Nanaya 0x27//UnitID here
+#define NanayaClass Thief//ClassID here
+#define NanayaMug 0x36//MugID here
+#define NanayaPalette1 0x7D//PaletteID here
+#define NanayaPalette2 0x7E//PaletteID here
+#define NanayaPalette3 0x7F//PaletteID here
+
+#define Arthur 0x28//UnitID here
+#define ArthurClass FreeKnight//ClassID here
+#define ArthurMug 0x38//MugID here
+#define ArthurPalette1 0x81//PaletteID here
+#define ArthurPalette2 0x82//PaletteID here
+#define ArthurPalette3 0x83//PaletteID here
+
 // Boss
 
 #define Batta 0x60//UnitID here
@@ -330,6 +358,34 @@
 #define CedwickPalette1 0x6C//PaletteID here
 #define CedwickPalette2 0x0//PaletteID here
 #define CedwickPalette3 0x0//PaletteID here
+
+#define DarkMarlen 0x6D//UnitID here
+#define DarkMarlenClass Cavalier//ClassID here
+#define DarkMarlenMug 0x31//MugID here
+#define DarkMarlenPalette1 0x73//PaletteID here
+#define DarkMarlenPalette2 0x74//PaletteID here
+#define DarkMarlenPalette3 0x0//PaletteID here
+
+#define Ermine 0x6E//UnitID here
+#define ErmineClass Sage//ClassID here
+#define ErmineMug 0x32//MugID here
+#define ErminePalette1 0x0//PaletteID here
+#define ErminePalette2 0x75//PaletteID here
+#define ErminePalette3 0x0//PaletteID here
+
+#define Zane 0x6F//UnitID here
+#define ZaneClass Monk//ClassID here
+#define ZaneMug 0x33//MugID here
+#define ZanePalette1 0x76//PaletteID here
+#define ZanePalette2 0x77//PaletteID here
+#define ZanePalette3 0x0//PaletteID here
+
+#define Viridian 0x70//UnitID here
+#define ViridianClass Pirate//ClassID here
+#define ViridianMug 0x37//MugID here
+#define ViridianPalette1 0x80//PaletteID here
+#define ViridianPalette2 0x0//PaletteID here
+#define ViridianPalette3 0x0//PaletteID here
 
 // Generic + NPC
 
@@ -424,3 +480,8 @@
 
 #define Marooner 0xA0//UnitID here
 #define MaroonerFaction 0x1//MinimugID here
+
+#define Unknown 0xA1//UnitID here
+#define UnknownFaction 0x4//MinimugID here
+
+#define Marooner2 0xA2

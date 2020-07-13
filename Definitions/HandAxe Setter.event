@@ -1,4 +1,4 @@
-#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation ; BYTE ShortAxe 0x00; SHORT Animation ; BYTE BoltAxe 0x0 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation ; BYTE ShortAxe 0x00; SHORT Animation ; BYTE BoltAxe 0x0 ; SHORT Animation ; BYTE Francisca 0x0 ; SHORT Animation"
 #define HandaxeAnim(Animation) "HandAxeAnim(Animation)"
 
 // Redo Hand Axe Animations

@@ -158,3 +158,18 @@
 #define DukeKnightLanceAnim GreatLordLanceAnim//AnimationID here
 #define DukeKnightUnarmedAnim GreatLordUnarmedAnim//AnimationID here
 #define DukeKnightClassCard 0x117//MugID here
+
+#define Telos EirikaLord
+#define TelosSwordAnim EirikaSword2Anim//AnimationID here
+#define TelosStaffAnim EirikaSword3Anim
+#define TelosUnarmedAnim EphraimLanceAnim
+#define TelosClassCard MyrmidonClassCard//MugID here
+
+#define GrandTelos 0x9A
+
+#define AssassinBowAnim AssassinFSwordAnim
+
+#define Butler 0x99
+#define ButlerSwordAnim 0xFF
+#define ButlerStaffAnim 0x100
+#define ButlerClassCard 0x117

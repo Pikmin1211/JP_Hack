@@ -108,14 +108,14 @@ LeftVillage:
 	ENDA
 
 SayoriUnit:
-	UNIT Sayori PegasusKnight 0x0 Level(2,Ally,0) [4,2] 0 0 1 REDA4R3 [SlimLance,Javelin,Vulnerary] NoAI
+	UNIT Sayori PegasusKnight 0x0 Level(2,Ally,0) [4,2] 0 0 1 REDA4R3 [SlimLance,Pilum,Vulnerary] NoAI
 	UNIT
 
 RightVillage:
 	VillageEventItem(Ch1Village,HouseBG,Halberd)
 
 Ch1Armory:
-	SHLI IronSword SteelSword SlimLance IronLance SteelLance IronAxe HandAxe IronBow SteelBow Vulnerary
+	SHLI IronSword Shortsword SteelSword SlimLance IronLance Glaive SteelLance IronAxe ScissorAxe HandAxe HandBow IronBow SteelBow Vulnerary
 	BYTE 0x0 0x0
 	ALIGN 4
 
@@ -148,7 +148,7 @@ Units1:
 Bosses:
 	
 	UNIT Vergil Paladin 0x0 Level(7,Enemy,0) [18,9] 0 0 1 REDA17R9 [Spear,SteelBlade,SilverLance] NeverMoveAI
-	UNIT Derek Cavalier 0x0 Level(7,Enemy,0) [18,9] 0 0 1 REDA16R8 [Javelin,SteelSword,IronLance] NeverMoveAI
+	UNIT Derek Cavalier 0x0 Level(7,Enemy,0) [18,9] 0 0 1 REDA16R8 [Javelin,Estoc,Espontoon] NeverMoveAI
 
 	UNIT
 
@@ -165,12 +165,12 @@ Bandits:
 EnemyUnits:
 
 	UNIT Imperial Cavalier 0x0 Level(2,Enemy,1) [13,12] 0 0 0 0 [IronLance] DefaultAI
-	UNIT Imperial LanceKnight 0x0 Level(2,Enemy,1) [12,13] 0 0 0 0 [IronLance] DefaultAI
+	UNIT Imperial LanceKnight 0x0 Level(2,Enemy,1) [12,13] 0 0 0 0 [Glaive] DefaultAI
 
 	UNIT Imperial Soldier 0x0 Level(2,Enemy,1) [17,2] 0 0 0 0 [SlimLance] AttackInRangeAI
 	UNIT Imperial Soldier 0x0 Level(3,Enemy,1) [18,3] 0 0 0 0 [IronLance] AttackInRangeAI
 
-	UNIT Imperial Fighter 0x0 Level(3,Enemy,1) [13,7] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT Imperial Fighter 0x0 Level(3,Enemy,1) [13,7] 0 0 0 0 [LogSplitter] AttackInRangeAI
 	UNIT Imperial Fighter 0x0 Level(3,Enemy,1) [14,4] 0 0 0 0 [IronAxe] AttackInRangeAI
 
 	UNIT Imperial Archer 0x0 Level(4,Enemy,1) [13,6] 0 0 0 0 [IronBow] AttackInRangeAI
@@ -188,7 +188,7 @@ BrigandUnits:
 ReinforcementUnits:
 
 	UNIT BattaBeast Fighter 0x0 Level(4,Enemy,1) [7,0] 0 0 1 REDA7R0 [IronAxe] DefaultAI
-	UNIT BattaBeast Mercenary 0x0 Level(4,Enemy,1) [7,0] 0 0 1 REDA6R0 [IronBlade] DefaultAI
+	UNIT BattaBeast Mercenary 0x0 Level(4,Enemy,1) [7,0] 0 0 1 REDA6R0 [Shortsword] DefaultAI
 	UNIT BattaBeast Archer 0x0 Level(4,Enemy,1) [7,0] 0 0 1 REDA8R0 [SteelBow] DefaultAI
 
 	UNIT BattaBeast Mercenary 0x0 Level(2,Enemy,1) [0,5] 0 0 1 REDA0R5 [SlimSword] DefaultAI
@@ -196,7 +196,7 @@ ReinforcementUnits:
 
 	UNIT Imperial Soldier 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA13R13 [IronLance] DefaultAI
 	UNIT Imperial Fighter 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA12R14 [IronAxe] DefaultAI
-	UNIT Imperial Soldier 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA14R14 [IronLance,Javelin] DefaultAI
+	UNIT Imperial Soldier 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA14R14 [IronLance,Pilum] DefaultAI
 	UNIT Imperial Archer 0x0 Level(3,Enemy,1) [13,14] 0 0 1 REDA13R14 [IronBow] DefaultAI
 
 	UNIT
@@ -207,7 +207,7 @@ ReinforcementUnits2:
 	UNIT BattaBeast Fighter 0x0 Level(3,Enemy,1) [0,5] 0 0 1 REDA0R6 [IronAxe] DefaultAI
 
 	UNIT Imperial AxeKnight 0x0 Level(3,Enemy,1) [18,10] 0 0 1 REDA18R10 [IronAxe] DefaultAI
-	UNIT Imperial Cavalier 0x0 Level(3,Enemy,1) [18,10] 0 0 1 REDA18R11 [IronLance] DefaultAI
+	UNIT Imperial Cavalier 0x0 Level(3,Enemy,1) [18,10] 0 0 1 REDA18R11 [Glaive] DefaultAI
 
 	UNIT
 
@@ -217,7 +217,7 @@ GreenUnits:
 	UNIT Wolt Archer 0x0 Level(2,NPC,0) [7,0] 0 0 1 REDA7R4 [IronBow,PureWater] NeverMoveAI
 
 	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [7,0] 0 0 1 REDA6R3 [IronLance] DefaultAI
-	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [7,0] 0 0 1 REDA8R3 [IronLance] DefaultAI
+	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [7,0] 0 0 1 REDA8R3 [Glaive] DefaultAI
 
 	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA6R4 [0x0] HastyAI
 	UNIT CivilianUnit Civilian2 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA6R5 [0x0] HastyAI

@@ -1,0 +1,131 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	TrickstersLament_grp  voicegroup000
+	#define	TrickstersLament_pri  0
+	#define	TrickstersLament_rev  0
+	#define	TrickstersLament_mvl  127
+	#define	TrickstersLament_key  0
+	#define	TrickstersLament_tbs  1
+	#define	TrickstersLament_exg  0
+	#define	TrickstersLament_cmp  1
+
+	// .rodata
+	//	TrickstersLament
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+TrickstersLament_001:
+// 000   ----------------------------------------
+ BYTE   KEYSH   TrickstersLament_key+0
+Label_0_0123FC16:
+ BYTE   TEMPO   104*TrickstersLament_tbs/2
+ BYTE   VOICE   71
+ BYTE   VOL   76*TrickstersLament_mvl/mxv
+ BYTE   N12  Dn4  v064
+ BYTE   W12
+ BYTE   En4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   En4
+ BYTE   W12
+ BYTE   Bn3
+ BYTE   W12
+ BYTE   Cn4
+ BYTE   W12
+ BYTE   Dn4
+ BYTE   W12
+ BYTE   Cn4
+ BYTE   W12
+// 001   ----------------------------------------
+ BYTE   N24  An3
+ BYTE   W24
+ BYTE   N12  Fn3
+ BYTE   W24
+ BYTE   N24  An3
+ BYTE   W48
+// 002   ----------------------------------------
+ BYTE   N12  Dn4
+ BYTE   W12
+ BYTE   En4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W24
+ BYTE   Gn4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   An4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+// 003   ----------------------------------------
+ BYTE   Dn4
+ BYTE   W12
+ BYTE   An3
+ BYTE   W12
+ BYTE   Gn3
+ BYTE   W12
+ BYTE   An3
+ BYTE   W12
+ BYTE   Gn3
+ BYTE   W12
+ BYTE   Fn3
+ BYTE   W12
+ BYTE   N24  Dn3
+ BYTE   W24
+// 004   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_0_0123FC16
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+TrickstersLament_002:
+// 000   ----------------------------------------
+ BYTE   VOL   70*TrickstersLament_mvl/mxv
+ BYTE   KEYSH   TrickstersLament_key+0
+Label_1_0123FC5F:
+ BYTE   VOICE   4
+ BYTE   N48  Bn3  v064
+ BYTE   W48
+ BYTE   An3
+ BYTE   W48
+// 001   ----------------------------------------
+ BYTE   Dn4
+ BYTE   W48
+ BYTE   Bn3
+ BYTE   W48
+// 002   ----------------------------------------
+ BYTE   An3
+ BYTE   W48
+ BYTE   Gn3
+ BYTE   W48
+// 003   ----------------------------------------
+ BYTE   An3
+ BYTE   W48
+ BYTE   Dn4
+ BYTE   W48
+// 004   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_1_0123FC5F
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+TrickstersLament:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	TrickstersLament_pri	// Priority
+	BYTE	TrickstersLament_rev	// Reverb.
+    
+	POIN2	TrickstersLament_grp
+    
+	POIN2	TrickstersLament_001
+	POIN2	TrickstersLament_002
+
+	

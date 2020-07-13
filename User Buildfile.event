@@ -15,6 +15,9 @@ MESSAGE Music Switch is off and songs are not written
 //Text
 #include "Text/Install Text Data.event"
 
+//Engine Hacks
+#include "Engine Hacks/Master Hack Installer.event"
+
 //Modulars
 ALIGN 4
 #include "ModularCharacters/Modular Character Installer.event"
@@ -31,9 +34,6 @@ ALIGN 4
 
 //Graphics
 #include "Graphics/Master Graphic Installer.event"
-
-//Engine Hacks
-#include "Engine Hacks/Master Hack Installer.event"
 
 //Maps
 ALIGN 4

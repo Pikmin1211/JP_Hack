@@ -1,0 +1,179 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	BrianHealUs_grp  voicegroup000
+	#define	BrianHealUs_pri  0
+	#define	BrianHealUs_rev  0
+	#define	BrianHealUs_mvl  127
+	#define	BrianHealUs_key  0
+	#define	BrianHealUs_tbs  1
+	#define	BrianHealUs_exg  0
+	#define	BrianHealUs_cmp  1
+
+	// .rodata
+	//	BrianHealUs
+	ALIGN 4
+
+
+//**************** Track 1 (Midi-Chn.0) ****************//
+
+BrianHealUs_001:
+// 000   ----------------------------------------
+ BYTE   KEYSH   BrianHealUs_key+0
+Label_0_0123FB52:
+ BYTE   TEMPO   88*BrianHealUs_tbs/2
+ BYTE   VOICE   79
+ BYTE   VOL   69*BrianHealUs_mvl/mxv
+ BYTE   N12  As3  v064
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   Gs4
+ BYTE   W12
+ BYTE   N24  Fn4
+ BYTE   W24
+ BYTE   N12  Cs4
+ BYTE   W12
+ BYTE   Fn4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+// 001   ----------------------------------------
+ BYTE   As3
+ BYTE   W12
+ BYTE   Cs4
+ BYTE   W12
+ BYTE   N24  Ds4
+ BYTE   W36
+ BYTE   N12  As3
+ BYTE   W12
+ BYTE   Cs4
+ BYTE   W12
+ BYTE   Gs3
+ BYTE   W12
+// 002   ----------------------------------------
+ BYTE   Ds4
+ BYTE   W24
+ BYTE   As3
+ BYTE   W12
+ BYTE   Cs4
+ BYTE   W12
+ BYTE   Gs3
+ BYTE   W24
+ BYTE   As3
+ BYTE   W12
+ BYTE   Cs4
+ BYTE   W12
+// 003   ----------------------------------------
+ BYTE   Gs3
+ BYTE   W24
+ BYTE   N24  Gs4
+ BYTE   W24
+ BYTE   N12  Fs4
+ BYTE   W12
+ BYTE   As4
+ BYTE   W12
+ BYTE   Gs4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+// 004   ----------------------------------------
+ BYTE   Cs4
+ BYTE   W12
+ BYTE   Ds4
+ BYTE   W12
+ BYTE   Cs4
+ BYTE   W12
+ BYTE   N24  As3
+ BYTE   W36
+ BYTE   N12  Cs4
+ BYTE   W12
+ BYTE   Gs3
+ BYTE   W12
+// 005   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_0_0123FB52
+ BYTE   FINE
+
+//**************** Track 2 (Midi-Chn.1) ****************//
+
+BrianHealUs_002:
+// 000   ----------------------------------------
+ BYTE   KEYSH   BrianHealUs_key+0
+Label_1_0123FBA8:
+ BYTE   VOICE   1
+ BYTE   VOL   70*BrianHealUs_mvl/mxv
+ BYTE   N48  As3  v064
+ BYTE   N48  Cs4
+ BYTE   N48  Fn4
+ BYTE   N48  Gs4
+ BYTE   W48
+ BYTE   As3
+ BYTE   N48  Cs4
+ BYTE   N48  Fn4
+ BYTE   N48  Gs4
+ BYTE   W48
+// 001   ----------------------------------------
+ BYTE   Gs3
+ BYTE   N48  As3
+ BYTE   N48  Cs4
+ BYTE   N48  Fn4
+ BYTE   W48
+ BYTE   Gs3
+ BYTE   N48  As3
+ BYTE   N48  Cs4
+ BYTE   N48  Fn4
+ BYTE   W48
+// 002   ----------------------------------------
+ BYTE   As3
+ BYTE   N48  Cs4
+ BYTE   N48  Fn4
+ BYTE   N48  Gs4
+ BYTE   W48
+ BYTE   As3
+ BYTE   N48  Cs4
+ BYTE   N48  Fn4
+ BYTE   N48  Gs4
+ BYTE   W48
+// 003   ----------------------------------------
+ BYTE   Cs4
+ BYTE   N48  Fn4
+ BYTE   N48  Gs4
+ BYTE   N48  Cs5
+ BYTE   W48
+ BYTE   Cs4
+ BYTE   N48  Fn4
+ BYTE   N48  Gs4
+ BYTE   N48  Cs5
+ BYTE   W48
+// 004   ----------------------------------------
+ BYTE   As3
+ BYTE   N48  Cs4
+ BYTE   N48  Fn4
+ BYTE   N48  Gs4
+ BYTE   W48
+ BYTE   Gs3
+ BYTE   N48  As3
+ BYTE   N48  Cs4
+ BYTE   N48  Fn4
+ BYTE   W48
+// 005   ----------------------------------------
+ BYTE   GoTo
+  POIN2 Label_1_0123FBA8
+ BYTE   FINE
+
+//******************************************************//
+	ALIGN 4
+
+BrianHealUs:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	BrianHealUs_pri	// Priority
+	BYTE	BrianHealUs_rev	// Reverb.
+    
+	POIN2	BrianHealUs_grp
+    
+	POIN2	BrianHealUs_001
+	POIN2	BrianHealUs_002
+
+	

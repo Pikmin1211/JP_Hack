@@ -15,7 +15,7 @@
 #define NPCBattleMusic BattlePhantasiaSong
 #define PlayerMusic2 Distant_Roads
 #define EnemyMusic2 Shadow_of_the_Enemy
-#define PrepScreenMusic PubSong
+#define PrepScreenMusic ShopPrepSong
 #define WallHP 0
 #define EnemiesForVictoryMusic 1
 #define ChapterFadeToBlack 1//0x1 to fade to black

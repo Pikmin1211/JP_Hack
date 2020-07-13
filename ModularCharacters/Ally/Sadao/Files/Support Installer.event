@@ -1,0 +1,32 @@
+#define SupportPartnerNumber 0
+
+#define SupportPartnerOne 0
+#define BaseSupportOne 0
+#define SupportGrowthOne 0
+
+#define SupportPartnerTwo 0
+#define BaseSupportTwo 0
+#define SupportGrowthTwo 0
+
+#define SupportPartnerThree 0
+#define BaseSupportThree 0
+#define SupportGrowthThree 0
+
+#define SupportPartnerFour 0
+#define BaseSupportFour 0
+#define SupportGrowthFour 0
+
+#define SupportPartnerFive 0
+#define BaseSupportFive 0
+#define SupportGrowthFive 0
+
+#define SupportPartnerSix 0
+#define BaseSupportSix 0
+#define SupportGrowthSix 0
+
+#define SupportPartnerSeven 0
+#define BaseSupportSeven 0
+#define SupportGrowthSeven 0
+
+UnitSupportData:
+SupportInstaller(SupportPartnerOne,SupportPartnerTwo,SupportPartnerThree,SupportPartnerFour,SupportPartnerFive,SupportPartnerSix,SupportPartnerSeven,BaseSupportOne,BaseSupportTwo,BaseSupportThree,BaseSupportFour,BaseSupportFive,BaseSupportSix,BaseSupportSeven,SupportGrowthOne,SupportGrowthTwo,SupportGrowthThree,SupportGrowthFour,SupportGrowthFive,SupportGrowthSix,SupportGrowthSeven,SupportPartnerNumber,0x0,0x0)

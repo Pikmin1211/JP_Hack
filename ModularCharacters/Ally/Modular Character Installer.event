@@ -69,3 +69,11 @@
 #include "Anabelle/Anabelle Installer.event"
 
 #include "Wendy/Wendy Installer.event"
+
+#include "Valerie/Valerie Installer.event"
+
+#include "Sadao/Sadao Installer.event"
+
+#include "Nanaya/Nanaya Installer.event"
+
+#include "Arthur/Arthur Installer.event"

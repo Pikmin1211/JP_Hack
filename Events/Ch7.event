@@ -132,7 +132,7 @@ LocationBasedEvents:
 	END_MAIN
 
 Ch7Armory:
-	SHLI IronSword SteelSword RubySword Wyrmslayer IronLance SteelLance SapphireLance HeavySpear IronAxe SteelAxe EmeraldAxe Halberd IronBow SteelBow ShortBow HuntingBow
+	SHLI IronSword Shortsword SteelSword RubySword Wyrmslayer IronLance SteelLance Espontoon SapphireLance HeavySpear IronAxe SteelAxe BanditAxe EmeraldAxe Halberd IronBow SteelBow CompositeBow ShortBow HuntingBow
 	BYTE 0x0 0x0
 	ALIGN 4
 
@@ -187,16 +187,16 @@ EnemyUnits:
 
 	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [14,20] 2 0 0 0 [Elixir] HastyAI
 	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [15,19] 2 0 0 0 [BlueGem] HastyAI
-	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [8,19] 2 0 0 0 [HeroCrest] HastyAI
-	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [9,19] 2 0 0 0 [Lancereaver] HastyAI
+	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [8,21] 2 0 0 0 [HeroCrest] HastyAI
+	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [9,21] 2 0 0 0 [Lancereaver] HastyAI
 	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [18,17] 2 0 0 0 [KnightCrest] HastyAI
 	UNIT Imperial Transporter 0x0 Level(5,Enemy,1) [17,18] 2 0 0 0 [ShiningBow] HastyAI
 
 	UNIT Imperial2 LanceKnight 0x0 Level(9,Enemy,1) [14,26] 0 0 0 0 [SteelLance,Vulnerary] DefaultAI
-	UNIT Imperial2 FreeKnight 0x0 Level(9,Enemy,1) [15,25] 0 0 0 0 [SteelSword] DefaultAI
+	UNIT Imperial2 FreeKnight 0x0 Level(9,Enemy,1) [15,25] 0 0 0 0 [Shortsword] DefaultAI
 	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [11,22] 0 0 0 0 [IronAxe] DefaultAI
 	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [12,23] 0 0 0 0 [EmeraldAxe] DefaultAI
-	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [9,28] 0 0 0 0 [Javelin] DefaultAI
+	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [9,28] 0 0 0 0 [Pilum] DefaultAI
 
 	UNIT
 
@@ -205,7 +205,7 @@ EnemyUnits2:
 	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [16,14] 0 0 0 0 [SteelBow,ShiningBow] AttackInRangeAI
 	UNIT Imperial2 Mage 0x0 Level(9,Enemy,1) [17,13] 0 0 0 0 [Thunder] AttackInRangeAI
 
-	UNIT Imperial2 PegasusKnight 0x0 Level(8,Enemy,1) [10,12] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT Imperial2 PegasusKnight 0x0 Level(8,Enemy,1) [10,12] 0 0 0 0 [Espontoon] AttackInRangeAI
 	UNIT Imperial2 PegasusKnight 0x0 Level(8,Enemy,1) [12,12] 0 0 0 0 [SlimLance] AttackInRangeAI
 
 	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [1,15] 0 0 0 0 [IronBow,Longbow] AttackInRangeAI
@@ -214,7 +214,7 @@ EnemyUnits2:
 	UNIT Imperial2 AxeArmor 0x0 Level(10,Enemy,1) [2,15] 0 0 0 0 [HandAxe,SteelAxe] NeverMoveAI
 
 	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [9,17] 0 0 0 0 [SteelSword] AttackInRangeAI
-	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [8,16] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [8,16] 0 0 0 0 [BanditAxe] AttackInRangeAI
 	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [10,16] 0 0 0 0 [IronBlade] AttackInRangeAI
 	UNIT Imperial2 Mage 0x0 Level(9,Enemy,1) [12,19] 0 0 0 0 [Fire] AttackInRangeAI
 
@@ -222,7 +222,7 @@ EnemyUnits2:
 	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [12,14] 0 0 0 0 [HeavySpear,SilverLance] AttackInRangeAI
 
 	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [18,20] 0 0 0 0 [SteelLance] AttackInRangeAI
-	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [16,17] 0 0 0 0 [HandAxe] AttackInRangeAI
+	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [16,17] 0 0 0 0 [Francisca] AttackInRangeAI
 	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [19,21] 0 0 0 0 [IronAxe] AttackInRangeAI
 
 	UNIT
@@ -240,46 +240,46 @@ EnemyUnits3:
 	UNIT Imperial2 LanceArmor 0x0 Level(11,Enemy,1) [9,6] 0 0 0 0 [Javelin,KillerLance] NeverMoveAI
 	UNIT Imperial2 AxeArmor 0x0 Level(11,Enemy,1) [9,8] 0 0 0 0 [HandAxe,Halberd] NeverMoveAI
 	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [9,7] 0 0 0 0 [SteelBow,Longbow] AttackInRangeAI
-	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [16,6] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [16,6] 0 0 0 0 [CompositeBow] AttackInRangeAI
 	UNIT Imperial2 Archer 0x0 Level(9,Enemy,1) [14,4] 0 0 0 0 [IronBow] AttackInRangeAI
 
 	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [6,6] 0 0 0 0 [IronAxe] AttackInRangeAI
 	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [7,7] 0 0 0 0 [RubySword] AttackInRangeAI
-	UNIT Imperial2 Soldier 0x0 Level(9,Enemy,1) [4,9] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT Imperial2 Soldier 0x0 Level(9,Enemy,1) [4,9] 0 0 0 0 [Glaive] AttackInRangeAI
 	UNIT Imperial2 Soldier 0x0 Level(9,Enemy,1) [7,9] 0 0 0 0 [ShortSpear,Vulnerary] AttackInRangeAI
 	UNIT Imperial2 Mage 0x0 Level(9,Enemy,1) [4,5] 0 0 0 0 [Thunder] AttackInRangeAI
 
 	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [11,3] 0 0 0 0 [HandAxe] NeverMoveAI
-	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [14,6] 0 0 0 0 [HandAxe] NeverMoveAI
+	UNIT Imperial2 Fighter 0x0 Level(9,Enemy,1) [14,6] 0 0 0 0 [ShortAxe] NeverMoveAI
 
 	UNIT Imperial2 Mercenary 0x0 Level(9,Enemy,1) [12,5] 0 0 0 0 [SteelSword] AttackInRangeAI
 
-	UNIT BattaBeast2 Brigand 0x0 Level(9,Enemy,1) [18,9] 0 0 0 0 [IronAxe] BrigandAI
+	UNIT BattaBeast2 Brigand 0x0 Level(9,Enemy,1) [18,9] 0 0 0 0 [BanditAxe] BrigandAI
 
 
 	UNIT
 
 Fliers1:
 	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [1,19] 0 0 0 0 [SlimLance,SapphireLance] DefaultAI
-	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [1,21] 0 0 0 0 [Javelin,IronLance] DefaultAI
+	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [1,21] 0 0 0 0 [Javelin,Glaive] DefaultAI
 	UNIT
 
 Fliers2:
-	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [0,0] 0 0 1 REDA2R1 [SlimLance,SapphireLance] DefaultAI
-	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [0,0] 0 0 1 REDA1R2 [Javelin,IronLance] DefaultAI
+	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [0,0] 0 0 1 REDA2R1 [SlimLance,Espontoon] DefaultAI
+	UNIT Imperial2 PegasusKnight 0x0 Level(9,Enemy,1) [0,0] 0 0 1 REDA1R2 [Pilum,IronLance] DefaultAI
 	UNIT
 
 Cavs1:
 	UNIT Imperial2 Cavalier 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA2R9 [SteelLance,IronSword] DefaultAI
 	UNIT Imperial2 LanceKnight 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA1R10 [Horseslayer,Javelin] DefaultAI
-	UNIT Imperial2 AxeKnight 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA3R10 [SteelAxe] DefaultAI
+	UNIT Imperial2 AxeKnight 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA3R10 [Poleax] DefaultAI
 	UNIT Imperial2 AxeKnight 0x0 Level(9,Enemy,1) [0,10] 0 0 1 REDA2R11 [IronAxe,Hammer] DefaultAI
 	UNIT
 
 Cavs2:
 	UNIT Imperial2 Cavalier 0x0 Level(9,Enemy,1) [16,0] 0 0 1 REDA16R3 [Javelin,SlimSword] DefaultAI
 	UNIT Imperial2 FreeKnight 0x0 Level(9,Enemy,1) [16,0] 0 0 1 REDA17R3 [IronBlade] DefaultAI
-	UNIT Imperial2 FreeKnight 0x0 Level(9,Enemy,1) [16,0] 0 0 1 REDA15R3 [LightBrand,IronSword] DefaultAI
+	UNIT Imperial2 FreeKnight 0x0 Level(9,Enemy,1) [16,0] 0 0 1 REDA15R3 [LightBrand,Shortsword] DefaultAI
 	UNIT
 
 Traps1:
@@ -318,8 +318,8 @@ BeginningScene:
 SetTransporterMove:
 	SetMoveBonus(14,20,(-4))
 	SetMoveBonus(15,19,(-4))
-	SetMoveBonus(8,19,(-5))
-	SetMoveBonus(9,19,(-5))
+	SetMoveBonus(8,21,(-5))
+	SetMoveBonus(9,21,(-5))
 	SetMoveBonus(18,17,(-4))
 	SetMoveBonus(17,18,(-4))
 	NoFade

@@ -42,6 +42,9 @@ TwoWayBattleQuoteFlag(0xE,0x0,Gromell,9,Ch9GromellBattle)
 // Ch10
 TwoWayBattleQuote(0x0,Todoroki,10,Ch10TodorokiBattle)
 
+// Ch11
+TwoWayBattleQuote(0x0,Cedwick,11,Ch11CedwickBattle)
+
 
 EndQuote
 

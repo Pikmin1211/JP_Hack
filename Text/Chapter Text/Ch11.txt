@@ -3,3 +3,225 @@ Chapter 11: Treading Water[X]
 
 ## Ch11Objective
 Survive[X]
+
+
+
+## Ch11OP
+[Left][LoadDonnalen][FarLeft][LoadAnabelle][FarRight][LoadNatsuki][Right][LoadGinko]
+How're things[N]
+coming along?[AN]
+
+[Left]
+It seems we're[N]
+making good time.[AN]
+We should arrive at[N]
+port in a few days.[AN]
+
+[FarRight]
+Thank goodness.[AN]
+I'm starting to[N]
+get seasick...[AN]
+
+[Right]
+Seasickness? I might[N]
+have something for that...[AN]
+
+[FarLeft]
+What's up with that[N]
+black haired guy?[AN]
+He has kind of a[N]
+threatening aura...[AN]
+
+[FarRight][Clear][LoadSchezo]
+Pay him no mind.[AN]
+He's reliable,[N]
+for the right price.[AN]
+
+[Left]
+Something about him...[AN]
+I feel like we're[N]
+similar, somehow.[AN]
+
+[FarLeft]
+You and him, brother?[AN]
+I can't see it. You're[N]
+like night and day.[AN]
+
+[Right][Clear][LoadNaoto]
+Hey, has anyone seen the[N]
+girl with the headband around?[AN]
+
+[FarRight]
+I think she was[N]
+down in the cabin.[AN]
+
+[FarLeft]
+I can go[N]
+get her.[AN]
+[Clear]
+
+[FarFarLeft]
+Oiii![AN]
+
+[Left]
+Oh, captain. Is[N]
+something the matter?[AN]
+
+[Event]
+[FarLeft][LoadPaniel]
+Things aren't looking good![AN]
+We've got a couple of pirate[N]
+ships pulling alongside us![AN]
+
+[FarRight]
+Pirates? Those[N]
+scoundrels...[AN]
+
+[Right]
+Looks like it's[N]
+time to earn our pay![AN]
+
+[FarRight][Clear][LoadDraco]
+Your orders, boss?[AN]
+
+[Left]
+We stand our ground.[N]
+Everyone prepare for combat![A][X]
+
+
+
+## Ch11OP2
+[MidLeft][LoadDevvy][MidRight][LoadNorne]
+Hey, looks like things[N]
+are getting bad...[AN]
+
+[MidLeft]
+...And?[AN]
+
+[MidRight]
+Shouldn't[N]
+we go help?[AN]
+
+[MidLeft]
+Hmph. Fighting lowly[N]
+pirates is beneath me...[AN]
+But I suppose I have to.[AN]
+
+[MidRight]
+Right, let's go.[AN]
+
+[MidLeft]
+No.[AN]
+
+[MidRight]
+W-what?[AN]
+
+[MidLeft]
+I will go.[AN]
+You stay up here and[N]
+man the ballistae.[AN]
+Use your head, for once.[AN]
+[Clear]
+
+[MidRight][Beat][A][X]
+
+
+
+##Ch11OP3
+[MidRight][LoadCedwick]
+Yarr, alright mates![AN]
+These fellas look[N]
+like they have good coin.[AN]
+Leave no board unturned![A][X]
+
+
+
+## Ch11MoreBoats
+[MidRight][LoadDonnalen]
+Looks like another boat's[N]
+pulled up to our other side.[AN]
+Be careful not to get overwhelmed![A][X]
+
+
+
+## Ch11AnabelleWendy
+[Right][LoadAnabelle][FarRight][LoadWendy]
+Things don't look[N]
+too good up here...[AN]
+
+[Right]
+I knew all that rumbling[N]
+wasn't a good sign.[AN]
+
+[MidLeft][LoadDonnalen]
+Sister! Get below[N]
+deck where it's safe.[AN]
+We'll handle things up here.[AN]
+
+[Right]
+Not a chance! You know[N]
+I can't leave you alone.[AN]
+
+[MidLeft]
+Heh, I figured you would say that.[N]
+Don't get yourself hurt, then.[AN]
+
+[FarRight]
+I... can help too![AN]
+I'm a bit of a novice,[N]
+but I'll do my best![A][X]
+
+
+## Ch11CedwickBattle
+[MidLeft][LoadCedwick]
+Ya want to pick a fight eh?[N]
+I'll make ye walk the plank![A][X]
+
+## Ch11CedwickDeath
+[MidLeft][LoadCedwick]
+Yarr... this[N]
+ain't over...[A][X]
+
+
+
+## Ch11Ending
+[Left][LoadDonnalen][Right][LoadDevvy][FarRight][LoadSchezo][FarLeft][LoadGinko]
+Looks like they're[N]
+high-tailing it.[AN]
+
+[FarRight]
+Cowards. Serves[N]
+them right.[AN]
+
+[Right]
+What a waste[N]
+of time...[AN]
+
+[Left]
+Is the ship still[N]
+alright, captain?[AN]
+
+[FarLeft][Clear][LoadPaniel]
+Everything looks to be in good shape.[N]
+But what the heck was that all about?[AN]
+There aren't usually pirates[N]
+around this close to the shore.[AN]
+
+[FarRight]
+I've been having a bad feeling.[AN]
+I thought it was nothing, but...[N]
+We may be in for trouble when we land.[AN]
+
+[Right]
+More weaklings? Big deal.[N]
+I'm going back to my business.[AN]
+[Clear][LoadWendy]
+So, what will we do?[AN]
+
+[Left]
+We won't know if anything's[N]
+happened until we get there.[AN]
+Let's continue course.[AN]
+
+[FarLeft]
+Aye aye, boss![A][X]

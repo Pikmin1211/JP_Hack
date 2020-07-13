@@ -16,7 +16,7 @@
 #define BaseSpd 4
 #define BaseDef 1
 #define BaseRes 2
-#define BaseLuk 8
+#define BaseLuk 5
 #define BaseCon 1
 
 //Base Weapon Ranks
@@ -37,7 +37,7 @@
 #define SpdGrowth 60
 #define DefGrowth 10
 #define ResGrowth 5
-#define LukGrowth 55
+#define LukGrowth 15
 
 //Character Abilities
 #define CharacterAbilityOne 0x0

@@ -135,15 +135,15 @@ EnemyUnits:
 	UNIT BattaBeast Soldier 0x0 Level(1,Enemy,1) [10,6] 0 0 0 0 [SlimLance] AttackInRangeAI
 	UNIT BattaBeast Soldier 0x0 Level(2,Enemy,1) [13,3] 0 0 0 0 [IronLance] AttackInRangeAI
 	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [18,6] 0 0 0 0 [IronLance] AttackInRangeAI
-	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [10,12] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [10,12] 0 0 0 0 [Glaive] AttackInRangeAI
 
 	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [1,5] 0 0 0 0 [IronAxe] DefaultAI
-	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [2,6] 0 0 0 0 [IronAxe] DefaultAI
-	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [17,9] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [2,6] 0 0 0 0 [LogSplitter] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [17,9] 0 0 0 0 [ScissorAxe] AttackInRangeAI
 	UNIT BattaBeast Fighter 0x0 Level(2,Enemy,1) [4,12] 0 0 0 0 [IronAxe] AttackInRangeAI
 
 	UNIT BattaBeast Archer 0x0 Level(1,Enemy,1) [2,10] 0 0 0 0 [IronBow] AttackInRangeAI
-	UNIT BattaBeast Archer 0x0 Level(1,Enemy,1) [17,1] 0 0 0 0 [IronBow] AttackInRangeAI
+	UNIT BattaBeast Archer 0x0 Level(1,Enemy,1) [17,1] 0 0 0 0 [HandBow] AttackInRangeAI
 
 	UNIT BattaBeast Mage 0x0 Level(2,Enemy,1) [11,12] 0 0 0 0 [Fire] AttackInRangeAI
 
@@ -161,13 +161,13 @@ ExtraUnits:
 	UNIT
 
 ExtraUnits2:
-	UNIT BattaBeast Fighter 0x0 Level(2,Enemy,1) [0,12] 0 0 1 REDA0R12 [IronAxe] DefaultAI
-	UNIT BattaBeast Mercenary 0x0 Level(3,Enemy,1) [0,12] 0 0 1 REDA0R12 [SlimSword] DefaultAI
+	UNIT BattaBeast Fighter 0x0 Level(2,Enemy,1) [0,12] 0 0 1 REDA0R12 [LogSplitter] DefaultAI
+	UNIT BattaBeast Mercenary 0x0 Level(3,Enemy,1) [0,12] 0 0 1 REDA0R12 [Estoc] DefaultAI
 	UNIT
 
 GalleyUnits:
 	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [17,0] 0 0 0 0 [IronLance] DefaultAI
-	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [18,0] 0 0 0 0 [IronLance] DefaultAI
+	UNIT BattaBeast Soldier 0x0 Level(3,Enemy,1) [18,0] 0 0 0 0 [Glaive] DefaultAI
 	UNIT BattaBeast Fighter 0x0 Level(1,Enemy,1) [20,10] 0 0 0 0 [IronAxe] DefaultAI
 	UNIT
 

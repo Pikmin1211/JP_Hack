@@ -1,5 +1,5 @@
-#define BaseClass 0x0
-#define PromotedClass1 0x0
+#define BaseClass AxeKnight
+#define PromotedClass1 GreatKnight
 #define PromotedClass2 0x0
 
 #include "Palette/Palette Setup.event"

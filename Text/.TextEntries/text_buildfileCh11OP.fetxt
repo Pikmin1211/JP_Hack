@@ -1,0 +1,160 @@
+[Left][LoadDonnalen][FarLeft][LoadAnabelle][FarRight][LoadNatsuki][Right][LoadGinko]
+
+How're things[N]
+
+coming along?[AN]
+
+
+
+[Left]
+
+It seems we're[N]
+
+making good time.[AN]
+
+We should arrive at[N]
+
+port in a few days.[AN]
+
+
+
+[FarRight]
+
+Thank goodness.[AN]
+
+I'm starting to[N]
+
+get seasick...[AN]
+
+
+
+[Right]
+
+Seasickness? I might[N]
+
+have something for that...[AN]
+
+
+
+[FarLeft]
+
+What's up with that[N]
+
+black haired guy?[AN]
+
+He has kind of a[N]
+
+threatening aura...[AN]
+
+
+
+[FarRight][Clear][LoadSchezo]
+
+Pay him no mind.[AN]
+
+He's reliable,[N]
+
+for the right price.[AN]
+
+
+
+[Left]
+
+Something about him...[AN]
+
+I feel like we're[N]
+
+similar, somehow.[AN]
+
+
+
+[FarLeft]
+
+You and him, brother?[AN]
+
+I can't see it. You're[N]
+
+like night and day.[AN]
+
+
+
+[Right][Clear][LoadNaoto]
+
+Hey, has anyone seen the[N]
+
+girl with the headband around?[AN]
+
+
+
+[FarRight]
+
+I think she was[N]
+
+down in the cabin.[AN]
+
+
+
+[FarLeft]
+
+I can go[N]
+
+get her.[AN]
+
+[Clear]
+
+
+
+[FarFarLeft]
+
+Oiii![AN]
+
+
+
+[Left]
+
+Oh, captain. Is[N]
+
+something the matter?[AN]
+
+
+
+[Event]
+
+[FarLeft][LoadPaniel]
+
+Things aren't looking good![AN]
+
+We've got a couple of pirate[N]
+
+ships pulling alongside us![AN]
+
+
+
+[FarRight]
+
+Pirates? Those[N]
+
+scoundrels...[AN]
+
+
+
+[Right]
+
+Looks like it's[N]
+
+time to earn our pay![AN]
+
+
+
+[FarRight][Clear][LoadDraco]
+
+Your orders, boss?[AN]
+
+
+
+[Left]
+
+We stand our ground.[N]
+
+Everyone prepare for combat![A][X]
+

@@ -1,0 +1,11 @@
+ALIGN 4
+AddFogRange:
+#incbin "AddFogRange.dmp"
+
+#define IncreaseFogRange "ASMC AddFogRange|1"
+
+ALIGN 4
+SubFogRange:
+#incbin "SubFogRange.dmp"
+
+#define DecreaseFogRange "ASMC SubFogRange|1"

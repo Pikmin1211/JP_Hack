@@ -50,7 +50,7 @@
 #define ResBonus 3
 
 //Class Abilities
-#define ClassAbilityOne 0x0
+#define ClassAbilityOne ThiefAbility
 #define ClassAbilityTwo IsPromoted
 #define ClassAbilityThree 0x0
 #define ClassAbilityFour 0x0

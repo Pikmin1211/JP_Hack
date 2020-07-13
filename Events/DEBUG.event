@@ -52,9 +52,9 @@ UNIT 0x81 Sage 0x0 Level(20,Enemy,1) [12,8] 0 0 0 0 [Petrify] NoAI
 UNIT
 
 Units1:
-UNIT Derek2 Warrior 0x0 Level(20,Ally,1) [10,10] 0 0 0 0 [Vulnerary,Elixir] NoAI
+UNIT Derek2 Warrior 0x0 Level(20,Ally,1) [10,10] 0 0 0 0 [IronBow] NoAI
 UNIT Sanders Hero 0x0 Level(20,Ally,1) [8,10] 0 0 0 0 [Tyrfing,SteelBlade,IronSword,BattleAxe] NoAI
-UNIT Renge BishopF 0x0 Level(20,Ally,1) [9,10] 0 0 0 0 [Again,Rune] NoAI
+UNIT Renge BishopF 0x0 Level(20,Ally,1) [9,10] 0 0 0 0 [Again,Rune,Abort] NoAI
 UNIT
 
 Traps1:

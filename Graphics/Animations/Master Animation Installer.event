@@ -79,3 +79,17 @@ UnarmedAnim(FalcoknightUnarmedAnim)
 EndAnim
 
 SetClassAnim(Falcoknight,FalcoknightAnims)
+
+ALIGN 4
+{
+	#include "bin/AssassinBow Installer.event"
+}
+
+ALIGN 4
+AssassinAnims:
+SwordAnim(AssassinSwordAnim)
+BowAnim(AssassinBowAnim)
+UnarmedAnim(AssassinUnarmedAnim)
+EndAnim
+
+SetClassAnim(Assassin,AssassinAnims)

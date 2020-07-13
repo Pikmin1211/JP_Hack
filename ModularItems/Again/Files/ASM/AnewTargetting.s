@@ -1,4 +1,4 @@
-.equ SetupTargetSelectionForGenericStaff, 0x80295a8 + 8
+.equ SetupTargetSelectionForGenericStaff, 0x80295a8
 
 .macro blh to, reg=r3
 	ldr \reg, =\to

@@ -1,0 +1,19 @@
+
+
+{
+	#define UnitID Zane
+	#define UnitClass ZaneClass
+	#define UnitMugID ZaneMug
+	#define UnitNameLocation ZaneName
+	#define UnitDescriptionLocation ZaneDescription
+	#define Palette1Number ZanePalette1
+	#define Palette2Number ZanePalette2
+	#define Palette3Number ZanePalette3
+	//#define UseUnitText //Comment out if you want to use text in the text buildfile
+	#include "Files/Support Installer.event"
+	#include "Files/Palette Installer.event"
+	#include "Files/Mug Installer.event"
+	//#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

@@ -143,18 +143,18 @@ EnemyUnits:
 	UNIT Monster Revenant 0x0 Level(5,Enemy,1) [4,17] 0 0 0 0 [RottenClaw] AttackInRangeAI
 
 	UNIT Monster Bonewalker 0x0 Level(4,Enemy,1) [7,2] 0 0 0 0 [SlimSword] DefaultAI
-	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [8,3] 0 0 0 0 [Javelin,IronSword] DefaultAI
-	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [15,9] 0 0 0 0 [SteelSword,IronLance] AttackInRangeAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [8,3] 0 0 0 0 [Pilum,IronSword] DefaultAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [15,9] 0 0 0 0 [Shortsword,IronLance] AttackInRangeAI
 	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [6,17] 0 0 0 0 [SteelLance] AttackInRangeAI
 	UNIT Monster Bonewalker 0x0 Level(6,Enemy,1) [12,15] 0 0 0 0 [Javelin] AttackInRangeAI
-	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [2,15] 0 0 0 0 [IronSword,SlimLance] AttackInRangeAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [2,15] 0 0 0 0 [IronSword,Glaive] AttackInRangeAI
 	UNIT Monster Bonewalker 0x0 Level(4,Enemy,1) [1,14] 0 0 0 0 [Horseslayer] AttackInRangeAI
 	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [16,14] 0 0 0 0 [Javelin] NeverMoveAI
-	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [11,1] 0 0 0 0 [Javelin,Zanbato] NeverMoveAI
+	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [11,1] 0 0 0 0 [Pilum,Zanbato] NeverMoveAI
 	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [4,9] 0 0 0 0 [SteelBow] DefaultAI
 	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [13,0] 0 0 0 0 [Longbow] AttackInRangeAI
 	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [0,17] 0 0 0 0 [IronBow] NeverMoveAI
-	UNIT Monster BonewalkerBow 0x0 Level(6,Enemy,1) [1,18] 0 0 0 0 [SteelBow] NeverMoveAI
+	UNIT Monster BonewalkerBow 0x0 Level(6,Enemy,1) [1,18] 0 0 0 0 [CompositeBow] NeverMoveAI
 	UNIT Monster BonewalkerBow 0x0 Level(4,Enemy,1) [12,17] 0 0 0 0 [SteelBow] AttackInRangeAI
 	UNIT Monster BonewalkerBow 0x0 Level(4,Enemy,1) [5,18] 0 0 0 0 [SteelBow] AttackInRangeAI
 
@@ -163,7 +163,7 @@ EnemyUnits:
 
 	UNIT Monster Tarvos 0x0 Level(5,Enemy,1) [14,18] 0 0 0 0 [SteelAxe] AttackInRangeAI
 	UNIT Monster Tarvos 0x0 Level(4,Enemy,1) [8,0] 0 0 0 0 [IronAxe] DefaultAI
-	UNIT Monster Tarvos 0x0 Level(5,Enemy,1) [10,18] 0 0 0 0 [HandAxe,IronAxe] AttackInRangeAI
+	UNIT Monster Tarvos 0x0 Level(5,Enemy,1) [10,18] 0 0 0 0 [HandAxe,BanditAxe] AttackInRangeAI
 
 	UNIT Novala Shaman 0x0 Level(8,Enemy,0) [9,18] 0 0 0 0 [Flux,Nosferatu] NeverMoveAI
 

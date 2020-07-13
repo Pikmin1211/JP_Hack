@@ -51,7 +51,13 @@ ChapterDeathQuote(TentUnit,10,0x9,0x0)
 ChapterDeathQuote(Todoroki,10,0x0,Ch10TodorokiDeath)
 
 // Ch11
-ChapterDeathQuote(Cedwick,11,DefeatBossFlag,TestDialogue)
+ChapterDeathQuote(Cedwick,11,DefeatBossFlag,Ch11CedwickDeath)
+
+// Ch12
+ChapterDeathQuote(DarkMarlen,12,DefeatBossFlag,TestDialogue)
+
+// Ch13
+ChapterDeathQuote(Zane,13,0xA,TestDialogue)
 
 // Always
 AlwaysDeathQuote(Sanders,GameOverFlag,SandersDeath)

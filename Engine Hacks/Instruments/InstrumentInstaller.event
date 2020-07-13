@@ -11,3 +11,5 @@ Old_Nimap:
 #include "RebelstarBGM1/RebelstarBGM1Instrument.event"
 
 #include "RebelstarBGM6/RebelstarBGM6Instrument.event"
+
+#include "AccursedCombat/AccursedCombatInstrument.event"

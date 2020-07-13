@@ -18,7 +18,7 @@
 #define Crit 0
 #define Range HalfMagRange
 #define CostPerUse 100
-#define WeaponRank CRank
+#define WeaponRank DRank
 //#define HasEffectiveness //Uncomment if the weapon is effective
 #define ItemEffectiveness 0 //For the effectiveness rework
 #define WeaponEffect 0

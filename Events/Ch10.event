@@ -194,7 +194,7 @@ LocationBasedEvents:
 	END_MAIN
 
 Ch10Armory:
-	SHLI SteelSword RubySword KillingEdge LevinSword Runesword SteelLance SapphireLance KillerLance Javelin FlameLance SteelAxe EmeraldAxe KillerAxe HandAxe BoltAxe SteelBow ShortBow KillerBow ShiningBow
+	SHLI SteelSword RubySword KillingEdge LevinSword Runesword SteelLance Espontoon SapphireLance KillerLance Javelin FlameLance SteelAxe EmeraldAxe KillerAxe HandAxe BoltAxe SteelBow ShortBow KillerBow ShiningBow
 	BYTE 0x0 0x0
 	ALIGN 4
 
@@ -252,14 +252,14 @@ EnemyUnits:
 	UNIT Panther Hero 0x0 Level(5,Enemy,1) [2,3] 0 0 0 0 [KillingEdge,ShortAxe] AttackInRangeAI
 	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [3,5] 0 0 0 0 [SteelAxe] AttackInRangeAI
 	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [2,6] 0 0 0 0 [EmeraldAxe] AttackInRangeAI
-	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [8,4] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [8,4] 0 0 0 0 [BanditAxe] AttackInRangeAI
 	UNIT Panther Mercenary 0x0 Level(13,Enemy,1) [10,5] 0 0 0 0 [IronBlade,Armorslayer] AttackInRangeAI
 	UNIT Panther Mercenary 0x0 Level(13,Enemy,1) [7,6] 0 0 0 0 [LightBrand,SteelSword] AttackInRangeAI
-	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [4,10] 0 0 0 0 [HandAxe,IronAxe] AttackInRangeAI
+	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [4,10] 0 0 0 0 [Francisca,IronAxe] AttackInRangeAI
 	UNIT Panther Mercenary 0x0 Level(13,Enemy,1) [3,9] 0 0 0 0 [SteelSword] AttackInRangeAI
 
 	UNIT Stallion Paladin 0x0 Level(5,Enemy,1) [9,16] 0 0 0 0 [SilverLance,Flamberge,Horseslayer] AttackInRangeAI
-	UNIT Stallion Cavalier 0x0 Level(13,Enemy,1) [6,13] 0 0 0 0 [Armorslayer,Javelin] AttackInRangeAI
+	UNIT Stallion Cavalier 0x0 Level(13,Enemy,1) [6,13] 0 0 0 0 [Armorslayer,Pilum] AttackInRangeAI
 	UNIT Stallion Cavalier 0x0 Level(13,Enemy,1) [10,11] 0 0 0 0 [SteelLance,IronSword] AttackInRangeAI
 	UNIT Stallion AxeKnight 0x0 Level(13,Enemy,1) [11,11] 0 0 0 0 [SteelAxe] AttackInRangeAI
 	UNIT Stallion Cavalier 0x0 Level(13,Enemy,1) [8,15] 0 0 0 0 [SapphireLance] AttackInRangeAI
@@ -270,7 +270,7 @@ EnemyUnits:
 	UNIT Albatross Archer 0x0 Level(13,Enemy,1) [20,7] 0 0 0 0 [Greatbow] AttackInRangeAI
 	UNIT Albatross Archer 0x0 Level(13,Enemy,1) [25,4] 0 0 0 0 [SteelBow] AttackInRangeAI
 	UNIT Albatross ArchKnight 0x0 Level(13,Enemy,1) [24,11] 0 0 0 0 [ShortBow] AttackInRangeAI
-	UNIT Albatross ArchKnight 0x0 Level(14,Enemy,1) [21,11] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Albatross ArchKnight 0x0 Level(14,Enemy,1) [21,11] 0 0 0 0 [CompositeBow] AttackInRangeAI
 	UNIT Albatross ArchKnight 0x0 Level(13,Enemy,1) [24,5] 0 0 0 0 [IronBow] AttackInRangeAI
 
 	UNIT Cobra Sage 0x0 Level(5,Enemy,1) [18,14] 0 0 0 0 [Aircalibur,Thoron,Physic] AttackInRangeAI
@@ -322,9 +322,9 @@ EndingScene:
 	MUSC WereRangersSong
 	SetBackground(SnowFieldBG)
 	Text(Ch10Ending)
-	CenterTextbox(ThanksForPlayingText)
-	MNTS 0
-	//MNC2 11
+	//CenterTextbox(ThanksForPlayingText)
+	//MNTS 0
+	MNC2 11
 	NoFade
 	ENDA
 

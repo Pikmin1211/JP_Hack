@@ -25,6 +25,9 @@ Skill learned.[X]
 
 #include "Death Quotes.txt"
 
+## BaseConvoSelectConvoText
+Select a conversation.[X]
+
 ## ThanksForPlayingText
 This is the end of[N]
 the current version.[N]

@@ -23,3 +23,11 @@
 #include "Raydrik/Raydrik Installer.event"
 
 #include "Cedwick/Cedwick Installer.event"
+
+#include "Dark Marlen/Dark Marlen Installer.event"
+
+#include "Ermine/Ermine Installer.event"
+
+#include "Zane/Zane Installer.event"
+
+#include "Viridian/Viridian Installer.event"

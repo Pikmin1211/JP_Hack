@@ -180,3 +180,21 @@ Duke Knight[X]
 ## DukeKnightDescription
 Regal knights with great skill in[N]
 mounted lancefighting. Equip: Lances.[X]
+
+## TelosName
+Telos[X]
+
+## TelosDescription
+A maiden who fights with power[N]
+and grace. Equip: Swords, staves.[X]
+
+## AssassinDescription
+Masters of the killing[N]
+arts. Equip: Swords, bows.[X]
+
+## ButlerName
+Butler[X]
+
+## ButlerDescription
+Loyal servants who heal and defend[N]
+their masters. Equip: Swords, staves.[X]

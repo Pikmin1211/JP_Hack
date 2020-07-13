@@ -1,0 +1,15 @@
+
+
+{
+	#define ItemNumber BanditAxe
+	#define ItemIcon BanditAxeIcon
+	#define ItemMagicAnimation BanditAxeMagicAnim
+	#define ItemNameLocation BanditAxeName
+	#define ItemDescriptionLocation BanditAxeDescription
+	#define ItemUseTextLocation BanditAxeUseText
+	//#define UseItemText //Comment out if you want to use text in the text buildfile
+	#include "Files/Graphics Installer.event"
+	#include "Files/Text Installer.event"
+	#include "Files/Data Installer.event"
+	#include "Files/Undefiner.event"
+}

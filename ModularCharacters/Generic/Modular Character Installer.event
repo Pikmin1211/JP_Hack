@@ -45,3 +45,5 @@
 #include "Panther No EXP/Panther Installer.event"
 
 #include "Marooner/Marooner Installer.event"
+
+#include "Unknown/Unknown Installer.event"

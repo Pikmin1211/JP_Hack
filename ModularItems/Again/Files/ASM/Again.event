@@ -27,3 +27,9 @@ ALIGN 4
 AnewTargetting:
 #incbin "AnewTargetting.dmp"
 POIN AnewStaff_RangeSetup + 1
+
+// Correction to Generic Staff Targetting
+PUSH
+ORG $295AA
+SHORT 0x46C0
+POP

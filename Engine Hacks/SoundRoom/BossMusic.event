@@ -17,6 +17,8 @@ BossBGMEntry(Bit,MinibossPMSong)
 BossBGMEntry(Gromell,FatefulShowdownSong)
 BossBGMEntry(Raydrik,VsRaydrikSong)
 BossBGMEntry(Cedwick,StrongerMonstersSong)
+BossBGMEntry(DarkMarlen,AbandonedChurchSong)
+BossBGMEntry(Zane,AccursedCombatSong)
 BossBGMTerminator
 
 PUSH

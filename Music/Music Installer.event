@@ -271,3 +271,21 @@ SongTable(RebelstarBGM6Song,RebelstarBGM6,1)
 SongTable(Route120Song,Route120,1)
 #include "S Files/Route120.event"
 
+SongTable(XpField4Song,XpField4,1)
+#include "S Files/XpField4.event"
+
+SongTable(BrianHealUsSong,BrianHealUs,1)
+#include "S Files/BrianHealUs.event"
+
+SongTable(TrickstersLamentSong,TrickstersLament,1)
+#include "S Files/TrickstersLament.event"
+
+SongTable(SearchingForEnemiesSong,SearchingForEnemies,1)
+#include "S Files/SearchingForEnemies.event"
+
+SongTable(AccursedCombatSong,AccursedCombat,1)
+#include "S Files/AccursedCombat.event"
+
+SongTable(ResolutionSong,Resolution,1)
+#include "S Files/Resolution.event"
+

@@ -133,3 +133,47 @@
 #include "Again/Again Installer.event"
 
 #include "Rune/Rune Installer.event"
+
+#include "Abort/Abort Installer.event"
+
+#include "Bandit Axe/Bandit Axe Installer.event"
+
+#include "Log Splitter/Log Splitter Installer.event"
+
+#include "Bastard Sword/Bastard Sword Installer.event"
+
+#include "Estoc/Estoc Installer.event"
+
+#include "Cutlass/Cutlass Installer.event"
+
+#include "Composite Bow/Composite Bow Installer.event"
+
+#include "Warhammer/Warhammer Installer.event"
+
+#include "Pilum/Pilum Installer.event"
+
+#include "Poleax/Poleax Installer.event"
+
+#include "Francisca/Francisca Installer.event"
+
+#include "Partisan/Partisan Installer.event"
+
+#include "Glaive/Glaive Installer.event"
+
+#include "Espontoon/Espontoon Installer.event"
+
+#include "Hand Bow/Hand Bow Installer.event"
+
+#include "Scissor Axe/Scissor Axe Installer.event"
+
+#include "Shortsword/Shortsword Installer.event"
+
+/*
+#include "Iron Arrow/Iron Arrow Installer.event"
+
+#include "Steel Arrow/Steel Arrow Installer.event"
+
+#include "Silver Arrow/Silver Arrow Installer.event"
+
+#include "Killer Arrow/Killer Arrow Installer.event"
+*/
