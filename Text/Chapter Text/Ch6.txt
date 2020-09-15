@@ -206,3 +206,14 @@ Those mercenaries...[N]
 To think I'd see them again here.[AN]
 And with holy weapons, no less.[N]
 I'll need to think this over...[A][X]
+
+
+
+## Ch6BossWarning
+[MidRight][LoadBrian]
+Hm... My finely tuned ears[N]
+are picking up something...[AN]
+[Red]rather large [Red]approaching[N]
+here from that hallway.[AN]
+Perhaps we should start[N]
+heading towards it?[A][X]

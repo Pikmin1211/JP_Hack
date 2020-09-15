@@ -430,24 +430,7 @@
 #define ShortswordDescription 0x1//TextID here
 #define ShortswordUseText 0x0//TextID here
 
-/*
-#define IronArrow 0xB8//ItemID here
-#define IronArrowMagicAnim 0xFF//MagicAnimationID here
-#define IronArrowIcon (IronArrow-1)//ItemIconID here
-#define IronArrowUseText 0x0//TextID here
-
-#define SteelArrow 0xB9//ItemID here
-#define SteelArrowMagicAnim 0xFF//MagicAnimationID here
-#define SteelArrowIcon (SteelArrow-1)//ItemIconID here
-#define SteelArrowUseText 0x0//TextID here
-
-#define SilverArrow 0xBA//ItemID here
-#define SilverArrowMagicAnim 0xFF//MagicAnimationID here
-#define SilverArrowIcon (SilverArrow-1)//ItemIconID here
-#define SilverArrowUseText 0x0//TextID here
-
-#define KillerArrow 0xBB//ItemID here
-#define KillerArrowMagicAnim 0xFF//MagicAnimationID here
-#define KillerArrowIcon (KillerArrow-1)//ItemIconID here
-#define KillerArrowUseText 0x0//TextID here
-*/
+#define Baphomet 0xB8//ItemID here
+#define BaphometMagicAnim ShadowshotAnimation//MagicAnimationID here
+#define BaphometIcon (Baphomet-1)//ItemIconID here
+#define BaphometUseText 0x0//TextID here

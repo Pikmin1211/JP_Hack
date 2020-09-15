@@ -37,11 +37,13 @@ Turn5Reinforcement:
 	ENDA
 
 YanndahlEvent:
-	MUSS SkyEventSong
+	MUSC SkyEventSong
 	SpawnReinforcements(YanndahlUnit)
 	FlashCursor(Yanndahl,60)
 	Text(Ch7Yandahl)
-	MURE 2
+	MUSC LeifArmySong
+	CAM1 Sanders
+	Text(Ch7PostPrep)
 	NoFade
 	ENDA
 
@@ -219,7 +221,7 @@ EnemyUnits2:
 	UNIT Imperial2 Mage 0x0 Level(9,Enemy,1) [12,19] 0 0 0 0 [Fire] AttackInRangeAI
 
 	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [13,15] 0 0 0 0 [IronLance,Javelin] AttackInRangeAI
-	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [12,14] 0 0 0 0 [HeavySpear,SilverLance] AttackInRangeAI
+	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [12,14] 0 0 0 0 [HeavySpear,SilverLance,EnergyRing] AttackInRangeAI
 
 	UNIT Imperial2 Soldier 0x0 Level(10,Enemy,1) [18,20] 0 0 0 0 [SteelLance] AttackInRangeAI
 	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [16,17] 0 0 0 0 [Francisca] AttackInRangeAI

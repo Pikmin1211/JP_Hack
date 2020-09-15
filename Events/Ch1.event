@@ -56,6 +56,8 @@ ALIGN 32
 CharacterBasedEvents:
 	CharacterEventBothWays(0x9,SandersArdenTalk,Sanders,Arden)
 	CharacterEventBothWays(0xA,SandersWoltTalk,Sanders,Wolt)
+	CharacterEventBothWays(0x9,WoltArdenTalk,Wolt,Arden)
+	CharacterEventBothWays(0xA,ArdenWoltTalk,Arden,Wolt)
 	END_MAIN
 
 SandersArdenTalk:
@@ -69,6 +71,22 @@ SandersArdenTalk:
 SandersWoltTalk:
 	MUSS SkyEventSong
 	Text(Ch1SandersWoltTalk)
+	CUSA Wolt
+	MURE 2
+	NoFade
+	ENDA
+
+WoltArdenTalk:
+	MUSS SkyEventSong
+	Text(Ch1WoltArdenTalk)
+	CUSA Arden
+	MURE 2
+	NoFade
+	ENDA
+
+ArdenWoltTalk:
+	MUSS SkyEventSong
+	Text(Ch1ArdenWoltTalk)
 	CUSA Wolt
 	MURE 2
 	NoFade

@@ -250,7 +250,7 @@ EnemyUnits:
 
 	UNIT Officer Hero 0x0 Level(3,Enemy,1) [19,13] 0 0 0 0 [BastardSword,HandAxe,ScissorAxe] [0x6,0x3,0x0,0x0]
 	UNIT Officer Sniper 0x0 Level(1,Enemy,1) [1,9] 0 0 0 0 [ShiningBow,SteelBow] AttackInRangeAI
-	UNIT Officer Warrior 0x0 Level(3,Enemy,1) [3,24] 0 0 0 0 [EmeraldAxe,ShortAxe,Greatbow] AttackInRangeAI
+	UNIT Officer Warrior 0x0 Level(3,Enemy,1) [3,24] 0 0 0 0 [EmeraldAxe,ShortAxe,Greatbow,Elixir] AttackInRangeAI
 
 	UNIT Imperial2 Mercenary 0x0 Level(10,Enemy,1) [18,13] 0 0 0 0 [SteelSword] AttackInRangeAI
 	UNIT Imperial2 Fighter 0x0 Level(10,Enemy,1) [19,12] 0 0 0 0 [IronAxe] AttackInRangeAI
@@ -284,7 +284,7 @@ EnemyUnits:
 	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [3,23] 0 0 0 0 [Hammer,SteelAxe] AttackInRangeAI
 	UNIT Imperial2 Fighter 0x0 Level(12,Enemy,1) [3,25] 0 0 0 0 [ShortAxe,EmeraldAxe] AttackInRangeAI
 
-	UNIT Imperial2 LanceArmor 0x0 Level(12,Enemy,1) [13,24] 0 0 0 0 [Horseslayer,SapphireLance] AttackInRangeAI
+	UNIT Imperial2 LanceArmor 0x0 Level(12,Enemy,1) [13,24] 0 0 0 0 [Horseslayer,SapphireLance,RedGem] AttackInRangeAI
 	UNIT Imperial2 LanceArmor 0x0 Level(12,Enemy,1) [8,24] 0 0 0 0 [Javelin,Greatsword] AttackInRangeAI
 
 	UNIT Imperial2 AxeArmor 0x0 Level(12,Enemy,1) [9,20] 0 0 0 0 [ShortAxe,IronLance] NeverMoveAI

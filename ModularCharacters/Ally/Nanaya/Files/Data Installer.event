@@ -13,7 +13,7 @@
 #define BaseStr 3
 #define BaseMag 2
 #define BaseSkl 8
-#define BaseSpd 1
+#define BaseSpd 3
 #define BaseDef 2
 #define BaseRes 2
 #define BaseLuk 5

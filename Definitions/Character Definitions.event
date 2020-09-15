@@ -1,476 +1,476 @@
 // Ally
 
-#define Sanders 0x1//UnitID here
-#define SandersClass Mercenary//ClassID here
-#define SandersMug 0x2//MugID here
-#define SandersPalette1 0x1//PaletteID here
-#define SandersPalette2 0x2//PaletteID here
-#define SandersPalette3 0x3//PaletteID here
+#define Sanders 0x1
+#define SandersClass Mercenary
+#define SandersMug 0x2
+#define SandersPalette1 0x1
+#define SandersPalette2 0x2
+#define SandersPalette3 0x3
 
-#define Finn 0x2//UnitID here
-#define FinnClass LanceKnight//ClassID here
-#define FinnMug 0x3//MugID here
-#define FinnPalette1 0x4//PaletteID here
-#define FinnPalette2 0x5//PaletteID here
-#define FinnPalette3 0x6//PaletteID here
+#define Finn 0x2
+#define FinnClass LanceKnight
+#define FinnMug 0x3
+#define FinnPalette1 0x4
+#define FinnPalette2 0x5
+#define FinnPalette3 0x6
 
-#define Scott 0x3//UnitID here
-#define ScottClass Cavalier//ClassID here
-#define ScottMug 0x4//MugID here
-#define ScottPalette1 0x7//PaletteID here
-#define ScottPalette2 0x8//PaletteID here
-#define ScottPalette3 0x9//PaletteID here
+#define Scott 0x3
+#define ScottClass Cavalier
+#define ScottMug 0x4
+#define ScottPalette1 0x7
+#define ScottPalette2 0x8
+#define ScottPalette3 0x9
 
-#define Renge 0x4//UnitID here
-#define RengeClass Cleric//ClassID here
-#define RengeMug 0x5//MugID here
-#define RengePalette1 0xA//PaletteID here
-#define RengePalette2 0xB//PaletteID here
-#define RengePalette3 0xC//PaletteID here
+#define Renge 0x4
+#define RengeClass Cleric
+#define RengeMug 0x5
+#define RengePalette1 0xA
+#define RengePalette2 0xB
+#define RengePalette3 0xC
 
-#define Marisa 0x5//UnitID here
-#define MarisaClass MageF//ClassID here
-#define MarisaMug 0x6//MugID here
-#define MarisaPalette1 0xD//PaletteID here
-#define MarisaPalette2 0xE//PaletteID here
-#define MarisaPalette3 0xF//PaletteID here
+#define Marisa 0x5
+#define MarisaClass MageF
+#define MarisaMug 0x6
+#define MarisaPalette1 0xD
+#define MarisaPalette2 0xE
+#define MarisaPalette3 0xF
 
-#define Oskar 0x6//UnitID here
-#define OskarClass Fighter//ClassID here
-#define OskarMug 0x7//MugID here
-#define OskarPalette1 0x10//PaletteID here
-#define OskarPalette2 0x11//PaletteID here
-#define OskarPalette3 0x12//PaletteID here
+#define Oskar 0x6
+#define OskarClass Fighter
+#define OskarMug 0x7
+#define OskarPalette1 0x10
+#define OskarPalette2 0x11
+#define OskarPalette3 0x12
 
-#define Blanc 0x7//UnitID here
-#define BlancClass FighterF//ClassID here
-#define BlancMug 0x8//MugID here
-#define BlancPalette1 0x13//PaletteID here
-#define BlancPalette2 0x14//PaletteID here
-#define BlancPalette3 0x15//PaletteID here
+#define Blanc 0x7
+#define BlancClass FighterF
+#define BlancMug 0x8
+#define BlancPalette1 0x13
+#define BlancPalette2 0x14
+#define BlancPalette3 0x15
 
-#define Sayori 0x8//UnitID here
-#define SayoriClass PegasusKnight//ClassID here
-#define SayoriMug 0xA//MugID here
-#define SayoriPalette1 0x17//PaletteID here
-#define SayoriPalette2 0x18//PaletteID here
-#define SayoriPalette3 0x19//PaletteID here
+#define Sayori 0x8
+#define SayoriClass PegasusKnight
+#define SayoriMug 0xA
+#define SayoriPalette1 0x17
+#define SayoriPalette2 0x18
+#define SayoriPalette3 0x19
 
-#define Wolt 0x9//UnitID here
-#define WoltClass Archer//ClassID here
-#define WoltMug 0xB//MugID here
-#define WoltPalette1 0x1A//PaletteID here
-#define WoltPalette2 0x1B//PaletteID here
-#define WoltPalette3 0x1C//PaletteID here
+#define Wolt 0x9
+#define WoltClass Archer
+#define WoltMug 0xB
+#define WoltPalette1 0x1A
+#define WoltPalette2 0x1B
+#define WoltPalette3 0x1C
 
-#define Arden 0xA//UnitID here
-#define ArdenClass Knight//ClassID here
-#define ArdenMug 0xC//MugID here
-#define ArdenPalette1 0x1D//PaletteID here
-#define ArdenPalette2 0x1E//PaletteID here
-#define ArdenPalette3 0x1F//PaletteID here
+#define Arden 0xA
+#define ArdenClass Knight
+#define ArdenMug 0xC
+#define ArdenPalette1 0x1D
+#define ArdenPalette2 0x1E
+#define ArdenPalette3 0x1F
 
-#define Wrys 0xB//UnitID here
-#define WrysClass Priest//ClassID here
-#define WrysMug 0x11//MugID here
-#define WrysPalette1 0x24//PaletteID here
-#define WrysPalette2 0x25//PaletteID here
-#define WrysPalette3 0x26//PaletteID here
+#define Wrys 0xB
+#define WrysClass Priest
+#define WrysMug 0x11
+#define WrysPalette1 0x24
+#define WrysPalette2 0x25
+#define WrysPalette3 0x26
 
-#define Neptune 0xC//UnitID here
-#define NeptuneClass MyrmidonF//ClassID here
-#define NeptuneMug 0x12//MugID here
-#define NeptunePalette1 0x27//PaletteID here
-#define NeptunePalette2 0x28//PaletteID here
-#define NeptunePalette3 0x29//PaletteID here
+#define Neptune 0xC
+#define NeptuneClass MyrmidonF
+#define NeptuneMug 0x12
+#define NeptunePalette1 0x27
+#define NeptunePalette2 0x28
+#define NeptunePalette3 0x29
 
-#define Wilbell 0xD//UnitID here
-#define WilbellClass ShamanF//ClassID here
-#define WilbellMug 0x13//MugID here
-#define WilbellPalette1 0x2A//PaletteID here
-#define WilbellPalette2 0x2B//PaletteID here
-#define WilbellPalette3 0x2C//PaletteID here
+#define Wilbell 0xD
+#define WilbellClass ShamanF
+#define WilbellMug 0x13
+#define WilbellPalette1 0x2A
+#define WilbellPalette2 0x2B
+#define WilbellPalette3 0x2C
 
-#define Brian 0xE//UnitID here
-#define BrianClass Thief//ClassID here
-#define BrianMug 0x14//MugID here
-#define BrianPalette1 0x2D//PaletteID here
-#define BrianPalette2 0x2E//PaletteID here
-#define BrianPalette3 0x2F//PaletteID here
+#define Brian 0xE
+#define BrianClass Thief
+#define BrianMug 0x14
+#define BrianPalette1 0x2D
+#define BrianPalette2 0x2E
+#define BrianPalette3 0x2F
 
-#define Otaku 0x10//UnitID here
-#define OtakuClass Mercenary//ClassID here
-#define OtakuMug 0x18//MugID here
-#define OtakuPalette1 0x35//PaletteID here
-#define OtakuPalette2 0x36//PaletteID here
-#define OtakuPalette3 0x37//PaletteID here
+#define Otaku 0x10
+#define OtakuClass Mercenary
+#define OtakuMug 0x18
+#define OtakuPalette1 0x35
+#define OtakuPalette2 0x36
+#define OtakuPalette3 0x37
 
-#define Gohard 0x11//UnitID here
-#define GohardClass AxeArmor//ClassID here
-#define GohardMug 0x19//MugID here
-#define GohardPalette1 0x38//PaletteID here
-#define GohardPalette2 0x39//PaletteID here
-#define GohardPalette3 0x3A//PaletteID here
+#define Gohard 0x11
+#define GohardClass AxeArmor
+#define GohardMug 0x19
+#define GohardPalette1 0x38
+#define GohardPalette2 0x39
+#define GohardPalette3 0x3A
 
-#define Yanndahl 0x12//UnitID here
+#define Yanndahl 0x12
 #define Yandahl Yanndahl //oops
-#define YanndahlClass Soldier//ClassID here
-#define YanndahlMug 0x1A//MugID here
-#define YanndahlPalette1 0x3B//PaletteID here
-#define YanndahlPalette2 0x3C//PaletteID here
-#define YanndahlPalette3 0x3D//PaletteID here
+#define YanndahlClass Soldier
+#define YanndahlMug 0x1A
+#define YanndahlPalette1 0x3B
+#define YanndahlPalette2 0x3C
+#define YanndahlPalette3 0x3D
 
-#define Milanor 0x13//UnitID here
-#define MilanorClass Brigand//ClassID here
-#define MilanorMug 0x1E//MugID here
-#define MilanorPalette1 0x41//PaletteID here
-#define MilanorPalette2 0x42//PaletteID here
-#define MilanorPalette3 0x43//PaletteID here
+#define Milanor 0x13
+#define MilanorClass Brigand
+#define MilanorMug 0x1E
+#define MilanorPalette1 0x41
+#define MilanorPalette2 0x42
+#define MilanorPalette3 0x43
 
-#define Guts 0x14//UnitID here
-#define GutsClass FreeKnight//ClassID here
-#define GutsMug 0x1F//MugID here
-#define GutsPalette1 0x44//PaletteID here
-#define GutsPalette2 0x45//PaletteID here
-#define GutsPalette3 0x46//PaletteID here
+#define Guts 0x14
+#define GutsClass FreeKnight
+#define GutsMug 0x1F
+#define GutsPalette1 0x44
+#define GutsPalette2 0x45
+#define GutsPalette3 0x46
 
-#define Kohaku 0x15//UnitID here
-#define KohakuClass Maid//ClassID here
-#define KohakuMug 0x20//MugID here
-#define KohakuPalette1 0x0//PaletteID here
-#define KohakuPalette2 0x47//PaletteID here
-#define KohakuPalette3 0x0//PaletteID here
+#define Kohaku 0x15
+#define KohakuClass Maid
+#define KohakuMug 0x20
+#define KohakuPalette1 0x0
+#define KohakuPalette2 0x47
+#define KohakuPalette3 0x0
 
-#define Ky 0x16//UnitID here
-#define KyClass Myrmidon//ClassID here
-#define KyMug 0x21//MugID here
-#define KyPalette1 0x48//PaletteID here
-#define KyPalette2 0x49//PaletteID here
-#define KyPalette3 0x4A//PaletteID here
+#define Ky 0x16
+#define KyClass Myrmidon
+#define KyMug 0x21
+#define KyPalette1 0x48
+#define KyPalette2 0x49
+#define KyPalette3 0x4A
 
-#define Derek2 0x17//UnitID here
+#define Derek2 0x17
 
 #define Eevster2 0x18
 
-#define Arle 0x19//UnitID here
-#define ArleClass LightMageF//ClassID here
-#define ArleMug 0x24//MugID here
-#define ArlePalette1 0x4F//PaletteID here
-#define ArlePalette2 0x50//PaletteID here
-#define ArlePalette3 0x52//PaletteID here
+#define Arle 0x19
+#define ArleClass LightMageF
+#define ArleMug 0x24
+#define ArlePalette1 0x4F
+#define ArlePalette2 0x50
+#define ArlePalette3 0x52
 
-#define Jason 0x1A//UnitID here
-#define JasonClass ArchKnight//ClassID here
-#define JasonMug 0x25//MugID here
-#define JasonPalette1 0x53//PaletteID here
-#define JasonPalette2 0x54//PaletteID here
-#define JasonPalette3 0x55//PaletteID here
+#define Jason 0x1A
+#define JasonClass ArchKnight
+#define JasonMug 0x25
+#define JasonPalette1 0x53
+#define JasonPalette2 0x54
+#define JasonPalette3 0x55
 
-#define Norne 0x1B//UnitID here
-#define NorneClass ArcherF//ClassID here
-#define NorneMug 0x26//MugID here
-#define NornePalette1 0x56//PaletteID here
-#define NornePalette2 0x57//PaletteID here
-#define NornePalette3 0x58//PaletteID here
+#define Norne 0x1B
+#define NorneClass ArcherF
+#define NorneMug 0x26
+#define NornePalette1 0x56
+#define NornePalette2 0x57
+#define NornePalette3 0x58
 
-#define Donnalen 0xF//UnitID here
-#define DonnalenClass Brawler//ClassID here
-#define DonnalenMug 0x27//MugID here
-#define DonnalenPalette1 0x59//PaletteID here
-#define DonnalenPalette2 0x5A//PaletteID here
-#define DonnalenPalette3 0x0//PaletteID here
+#define Donnalen 0xF
+#define DonnalenClass Brawler
+#define DonnalenMug 0x27
+#define DonnalenPalette1 0x59
+#define DonnalenPalette2 0x5A
+#define DonnalenPalette3 0x0
 
-#define Devvy 0x1C//UnitID here
-#define DevvyClass Wanderer//ClassID here
-#define DevvyMug 0x28//MugID here
-#define DevvyPalette1 0x5B//PaletteID here
-#define DevvyPalette2 0x5C//PaletteID here
-#define DevvyPalette3 0x0//PaletteID here
+#define Devvy 0x1C
+#define DevvyClass Wanderer
+#define DevvyMug 0x28
+#define DevvyPalette1 0x5B
+#define DevvyPalette2 0x5C
+#define DevvyPalette3 0x0
 
-#define Natsuki 0x1D//UnitID here
-#define NatsukiClass Medic//ClassID here
-#define NatsukiMug 0x29//MugID here
-#define NatsukiPalette1 0x5D//PaletteID here
-#define NatsukiPalette2 0x5E//PaletteID here
-#define NatsukiPalette3 0x5F//PaletteID here
+#define Natsuki 0x1D
+#define NatsukiClass Medic
+#define NatsukiMug 0x29
+#define NatsukiPalette1 0x5D
+#define NatsukiPalette2 0x5E
+#define NatsukiPalette3 0x5F
 
-#define Paniel 0x1E//UnitID here
-#define PanielClass Pirate//ClassID here
-#define PanielMug 0x2A//MugID here
-#define PanielPalette1 0x60//PaletteID here
-#define PanielPalette2 0x61//PaletteID here
-#define PanielPalette3 0x62//PaletteID here
+#define Paniel 0x1E
+#define PanielClass Pirate
+#define PanielMug 0x2A
+#define PanielPalette1 0x60
+#define PanielPalette2 0x61
+#define PanielPalette3 0x62
 
-#define Naoto 0x1F//UnitID here
-#define NaotoClass Mercenary//ClassID here
-#define NaotoMug 0x2B//MugID here
-#define NaotoPalette1 0x63//PaletteID here
-#define NaotoPalette2 0x64//PaletteID here
-#define NaotoPalette3 0x65//PaletteID here
+#define Naoto 0x1F
+#define NaotoClass Mercenary
+#define NaotoMug 0x2B
+#define NaotoPalette1 0x63
+#define NaotoPalette2 0x64
+#define NaotoPalette3 0x65
 
-#define Ginko 0x20//UnitID here
-#define GinkoClass Mage//ClassID here
-#define GinkoMug 0x2C//MugID here
-#define GinkoPalette1 0x66//PaletteID here
-#define GinkoPalette2 0x67//PaletteID here
-#define GinkoPalette3 0x68//PaletteID here
+#define Ginko 0x20
+#define GinkoClass Mage
+#define GinkoMug 0x2C
+#define GinkoPalette1 0x66
+#define GinkoPalette2 0x67
+#define GinkoPalette3 0x68
 
 #define Schezo2 0x21
 
-#define Draco 0x22//UnitID here
-#define DracoClass WyvernRider//ClassID here
-#define DracoMug 0x2D//MugID here
-#define DracoPalette1 0x69//PaletteID here
-#define DracoPalette2 0x6A//PaletteID here
-#define DracoPalette3 0x6B//PaletteID here
+#define Draco 0x22
+#define DracoClass WyvernRider
+#define DracoMug 0x2D
+#define DracoPalette1 0x69
+#define DracoPalette2 0x6A
+#define DracoPalette3 0x6B
 
-#define Wendy 0x23//UnitID here
-#define WendyClass Recruit2//ClassID here
-#define WendyMug 0x2F//MugID here
-#define WendyPalette1 0x6D//PaletteID here
-#define WendyPalette2 0x6E//PaletteID here
-#define WendyPalette3 0x6F//PaletteID here
+#define Wendy 0x23
+#define WendyClass Recruit2
+#define WendyMug 0x2F
+#define WendyPalette1 0x6D
+#define WendyPalette2 0x6E
+#define WendyPalette3 0x6F
 
-#define Anabelle 0x24//UnitID here
-#define AnabelleClass AxeKnight//ClassID here
-#define AnabelleMug 0x30//MugID here
-#define AnabellePalette1 0x70//PaletteID here
-#define AnabellePalette2 0x71//PaletteID here
-#define AnabellePalette3 0x72//PaletteID here
+#define Anabelle 0x24
+#define AnabelleClass AxeKnight
+#define AnabelleMug 0x30
+#define AnabellePalette1 0x70
+#define AnabellePalette2 0x71
+#define AnabellePalette3 0x72
 
-#define Valerie 0x25//UnitID here
-#define ValerieClass Telos//ClassID here
-#define ValerieMug 0x34//MugID here
-#define ValeriePalette1 0x78//PaletteID here
-#define ValeriePalette2 0x79//PaletteID here
-#define ValeriePalette3 0x0//PaletteID here
+#define Valerie 0x25
+#define ValerieClass Telos
+#define ValerieMug 0x34
+#define ValeriePalette1 0x78
+#define ValeriePalette2 0x79
+#define ValeriePalette3 0x0
 
-#define Sadao 0x26//UnitID here
-#define SadaoClass Shaman//ClassID here
-#define SadaoMug 0x35//MugID here
-#define SadaoPalette1 0x7A//PaletteID here
-#define SadaoPalette2 0x7B//PaletteID here
-#define SadaoPalette3 0x7C//PaletteID here
+#define Sadao 0x26
+#define SadaoClass Shaman
+#define SadaoMug 0x35
+#define SadaoPalette1 0x7A
+#define SadaoPalette2 0x7B
+#define SadaoPalette3 0x7C
 
-#define Nanaya 0x27//UnitID here
-#define NanayaClass Thief//ClassID here
-#define NanayaMug 0x36//MugID here
-#define NanayaPalette1 0x7D//PaletteID here
-#define NanayaPalette2 0x7E//PaletteID here
-#define NanayaPalette3 0x7F//PaletteID here
+#define Nanaya 0x27
+#define NanayaClass Thief
+#define NanayaMug 0x36
+#define NanayaPalette1 0x7D
+#define NanayaPalette2 0x7E
+#define NanayaPalette3 0x7F
 
-#define Arthur 0x28//UnitID here
-#define ArthurClass FreeKnight//ClassID here
-#define ArthurMug 0x38//MugID here
-#define ArthurPalette1 0x81//PaletteID here
-#define ArthurPalette2 0x82//PaletteID here
-#define ArthurPalette3 0x83//PaletteID here
+#define Arthur 0x28
+#define ArthurClass FreeKnight
+#define ArthurMug 0x38
+#define ArthurPalette1 0x81
+#define ArthurPalette2 0x82
+#define ArthurPalette3 0x83
 
 // Boss
 
-#define Batta 0x60//UnitID here
-#define BattaClass Brigand//ClassID here
-#define BattaMug 0x9//MugID here
-#define BattaPalette1 0x16//PaletteID here
-#define BattaPalette2 0x0//PaletteID here
-#define BattaPalette3 0x0//PaletteID here
+#define Batta 0x60
+#define BattaClass Brigand
+#define BattaMug 0x9
+#define BattaPalette1 0x16
+#define BattaPalette2 0x0
+#define BattaPalette3 0x0
 
-#define Kekh 0x61//UnitID here
-#define KekhClass Mercenary//ClassID here
-#define KekhMug 0xD//MugID here
-#define KekhPalette1 0x20//PaletteID here
-#define KekhPalette2 0x0//PaletteID here
-#define KekhPalette3 0x0//PaletteID here
+#define Kekh 0x61
+#define KekhClass Mercenary
+#define KekhMug 0xD
+#define KekhPalette1 0x20
+#define KekhPalette2 0x0
+#define KekhPalette3 0x0
 
-#define Derek 0x62//UnitID here
-#define DerekClass Cavalier//ClassID here
-#define DerekMug 0xE//MugID here
-#define DerekPalette1 0x21//PaletteID here
-#define DerekPalette2 0x4B//PaletteID here
-#define DerekPalette3 0x4C//PaletteID here
+#define Derek 0x62
+#define DerekClass Cavalier
+#define DerekMug 0xE
+#define DerekPalette1 0x21
+#define DerekPalette2 0x4B
+#define DerekPalette3 0x4C
 
-#define Vergil 0x63//UnitID here
-#define VergilClass Paladin//ClassID here
-#define VergilMug 0xF//MugID here
-#define VergilPalette1 0x0//PaletteID here
-#define VergilPalette2 0x22//PaletteID here
-#define VergilPalette3 0x0//PaletteID here
+#define Vergil 0x63
+#define VergilClass Paladin
+#define VergilMug 0xF
+#define VergilPalette1 0x0
+#define VergilPalette2 0x22
+#define VergilPalette3 0x0
 
-#define ONeill 0x64//UnitID here
-#define ONeillClass Fighter//ClassID here
-#define ONeillMug 0x10//MugID here
-#define ONeillPalette1 0x23//PaletteID here
-#define ONeillPalette2 0x0//PaletteID here
-#define ONeillPalette3 0x0//PaletteID here
+#define ONeill 0x64
+#define ONeillClass Fighter
+#define ONeillMug 0x10
+#define ONeillPalette1 0x23
+#define ONeillPalette2 0x0
+#define ONeillPalette3 0x0
 
-#define Todoroki 0x65//UnitID here
-#define TodorokiClass Mercenary//ClassID here
-#define TodorokiMug 0x15//MugID here
-#define TodorokiPalette1 0x30//PaletteID here
-#define TodorokiPalette2 0x51//PaletteID here
-#define TodorokiPalette3 0x0//PaletteID here
+#define Todoroki 0x65
+#define TodorokiClass Mercenary
+#define TodorokiMug 0x15
+#define TodorokiPalette1 0x30
+#define TodorokiPalette2 0x51
+#define TodorokiPalette3 0x0
 
-#define Novala 0x66//UnitID here
-#define NovalaClass Shaman//ClassID here
-#define NovalaMug 0x17//MugID here
-#define NovalaPalette1 0x34//PaletteID here
-#define NovalaPalette2 0x0//PaletteID here
-#define NovalaPalette3 0x0//PaletteID here
+#define Novala 0x66
+#define NovalaClass Shaman
+#define NovalaMug 0x17
+#define NovalaPalette1 0x34
+#define NovalaPalette2 0x0
+#define NovalaPalette3 0x0
 
-#define Schezo 0x67//UnitID here
-#define SchezoClass Battlemage//ClassID here
-#define SchezoMug 0x1B//MugID here
-#define SchezoPalette1 0x0//PaletteID here
-#define SchezoPalette2 0x3E//PaletteID here
-#define SchezoPalette3 0x0//PaletteID here
+#define Schezo 0x67
+#define SchezoClass Battlemage
+#define SchezoMug 0x1B
+#define SchezoPalette1 0x0
+#define SchezoPalette2 0x3E
+#define SchezoPalette3 0x0
 
-#define Tim 0x68//UnitID here
-#define TimClass Warrior//ClassID here
-#define TimMug 0x1C//MugID here
-#define TimPalette1 0x0//PaletteID here
-#define TimPalette2 0x3F//PaletteID here
-#define TimPalette3 0x0//PaletteID here
+#define Tim 0x68
+#define TimClass Warrior
+#define TimMug 0x1C
+#define TimPalette1 0x0
+#define TimPalette2 0x3F
+#define TimPalette3 0x0
 
-#define Bit 0x69//UnitID here
-#define BitClass Berserker//ClassID here
-#define BitMug 0x1D//MugID here
-#define BitPalette1 0x0//PaletteID here
-#define BitPalette2 0x40//PaletteID here
-#define BitPalette3 0x0//PaletteID here
+#define Bit 0x69
+#define BitClass Berserker
+#define BitMug 0x1D
+#define BitPalette1 0x0
+#define BitPalette2 0x40
+#define BitPalette3 0x0
 
-#define Gromell 0x6A//UnitID here
-#define GromellClass WyvernLord//ClassID here
-#define GromellMug 0x22//MugID here
-#define GromellPalette1 0x0//PaletteID here
-#define GromellPalette2 0x4D//PaletteID here
-#define GromellPalette3 0x0//PaletteID here
+#define Gromell 0x6A
+#define GromellClass WyvernLord
+#define GromellMug 0x22
+#define GromellPalette1 0x0
+#define GromellPalette2 0x4D
+#define GromellPalette3 0x0
 
-#define Raydrik 0x6B//UnitID here
-#define RaydrikClass General//ClassID here
-#define RaydrikMug 0x23//MugID here
-#define RaydrikPalette1 0x0//PaletteID here
-#define RaydrikPalette2 0x4E//PaletteID here
-#define RaydrikPalette3 0x0//PaletteID here
+#define Raydrik 0x6B
+#define RaydrikClass General
+#define RaydrikMug 0x23
+#define RaydrikPalette1 0x0
+#define RaydrikPalette2 0x4E
+#define RaydrikPalette3 0x0
 
-#define Cedwick 0x6C//UnitID here
-#define CedwickClass Pirate//ClassID here
-#define CedwickMug 0x2E//MugID here
-#define CedwickPalette1 0x6C//PaletteID here
-#define CedwickPalette2 0x0//PaletteID here
-#define CedwickPalette3 0x0//PaletteID here
+#define Cedwick 0x6C
+#define CedwickClass Pirate
+#define CedwickMug 0x2E
+#define CedwickPalette1 0x6C
+#define CedwickPalette2 0x0
+#define CedwickPalette3 0x0
 
-#define DarkMarlen 0x6D//UnitID here
-#define DarkMarlenClass Cavalier//ClassID here
-#define DarkMarlenMug 0x31//MugID here
-#define DarkMarlenPalette1 0x73//PaletteID here
-#define DarkMarlenPalette2 0x74//PaletteID here
-#define DarkMarlenPalette3 0x0//PaletteID here
+#define DarkMarlen 0x6D
+#define DarkMarlenClass Cavalier
+#define DarkMarlenMug 0x31
+#define DarkMarlenPalette1 0x73
+#define DarkMarlenPalette2 0x74
+#define DarkMarlenPalette3 0x0
 
-#define Ermine 0x6E//UnitID here
-#define ErmineClass Sage//ClassID here
-#define ErmineMug 0x32//MugID here
-#define ErminePalette1 0x0//PaletteID here
-#define ErminePalette2 0x75//PaletteID here
-#define ErminePalette3 0x0//PaletteID here
+#define Ermine 0x6E
+#define ErmineClass Sage
+#define ErmineMug 0x32
+#define ErminePalette1 0x0
+#define ErminePalette2 0x75
+#define ErminePalette3 0x0
 
-#define Zane 0x6F//UnitID here
-#define ZaneClass Monk//ClassID here
-#define ZaneMug 0x33//MugID here
-#define ZanePalette1 0x76//PaletteID here
-#define ZanePalette2 0x77//PaletteID here
-#define ZanePalette3 0x0//PaletteID here
+#define Zane 0x6F
+#define ZaneClass Monk
+#define ZaneMug 0x33
+#define ZanePalette1 0x76
+#define ZanePalette2 0x77
+#define ZanePalette3 0x0
 
-#define Viridian 0x70//UnitID here
-#define ViridianClass Pirate//ClassID here
-#define ViridianMug 0x37//MugID here
-#define ViridianPalette1 0x80//PaletteID here
-#define ViridianPalette2 0x0//PaletteID here
-#define ViridianPalette3 0x0//PaletteID here
+#define Viridian 0x70
+#define ViridianClass Pirate
+#define ViridianMug 0x37
+#define ViridianPalette1 0x80
+#define ViridianPalette2 0x0
+#define ViridianPalette3 0x0
 
-// Generic + NPC
 
-#define BattaBeast 0x80//UnitID here
-#define BattaBeastFaction 0x1//MinimugID here
 
-#define Imperial 0x81//UnitID here
-#define ImperialFaction 0x3//MinimugID here
+#define BattaBeast 0x80
+#define BattaBeastFaction 0x1
 
-#define CivilianUnit 0x82//UnitID here
-#define CivilianUnitName 0x305//TextID here
-#define CivilianUnitDescription 0x351//TextID here
-#define CivilianUnitFaction 0x2//MinimugID here
+#define Imperial 0x81
+#define ImperialFaction 0x3
 
-#define TownGuard 0x83//UnitID here
-#define TownGuardFaction 0x5//MinimugID here
+#define CivilianUnit 0x82
+#define CivilianUnitName 0x305
+#define CivilianUnitDescription 0x351
+#define CivilianUnitFaction 0x2
 
-#define PriestUnit 0x84//UnitID here
-#define PriestUnitFaction 0x2//MinimugID here
+#define TownGuard 0x83
+#define TownGuardFaction 0x5
 
-#define Cultist 0x85//UnitID here
-#define CultistFaction 0x4 //MinimugID here
+#define PriestUnit 0x84
+#define PriestUnitFaction 0x2
 
-#define Monster 0x86//UnitID here
-#define MonsterFaction 0x4//MinimugID here
+#define Cultist 0x85
+#define CultistFaction 0x4 
 
-#define MonsterNoEXP 0x87//UnitID here
+#define Monster 0x86
+#define MonsterFaction 0x4
 
-#define Eevster 0x88//UnitID here
-#define EevsterClass Troubadour//ClassID here
-#define EevsterMug 0x16//MugID here
-#define EevsterPalette1 0x31//PaletteID here
-#define EevsterPalette2 0x32//PaletteID here
-#define EevsterPalette3 0x33//PaletteID here
+#define MonsterNoEXP 0x87
 
-#define Basement 0x89//UnitID here
-#define BasementFaction 0x5//MinimugID here
+#define Eevster 0x88
+#define EevsterClass Troubadour
+#define EevsterMug 0x16
+#define EevsterPalette1 0x31
+#define EevsterPalette2 0x32
+#define EevsterPalette3 0x33
 
-#define Basement2 0x8A//UnitID here
+#define Basement 0x89
+#define BasementFaction 0x5
 
-#define Imperial2 0x8B//UnitID here
+#define Basement2 0x8A
 
-#define Wagon 0x8C//UnitID here
-#define WagonName 0x305//TextID here
-#define WagonDescription 0x351//TextID here
-#define WagonFaction 0x2//MinimugID here
+#define Imperial2 0x8B
 
-#define Wagon2 0x8D//UnitID here
+#define Wagon 0x8C
+#define WagonName 0x305
+#define WagonDescription 0x351
+#define WagonFaction 0x2
 
-#define BattaBeast2 0x8E//UnitID here
+#define Wagon2 0x8D
 
-#define MonsterBoss 0x8F//UnitID here
+#define BattaBeast2 0x8E
 
-#define Monster2 0x90//UnitID here
+#define MonsterBoss 0x8F
 
-#define DarkKnightUnit 0x91//UnitID here
-#define DarkKnightUnitFaction 0x4//MinimugID here
+#define Monster2 0x90
 
-#define Whitewolf 0x92//UnitID here
-#define WhitewolfFaction 0x1//MinimugID here
+#define DarkKnightUnit 0x91
+#define DarkKnightUnitFaction 0x4
+
+#define Whitewolf 0x92
+#define WhitewolfFaction 0x1
 
 #define Basement3 0x93
 
-#define Officer 0x94//UnitID here
-#define OfficerFaction 0x3//MinimugID here
+#define Officer 0x94
+#define OfficerFaction 0x3
 
-#define TentUnit 0x95//UnitID here
-#define TentUnitName TentName//TextID here
-#define TentUnitDescription TentDescription//TextID here
-#define TentUnitFaction 0x3//MinimugID here
+#define TentUnit 0x95
+#define TentUnitName TentName
+#define TentUnitDescription TentDescription
+#define TentUnitFaction 0x3
 
-#define Albatross 0x96//UnitID here
-#define AlbatrossFaction 0x3//MinimugID here
+#define Albatross 0x96
+#define AlbatrossFaction 0x3
 
-#define Cobra 0x97//UnitID here
-#define CobraFaction 0x3//MinimugID here
+#define Cobra 0x97
+#define CobraFaction 0x3
 
-#define Panther 0x98//UnitID here
-#define PantherFaction 0x3//MinimugID here
+#define Panther 0x98
+#define PantherFaction 0x3
 
-#define Stallion 0x99//UnitID here
-#define StallionFaction 0x3//MinimugID here
+#define Stallion 0x99
+#define StallionFaction 0x3
 
-#define Warthog 0x9A//UnitID here
-#define WarthogFaction 0x3//MinimugID here
+#define Warthog 0x9A
+#define WarthogFaction 0x3
 
 #define AlbatrossNoEXP 0x9B
 #define CobraNoEXP 0x9C
@@ -478,10 +478,12 @@
 #define StallionNoEXP 0x9E
 #define WarthogNoEXP 0x9F
 
-#define Marooner 0xA0//UnitID here
-#define MaroonerFaction 0x1//MinimugID here
+#define Marooner 0xA0
+#define MaroonerFaction 0x1
 
-#define Unknown 0xA1//UnitID here
-#define UnknownFaction 0x4//MinimugID here
+#define Unknown 0xA1
+#define UnknownFaction 0x4
 
 #define Marooner2 0xA2
+
+#define VergilImperial 0xA3

@@ -15,3 +15,5 @@
 #include "Wagon2/Wagon Installer.event"
 
 #include "Basement3/Basement Installer.event"
+
+#include "VergilImperial/Imperial Installer.event"

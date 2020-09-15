@@ -101,8 +101,21 @@ SoundRoomEntry(TrickstersLamentSong,480,TrickstersLamentName)
 SoundRoomEntry(SearchingForEnemiesSong,2520,SearchingForEnemiesName)
 SoundRoomEntry(AccursedCombatSong,1815,AccursedCombatName)
 SoundRoomEntry(ResolutionSong,0,ResolutionName)
-
-
+SoundRoomEntry(ForTheCommandersSong,0,ForTheCommandersName)
+SoundRoomEntry(SelfDisciplineSong,0,SelfDisciplineName)
+SoundRoomEntry(EasterStoneSong,0,EasterStoneName)
+SoundRoomEntry(TenseAtmosphereSong,0,TenseAtmosphereName)
+SoundRoomEntry(MariaSortieSong,0,MariaSortieName)
+SoundRoomEntry(PoppleBattleSong,0,PoppleBattleName)
+SoundRoomEntry(MushroomGorgeSong,0,MushroomGorgeName)
+SoundRoomEntry(FeldschlactIIISong,0,FeldschlactIIIName)
+SoundRoomEntry(TheDevotedSong,0,TheDevotedName)
+SoundRoomEntry(MagriddSong,0,MagriddName)
+SoundRoomEntry(KenThemeSong,0,KenThemeName)
+SoundRoomEntry(EternalMindSong,0,EternalMindName)
+SoundRoomEntry(TRSPrepSong,0,TRSPrepName)
+SoundRoomEntry(Battle7thSagaSong,0,Battle7thSagaName)
+SoundRoomEntry(BattleFFL2Song,0,BattleFFL2Name)
 
 SoundRoomTerminator
 

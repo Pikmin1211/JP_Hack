@@ -28,6 +28,15 @@
 #include "Ch14.event"
 }
 {
+#include "Ch15.event"
+}
+{
+#include "Ch16.event"
+}
+{
+#include "Ch17.event"
+}
+{
 #include "Ch2.event"
 }
 {

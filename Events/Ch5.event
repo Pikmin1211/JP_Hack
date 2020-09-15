@@ -253,7 +253,7 @@ EnemyUnits:
 	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [1,17] 0 0 0 0 [SteelLance] DelayedDefaultAI
 	UNIT BattaBeast2 Soldier 0x0 Level(7,Enemy,1) [0,16] 0 0 0 0 [SlimLance] DelayedDefaultAI
 
-	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [0,1] 0 0 0 0 [SteelBow] NeverMoveAI
+	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [0,1] 0 0 0 0 [SteelBow,Elixir] NeverMoveAI
 	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [11,19] 0 0 0 0 [Longbow] NeverMoveAI
 	UNIT BattaBeast2 Archer 0x0 Level(8,Enemy,1) [12,18] 0 0 0 0 [CompositeBow] AttackInRangeAI
 	UNIT BattaBeast2 Fighter 0x0 Level(7,Enemy,1) [1,0] 0 0 0 0 [Swordreaver,SteelAxe] AttackInRangeAI
@@ -263,7 +263,7 @@ EnemyUnits:
 
 	UNIT BattaBeast2 Mercenary 0x0 Level(7,Enemy,1) [13,9] 0 0 0 0 [IronBlade] AttackInRangeAI
 	UNIT BattaBeast2 Fighter 0x0 Level(8,Enemy,1) [14,10] 0 0 0 0 [BanditAxe,Halberd] AttackInRangeAI
-	UNIT BattaBeast2 Mage 0x0 Level(8,Enemy,1) [14,9] 0 0 0 0 [Fire] AttackInRangeAI
+	UNIT BattaBeast2 Mage 0x0 Level(8,Enemy,1) [14,9] 0 0 0 0 [Fire,Vulnerary] AttackInRangeAI
 
 	UNIT
 

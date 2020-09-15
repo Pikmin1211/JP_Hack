@@ -21,3 +21,27 @@ NightSnowPal:
 #incbin "Palettes/NightSnow_Pal.dmp"
 
 EventPointerTable(SnowPaletteNight,NightSnowPal)
+
+#define NewFrontierObjectSet 0xE4
+
+ALIGN 4
+NewFrontierImage:
+#incbin "Data/Frontier.dmp"
+
+EventPointerTable(NewFrontierObjectSet, NewFrontierImage)
+
+#define NewFrontierPalette 0xE3
+
+ALIGN 4
+NewFrontierPalData:
+#incbin "Data/Frontier_pal.dmp"
+
+EventPointerTable(NewFrontierPalette, NewFrontierPalData)
+
+#define NewFrontierTileConfig 0xE2
+
+ALIGN 4
+NewFrontierMapChip:
+#incbin "Data/Frontier_comp.dmp"
+
+EventPointerTable(NewFrontierTileConfig, NewFrontierMapChip)

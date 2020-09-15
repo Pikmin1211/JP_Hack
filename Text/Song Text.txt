@@ -242,7 +242,7 @@ Fillmore[X]
 Stronger Monsters[X]
 
 ## DurantSortieName
-Durant Sortie[X]
+Durant Sortie![X]
 
 ## Lufia2Battle2Name
 Battle 2 (Lufia 2)[X]
@@ -254,7 +254,7 @@ Bonus Stage (DKC)[X]
 Inescapable[X]
 
 ## MilanorSortieName
-Milanor Sortie[X]
+Milanor Sortie![X]
 
 ## ACrisisName
 A Crisis[X]
@@ -289,3 +289,47 @@ Accursed Combat[X]
 ## ResolutionName
 Resolution[X]
 
+## ForTheCommandersName
+For the Commanders[X]
+
+## SelfDisciplineName
+Self Discipline[X]
+
+## EasterStoneName
+Easter Stone[X]
+
+## TenseAtmosphereName
+Tense Atmosphere[X]
+
+## MariaSortieName
+Maria Sortie![X]
+
+## PoppleBattleName
+Popple Battle[X]
+
+## MushroomGorgeName
+Mushroom Gorge[X]
+
+## FeldschlactIIIName
+Feldschlact III[X]
+
+## TheDevotedName
+The Devoted[X]
+
+## MagriddName
+Magridd[X]
+
+## KenThemeName
+Ken Theme[X]
+
+## EternalMindName
+Eternal Mind[X]
+
+## TRSPrepName
+Preparations (TRS)[X]
+
+## Battle7thSagaName
+Battle (7th Saga)[X]
+
+## BattleFFL2Name
+Battle (FF Legend 2)[X]

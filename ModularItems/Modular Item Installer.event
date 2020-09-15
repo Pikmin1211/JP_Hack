@@ -168,12 +168,4 @@
 
 #include "Shortsword/Shortsword Installer.event"
 
-/*
-#include "Iron Arrow/Iron Arrow Installer.event"
-
-#include "Steel Arrow/Steel Arrow Installer.event"
-
-#include "Silver Arrow/Silver Arrow Installer.event"
-
-#include "Killer Arrow/Killer Arrow Installer.event"
-*/
+#include "Baphomet/Baphomet Installer.event"

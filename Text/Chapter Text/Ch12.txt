@@ -4,3 +4,232 @@ Chapter 12: Forces of Darkness[X]
 ## Ch12Objective
 Defeat Boss[X]
 
+
+
+## Ch12OP
+[MidLeft][LoadPaniel]
+Say, boss...[AN]
+
+[MidRight][LoadDonnalen]
+Hm? Is something[N]
+the matter, captain?[AN]
+
+[MidLeft]
+Well, we're pulling[N]
+into port now, but...[AN]
+There's not a soul around.[AN]
+
+[MidRight]
+I see...[AN]
+
+[CloseSpeech][MoveRight][FarRight][LoadSchezo]
+As I feared, then.[AN]
+Tell everyone to[N]
+ready their weapons.[AN]
+
+[Right]
+Tsk. I knew those things[N]
+were on the loose here,[AN]
+but for them to be this[N]
+far from the mainland?[AN]
+
+[MidLeft]
+Things?[N]
+What things?[AN]
+
+[CloseSpeech][MoveLeft][FarLeft][LoadDevvy]
+...Monsters. Heh.[AN]
+Maybe this will be more[N]
+interesting than I thought.[AN]
+
+[Left][Clear][LoadAnabelle]
+Everyone's ready, brother.[N]
+We await your orders![AN]
+
+[Right]
+Right. Move out![A][X]
+
+
+
+## Ch12OP2
+[MidLeft][LoadDarkMarlen]
+Heheheh... this place[N]
+has been easy pickings.[AN]
+I guess you were right[N]
+about this after all.[AN]
+Those imperials are so[N]
+busy with themselves,[AN]
+they haven't bothered[N]
+to check up here at all.[AN]
+
+[MidRight][LoadZane]
+I wouldn't lie to you, Marlen.[N]
+We're allies after all, right?[AN]
+Make good use of my... friends.[AN]
+I'm still experimenting with[N]
+how powerful I can create them.[AN]
+
+[MidLeft]
+A lot of weaklings, or[N]
+one murdereous creature...[AN]
+Well, I'll leave those[N]
+dark arts books to you.[AN]
+I was never much for[N]
+reading myself, anyways.[AN]
+
+[MidRight]
+Right. Do enjoy[N]
+yourself, Marlen![AN]
+[Clear]
+
+[MidLeft]
+Oh, don't you worry[N]
+about that. I will.[AN]
+Heheh... Ahahahah!![A][X]
+
+
+
+## Ch12PostPrep
+[MidLeft][LoadSchezo]
+Some of these zombies seem[N]
+attracted to those tents...[AN]
+I don't know what's in there,[N]
+but it can't be anything good.[AN]
+We'll have to [Red]stop them[Red][N]
+before they can get there.[A][X]
+
+
+
+## Ch12ValerieSadao
+[Right][LoadValerie]
+My, my... look at all these[N]
+little toys we have here.[AN]
+
+[FarRight][LoadSadao]
+These beserk demons...[AN]
+don't they know who[N]
+they're dealing with?[AN]
+
+[Right]
+Heheh, your little uniform[N]
+isn't helping matters, "Sadao".[AN]
+
+[FarRight]
+You really don't know when[N]
+to shut your mouth, huh?[AN]
+
+[MidLeft][LoadDonnalen]
+...I take it you two aren't[N]
+with these monsters, then.[AN]
+
+[FarRight]
+They should be, if they[N]
+had any damned respect...[AN]
+What is with this blasted[N]
+summoning magic anyways?[AN]
+
+[Right]
+Ignore him, please.[AN]
+If you're here to slice[N]
+these things open too,[AN]
+then we may have a[N]
+common goal here.[AN]
+
+[MidLeft]
+Right. I'm just not[N]
+going to ask...[A][X]
+
+
+
+## Ch12Village1
+[MidLeft][LoadCurrent]
+Nobody's around. Hm...?[N]
+Some kind of holy trinket.[AN]
+Heh, a lot of good this did[N]
+against those monsters, huh.[A][X]
+
+
+
+
+## Ch12Village2
+[MidLeft][LoadCurrent]
+What a gruesome scene...[AN]
+Looks like they tried to[N]
+defend themselves with this.[A][X]
+
+
+
+## Ch12Village3
+[MidLeft][LoadCurrent]
+A magic staff? It feels like an[N]
+ill omen for things to come...[A][X]
+
+
+
+## Ch12DarkMarlenBattle
+[MidLeft][LoadDarkMarlen]
+What the heck...?![N]
+Who are you people?[AN]
+You would dare oppose[N]
+the master's will...?[AN]
+You must die!![A][X]
+
+
+
+## Ch12DarkMarlenDeath
+[MidLeft][LoadDarkMarlen]
+Th-this cannot be...[N]
+But... hehe... hahaha![AN]
+You mortals cannot slay me![N]
+I shall be back...[A][X]
+
+
+
+## Ch12Ending
+[Right][LoadDonnalen][FarRight][LoadSchezo][FarLeft][LoadGinko][Left][LoadSadao]
+This does not[N]
+bode well...[AN]
+
+[FarRight]
+Do you know something[N]
+of these demons?[AN]
+
+[Left]
+...You could say that.[AN]
+They seem to be out[N]
+of their right minds.[AN]
+
+[Right]
+Do such things[N]
+have right minds?[AN]
+
+[FarLeft]
+Well, it's not like they can[N]
+just spawn from thin air.[AN]
+Something's gotta be fishy.[AN]
+And I didn't like the talk of[N]
+that red eyed fellow either.[AN]
+
+[FarRight][Clear][LoadDevvy]
+This is all irrelevant[N]
+to our task here.[AN]
+If they get in our[N]
+way, we cut them down.[AN]
+
+[Right]
+Right. Will you[N]
+two be joining us?[AN]
+We're heading to the[N]
+fortress due north.[AN]
+
+[Left]
+I have a feeling you bunch will[N]
+be close to the heart of this.[AN]
+It's better to travel together.[AN]
+
+[FarLeft][Clear][LoadValerie]
+More slaying, hm? Sounds[N]
+delightful! Count me in.[AN]
+
+[Right]
+Then let's get going.[A][X]

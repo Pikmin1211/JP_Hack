@@ -172,4 +172,4 @@
 #define Butler 0x99
 #define ButlerSwordAnim 0xFF
 #define ButlerStaffAnim 0x100
-#define ButlerClassCard 0x117
+#define ButlerClassCard 0x118

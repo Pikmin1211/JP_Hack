@@ -47,3 +47,5 @@
 #include "Marooner/Marooner Installer.event"
 
 #include "Unknown/Unknown Installer.event"
+
+#include "Marooner2/Marooner Installer.event"

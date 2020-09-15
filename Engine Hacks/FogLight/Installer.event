@@ -6,6 +6,7 @@ BYTE 0 0
 jumpToHack(FogLight)
 POP
 
+ALIGN 4
 FogLight:
 #incbin "kagaribi2.dmp"
 POIN KAGARIBI2_Table

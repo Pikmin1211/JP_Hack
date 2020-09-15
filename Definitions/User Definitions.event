@@ -6,7 +6,7 @@
 #undef Novala
 #undef NovalaMug
 
-#define _DEBUG_ROOM_
+//#define _DEBUG_ROOM_
 
 #define MautheDoog 0x5B
 //#define FieryFang 0xB1

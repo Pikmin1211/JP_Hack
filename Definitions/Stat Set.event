@@ -121,3 +121,7 @@ PUSH
 ORG 0x80C498
 BYTE 20
 POP
+
+// Cav def
+SetClassDefGrowth(Cavalier,10)
+SetClassDefGrowth(Cavalier,10)

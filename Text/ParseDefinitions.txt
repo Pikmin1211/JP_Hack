@@ -120,6 +120,7 @@
 [_Z] = [0xB2]
 
 [Clear] = [ClearFace]
+[CloseSpeech] = [CloseSpeechSlow]
 [Die] = [A][CloseEyes][.....]
 
 [CurrentPortrait] = [0xFF][0xFF]
@@ -195,3 +196,9 @@
 [LoadGinko] = [LoadFace][0x2C][0x1]
 [LoadNorne] = [LoadFace][0x26][0x1]
 [LoadCedwick] = [LoadFace][0x2E][0x1]
+[LoadDarkMarlen] = [LoadFace][0x31][0x1]
+[LoadZane] = [LoadFace][0x33][0x1]
+[LoadViridian] = [LoadFace][0x37][0x1]
+[LoadSadao] = [LoadFace][0x35][0x1]
+[LoadValerie] = [LoadFace][0x34][0x1]
+[LoadErmine] = [LoadFace][0x32][0x1]

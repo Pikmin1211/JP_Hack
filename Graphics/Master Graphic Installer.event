@@ -11,3 +11,5 @@
 #include "Menu Tiles/MenuTiles.event"
 
 #include "Mugs/Master Mug Installer.event"
+
+#include "Battle Screen/Installer.event"

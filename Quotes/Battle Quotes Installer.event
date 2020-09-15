@@ -45,6 +45,13 @@ TwoWayBattleQuote(0x0,Todoroki,10,Ch10TodorokiBattle)
 // Ch11
 TwoWayBattleQuote(0x0,Cedwick,11,Ch11CedwickBattle)
 
+// Ch12
+TwoWayBattleQuote(0x0,DarkMarlen,12,Ch12DarkMarlenBattle)
+
+// Ch14
+TwoWayBattleQuote(0x0,Viridian,14,TestDialogue)
+TwoWayBattleQuoteFlag(0xD,0x0,Cedwick,14,TestDialogue)
+
 
 EndQuote
 

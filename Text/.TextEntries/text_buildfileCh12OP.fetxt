@@ -1,0 +1,82 @@
+[MidLeft][LoadPaniel]
+
+Say, boss...[AN]
+
+
+
+[MidRight][LoadDonnalen]
+
+Hm? Is something[N]
+
+the matter, captain?[AN]
+
+
+
+[MidLeft]
+
+Well, we're pulling[N]
+
+into port now, but...[AN]
+
+There's not a soul around.[AN]
+
+
+
+[MidRight]
+
+I see...[AN]
+
+
+
+[CloseSpeech][MoveRight][FarRight][LoadSchezo]
+
+As I feared, then.[AN]
+
+Tell everyone to[N]
+
+ready their weapons.[AN]
+
+
+
+[Right]
+
+Tsk. I knew those things[N]
+
+were on the loose here,[AN]
+
+but for them to be this[N]
+
+far from the mainland?[AN]
+
+
+
+[MidLeft]
+
+Things?[N]
+
+What things?[AN]
+
+
+
+[CloseSpeech][MoveLeft][FarLeft][LoadDevvy]
+
+...Monsters. Heh.[AN]
+
+Maybe this will be more[N]
+
+interesting than I thought.[AN]
+
+
+
+[Left][Clear][LoadAnabelle]
+
+Everyone's ready, brother.[N]
+
+We await your orders![AN]
+
+
+
+[Right]
+
+Right. Move out![A][X]
+

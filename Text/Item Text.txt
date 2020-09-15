@@ -535,26 +535,8 @@ Shieldsword[X]
 ## ShieldswordDescription
 Grants Def +2.[X]
 
-## IronArrowName
-Iron Arrow[X]
+## BaphometName
+Baphomet[X]
 
-## IronArrowDescription
-Standard arrow.[X]
-
-## SteelArrowName
-Steel Arrow[X]
-
-## SteelArrowDescription
-+2 Atk.[X]
-
-## SilverArrowName
-Silver Arrow[X]
-
-## SilverArrowDescription
-+3 Atk, +15 Hit.[X]
-
-## KillerArrowName
-Killer Arrow[X]
-
-## KillerArrowDescription
-+15 Crit.[X]
+## BaphometDescription
+Might injure its wielder.[X]

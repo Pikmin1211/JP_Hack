@@ -26,7 +26,7 @@ NewUnitsAppear:
 	MUSS LikeAGlintOfLightSong
 	SpawnReinforcements(NewUnits)
 	FlashCursor(Valerie,60)
-	Text(TestDialogue)
+	Text(Ch12ValerieSadao)
 	MURE 2
 	NoFade
 	ENDA 
@@ -99,13 +99,13 @@ Ch12Vendor:
 	ALIGN 4
 
 LeftVillage:
-	VillageEventItem(TestDialogue,HouseBG,GoddessIcon)
+	VillageEventItem(Ch12Village1,HouseBG,GoddessIcon)
 
 MidVillage:
-	VillageEventItem(TestDialogue,HouseBG,HandAxe)
+	VillageEventItem(Ch12Village2,HouseBG,HandAxe)
 
 RightVillage:
-	VillageEventItem(TestDialogue,HouseBG,TorchStaff)
+	VillageEventItem(Ch12Village3,HouseBG,TorchStaff)
 
 ZombieHouse1:
 	CHECK_ALLEGIANCE 0xFFFF
@@ -165,7 +165,7 @@ Units1:
 
 NewUnits:
 	UNIT Valerie Telos 0x0 Level(3,Ally,0) [10,0] 0 0 1 REDA11R1 [Rapier,Heal] NoAI
-	UNIT Sadao Shaman 0x0 Level(3,Ally,0) [10,0] 0 0 1 REDA9R1 [Miasma,Flux,Vulnerary] NoAI
+	UNIT Sadao Shaman 0x0 Level(3,Ally,0) [10,0] 0 0 1 REDA9R1 [Miasma,Baphomet,Vulnerary] NoAI
 	UNIT
 
 EnemyUnits:
@@ -272,18 +272,31 @@ BeginningScene:
 	ENUN
 	LOAD2 0x1 Units1
 	ENUN
+	MUSC EncounterSong
+	SetBackground(Ship)
+	Text(Ch12OP)
+	MUSC TheWorldIsTremblingSong
+	SetBackground(Outside_Village_Day)
+	Text(Ch12OP2)
+	FADI 16
+	CLEAN
+	MUSC FillmoreSong
+	CAM1 Donnalen
 	FADU 16
+	STAL 20
 	CAM1 [8,1]
 	FlashCursor(8,1,60)
 	CAM1 [15,13]
 	FlashCursor(15,13,60)
 	CAM1 Donnalen
-	FlashCursor(Donnalen,60)
-	Text(TestDialogue)
+	Text(Ch12PostPrep)
 	NoFade
 	ENDA
 
 EndingScene:
+	MUSC InvestigationSong
+	SetBackground(Outside_Village_Day)
+	Text(Ch12Ending)
 	MNC2 13
 	NoFade
 	ENDA

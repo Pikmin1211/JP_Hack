@@ -137,8 +137,8 @@ WrysUnit:
 
 EnemyUnits:
 
-	UNIT Batta Brigand 0x0 Level(8,Enemy,1) [1,16] 0 0 0 0 [BanditAxe,HandAxe] NeverMoveAI
-	UNIT ONeill Fighter 0x0 Level(8,Enemy,0) [19,16] 0 0 0 0 [SteelAxe,Vulnerary] NeverMoveAI
+	UNIT Batta Brigand 0x0 Level(8,Enemy,1) [1,16] 2 0 0 0 [BanditAxe,HandAxe,AngelicRobe] NeverMoveAI
+	UNIT ONeill Fighter 0x0 Level(8,Enemy,0) [19,16] 2 0 0 0 [SteelAxe,Vulnerary,BrightLance] NeverMoveAI
 
 	UNIT BattaBeast Cavalier 0x0 Level(3,Enemy,1) [9,17] 0 0 0 0 [IronLance] DefaultAI
 	UNIT BattaBeast FreeKnight 0x0 Level(3,Enemy,1) [10,17] 0 0 0 0 [Shortsword] DefaultAI
@@ -239,6 +239,7 @@ EndingScene:
 	MUSC UndergroundLairSong
 	SetBackground(Castle_Hall_2)
 	Text(Ch2Ending)
+	/*
 	CHECK_EVENTID 0x9
 	BEQ 1 0xC 0x0
 		SetBackground(Plain_2)
@@ -258,6 +259,7 @@ EndingScene:
 			LABEL 3
 		GiveItem(BrightLance,Sanders)
 		LABEL 2
+	*/
 	MNC2 3
 	NoFade
 	ENDA
