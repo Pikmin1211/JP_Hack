@@ -1,7 +1,7 @@
 #define MouthX 4
-#define MouthY 6
-#define EyeX 4
-#define EyeY 4
+#define MouthY 5
+#define EyeX 3
+#define EyeY 3
 
 ALIGN 16
 UnitMugData:

@@ -2,3 +2,8 @@ ALIGN 16
 ArmoryMugData:
 #incext PortraitFormatter "ArmoryMug.png"
 setMugEntry(0x65, ArmoryMugData, 4, 3, 3, 1)
+
+ALIGN 16
+VendorMugData:
+#incext PortraitFormatter "VendorMug.png"
+setMugEntry(0x66, ArmoryMugData, 4, 3, 3, 1)

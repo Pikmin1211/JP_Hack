@@ -1,0 +1,41 @@
+PUSH
+  ORG $B1C74
+  POIN FixedConfigGFX
+
+  ORG $90F84
+  POIN FixedAnimGFX
+  POIN FixedUnitsGFX
+
+  ORG $AF7E0
+  POIN FixedSoundRoomGFX
+
+  ORG $A14E4
+  POIN FixedSupportGFX
+
+  ORG $95E20
+  POIN FixedPrepGFX
+POP
+
+ALIGN 4
+FixedConfigGFX:
+#incext Png2Dmp "FixedConfigGFX.png" --lz77
+
+ALIGN 4
+FixedAnimGFX:
+#incext Png2Dmp "FixedAnimGFX.png" --lz77
+
+ALIGN 4
+FixedUnitsGFX:
+#incext Png2Dmp "FixedUnitsGFX.png" --lz77
+
+ALIGN 4
+FixedSupportGFX:
+#incext Png2Dmp "FixedSupportGFX.png" --lz77
+
+ALIGN 4
+FixedPrepGFX:
+#incext Png2Dmp "FixedPrepGFX.png" --lz77
+
+ALIGN 4
+FixedSoundRoomGFX:
+#incext Png2Dmp "SoundRoom.png" --lz77

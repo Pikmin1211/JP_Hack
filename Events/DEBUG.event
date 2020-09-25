@@ -32,7 +32,14 @@ Seize(10,6)
 Stairs(1,7,12,7,2)
 Door(7,6)
 Chest(BlackGem,4,6)
+Armory(DebugArmory,0,0)
 END_MAIN
+
+ALIGN 4
+DebugArmory:
+SHLI IronSword
+BYTE 0x0 0x0
+ALIGN 4
 
 Dunno1:
 END_MAIN
@@ -52,7 +59,7 @@ UNIT 0x81 Sage 0x0 Level(20,Enemy,1) [12,8] 0 0 0 0 [Petrify] NoAI
 UNIT
 
 Units1:
-UNIT Derek2 Warrior 0x0 Level(20,Ally,1) [10,10] 0 0 0 0 [IronBow] NoAI
+UNIT Derek2 Fighter 0x0 Level(20,Ally,1) [10,10] 0 0 0 0 [Garm,IronAxe,HeroCrest] NoAI
 UNIT Sanders Hero 0x0 Level(20,Ally,1) [8,10] 0 0 0 0 [Tyrfing,SteelBlade,IronSword,BattleAxe] NoAI
 UNIT Renge BishopF 0x0 Level(20,Ally,1) [9,10] 0 0 0 0 [Again,Rune,Abort] NoAI
 UNIT
@@ -75,8 +82,9 @@ ENUN
 LOAD1 0x1 Units1
 ENUN
 //SetHP(1,10,10)
-SetBadStatus(Sanders,1)
-SetBadStatus(Derek2,1)
+//SetBadStatus(Sanders,1)
+//SetBadStatus(Derek2,1)
+GotoPrepScreen
 ENDA
 
 EndingScene:

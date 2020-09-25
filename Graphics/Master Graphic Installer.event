@@ -13,3 +13,5 @@
 #include "Mugs/Master Mug Installer.event"
 
 #include "Battle Screen/Installer.event"
+
+#include "Stat Screen/Installer.event"

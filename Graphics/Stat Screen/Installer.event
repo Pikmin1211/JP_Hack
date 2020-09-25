@@ -1,0 +1,42 @@
+PUSH
+ORG $88638
+POIN StatScreen
+//ORG $88640
+//POIN StatScreenPal
+ORG 0xA06460
+#incbin "JpHack_Palette.dmp"
+ORG $88644
+POIN StatScreenTSA
+ORG $88650
+POIN NewBattlePlat
+ORG $88658
+POIN NewEquipWindow
+ORG $8859C
+jumpToHack(StatscreenAlleg)
+POP
+
+ALIGN 4
+StatScreen:
+#incbin "StatScreen.dmp"
+
+/*
+ALIGN 4
+StatScreenPal:
+#incbin "JpHack_Palette.dmp"
+*/
+
+ALIGN 4
+StatScreenTSA:
+#incbin "StatScreenTSA.dmp"
+
+ALIGN 4
+NewBattlePlat:
+#incext Png2Dmp "Platform.png" --lz77
+
+ALIGN 4
+NewEquipWindow:
+#incext Png2Dmp "Equip.png" --lz77
+
+ALIGN 4
+StatscreenAlleg:
+#incbin "statscreenAlleg.dmp"
