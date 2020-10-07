@@ -36,10 +36,8 @@ b DoesNotHaveCharity
 
 HasCharity:
 ldrb r0, [r4, #0xD] // target
-blh GetUnit
 mov r1, r0
-ldr r0, =gActiveUnit
-ldr r0, [r0]
+ldrb r0, [r4, #0xC] // user
 
 cmp r0, r1
 beq DoesNotHaveCharity // using it on myself
@@ -55,14 +53,12 @@ ldrb r0, [r4, #0x6]
 cmp r0, #Elixir
 beq ElixirEffect
 // VulneraryEffect
-mov r0, r6
-mov r1, r4
+mov r1, #0xA
 blh ExecSelfHeal
 b End
 
 ElixirEffect:
-mov r0, r6
-mov r1, r4
+mov r1, #0xFF
 blh ExecSelfFullHeal
 b End
 

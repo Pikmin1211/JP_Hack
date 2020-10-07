@@ -30,10 +30,8 @@ b Return
 CharityCheck:
 ldr r4, =gActionData
 ldrb r0, [r4, #0xD] // target
-blh GetUnit
 mov r1, r0
-ldr r0, =gActiveUnit
-ldr r0, [r0]
+ldrb r0, [r4, #0xC] // user
 
 cmp r0, r1
 beq Return // using it on myself

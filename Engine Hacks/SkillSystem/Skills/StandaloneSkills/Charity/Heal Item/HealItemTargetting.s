@@ -25,13 +25,16 @@ ldr r2, SkillTester
 mov lr, r2
 .short 0xf800
 
+mov r1, r0
+ldr r0, =gActionData
+strb r4, [r0, #0x6]
+mov r0, r1
+
 cmp r0, #0
 bne HasCharity
 b DoesNotHaveCharity
 
 HasCharity:
-ldr r0, =gActionData
-strb r4, [r0, #0x6]
 mov r4, r5
 ldr r1, HealItemMakeTargetList
 add r1, #0x1
@@ -39,6 +42,9 @@ blh PrepareTargetSelectionForHeal
 b End
 
 DoesNotHaveCharity:
+ldr r0, =gActionData
+ldrb r1, [r0, #0xC]
+strb r1, [r0, #0xD]
 blh SelfTargetting
 
 End:
