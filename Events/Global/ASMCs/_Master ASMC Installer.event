@@ -1,0 +1,5 @@
+#include "ASMC SetMoveBonus/SetMoveBonus.event"
+#include "ASMCCheckSuite/ASMC Check Installer.event"
+#include "FogRange/Installer.event"
+#include "SendAll/Installer.event"
+#include "SilentGiveItem/Installer.event"

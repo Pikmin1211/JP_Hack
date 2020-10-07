@@ -22,7 +22,7 @@ TurnBasedEvents:
 	END_MAIN
 
 PostPrepEvent:
-	MUSC DarkLabyrinthSong
+	MUSC Dark_Labyrinth
 	CAM1 [0,9]
 	FlashCursor(0,9,60)
 	Text(Ch6BossWarning)
@@ -76,34 +76,34 @@ MoreMonsterUnits:
 	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [3,17] 0 0 1 REDA3R16 [SharpClaw] DefaultAI
 
 	UNIT Monster2 Bael 0x0 Level(9,Enemy,1) [0,3] 0 0 1 REDA0R3 [SharpClaw] DefaultAI
-	UNIT MonsterBoss ElderBael 0x0 Level(1,Enemy,1) [0,9] 0 0 1 REDA0R9 [FetidClaw] NeverMoveAI
+	UNIT Monster_Boss ElderBael 0x0 Level(1,Enemy,1) [0,9] 0 0 1 REDA0R9 [FetidClaw] NeverMoveAI
 
-	UNIT MonsterNoEXP ElderBael 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA22R17 [SharpClaw] DefaultAI
-	UNIT MonsterNoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA21R17 [SilverAxe] DefaultAI
-	UNIT MonsterNoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA23R17 [SilverAxe] DefaultAI
+	UNIT Monster_NoEXP ElderBael 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA22R17 [SharpClaw] DefaultAI
+	UNIT Monster_NoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA21R17 [SilverAxe] DefaultAI
+	UNIT Monster_NoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA23R17 [SilverAxe] DefaultAI
 
 	UNIT
 
 ScaryMonsters:
 
-	UNIT MonsterNoEXP ElderBael 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA22R17 [SharpClaw] DefaultAI
-	UNIT MonsterNoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA21R17 [SilverAxe] DefaultAI
-	UNIT MonsterNoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA23R17 [SilverAxe] DefaultAI
+	UNIT Monster_NoEXP ElderBael 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA22R17 [SharpClaw] DefaultAI
+	UNIT Monster_NoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA21R17 [SilverAxe] DefaultAI
+	UNIT Monster_NoEXP Maelduin 0x0 Level(5,Enemy,1) [22,17] 0 0 1 REDA23R17 [SilverAxe] DefaultAI
 
 	UNIT
 
 NPCUnits:
 	
 	UNIT Vergil Paladin 0x0 Level(7,NPC,0) [25,16] 0 0 1 REDA22R15 [Spear,Rapier,SilverLance,Elixir] DefaultAI
-	UNIT VergilImperial AxeKnight 0x0 Level(19,NPC,1) [25,16] 0 0 1 REDA21R15 [SilverAxe,ShortSpear,Vulnerary] DefaultAI
-	UNIT VergilImperial Cavalier 0x0 Level(19,NPC,1) [25,16] 0 0 1 REDA23R15 [LightBrand,Axereaver,Vulnerary] DefaultAI
-	UNIT VergilImperial Troubadour 0x0 Level(16,NPC,1) [25,16] 0 0 1 REDA22R14 [Mend,Physic] HealUnits
+	UNIT Imperial_Vergil AxeKnight 0x0 Level(19,NPC,1) [25,16] 0 0 1 REDA21R15 [SilverAxe,ShortSpear,Vulnerary] DefaultAI
+	UNIT Imperial_Vergil Cavalier 0x0 Level(19,NPC,1) [25,16] 0 0 1 REDA23R15 [LightBrand,Axereaver,Vulnerary] DefaultAI
+	UNIT Imperial_Vergil Troubadour 0x0 Level(16,NPC,1) [25,16] 0 0 1 REDA22R14 [Mend,Physic] HealUnits
 
 	UNIT
 
 
 NewUnitsAppear:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	SpawnReinforcements(NewUnits)
 	FlashCursor(Otaku,60)
 	Text(Ch6OtakuGohard)
@@ -126,7 +126,7 @@ LocationBasedEvents:
 	Chest(Dragonshield,15,14)
 	Chest(KillerAxe,14,15)
 	Chest(BlueGem,21,3)
-	Chest(SpeedRing,22,4)
+	DurabilityChest(RingItem,SpdRing,22,4)
 	END_MAIN
 
 Dunno1:
@@ -168,19 +168,19 @@ EnemyUnits:
 
 	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [14,14] 2 0 0 0 [Javelin,SteelSword,ChestKey_5] AttackInRangeAI
 	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [15,15] 0 0 0 0 [LightBrand,SapphireLance] AttackInRangeAI
-	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [13,14] 0 0 0 0 [CompositeBow] AttackInRangeAI
+	UNIT Monster2 Bonewalker_Bow 0x0 Level(8,Enemy,1) [13,14] 0 0 0 0 [CompositeBow] AttackInRangeAI
 
 	UNIT Monster2 Revenant 0x0 Level(7,Enemy,1) [12,2] 0 0 0 0 [SharpClaw] AttackInRangeAI
 	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [12,3] 0 0 0 0 [RottenClaw] AttackInRangeAI
-	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [9,2] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Monster2 Bonewalker_Bow 0x0 Level(8,Enemy,1) [9,2] 0 0 0 0 [SteelBow] AttackInRangeAI
 
 	UNIT Monster2 Revenant 0x0 Level(8,Enemy,1) [8,13] 0 0 0 0 [FetidClaw] AttackInRangeAI
 	UNIT Monster2 Revenant 0x0 Level(8,Enemy,1) [9,12] 0 0 0 0 [RottenClaw] AttackInRangeAI
 
 	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [5,10] 0 0 0 0 [Horseslayer,ShortSpear] AttackInRangeAI
 	UNIT Monster2 Bonewalker 0x0 Level(9,Enemy,1) [5,11] 0 0 0 0 [SteelLance,IronBlade] AttackInRangeAI
-	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [2,9] 0 0 0 0 [SteelBow] AttackInRangeAI
-	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [2,3] 0 0 0 0 [ShortBow] AttackInRangeAI
+	UNIT Monster2 Bonewalker_Bow 0x0 Level(8,Enemy,1) [2,9] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Monster2 Bonewalker_Bow 0x0 Level(8,Enemy,1) [2,3] 0 0 0 0 [ShortBow] AttackInRangeAI
 
 	UNIT Monster2 Bonewalker 0x0 Level(8,Enemy,1) [4,2] 2 0 0 0 [ShortSpear,SteelSword,Elixir] NeverMoveAI
 
@@ -202,7 +202,7 @@ EnemyUnits:
 	UNIT Monster2 Entombed 0x0 Level(1,Enemy,1) [10,9] 0 0 0 0 [FetidClaw] AttackInRangeAI
 	UNIT Monster2 Revenant 0x0 Level(8,Enemy,1) [13,8] 0 0 0 0 [SharpClaw] AttackInRangeAI
 	UNIT Monster2 Revenant 0x0 Level(9,Enemy,1) [13,10] 0 0 0 0 [PoisonClaw] AttackInRangeAI
-	UNIT Monster2 BonewalkerBow 0x0 Level(8,Enemy,1) [8,8] 0 0 0 0 [IronBow] AttackInRangeAI
+	UNIT Monster2 Bonewalker_Bow 0x0 Level(8,Enemy,1) [8,8] 0 0 0 0 [IronBow] AttackInRangeAI
 
 	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [18,9] 0 0 0 0 [RubySword,Javelin,Vulnerary] AttackInRangeAI
 	UNIT Monster2 Bonewalker 0x0 Level(7,Enemy,1) [19,8] 0 0 0 0 [HeavySpear] AttackInRangeAI
@@ -248,14 +248,14 @@ BeginningScene:
 	TILECHANGE 8
 	LOAD1 0x1 EnemyUnits
 	ENUN
-	MUSC EncounterSong
+	MUSC Encounter_MGS
 	SetBackground(Fort_2)
 	Text(Ch6OP)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
-	MUSC InvestigationSong
+	MUSC Investigation
 	SetBackground(Fort_2)
 	TEXTSTART
 	TEXTSHOW Ch6Ending
@@ -268,7 +268,7 @@ EndingScene:
 	SOUN 0xF0 // legendary weapon flash
 	STAL 100
 	FAWU 16
-	MUSC LonelyTownSoulBlazerSong
+	MUSC Lonely_Town
 	TEXTCONT
 	TEXTEND
 	REMOVEPORTRAITS
@@ -279,9 +279,9 @@ EndingScene:
 	BEQ 1 0xC 0x0
 		Text(Ch6ItemGet)
 		REMOVEPORTRAITS
-		GiveItem(DainScroll,Gohard)
+		GiveItemWithDurability(CrusaderScroll,DainScroll,Gohard)
 	LABEL 1
-	MUSC ArmyASong
+	MUSC Army_A
 	Text(Ch6Ending2)
 	MNC2 7
 	NoFade

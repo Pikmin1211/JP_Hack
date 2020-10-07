@@ -1,5 +1,0 @@
-#define BaseClass Recruit2
-#define PromotedClass1 Halberdier
-#define PromotedClass2 General
-
-#include "Palette/Palette Setup.event"

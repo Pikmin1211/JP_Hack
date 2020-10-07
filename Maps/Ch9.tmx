@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.1" tiledversion="2018.08.22" orientation="orthogonal" renderorder="right-down" width="22" height="27" tilewidth="16" tileheight="16" infinite="0" nextlayerid="13" nextobjectid="1">
  <tileset firstgid="1" name="1800481A" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../../../VisionQuest/_UserData/Maps/Tilesets/1800481A.png" trans="ffffff" width="512" height="512"/>
+  <image source="Tilesets/1800481A.png" trans="ffffff" width="512" height="512"/>
  </tileset>
  <layer id="2" name="Tile Layer 1" width="22" height="27">
   <properties>
@@ -610,7 +610,7 @@
    <tile gid="867"/>
   </data>
  </layer>
- <layer id="3" name="BottomLeftChest" width="22" height="27">
+ <layer id="3" name="BottomLeftChest" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="0"/>
@@ -1215,7 +1215,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="4" name="BottomRightChest" width="22" height="27">
+ <layer id="4" name="BottomRightChest" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="1"/>
@@ -1820,7 +1820,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="5" name="LeftChest" width="22" height="27">
+ <layer id="5" name="LeftChest" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="2"/>
@@ -2425,7 +2425,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="6" name="RightChest" width="22" height="27">
+ <layer id="6" name="RightChest" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="3"/>
@@ -3030,7 +3030,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="7" name="LeftDoor" width="22" height="27">
+ <layer id="7" name="LeftDoor" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="4"/>
    <property name="ID" value="4"/>
@@ -3635,7 +3635,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="8" name="RightDoor" width="22" height="27">
+ <layer id="8" name="RightDoor" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="4"/>
    <property name="ID" value="5"/>
@@ -4240,7 +4240,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="12" name="ChestDoor" width="22" height="27">
+ <layer id="12" name="ChestDoor" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="6"/>
@@ -4845,7 +4845,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="9" name="LeftButton" width="22" height="27">
+ <layer id="9" name="LeftButton" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="7"/>
@@ -5450,7 +5450,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="10" name="RightButton" width="22" height="27">
+ <layer id="10" name="RightButton" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="1"/>
    <property name="ID" value="8"/>
@@ -6055,7 +6055,7 @@
    <tile/>
   </data>
  </layer>
- <layer id="11" name="MainGate" width="22" height="27">
+ <layer id="11" name="MainGate" width="22" height="27" visible="0">
   <properties>
    <property name="Height" value="3"/>
    <property name="ID" value="9"/>

@@ -21,7 +21,7 @@ TurnBasedEvents:
 
 TurnOneEvent:
 	CAM1 Sanders
-	MUSC KnightErrandSong
+	MUSC Knight_Errand
 	FlashCursor(Scott,60)
 	Text(PrologueHint1)
 	CAM1 [1,9]
@@ -78,7 +78,7 @@ LocationBasedEvents:
 	END_MAIN
 
 LeftVillage:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	Text(HouseBG,PrologueOskarBlancHouse)
 	SpawnReinforcements(VillageUnits)
 	FlashCursor(Oskar,60)
@@ -114,12 +114,12 @@ Units1:
 	UNIT Finn LanceKnight 0x0 Level(3,Ally,0) [0,0] 0 0 1 REDA2R2 [IronLance,Javelin,Vulnerary] NoAI
 	UNIT Scott Cavalier 0x0 Level(2,Ally,0) [0,0] 0 0 1 REDA4R2 [IronSword,IronLance] NoAI
 	UNIT Renge Cleric 0x0 Level(1,Ally,0) [0,0] 0 0 1 REDA3R1 [Heal,Vulnerary] NoAI
-	UNIT Marisa MageF 0x0 Level(2,Ally,0) [0,0] 0 0 1 REDA3R2 [Fire,Vulnerary] NoAI
+	UNIT Marisa Mage_F 0x0 Level(2,Ally,0) [0,0] 0 0 1 REDA3R2 [Fire,Vulnerary] NoAI
 	UNIT
 
 VillageUnits:
 	UNIT Oskar Fighter 0x0 Level(3,Ally,0) [1,9] 0 0 1 REDA1R10 [SteelAxe,Vulnerary] NoAI
-	UNIT Blanc FighterF 0x0 Level(2,Ally,0) [1,9] 0 0 1 REDA2R10 [IronAxe,Hatchet,Vulnerary] NoAI
+	UNIT Blanc Fighter_F 0x0 Level(2,Ally,0) [1,9] 0 0 1 REDA2R10 [IronAxe,Hatchet,Vulnerary] NoAI
 	UNIT
 
 EnemyUnits:
@@ -184,7 +184,7 @@ BeginningScene:
 		MNC2 0x4E //debug room
 	#endif
 	#ifndef _DEBUG_ROOM_
-	MUSC ASunnyPathSong
+	MUSC A_Sunny_Path
 	SetBackground(Castle_Garden_Past)
 	Text(PrologueOP)
 	FADI 16
@@ -193,7 +193,7 @@ BeginningScene:
 	TEXTSTART
 		TEXTSHOW PrologueOP2
 		TEXTEND
-		MUSC InvestigationSong
+		MUSC Investigation
 		TEXTCONT
 		TEXTEND
 	FADI 16
@@ -205,7 +205,7 @@ BeginningScene:
 	ENUN
 	FlashCursor(Sanders,60)
 	Text(PrologueOP3)
-	MUSC ToccataAndDoomSong
+	MUSC Toccata_and_Doom
 	CAM1 Batta
 	FlashCursor(Batta,60)
 	Text(PrologueOP4)
@@ -214,7 +214,7 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	MUSC WereRangersSong
+	MUSC Were_Rangers
 	SetBackground(Outside_Village_Evening)
 	Text(PrologueEnding)
 	MNC2 0x1

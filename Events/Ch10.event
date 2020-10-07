@@ -42,7 +42,7 @@ SVAL 0xC 0
 LABEL 98
 */
 
-#define SpawnTentUnits(counter_id,exp_units,no_exp_units) "Increment(counter_id); COUNTER_CHECK counter_id; SVAL 1 SpawnOffset; BLT 97 0xC 0x1; COUNTER_SET counter_id 0; CHECK_TURNS; SVAL 1 ExpDeadline; BEQ 96 0x1 0xC; SpawnReinforcements(exp_units); GOTO 97; LABEL 96; SpawnReinforcements(no_exp_units); LABEL 97"
+#define SpawnImperial_Tents(counter_id,exp_units,no_exp_units) "Increment(counter_id); COUNTER_CHECK counter_id; SVAL 1 SpawnOffset; BLT 97 0xC 0x1; COUNTER_SET counter_id 0; CHECK_TURNS; SVAL 1 ExpDeadline; BEQ 96 0x1 0xC; SpawnReinforcements(exp_units); GOTO 97; LABEL 96; SpawnReinforcements(no_exp_units); LABEL 97"
 
 /*
 Increment(counter_id)
@@ -64,7 +64,7 @@ LABEL 97
 SpawnAlbatross:
 	CheckForTent(19,6)
 	BEQ 1 0x0 0xC
-		SpawnTentUnits(2,AlbatrossUnits,AlbatrossUnitsNoEXP)
+		SpawnImperial_Tents(2,AlbatrossUnits,AlbatrossUnits_NoEXP)
 	LABEL 1
 	NoFade
 	ENDA
@@ -74,15 +74,15 @@ AlbatrossUnits:
 	UNIT Albatross ArchKnight 0 Level(13,Enemy,1) [19,6] 0 0 1 REDA17R6 [ShortBow] DefaultAI
 	UNIT
 
-AlbatrossUnitsNoEXP:
-	UNIT AlbatrossNoEXP Archer 0 Level(15,Enemy,1) [19,6] 0 0 1 REDA18R5 [SteelBow] DefaultAI
-	UNIT AlbatrossNoEXP ArchKnight 0 Level(15,Enemy,1) [19,6] 0 0 1 REDA17R6 [ShortBow] DefaultAI
+AlbatrossUnits_NoEXP:
+	UNIT Albatross_NoEXP Archer 0 Level(15,Enemy,1) [19,6] 0 0 1 REDA18R5 [SteelBow] DefaultAI
+	UNIT Albatross_NoEXP ArchKnight 0 Level(15,Enemy,1) [19,6] 0 0 1 REDA17R6 [ShortBow] DefaultAI
 	UNIT
 
 SpawnCobra:
 	CheckForTent(22,13)
 	BEQ 1 0x0 0xC
-		SpawnTentUnits(3,CobraUnits,CobraUnitsNoEXP)
+		SpawnImperial_Tents(3,CobraUnits,CobraUnits_NoEXP)
 	LABEL 1
 	NoFade
 	ENDA
@@ -93,16 +93,16 @@ CobraUnits:
 	UNIT Cobra Shaman 0 Level(13,Enemy,1) [22,13] 0 0 1 REDA22R11 [Miasma] DefaultAI
 	UNIT
 
-CobraUnitsNoEXP:
-	UNIT CobraNoEXP Mage 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA21R12 [Thunder] DefaultAI
-	UNIT CobraNoEXP Mage 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA23R12 [Elfire] DefaultAI
-	UNIT CobraNoEXP Shaman 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA22R11 [Miasma] DefaultAI
+CobraUnits_NoEXP:
+	UNIT Cobra_NoEXP Mage 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA21R12 [Thunder] DefaultAI
+	UNIT Cobra_NoEXP Mage 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA23R12 [Elfire] DefaultAI
+	UNIT Cobra_NoEXP Shaman 0 Level(15,Enemy,1) [22,13] 0 0 1 REDA22R11 [Miasma] DefaultAI
 	UNIT
 
 SpawnPanther:
 	CheckForTent(2,1)
 	BEQ 1 0x0 0xC
-		SpawnTentUnits(4,PantherUnits,PantherUnitsNoEXP)
+		SpawnImperial_Tents(4,PantherUnits,PantherUnits_NoEXP)
 	LABEL 1
 	NoFade
 	ENDA
@@ -113,16 +113,16 @@ PantherUnits:
 	UNIT Panther Fighter 0 Level(13,Enemy,1) [2,1] 0 0 1 REDA2R2 [Greataxe] DefaultAI
 	UNIT
 
-PantherUnitsNoEXP:
-	UNIT PantherNoEXP Mercenary 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA1R2 [SteelSword] DefaultAI
-	UNIT PantherNoEXP Mercenary 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA3R2 [RubySword] DefaultAI
-	UNIT PantherNoEXP Fighter 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA2R2 [Greataxe] DefaultAI
+PantherUnits_NoEXP:
+	UNIT Panther_NoEXP Mercenary 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA1R2 [SteelSword] DefaultAI
+	UNIT Panther_NoEXP Mercenary 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA3R2 [RubySword] DefaultAI
+	UNIT Panther_NoEXP Fighter 0 Level(15,Enemy,1) [2,1] 0 0 1 REDA2R2 [Greataxe] DefaultAI
 	UNIT
 
 SpawnStallion:
 	CheckForTent(9,18)
 	BEQ 1 0x0 0xC
-		SpawnTentUnits(5,StallionUnits,StallionUnitsNoEXP)
+		SpawnImperial_Tents(5,StallionUnits,StallionUnits_NoEXP)
 	LABEL 1
 	NoFade
 	ENDA
@@ -133,16 +133,16 @@ StallionUnits:
 	UNIT Stallion AxeKnight 0 Level(13,Enemy,1) [9,18] 0 0 1 REDA9R19 [SteelAxe,HandAxe] DefaultAI
 	UNIT
 
-StallionUnitsNoEXP:
-	UNIT StallionNoEXP Cavalier 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA8R19 [SteelSword,Javelin] DefaultAI
-	UNIT StallionNoEXP Cavalier 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA10R19 [SapphireLance,SlimSword] DefaultAI
-	UNIT StallionNoEXP AxeKnight 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA9R19 [SteelAxe,HandAxe] DefaultAI
+StallionUnits_NoEXP:
+	UNIT Stallion_NoEXP Cavalier 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA8R19 [SteelSword,Javelin] DefaultAI
+	UNIT Stallion_NoEXP Cavalier 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA10R19 [SapphireLance,SlimSword] DefaultAI
+	UNIT Stallion_NoEXP AxeKnight 0 Level(15,Enemy,1) [9,18] 0 0 1 REDA9R19 [SteelAxe,HandAxe] DefaultAI
 	UNIT
 
 SpawnWarthog:
 	CheckForTent(2,15)
 	BEQ 1 0x0 0xC
-		SpawnTentUnits(6,WarthogUnits,WarthogUnitsNoEXP)
+		SpawnImperial_Tents(6,WarthogUnits,WarthogUnits_NoEXP)
 	LABEL 1
 	NoFade
 	ENDA
@@ -152,17 +152,18 @@ WarthogUnits:
 	UNIT Warthog LanceArmor 0 Level(13,Enemy,1) [2,15] 0 0 1 REDA3R14 [ShortSpear,IronBlade] DefaultAI
 	UNIT
 
-WarthogUnitsNoEXP:
-	UNIT WarthogNoEXP AxeArmor 0 Level(15,Enemy,1) [2,15] 0 0 1 REDA1R14 [ShortAxe,SteelLance] DefaultAI
-	UNIT WarthogNoEXP LanceArmor 0 Level(15,Enemy,1) [2,15] 0 0 1 REDA3R14 [ShortSpear,IronBlade] DefaultAI
+WarthogUnits_NoEXP:
+	UNIT Warthog_NoEXP AxeArmor 0 Level(15,Enemy,1) [2,15] 0 0 1 REDA1R14 [ShortAxe,SteelLance] DefaultAI
+	UNIT Warthog_NoEXP LanceArmor 0 Level(15,Enemy,1) [2,15] 0 0 1 REDA3R14 [ShortSpear,IronBlade] DefaultAI
 	UNIT
 	
 PostPrep:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	SpawnReinforcements(NewAllies)
 	FlashCursor(Arle,60)
 	Text(Ch10JasonArle)
 	SilentGiveItem(24,2,Vulnerary)
+	SetUnitItemDurability(Arle,3,GuardRing)
 	MURE 2
 	NoFade
 	ENDA
@@ -243,11 +244,11 @@ EnemyUnits:
 	UNIT Warthog LanceArmor 0x0 Level(15,Enemy,1) [3,15] 0 0 0 0 [ShortSpear,Greatlance] NeverMoveAI
 	UNIT Warthog LanceArmor 0x0 Level(15,Enemy,1) [1,15] 0 0 0 0 [ShortSpear,SilverSword] NeverMoveAI
 
-	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [2,1] 2 0 0 0 [MasterSeal] NeverMoveAI
-	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [9,18] 2 0 0 0 [RenewalManual] NeverMoveAI
-	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [19,6] 2 0 0 0 [BlueGem] NeverMoveAI
-	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [22,13] 2 0 0 0 [Swiftsoles] NeverMoveAI
-	UNIT TentUnit Tent 0x0 Level(14,Enemy,1) [2,15] 2 0 0 0 [BraveSword] NeverMoveAI
+	UNIT Imperial_Tent Tent 0x0 Level(14,Enemy,1) [2,1] 2 0 0 0 [MasterSeal] NeverMoveAI
+	UNIT Imperial_Tent Tent 0x0 Level(14,Enemy,1) [9,18] 2 0 0 0 [SkillScroll] NeverMoveAI
+	UNIT Imperial_Tent Tent 0x0 Level(14,Enemy,1) [19,6] 2 0 0 0 [BlueGem] NeverMoveAI
+	UNIT Imperial_Tent Tent 0x0 Level(14,Enemy,1) [22,13] 2 0 0 0 [Boots] NeverMoveAI
+	UNIT Imperial_Tent Tent 0x0 Level(14,Enemy,1) [2,15] 2 0 0 0 [BraveSword] NeverMoveAI
 
 	UNIT Panther Hero 0x0 Level(5,Enemy,1) [2,3] 0 0 0 0 [KillingEdge,ShortAxe] AttackInRangeAI
 	UNIT Panther Fighter 0x0 Level(13,Enemy,1) [3,5] 0 0 0 0 [SteelAxe,RedGem] AttackInRangeAI
@@ -288,7 +289,7 @@ EnemyUnits:
 	UNIT
 
 NewAllies:
-	UNIT Arle LightMageF 0x0 Level(14,Ally,0) [25,0] 0 0 1 REDA24R2 [Bayoen,Sagittae,Resire,GuardRing] NoAI
+	UNIT Arle LightMage_F 0x0 Level(14,Ally,0) [25,0] 0 0 1 REDA24R2 [Bayoen,Sagittae,Resire,RingItem] NoAI
 	UNIT Jason ArchKnight 0x0 Level(15,Ally,0) [25,0] 0 0 1 REDA23R2 [KillerBow,HuntingBow,OrionsBolt,Elixir] NoAI
 	UNIT
 
@@ -303,6 +304,7 @@ Traps2:
 BeginningScene:
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	SetUnitItemDurability(9,18,0,RenewalID)
 	// have the tents immediately ready to spawn units
 	COUNTER_SET 1 0
 	COUNTER_SET 2 SpawnOffset
@@ -310,17 +312,17 @@ BeginningScene:
 	COUNTER_SET 4 SpawnOffset
 	COUNTER_SET 5 SpawnOffset
 	COUNTER_SET 6 SpawnOffset
-	MUSC StoryLangrisserSong
-	SetBackground(SnowFieldBG)
+	MUSC Story_Langrisser
+	SetBackground(Snow_Field)
 	Text(Ch10OP)
-	MUSC ArmyASong
+	MUSC Army_A
 	Text(Ch10OP2)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
-	MUSC WereRangersSong
-	SetBackground(SnowFieldBG)
+	MUSC Were_Rangers
+	SetBackground(Snow_Field)
 	Text(Ch10Ending)
 	//CenterTextbox(ThanksForPlayingText)
 	//MNTS 0

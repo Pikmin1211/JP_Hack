@@ -1,5 +1,0 @@
-#define BaseClass Pirate
-#define PromotedClass1 Berserker
-#define PromotedClass2 Warrior
-
-#include "Palette/Palette Setup.event"

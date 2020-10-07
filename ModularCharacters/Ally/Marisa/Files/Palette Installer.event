@@ -1,5 +1,0 @@
-#define BaseClass MageF
-#define PromotedClass1 SageF
-#define PromotedClass2 Witch
-
-#include "Palette/Palette Setup.event"

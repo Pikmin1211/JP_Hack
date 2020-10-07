@@ -1,0 +1,62 @@
+#include "Tile Anims/_Master Tile Anim Installer.event"
+
+ALIGN 4
+FieldsPaletteNightData:
+#incbin "Dmp/NightFields.png_pal.dmp"
+
+ALIGN 4
+CastlePaletteSewerData:
+#incbin "Dmp/SewerCastle.png_pal.dmp"
+
+ALIGN 4
+SnowObjectSetData:
+#incbin "Dmp/Snow.dmp"
+
+ALIGN 4
+SnowPaletteData:
+#incbin "Dmp/Snow.png_pal.dmp"
+
+ALIGN 4
+SnowTileConfigData:
+#incbin "Dmp/Snow_comp.dmp"
+
+ALIGN 4
+SnowPaletteNightData:
+#incbin "Dmp/NightSnow.png_pal.dmp"
+
+ALIGN 4
+CaveObjectSetData:
+#incbin "Dmp/Cave.dmp"
+
+ALIGN 4
+CavePaletteData:
+#incbin "Dmp/Cave.png_pal.dmp"
+
+ALIGN 4
+CaveTileConfigData:
+#incbin "Dmp/Cave_comp.dmp"
+
+ALIGN 4
+FrontierObjectSetData:
+#incbin "Dmp/Frontier.dmp"
+
+ALIGN 4
+FrontierPaletteData:
+#incbin "Dmp/Frontier.png_pal.dmp"
+
+ALIGN 4
+FrontierTileConfigData:
+#incbin "Dmp/Frontier_comp.dmp"
+
+EventPointerTable(FieldsPaletteNight,FieldsPaletteNightData)
+EventPointerTable(CastlePaletteSewer,CastlePaletteSewerData)
+EventPointerTable(SnowObjectSet,SnowObjectSetData)
+EventPointerTable(SnowPalette,SnowPaletteData)
+EventPointerTable(SnowTileConfig,SnowTileConfigData)
+EventPointerTable(SnowPaletteNight,SnowPaletteNightData)
+EventPointerTable(CaveObjectSet,CaveObjectSetData)
+EventPointerTable(CavePalette,CavePaletteData)
+EventPointerTable(CaveTileConfig,CaveTileConfigData)
+EventPointerTable(FrontierObjectSet,FrontierObjectSetData)
+EventPointerTable(FrontierPalette,FrontierPaletteData)
+EventPointerTable(FrontierTileConfig,FrontierTileConfigData)

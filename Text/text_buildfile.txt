@@ -1,39 +1,21 @@
-#include "Fixed Text.txt"
 
-#0xD4C ZeroEntry
-[X]
+#include "Static Text.txt"
 
-## SampleText
-Your text here![X]
+#include "Skill System/Skill System Text.txt"
+
+#include "Data Text/_Data Text Installer.txt"
+
+#include "Chapter Text/_Chapter Text Installer.txt"
+
+## DebugRoomText
+Debug Room[X]
+
+## DebugText
+Squash Bugs![X]
 
 ## TestDialogue
 [MidRight][LoadSanders]
 Test.[A][X]
 
-## PrepScreenUseSkillScroll
-Skill learned.[X]
-
-#include "Chapter Text/_Chapter Text.txt"
-
-#include "Character Text.txt"
-
-#include "Class Text.txt"
-
-#include "Item Text.txt"
-
-#include "Song Text.txt"
-
-#include "Death Quotes.txt"
-
-## BaseConvoSelectConvoText
-Select a conversation.[X]
-
-## ThanksForPlayingText
-This is the end of[N]
-the current version.[N]
-Thank you for playing![AN]
-If you would like to report[N]
-bugs or leave feedback,[AN]
-feel free to do so[N]
-in the FEU thread,[N]
-or on our Discord.[A][X]
+## TestText
+Test.[A][X]

@@ -1,0 +1,153 @@
+#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
+
+ALIGN 4
+AxeKnightClassCardData:
+#incbin "Dmp/Axe Knight.dmp"
+ALIGN 4
+AxeKnightClassCardPal:
+#incbin "Dmp/Axe Knight.png_pal.dmp"
+setCardEntry(AxeKnightClassCard, AxeKnightClassCardData, AxeKnightClassCardPal)
+
+ALIGN 4
+BallisticianClassCardData:
+#incbin "Dmp/Ballistician.dmp"
+ALIGN 4
+BallisticianClassCardPal:
+#incbin "Dmp/Ballistician.png_pal.dmp"
+setCardEntry(BallisticianClassCard, BallisticianClassCardData, BallisticianClassCardPal)
+
+ALIGN 4
+BattlemageClassCardData:
+#incbin "Dmp/Battlemage.dmp"
+ALIGN 4
+BattlemageClassCardPal:
+#incbin "Dmp/Battlemage.png_pal.dmp"
+setCardEntry(BattlemageClassCard, BattlemageClassCardData, BattlemageClassCardPal)
+
+ALIGN 4
+BowKnightClassCardData:
+#incbin "Dmp/Bow Knight.dmp"
+ALIGN 4
+BowKnightClassCardPal:
+#incbin "Dmp/Bow Knight.png_pal.dmp"
+setCardEntry(BowKnightClassCard, BowKnightClassCardData, BowKnightClassCardPal)
+
+ALIGN 4
+ButlerClassCardData:
+#incbin "Dmp/Butler.dmp"
+ALIGN 4
+ButlerClassCardPal:
+#incbin "Dmp/Butler.png_pal.dmp"
+setCardEntry(ButlerClassCard, ButlerClassCardData, ButlerClassCardPal)
+
+ALIGN 4
+DarkFlierClassCardData:
+#incbin "Dmp/Dark Flier.dmp"
+ALIGN 4
+DarkFlierClassCardPal:
+#incbin "Dmp/Dark Flier.png_pal.dmp"
+setCardEntry(DarkFlierClassCard, DarkFlierClassCardData, DarkFlierClassCardPal)
+
+ALIGN 4
+DreadFighterClassCardData:
+#incbin "Dmp/Dread Fighter.dmp"
+ALIGN 4
+DreadFighterClassCardPal:
+#incbin "Dmp/Dread Fighter.png_pal.dmp"
+setCardEntry(DreadFighterClassCard, DreadFighterClassCardData, DreadFighterClassCardPal)
+
+ALIGN 4
+DukeKnightClassCardData:
+#incbin "Dmp/Duke Knight.dmp"
+ALIGN 4
+DukeKnightClassCardPal:
+#incbin "Dmp/Duke Knight.png_pal.dmp"
+setCardEntry(DukeKnightClassCard, DukeKnightClassCardData, DukeKnightClassCardPal)
+
+ALIGN 4
+HalberdierClassCardData:
+#incbin "Dmp/Halberdier.dmp"
+ALIGN 4
+HalberdierClassCardPal:
+#incbin "Dmp/Halberdier.png_pal.dmp"
+setCardEntry(HalberdierClassCard, HalberdierClassCardData, HalberdierClassCardPal)
+
+ALIGN 4
+HarrierClassCardData:
+#incbin "Dmp/Harrier.dmp"
+ALIGN 4
+HarrierClassCardPal:
+#incbin "Dmp/Harrier.png_pal.dmp"
+setCardEntry(HarrierClassCard, HarrierClassCardData, HarrierClassCardPal)
+
+ALIGN 4
+LightMageClassCardData:
+#incbin "Dmp/Light Mage.dmp"
+ALIGN 4
+LightMageClassCardPal:
+#incbin "Dmp/Light Mage.png_pal.dmp"
+setCardEntry(LightMageClassCard, LightMageClassCardData, LightMageClassCardPal)
+
+ALIGN 4
+MaidClassCardData:
+#incbin "Dmp/Maid.dmp"
+ALIGN 4
+MaidClassCardPal:
+#incbin "Dmp/Maid.png_pal.dmp"
+setCardEntry(MaidClassCard, MaidClassCardData, MaidClassCardPal)
+
+ALIGN 4
+MedicClassCardData:
+#incbin "Dmp/Medic.dmp"
+ALIGN 4
+MedicClassCardPal:
+#incbin "Dmp/Medic.png_pal.dmp"
+setCardEntry(MedicClassCard, MedicClassCardData, MedicClassCardPal)
+
+ALIGN 4
+FreeKnightClassCardData:
+#incbin "Dmp/Free Knight.dmp"
+ALIGN 4
+FreeKnightClassCardPal:
+#incbin "Dmp/Free Knight.png_pal.dmp"
+setCardEntry(FreeKnightClassCard, FreeKnightClassCardData, FreeKnightClassCardPal)
+
+ALIGN 4
+SwordSaintClassCardData:
+#incbin "Dmp/Sword Saint.dmp"
+ALIGN 4
+SwordSaintClassCardPal:
+#incbin "Dmp/Sword Saint.png_pal.dmp"
+setCardEntry(SwordSaintClassCard, SwordSaintClassCardData, SwordSaintClassCardPal)
+
+ALIGN 4
+TentClassCardData:
+#incbin "Dmp/Tent.dmp"
+ALIGN 4
+TentClassCardPal:
+#incbin "Dmp/Tent.png_pal.dmp"
+setCardEntry(TentClassCard, TentClassCardData, TentClassCardPal)
+
+ALIGN 4
+TransporterClassCardData:
+#incbin "Dmp/Transporter.dmp"
+ALIGN 4
+TransporterClassCardPal:
+#incbin "Dmp/Transporter.png_pal.dmp"
+setCardEntry(TransporterClassCard, TransporterClassCardData, TransporterClassCardPal)
+
+ALIGN 4
+WarMonkClassCardData:
+#incbin "Dmp/War Monk.dmp"
+ALIGN 4
+WarMonkClassCardPal:
+#incbin "Dmp/War Monk.png_pal.dmp"
+setCardEntry(WarMonkClassCard, WarMonkClassCardData, WarMonkClassCardPal)
+
+ALIGN 4
+WitchClassCardData:
+#incbin "Dmp/Witch.dmp"
+ALIGN 4
+WitchClassCardPal:
+#incbin "Dmp/Witch.png_pal.dmp"
+setCardEntry(WitchClassCard, WitchClassCardData, WitchClassCardPal)

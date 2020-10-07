@@ -1,0 +1,16 @@
+#define TilesetAnimation(speed, size, pointer) "BYTE speed 0; SHORT size; POIN pointer"
+#define AnimType2Installer(PaletteData,Interval,DataSize,PaletteNo) "WORD PaletteData|IsPointer; BYTE Interval DataSize PaletteNo 0x0"
+
+#define SnowObjectSet 0xE9
+#define SnowPalette 0xE8
+#define SnowTileConfig 0xE7
+#define SnowPaletteNight 0xE6
+#define CaveObjectSet 0xE5
+#define CavePalette 0xE4
+#define CaveTileConfig 0xE3
+#define CaveWaterTileAnimations 0xE2
+#define FrontierObjectSet 0xE1
+#define FrontierPalette 0xE0
+#define FrontierTileConfig 0xDF
+#define FieldsPaletteNight 0xDE
+#define CastlePaletteSewer 0xDD

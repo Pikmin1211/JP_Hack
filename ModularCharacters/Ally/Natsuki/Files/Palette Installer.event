@@ -1,5 +1,0 @@
-#define BaseClass Medic
-#define PromotedClass1 Falcoknight
-#define PromotedClass2 Harrier
-
-#include "Palette/Palette Setup.event"

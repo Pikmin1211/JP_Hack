@@ -106,4 +106,5 @@ PrepExtraWindow:
 
 ALIGN 4
 PopupBanner:
+NewPopupGfx:
 #incbin "dmp/PopupBanner.dmp"

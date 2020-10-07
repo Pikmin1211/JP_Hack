@@ -1,27 +1,27 @@
 	.include "MPlayDef.s"
 
-	.equ	taisen4_grp, voicegroup000
-	.equ	taisen4_pri, 0
-	.equ	taisen4_rev, 0
-	.equ	taisen4_mvl, 127
-	.equ	taisen4_key, 0
-	.equ	taisen4_tbs, 1
-	.equ	taisen4_exg, 0
-	.equ	taisen4_cmp, 1
+	.equ	Taisen4_grp, voicegroup000
+	.equ	Taisen4_pri, 0
+	.equ	Taisen4_rev, 0
+	.equ	Taisen4_mvl, 127
+	.equ	Taisen4_key, 0
+	.equ	Taisen4_tbs, 1
+	.equ	Taisen4_exg, 0
+	.equ	Taisen4_cmp, 1
 
 	.section .rodata
-	.global	taisen4
+	.global	Taisen4
 	.align	2
 
 @**************** Track 1 (Midi-Chn.1) ****************@
 
-taisen4_1:
-	.byte	KEYSH , taisen4_key+0
-taisen4_1_B1:
+Taisen4_1:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_1_B1:
 @ 000   ----------------------------------------
-	.byte	TEMPO , 180*taisen4_tbs/2
+	.byte	TEMPO , 180*Taisen4_tbs/2
 	.byte		VOICE , 30
-	.byte		VOL   , 31*taisen4_mvl/mxv
+	.byte		VOL   , 31*Taisen4_mvl/mxv
 	.byte		PAN   , c_v-14
 	.byte		MOD   , 10
 	.byte		BEND  , c_v-64
@@ -851,20 +851,20 @@ taisen4_1_B1:
 	.byte		N28   , Ds4 
 	.byte	W30
 	.byte	GOTO
-	 .word	taisen4_1_B1
-taisen4_1_B2:
+	 .word	Taisen4_1_B1
+Taisen4_1_B2:
 @ 048   ----------------------------------------
 	.byte		BEND  , c_v+0
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.3) ****************@
 
-taisen4_2:
-	.byte	KEYSH , taisen4_key+0
-taisen4_2_B1:
+Taisen4_2:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_2_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 36
-	.byte		VOL   , 85*taisen4_mvl/mxv
+	.byte		VOL   , 85*Taisen4_mvl/mxv
 	.byte		PAN   , c_v-1
 	.byte		BEND  , c_v+0
 	.byte		N10   , En2 , v127
@@ -981,7 +981,7 @@ taisen4_2_B1:
 	.byte		N22   , Bn1 
 	.byte	W12
 @ 005   ----------------------------------------
-taisen4_2_005:
+Taisen4_2_005:
 	.byte	W12
 	.byte		N04   , Bn1 , v127
 	.byte	W06
@@ -1048,7 +1048,7 @@ taisen4_2_005:
 	.byte		N04   
 	.byte	W06
 @ 008   ----------------------------------------
-taisen4_2_008:
+Taisen4_2_008:
 	.byte		N10   , En2 , v127
 	.byte	W12
 	.byte		N04   
@@ -1072,7 +1072,7 @@ taisen4_2_008:
 	.byte	PEND
 @ 009   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_005
+	 .word	Taisen4_2_005
 @ 010   ----------------------------------------
 	.byte		N10   , Cn2 , v127
 	.byte	W12
@@ -1095,7 +1095,7 @@ taisen4_2_008:
 	.byte		N22   , Dn2 
 	.byte	W12
 @ 011   ----------------------------------------
-taisen4_2_011:
+Taisen4_2_011:
 	.byte	W12
 	.byte		N04   , Dn2 , v127
 	.byte	W06
@@ -1118,7 +1118,7 @@ taisen4_2_011:
 	.byte	PEND
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_008
+	 .word	Taisen4_2_008
 @ 013   ----------------------------------------
 	.byte	W12
 	.byte		N04   , Bn1 , v127
@@ -1161,9 +1161,9 @@ taisen4_2_011:
 	.byte	W12
 @ 015   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_011
+	 .word	Taisen4_2_011
 @ 016   ----------------------------------------
-taisen4_2_016:
+Taisen4_2_016:
 	.byte		N10   , Cn2 , v127
 	.byte	W12
 	.byte		N04   
@@ -1190,7 +1190,7 @@ taisen4_2_016:
 	.byte	W06
 	.byte	PEND
 @ 017   ----------------------------------------
-taisen4_2_017:
+Taisen4_2_017:
 	.byte		N10   , Dn2 , v127
 	.byte	W12
 	.byte		N04   
@@ -1217,7 +1217,7 @@ taisen4_2_017:
 	.byte	W06
 	.byte	PEND
 @ 018   ----------------------------------------
-taisen4_2_018:
+Taisen4_2_018:
 	.byte		N10   , Bn1 , v127
 	.byte	W12
 	.byte		N04   
@@ -1270,10 +1270,10 @@ taisen4_2_018:
 	.byte	W06
 @ 020   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_016
+	 .word	Taisen4_2_016
 @ 021   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_017
+	 .word	Taisen4_2_017
 @ 022   ----------------------------------------
 	.byte		N10   , Gn1 , v127
 	.byte	W12
@@ -1431,13 +1431,13 @@ taisen4_2_018:
 	.byte	W07
 @ 028   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_016
+	 .word	Taisen4_2_016
 @ 029   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_016
+	 .word	Taisen4_2_016
 @ 030   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_018
+	 .word	Taisen4_2_018
 @ 031   ----------------------------------------
 	.byte		N22   , Bn1 , v127
 	.byte	W24
@@ -1460,7 +1460,7 @@ taisen4_2_018:
 	.byte		N04   
 	.byte	W06
 @ 032   ----------------------------------------
-taisen4_2_032:
+Taisen4_2_032:
 	.byte		N09   , En2 , v127
 	.byte	W12
 	.byte		N05   
@@ -1487,7 +1487,7 @@ taisen4_2_032:
 	.byte	W06
 	.byte	PEND
 @ 033   ----------------------------------------
-taisen4_2_033:
+Taisen4_2_033:
 	.byte		N08   , Dn2 , v127
 	.byte	W12
 	.byte		N05   
@@ -1514,7 +1514,7 @@ taisen4_2_033:
 	.byte	W12
 	.byte	PEND
 @ 034   ----------------------------------------
-taisen4_2_034:
+Taisen4_2_034:
 	.byte		N08   , Cn2 , v127
 	.byte	W12
 	.byte		N05   
@@ -1541,7 +1541,7 @@ taisen4_2_034:
 	.byte	W06
 	.byte	PEND
 @ 035   ----------------------------------------
-taisen4_2_035:
+Taisen4_2_035:
 	.byte		N08   , Dn2 , v127
 	.byte	W12
 	.byte		N05   
@@ -1571,9 +1571,9 @@ taisen4_2_035:
 	.byte	PEND
 @ 036   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_032
+	 .word	Taisen4_2_032
 @ 037   ----------------------------------------
-taisen4_2_037:
+Taisen4_2_037:
 	.byte		N09   , Dn2 , v127
 	.byte	W12
 	.byte		N05   
@@ -1600,7 +1600,7 @@ taisen4_2_037:
 	.byte	W06
 	.byte	PEND
 @ 038   ----------------------------------------
-taisen4_2_038:
+Taisen4_2_038:
 	.byte		N09   , Cn2 , v127
 	.byte	W12
 	.byte		N05   
@@ -1653,25 +1653,25 @@ taisen4_2_038:
 	.byte	W06
 @ 040   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_032
+	 .word	Taisen4_2_032
 @ 041   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_033
+	 .word	Taisen4_2_033
 @ 042   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_034
+	 .word	Taisen4_2_034
 @ 043   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_035
+	 .word	Taisen4_2_035
 @ 044   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_032
+	 .word	Taisen4_2_032
 @ 045   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_037
+	 .word	Taisen4_2_037
 @ 046   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_2_038
+	 .word	Taisen4_2_038
 @ 047   ----------------------------------------
 	.byte		N09   , Cn2 , v127
 	.byte	W12
@@ -1700,19 +1700,19 @@ taisen4_2_038:
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte	GOTO
-	 .word	taisen4_2_B1
-taisen4_2_B2:
+	 .word	Taisen4_2_B1
+Taisen4_2_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.4) ****************@
 
-taisen4_3:
-	.byte	KEYSH , taisen4_key+0
-taisen4_3_B1:
+Taisen4_3:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_3_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 48
-	.byte		VOL   , 58*taisen4_mvl/mxv
+	.byte		VOL   , 58*Taisen4_mvl/mxv
 	.byte		PAN   , c_v-41
 	.byte		MOD   , 5
 	.byte		BEND  , c_v+0
@@ -2329,19 +2329,19 @@ taisen4_3_B1:
 	.byte		BEND  , c_v+0
 	.byte	W02
 	.byte	GOTO
-	 .word	taisen4_3_B1
-taisen4_3_B2:
+	 .word	Taisen4_3_B1
+Taisen4_3_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.5) ****************@
 
-taisen4_4:
-	.byte	KEYSH , taisen4_key+0
-taisen4_4_B1:
+Taisen4_4:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_4_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 13
-	.byte		VOL   , 45*taisen4_mvl/mxv
+	.byte		VOL   , 45*Taisen4_mvl/mxv
 	.byte		PAN   , c_v-41
 	.byte		MOD   , 5
 	.byte		BEND  , c_v+0
@@ -2382,7 +2382,7 @@ taisen4_4_B1:
 @ 015   ----------------------------------------
 	.byte	W96
 @ 016   ----------------------------------------
-taisen4_4_016:
+Taisen4_4_016:
 	.byte	W06
 	.byte		N06   , Cn4 , v100
 	.byte	W06
@@ -2416,7 +2416,7 @@ taisen4_4_016:
 	.byte	W06
 	.byte	PEND
 @ 017   ----------------------------------------
-taisen4_4_017:
+Taisen4_4_017:
 	.byte		N06   , Cn4 , v100
 	.byte	W06
 	.byte		        Dn4 
@@ -2451,7 +2451,7 @@ taisen4_4_017:
 	.byte	W06
 	.byte	PEND
 @ 018   ----------------------------------------
-taisen4_4_018:
+Taisen4_4_018:
 	.byte		N06   , Dn4 , v100
 	.byte	W06
 	.byte		        Bn3 
@@ -2486,7 +2486,7 @@ taisen4_4_018:
 	.byte	W06
 	.byte	PEND
 @ 019   ----------------------------------------
-taisen4_4_019:
+Taisen4_4_019:
 	.byte		N06   , Bn3 , v100
 	.byte	W06
 	.byte		        Gn2 
@@ -2521,7 +2521,7 @@ taisen4_4_019:
 	.byte	W06
 	.byte	PEND
 @ 020   ----------------------------------------
-taisen4_4_020:
+Taisen4_4_020:
 	.byte		N06   , Gn4 , v100
 	.byte	W06
 	.byte		        Cn4 
@@ -2656,19 +2656,19 @@ taisen4_4_020:
 	.byte	W06
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_4_016
+	 .word	Taisen4_4_016
 @ 025   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_4_017
+	 .word	Taisen4_4_017
 @ 026   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_4_018
+	 .word	Taisen4_4_018
 @ 027   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_4_019
+	 .word	Taisen4_4_019
 @ 028   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_4_020
+	 .word	Taisen4_4_020
 @ 029   ----------------------------------------
 	.byte		N06   , Cn4 , v100
 	.byte	W06
@@ -2915,20 +2915,20 @@ taisen4_4_020:
 @ 047   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	taisen4_4_B1
-taisen4_4_B2:
+	 .word	Taisen4_4_B1
+Taisen4_4_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.6) ****************@
 
-taisen4_5:
-	.byte	KEYSH , taisen4_key+0
-taisen4_5_B1:
+Taisen4_5:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_5_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 10
 	.byte		PAN   , c_v-18
-	.byte		VOL   , 28*taisen4_mvl/mxv
+	.byte		VOL   , 28*Taisen4_mvl/mxv
 	.byte		MOD   , 2
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -2963,7 +2963,7 @@ taisen4_5_B1:
 @ 015   ----------------------------------------
 	.byte	W96
 @ 016   ----------------------------------------
-taisen4_5_016:
+Taisen4_5_016:
 	.byte		N05   , Cn4 , v127
 	.byte	W06
 	.byte		        Gn3 
@@ -2998,7 +2998,7 @@ taisen4_5_016:
 	.byte	W06
 	.byte	PEND
 @ 017   ----------------------------------------
-taisen4_5_017:
+Taisen4_5_017:
 	.byte		N05   , Dn4 , v127
 	.byte	W06
 	.byte		        An3 
@@ -3033,7 +3033,7 @@ taisen4_5_017:
 	.byte	W06
 	.byte	PEND
 @ 018   ----------------------------------------
-taisen4_5_018:
+Taisen4_5_018:
 	.byte		N05   , Bn3 , v127
 	.byte	W06
 	.byte		        Fs3 
@@ -3068,7 +3068,7 @@ taisen4_5_018:
 	.byte	W06
 	.byte	PEND
 @ 019   ----------------------------------------
-taisen4_5_019:
+Taisen4_5_019:
 	.byte		N05   , Gn2 , v127
 	.byte	W06
 	.byte		        Bn2 
@@ -3104,7 +3104,7 @@ taisen4_5_019:
 	.byte	PEND
 @ 020   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_5_016
+	 .word	Taisen4_5_016
 @ 021   ----------------------------------------
 	.byte		N05   , Bn2 , v127
 	.byte	W06
@@ -3206,22 +3206,22 @@ taisen4_5_019:
 	.byte	W06
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_5_016
+	 .word	Taisen4_5_016
 @ 025   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_5_017
+	 .word	Taisen4_5_017
 @ 026   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_5_018
+	 .word	Taisen4_5_018
 @ 027   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_5_019
+	 .word	Taisen4_5_019
 @ 028   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_5_016
+	 .word	Taisen4_5_016
 @ 029   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_5_016
+	 .word	Taisen4_5_016
 @ 030   ----------------------------------------
 	.byte		N05   , Bn2 , v127
 	.byte	W06
@@ -3293,19 +3293,19 @@ taisen4_5_019:
 @ 047   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	taisen4_5_B1
-taisen4_5_B2:
+	 .word	Taisen4_5_B1
+Taisen4_5_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.7) ****************@
 
-taisen4_6:
-	.byte	KEYSH , taisen4_key+0
-taisen4_6_B1:
+Taisen4_6:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_6_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 31
-	.byte		VOL   , 47*taisen4_mvl/mxv
+	.byte		VOL   , 47*Taisen4_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -3410,20 +3410,20 @@ taisen4_6_B1:
 @ 047   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	taisen4_6_B1
-taisen4_6_B2:
+	 .word	Taisen4_6_B1
+Taisen4_6_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 7 (Midi-Chn.8) ****************@
 
-taisen4_7:
-	.byte	KEYSH , taisen4_key+0
-taisen4_7_B1:
+Taisen4_7:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_7_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 61
 	.byte		MOD   , 2
-	.byte		VOL   , 86*taisen4_mvl/mxv
+	.byte		VOL   , 86*Taisen4_mvl/mxv
 	.byte		PAN   , c_v+30
 	.byte		BEND  , c_v-55
 	.byte	W01
@@ -3666,7 +3666,7 @@ taisen4_7_B1:
 	.byte		N90   , Fs3 
 	.byte	W14
 @ 017   ----------------------------------------
-taisen4_7_017:
+Taisen4_7_017:
 	.byte	W92
 	.byte	W02
 	.byte		N32   , Fs3 , v127
@@ -3701,7 +3701,7 @@ taisen4_7_017:
 	.byte	W14
 @ 021   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_7_017
+	 .word	Taisen4_7_017
 @ 022   ----------------------------------------
 	.byte	W44
 	.byte	W02
@@ -4298,19 +4298,19 @@ taisen4_7_017:
 	.byte		BEND  , c_v+0
 	.byte	W04
 	.byte	GOTO
-	 .word	taisen4_7_B1
-taisen4_7_B2:
+	 .word	Taisen4_7_B1
+Taisen4_7_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 8 (Midi-Chn.12) ****************@
 
-taisen4_8:
-	.byte	KEYSH , taisen4_key+0
-taisen4_8_B1:
+Taisen4_8:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_8_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 11
-	.byte		VOL   , 75*taisen4_mvl/mxv
+	.byte		VOL   , 75*Taisen4_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
 	.byte	W24
@@ -4446,19 +4446,19 @@ taisen4_8_B1:
 @ 047   ----------------------------------------
 	.byte	W96
 	.byte	GOTO
-	 .word	taisen4_8_B1
-taisen4_8_B2:
+	 .word	Taisen4_8_B1
+Taisen4_8_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 9 (Midi-Chn.13) ****************@
 
-taisen4_9:
-	.byte	KEYSH , taisen4_key+0
-taisen4_9_B1:
+Taisen4_9:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_9_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 48
-	.byte		VOL   , 65*taisen4_mvl/mxv
+	.byte		VOL   , 65*Taisen4_mvl/mxv
 	.byte		PAN   , c_v+22
 	.byte		BEND  , c_v+0
 	.byte	W96
@@ -4525,21 +4525,21 @@ taisen4_9_B1:
 @ 031   ----------------------------------------
 	.byte	W96
 @ 032   ----------------------------------------
-taisen4_9_032:
+Taisen4_9_032:
 	.byte	W02
 	.byte		N88   , En4 , v100
 	.byte	W92
 	.byte	W02
 	.byte	PEND
 @ 033   ----------------------------------------
-taisen4_9_033:
+Taisen4_9_033:
 	.byte	W02
 	.byte		N90   , Dn4 , v100
 	.byte	W92
 	.byte	W02
 	.byte	PEND
 @ 034   ----------------------------------------
-taisen4_9_034:
+Taisen4_9_034:
 	.byte	W02
 	.byte		N84   , Cn4 , v100
 	.byte	W92
@@ -4547,16 +4547,16 @@ taisen4_9_034:
 	.byte	PEND
 @ 035   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_033
+	 .word	Taisen4_9_033
 @ 036   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_032
+	 .word	Taisen4_9_032
 @ 037   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_033
+	 .word	Taisen4_9_033
 @ 038   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_034
+	 .word	Taisen4_9_034
 @ 039   ----------------------------------------
 	.byte	W02
 	.byte		N54   , Cn4 , v100
@@ -4566,25 +4566,25 @@ taisen4_9_034:
 	.byte	W02
 @ 040   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_032
+	 .word	Taisen4_9_032
 @ 041   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_033
+	 .word	Taisen4_9_033
 @ 042   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_034
+	 .word	Taisen4_9_034
 @ 043   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_033
+	 .word	Taisen4_9_033
 @ 044   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_032
+	 .word	Taisen4_9_032
 @ 045   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_033
+	 .word	Taisen4_9_033
 @ 046   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_9_034
+	 .word	Taisen4_9_034
 @ 047   ----------------------------------------
 	.byte	W02
 	.byte		N30   , Cn4 , v100
@@ -4597,20 +4597,20 @@ taisen4_9_034:
 	.byte		BEND  , c_v+0
 	.byte	W07
 	.byte	GOTO
-	 .word	taisen4_9_B1
-taisen4_9_B2:
+	 .word	Taisen4_9_B1
+Taisen4_9_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 10 (Midi-Chn.14) ****************@
 
-taisen4_10:
-	.byte	KEYSH , taisen4_key+0
-taisen4_10_B1:
+Taisen4_10:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_10_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 11
 	.byte		PAN   , c_v-25
-	.byte		VOL   , 73*taisen4_mvl/mxv
+	.byte		VOL   , 73*Taisen4_mvl/mxv
 	.byte		MOD   , 3
 	.byte		BEND  , c_v+0
 	.byte		N11   , En3 , v127
@@ -5338,19 +5338,19 @@ taisen4_10_B1:
 	.byte		BEND  , c_v+0
 	.byte	W04
 	.byte	GOTO
-	 .word	taisen4_10_B1
-taisen4_10_B2:
+	 .word	Taisen4_10_B1
+Taisen4_10_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @**************** Track 11 (Midi-Chn.16) ****************@
 
-taisen4_11:
-	.byte	KEYSH , taisen4_key+0
-taisen4_11_B1:
+Taisen4_11:
+	.byte	KEYSH , Taisen4_key+0
+Taisen4_11_B1:
 @ 000   ----------------------------------------
 	.byte		VOICE , 123
-	.byte		VOL   , 61*taisen4_mvl/mxv
+	.byte		VOL   , 61*Taisen4_mvl/mxv
 	.byte		PAN   , c_v+0
 	.byte		BEND  , c_v+0
 	.byte		N11   , Cn1 , v127
@@ -5374,7 +5374,7 @@ taisen4_11_B1:
 	.byte		        Cn1 , v127
 	.byte	W12
 @ 001   ----------------------------------------
-taisen4_11_001:
+Taisen4_11_001:
 	.byte		N12   , Gs1 , v100
 	.byte	W12
 	.byte		        Cn1 , v127
@@ -5395,7 +5395,7 @@ taisen4_11_001:
 	.byte	W12
 	.byte	PEND
 @ 002   ----------------------------------------
-taisen4_11_002:
+Taisen4_11_002:
 	.byte		N12   , Gs1 , v100
 	.byte	W12
 	.byte		        Cn1 , v127
@@ -5435,7 +5435,7 @@ taisen4_11_002:
 	.byte		N36   , Gs1 , v100
 	.byte	W12
 @ 004   ----------------------------------------
-taisen4_11_004:
+Taisen4_11_004:
 	.byte	W12
 	.byte		N06   , Cn1 , v127
 	.byte	W06
@@ -5478,7 +5478,7 @@ taisen4_11_004:
 	.byte		N12   , Cn1 
 	.byte	W12
 @ 006   ----------------------------------------
-taisen4_11_006:
+Taisen4_11_006:
 	.byte		N12   , Gs1 , v100
 	.byte	W12
 	.byte		        Cn1 , v127
@@ -5544,12 +5544,12 @@ taisen4_11_006:
 	.byte	W12
 @ 009   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_001
+	 .word	Taisen4_11_001
 @ 010   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_002
+	 .word	Taisen4_11_002
 @ 011   ----------------------------------------
-taisen4_11_011:
+Taisen4_11_011:
 	.byte		N12   , Gs1 , v100
 	.byte	W12
 	.byte		        Cn1 , v127
@@ -5573,9 +5573,9 @@ taisen4_11_011:
 	.byte	PEND
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_004
+	 .word	Taisen4_11_004
 @ 013   ----------------------------------------
-taisen4_11_013:
+Taisen4_11_013:
 	.byte		N12   , Gs1 , v100
 	.byte	W12
 	.byte		        Cn1 , v127
@@ -5597,7 +5597,7 @@ taisen4_11_013:
 	.byte	PEND
 @ 014   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_006
+	 .word	Taisen4_11_006
 @ 015   ----------------------------------------
 	.byte		N12   , Gs1 , v100
 	.byte	W12
@@ -5623,7 +5623,7 @@ taisen4_11_013:
 	.byte		        Cn1 
 	.byte	W12
 @ 016   ----------------------------------------
-taisen4_11_016:
+Taisen4_11_016:
 	.byte		N12   , Cn1 , v127
 	.byte	W12
 	.byte		N06   
@@ -5646,22 +5646,22 @@ taisen4_11_016:
 	.byte	PEND
 @ 017   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_001
+	 .word	Taisen4_11_001
 @ 018   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_002
+	 .word	Taisen4_11_002
 @ 019   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_011
+	 .word	Taisen4_11_011
 @ 020   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_004
+	 .word	Taisen4_11_004
 @ 021   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_013
+	 .word	Taisen4_11_013
 @ 022   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_006
+	 .word	Taisen4_11_006
 @ 023   ----------------------------------------
 	.byte		N12   , Gs1 , v100
 	.byte	W12
@@ -5689,19 +5689,19 @@ taisen4_11_016:
 	.byte	W12
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_016
+	 .word	Taisen4_11_016
 @ 025   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_001
+	 .word	Taisen4_11_001
 @ 026   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_002
+	 .word	Taisen4_11_002
 @ 027   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_011
+	 .word	Taisen4_11_011
 @ 028   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_004
+	 .word	Taisen4_11_004
 @ 029   ----------------------------------------
 	.byte		N12   , Gs1 , v100
 	.byte	W12
@@ -5722,7 +5722,7 @@ taisen4_11_016:
 	.byte	W12
 @ 030   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_006
+	 .word	Taisen4_11_006
 @ 031   ----------------------------------------
 	.byte		N12   , Gs1 , v100
 	.byte	W12
@@ -5749,22 +5749,22 @@ taisen4_11_016:
 	.byte	W12
 @ 032   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_016
+	 .word	Taisen4_11_016
 @ 033   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_001
+	 .word	Taisen4_11_001
 @ 034   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_002
+	 .word	Taisen4_11_002
 @ 035   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_011
+	 .word	Taisen4_11_011
 @ 036   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_004
+	 .word	Taisen4_11_004
 @ 037   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_013
+	 .word	Taisen4_11_013
 @ 038   ----------------------------------------
 	.byte		N03   , Fs1 , v080
 	.byte		N12   , Gs1 , v100
@@ -5829,7 +5829,7 @@ taisen4_11_016:
 	.byte		N36   , Cs2 , v127
 	.byte	W12
 @ 040   ----------------------------------------
-taisen4_11_040:
+Taisen4_11_040:
 	.byte		N06   , Dn1 , v127
 	.byte		N03   , Fs1 , v080
 	.byte		N12   , Gn2 , v112
@@ -5926,7 +5926,7 @@ taisen4_11_040:
 	.byte	W06
 @ 042   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_040
+	 .word	Taisen4_11_040
 @ 043   ----------------------------------------
 	.byte		N06   , Dn1 , v127
 	.byte		N03   , Fs1 , v080
@@ -5978,7 +5978,7 @@ taisen4_11_040:
 	.byte	W06
 @ 044   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_040
+	 .word	Taisen4_11_040
 @ 045   ----------------------------------------
 	.byte		N06   , Dn1 , v127
 	.byte		N03   , Fs1 , v080
@@ -6030,7 +6030,7 @@ taisen4_11_040:
 	.byte	W06
 @ 046   ----------------------------------------
 	.byte	PATT
-	 .word	taisen4_11_040
+	 .word	Taisen4_11_040
 @ 047   ----------------------------------------
 	.byte		N06   , Dn1 , v127
 	.byte		N03   , Fs1 , v080
@@ -6083,32 +6083,32 @@ taisen4_11_040:
 	.byte		BEND  , c_v+0
 	.byte	W01
 	.byte	GOTO
-	 .word	taisen4_11_B1
-taisen4_11_B2:
+	 .word	Taisen4_11_B1
+Taisen4_11_B2:
 @ 048   ----------------------------------------
 	.byte	FINE
 
 @******************************************************@
 	.align	2
 
-taisen4:
+Taisen4:
 	.byte	11	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	taisen4_pri	@ Priority
-	.byte	taisen4_rev	@ Reverb.
+	.byte	Taisen4_pri	@ Priority
+	.byte	Taisen4_rev	@ Reverb.
 
-	.word	taisen4_grp
+	.word	Taisen4_grp
 
-	.word	taisen4_1
-	.word	taisen4_2
-	.word	taisen4_3
-	.word	taisen4_4
-	.word	taisen4_5
-	.word	taisen4_6
-	.word	taisen4_7
-	.word	taisen4_8
-	.word	taisen4_9
-	.word	taisen4_10
-	.word	taisen4_11
+	.word	Taisen4_1
+	.word	Taisen4_2
+	.word	Taisen4_3
+	.word	Taisen4_4
+	.word	Taisen4_5
+	.word	Taisen4_6
+	.word	Taisen4_7
+	.word	Taisen4_8
+	.word	Taisen4_9
+	.word	Taisen4_10
+	.word	Taisen4_11
 
 	.end

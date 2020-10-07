@@ -1,0 +1,200 @@
+## KnightErrandName
+Knight Errand[X]
+
+## AtDoomsGateName
+At Doom's Gate[X]
+
+## Taisen4Name
+Taisen 4[X]
+
+## SplashHDNName
+Splash[X]
+
+## SkyEventName
+Sky Event[X]
+
+## ToccataAndDoomName
+Toccata and Doom[X]
+
+## WereRangersName
+We're Rangers[X]
+
+## Route209Name
+Route 209[X]
+
+## ASunnyPathName
+Sunny Road[X]
+
+## InvestigationName
+Investigation[X]
+
+## MinibossPMName
+Miniboss (Paper Mario)[X]
+
+## BrianHealUsName
+Brian, Heal Us![X]
+
+## TrickstersLamentName
+Trickster's Lament[X]
+
+## ArmyAName
+Army A[X]
+
+## StoryLangrisserName
+Story (Langrisser)[X]
+
+## EldiganTheLionheartName
+Eldigan the Lionheart[X]
+
+## FatefulShowdownName
+Fateful Showdown[X]
+
+## LonelyTownName
+Lonely Town[X]
+
+## TrialPhoenixWrightName
+Trial[X]
+
+## RedialBombermanName
+Redial[X]
+
+## UndergroundLairName
+Underground Lair[X]
+
+## TheWorldIsTremblingName
+The World is Trembling[X]
+
+## TrainRushName
+Train Rush[X]
+
+## FranticFactoryName
+Frantic Factory[X]
+
+## MrBearName
+Mr. Bear[X]
+
+## CapOnNappersName
+Cap on Nappers[X]
+
+## BattleInTheAbandonedChurchName
+Battle in the Abandoned Church[X]
+
+## GreenGardenNightName
+Green Garden ~ Night[X]
+
+## BattleFFTAName
+Battle (FFTA)[X]
+
+## WhereTheWindRustlesName
+Where the Wind Rustles[X]
+
+## DesertedChateauName
+Deserted Chateau[X]
+
+## EnemyMessage3Name
+Enemy Message 3[X]
+
+## ShopPrepLangrisser2Name
+Shop / Prep (Langrisser 2)[X]
+
+## BlasterMasterStage1Name
+Stage 1 (Blaster Master)[X]
+
+## BossPikmin2Name
+Boss (Pikmin 2)[X]
+
+## AttackShiningForceName
+Attack (Shining Force)[X]
+
+## Battle1ElonaName
+Battle 1 (Elona)[X]
+
+## EncounterMGSName
+Encounter[X]
+
+## DarkLabyrinthName
+Dark Labyrinth[X]
+
+## TheArmyOfLeifName
+The Army of Leif[X]
+
+## BossMadouMonogatariName
+Boss (Madou Monogatari)[X]
+
+## OldFamiliarScentName
+Old Familiar Scent[X]
+
+## BelovedTomboyishGirlName
+Beloved Tomboyish Girl[X]
+
+## HiryuNoKen2Name
+Hiryu No Ken 2[X]
+
+## BattleTalesOfPhantasiaName
+Battle (Tales of Phantasia)[X]
+
+## JinTekken3Name
+Jin (Tekken 3)[X]
+
+## RollingDiceName
+Rolling Dice[X]
+
+## TheFragranceOfBlackCoffeeName
+The Fragrance of Black Coffee[X]
+
+## JENOVAFF7Name
+J-E-N-O-V-A[X]
+
+## BossFE5Name
+Boss (FE5)[X]
+
+## ITRYOUTName
+I TRY OUT[X]
+
+## InheritorOfTheLightName
+Inheritor of the Light[X]
+
+## SeaShanty2Name
+Sea Shanty 2[X]
+
+## TubbaBlubbaName
+Tubba Blubba[X]
+
+## PubFFTAName
+Pub (FFTA)[X]
+
+## Stage1CrystalPalaceName
+Stage 1 (Crystal Palace)[X]
+
+## ArmyOfVerdaneName
+Army of Verdane[X]
+
+## DurantSortieName
+Durant Sortie![X]
+
+## DecisiveBattleName
+Decisive Battle[X]
+
+## LikeAGlintOfLightName
+Like a Glint of Light[X]
+
+## StrongerMonstersName
+Stronger Monsters[X]
+
+## FillmoreActraiserName
+Fillmore[X]
+
+## SearchingForEnemiesName
+Searching for Enemies[X]
+
+## RebelstarBGM1Name
+Rebelstar BGM1[X]
+
+## AccursedCombatName
+Accursed Combat[X]
+
+## ResolutionBerwickName
+Resolution[X]
+
+## LegendThemeName
+Legend Theme[X]

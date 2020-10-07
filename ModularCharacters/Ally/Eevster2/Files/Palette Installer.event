@@ -1,5 +1,0 @@
-#define BaseClass Troubadour
-#define PromotedClass1 Valkyrie
-#define PromotedClass2 MageKnightF
-
-#include "Palette/Palette Setup.event"

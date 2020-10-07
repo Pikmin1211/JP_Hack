@@ -2,7 +2,7 @@
 
 #include eastdlib.event
 
-SetChapterData(15,NewFrontierObjectSet,0,NewFrontierPalette,NewFrontierTileConfig,Ch14AMap,Map,0,0,Ch14ATileChange)
+SetChapterData(15,FrontierObjectSet,0,FrontierPalette,FrontierTileConfig,Ch14AMap,Map,0,0,Ch14ATileChange)
 EventPointerTable(Ch14ATileChange, MapChanges)
 Map:
 #incbin "Ch15_data.dmp"

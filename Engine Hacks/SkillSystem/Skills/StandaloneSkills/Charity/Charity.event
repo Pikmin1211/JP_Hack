@@ -1,0 +1,54 @@
+PUSH
+
+ORG IERevampTable + (0x21 * 16)
+POIN NewHealItemUsability 0x2A100 NewHealItemTargetting NewHealItemEffect
+ORG IERevampTable + (0x22 * 16)
+POIN NewHealItemUsability 0x2A100 NewHealItemTargetting NewHealItemEffect
+
+ORG 0x78248
+jumpToHack(GetSpellAssocCharCount)
+
+POP
+
+ALIGN 4
+NewHealItemUsability:
+#incbin "Generic/GenericUsability.dmp"
+POIN HealItemUsability
+
+ALIGN 4
+HealItemUsability:
+#incbin "Heal Item/HealItemUsability.dmp"
+POIN SkillTester
+WORD CharityID
+POIN HealItemMakeTargetList
+
+ALIGN 4
+HealItemMakeTargetList:
+#incbin "Heal Item/HealItemMakeTargetList.dmp"
+
+ALIGN 4
+NewHealItemEffect:
+#incbin "Generic/GenericEffect.dmp"
+POIN HealItemEffect
+
+ALIGN 4
+HealItemEffect:
+#incbin "Heal Item/HealItemEffect.dmp"
+POIN SkillTester
+WORD CharityID
+
+ALIGN 4
+NewHealItemTargetting:
+#incbin "Generic/GenericTargetting.dmp"
+POIN HealItemTargetting
+
+ALIGN 4
+HealItemTargetting:
+#incbin "Heal Item/HealItemTargetting.dmp"
+POIN SkillTester
+WORD CharityID
+POIN HealItemMakeTargetList
+
+ALIGN 4
+GetSpellAssocCharCount:
+#incbin "Heal Item/GetSpellAssocCharCount.dmp"

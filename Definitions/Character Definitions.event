@@ -1,489 +1,101 @@
-// Ally
+// Player
 
 #define Sanders 0x1
-#define SandersClass Mercenary
-#define SandersMug 0x2
-#define SandersPalette1 0x1
-#define SandersPalette2 0x2
-#define SandersPalette3 0x3
-
 #define Finn 0x2
-#define FinnClass LanceKnight
-#define FinnMug 0x3
-#define FinnPalette1 0x4
-#define FinnPalette2 0x5
-#define FinnPalette3 0x6
-
 #define Scott 0x3
-#define ScottClass Cavalier
-#define ScottMug 0x4
-#define ScottPalette1 0x7
-#define ScottPalette2 0x8
-#define ScottPalette3 0x9
-
 #define Renge 0x4
-#define RengeClass Cleric
-#define RengeMug 0x5
-#define RengePalette1 0xA
-#define RengePalette2 0xB
-#define RengePalette3 0xC
-
 #define Marisa 0x5
-#define MarisaClass MageF
-#define MarisaMug 0x6
-#define MarisaPalette1 0xD
-#define MarisaPalette2 0xE
-#define MarisaPalette3 0xF
-
 #define Oskar 0x6
-#define OskarClass Fighter
-#define OskarMug 0x7
-#define OskarPalette1 0x10
-#define OskarPalette2 0x11
-#define OskarPalette3 0x12
-
 #define Blanc 0x7
-#define BlancClass FighterF
-#define BlancMug 0x8
-#define BlancPalette1 0x13
-#define BlancPalette2 0x14
-#define BlancPalette3 0x15
-
 #define Sayori 0x8
-#define SayoriClass PegasusKnight
-#define SayoriMug 0xA
-#define SayoriPalette1 0x17
-#define SayoriPalette2 0x18
-#define SayoriPalette3 0x19
-
 #define Wolt 0x9
-#define WoltClass Archer
-#define WoltMug 0xB
-#define WoltPalette1 0x1A
-#define WoltPalette2 0x1B
-#define WoltPalette3 0x1C
-
 #define Arden 0xA
-#define ArdenClass Knight
-#define ArdenMug 0xC
-#define ArdenPalette1 0x1D
-#define ArdenPalette2 0x1E
-#define ArdenPalette3 0x1F
-
 #define Wrys 0xB
-#define WrysClass Priest
-#define WrysMug 0x11
-#define WrysPalette1 0x24
-#define WrysPalette2 0x25
-#define WrysPalette3 0x26
-
 #define Neptune 0xC
-#define NeptuneClass MyrmidonF
-#define NeptuneMug 0x12
-#define NeptunePalette1 0x27
-#define NeptunePalette2 0x28
-#define NeptunePalette3 0x29
-
 #define Wilbell 0xD
-#define WilbellClass ShamanF
-#define WilbellMug 0x13
-#define WilbellPalette1 0x2A
-#define WilbellPalette2 0x2B
-#define WilbellPalette3 0x2C
-
 #define Brian 0xE
-#define BrianClass Thief
-#define BrianMug 0x14
-#define BrianPalette1 0x2D
-#define BrianPalette2 0x2E
-#define BrianPalette3 0x2F
-
-#define Otaku 0x10
-#define OtakuClass Mercenary
-#define OtakuMug 0x18
-#define OtakuPalette1 0x35
-#define OtakuPalette2 0x36
-#define OtakuPalette3 0x37
-
-#define Gohard 0x11
-#define GohardClass AxeArmor
-#define GohardMug 0x19
-#define GohardPalette1 0x38
-#define GohardPalette2 0x39
-#define GohardPalette3 0x3A
-
-#define Yanndahl 0x12
-#define Yandahl Yanndahl //oops
-#define YanndahlClass Soldier
-#define YanndahlMug 0x1A
-#define YanndahlPalette1 0x3B
-#define YanndahlPalette2 0x3C
-#define YanndahlPalette3 0x3D
-
-#define Milanor 0x13
-#define MilanorClass Brigand
-#define MilanorMug 0x1E
-#define MilanorPalette1 0x41
-#define MilanorPalette2 0x42
-#define MilanorPalette3 0x43
-
-#define Guts 0x14
-#define GutsClass FreeKnight
-#define GutsMug 0x1F
-#define GutsPalette1 0x44
-#define GutsPalette2 0x45
-#define GutsPalette3 0x46
-
-#define Kohaku 0x15
-#define KohakuClass Maid
-#define KohakuMug 0x20
-#define KohakuPalette1 0x0
-#define KohakuPalette2 0x47
-#define KohakuPalette3 0x0
-
-#define Ky 0x16
-#define KyClass Myrmidon
-#define KyMug 0x21
-#define KyPalette1 0x48
-#define KyPalette2 0x49
-#define KyPalette3 0x4A
-
-#define Derek2 0x17
-
-#define Eevster2 0x18
-
-#define Arle 0x19
-#define ArleClass LightMageF
-#define ArleMug 0x24
-#define ArlePalette1 0x4F
-#define ArlePalette2 0x50
-#define ArlePalette3 0x52
-
-#define Jason 0x1A
-#define JasonClass ArchKnight
-#define JasonMug 0x25
-#define JasonPalette1 0x53
-#define JasonPalette2 0x54
-#define JasonPalette3 0x55
-
-#define Norne 0x1B
-#define NorneClass ArcherF
-#define NorneMug 0x26
-#define NornePalette1 0x56
-#define NornePalette2 0x57
-#define NornePalette3 0x58
-
 #define Donnalen 0xF
-#define DonnalenClass Brawler
-#define DonnalenMug 0x27
-#define DonnalenPalette1 0x59
-#define DonnalenPalette2 0x5A
-#define DonnalenPalette3 0x0
-
-#define Devvy 0x1C
-#define DevvyClass Wanderer
-#define DevvyMug 0x28
-#define DevvyPalette1 0x5B
-#define DevvyPalette2 0x5C
-#define DevvyPalette3 0x0
-
+#define Otaku 0x10
+#define Gohard 0x11
+#define Yandahl 0x12
+#define Milanor 0x13
+#define Guts 0x14
+#define Kohaku 0x15
+#define Ky 0x16
+#define Derek 0x17
+#define Eevster 0x18
+#define Arle 0x19
+#define Jason 0x1A
+#define Devvy 0x1B
+#define Norne 0x1C
 #define Natsuki 0x1D
-#define NatsukiClass Medic
-#define NatsukiMug 0x29
-#define NatsukiPalette1 0x5D
-#define NatsukiPalette2 0x5E
-#define NatsukiPalette3 0x5F
-
 #define Paniel 0x1E
-#define PanielClass Pirate
-#define PanielMug 0x2A
-#define PanielPalette1 0x60
-#define PanielPalette2 0x61
-#define PanielPalette3 0x62
-
 #define Naoto 0x1F
-#define NaotoClass Mercenary
-#define NaotoMug 0x2B
-#define NaotoPalette1 0x63
-#define NaotoPalette2 0x64
-#define NaotoPalette3 0x65
-
 #define Ginko 0x20
-#define GinkoClass Mage
-#define GinkoMug 0x2C
-#define GinkoPalette1 0x66
-#define GinkoPalette2 0x67
-#define GinkoPalette3 0x68
-
-#define Schezo2 0x21
-
+#define Schezo 0x21
 #define Draco 0x22
-#define DracoClass WyvernRider
-#define DracoMug 0x2D
-#define DracoPalette1 0x69
-#define DracoPalette2 0x6A
-#define DracoPalette3 0x6B
-
 #define Wendy 0x23
-#define WendyClass Recruit2
-#define WendyMug 0x2F
-#define WendyPalette1 0x6D
-#define WendyPalette2 0x6E
-#define WendyPalette3 0x6F
-
 #define Anabelle 0x24
-#define AnabelleClass AxeKnight
-#define AnabelleMug 0x30
-#define AnabellePalette1 0x70
-#define AnabellePalette2 0x71
-#define AnabellePalette3 0x72
-
 #define Valerie 0x25
-#define ValerieClass Telos
-#define ValerieMug 0x34
-#define ValeriePalette1 0x78
-#define ValeriePalette2 0x79
-#define ValeriePalette3 0x0
-
 #define Sadao 0x26
-#define SadaoClass Shaman
-#define SadaoMug 0x35
-#define SadaoPalette1 0x7A
-#define SadaoPalette2 0x7B
-#define SadaoPalette3 0x7C
-
 #define Nanaya 0x27
-#define NanayaClass Thief
-#define NanayaMug 0x36
-#define NanayaPalette1 0x7D
-#define NanayaPalette2 0x7E
-#define NanayaPalette3 0x7F
-
 #define Arthur 0x28
-#define ArthurClass FreeKnight
-#define ArthurMug 0x38
-#define ArthurPalette1 0x81
-#define ArthurPalette2 0x82
-#define ArthurPalette3 0x83
+#define Grit 0x29
+#define Valbar 0x2A
+//#define DummyUnit 0x3D
 
-// Boss
+// NPC
 
-#define Batta 0x60
-#define BattaClass Brigand
-#define BattaMug 0x9
-#define BattaPalette1 0x16
-#define BattaPalette2 0x0
-#define BattaPalette3 0x0
-
-#define Kekh 0x61
-#define KekhClass Mercenary
-#define KekhMug 0xD
-#define KekhPalette1 0x20
-#define KekhPalette2 0x0
-#define KekhPalette3 0x0
-
-#define Derek 0x62
-#define DerekClass Cavalier
-#define DerekMug 0xE
-#define DerekPalette1 0x21
-#define DerekPalette2 0x4B
-#define DerekPalette3 0x4C
-
-#define Vergil 0x63
-#define VergilClass Paladin
-#define VergilMug 0xF
-#define VergilPalette1 0x0
-#define VergilPalette2 0x22
-#define VergilPalette3 0x0
-
-#define ONeill 0x64
-#define ONeillClass Fighter
-#define ONeillMug 0x10
-#define ONeillPalette1 0x23
-#define ONeillPalette2 0x0
-#define ONeillPalette3 0x0
-
-#define Todoroki 0x65
-#define TodorokiClass Mercenary
-#define TodorokiMug 0x15
-#define TodorokiPalette1 0x30
-#define TodorokiPalette2 0x51
-#define TodorokiPalette3 0x0
-
-#define Novala 0x66
-#define NovalaClass Shaman
-#define NovalaMug 0x17
-#define NovalaPalette1 0x34
-#define NovalaPalette2 0x0
-#define NovalaPalette3 0x0
-
-#define Schezo 0x67
-#define SchezoClass Battlemage
-#define SchezoMug 0x1B
-#define SchezoPalette1 0x0
-#define SchezoPalette2 0x3E
-#define SchezoPalette3 0x0
-
-#define Tim 0x68
-#define TimClass Warrior
-#define TimMug 0x1C
-#define TimPalette1 0x0
-#define TimPalette2 0x3F
-#define TimPalette3 0x0
-
-#define Bit 0x69
-#define BitClass Berserker
-#define BitMug 0x1D
-#define BitPalette1 0x0
-#define BitPalette2 0x40
-#define BitPalette3 0x0
-
-#define Gromell 0x6A
-#define GromellClass WyvernLord
-#define GromellMug 0x22
-#define GromellPalette1 0x0
-#define GromellPalette2 0x4D
-#define GromellPalette3 0x0
-
-#define Raydrik 0x6B
-#define RaydrikClass General
-#define RaydrikMug 0x23
-#define RaydrikPalette1 0x0
-#define RaydrikPalette2 0x4E
-#define RaydrikPalette3 0x0
-
-#define Cedwick 0x6C
-#define CedwickClass Pirate
-#define CedwickMug 0x2E
-#define CedwickPalette1 0x6C
-#define CedwickPalette2 0x0
-#define CedwickPalette3 0x0
-
-#define DarkMarlen 0x6D
-#define DarkMarlenClass Cavalier
-#define DarkMarlenMug 0x31
-#define DarkMarlenPalette1 0x73
-#define DarkMarlenPalette2 0x74
-#define DarkMarlenPalette3 0x0
-
-#define Ermine 0x6E
-#define ErmineClass Sage
-#define ErmineMug 0x32
-#define ErminePalette1 0x0
-#define ErminePalette2 0x75
-#define ErminePalette3 0x0
-
-#define Zane 0x6F
-#define ZaneClass Monk
-#define ZaneMug 0x33
-#define ZanePalette1 0x76
-#define ZanePalette2 0x77
-#define ZanePalette3 0x0
-
-#define Viridian 0x70
-#define ViridianClass Pirate
-#define ViridianMug 0x37
-#define ViridianPalette1 0x80
-#define ViridianPalette2 0x0
-#define ViridianPalette3 0x0
-
-
-
-#define BattaBeast 0x80
-#define BattaBeastFaction 0x1
-
-#define Imperial 0x81
-#define ImperialFaction 0x3
-
-#define CivilianUnit 0x82
-#define CivilianUnitName 0x305
-#define CivilianUnitDescription 0x351
-#define CivilianUnitFaction 0x2
-
-#define TownGuard 0x83
-#define TownGuardFaction 0x5
-
-#define PriestUnit 0x84
-#define PriestUnitFaction 0x2
-
-#define Cultist 0x85
-#define CultistFaction 0x4 
-
-#define Monster 0x86
-#define MonsterFaction 0x4
-
-#define MonsterNoEXP 0x87
-
-#define Eevster 0x88
-#define EevsterClass Troubadour
-#define EevsterMug 0x16
-#define EevsterPalette1 0x31
-#define EevsterPalette2 0x32
-#define EevsterPalette3 0x33
-
-#define Basement 0x89
-#define BasementFaction 0x5
-
-#define Basement2 0x8A
-
-#define Imperial2 0x8B
-
-#define Wagon 0x8C
-#define WagonName 0x305
-#define WagonDescription 0x351
-#define WagonFaction 0x2
-
-#define Wagon2 0x8D
-
-#define BattaBeast2 0x8E
-
-#define MonsterBoss 0x8F
-
-#define Monster2 0x90
-
-#define DarkKnightUnit 0x91
-#define DarkKnightUnitFaction 0x4
-
-#define Whitewolf 0x92
-#define WhitewolfFaction 0x1
-
-#define Basement3 0x93
-
-#define Officer 0x94
-#define OfficerFaction 0x3
-
-#define TentUnit 0x95
-#define TentUnitName TentName
-#define TentUnitDescription TentDescription
-#define TentUnitFaction 0x3
-
-#define Albatross 0x96
-#define AlbatrossFaction 0x3
-
-#define Cobra 0x97
-#define CobraFaction 0x3
-
-#define Panther 0x98
-#define PantherFaction 0x3
-
-#define Stallion 0x99
-#define StallionFaction 0x3
-
-#define Warthog 0x9A
-#define WarthogFaction 0x3
-
-#define AlbatrossNoEXP 0x9B
-#define CobraNoEXP 0x9C
-#define PantherNoEXP 0x9D
-#define StallionNoEXP 0x9E
-#define WarthogNoEXP 0x9F
-
-#define Marooner 0xA0
-#define MaroonerFaction 0x1
-
-#define Unknown 0xA1
-#define UnknownFaction 0x4
-
-#define Marooner2 0xA2
-
-#define VergilImperial 0xA3
+#define BattaBeast 0x46
+#define Batta 0x47
+#define Imperial 0x48
+#define TownGuard 0x49
+#define NPC_Civilian 0x4A
+#define Kekh 0x4B
+#define Derek_Boss 0x4C
+#define Vergil 0x4D
+#define ONeill 0x4E
+#define Monster 0x4F
+#define Cultist 0x50
+#define Novala 0x51
+#define Imperial2 0x52
+#define Todoroki 0x53
+#define Eevster_NPC 0x54
+#define Basement 0x55
+#define Wagon1 0x56
+#define Wagon2 0x57
+#define BattaBeast2 0x58
+#define Monster2 0x59
+#define Monster_NoEXP 0x5A
+#define Imperial_Vergil 0x5B
+#define Schezo_Boss 0x5C
+#define Dark_Knight 0x5D
+#define Whitewolf 0x5E
+#define Tim 0x5F
+#define Bit 0x60
+#define Basement2 0x61
+#define Raydrik 0x62
+#define Gromell 0x63
+#define Officer 0x64
+#define Albatross 0x65
+#define Albatross_NoEXP 0x66
+#define Cobra 0x67
+#define Cobra_NoEXP 0x68
+#define Panther 0x69
+#define Panther_NoEXP 0x6A
+#define Stallion 0x6B
+#define Stallion_NoEXP 0x6C
+#define Warthog 0x6D
+#define Warthog_NoEXP 0x6E
+#define Imperial_Tent 0x6F
+#define Marooner 0x70
+#define Cedwick 0x71
+#define Dark_Marlen 0x72
+#define Unknown 0x73
+#define Zane 0x74
+#define Marooner2 0x75
+#define Viridian 0x76
+#define Ermine 0x77
+#define Monster_Boss 0x78
+#define PriestUnit 0x79
+#define Basement3 0x7A

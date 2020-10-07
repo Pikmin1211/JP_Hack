@@ -1,0 +1,44 @@
+#ifdef _FE8_
+
+	ORG 0xEFB2E0
+
+	#include "Tables/Repointed/_Master Repointer.event"
+
+    #include "EAstdlib.event"
+    #include "Engine Hacks/SkillSystem/skill_definitions.event"
+    #include "Definitions/_Master Definition Installer.event"
+
+    TextSpace:
+    #include "Text/Install Text Data.event"
+    MESSAGE Text space used is__ (currentOffset - TextSpace)
+
+    GrafixSpace:
+    #include "Graphics/_Master Graphic Installer.event"
+    MESSAGE Grafix space used is (currentOffset - GrafixSpace)
+
+    TableSpace:
+    #include "Tables/Table Installer.event"
+    #include "Tables/Repointed/Post Table.event"
+    #include "Tables/Manual/_Master Manual Table Installer.event"
+    MESSAGE Table space used is_ (currentOffset - TableSpace)
+
+    HaxSpace:
+    #include "Engine Hacks/_MasterHackInstaller.event"
+    MESSAGE Hax space used is___ (currentOffset - HaxSpace)
+
+    EventSpace:
+    #include "Events/_Master Event Installer.event"
+    MESSAGE Event space used is_ (currentOffset - EventSpace)
+
+    MapSpace:
+    #include "Maps/Master Map Installer.event"
+    MESSAGE Map space used is___ (currentOffset - MapSpace)
+
+    MusicSpace:
+    #include "Music/_Master Music Installer.event"
+    MESSAGE Music space used is_ (currentOffset - MusicSpace)
+    
+    MESSAGE ROM ends at_________ currentOffset
+#else
+    ERROR You are not assembling FE8 events!
+#endif

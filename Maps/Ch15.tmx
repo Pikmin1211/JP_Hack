@@ -9,9 +9,9 @@
    <property name="Main" value=""/>
    <property name="MapChangesID" value="Ch14ATileChange"/>
    <property name="MapID" value="Ch14AMap"/>
-   <property name="ObjectType" value="NewFrontierObjectSet"/>
-   <property name="PaletteID" value="NewFrontierPalette"/>
-   <property name="TileConfig" value="NewFrontierTileConfig"/>
+   <property name="ObjectType" value="FrontierObjectSet"/>
+   <property name="PaletteID" value="FrontierPalette"/>
+   <property name="TileConfig" value="FrontierTileConfig"/>
   </properties>
   <data>
    <tile gid="302"/>

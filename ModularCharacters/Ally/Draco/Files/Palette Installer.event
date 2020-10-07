@@ -1,5 +1,0 @@
-#define BaseClass WyvernRider
-#define PromotedClass1 WyvernLord
-#define PromotedClass2 WyvernKnight
-
-#include "Palette/Palette Setup.event"

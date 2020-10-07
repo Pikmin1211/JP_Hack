@@ -1,5 +1,0 @@
-#define BaseClass Telos
-#define PromotedClass1 GrandTelos
-#define PromotedClass2 0x0
-
-#include "Palette/Palette Setup.event"

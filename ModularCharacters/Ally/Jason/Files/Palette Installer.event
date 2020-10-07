@@ -1,5 +1,0 @@
-#define BaseClass ArchKnight
-#define PromotedClass1 BowKnight
-#define PromotedClass2 Ranger
-
-#include "Palette/Palette Setup.event"

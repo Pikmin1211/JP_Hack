@@ -1,0 +1,29 @@
+
+#define WaitOneTurn 0x12
+#define GoToEscapePoint 0xC
+#define DelayedDefaultAI [AttackInRange,WaitOneTurn,DefaultRecovery,DefaultAI4]
+#define HastyAI [NoAI1,GoToEscapePoint,DefaultRecovery,DefaultAI4]
+#define WallAI [0x00,0x0E,0x00,0x00]
+
+#define EnableDoorKey 0x1
+#define EnableLockpick 0x2
+#define EnableAntitoxin 0x4
+#define EnableAll 0x7
+#define NoDoorKey 0x6
+
+#define SetChapterAI(chapterid,ai) "PUSH; ORG 0xD8538 + (chapterid * 0x4); BYTE ai; POP"
+
+SetChapterAI(0,EnableAll)
+SetChapterAI(1,EnableAll)
+SetChapterAI(2,EnableAll)
+SetChapterAI(3,EnableAll)
+SetChapterAI(4,EnableAll)
+SetChapterAI(5,EnableAll)
+SetChapterAI(6,NoDoorKey)
+SetChapterAI(7,EnableAll)
+SetChapterAI(8,EnableAll)
+SetChapterAI(9,EnableAll)
+SetChapterAI(10,EnableAll)
+SetChapterAI(11,EnableAll)
+SetChapterAI(12,EnableAll)
+SetChapterAI(13,EnableAll)

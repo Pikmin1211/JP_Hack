@@ -1,0 +1,67 @@
+#include "Global/_Global Event Installer.event"
+
+#include "World Map Events/World Map Events Installer.event"
+
+{
+	#include "_Debug.event"
+}
+
+{
+	#include "_Prologue.event"
+}
+
+{
+	#include "Ch1.event"
+}
+
+{
+	#include "Ch2.event"
+}
+
+{
+	#include "Ch3.event"
+}
+
+{
+	#include "Ch4.event"
+}
+
+{
+	#include "Ch5.event"
+}
+
+{
+	#include "Ch6.event"
+}
+
+{
+	#include "Ch7.event"
+}
+
+{
+	#include "Ch8.event"
+}
+
+{
+	#include "Ch9.event"
+}
+
+{
+	#include "Ch10.event"
+}
+
+{
+	#include "Ch11.event"
+}
+
+{
+	#include "Ch12.event"
+}
+
+{
+	#include "Ch13.event"
+}
+
+{
+	#include "Ch14.event"
+}

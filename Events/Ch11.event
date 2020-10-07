@@ -68,7 +68,7 @@ ShipAppears:
 	FlashCursor(Donnalen,60)
 	Text(Ch11MoreBoats)
 	CAM1 [11,4]
-	MUSC LikeAGlintOfLightSong
+	MUSC Like_a_Glint_of_Light
 	SpawnReinforcements(MoreUnits)
 	FlashCursor(Anabelle,60)
 	Text(Ch11AnabelleWendy)
@@ -181,18 +181,18 @@ Units1:
 	UNIT Draco WyvernRider 0x0 Level(3,Ally,0) [12,12] 0 0 0 0 [IronLance,Javelin,Vulnerary] NoAI
 	UNIT Paniel Pirate 0x0 Level(3,Ally,0) [12,15] 0 0 0 0 [SteelAxe,Francisca] NoAI
 	UNIT Naoto Mercenary 0x0 Level(3,Ally,0) [9,15] 0 0 0 0 [IronBlade,Vulnerary] NoAI
-	UNIT Schezo2 Battlemage 0x0 Level(1,Ally,0) [8,14] 0 0 0 0 [Thunder,Miasma,RubySword,Elixir] NoAI
-	UNIT Norne ArcherF 0x0 Level(1,Ally,0) [12,4] 0 0 0 0 [IronBow,HuntingBow] NoAI
+	UNIT Schezo Battlemage 0x0 Level(1,Ally,0) [8,14] 0 0 0 0 [Thunder,Miasma,RubySword,Elixir] NoAI
+	UNIT Norne Archer_F 0x0 Level(1,Ally,0) [12,4] 0 0 0 0 [IronBow,HuntingBow] NoAI
 	UNIT
 
 MoreUnits:
 	UNIT Anabelle AxeKnight 0x0 Level(3,Ally,1) [11,4] 0 0 1 REDA11R5 [IronAxe,Pilum,Vulnerary] NoAI
-	UNIT Wendy Recruit2 0x0 Level(1,Ally,1) [11,4] 0 0 1 REDA10R4 [Glaive,Horseslayer,Vulnerary] NoAI
+	UNIT Wendy Recruit_2 0x0 Level(1,Ally,1) [11,4] 0 0 1 REDA10R4 [Glaive,Horseslayer,Vulnerary] NoAI
 	UNIT
 
 EnemyUnits:
 
-	UNIT Cedwick Pirate 0x0 Level(5,Enemy,0) [22,1] 2 0 0 0 [SteelAxe,HandAxe,LunaManual] NeverMoveAI
+	UNIT Cedwick Pirate 0x0 Level(5,Enemy,0) [22,1] 2 0 0 0 [SteelAxe,HandAxe,SkillScroll] NeverMoveAI
 	UNIT Marooner Pirate 0x0 Level(3,Enemy,1) [22,0] 0 0 0 0 [HandAxe] NeverMoveAI
 	UNIT Marooner Pirate 0x0 Level(3,Enemy,1) [23,1] 0 0 0 0 [Francisca] NeverMoveAI
 	UNIT Marooner Soldier 0x0 Level(3,Enemy,1) [20,2] 0 0 0 0 [IronLance] AttackInRangeAI
@@ -243,20 +243,21 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
+	SetUnitItemDurability(Cedwick,2,LunaID)
 	TILECHANGE 1
 	TILECHANGE 2
-	MUSC SeaShanty2Song
+	MUSC Sea_Shanty_2
 	SetBackground(Ship)
 	TEXTSTART
 		TEXTSHOW Ch11OP
 		TEXTEND
-		MUSC ToccataAndDoomSong
+		MUSC Toccata_and_Doom
 		TEXTCONT
 		TEXTEND
 	SetBackground(Ship)
 	Text(Ch11OP2)
 	SetBackground(Ship)
-	MUSC TubbaBlubbaPMSong
+	MUSC Tubba_Blubba
 	Text(Ch11OP3)
 	FADI 16
 	CLEAN
@@ -265,7 +266,7 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	MUSC WhereTheWindRustlesSong
+	MUSC Where_the_Wind_Rustles
 	SetBackground(Ship)
 	Text(Ch11Ending)
 	MNC2 12
@@ -298,8 +299,8 @@ PartySwap:
 	QuickRemu(Guts,19)
 	QuickRemu(Kohaku,20)
 	QuickRemu(Ky,21)
-	QuickRemu(Derek2,22)
-	QuickRemu(Eevster2,23)
+	QuickRemu(Derek,22)
+	QuickRemu(Eevster,23)
 	QuickRemu(Arle,24)
 	QuickRemu(Jason,25)
 	NoFade

@@ -1,0 +1,32 @@
+
+ALIGN 4
+IsNotRingItem:
+{
+	rForArgument
+    	rForResultOfExt($0174EC)
+        	rCallSequence(_GetItem _CheckItem)
+
+_GetItem:
+    // r1 -> r2 -> r0
+    rWithSubject(rArgument)
+
+_CheckItem:
+    // returns 0 if it's your item
+    rSub(rConstant(RingItem))
+}
+
+ALIGN 4
+GetRingStatBonus:
+#incbin "GetRingStatBonus.dmp"
+POIN RingStatBonuses
+
+// align + label before using!
+#define rRingBonus(Stat) "rForEachUnitItem; rIfNot(IsNotRingItem); rForConstant(Stat); rAdd(rCallExternal(GetRingStatBonus))"
+
+/*
+prAddRingBonus:
+    rForEachUnitItem // get item
+        rIfNot(IsNotRingItem) // check if this is our item
+        	rForConstant(Stat)
+            	rAdd(rCallExt(GetRingStatBonus)) // r0 - stat r1 - item + durability
+*/

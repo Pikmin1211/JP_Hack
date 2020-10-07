@@ -24,7 +24,7 @@ TurnBasedEvents:
 	END_MAIN
 
 PostPrep:
-	MUSC RedialSong
+	MUSC Redial_Bomberman
 	CAM1 [10,5]
 	FlashCursor(10,5,60)
 	Text(Ch2PostPrep1)
@@ -50,7 +50,7 @@ Reinforcements1:
 	ENDA
 
 WrysAppears:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	SpawnReinforcements(WrysUnit)
 	FlashCursor(Wrys,60)
 	Text(Ch2Wrys)
@@ -219,10 +219,10 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	MUSC LonelyTownSoulBlazerSong
+	MUSC Lonely_Town
 	SetBackground(Castle_Hall_2)
 	Text(Ch2OP)
-	MUSC ToccataAndDoomSong
+	MUSC Toccata_and_Doom
 	SetBackground(Plain_2)
 	Text(Ch2OP2)
 	SetBackground(Castle_Hall_2)
@@ -236,7 +236,7 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	MUSC UndergroundLairSong
+	MUSC Underground_Lair
 	SetBackground(Castle_Hall_2)
 	Text(Ch2Ending)
 	/*

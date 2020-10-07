@@ -25,17 +25,17 @@ TurnBasedEvents:
 	END_MAIN
 
 DerekGoes:
-	MUSC JenovaSong
-	CAM1 Derek2
-	FlashCursor(Derek2,60)
+	MUSC JENOVA_FF7
+	CAM1 Derek
+	FlashCursor(Derek,60)
 	Text(Ch9DerekTurns)
-	FlashCursor(Derek2,60)
-	CUSN Derek2
+	FlashCursor(Derek,60)
+	CUSN Derek
 	CamOn
 	MoveCoords(12,1,9,15)
 	ENUN
 	CamOff
-	FlashCursor(Eevster2,60)
+	FlashCursor(Eevster,60)
 	Text(Ch9DerekTurns2)
 	CAM1 Sanders
 	Text(Ch9TurnOne)
@@ -133,17 +133,17 @@ AlwaysReinforcements:
 
 ALIGN 32
 CharacterBasedEvents:
-	CharacterEventBothWays(0xB,RecruitmentEvent,Sanders,Eevster2)
+	CharacterEventBothWays(0xB,RecruitmentEvent,Sanders,Eevster)
 	CharacterEventBothWays(0xB,RecruitmentEvent,Sanders,Ky)
-	CharacterEventBothWays(0xB,RecruitmentEvent,Sanders,Derek2)
+	CharacterEventBothWays(0xB,RecruitmentEvent,Sanders,Derek)
 	END_MAIN
 
 RecruitmentEvent:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	Text(Ch9Recruitment)
-	CUSA Eevster2
+	CUSA Eevster
 	CUSA Ky
-	CUSA Derek2
+	CUSA Derek
 	MURE 2
 	NoFade
 	ENDA
@@ -158,7 +158,7 @@ LocationBasedEvents:
 	Door(1,14)
 	Chest(BlueGem,0,18)
 	Chest(KnightCrest,2,17)
-	Chest(MagicRing,9,7)
+	DurabilityChest(RingItem,MagRing,9,7)
 	Chest(Ruin,12,6)
 	House(0x9,RightSwitch,19,16)
 	House(0xA,LeftSwitch,1,12)
@@ -241,7 +241,7 @@ Units1:
 
 EnemyUnits:
 
-	UNIT Derek2 Cavalier 0x0 Level(14,Enemy,0) [12,1] 0 0 0 0 [Rapier,ShortSpear,LightBrand,BaldoScroll] NeverMoveAI
+	UNIT Derek Cavalier 0x0 Level(14,Enemy,0) [12,1] 0 0 0 0 [Rapier,ShortSpear,LightBrand,CrusaderScroll] NeverMoveAI
 
 	UNIT Vergil Paladin 0x0 Level(7,Enemy,0) [11,1] 0 0 0 0 [Rapier,SilverLance,Spear,Elixir] NeverMoveAI
 	UNIT Gromell WyvernLord 0x0 Level(8,Enemy,0) [10,1] 0 0 0 0 [BoltAxe,BraveAxe,SilverLance,Elixir] NeverMoveAI
@@ -299,7 +299,7 @@ EnemyUnits:
 	UNIT
 
 GreenUnits:
-	UNIT Eevster2 Troubadour 0x0 Level(10,NPC,0) [10,15] 0 0 0 0 [Soothe,Mend,Vulnerary,NihilManual] NeverMoveAI
+	UNIT Eevster Troubadour 0x0 Level(10,NPC,0) [10,15] 0 0 0 0 [Soothe,Mend,Vulnerary,SkillScroll] NeverMoveAI
 	UNIT Ky Myrmidon 0x0 Level(13,NPC,0) [11,15] 0 0 0 0 [LevinSword,SteelSword,Elixir] NeverMoveAI
 
 	UNIT Basement3 Mercenary 0x0 Level(10,NPC,1) [7,12] 0 0 0 0 [SteelSword] DefaultAI
@@ -408,13 +408,15 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 GreenUnits
 	ENUN
+	SetUnitItemDurability(Eevster,3,NihilID)
+	SetUnitItemDurability(Derek,3,BaldoScroll)
 	MUSC 0x47 // wind
-	SetBackground(SnowFieldBG)
+	SetBackground(Snow_Field)
 	Text(Ch9OP)
-	MUSC ArmyASong
+	MUSC Army_A
 	SetBackground(Castle_Hall)
 	Text(Ch9OP2)
-	MUSC EncounterSong
+	MUSC Encounter_MGS
 	SetBackground(Castle_Hall_3)
 	Text(Ch9OP3)
 	SetBackground(Castle_Hall_4)
@@ -425,10 +427,10 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	MUSC ITRYOUTSong
-	SetBackground(SnowFieldBG)
+	MUSC I_TRY_OUT
+	SetBackground(Snow_Field)
 	Text(Ch9Ending)
-	MUSC TheWorldIsTremblingSong
+	MUSC The_World_is_Trembling
 	SetBackground(Castle_Hall)
 	Text(Ch9Ending2)
 	MNC2 10

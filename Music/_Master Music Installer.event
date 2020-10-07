@@ -1,0 +1,340 @@
+#define SongTableOffset 0x224470
+#define SongTable(index,SongPointer,Group) "PUSH; ORG SongTableOffset+(8*index); POIN SongPointer; SHORT Group Group; POP"
+
+#include "Instruments/_Master Instrument Installer.event"
+
+{
+SongTable(Route_209,Route209,1)
+SongTable(0x43,Route209,1)
+#include "Event/Route209.event"
+}
+
+{
+#include "Event/ASunnyPath.event"
+SongTable(A_Sunny_Path,ASunnyPath,1)
+}
+
+{
+#include "Event/Investigation.event"
+SongTable(Investigation,InvestigationSong,1)
+}
+
+{
+#include "Event/ToccataAndDoom.event"
+SongTable(Toccata_and_Doom,ToccataAndDoom,1)
+}
+
+{
+#include "Event/KnightErrand.event"
+SongTable(Knight_Errand,KnightErrand,1)
+}
+
+{
+#include "Event/Splash.event"
+SongTable(Splash_HDN,Splash,1)
+}
+
+{
+#include "Event/AtDoomsGate.event"
+SongTable(At_Dooms_Gate,AtDoomsGate,1)
+}
+
+{
+#include "Event/Taisen4.event"
+SongTable(Taisen_4,Taisen4,1)
+}
+
+{
+#include "Event/SkyEvent.event"
+SongTable(Sky_Event,SkyEvent,1)
+}
+
+{
+#include "Event/BrianHealUs.event"
+SongTable(Brian_Heal_Us,BrianHealUs,1)
+}
+
+{
+#include "Event/TrickstersLament.event"
+SongTable(Tricksters_Lament,TrickstersLament,1)
+}
+
+{
+#include "Event/MinibossPM.event"
+SongTable(Miniboss_PM,MinibossPM,1)
+}
+
+{
+#include "Event/WereRangers.event"
+SongTable(Were_Rangers,WereRangers,1)
+}
+
+{
+#include "Event/ArmyA.event"
+SongTable(Army_A,ArmyA,1)
+}
+
+{
+#include "Event/StoryLangrisser.event"
+SongTable(Story_Langrisser,StoryLangrisser,1)
+}
+
+{
+#include "Event/EldiganTheLionheart.event"
+SongTable(Eldigan_the_Lionheart,EldiganTheLionheart,1)
+}
+
+{
+#include "Event/FatefulShowdown.event"
+SongTable(Fateful_Showdown,FatefulShowdown,1)
+}
+
+{
+#include "Event/LonelyTown.event"
+SongTable(Lonely_Town,LonelyTown,1)
+}
+
+{
+#include "Event/TrialPhoenixWright.event"
+SongTable(Trial_Phoenix_Wright,TrialPhoenixWright,1)
+}
+
+{
+#include "Event/Redial.event"
+SongTable(Redial_Bomberman,Redial,1)
+}
+
+{
+#include "Event/UndergroundLair.event"
+SongTable(Underground_Lair,UndergroundLair,1)
+}
+
+{
+#include "Event/TheWorldIsTrembling.event"
+SongTable(The_World_is_Trembling,TheWorldIsTrembling,1)
+}
+
+{
+#include "Event/TrainRush.event"
+SongTable(Train_Rush,TrainRush,1)
+}
+
+{
+#include "Event/FranticFactory.event"
+SongTable(Frantic_Factory,FranticFactory,1)
+}
+
+{
+#include "Event/MrBear.event"
+SongTable(Mr_Bear,MrBear,1)
+}
+
+{
+#include "Event/CapOnNappers.event"
+SongTable(Cap_on_Nappers,CapOnNappers,1)
+}
+
+{
+#include "Event/BattleInTheAbandonedChurch.event"
+SongTable(Battle_in_the_Abandoned_Church,BattleInTheAbandonedChurch,1)
+}
+
+{
+#include "Event/GreenGardenNight.event"
+SongTable(Green_Garden_Night,GreenGardenNight,1)
+}
+
+{
+#include "Event/BattleFFTA.event"
+SongTable(Battle_FFTA,BattleFFTA,1)
+}
+
+{
+#include "Event/WhereTheWindRustles.event"
+SongTable(Where_the_Wind_Rustles,WhereTheWindRustles,1)
+}
+
+{
+#include "Event/DesertedChateau.event"
+SongTable(Deserted_Chateau,DesertedChateau,1)
+}
+
+{
+#include "Event/EnemyMessage3.event"
+SongTable(Enemy_Message_3,EnemyMessage3,1)
+}
+
+{
+#include "Event/ShopPrep.event"
+SongTable(Shop_Prep_Langrisser_2,ShopPrep,1)
+}
+
+{
+#include "Event/BlasterMasterStage1.event"
+SongTable(Blaster_Master_Stage_1,BlasterMasterStage1,1)
+}
+
+{
+#include "Event/BossPikmin2.event"
+SongTable(Boss_Pikmin_2,BossPikmin2,1)
+}
+
+{
+#include "Event/AttackShiningForce.event"
+SongTable(Attack_Shining_Force,AttackShiningForce,1)
+}
+
+{
+#include "Event/Battle1Elona.event"
+SongTable(Battle_1_Elona,Battle1Elona,1)
+}
+
+{
+#include "Event/Encounter.event"
+SongTable(Encounter_MGS,Encounter,1)
+}
+
+{
+#include "Event/DarkLabyrinth.event"
+SongTable(Dark_Labyrinth,DarkLabyrinth,1)
+}
+
+{
+#include "Event/TheArmyOfLeif.event"
+SongTable(The_Army_of_Leif,TheArmyOfLeif,1)
+}
+
+{
+#include "Event/BossMadouMonogatari.event"
+SongTable(Boss_Madou_Monogatari,BossMadouMonogatari,1)
+}
+
+{
+#include "Event/OldFamiliarScent.event"
+SongTable(Old_Familiar_Scent,OldFamiliarScent,1)
+}
+
+{
+#include "Event/BelovedTomboyishGirl.event"
+SongTable(Beloved_Tomboyish_Girl,BelovedTomboyishGirl,1)
+}
+
+{
+#include "Event/HiryuNoKen2.event"
+SongTable(Hiryu_No_Ken_2,HiryuNoKen2,1)
+}
+
+{
+#include "Event/BattleTalesOfPhantasia.event"
+SongTable(Battle_Tales_of_Phantasia,BattleTalesOfPhantasia,1)
+}
+
+{
+#include "Event/JinTekken3.event"
+SongTable(Jin_Tekken_3,JinTekken3,1)
+}
+
+{
+#include "Event/Jenova.event"
+SongTable(JENOVA_FF7,Jenova,1)
+}
+
+{
+#include "Event/BossFE5.event"
+SongTable(Boss_FE5,BossFE5,1)
+}
+
+{
+#include "Event/ITRYOUT.event"
+SongTable(I_TRY_OUT,ITRYOUT,1)
+}
+
+{
+#include "Event/InheritorOfTheLight.event"
+SongTable(Inheritor_of_the_Light,InheritorOfTheLight,1)
+}
+
+{
+#include "Event/SeaShanty2.event"
+SongTable(Sea_Shanty_2,SeaShanty2,1)
+}
+
+{
+#include "Event/TubbaBlubba.event"
+SongTable(Tubba_Blubba,TubbaBlubba,1)
+}
+
+{
+#include "Event/PubFFTA.event"
+SongTable(Pub_FFTA,PubFFTA,1)
+}
+
+{
+#include "Event/Stage1CrystalPalace.event"
+SongTable(Stage_1_Crystal_Palace,Stage1CrystalPalace,1)
+}
+
+{
+#include "Event/ArmyOfVerdane.event"
+SongTable(Army_of_Verdane,ArmyOfVerdane,1)
+}
+
+{
+#include "Event/DurantSortie.event"
+SongTable(Durant_Sortie,DurantSortie,1)
+}
+
+{
+#include "Event/DecisiveBattle.event"
+SongTable(Decisive_Battle,DecisiveBattle,1)
+}
+
+{
+#include "Event/LikeAGlintOfLight.event"
+SongTable(Like_a_Glint_of_Light,LikeAGlintOfLight,1)
+}
+
+{
+#include "Event/StrongerMonsters.event"
+SongTable(Stronger_Monsters,StrongerMonsters,1)
+}
+
+{
+#include "Event/Fillmore.event"
+SongTable(Fillmore_Actraiser,Fillmore,1)
+}
+
+{
+#include "Event/SearchingForEnemies.event"
+SongTable(Searching_for_Enemies,SearchingForEnemies,1)
+}
+
+{
+#include "Event/RebelstarBGM1.event"
+SongTable(Rebelstar_BGM_1,RebelstarBGM1,1)
+}
+
+{
+#include "Event/AccursedCombat.event"
+SongTable(Accursed_Combat,AccursedCombat,1)
+}
+
+{
+#include "Event/Resolution.event"
+SongTable(Resolution_Berwick,Resolution,1)
+}
+
+{
+#include "Event/TheFragranceOfBlackCoffee.event"
+SongTable(The_Fragrance_of_Black_Coffee,TheFragranceOfBlackCoffee,1)
+}
+
+{
+#include "Event/RollingDice.event"
+SongTable(Rolling_Dice,RollingDice,1)
+}
+
+{
+#include "Event/LegendTheme.event"
+SongTable(Legend_Theme,LegendTheme,1)
+}

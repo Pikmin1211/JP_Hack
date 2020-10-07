@@ -1,0 +1,58 @@
+//#define StatBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB,MovB,ConB)
+//#define GrowthBonus(HPB,StrB,MagB,SklB,SpdB,DefB,ResB,LckB)
+
+ALIGN 4
+RingStatBonuses:
+StatBonus(0,0,0,0,0,0,0,0,0,0) // 0x0 - Nothing
+StatBonus(0,3,0,0,0,0,0,0,0,0) // 0x1 - Str Ring
+StatBonus(0,0,3,0,0,0,0,0,0,0) // 0x2 - Mag Ring
+StatBonus(0,0,0,0,2,0,0,0,0,0) // 0x3 - Spd Ring
+StatBonus(0,0,0,0,0,3,3,0,0,0) // 0x4 - Guard Ring
+StatBonus(0,0,0,0,0,0,0,0,1,0) // 0x5 - Leg Ring
+
+ALIGN 4
+CrusaderScrollBonuses:
+GrowthBonus(0,0,0,0,0,0,0,0)          // 0x0 - Nothing
+GrowthBonus(30,10,0,0,0,0,0,(-10))    // 0x1 - Hezul
+GrowthBonus(5,5,0,5,5,5,0,5)          // 0x2 - Baldo
+GrowthBonus((-10),0,15,0,10,0,0,15)   // 0x3 - Sety
+GrowthBonus(0,0,0,30,0,0,0,0)         // 0x4 - Odo
+GrowthBonus(15,10,0,(-10),0,15,0,0)   // 0x5 - Neir
+GrowthBonus(0,5,5,10,10,0,0,0)        // 0x6 - Fala
+GrowthBonus(0,0,10,0,0,(-10),20,10)   // 0x7 - Heim
+GrowthBonus(0,10,0,0,(-10),30,0,0)    // 0x8 - Dain
+GrowthBonus(0,0,0,10,10,0,0,10)       // 0x9 - Ulir
+GrowthBonus(0,(-15),15,0,0,0,15,15)   // 0xA - Blaggi
+GrowthBonus(0,30,(-5),0,10,5,(-10),0) // 0xB - Noba
+GrowthBonus(5,5,5,10,0,0,0,5)         // 0xC - Tordo
+
+#define StrRing 0x1
+#define MagRing 0x2
+#define SpdRing 0x3
+#define GuardRing 0x4
+#define LegRing 0x5
+
+#define HezulScroll 0x1
+#define BaldoScroll 0x2
+#define SetyScroll 0x3
+#define OdoScroll 0x4
+#define NeirScroll 0x5
+#define FalaScroll 0x6
+#define HeimScroll 0x7
+#define DainScroll 0x8
+#define UlirScroll 0x9
+#define BlaggiScroll 0xA
+#define NobaScroll 0xB
+#define TordoScroll 0xC
+
+ALIGN 4
+TyrfingBonuses:
+StatBonus(0,0,0,0,5,0,5,0,0,0)
+
+ALIGN 4
+GungnirBonuses:
+StatBonus(0,5,0,0,5,0,0,0,0,0)
+
+ALIGN 4
+BasiliskBonuses:
+StatBonus(0,0,3,3,3,0,0,0,0,0)

@@ -1,0 +1,257 @@
+INLINE WalkingSoundTable,Sound
+None, 0
+Ephraim Lord,0
+Eirika Lord,0
+Ephraim Master Lord,1
+Eirika Master Lord,1
+Cavalier,1
+Cavalier (F),1
+Paladin,1
+Paladin (F),1
+Lance Armor,4
+Armour Knight (F),4
+General,4
+General (F),4
+Thief,0
+Manakete,0
+Mercenary,0
+Mercenary (F),0
+Hero,0
+Hero (F),0
+Myrmidon,0
+Myrmidon (F),0
+Swordmaster,0
+Swordmaster (F),0
+Assassin,0
+Assassin (F),0
+Archer,0
+Archer (F),0
+Sniper,0
+Sniper (F),0
+Ranger,1
+Ranger (F),1
+Wyvern Rider,2
+Wyvern Rider (F),2
+Wyvern Lord,2
+Wyvern Lord (F),2
+Wyvern Knight,2
+Wyvern Knight (F),2
+Mage,0
+Mage (F),0
+Sage,0
+Sage (F),0
+Mage Knight,1
+Mage Knight (F),1
+Bishop,0
+Bishop (F),0
+Shaman,0
+Shaman (F),0
+Druid,0
+Druid (F),0
+Summoner,0
+Summoner (F),0
+Rogue,0
+Gorgon Egg,0
+Great Knight,1
+Great Knight (F),1
+Recruit (2),0
+Journeyman (3),0
+Pupil (3),0
+Recruit (3),0
+Manakete,0
+Manakete (F),0
+Journeyman (1),0
+Pupil (1),0
+Fighter,0
+Warrior,0
+Brigand,0
+Pirate,0
+Berserker,0
+Monk,0
+Priest,0
+Bard,0
+Recruit (1),0
+Pegasus Knight,3
+Falcon Knight,3
+Cleric,0
+Troubadour,1
+Valkyrie,1
+Dancer,0
+Soldier,0
+Necromancer,0
+Fleet,5
+Phantom,11
+Revenant,7
+Entombed,7
+Bonewalker,8
+Bonewalker (Bow),8
+Wight,8
+Wight (Bow),8
+Bael,9
+Elder Bael,9
+Cyclops,4
+Mauthe Doog,10
+Gwyllgi,10
+Tarvos,1
+Maelduin,1
+Mogall,11
+Arch Mogall,11
+Gorgon,12
+Gorgon Egg,0
+Gargoyle,2
+Deathgoyle,2
+Dracozombie,6
+Demon King,0
+Archer on Ballista,4
+Archer on Iron Ballista,4
+Archer on Killer Ballista,4
+Ballista,0
+Iron Ballista,0
+Killer Ballista,0
+Civilian,0
+Civilian (F),0
+Civilian,0
+Civilian (F),0
+Civilian,0
+Civilian (F),0
+Peer,0
+Queen,0
+Prince,0
+Queen,0
+(empty),0
+Fallen Prince,0
+Tent,0
+Pontifex,0
+Dead Peer,0
+Cyclops,0
+Elder Bael,0
+Journeyman (2),0
+Pupil (2),0
+Transporter,1
+Lance Knight,1
+Axe Knight,1
+Free Knight,1
+Fighter (F),0
+Battlemage,0
+Dark Flier,3
+Witch,11
+Warrior (F),0
+Halberdier,0
+Dread Fighter (F),0
+Sword Saint,0
+War Monk,0
+Maid,0
+Dread Fighter,0
+Light Mage (F),0
+Arch Knight,1
+Bow Knight,1
+Tent,0
+Medic,3
+Harrier,3
+Wanderer,0
+0x95,0
+Brawler,0
+0x97,0
+Butler,0
+Telos,0
+Grand Telos,1
+Duke Knight,1
+Ballistician,4
+Axe Armor,4
+0x9e,0
+0x9f,0
+0xa0,0
+0xa1,0
+0xa2,0
+0xa3,0
+0xa4,0
+0xa5,0
+0xa6,0
+0xa7,0
+0xa8,0
+0xa9,0
+0xaa,0
+0xab,0
+0xac,0
+0xad,0
+0xae,0
+0xaf,0
+0xb0,0
+0xb1,0
+0xb2,0
+0xb3,0
+0xb4,0
+0xb5,0
+0xb6,0
+0xb7,0
+0xb8,0
+0xb9,0
+0xba,0
+0xbb,0
+0xbc,0
+0xbd,0
+0xbe,0
+0xbf,0
+0xc0,0
+0xc1,0
+0xc2,0
+0xc3,0
+0xc4,0
+0xc5,0
+0xc6,0
+0xc7,0
+0xc8,0
+0xc9,0
+0xca,0
+0xcb,0
+0xcc,0
+0xcd,0
+0xce,0
+0xcf,0
+0xd0,0
+0xd1,0
+0xd2,0
+0xd3,0
+0xd4,0
+0xd5,0
+0xd6,0
+0xd7,0
+0xd8,0
+0xd9,0
+0xda,0
+0xdb,0
+0xdc,0
+0xdd,0
+0xde,0
+0xdf,0
+0xe0,0
+0xe1,0
+0xe2,0
+0xe3,0
+0xe4,0
+0xe5,0
+0xe6,0
+0xe7,0
+0xe8,0
+0xe9,0
+0xea,0
+0xeb,0
+0xec,0
+0xed,0
+0xee,0
+0xef,0
+0xf0,0
+0xf1,0
+0xf2,0
+0xf3,0
+0xf4,0
+0xf5,0
+0xf6,0
+0xf7,0
+0xf8,0
+0xf9,0
+0xfa,0
+0xfb,0
+0xfc,0
+0xfd,0
+0xfe,0

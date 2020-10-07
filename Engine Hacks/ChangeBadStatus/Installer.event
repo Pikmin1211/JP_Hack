@@ -1,7 +1,0 @@
-ALIGN 4
-ChangeBadStatusASMC:
-#incbin "change_bad_status2.dmp"
-
-#define SetBadStatus(unitid,status) "BYTE 0x40 0x0D unitid status; POIN ChangeBadStatusASMC|1"
-
-#define SetBadStatus(xcoord,ycoord,status) "SVAL 0xB Coords(xcoord,ycoord); BYTE 0x4B 0x0D 0x0 status; POIN ChangeBadStatusASMC|1"

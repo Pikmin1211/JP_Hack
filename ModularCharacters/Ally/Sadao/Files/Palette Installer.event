@@ -1,5 +1,0 @@
-#define BaseClass Shaman
-#define PromotedClass1 Druid
-#define PromotedClass2 0x0
-
-#include "Palette/Palette Setup.event"

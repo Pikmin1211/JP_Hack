@@ -1,5 +1,0 @@
-#define BaseClass Monk
-#define PromotedClass1 Necromancer
-#define PromotedClass2 0x0
-
-#include "Palette/Palette Setup.event"

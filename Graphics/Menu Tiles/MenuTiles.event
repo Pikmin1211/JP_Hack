@@ -254,9 +254,11 @@ ORG 0x98CBC
 POIN MenuTilesPaletteBlue
 
 // Popup Banner
+/*
 ORG PopR_StartBattlePopups - 0xA1
 POIN PopupBanner
 ORG PopR_StartBattlePopups - 0xB5
 POIN MenuTilesPaletteBlue
+*/
 
 POP

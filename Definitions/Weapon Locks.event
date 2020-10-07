@@ -1,39 +1,5 @@
-// BYTE HardCharLock
-// BYTE HardClassLock
-
-#define SetWeaponLockArray(id,lockarray) "PUSH; ORG WeaponLockArrayPointerTable + (id * 0x4); POIN lockarray; POP"
-
-MilanorLockArray:
-BYTE HardCharLock Milanor 0x0
-
 #define MilanorLock 0xD
-
-SetWeaponLockArray(MilanorLock,MilanorLockArray)
-
-SandersLockArray:
-BYTE HardCharLock Sanders 0x0
-
 #define SandersLock 0xE
-
-SetWeaponLockArray(SandersLock,SandersLockArray)
-
-ArleLockArray:
-BYTE HardCharLock Arle 0x0
-
 #define ArleLock 0xF
-
-SetWeaponLockArray(ArleLock,ArleLockArray)
-
-DevvyLockArray:
-BYTE HardCharLock Devvy 0x0
-
 #define DevvyLock 0x10
-
-SetWeaponLockArray(DevvyLock,DevvyLockArray)
-
-DonnalenLockArray:
-BYTE HardCharLock Donnalen 0x0
-
 #define DonnalenLock 0x11
-
-SetWeaponLockArray(DonnalenLock,DonnalenLockArray)

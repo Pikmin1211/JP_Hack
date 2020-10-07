@@ -1,0 +1,98 @@
+#include "Event/Sanders Sword Installer.event"
+#include "Event/Sanders Unarmed Installer.event"
+
+#include "Event/Renge Staff Installer.event"
+#include "Event/Renge Unarmed Installer.event"
+
+#include "Event/Wrys Staff Installer.event"
+#include "Event/Wrys Unarmed Installer.event"
+
+#include "Event/Cavalier Axe Installer.event"
+#include "Event/Cavalier HandAxe Installer.event"
+
+#include "Event/Fighter F Axe Installer.event"
+#include "Event/Fighter F HandAxe Installer.event"
+#include "Event/Fighter F Unarmed Installer.event"
+
+#include "Event/Battlemage Sword Installer.event"
+#include "Event/Battlemage Magic Installer.event"
+
+#include "Event/Dark Flier Lance Installer.event"
+#include "Event/Dark Flier Unarmed Installer.event"
+
+#include "Event/Witch Magic Installer.event"
+
+#include "Event/Warrior F Axe Installer.event"
+#include "Event/Warrior F HandAxe Installer.event"
+#include "Event/Warrior F Bow Installer.event"
+#include "Event/Warrior F Unarmed Installer.event"
+
+#include "Event/Hero F Sword Installer.event"
+#include "Event/Hero F Axe Installer.event"
+#include "Event/Hero F HandAxe Installer.event"
+#include "Event/Hero F Unarmed Installer.event"
+
+#include "Event/Halberdier Lance Installer.event"
+#include "Event/Halberdier Unarmed Installer.event"
+
+#include "Event/Dread Fighter F Sword Installer.event"
+#include "Event/Dread Fighter F Magic Installer.event"
+
+#include "Event/Dread Fighter Sword Installer.event"
+#include "Event/Dread Fighter Magic Installer.event"
+
+#include "Event/Sword Saint Sword Installer.event"
+#include "Event/Sword Saint Staff Installer.event"
+#include "Event/Sword Saint Unarmed Installer.event"
+
+#include "Event/War Monk Axe Installer.event"
+#include "Event/War Monk HandAxe Installer.event"
+#include "Event/War Monk Staff Installer.event"
+#include "Event/War Monk Unarmed Installer.event"
+
+#include "Event/Maid Sword Installer.event"
+#include "Event/Maid Staff Installer.event"
+
+#include "Event/Butler Sword Installer.event"
+#include "Event/Butler Staff Installer.event"
+
+#include "Event/Light Mage F Magic Installer.event"
+
+#include "Event/Arch Knight Bow Installer.event"
+#include "Event/Arch Knight Unarmed Installer.event"
+
+#include "Event/Bow Knight Bow Installer.event"
+#include "Event/Bow Knight Lance Installer.event"
+#include "Event/Bow Knight Unarmed Installer.event"
+
+#include "Event/Medic Staff Installer.event"
+
+#include "Event/Harrier Magic Installer.event"
+
+#include "Event/Wanderer Sword Installer.event"
+#include "Event/Wanderer Lance Installer.event"
+#include "Event/Wanderer Unarmed Installer.event"
+
+#include "Event/Brawler Axe Installer.event"
+#include "Event/Brawler HandAxe Installer.event"
+#include "Event/Brawler Unarmed Installer.event"
+
+#include "Event/Telos Sword Installer.event"
+#include "Event/Telos Staff Installer.event"
+#include "Event/Telos Unarmed Installer.event"
+
+#include "Event/Duke Knight Lance Installer.event"
+#include "Event/Duke Knight Unarmed Installer.event"
+
+#include "Event/Ballistician Bow Installer.event"
+
+#include "Event/Armor Axe Installer.event"
+#include "Event/Armor HandAxe Installer.event"
+#include "Event/Armor Sword Installer.event"
+
+#include "Event/Wyvern Lord Axe Installer.event"
+#include "Event/Wyvern Lord HandAxe Installer.event"
+
+#include "Event/Assassin Bow Installer.event"
+
+#include "Event/Falcoknight Staff Installer.event"

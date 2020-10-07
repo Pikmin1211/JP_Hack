@@ -1,0 +1,358 @@
+#ifndef ClassAnimTable
+  #ifdef _FE8_
+    #define ClassAnimTable (0xc00008-0x20)
+  #endif
+  #ifdef _FE7_
+    #define ClassAnimTable (0xe00008-0x20)
+  #endif
+#endif
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + ((index-1) * 0x20)"
+
+#define SwordAnim(Animation) "BYTE 0x00 0x01 ; SHORT Animation"
+#define LanceAnim(Animation) "BYTE 0x01 0x01 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE 0x02 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation ; BYTE Hatchet 0x00 ; SHORT Animation ; BYTE ShortAxe 0x0 ; SHORT Animation ; BYTE BoltAxe 0x0 ; SHORT Animation ; BYTE Francisca 0x0 ; SHORT Animation"
+#define BowAnim(Animation) "BYTE 0x03 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE 0x04 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE 0x05 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE 0x06 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE 0x07 0x01 ; SHORT Animation"
+#define MagicAnim(Animation) "BYTE 0x05 0x01 ; SHORT Animation ; BYTE 0x06 0x01 ; SHORT Animation ; BYTE 0x07 0x01 ; SHORT Animation ; BYTE 0x09 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE 0x09 0x01 ; SHORT Animation"
+#define MonsterAnim(Animation) "BYTE 0x0B 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+#define EndAnim "WORD 0x0"
+
+#define SandersSwordAnim 0xCA
+#define SandersUnarmedAnim 0xCB
+
+#define RengeStaffAnim 0xCC
+#define RengeUnarmedAnim 0xCD
+
+#define FighterFAxeAnim 0xCE
+#define FighterFHandAxeAnim 0xCF
+#define FighterFUnarmedAnim 0xD0
+
+#define ArmorLanceAnim KnightLanceAnim
+#define ArmorUnarmedAnim KnightUnarmedAnim
+#define ArmorSwordAnim 0xD1
+#define ArmorAxeAnim 0xD2
+#define ArmorHandAxeAnim 0xD3
+
+#define CavalierAxeAnim 0xD4
+#define CavalierHandAxeAnim 0xD5
+
+#define WrysStaffAnim 0xD6
+#define WrysUnarmedAnim 0xD7
+
+#define BattlemageSwordAnim 0xD8
+#define BattlemageMagicAnim 0xD9
+
+#define MaidSwordAnim 0xDA
+#define MaidStaffAnim 0xDB
+
+#define WyvernLordAxeAnim 0xDC
+#define WyvernLordHandAxeAnim 0xDD
+
+#define ArchKnightBowAnim 0xDE
+#define ArchKnightUnarmedAnim 0xDF
+
+#define LightMageFMagicAnim 0xE0
+
+#define BrawlerAxeAnim 0xE1
+#define BrawlerHandAxeAnim 0xE2
+#define BrawlerUnarmedAnim 0xE3
+
+#define WandererLanceAnim 0xE4
+#define WandererSwordAnim 0xE5
+#define WandererUnarmedAnim 0xE6
+
+#define MedicStaffAnim 0xE7
+#define MedicUnarmedAnim PegasusKnightUnarmedAnim
+
+#define TelosSwordAnim 0xE8
+#define TelosStaffAnim 0xE9
+#define TelosUnarmedAnim 0xEA
+
+#define HalberdierLanceAnim 0xEB
+#define HalberdierUnarmedAnim 0xEC
+
+#define BallisticianBowAnim 0xED
+
+#define WitchMagicAnim 0xEE
+
+#define HeroFSwordAnim 0xEF
+#define HeroFAxeAnim 0xF0
+#define HeroFHandAxeAnim 0xF1
+#define HeroFUnarmedAnim 0xF2
+
+#define WarriorFAxeAnim 0xF3
+#define WarriorFHandAxeAnim 0xF4
+#define WarriorFBowAnim 0xF5
+#define WarriorFUnarmedAnim 0xF6
+
+#define BowKnightBowAnim 0xF7
+#define BowKnightLanceAnim 0xF8
+#define BowKnightUnarmedAnim 0xF9
+
+#define DreadFighterSwordAnim 0xFA
+#define DreadFighterMagicAnim 0xFB
+
+#define DreadFighterFSwordAnim 0xFC
+#define DreadFighterFMagicAnim 0xFD
+
+#define WarMonkAxeAnim 0xFE
+#define WarMonkHandAxeAnim 0xFF
+#define WarMonkStaffAnim 0x100
+#define WarMonkUnarmedAnim 0x101
+
+#define SwordSaintSwordAnim 0x102
+#define SwordSaintStaffAnim 0x103
+#define SwordSaintUnarmedAnim 0x104
+
+#define DukeKnightLanceAnim 0x105
+#define DukeKnightUnarmedAnim 0x106
+
+#define AssassinBowAnim 0x107
+
+#define FalcoknightStaffAnim 0x108
+
+#define DarkFlierLanceAnim 0x109
+#define DarkFlierUnarmedAnim 0x10A
+
+#define ButlerSwordAnim 0x10B
+#define BulterStaffAnim 0x10C
+
+#define HarrierMagicAnim 0x10D
+
+// Spells
+#define Thoron_index 0x48
+#define Bolganone_index 0x49
+#define Ruin_index 0x4A
+#define Jormungandr_index 0x4B
+#define Sagittae_index 0x4C
+
+ALIGN 4
+SandersAnims:
+SwordAnim(SandersSwordAnim)
+UnarmedAnim(SandersUnarmedAnim)
+EndAnim
+
+ALIGN 4
+RengeAnims:
+StaffAnim(RengeStaffAnim)
+UnarmedAnim(RengeUnarmedAnim)
+EndAnim
+
+ALIGN 4
+WrysAnims:
+StaffAnim(WrysStaffAnim)
+UnarmedAnim(WrysUnarmedAnim)
+EndAnim
+
+ALIGN 4
+LanceKnightAnims:
+LanceAnim(CavalierLanceAnim)
+UnarmedAnim(CavalierUnarmedAnim)
+EndAnim
+
+ALIGN 4
+FreeKnightAnims:
+SwordAnim(CavalierSwordAnim)
+UnarmedAnim(CavalierUnarmedAnim)
+EndAnim
+
+ALIGN 4
+AxeKnightAnims:
+AxeAnim(CavalierAxeAnim)
+HandAxeAnim(CavalierHandAxeAnim)
+LanceAnim(CavalierLanceAnim)
+EndAnim
+
+ALIGN 4
+FighterFAnims:
+AxeAnim(FighterFAxeAnim)
+HandAxeAnim(FighterFHandAxeAnim)
+UnarmedAnim(FighterFUnarmedAnim)
+EndAnim
+
+ALIGN 4
+BattlemageAnims:
+SwordAnim(BattlemageSwordAnim)
+MagicAnim(BattlemageMagicAnim)
+EndAnim
+
+ALIGN 4
+DarkFlierAnims:
+LanceAnim(DarkFlierLanceAnim)
+UnarmedAnim(DarkFlierUnarmedAnim)
+EndAnim
+
+ALIGN 4
+WitchAnims:
+MagicAnim(WitchMagicAnim)
+EndAnim
+
+ALIGN 4
+WarriorFAnims:
+AxeAnim(WarriorFAxeAnim)
+HandAxeAnim(WarriorFHandAxeAnim)
+BowAnim(WarriorFBowAnim)
+UnarmedAnim(WarriorFUnarmedAnim)
+EndAnim
+
+ALIGN 4
+HeroFAnims:
+SwordAnim(HeroFSwordAnim)
+AxeAnim(HeroFAxeAnim)
+HandAxeAnim(HeroFHandAxeAnim)
+UnarmedAnim(HeroFUnarmedAnim)
+EndAnim
+
+ALIGN 4
+HalberdierAnims:
+LanceAnim(HalberdierLanceAnim)
+UnarmedAnim(HalberdierUnarmedAnim)
+EndAnim
+
+ALIGN 4
+DreadFighterFAnims:
+SwordAnim(DreadFighterFSwordAnim)
+MagicAnim(DreadFighterFMagicAnim)
+EndAnim
+
+ALIGN 4
+DreadFighterAnims:
+SwordAnim(DreadFighterSwordAnim)
+MagicAnim(DreadFighterMagicAnim)
+EndAnim
+
+ALIGN 4
+SwordSaintAnims:
+SwordAnim(SwordSaintSwordAnim)
+StaffAnim(SwordSaintStaffAnim)
+UnarmedAnim(SwordSaintUnarmedAnim)
+EndAnim
+
+ALIGN 4
+WarMonkAnims:
+AxeAnim(WarMonkAxeAnim)
+HandAxeAnim(WarMonkHandAxeAnim)
+StaffAnim(WarMonkStaffAnim)
+UnarmedAnim(WarMonkUnarmedAnim)
+EndAnim
+
+ALIGN 4
+MaidAnims:
+SwordAnim(MaidSwordAnim)
+StaffAnim(MaidStaffAnim)
+UnarmedAnim(MaidSwordAnim)
+EndAnim
+
+ALIGN 4
+ButlerAnims:
+SwordAnim(ButlerSwordAnim)
+StaffAnim(BulterStaffAnim)
+UnarmedAnim(ButlerSwordAnim)
+EndAnim
+
+ALIGN 4
+LightMageFAnims:
+MagicAnim(LightMageFMagicAnim)
+EndAnim
+
+ALIGN 4
+ArchKnightAnims:
+BowAnim(ArchKnightBowAnim)
+UnarmedAnim(ArchKnightUnarmedAnim)
+EndAnim
+
+ALIGN 4
+BowKnightAnims:
+BowAnim(BowKnightBowAnim)
+LanceAnim(BowKnightLanceAnim)
+UnarmedAnim(BowKnightUnarmedAnim)
+EndAnim
+
+ALIGN 4
+MedicAnims:
+StaffAnim(MedicStaffAnim)
+UnarmedAnim(MedicUnarmedAnim)
+EndAnim
+
+ALIGN 4
+HarrierAnims:
+StaffAnim(HarrierMagicAnim)
+MagicAnim(HarrierMagicAnim)
+EndAnim
+
+ALIGN 4
+WandererAnims:
+SwordAnim(WandererSwordAnim)
+LanceAnim(WandererLanceAnim)
+UnarmedAnim(WandererUnarmedAnim)
+EndAnim
+
+ALIGN 4
+BrawlerAnims:
+AxeAnim(BrawlerAxeAnim)
+HandAxeAnim(BrawlerHandAxeAnim)
+UnarmedAnim(BrawlerUnarmedAnim)
+EndAnim
+
+ALIGN 4
+TelosAnims:
+SwordAnim(TelosSwordAnim)
+StaffAnim(TelosStaffAnim)
+UnarmedAnim(TelosUnarmedAnim)
+EndAnim
+
+ALIGN 4
+DukeKnightAnims:
+LanceAnim(DukeKnightLanceAnim)
+UnarmedAnim(DukeKnightUnarmedAnim)
+EndAnim
+
+ALIGN 4
+BallisticianAnims:
+BowAnim(BallisticianBowAnim)
+UnarmedAnim(BallisticianBowAnim)
+EndAnim
+
+ALIGN 4
+AxeArmorAnims:
+AxeAnim(ArmorAxeAnim)
+HandAxeAnim(ArmorHandAxeAnim)
+LanceAnim(ArmorLanceAnim)
+UnarmedAnim(ArmorUnarmedAnim)
+EndAnim
+
+ALIGN 4
+LanceArmorAnims:
+LanceAnim(ArmorLanceAnim)
+SwordAnim(ArmorSwordAnim)
+UnarmedAnim(ArmorUnarmedAnim)
+EndAnim
+
+ALIGN 4
+FalcoknightAnims:
+LanceAnim(FalcoknightLanceAnim)
+StaffAnim(FalcoknightStaffAnim)
+UnarmedAnim(FalcoknightUnarmedAnim)
+EndAnim
+
+ALIGN 4
+AssassinAnims:
+SwordAnim(AssassinSwordAnim)
+BowAnim(AssassinBowAnim)
+UnarmedAnim(AssassinUnarmedAnim)
+EndAnim
+
+ALIGN 4
+WyvernLordAnims:
+LanceAnim(WyvernLordLanceAnim)
+AxeAnim(WyvernLordAxeAnim)
+HandAxeAnim(WyvernLordHandAxeAnim)
+UnarmedAnim(WyvernLordUnarmedAnim)
+EndAnim

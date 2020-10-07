@@ -1,0 +1,20 @@
+// usability
+2907c - can use healing item (current hp < max hp?)
+28bfe - end of item usability ladder
+28934 - POIN VulnUsability ElixirUsability
+
+// effect
+2f380 - heal effect exec
+193A4 - unit try heal
+2ff76 - end of item effect ladder
+2FD14 - POIN VulneraryEffect ElixirEffect
+
+// targetting
+29544 - self targetting (sets action taken to 0x1A (used item))
+29062 - end of item targetting ladder
+28F10 - POIN VulnTargetting ElixirTargetting
+
+// anim
+57FF8 - get spell anim id (input r1 = item)
+7b854 - begin battle map anims
+78248 - get spell assoc char count

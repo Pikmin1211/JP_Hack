@@ -1,0 +1,26 @@
+#include "Mugs/_Master Mug Installer.event"
+
+#include "Palettes/Clear/Clear Old Palettes.event"
+#include "Palettes/Palette Setup.event"
+
+#include "Animations/_Master Animation Installer.event"
+
+#include "Title Screen/Title Screen.event"
+
+#include "Battle Screen/Installer.event"
+
+#include "Stat Screen/Installer.event"
+
+#include "Menu Tiles/MenuTiles.event"
+
+#include "Map Sprites/_Master Map Sprite Installer.event"
+
+#include "Item Icons/Installer.event"
+
+#include "Class Cards/_Master Class Card Installer.event"
+
+#include "Tilesets/_Master Tileset Installer.event"
+
+#include "Backgrounds/_BG Installer.event"
+
+#include "Spells/_Master Spell Installer.event"

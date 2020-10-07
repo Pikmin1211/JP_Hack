@@ -23,7 +23,7 @@ TurnBasedEvents:
 	END_MAIN
 
 NanayaJoins:
-	MUSS LikeAGlintOfLightSong
+	MUSS Like_a_Glint_of_Light
 	SpawnReinforcements(NanayaUnit)
 	FlashCursor(Nanaya,60)
 	Text(TestDialogue)
@@ -98,7 +98,7 @@ LocationBasedEvents:
 	Door(12,13)
 	Door(13,13)
 	Door(4,13)
-	Chest(GuardRing,0,0)
+	DurabilityChest(RingItem,GuardRing,0,0)
 	Chest(LevinSword,20,2)
 	Chest(RedGem,19,3)
 	Chest(AngelicRobe,0,14)

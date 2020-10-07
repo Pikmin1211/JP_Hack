@@ -1,0 +1,11 @@
+#include "Instrument Set Definitions.event"
+
+#include "NIMAP/Installer.event"
+
+#include "NIMAP 2/Installer.event"
+
+#include "RebelstarBGM1/RebelstarBGM1Instrument.event"
+
+#include "AccursedCombat/AccursedCombatInstrument.event"
+
+#include "Aircalibur/AircaliburFix.event"

@@ -1,33 +1,33 @@
 	.include "MPlayDef.s"
 
-	.equ	Verdane_grp, voicegroup000
-	.equ	Verdane_pri, 0
-	.equ	Verdane_rev, 0
-	.equ	Verdane_mvl, 85
-	.equ	Verdane_key, 0
-	.equ	Verdane_tbs, 1
-	.equ	Verdane_exg, 0
-	.equ	Verdane_cmp, 1
+	.equ	ArmyOfVerdane_grp, voicegroup000
+	.equ	ArmyOfVerdane_pri, 0
+	.equ	ArmyOfVerdane_rev, 0
+	.equ	ArmyOfVerdane_mvl, 85
+	.equ	ArmyOfVerdane_key, 0
+	.equ	ArmyOfVerdane_tbs, 1
+	.equ	ArmyOfVerdane_exg, 0
+	.equ	ArmyOfVerdane_cmp, 1
 
 	.section .rodata
-	.global	Verdane
+	.global	ArmyOfVerdane
 	.align	2
 
 @**************** Track 1 (Midi-Chn.2) ****************@
 
-Verdane_1:
-	.byte	KEYSH , Verdane_key+0
+ArmyOfVerdane_1:
+	.byte	KEYSH , ArmyOfVerdane_key+0
 @ 000   ----------------------------------------
-	.byte	TEMPO , 122*Verdane_tbs/2
+	.byte	TEMPO , 122*ArmyOfVerdane_tbs/2
 	.byte		VOICE , 50
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
-Verdane_1_B1:
+ArmyOfVerdane_1_B1:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
-	.byte		VOL   , 127*Verdane_mvl/mxv
+	.byte		VOL   , 127*ArmyOfVerdane_mvl/mxv
 	.byte		PAN   , c_v-49
 	.byte	W40
 	.byte		N05   , Gs3 , v040
@@ -149,47 +149,47 @@ Verdane_1_B1:
 	.byte		        c_v-25
 	.byte		N05   , Gs4 , v064
 	.byte	W06
-	.byte		VOL   , 125*Verdane_mvl/mxv
+	.byte		VOL   , 125*ArmyOfVerdane_mvl/mxv
 	.byte		N03   , Gs4 , v040
 	.byte	W01
-	.byte		VOL   , 122*Verdane_mvl/mxv
+	.byte		VOL   , 122*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        118*Verdane_mvl/mxv
+	.byte		        118*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        115*Verdane_mvl/mxv
+	.byte		        115*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        111*Verdane_mvl/mxv
+	.byte		        111*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        107*Verdane_mvl/mxv
+	.byte		        107*ArmyOfVerdane_mvl/mxv
 	.byte		N03   
 	.byte	W01
-	.byte		VOL   , 104*Verdane_mvl/mxv
+	.byte		VOL   , 104*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        100*Verdane_mvl/mxv
+	.byte		        100*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        97*Verdane_mvl/mxv
+	.byte		        97*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        93*Verdane_mvl/mxv
+	.byte		        93*ArmyOfVerdane_mvl/mxv
 	.byte		N03   
 	.byte	W01
-	.byte		VOL   , 90*Verdane_mvl/mxv
+	.byte		VOL   , 90*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        86*Verdane_mvl/mxv
+	.byte		        86*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        83*Verdane_mvl/mxv
+	.byte		        83*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        79*Verdane_mvl/mxv
+	.byte		        79*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        75*Verdane_mvl/mxv
+	.byte		        75*ArmyOfVerdane_mvl/mxv
 	.byte		N03   
 	.byte	W01
-	.byte		VOL   , 72*Verdane_mvl/mxv
+	.byte		VOL   , 72*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        68*Verdane_mvl/mxv
+	.byte		        68*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        65*Verdane_mvl/mxv
+	.byte		        65*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte		N14   , Fn4 , v056
 	.byte	W15
 	.byte		N03   , Fn4 , v032
@@ -234,23 +234,23 @@ Verdane_1_B1:
 	.byte	W92
 	.byte	W03
 	.byte	GOTO
-	 .word	Verdane_1_B1
-Verdane_1_B2:
+	 .word	ArmyOfVerdane_1_B1
+ArmyOfVerdane_1_B2:
 	.byte	FINE
 
 @**************** Track 2 (Midi-Chn.3) ****************@
 
-Verdane_2:
-	.byte	KEYSH , Verdane_key+0
+ArmyOfVerdane_2:
+	.byte	KEYSH , ArmyOfVerdane_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 61
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
-Verdane_2_B1:
+ArmyOfVerdane_2_B1:
 @ 002   ----------------------------------------
 	.byte	W24
-	.byte		VOL   , 127*Verdane_mvl/mxv
+	.byte		VOL   , 127*ArmyOfVerdane_mvl/mxv
 	.byte		PAN   , c_v-14
 	.byte		N10   , Fn2 , v084
 	.byte	W18
@@ -263,7 +263,7 @@ Verdane_2_B1:
 	.byte		N10   , Fn2 , v064
 	.byte	W12
 @ 003   ----------------------------------------
-Verdane_2_003:
+ArmyOfVerdane_2_003:
 	.byte	W24
 	.byte		N11   , Fn2 , v084
 	.byte	W18
@@ -277,7 +277,7 @@ Verdane_2_003:
 	.byte	W12
 	.byte	PEND
 @ 004   ----------------------------------------
-Verdane_2_004:
+ArmyOfVerdane_2_004:
 	.byte	W24
 	.byte		N10   , As2 , v084
 	.byte	W18
@@ -316,10 +316,10 @@ Verdane_2_004:
 	.byte	W12
 @ 007   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_2_003
+	 .word	ArmyOfVerdane_2_003
 @ 008   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_2_004
+	 .word	ArmyOfVerdane_2_004
 @ 009   ----------------------------------------
 	.byte	W24
 	.byte		N10   , As2 , v076
@@ -358,7 +358,7 @@ Verdane_2_004:
 	.byte	W18
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_2_004
+	 .word	ArmyOfVerdane_2_004
 @ 013   ----------------------------------------
 	.byte	W24
 	.byte		N10   , As2 , v076
@@ -398,7 +398,7 @@ Verdane_2_004:
 	.byte	W24
 	.byte	W01
 @ 018   ----------------------------------------
-Verdane_2_018:
+ArmyOfVerdane_2_018:
 	.byte	W24
 	.byte		N10   , Cn2 , v084
 	.byte	W18
@@ -412,7 +412,7 @@ Verdane_2_018:
 	.byte	W12
 	.byte	PEND
 @ 019   ----------------------------------------
-Verdane_2_019:
+ArmyOfVerdane_2_019:
 	.byte	W24
 	.byte		N10   , Cn2 , v076
 	.byte	W18
@@ -427,19 +427,19 @@ Verdane_2_019:
 	.byte	PEND
 @ 020   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_2_018
+	 .word	ArmyOfVerdane_2_018
 @ 021   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_2_019
+	 .word	ArmyOfVerdane_2_019
 @ 022   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_2_018
+	 .word	ArmyOfVerdane_2_018
 @ 023   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_2_019
+	 .word	ArmyOfVerdane_2_019
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_2_018
+	 .word	ArmyOfVerdane_2_018
 @ 025   ----------------------------------------
 	.byte	W24
 	.byte		N10   , Cn2 , v076
@@ -453,24 +453,24 @@ Verdane_2_019:
 	.byte		N08   , Cn2 , v060
 	.byte	W17
 	.byte	GOTO
-	 .word	Verdane_2_B1
-Verdane_2_B2:
+	 .word	ArmyOfVerdane_2_B1
+ArmyOfVerdane_2_B2:
 	.byte	FINE
 
 @**************** Track 3 (Midi-Chn.4) ****************@
 
-Verdane_3:
-	.byte	KEYSH , Verdane_key+0
+ArmyOfVerdane_3:
+	.byte	KEYSH , ArmyOfVerdane_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 50
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
-Verdane_3_B1:
+ArmyOfVerdane_3_B1:
 @ 002   ----------------------------------------
 	.byte	W96
 @ 003   ----------------------------------------
-	.byte		VOL   , 127*Verdane_mvl/mxv
+	.byte		VOL   , 127*ArmyOfVerdane_mvl/mxv
 	.byte		PAN   , c_v-25
 	.byte	W36
 	.byte		N05   , Gs3 , v072
@@ -585,47 +585,47 @@ Verdane_3_B1:
 	.byte	W48
 	.byte		        Ds5 
 	.byte	W06
-	.byte		VOL   , 125*Verdane_mvl/mxv
+	.byte		VOL   , 125*ArmyOfVerdane_mvl/mxv
 	.byte		N03   , Ds5 , v040
 	.byte	W01
-	.byte		VOL   , 122*Verdane_mvl/mxv
+	.byte		VOL   , 122*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        118*Verdane_mvl/mxv
+	.byte		        118*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        115*Verdane_mvl/mxv
+	.byte		        115*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        111*Verdane_mvl/mxv
+	.byte		        111*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        107*Verdane_mvl/mxv
+	.byte		        107*ArmyOfVerdane_mvl/mxv
 	.byte		N03   
 	.byte	W01
-	.byte		VOL   , 104*Verdane_mvl/mxv
+	.byte		VOL   , 104*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        100*Verdane_mvl/mxv
+	.byte		        100*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        97*Verdane_mvl/mxv
+	.byte		        97*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        93*Verdane_mvl/mxv
+	.byte		        93*ArmyOfVerdane_mvl/mxv
 	.byte		N03   
 	.byte	W01
-	.byte		VOL   , 90*Verdane_mvl/mxv
+	.byte		VOL   , 90*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        86*Verdane_mvl/mxv
+	.byte		        86*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        83*Verdane_mvl/mxv
+	.byte		        83*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        79*Verdane_mvl/mxv
+	.byte		        79*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        75*Verdane_mvl/mxv
+	.byte		        75*ArmyOfVerdane_mvl/mxv
 	.byte		N03   
 	.byte	W01
-	.byte		VOL   , 72*Verdane_mvl/mxv
+	.byte		VOL   , 72*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        68*Verdane_mvl/mxv
+	.byte		        68*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        65*Verdane_mvl/mxv
+	.byte		        65*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte		N14   , Cn5 , v060
 	.byte	W15
 	.byte		N03   , Cn5 , v032
@@ -670,21 +670,21 @@ Verdane_3_B1:
 	.byte	W92
 	.byte	W03
 	.byte	GOTO
-	 .word	Verdane_3_B1
-Verdane_3_B2:
+	 .word	ArmyOfVerdane_3_B1
+ArmyOfVerdane_3_B2:
 	.byte	FINE
 
 @**************** Track 4 (Midi-Chn.5) ****************@
 
-Verdane_4:
-	.byte		VOL   , 127*Verdane_mvl/mxv
-	.byte	KEYSH , Verdane_key+0
+ArmyOfVerdane_4:
+	.byte		VOL   , 127*ArmyOfVerdane_mvl/mxv
+	.byte	KEYSH , ArmyOfVerdane_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 51
 	.byte	W96
 @ 001   ----------------------------------------
 	.byte	W96
-Verdane_4_B1:
+ArmyOfVerdane_4_B1:
 @ 002   ----------------------------------------
 	.byte	W12
 	.byte		N05   , Fn3 , v044
@@ -708,32 +708,32 @@ Verdane_4_B1:
 	.byte	W06
 	.byte		        Gn3 
 	.byte	W06
-	.byte		VOL   , 115*Verdane_mvl/mxv
+	.byte		VOL   , 115*ArmyOfVerdane_mvl/mxv
 	.byte		N72   , Gs3 , v076
 	.byte	W01
-	.byte		VOL   , 116*Verdane_mvl/mxv
+	.byte		VOL   , 116*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        117*Verdane_mvl/mxv
+	.byte		        117*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        118*Verdane_mvl/mxv
+	.byte		        118*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W03
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W60
 @ 004   ----------------------------------------
 	.byte	W12
@@ -758,28 +758,28 @@ Verdane_4_B1:
 	.byte	W06
 	.byte		        Gn3 , v060
 	.byte	W06
-	.byte		VOL   , 117*Verdane_mvl/mxv
+	.byte		VOL   , 117*ArmyOfVerdane_mvl/mxv
 	.byte		N52   , Gs3 , v072
 	.byte	W01
-	.byte		VOL   , 118*Verdane_mvl/mxv
+	.byte		VOL   , 118*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W40
 	.byte	W01
 	.byte		N05   , Cn4 , v052
@@ -876,32 +876,32 @@ Verdane_4_B1:
 	.byte	W12
 	.byte		N11   , Fn3 , v064
 	.byte	W12
-	.byte		VOL   , 115*Verdane_mvl/mxv
+	.byte		VOL   , 115*ArmyOfVerdane_mvl/mxv
 	.byte		N52   , Fn3 , v068
 	.byte	W01
-	.byte		VOL   , 116*Verdane_mvl/mxv
+	.byte		VOL   , 116*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        117*Verdane_mvl/mxv
+	.byte		        117*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        118*Verdane_mvl/mxv
+	.byte		        118*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W03
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W36
 @ 013   ----------------------------------------
 	.byte	W96
@@ -983,28 +983,28 @@ Verdane_4_B1:
 	.byte	W12
 	.byte		N19   , Ds2 , v072
 	.byte	W24
-	.byte		VOL   , 117*Verdane_mvl/mxv
+	.byte		VOL   , 117*ArmyOfVerdane_mvl/mxv
 	.byte		N28   , Ds2 , v056
 	.byte	W01
-	.byte		VOL   , 118*Verdane_mvl/mxv
+	.byte		VOL   , 118*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W05
 @ 023   ----------------------------------------
 	.byte	W12
@@ -1037,60 +1037,60 @@ Verdane_4_B1:
 	.byte	W24
 	.byte		N15   , Gn3 , v060
 	.byte	W18
-	.byte		VOL   , 108*Verdane_mvl/mxv
+	.byte		VOL   , 108*ArmyOfVerdane_mvl/mxv
 	.byte		N48   , Ds3 , v088
 	.byte	W01
-	.byte		VOL   , 109*Verdane_mvl/mxv
+	.byte		VOL   , 109*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        110*Verdane_mvl/mxv
+	.byte		        110*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        111*Verdane_mvl/mxv
+	.byte		        111*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        112*Verdane_mvl/mxv
+	.byte		        112*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        113*Verdane_mvl/mxv
+	.byte		        113*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        114*Verdane_mvl/mxv
+	.byte		        114*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        115*Verdane_mvl/mxv
+	.byte		        115*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        116*Verdane_mvl/mxv
+	.byte		        116*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        117*Verdane_mvl/mxv
+	.byte		        117*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        118*Verdane_mvl/mxv
+	.byte		        118*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W32
 	.byte	W02
 	.byte	GOTO
-	 .word	Verdane_4_B1
-Verdane_4_B2:
+	 .word	ArmyOfVerdane_4_B1
+ArmyOfVerdane_4_B2:
 	.byte	FINE
 
 @**************** Track 5 (Midi-Chn.6) ****************@
 
-Verdane_5:
-	.byte	KEYSH , Verdane_key+0
+ArmyOfVerdane_5:
+	.byte	KEYSH , ArmyOfVerdane_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 51
-	.byte		VOL   , 127*Verdane_mvl/mxv
+	.byte		VOL   , 127*ArmyOfVerdane_mvl/mxv
 	.byte		PAN   , c_v-14
 	.byte	W24
 	.byte		N10   , Fn2 , v084
@@ -1115,7 +1115,7 @@ Verdane_5:
 	.byte	W18
 	.byte		N10   , Fn2 , v064
 	.byte	W12
-Verdane_5_B1:
+ArmyOfVerdane_5_B1:
 @ 002   ----------------------------------------
 	.byte	W12
 	.byte		N05   , Gs3 , v052
@@ -1139,32 +1139,32 @@ Verdane_5_B1:
 	.byte	W06
 	.byte		        As3 
 	.byte	W06
-	.byte		VOL   , 115*Verdane_mvl/mxv
+	.byte		VOL   , 115*ArmyOfVerdane_mvl/mxv
 	.byte		N72   , Cn4 , v080
 	.byte	W01
-	.byte		VOL   , 116*Verdane_mvl/mxv
+	.byte		VOL   , 116*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        117*Verdane_mvl/mxv
+	.byte		        117*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        118*Verdane_mvl/mxv
+	.byte		        118*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W03
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W60
 @ 004   ----------------------------------------
 	.byte	W12
@@ -1189,28 +1189,28 @@ Verdane_5_B1:
 	.byte	W06
 	.byte		        As3 
 	.byte	W06
-	.byte		VOL   , 117*Verdane_mvl/mxv
+	.byte		VOL   , 117*ArmyOfVerdane_mvl/mxv
 	.byte		N52   , Cn4 , v084
 	.byte	W01
-	.byte		VOL   , 118*Verdane_mvl/mxv
+	.byte		VOL   , 118*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W40
 	.byte	W01
 	.byte		N05   , Fn4 , v064
@@ -1291,32 +1291,32 @@ Verdane_5_B1:
 	.byte	W12
 	.byte		N11   , As3 , v072
 	.byte	W12
-	.byte		VOL   , 115*Verdane_mvl/mxv
+	.byte		VOL   , 115*ArmyOfVerdane_mvl/mxv
 	.byte		N52   , As3 , v076
 	.byte	W01
-	.byte		VOL   , 116*Verdane_mvl/mxv
+	.byte		VOL   , 116*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        117*Verdane_mvl/mxv
+	.byte		        117*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        118*Verdane_mvl/mxv
+	.byte		        118*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W03
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W36
 @ 013   ----------------------------------------
 	.byte	W96
@@ -1398,28 +1398,28 @@ Verdane_5_B1:
 	.byte	W12
 	.byte		N19   , Gn3 , v072
 	.byte	W24
-	.byte		VOL   , 117*Verdane_mvl/mxv
+	.byte		VOL   , 117*ArmyOfVerdane_mvl/mxv
 	.byte		N28   , Cn4 , v068
 	.byte	W01
-	.byte		VOL   , 118*Verdane_mvl/mxv
+	.byte		VOL   , 118*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W02
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W05
 @ 023   ----------------------------------------
 	.byte	W12
@@ -1451,60 +1451,60 @@ Verdane_5_B1:
 	.byte	W24
 	.byte		N15   , As3 , v068
 	.byte	W18
-	.byte		VOL   , 108*Verdane_mvl/mxv
+	.byte		VOL   , 108*ArmyOfVerdane_mvl/mxv
 	.byte		N48   , Gn3 , v080
 	.byte	W01
-	.byte		VOL   , 109*Verdane_mvl/mxv
+	.byte		VOL   , 109*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        110*Verdane_mvl/mxv
+	.byte		        110*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        111*Verdane_mvl/mxv
+	.byte		        111*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        112*Verdane_mvl/mxv
+	.byte		        112*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        113*Verdane_mvl/mxv
+	.byte		        113*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        114*Verdane_mvl/mxv
+	.byte		        114*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        115*Verdane_mvl/mxv
+	.byte		        115*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        116*Verdane_mvl/mxv
+	.byte		        116*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        117*Verdane_mvl/mxv
+	.byte		        117*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        118*Verdane_mvl/mxv
+	.byte		        118*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        119*Verdane_mvl/mxv
+	.byte		        119*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        120*Verdane_mvl/mxv
+	.byte		        120*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        121*Verdane_mvl/mxv
+	.byte		        121*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        122*Verdane_mvl/mxv
+	.byte		        122*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        123*Verdane_mvl/mxv
+	.byte		        123*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        124*Verdane_mvl/mxv
+	.byte		        124*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        125*Verdane_mvl/mxv
+	.byte		        125*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        126*Verdane_mvl/mxv
+	.byte		        126*ArmyOfVerdane_mvl/mxv
 	.byte	W01
-	.byte		        127*Verdane_mvl/mxv
+	.byte		        127*ArmyOfVerdane_mvl/mxv
 	.byte	W32
 	.byte	W02
 	.byte	GOTO
-	 .word	Verdane_5_B1
-Verdane_5_B2:
+	 .word	ArmyOfVerdane_5_B1
+ArmyOfVerdane_5_B2:
 	.byte	FINE
 
 @**************** Track 6 (Midi-Chn.7) ****************@
 
-Verdane_6:
-	.byte	KEYSH , Verdane_key+0
+ArmyOfVerdane_6:
+	.byte	KEYSH , ArmyOfVerdane_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 48
-	.byte		VOL   , 127*Verdane_mvl/mxv
+	.byte		VOL   , 127*ArmyOfVerdane_mvl/mxv
 	.byte		PAN   , c_v+14
 	.byte		N40   , Fn1 , v084
 	.byte	W48
@@ -1519,7 +1519,7 @@ Verdane_6:
 	.byte	W24
 	.byte		N15   , Fn1 , v084
 	.byte	W24
-Verdane_6_B1:
+ArmyOfVerdane_6_B1:
 @ 002   ----------------------------------------
 	.byte		N36   , Fn1 , v084
 	.byte	W48
@@ -1528,7 +1528,7 @@ Verdane_6_B1:
 	.byte		N14   , Fn1 , v072
 	.byte	W24
 @ 003   ----------------------------------------
-Verdane_6_003:
+ArmyOfVerdane_6_003:
 	.byte		N32   , Fn1 , v084
 	.byte	W48
 	.byte		N17   , Fn1 , v092
@@ -1537,7 +1537,7 @@ Verdane_6_003:
 	.byte	W24
 	.byte	PEND
 @ 004   ----------------------------------------
-Verdane_6_004:
+ArmyOfVerdane_6_004:
 	.byte		N36   , As1 , v092
 	.byte	W48
 	.byte		N17   , As1 , v072
@@ -1546,7 +1546,7 @@ Verdane_6_004:
 	.byte	W24
 	.byte	PEND
 @ 005   ----------------------------------------
-Verdane_6_005:
+ArmyOfVerdane_6_005:
 	.byte		N32   , As1 , v072
 	.byte	W48
 	.byte		N17   
@@ -1555,7 +1555,7 @@ Verdane_6_005:
 	.byte	W24
 	.byte	PEND
 @ 006   ----------------------------------------
-Verdane_6_006:
+ArmyOfVerdane_6_006:
 	.byte		N36   , Fn1 , v084
 	.byte	W48
 	.byte		N17   
@@ -1565,27 +1565,27 @@ Verdane_6_006:
 	.byte	PEND
 @ 007   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_003
+	 .word	ArmyOfVerdane_6_003
 @ 008   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_004
+	 .word	ArmyOfVerdane_6_004
 @ 009   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_005
+	 .word	ArmyOfVerdane_6_005
 @ 010   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_006
+	 .word	ArmyOfVerdane_6_006
 @ 011   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_003
+	 .word	ArmyOfVerdane_6_003
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_004
+	 .word	ArmyOfVerdane_6_004
 @ 013   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_005
+	 .word	ArmyOfVerdane_6_005
 @ 014   ----------------------------------------
-Verdane_6_014:
+ArmyOfVerdane_6_014:
 	.byte		N04   , Fn1 , v072
 	.byte	W12
 	.byte		N01   , Fn1 , v076
@@ -1601,7 +1601,7 @@ Verdane_6_014:
 	.byte	W01
 @ 016   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_014
+	 .word	ArmyOfVerdane_6_014
 @ 017   ----------------------------------------
 	.byte	W68
 	.byte	W03
@@ -1609,7 +1609,7 @@ Verdane_6_014:
 	.byte	W24
 	.byte	W01
 @ 018   ----------------------------------------
-Verdane_6_018:
+ArmyOfVerdane_6_018:
 	.byte		N32   , Cn1 , v092
 	.byte	W48
 	.byte		N16   , Cn1 , v072
@@ -1626,9 +1626,9 @@ Verdane_6_018:
 	.byte	W24
 @ 020   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_018
+	 .word	ArmyOfVerdane_6_018
 @ 021   ----------------------------------------
-Verdane_6_021:
+ArmyOfVerdane_6_021:
 	.byte		N32   , Cn1 , v072
 	.byte	W48
 	.byte		N17   
@@ -1638,13 +1638,13 @@ Verdane_6_021:
 	.byte	PEND
 @ 022   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_018
+	 .word	ArmyOfVerdane_6_018
 @ 023   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_021
+	 .word	ArmyOfVerdane_6_021
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_6_018
+	 .word	ArmyOfVerdane_6_018
 @ 025   ----------------------------------------
 	.byte		N32   , Cn1 , v072
 	.byte	W48
@@ -1653,15 +1653,15 @@ Verdane_6_021:
 	.byte		N20   , Cn1 , v096
 	.byte	W23
 	.byte	GOTO
-	 .word	Verdane_6_B1
-Verdane_6_B2:
+	 .word	ArmyOfVerdane_6_B1
+ArmyOfVerdane_6_B2:
 	.byte	FINE
 
 @**************** Track 7 (Midi-Chn.9) ****************@
 
-Verdane_7:
-	.byte		VOL   , 127*Verdane_mvl/mxv
-	.byte	KEYSH , Verdane_key+0
+ArmyOfVerdane_7:
+	.byte		VOL   , 127*ArmyOfVerdane_mvl/mxv
+	.byte	KEYSH , ArmyOfVerdane_key+0
 @ 000   ----------------------------------------
 	.byte		VOICE , 127
 	.byte		N11   , Cn2 , v096
@@ -1699,9 +1699,9 @@ Verdane_7:
 	.byte	W06
 	.byte		        Dn2 
 	.byte	W06
-Verdane_7_B1:
+ArmyOfVerdane_7_B1:
 @ 002   ----------------------------------------
-Verdane_7_002:
+ArmyOfVerdane_7_002:
 	.byte		N11   , Cn2 , v096
 	.byte	W12
 	.byte		N11   
@@ -1720,7 +1720,7 @@ Verdane_7_002:
 	.byte	W12
 	.byte	PEND
 @ 003   ----------------------------------------
-Verdane_7_003:
+ArmyOfVerdane_7_003:
 	.byte		N11   , Cn2 , v096
 	.byte	W12
 	.byte		N11   
@@ -1741,7 +1741,7 @@ Verdane_7_003:
 	.byte	W06
 	.byte	PEND
 @ 004   ----------------------------------------
-Verdane_7_004:
+ArmyOfVerdane_7_004:
 	.byte		N11   , Cn2 , v096
 	.byte	W12
 	.byte		N11   
@@ -1760,7 +1760,7 @@ Verdane_7_004:
 	.byte	W12
 	.byte	PEND
 @ 005   ----------------------------------------
-Verdane_7_005:
+ArmyOfVerdane_7_005:
 	.byte		N11   , Cn2 , v096
 	.byte	W12
 	.byte		N11   
@@ -1782,61 +1782,61 @@ Verdane_7_005:
 	.byte	PEND
 @ 006   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_002
+	 .word	ArmyOfVerdane_7_002
 @ 007   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_003
+	 .word	ArmyOfVerdane_7_003
 @ 008   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_004
+	 .word	ArmyOfVerdane_7_004
 @ 009   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_005
+	 .word	ArmyOfVerdane_7_005
 @ 010   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_002
+	 .word	ArmyOfVerdane_7_002
 @ 011   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_003
+	 .word	ArmyOfVerdane_7_003
 @ 012   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_004
+	 .word	ArmyOfVerdane_7_004
 @ 013   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_005
+	 .word	ArmyOfVerdane_7_005
 @ 014   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_002
+	 .word	ArmyOfVerdane_7_002
 @ 015   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_003
+	 .word	ArmyOfVerdane_7_003
 @ 016   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_004
+	 .word	ArmyOfVerdane_7_004
 @ 017   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_005
+	 .word	ArmyOfVerdane_7_005
 @ 018   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_002
+	 .word	ArmyOfVerdane_7_002
 @ 019   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_003
+	 .word	ArmyOfVerdane_7_003
 @ 020   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_004
+	 .word	ArmyOfVerdane_7_004
 @ 021   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_005
+	 .word	ArmyOfVerdane_7_005
 @ 022   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_002
+	 .word	ArmyOfVerdane_7_002
 @ 023   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_003
+	 .word	ArmyOfVerdane_7_003
 @ 024   ----------------------------------------
 	.byte	PATT
-	 .word	Verdane_7_004
+	 .word	ArmyOfVerdane_7_004
 @ 025   ----------------------------------------
 	.byte		N11   , Cn2 , v096
 	.byte	W12
@@ -1857,27 +1857,27 @@ Verdane_7_005:
 	.byte		        Dn2 
 	.byte	W05
 	.byte	GOTO
-	 .word	Verdane_7_B1
-Verdane_7_B2:
+	 .word	ArmyOfVerdane_7_B1
+ArmyOfVerdane_7_B2:
 	.byte	FINE
 
 @******************************************************@
 	.align	2
 
-Verdane:
+ArmyOfVerdane:
 	.byte	7	@ NumTrks
 	.byte	0	@ NumBlks
-	.byte	Verdane_pri	@ Priority
-	.byte	Verdane_rev	@ Reverb.
+	.byte	ArmyOfVerdane_pri	@ Priority
+	.byte	ArmyOfVerdane_rev	@ Reverb.
 
-	.word	Verdane_grp
+	.word	ArmyOfVerdane_grp
 
-	.word	Verdane_1
-	.word	Verdane_2
-	.word	Verdane_3
-	.word	Verdane_4
-	.word	Verdane_5
-	.word	Verdane_6
-	.word	Verdane_7
+	.word	ArmyOfVerdane_1
+	.word	ArmyOfVerdane_2
+	.word	ArmyOfVerdane_3
+	.word	ArmyOfVerdane_4
+	.word	ArmyOfVerdane_5
+	.word	ArmyOfVerdane_6
+	.word	ArmyOfVerdane_7
 
 	.end

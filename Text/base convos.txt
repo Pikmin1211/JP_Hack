@@ -1,8 +1,0 @@
-#0x577
-Talk Chance[X]
-
-#0x57E
-Have units converse[N]
-and reveal battle[N]
-tips and strategies,[N]
-or recieve new items.[X]

@@ -1,0 +1,59 @@
+#include "ItemEffectRevamp v1.8/IERevamp_Installer.event"
+
+#include "FancyStaff/FancyStaff.event"
+
+#include "ModularMinimugBox-master/MMB Installer REDFE edit.event"
+
+#include "Fixes/ExpandedClassTable/Class Expansion.event"
+
+#include "Character Specific Animations/Installer.event"
+
+#include "Music/No Victory Music/No Victory Music.event"
+
+#include "mug_exceed/EA.txt"
+
+#include "Music/Battle BGM/Installer.event"
+
+#include "Fixes/FE8-Walking Sounds Fix/FE8-Walking Sounds EA.event"
+
+#include "Music/ShopMusic/ShopMusic.event"
+
+#include "DurabilityItems/Installer.event"
+
+#include "Fixes/Terrain/Terrain.event"
+
+#include "TrapRework/TrapRework.event"
+
+#include "Fixes/Map Sprite/Fix.event"
+
+#include "Fixes/New CHAI/New CHAI.event"
+
+#include "Music/Changing preparation BGM/EA.event"
+
+#include "FE7 & 8-Show Heal Amount/FE8-Show Heal Amount EA.event"
+
+#include "Fixes/Less Annoying Fog/Less Annoying Fog Installer.event"
+
+#include "Fixes/Portrait Height/Installer.txt"
+
+#include "Fixes/Thracia Trade/Installer.event"
+
+#include "Fixes/Monster Weapon/Installer.event"
+
+#include "Fixes/Chapter 5x/Installer.event"
+
+#include "FE8-Convoy_Stuff/FE8-Convoy_Stuff_EA.event"
+
+#include "Fixes/MultiSupplyUnits/Installer.event"
+
+#include "Pik Stuff/HardModeShop/Installer.event"
+
+#include "NosResire/NosResire.event"
+
+#include "Pik Stuff/SecondGold/Installer.event"
+
+#include "Fixes/SeizeFix/SeizeFix.event"
+
+#include "Pik Stuff/SRankWeight/SRankWeight.event"
+
+#include "Pik Stuff/WeatherNull/Installer.event"

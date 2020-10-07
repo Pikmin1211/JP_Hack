@@ -1,0 +1,10 @@
+#include "bin/drumfix_fe8.event"
+#include "bin/MPlayDef.event"
+
+//PUSH
+//ORG 0x1001860
+//#incbin "bin/custom_piano.bin"
+//POP
+
+voicegroup000:
+#incbin "bin/FE8_NI_Map_custompiano.bin"

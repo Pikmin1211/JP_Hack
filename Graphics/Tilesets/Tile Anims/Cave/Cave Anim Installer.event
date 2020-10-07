@@ -1,0 +1,70 @@
+EventPointerTable(CaveWaterTileAnimations,CaveAnimation)
+
+ALIGN 4
+CaveAnimation0:
+#incbin "Dmp/CaveAnim.mapanime 1_000.dmp"
+ALIGN 4
+CaveAnimation1:
+#incbin "Dmp/CaveAnim.mapanime 1_001.dmp"
+ALIGN 4
+CaveAnimation2:
+#incbin "Dmp/CaveAnim.mapanime 1_002.dmp"
+ALIGN 4
+CaveAnimation3:
+#incbin "Dmp/CaveAnim.mapanime 1_003.dmp"
+ALIGN 4
+CaveAnimation4:
+#incbin "Dmp/CaveAnim.mapanime 1_004.dmp"
+ALIGN 4
+CaveAnimation5:
+#incbin "Dmp/CaveAnim.mapanime 1_005.dmp"
+ALIGN 4
+CaveAnimation6:
+#incbin "Dmp/CaveAnim.mapanime 1_006.dmp"
+ALIGN 4
+CaveAnimation7:
+#incbin "Dmp/CaveAnim.mapanime 1_007.dmp"
+ALIGN 4
+CaveAnimation8:
+#incbin "Dmp/CaveAnim.mapanime 1_008.dmp"
+ALIGN 4
+CaveAnimation9:
+#incbin "Dmp/CaveAnim.mapanime 1_009.dmp"
+ALIGN 4
+CaveAnimation10:
+#incbin "Dmp/CaveAnim.mapanime 1_010.dmp"
+ALIGN 4
+CaveAnimation11:
+#incbin "Dmp/CaveAnim.mapanime 1_011.dmp"
+ALIGN 4
+CaveAnimation12:
+#incbin "Dmp/CaveAnim.mapanime 1_012.dmp"
+ALIGN 4
+CaveAnimation13:
+#incbin "Dmp/CaveAnim.mapanime 1_013.dmp"
+ALIGN 4
+CaveAnimation14:
+#incbin "Dmp/CaveAnim.mapanime 1_014.dmp"
+ALIGN 4
+CaveAnimation15:
+#incbin "Dmp/CaveAnim.mapanime 1_015.dmp"
+
+ALIGN 4
+CaveAnimation:
+TilesetAnimation(0x1C,0x1000,CaveAnimation0)
+TilesetAnimation(0x1C,0x1000,CaveAnimation1)
+TilesetAnimation(0x1C,0x1000,CaveAnimation2)
+TilesetAnimation(0x1C,0x1000,CaveAnimation3)
+TilesetAnimation(0x1C,0x1000,CaveAnimation4)
+TilesetAnimation(0x1C,0x1000,CaveAnimation5)
+TilesetAnimation(0x1C,0x1000,CaveAnimation6)
+TilesetAnimation(0x1C,0x1000,CaveAnimation7)
+TilesetAnimation(0x1C,0x1000,CaveAnimation8)
+TilesetAnimation(0x1C,0x1000,CaveAnimation9)
+TilesetAnimation(0x1C,0x1000,CaveAnimation10)
+TilesetAnimation(0x1C,0x1000,CaveAnimation11)
+TilesetAnimation(0x1C,0x1000,CaveAnimation12)
+TilesetAnimation(0x1C,0x1000,CaveAnimation13)
+TilesetAnimation(0x1C,0x1000,CaveAnimation14)
+TilesetAnimation(0x1C,0x1000,CaveAnimation15)
+WORD 0 0

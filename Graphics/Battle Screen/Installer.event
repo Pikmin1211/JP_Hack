@@ -19,51 +19,51 @@
 
 ALIGN 4
 MainTiles:
-#incbin "Main.dmp"
+#incbin "Dmp/Main.dmp"
 
 ALIGN 4
 LeftName:
-#incbin "LeftName.dmp"
+#incbin "Dmp/LeftName.dmp"
 
 ALIGN 4
 RightName:
-#incbin "RightName.dmp"
+#incbin "Dmp/RightName.dmp"
 
 ALIGN 4
 LeftWeapon:
-#incbin "LeftItem.dmp"
+#incbin "Dmp/LeftItem.dmp"
 
 ALIGN 4
 RightWeapon:
-#incbin "RightItem.dmp"
+#incbin "Dmp/RightItem.dmp"
 
 ALIGN 4
 MainPalette:
-#incbin "JpHack_Palette.dmp"
+#incbin "Dmp/JpHack_Palette.dmp"
 
 ALIGN 4
 MainTSA1:
-#incbin "JpHack_TSA1.dmp"
+#incbin "Dmp/JpHack_TSA1.dmp"
 
 ALIGN 4
 MainTSA2:
-#incbin "JpHack_TSA2.dmp"
+#incbin "Dmp/JpHack_TSA2.dmp"
 
 ALIGN 4
 MainTSA3:
-#incbin "JpHack_TSA3.dmp"
+#incbin "Dmp/JpHack_TSA3.dmp"
 
 ALIGN 4
 MainTSA4:
-#incbin "JpHack_TSA4.dmp"
+#incbin "Dmp/JpHack_TSA4.dmp"
 
 ALIGN 4
 MainTSA5:
-#incbin "JpHack_TSA5.dmp"
+#incbin "Dmp/JpHack_TSA5.dmp"
 
 ALIGN 4
 MainTSASingle:
-#incbin "JpHack_TSASingle.dmp"
+#incbin "Dmp/JpHack_TSASingle.dmp"
 
 PUSH
 

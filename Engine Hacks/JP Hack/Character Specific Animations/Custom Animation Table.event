@@ -1,0 +1,22 @@
+CustomAnimeTable:
+
+BYTE Sanders  //Unit
+BYTE Mercenary  //Class
+BYTE 0x00  //dummy
+BYTE 0x00  //dummy
+WORD SandersAnims|IsPointer  //Animation Pointer
+
+BYTE Renge  //Unit
+BYTE Cleric  //Class
+BYTE 0x00  //dummy
+BYTE 0x00  //dummy
+WORD RengeAnims|IsPointer  //Animation Pointer
+
+BYTE Wrys //Unit
+BYTE Priest  //Class
+BYTE 0x00  //dummy
+BYTE 0x00  //dummy
+WORD WrysAnims|IsPointer  //Animation Pointer
+
+// Terminator
+WORD 0x00 0x00

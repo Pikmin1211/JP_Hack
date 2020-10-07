@@ -1,0 +1,5 @@
+// No victory music
+PUSH
+ORG 0x1609E
+SHORT 0x0
+POP

@@ -1,5 +1,0 @@
-#define BaseClass Mercenary
-#define PromotedClass1 Hero
-#define PromotedClass2 0x0
-
-#include "Palette/Palette Setup.event"

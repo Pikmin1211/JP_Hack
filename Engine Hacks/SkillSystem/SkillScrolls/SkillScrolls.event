@@ -1,0 +1,170 @@
+
+#include "MultiSkillScrolls.lyn.event"
+#include "ScrollNames.lyn.event"
+#include "ScrollDurability.lyn.event"
+#include "SkillBookIconDraw.lyn.event"
+
+ALIGN 4
+SkillScrollMessageReturnLink:
+SHORT PrepScreenUseSkillScroll //this is a text ID
+
+ALIGN 4
+SkillScrollIDLink:
+BYTE SkillScroll
+
+PUSH 
+
+	ORG $174F8
+		jumpToHack(GetItemNameString)
+		
+	ORG $17518
+		jumpToHack(GetItemDescStringIndex)
+		
+	ORG $16A54
+		jumpToHack(NewItemNameGetter1)
+		
+	ORG $16874
+		jumpToHack(NewItemNameGetter2)
+	
+	ORG $17594
+		jumpToHack(ScrollDurabilityGetter)
+		
+	ORG $16A8C
+		jumpToHack(ScrollDurabilityGetter_StatScreen)
+	
+	ORG $16894
+		jumpToHack(ScrollDurabilityGetter_UnitMenu)
+
+	ORG $16AD4
+		jumpToHack(CheckIfSkillBookIcon)
+		
+	ORG $9A034
+		jumpToHack(CheckIfSkillBookIcon_Prep1)
+
+	ORG $9B7F4
+		jumpToHack(CheckIfSkillBookIcon_Prep2)
+
+	ORG $168C8
+		jumpToHack(CheckIfSkillBookIcon_Sell)
+		
+	ORG $9CD54
+		jumpToHack(CheckIfSkillBookIcon_Use)
+
+	ORG $17700
+		jumpToHack(CheckIfSkillBookIcon_Generic)
+
+	ORG $169BC
+		jumpToHack(NewItemNameGetter3)
+		
+	ORG $169F0
+		callHack_r0(ScrollDurabilityGetter_DropItem)
+		
+	ORG $16A14
+		jumpToHack(CheckIfSkillBookIcon_DropItem)
+
+	ORG IERevampTable + (0x39 * 16)
+		POIN MultiScrollUsability|IsPointer MultiScrollPrepUsability|IsPointer 0x2905c MultiScrollEffect|IsPointer
+
+	ORG IBArray + (0x39 * 4)
+		POIN MultiScrollPrepEffect|IsPointer
+
+POP
+
+
+//Lists for defining durability-based items
+//Each read from its specific place
+
+#define DurabilityTextEntry(textID,useColonTerminator,tablePointer) "SHORT textID useColonTerminator; POIN tablePointer"
+#define DurabilityTextEnd "WORD 0 0"
+#define DurabilityItem(itemID) "BYTE itemID"
+#define DurabilityItemEnd "BYTE 0"
+#define DurabilityIcon(itemID,iconSheetID) "BYTE itemID iconSheetID"
+#define DurabilityIconEnd "SHORT 0"
+#define NameTableEntry(textID) "SHORT textID"
+
+ALIGN 4
+DurabilityBasedItemNameList: //used for item name
+DurabilityTextEntry(0xFFFF,True,SkillDescTable)
+DurabilityTextEntry(RingName,False,RingNameTable)
+DurabilityTextEntry(CrusaderScrollName,False,CrusaderScrollNameTable)
+DurabilityTextEnd
+
+ALIGN 4
+DurabilityBasedItemDescList: //used for item desc
+DurabilityTextEntry(0xFFFF,False,SkillDescTable)
+DurabilityTextEntry(RingDescription,False,RingDescriptionTable)
+DurabilityTextEntry(CrusaderScrollDescription,False,CrusaderScrollDescriptionTable)
+DurabilityTextEnd
+
+ALIGN 4
+DurabilityItemList: //used for durability
+DurabilityItem(SkillScroll)
+DurabilityItem(RingItem)
+DurabilityItem(CrusaderScroll)
+DurabilityItemEnd
+
+ALIGN 4
+DurabilityBasedItemIconList: //used for icons
+DurabilityIcon(SkillScroll,5)
+DurabilityIcon(RingItem,6)
+DurabilityIcon(CrusaderScroll,7)
+DurabilityIconEnd
+
+/*
+checklist
+Y - Durability 
+Y - Name
+Y - Desc
+N - Use Desc
+N - Icon
+*/
+
+ALIGN 4
+RingNameTable:
+NameTableEntry(0x0)
+NameTableEntry(StrengthRingName)
+NameTableEntry(MagicRingName)
+NameTableEntry(SpeedRingName)
+NameTableEntry(GuardRingName)
+NameTableEntry(LegRingName)
+
+ALIGN 4
+RingDescriptionTable:
+NameTableEntry(0x0)
+NameTableEntry(StrengthRingDescription)
+NameTableEntry(MagicRingDescription)
+NameTableEntry(SpeedRingDescription)
+NameTableEntry(GuardRingDescription)
+NameTableEntry(LegRingDescription)
+
+ALIGN 4
+CrusaderScrollNameTable:
+NameTableEntry(0x0)
+NameTableEntry(HezulScrollName)
+NameTableEntry(BaldoScrollName)
+NameTableEntry(SetyScrollName)
+NameTableEntry(OdoScrollName)
+NameTableEntry(NeirScrollName)
+NameTableEntry(FalaScrollName)
+NameTableEntry(HeimScrollName)
+NameTableEntry(DainScrollName)
+NameTableEntry(UlirScrollName)
+NameTableEntry(BlaggiScrollName)
+NameTableEntry(NobaScrollName)
+NameTableEntry(TordoScrollName)
+
+ALIGN 4
+CrusaderScrollDescriptionTable:
+NameTableEntry(0x0)
+NameTableEntry(HezulScrollDescription)
+NameTableEntry(BaldoScrollDescription)
+NameTableEntry(SetyScrollDescription)
+NameTableEntry(OdoScrollDescription)
+NameTableEntry(NeirScrollDescription)
+NameTableEntry(FalaScrollDescription)
+NameTableEntry(HeimScrollDescription)
+NameTableEntry(DainScrollDescription)
+NameTableEntry(UlirScrollDescription)
+NameTableEntry(BlaggiScrollDescription)
+NameTableEntry(NobaScrollDescription)
+NameTableEntry(TordoScrollDescription)

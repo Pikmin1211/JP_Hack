@@ -1,0 +1,570 @@
+## SpiritDustName
+Spirit Dust[X]
+
+## SpiritDustDescription
+Increases Mag by 2 points.[N]
+Vanishes after use.[X]
+
+## SpiritDustUseText
+Raises Magic.[X]
+
+## MasterKeyName
+Master Key[X]
+
+## MasterKeyDescription
+Opens doors[N]
+and chests.[X]
+
+## SpeedRingName
+Spd Ring[X]
+
+## SpeedRingDescription
++2 Speed when held.[X]
+
+## RubySwordName
+Ruby Sword[X]
+
+## RubySwordDescription
+Doubles triangle effects.[X]
+
+## EmeraldAxeName
+Emerald Axe[X]
+
+## EmeraldAxeDescription
+Doubles triangle effects.[X]
+
+## SapphireLanceName
+Sapphire Ln.[X]
+
+## SapphireLanceDescription
+Doubles triangle effects.[X]
+
+## HuntingBowName
+Hunting Bow[X]
+
+## HuntingBowDescription
+Effective against cavalry.[X]
+
+## ShiningBowName
+Shining Bow[X]
+
+## ShiningBowDescription
+Magic weapon.[X]
+
+## AircaliburName
+Aircalibur[X]
+
+## AircaliburDescription
+Effective against fliers.[X]
+
+## ThoronName
+Thoron[X]
+
+## ThoronDescription
+ [X]
+
+## BolganoneName
+Bolganone[X]
+
+## BolganoneDescription
+ [X]
+
+## RuinName
+Ruin[X]
+
+## RuinDescription
+Improves critical hit rate.[X]
+
+## MiasmaName
+Miasma[X]
+
+## MiasmaDescription
+ [X]
+
+## JormungandrName
+Jormungandr[X]
+
+## JormungandrDescription
+Poisons the target.[X]
+
+## GreatswordName
+Greatsword[X]
+
+## GreatswordDescription
+ [X]
+
+## GreatlanceName
+Greatlance[X]
+
+## GreatlanceDescription
+ [X]
+
+## GreataxeName
+Greataxe[X]
+
+## GreataxeDescription
+ [X]
+
+## GreatbowName
+Greatbow[X]
+
+## GreatbowDescription
+ [X]
+
+## NobleRapierName
+Noble Rapier[X]
+
+## NobleRapierDescription
+Effective against infantry.[X]
+
+## LevinSwordName
+Levin Sword[X]
+
+## LevinSwordDescription
+Magic weapon.[X]
+
+## StrengthRingName
+Str Ring[X]
+
+## StrengthRingDescription
++3 Strength when held.[X]
+
+## MagicRingName
+Mag Ring[X]
+
+## MagicRingDescription
++3 Magic when held.[X]
+
+## GuardRingName
+Guard Ring[X]
+
+## GuardRingDescription
++2 Def and Res[N]
+when held.[X]
+
+## LegRingName
+Leg Ring[X]
+
+## LegRingDescription
++1 Move when held.[X]
+
+## RazorAxeName
+Razor Axe[X]
+
+## RazorAxeDescription
+Milanor's bladed axe.[X]
+
+## FlambergeName
+Flamberge[X]
+
+## FlambergeDescription
+Magic weapon.[X]
+
+## FlameLanceName
+Flame Lance[X]
+
+## FlameLanceDescription
+Magic weapon.[X]
+
+## BoltAxeName
+Bolt Axe[X]
+
+## BoltAxeDescription
+Magic weapon.[X]
+
+## ShortAxeName
+Short Axe[X]
+
+## ShortAxeDescription
+Doubles as ranged attack.[X]
+
+## HezulScrollName
+Hezul Scroll[X]
+
+## HezulScrollDescription
+HP +30%, Str +10%, Luk -10%.[X]
+
+## OdoScrollName
+Odo Scroll[X]
+
+## OdoScrollDescription
+Skl +30%.[X]
+
+## BaldoScrollName
+Baldo Scroll[X]
+
+## BaldoScrollDescription
+HP +5%, Str +5%, Skl +5%,[N]
+Spd +5%, Luk +5%, Def +5%.[X]
+
+## DainScrollName
+Dain Scroll[X]
+
+## DainScrollDescription
+Str +10%, Spd -10%, Def +30%.[X]
+
+## NobaScrollName
+Noba Scroll[X]
+
+## NobaScrollDescription
+Str +30%, Mag -5%,[N]
+Spd +10%, Def +5%, Res -10%.[X]
+
+## NeirScrollName
+Neir Scroll[X]
+
+## NeirScrollDescription
+HP +15%, Str +10%,[N]
+Skl -10%, Def +15%.[X]
+
+## UlirScrollName
+Ulir Scroll[X]
+
+## UlirScrollDescription
+Skl +10%, Spd +10%, Luk +10%.[X]
+
+## TordoScrollName
+Tordo Scroll[X]
+
+## TordoScrollDescription
+HP +5%, Str +5%,[N]
+Mag +5%, Skl +10%, Luk +5%.[X]
+
+## FalaScrollName
+Fala Scroll[X]
+
+## FalaScrollDescription
+Str +5%, Mag +5%,[N]
+Skl +10%, Spd +10%.[X]
+
+## SetyScrollName
+Sety Scroll[X]
+
+## SetyScrollDescription
+HP -10%, Mag +15%,[N]
+Spd +10%, Luk +15%.[X]
+
+## BlaggiScrollName
+Blaggi Scroll[X]
+
+## BlaggiScrollDescription
+Str -15%, Mag +15%,[N]
+Luk +15%, Res +15%.[X]
+
+## HeimScrollName
+Heim Scroll[X]
+
+## HeimScrollDescription
+Mag +10%, Luk +10%,[N]
+Def -10%, Res +20%.[X]
+
+## ResireName
+Resire[X]
+
+## ResireDescription
+Drains enemy HP into caster.[X]
+
+## FalconBladeName
+Falcon Blade[X]
+
+## FalconBladeDescription
+Sanders' trusted blade.[X]
+
+## TyrfingName
+Tyrfing[X]
+
+## TyrfingDescription
+Grants Miracle. Spd/Res +5.[X]
+
+## SagittaeName
+Sagittae[X]
+
+## SagittaeDescription
+Effective against fliers.[X]
+
+## BayoenName
+Bayoen[X]
+
+## BayoenDescription
+Disables enemy counterattacks.[X]
+
+## FuryAxeName
+Fury Axe[X]
+
+## FuryAxeDescription
++1 Atk for every 4 HP lost.[X]
+
+## BasiliskName
+Basilisk[X]
+
+## BasiliskDescription
+Mag/Skl/Spd +3. Magic weapon.[X]
+
+## EntrapName
+Entrap[X]
+
+## EntrapDescription
+Moves enemies from distant[N]
+spaces to adjacent ones.[X]
+
+## EntrapUseText
+Warps enemies to a[N]
+space adjacent to[N]
+the staff wielder.[X]
+
+## SootheName
+Soothe[X]
+
+## SootheDescription
+Restores HP to allies[N]
+from a short distance.[X]
+
+## SootheUseText
+Restores HP at[N]
+a short distance.[X]
+
+## RemedyName
+Remedy[X]
+
+## RemedyDescription
+Restores all HP to allies[N]
+from a short distance.[X]
+
+## RemedyUseText
+Restores all HP at[N]
+a short distance.[X]
+
+## AlleviateName
+Alleviate[X]
+
+## AlleviateDescription
+Returns allies in range to normal[N]
+condition. (Cures sleep, etc.)[X]
+
+## AlleviateUseText
+Restores allies[N]
+in range to[N]
+normal status.[X]
+
+## PetrifyName
+Petrify[X]
+
+## PetrifyDescription
+Turns enemies to stone[N]
+for several turns.[X]
+
+## PetrifyUseText
+Turns enemies[N]
+to stone.[X]
+
+## GungnirName
+Gungnir[X]
+
+## GungnirDescription
+Grants Adept. Str/Spd +5.[X]
+
+## GaeBolgName
+Gae Bolg[X]
+
+## GaeBolgDescription
+Grants Renewal. Str/Def +5.[X]
+
+## AgainName
+Again[X]
+
+## AgainDescription
+Allows a distant[N]
+ally to move again.[X]
+
+## AgainUseText
+Refreshes an ally[N]
+from far away.[X]
+
+## RuneName
+Rune[X]
+
+## RuneDescription
+Summons a light rune to[N]
+block enemy movement.[X]
+
+## RuneUseText
+Place a light rune[N]
+from far away.[X]
+
+## AbortName
+Abort[X]
+
+## AbortDescription
+Moves enemies in adjacent[N]
+spaces instantly elsewhere.[X]
+
+## AbortUseText
+Warps enemies[N]
+to other spaces.[X]
+
+## PilumName
+Pilum[X]
+
+## PilumDescription
+Doubles as ranged attack.[X]
+
+## BanditAxeName
+Bandit Axe[X]
+
+## LogSplitterName
+Log Splitter[X]
+
+## BastardSwordName
+Bastard Sw.[X]
+
+## EstocName
+Estoc[X]
+
+## CutlassName
+Cutlass[X]
+
+## CompositeBowName
+Comp. Bow[X]
+
+## WarhammerName
+Warhammer[X]
+
+## WarhammerDescription
+Effective against knights.[X]
+
+## ScimitarName
+Scimitar[X]
+
+## PoleaxName
+Poleax[X]
+
+## FranciscaName
+Francisca[X]
+
+## FranciscaDescription
+Doubles as ranged attack.[X]
+
+## PartisanName
+Partisan[X]
+
+## GlaiveName
+Glaive[X]
+
+## EspontoonName
+Espontoon[X]
+
+## ShortswordName
+Shortsword[X]
+
+## HandBowName
+Hand Bow[X]
+
+## ScissorAxeName
+Scissor Axe[X]
+
+## ShieldswordName
+Shieldsword[X]
+
+## ShieldswordDescription
+Grants Def +2.[X]
+
+## BaphometName
+Baphomet[X]
+
+## BaphometDescription
+Might injure its wielder.[X]
+
+## MineName
+Mine[X]
+
+## LightRuneName
+Light Rune[X]
+
+## FillasMightName
+Filla's Might[X]
+
+## NinissGraceName
+Ninis's Grace[X]
+
+## ThorsIreName
+Thor's Ire[X]
+
+## SetsLitanyName
+Set's Litany[X]
+
+## MineDescription
+A trap that damages[N]
+units that step on it.[X]
+
+## LightRuneDescription
+A device that blocks units[N]
+from entering spaces.[X]
+
+## FillasMightDescription
+A dance that increases an[N]
+allies' attack by 10 for a turn.[X]
+
+## NinissGraceDescription
+A dance that increases an[N]
+allies' defenses by 10 for a turn.[X]
+
+## ThorsIreDescription
+A dance that increases an allies'[N]
+critical hit rate by 10% for a turn.[X]
+
+## SetsLitanyDescription
+A dance that increases an[N]
+allies' avoid by 10 for a turn.[X]
+
+## RingName
+Ring[X]
+
+## RingDescription
+Boosts stats when held[N]
+based on item durability.[X]
+
+## CrusaderScrollName
+Scroll[X]
+
+## CrusaderScrollDescription
+Boosts growths when held[N]
+based on item durability.[X]
+
+## BanditAxeDescription
+ [X]
+
+## LogSplitterDescription
+ [X]
+
+## BastardSwordDescription
+ [X]
+
+## EstocDescription
+ [X]
+
+## CutlassDescription
+ [X]
+
+## CompositeBowDescription
+ [X]
+
+## PoleaxDescription
+ [X]
+
+## PartisanDescription
+ [X]
+
+## GlaiveDescription
+ [X]
+
+## EspontoonDescription
+ [X]
+
+## HandBowDescription
+ [X]
+
+## ScissorAxeDescription
+ [X]
+
+## ShortswordDescription
+ [X]

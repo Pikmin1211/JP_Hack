@@ -63,7 +63,7 @@ Turn8Reinforcements:
 
 TimBitCharge:
 	MUSS Laughter
-	Text(NightSnowFieldBG,Ch8TimBitCharge)
+	Text(Night_Snow_Field,Ch8TimBitCharge)
 	SetAI(Tim,0,0,0,0)
 	SetAI(Bit,0,0,0,0)
 	SetAI(Whitewolf,0,0,0,0)
@@ -87,11 +87,12 @@ Turn12Reinforcements:
 	ENDA
 
 MilanorAppears:
-	MUSC SkyEventSong
+	MUSC Sky_Event
 	SpawnReinforcements(MilanorUnit)
 	FlashCursor(Milanor,60)
 	Text(Ch8MilanorJoins)
-	MUSC BelovedTomboyishGirlSong
+	SetUnitItemDurability(Milanor,3,NeirScroll)
+	MUSC Beloved_Tomboyish_Girl
 	CAM1 Sanders
 	FlashCursor(Sanders,60)
 	Text(Ch8TurnOne)
@@ -99,10 +100,11 @@ MilanorAppears:
 	ENDA
 
 MoreUnitsAppear:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	SpawnReinforcements(NewUnits)
 	FlashCursor(Guts,60)
 	Text(Ch8GutsKohakuJoin)
+	SetUnitItemDurability(Guts,2,WrathID)
 	MURE 2
 	NoFade
 	ENDA
@@ -139,7 +141,14 @@ LocationBasedEvents:
 	END_MAIN
 
 TopLeftVillage:
-	VillageEventItem(Ch8Village1,HouseBG,SolManual)
+	MUSI
+	SetBackground(HouseBG)
+	Text(Ch8Village1)
+	GiveItemWithDurability(SkillScroll,SolID,0xFFFF)
+	MUNO
+	CALL $9EE310
+	NoFade
+	ENDA
 
 BottomRightVillage:
 	VillageEventItem(Ch8Village2,HouseBG,GuidingRing)
@@ -188,7 +197,7 @@ Units1:
 
 EnemyUnits:
 
-	UNIT Tim Warrior 0x0 Level(1,Enemy,0) [1,16] 2 0 0 0 [SteelAxe,Greatbow,RedGem,StrengthRing] NeverMoveAI
+	UNIT Tim Warrior 0x0 Level(1,Enemy,0) [1,16] 2 0 0 0 [SteelAxe,Greatbow,RedGem,RingItem] NeverMoveAI
 	UNIT Bit Berserker 0x0 Level(1,Enemy,0) [22,1] 2 0 0 0 [BattleAxe,ShortAxe,Elixir,Talisman] NeverMoveAI
 
 	UNIT Whitewolf Brigand 0x0 Level(10,Enemy,1) [10,5] 0 0 0 0 [BanditAxe,Elixir] BrigandAI
@@ -316,17 +325,17 @@ BrigandUnit:
 	UNIT
 
 MilanorUnit:
-	UNIT Milanor Brigand 0x0 Level(13,Ally,0) [12,9] 0 0 1 REDA13R11 [RazorAxe,Hatchet,Halberd,NeirScroll] NoAI
+	UNIT Milanor Brigand 0x0 Level(13,Ally,0) [12,9] 0 0 1 REDA13R11 [RazorAxe,Hatchet,Halberd,CrusaderScroll] NoAI
 	UNIT
 
 NewUnits:
-	UNIT Guts FreeKnight 0x0 Level(12,Ally,0) [12,9] 0 0 1 REDA11R9 [Greatsword,IronBlade,WrathManual,MasterSeal] NoAI
+	UNIT Guts FreeKnight 0x0 Level(12,Ally,0) [12,9] 0 0 1 REDA11R9 [Greatsword,IronBlade,SkillScroll,MasterSeal] NoAI
 	UNIT Kohaku Maid 0x0 Level(1,Ally,0) [12,9] 0 0 1 REDA13R9 [LevinSword,Physic,Heal,TorchStaff] NoAI
 	UNIT
 
 Traps1:
-	TorchTrap(10,8)
-	TorchTrap(14,10)
+	TorchTrap(10,8,4)
+	TorchTrap(14,10,4)
 	ENDTRAP
 	ALIGN 4
 
@@ -339,16 +348,17 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits2
 	ENUN
+	SetUnitItemDurability(Tim,3,StrRing)
 	MUSC 0x47 // wind
-	SetBackground(NightSnowFieldBG)
+	SetBackground(Night_Snow_Field)
 	Text(Ch8OP)
-	MUSC OldFamiliarScentSong
+	MUSC Old_Familiar_Scent
 	SetBackground(Inn)
 	Text(Ch8OP2)
-	MUSC TrainRushSong
-	SetBackground(NightSnowFieldBG)
+	MUSC Train_Rush
+	SetBackground(Night_Snow_Field)
 	Text(Ch8OP3)
-	MUSC EncounterSong
+	MUSC Encounter_MGS
 	SetBackground(Inn)
 	Text(Ch8OP4)
 	GotoPrepScreen
@@ -356,9 +366,9 @@ BeginningScene:
 
 EndingScene:
 	MUSC 0x47 // wind
-	SetBackground(NightSnowFieldBG)
+	SetBackground(Night_Snow_Field)
 	Text(Ch8Ending)
-	MUSC WereRangersSong
+	MUSC Were_Rangers
 	SetBackground(Inn)
 	Text(Ch8Ending2)
 	MNC2 9

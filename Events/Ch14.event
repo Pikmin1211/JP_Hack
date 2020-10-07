@@ -80,16 +80,17 @@ ExecutionerSpawns:
 	ENDA
 
 ArthurJoins:
-	MUSS LikeAGlintOfLightSong
+	MUSS Like_a_Glint_of_Light
 	SpawnReinforcements(ArthurUnit)
 	FlashCursor(Arthur,60)
 	Text(TestDialogue)
+	SetUnitItemDurability(Arthur,3,HezulScroll)
 	MURE 2
 	NoFade
 	ENDA
 
 ArthurUnit:
-	UNIT Arthur FreeKnight 0x0 Level(8,Ally,0) [0,12] 0 0 1 REDA1R12 [Shortsword,Flamberge,Vulnerary,HezulScroll] NoAI
+	UNIT Arthur FreeKnight 0x0 Level(8,Ally,0) [0,12] 0 0 1 REDA1R12 [Shortsword,Flamberge,Vulnerary,CrusaderScroll] NoAI
 	UNIT
 
 ALIGN 32
@@ -125,7 +126,7 @@ DoorOpened:
 	CAM1 [2,1]
 	FlashCursor(2,1,60)
 	Text(TestDialogue)
-	SetAI(CivilianUnit,0x6,0xC,0x0,0x0) //EscapeAI
+	SetAI(NPC_Civilian,0x6,0xC,0x0,0x0) //EscapeAI
 	NoFade
 	ENDA
 
@@ -134,7 +135,7 @@ LocationBasedEvents:
 	DoorFlag(0x8,2,3)
 	Door(9,7)
 	Door(9,8)
-	Chest(BoonManual,17,13)
+	DurabilityChest(SkillScroll,BoonID,17,13)
 	Chest(KillerAxe,22,11)
 	Chest(Dragonshield,20,13)
 	Chest(Rune,16,15)
@@ -232,9 +233,9 @@ ThiefUnits:
 	UNIT
 
 GreenUnits:
-	UNIT CivilianUnit Civilian 0x0 Level(5,NPC,1) [1,0] 0 0 0 0 [0x0] DoNothing
-	UNIT CivilianUnit CivilianF2 0x0 Level(5,NPC,1) [2,1] 0 0 0 0 [0x0] DoNothing
-	UNIT CivilianUnit CivilianF 0x0 Level(5,NPC,1) [3,0] 0 0 0 0 [0x0] DoNothing
+	UNIT NPC_Civilian Civilian 0x0 Level(5,NPC,1) [1,0] 0 0 0 0 [0x0] DoNothing
+	UNIT NPC_Civilian Civilian_F_2 0x0 Level(5,NPC,1) [2,1] 0 0 0 0 [0x0] DoNothing
+	UNIT NPC_Civilian Civilian_F 0x0 Level(5,NPC,1) [3,0] 0 0 0 0 [0x0] DoNothing
 	UNIT
 
 WyvernUnits:

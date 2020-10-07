@@ -18,24 +18,24 @@ POP
 
 ALIGN 4
 FixedConfigGFX:
-#incext Png2Dmp "FixedConfigGFX.png" --lz77
+#incbin "Dmp/FixedConfigGFX.dmp"
 
 ALIGN 4
 FixedAnimGFX:
-#incext Png2Dmp "FixedAnimGFX.png" --lz77
+#incbin "Dmp/FixedAnimGFX.dmp"
 
 ALIGN 4
 FixedUnitsGFX:
-#incext Png2Dmp "FixedUnitsGFX.png" --lz77
+#incbin "Dmp/FixedUnitsGFX.dmp"
 
 ALIGN 4
 FixedSupportGFX:
-#incext Png2Dmp "FixedSupportGFX.png" --lz77
+#incbin "Dmp/FixedSupportGFX.dmp"
 
 ALIGN 4
 FixedPrepGFX:
-#incext Png2Dmp "FixedPrepGFX.png" --lz77
+#incbin "Dmp/FixedPrepGFX.dmp"
 
 ALIGN 4
 FixedSoundRoomGFX:
-#incext Png2Dmp "SoundRoom.png" --lz77
+#incbin "Dmp/SoundRoom.dmp"

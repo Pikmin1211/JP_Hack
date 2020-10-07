@@ -13,7 +13,7 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-	TurnEventPlayer(0x0,YanndahlEvent,1)
+	TurnEventPlayer(0x0,YandahlEvent,1)
 	TurnEventPlayer(0x0,Turn3Reinforcement,3)
 	TurnEventPlayer(0x0,Turn5Reinforcement,5)
 	TurnEventPlayer(0x0,SchezoAppears,6)
@@ -36,26 +36,26 @@ Turn5Reinforcement:
 	NoFade
 	ENDA
 
-YanndahlEvent:
-	MUSC SkyEventSong
-	SpawnReinforcements(YanndahlUnit)
-	FlashCursor(Yanndahl,60)
+YandahlEvent:
+	MUSC Sky_Event
+	SpawnReinforcements(YandahlUnit)
+	FlashCursor(Yandahl,60)
 	Text(Ch7Yandahl)
-	MUSC LeifArmySong
+	MUSC The_Army_of_Leif
 	CAM1 Sanders
 	Text(Ch7PostPrep)
 	NoFade
 	ENDA
 
 SchezoAppears:
-	MUSS LegendThemeSong
+	MUSS Legend_Theme
 	SpawnReinforcements(SchezoUnit)
 	FlashCursor(Schezo,60)
 	Text(Ch7SchezoAppears)
-	CHECK_ALIVE Derek
+	CHECK_ALIVE Derek_Boss
 	BEQ 1 0xC 0x0
-		CAM1 Derek
-		FlashCursor(Derek,60)
+		CAM1 Derek_Boss
+		FlashCursor(Derek_Boss,60)
 		Text(Ch7SchezoAppears2)
 	LABEL 1
 	MURE 2
@@ -69,17 +69,17 @@ DarkKnightsAppear:
 
 SchezoUnit:
 	UNIT Schezo Battlemage 0x0 Level(5,Enemy,0) [0,28] 0 0 1 REDA1R27 [Fenrir,SilverSword,NobleRapier,Thoron] DefaultAI
-	UNIT DarkKnightUnit Cavalier 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA1R26 [Rapier,SilverLance] DefaultAI
-	UNIT DarkKnightUnit AxeKnight 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA2R27 [BraveAxe,ShortSpear] DefaultAI
-	UNIT DarkKnightUnit Druid 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA0R27 [Jormungandr,Physic] DefaultAI
-	UNIT DarkKnightUnit MageKnight 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA1R28 [Aircalibur,Bolganone,Mend] DefaultAI
+	UNIT Dark_Knight Cavalier 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA1R26 [Rapier,SilverLance] DefaultAI
+	UNIT Dark_Knight AxeKnight 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA2R27 [BraveAxe,ShortSpear] DefaultAI
+	UNIT Dark_Knight Druid 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA0R27 [Jormungandr,Physic] DefaultAI
+	UNIT Dark_Knight MageKnight 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA1R28 [Aircalibur,Bolganone,Mend] DefaultAI
 	UNIT
 
 DarkKnights:
-	UNIT DarkKnightUnit Cavalier 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA1R26 [Rapier,SilverLance] DefaultAI
-	UNIT DarkKnightUnit AxeKnight 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA2R27 [BraveAxe,ShortSpear] DefaultAI
-	UNIT DarkKnightUnit Druid 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA0R27 [Nosferatu,Physic] DefaultAI
-	UNIT DarkKnightUnit MageKnight 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA1R28 [Thunder,Fimbulvetr,Mend] DefaultAI
+	UNIT Dark_Knight Cavalier 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA1R26 [Rapier,SilverLance] DefaultAI
+	UNIT Dark_Knight AxeKnight 0x0 Level(15,Enemy,1) [0,28] 0 0 1 REDA2R27 [BraveAxe,ShortSpear] DefaultAI
+	UNIT Dark_Knight Druid 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA0R27 [Nosferatu,Physic] DefaultAI
+	UNIT Dark_Knight MageKnight 0x0 Level(3,Enemy,1) [0,28] 0 0 1 REDA1R28 [Thunder,Fimbulvetr,Mend] DefaultAI
 	UNIT
 
 ALIGN 32
@@ -177,13 +177,13 @@ Units1:
 	Unit(4,25)
 	UNIT
 
-YanndahlUnit:
-	UNIT Yanndahl Soldier 0x0 Level(11,Ally,0) [0,28] 0 0 1 REDA5R26 [SteelLance,Axereaver,Javelin,Vulnerary] NoAI
+YandahlUnit:
+	UNIT Yandahl Soldier 0x0 Level(11,Ally,0) [0,28] 0 0 1 REDA5R26 [SteelLance,Axereaver,Javelin,Vulnerary] NoAI
 	UNIT
 
 EnemyUnits:
 
-	UNIT Derek Cavalier 0x0 Level(12,Enemy,1) [16,1] 0 0 0 0 [Rapier,LightBrand,SapphireLance,Elixir] NeverMoveAI
+	UNIT Derek_Boss Cavalier 0x0 Level(12,Enemy,1) [16,1] 0 0 0 0 [Rapier,LightBrand,SapphireLance,Elixir] NeverMoveAI
 	UNIT Imperial2 LanceArmor 0x0 Level(11,Enemy,1) [15,1] 0 0 0 0 [ShortSpear,Horseslayer,SteelBlade] NeverMoveAI
 	UNIT Imperial2 AxeArmor 0x0 Level(11,Enemy,1) [17,1] 0 0 0 0 [ShortAxe,KillerAxe,IronLance] NeverMoveAI
 
@@ -303,14 +303,14 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits3
 	ENUN
-	MUSC ArmyASong
+	MUSC Army_A
 	SetBackground(Woodland)
 	Text(Ch7OP)
 	Text(Ch7OP2)
-	MUSC StoryLangrisserSong
+	MUSC Story_Langrisser
 	SetBackground(Plain_2)
 	Text(Ch7OP3)
-	MUSC ToccataAndDoomSong
+	MUSC Toccata_and_Doom
 	SetBackground(Woodland)
 	Text(Ch7OP4)
 	CALL SetTransporterMove
@@ -328,10 +328,10 @@ SetTransporterMove:
 	ENDA
 
 EndingScene:
-	MUSC WereRangersSong
+	MUSC Were_Rangers
 	SetBackground(Plain_Evening)
 	Text(Ch7Ending)
-	MUSC TheWorldIsTremblingSong
+	MUSC The_World_is_Trembling
 	SetBackground(Woodland_Evening)
 	Text(Ch7Ending2)
 	MNC2 8

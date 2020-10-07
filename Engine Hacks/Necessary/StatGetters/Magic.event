@@ -1,0 +1,29 @@
+#ifndef MODULAR_GETTER_MAGIC_EVENT
+#define MODULAR_GETTER_MAGIC_EVENT
+
+#include "_Common.event"
+
+pMagicModifiers: // Magic
+	POIN prAddUnitMagic prAddEquipMagic prDebuffMag-1 prRallyMag-1 prSkillFury prFortressDefensePow prFortressResistancePow prItemPassiveMag VigorDanceCheck prLifeAndDeathBonus prDefiantMag prPushMag prItemMagRingBonus
+	#ifdef DEBUFFS_MIN_ZERO
+	POIN prMinZero
+	#endif
+WORD 0 // Many of these are recycled from Power.event.
+
+prAddUnitMagic:
+	rAdd(rSByteAt(UNIT_MAGIC))
+
+prAddEquipMagic:
+	rAdd(rForUnitEquipped(rCallExternal(prGetItemMagBonus)))
+
+#include "_asm/Mag.lyn.event" // Contains prDebuffMag and prRallyMag
+MagDebuffTableLink:
+WORD DebuffTable
+
+prItemPassiveMag:
+	rPassiveStatBoosts(STAT_MAG)
+
+prItemMagRingBonus:
+	rRingBonus(STAT_MAG)
+
+#endif // MODULAR_GETTER_MAGIC_EVENT

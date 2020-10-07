@@ -1,5 +1,0 @@
-#define BaseClass Mage
-#define PromotedClass1 Sage
-#define PromotedClass2 MageKnight
-
-#include "Palette/Palette Setup.event"

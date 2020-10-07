@@ -1,0 +1,8 @@
+#include "TextTable/repointedTextTable.event"
+#include "AnimTable/repointedAnimTable.event"
+#include "PortraitTable/repointedPortraitTable.event"
+
+#define ClassTable
+#define ItemTable
+#define SpellAssociationTable
+#define PromotionBranchTable

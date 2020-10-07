@@ -5,12 +5,12 @@
 	ALIGN 4
 
 	titlebackgroundimage:
-	#incext compress "titlebackgroundimage.img.bin"
+	#incbin "titlebackgroundimage.img_comp.dmp"
 	
 	ALIGN 4
 	
 	titlebackgroundpalette:
-	#incext png2dmp "titlebackgroundimage.png" --palette-only
+	#incbin "TitleBackgroundImage_pal.dmp"
 	
 	ALIGN 4
 	

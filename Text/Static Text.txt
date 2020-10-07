@@ -1,0 +1,74 @@
+
+# 0x0002 textWeaponRankIncreasedTo
+ Weapon rank increased to [X]
+
+# 0x0094
+HP Bars[.][X]
+
+# 0x00B2
+Set health bar display[X]
+
+#0x48D HeroCrestDescription
+For knights, soldiers and[N]
+cavaliers Lv. 10 and up.[X]
+
+#0x4CB HeroCrestUseText
+Use this on a worthy[N]
+cavalier, soldier[N]
+or knight.[X]
+
+#0x48E OrionsBoltDescription
+For archers and arch[N]
+knights Lv. 10 and up.[X]
+
+#0x4CC OrionsBoltUseText
+Use this on a worthy[N]
+archer or arch knight.[X]
+
+#0x48F ElysianWhipDescription
+For flying units[N]
+Lv. 10 and up.[X]
+
+#0x31B WyvernLordDescription
+Wyvern-mounted knights of superior[N]
+skill. Equip: Lances, axes.[X]
+
+#0x334 FalcoknightDescription
+Swift sky warriors who shrug off[N]
+magic attacks. Equip: Lances, staves.[X]
+
+#0x316 AssassinDescription
+Masters of the killing[N]
+arts. Equip: Swords, bows.[X]
+
+#0x2C3 LanceArmorName
+Lance Armor[X]
+
+#0x30F LanceArmorDescription
+Heavily armored knights with poor[N]
+movement. Equip: Swords, lances.[X]
+
+#0x310 GeneralDescription
+Knights of great skill.[N]
+Equip: Swords, lances, axes.[X]
+
+#0x318 SniperDescription
+Archers of unparalleled[N]
+accuracy. Equip: Bows.[X]
+
+#0x31C WyvernKnightDescription
+Wyvern riders who can pierce[N]
+enemy defenses. Equip: Lances.[X]
+
+#0x320 BishopDescription
+Users of monster-slaying light[N]
+magic. Equip: Light, staves.[X]
+
+#0x32E SummonerDescription
+Master sorcerers who summon[N]
+fighters. Equip: Dark, staves.[X]
+
+#0x326 RogueDescription
+Knaves who need no tools or keys[N]
+to open locks. Equip: Swords.[X]
+

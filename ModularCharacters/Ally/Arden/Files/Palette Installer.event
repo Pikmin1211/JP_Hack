@@ -1,5 +1,0 @@
-#define BaseClass Knight
-#define PromotedClass1 General
-#define PromotedClass2 GreatKnight
-
-#include "Palette/Palette Setup.event"

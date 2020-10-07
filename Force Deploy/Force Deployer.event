@@ -1,8 +1,0 @@
-ForceDeployList:
-ForceDeployEntry(Sanders,0xFF)
-EndForceDeploy
-
-PUSH
-ORG 0x8483C
-POIN ForceDeployList
-POP

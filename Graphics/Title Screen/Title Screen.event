@@ -2,11 +2,11 @@
 
 ALIGN 4
 GameLogo:
-#incext Png2Dmp "Logo.png" --lz77
+#incbin "Dmp/Logo.dmp"
 
 ALIGN 4
 GameTitle:
-#incext Png2Dmp "TitleObjectGraphics.png" --lz77
+#incbin "Dmp/TitleObjectGraphics.dmp"
 
 PUSH
 ORG 0xC5808

@@ -1,175 +1,35 @@
-#define SandersSwordAnim EirikaSwordAnim
-#define SandersUnarmedAnim EirikaUnarmedAnim
-
-#define Transporter 0x80//ClassID here
-#define TransporterClassCard 0x100//MugID here
-
-#define AxeArmor KnightF//ClassID here
-#define AxeArmorAxeAnim KnightFLanceAnim//AnimationID here
-#define AxeArmorHandaxeAnim KnightFUnarmedAnim//AnimationID here
-#define AxeArmorClassCard 0x101//MugID here
-
 #define LanceArmor Knight
-#define LanceArmorSwordAnim 0xCA
+#define Falcoknight FalcoKnight
+#define MautheDoog 0x5B
 
-#define LanceKnight 0x81//ClassID here
-#define LanceKnightClassCard CavalierClassCard//MugID here
-
+#define Transporter 0x80
+#define LanceKnight 0x81
 #define AxeKnight 0x82
-#define AxeKnightClassCard 0x102
-#define AxeKnightAxeAnim 0xCB
-#define AxeKnightHandaxeAnim 0xCC
-
 #define FreeKnight 0x83
-#define FreeKnightClassCard 0x103
-
-#define RengeStaffAnim 0xE9
-#define RengeUnarmedAnim 0xCD
-#define WrysStaffAnim 0xCE
-#define WrysUnarmedAnim 0xCF
-
-#define FighterF 0x84//ClassID here
-#define FighterFAxeAnim 0xD0//AnimationID here
-#define FighterFHandaxeAnim 0xD1//AnimationID here
-#define FighterFUnarmedAnim 0xD2//AnimationID here
-#define FighterFClassCard 0x104//MugID here
-#define FighterFName 0x2DC//TextID here
-#define FighterFDescription 0x327//TextID here
-
-#define Battlemage 0x85//ClassID here
-#define BattlemageSwordAnim 0xD3//AnimationID here
-#define BattlemageMagicAnim 0xD4//AnimationID here
-#define BattlemageClassCard 0x105//MugID here
-
-#define DarkFlier 0x86//ClassID here
-#define DarkFlierLanceAnim 0xD5//AnimationID here
-#define DarkFlierUnarmedAnim 0xD6//AnimationID here
-#define DarkFlierClassCard 0x106//MugID here
-
-#define Witch 0x87//ClassID here
-#define WitchMagicAnim 0xD7//AnimationID here
-#define WitchClassCard 0x107//MugID here
-
-//#define HeroF
-#define HeroFSwordAnim 0xD8
-#define HeroFAxeAnim 0xD9
-#define HeroFHandaxeAnim 0xDA
-#define HeroFUnarmedAnim 0xDB
-#define HeroFClassCard 0x108
-#define HeroFName 0x2C7
-#define HeroFDescription 0x313
-
-#define WarriorF 0x88
-#define WarriorFAxeAnim 0xDC
-#define WarriorFHandaxeAnim 0xDD
-#define WarriorFBowAnim 0xDE
-#define WarriorFUnarmedAnim 0xDF
-#define WarriorFClassCard 0x109
-#define WarriorFName 0x2DD
-#define WarriorFDescription 0x328
-
+#define Fighter_F 0x84
+#define Battlemage 0x85
+#define DarkFlier 0x86
+#define Witch 0x87
+#define Warrior_F 0x88
 #define Halberdier 0x89
-#define HalberdierLanceAnim 0xE0
-#define HalberdierUnarmedAnim 0xE1
-#define HalberdierClassCard 0x10A
-
-#define DreadFighterF 0x8A
-#define DreadFighterFSwordAnim 0xE2
-#define DreadFighterFMagicAnim 0xE3
-#define DreadFighterFClassCard 0x10B
-#define DreadFighterFName DreadFighterName
-#define DreadFighterFDescription DreadFighterDescription
-
-#define SwordSaint 0x8B//ClassID here
-#define SwordSaintSwordAnim 0xE4//AnimationID here
-#define SwordSaintStaffAnim 0xE5//AnimationID here
-#define SwordSaintUnarmedAnim 0xE6//AnimationID here
-#define SwordSaintClassCard 0x10C//MugID here
-
+#define DreadFighter_F 0x8A
+#define SwordSaint 0x8B
 #define WarMonk 0x8C
-#define WarMonkAxeAnim 0xE7
-#define WarMonkHandaxeAnim 0xE8
-#define WarMonkMagicAnim 0xEA
-#define WarMonkUnarmedAnim 0xEB
-#define WarMonkClassCard 0x10D
-
 #define Maid 0x8D
-#define MaidSwordAnim 0xEC
-#define MaidStaffAnim 0xED
-#define MaidClassCard 0x10E
-
-#define WyvernLordAxeAnim WyvernLordSwordAnim
-#define WyvernLordHandaxeAnim 0xEE
-
 #define DreadFighter 0x8E
-#define DreadFighterSwordAnim 0xEF
-#define DreadFighterMagicAnim 0xF0
-#define DreadFighterClassCard 0x10F
-
-#define LightMageF 0x8F//ClassID here
-#define LightMageFMagicAnim 0xF1//AnimationID here
-#define LightMageFClassCard 0x110//MugID here
-#define LightMageFName LightMageName//TextID here
-#define LightMageFDescription LightMageDescription//TextID here
-
+#define LightMage_F 0x8F
 #define ArchKnight 0x90
-#define ArchKnightBowAnim 0xF2
-#define ArchKnightUnarmedAnim 0xF3
-#define ArchKnightClassCard NomadClassCard
-
-#define BowKnight 0x91//ClassID here
-#define BowKnightBowAnim 0xF4//AnimationID here
-#define BowKnightLanceAnim 0xF5//AnimationID here
-#define BowKnightUnarmedAnim 0xF6//AnimationID here
-#define BowKnightClassCard 0x111//MugID here
-
-#undef Tent
-#define Tent 0x92//ClassID here
-#define TentClassCard 0x112//MugID here
-
-#define Medic 0x93//ClassID here
-#define MedicStaffAnim 0xF7//AnimationID here
-#define MedicUnarmedAnim PegasusKnightUnarmedAnim//AnimationID here
-#define MedicClassCard 0x113//MugID here
-
-#define FalcoknightStaffAnim FalcoknightSwordAnim
-
-#define Harrier 0x94//ClassID here
-#define HarrierMagicAnim 0xF9//AnimationID here
-#define HarrierClassCard 0x114//MugID here
-
-#define Wanderer 0x95//ClassID here
-#define WandererSwordAnim 0xFA//AnimationID here
-#define WandererLanceAnim 0xFB//AnimationID here
-#define WandererUnarmedAnim 0xFC//AnimationID here
-#define WandererClassCard 0x115//MugID here
-
+#define BowKnight 0x91
+#define Tent_Class 0x92
+#define Medic 0x93
+#define Harrier 0x94
+#define Wanderer 0x95
 #define StarLion 0x96
-
-#define Brawler 0x97//ClassID here
-#define BrawlerAxeAnim 0xFD//AnimationID here
-#define BrawlerHandaxeAnim 0xF8//AnimationID here
-#define BrawlerUnarmedAnim 0xFE//AnimationID here
-#define BrawlerClassCard 0x116//MugID here
-
+#define Brawler 0x97
 #define Gladiator 0x98
-
-#define DukeKnight EphraimMasterLord//ClassID here
-#define DukeKnightLanceAnim GreatLordLanceAnim//AnimationID here
-#define DukeKnightUnarmedAnim GreatLordUnarmedAnim//AnimationID here
-#define DukeKnightClassCard 0x117//MugID here
-
-#define Telos EirikaLord
-#define TelosSwordAnim EirikaSword2Anim//AnimationID here
-#define TelosStaffAnim EirikaSword3Anim
-#define TelosUnarmedAnim EphraimLanceAnim
-#define TelosClassCard MyrmidonClassCard//MugID here
-
-#define GrandTelos 0x9A
-
-#define AssassinBowAnim AssassinFSwordAnim
-
 #define Butler 0x99
-#define ButlerSwordAnim 0xFF
-#define ButlerStaffAnim 0x100
-#define ButlerClassCard 0x118
+#define Telos 0x9A
+#define GrandTelos 0x9B
+#define DukeKnight 0x9C
+#define Ballistician 0x9D
+#define AxeArmor 0x9E

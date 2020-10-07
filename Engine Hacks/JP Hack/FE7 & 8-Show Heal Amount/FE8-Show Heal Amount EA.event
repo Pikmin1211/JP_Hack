@@ -1,0 +1,31 @@
+//Show Heal Amount (FE7/8)
+//By Tequila
+
+#ifndef __SHOW_HEAL_AMOUNT__
+	#ifdef _FE8_
+
+		#define __SHOW_HEAL_AMOUNT__
+
+		#define Arrow_Text_ID 0x8EA //currently just a hyphen; make a text id with '->' and put it here (DON'T CHANGE THE VANILLA ONE)
+		
+		PUSH
+		
+		ORG $24670
+		jumpToHack(FE8_Show_Heal_Amount)
+		
+		POP
+		
+		FE8_Show_Heal_Amount:
+		#incbin "FE8-Show Heal Amount.dmp"
+		WORD Arrow_Text_ID
+
+		ArrowText:
+		#incbin "Arrow Text/Arrow Text.dmp"
+		setText(Arrow_Text_ID,ArrowText)
+	
+	#endif	
+#endif
+
+#ifndef __SHOW_HEAL_AMOUNT__
+	ERROR You're not assembling FE7 or FE8 events!
+#endif

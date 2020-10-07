@@ -1,6 +1,6 @@
 	.include "MPlayDef.s"
 
-	.equ	RebelstarBGM1_grp, RebelstarBGM1Instrument
+	.equ	RebelstarBGM1_grp, RebelstarBGM1InstrumentTable
 	.equ	RebelstarBGM1_pri, 10
 	.equ	RebelstarBGM1_rev, 128
 	.equ	RebelstarBGM1_mvl, 127

@@ -1,0 +1,257 @@
+INLINE MagCharTable,Base Magic,Magic Growth
+None,0,0
+Sanders,2,35
+Finn,2,15
+Scott,1,25
+Renge,2,60
+Marisa,5,55
+Oskar,1,5
+Blanc,1,25
+Sayori,3,30
+Wolt,3,55
+Arden,0,25
+Wrys,3,35
+Neptune,4,30
+Wilbell,5,60
+Brian,2,25
+Donnalen,0,15
+Otaku,2,5
+Gohard,1,5
+Yandahl,3,20
+Milanor,5,25
+Guts,3,15
+Kohaku,8,40
+Ky,8,25
+Derek,5,35
+Eevster,9,45
+Arle,9,45
+Jason,7,30
+Devvy,4,45
+Norne,3,35
+Natsuki,3,45
+Paniel,1,5
+Naoto,2,15
+Ginko,5,45
+Schezo,6,25
+Draco,4,35
+Wendy,4,35
+Anabelle,3,20
+Valerie,5,40
+Sadao,5,55
+Nanaya,2,20
+Arthur,3,25
+Grit,2,5
+Valbar,4,5
+Ismaire,7,15
+Hayden,2,10
+FakeEirika,0,0
++AC0-0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
++AC0-0,0,0
++AC0-0,0,0
++AC0-0,0,0
++AC0-0,0,0
++AC0-0,0,0
++AC0-0,0,0
++AC0-0,0,0
++AC0-0,0,0
+Lyon's Summon,0,0
++AC0-0,0,0
++AC0-0,0,0
+Knoll's Summon,0,0
+Ewan's Summon,0,0
+Lyon (Ch 17),13,50
+Morva (Ch 20),6,85
+Orson (Ch 5x),3,10
+Valter (Ch 15),2,5
+Selena (Ch 10B +ACY- 13B),10,40
+Valter (Prologue),2,5
+Batta Beast,0,0
+Batta,0,5
+Imperial,0,10
+Town Guard,0,10
+Civilian,0,10
+Kek'h,0,10
+Derek (Boss),3,45
+Vergil,9,0
+O'Neill,0,0
+Monster,0,10
+Cultist,1,10
+Novala,7,50
+Imperial 2,0,10
+Todoroki,6,35
+Eevster (NPC),4,0
+Basement,0,10
+Wagon 1,0,10
+Wagon 2,0,10
+Batta Beast 2,0,10
+Monster 2,2,10
+Monster (No EXP),0,10
+Imperial (Vergil),4,10
+Schezo (Boss),14,0
+Dark Knight,4,10
+Whitewolf,1,10
+Tim,0,0
+Bit,0,0
+Basement 2,0,10
+Raydrik,19,0
+Gromell,20,0
+Officer,1,10
+Albatross,1,10
+Albatross (No EXP),1,10
+Cobra,3,10
+Cobra (No EXP),3,10
+Panther,4,10
+Panther (No EXP),4,10
+Stallion,2,10
+Stallion (No EXP),2,10
+Warthog,0,10
+Warthog (No EXP),0,10
+Imperial Tent,0,10
+Marooner,0,10
+Cedwick,0,0
+Dark Marlen,4,25
+Unknown,1,10
+Zane,7,25
+Marooner 2,1,10
+Viridian,2,0
+Ermine,16,0
+Monster Boss,0,10
+Priest,0,10
+Basement 3,2,10
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+Grado Soldier (Special),0,0
+Grado Soldier 1 (Normal),0,0
+Grado Soldier 2,0,0
+Grado Soldier 3,0,0
+Grado Soldier 4,0,0
+Grado Soldier 5,0,0
+Grado Soldier 6,0,0
+Grado Soldier 7,0,0
+Grado Soldier 8,0,0
+Grado Soldier 9,0,0
+Grado Soldier 10 (Duessel's),0,0
+Grado Soldier 11 (Duessel's),0,0
+Grado Soldier 12 (Duessel's),0,0
+Grado Soldier 13,0,0
+Grado Remnant 1 (Main),0,0
+Cutthroat,0,0
+Grado Remnant 2 (Cutscene and C16 only?),0,0
+Grado Remnant 3 (C16 only?),0,0
+Grado Remnant 4 (C16 only?),0,0
+Wraith (Sage),0,0
+Wraith (Swords),0,0
+Wraith (Axes),0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+Mercenary (C9A),0,0
+Mercenary (C10A),0,0
+Merc Remnant (C13A),0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Monster,0,0
+Demon King,0,0
+0,0,0
+Frelian,0,0
+Frelian,0,0
+0,0,0
+0,0,0
+0,0,0
+Fado (Renais),0,0
+0,0,0
+Hayden (Frelia),0,0
+Mansel (Rausten),0,0
+Klimt (Carcino),0,0
+Dara (Caer Pelyn),0,0
+Ismaire (Jehanna),0,0
+Pegasus Messenger,0,0
+Rausten Knight,0,0
+Rausten Knight,0,0
+(Untested Beyond this point),0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0
+0,0,0

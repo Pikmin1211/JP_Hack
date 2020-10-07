@@ -1,0 +1,53 @@
+
+#ifdef ADV_WEAPON_LOCKS
+
+//Original by Vennobennu, rewritten by Sme for skill system/general buildfile compatibility
+
+//Make prf weapons defined via array with no wrank say "Prf" (not thoroughly tested)
+PUSH
+ORG 0x16DD8
+BYTE $00 $3C $3D $FF 
+POP
+
+
+#inctext lyn "AdvWeaponLocks.elf"
+
+#define SoftCharLock 0
+#define HardCharLock 1
+#define SoftClassLock 2
+#define HardClassLock 3
+#define EndLockArray 0
+
+#define SetWeaponLockArray(id,lockarray) "PUSH; ORG WeaponLockArrayPointerTable + (id * 0x4); POIN lockarray; POP"
+
+ALIGN 4
+MilanorLockArray:
+BYTE HardCharLock Milanor 0x0
+
+SetWeaponLockArray(MilanorLock,MilanorLockArray)
+
+ALIGN 4
+SandersLockArray:
+BYTE HardCharLock Sanders 0x0
+
+SetWeaponLockArray(SandersLock,SandersLockArray)
+
+ALIGN 4
+ArleLockArray:
+BYTE HardCharLock Arle 0x0
+
+SetWeaponLockArray(ArleLock,ArleLockArray)
+
+ALIGN 4
+DevvyLockArray:
+BYTE HardCharLock Devvy 0x0
+
+SetWeaponLockArray(DevvyLock,DevvyLockArray)
+
+ALIGN 4
+DonnalenLockArray:
+BYTE HardCharLock Donnalen 0x0
+
+SetWeaponLockArray(DonnalenLock,DonnalenLockArray)
+
+#endif // ADV_WEAPON_LOCKS

@@ -1,5 +1,0 @@
-#define BaseClass PegasusKnight
-#define PromotedClass1 Falcoknight
-#define PromotedClass2 DarkFlier
-
-#include "Palette/Palette Setup.event"

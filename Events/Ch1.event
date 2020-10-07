@@ -20,14 +20,14 @@ TurnBasedEvents:
 	END_MAIN
 
 VergilLeaves:
-	MUSS ArmyASong
+	MUSS Army_A
 	SpawnReinforcements(CutsceneUnit)
 	FlashCursor(17,8,60)
 	Text(Ch1VergilLeaves)
 	MoveCoords(17,9,18,9)
 	ENUN
 	REMU Vergil
-	FlashCursor(Derek,60)
+	FlashCursor(Derek_Boss,60)
 	Text(Ch1VergilLeaves2)
 	MURE 2
 	NoFade
@@ -61,7 +61,7 @@ CharacterBasedEvents:
 	END_MAIN
 
 SandersArdenTalk:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	Text(Ch1SandersArdenTalk)
 	CUSA Arden
 	MURE 2
@@ -69,7 +69,7 @@ SandersArdenTalk:
 	ENDA
 
 SandersWoltTalk:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	Text(Ch1SandersWoltTalk)
 	CUSA Wolt
 	MURE 2
@@ -77,7 +77,7 @@ SandersWoltTalk:
 	ENDA
 
 WoltArdenTalk:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	Text(Ch1WoltArdenTalk)
 	CUSA Arden
 	MURE 2
@@ -85,7 +85,7 @@ WoltArdenTalk:
 	ENDA
 
 ArdenWoltTalk:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	Text(Ch1ArdenWoltTalk)
 	CUSA Wolt
 	MURE 2
@@ -118,7 +118,7 @@ LeftHouseEvent:
 	HouseEvent(Ch1House,HouseBG)
 
 LeftVillage:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	Text(HouseBG,Ch1Sayori)
 	SpawnReinforcements(SayoriUnit)
 	MURE 2
@@ -166,7 +166,7 @@ Units1:
 Bosses:
 	
 	UNIT Vergil Paladin 0x0 Level(7,Enemy,0) [18,9] 0 0 1 REDA17R9 [Spear,SteelBlade,SilverLance] NeverMoveAI
-	UNIT Derek Cavalier 0x0 Level(7,Enemy,0) [18,9] 0 0 1 REDA16R8 [Javelin,Estoc,Espontoon] NeverMoveAI
+	UNIT Derek_Boss Cavalier 0x0 Level(7,Enemy,0) [18,9] 0 0 1 REDA16R8 [Javelin,Estoc,Espontoon] NeverMoveAI
 
 	UNIT
 
@@ -237,10 +237,10 @@ GreenUnits:
 	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [7,0] 0 0 1 REDA6R3 [IronLance] DefaultAI
 	UNIT TownGuard Soldier 0x0 Level(3,NPC,1) [7,0] 0 0 1 REDA8R3 [Glaive] DefaultAI
 
-	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA6R4 [0x0] HastyAI
-	UNIT CivilianUnit Civilian2 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA6R5 [0x0] HastyAI
-	UNIT CivilianUnit CivilianF 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA5R4 [0x0] HastyAI
-	UNIT CivilianUnit Civilian 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA5R5 [0x0] HastyAI
+	UNIT NPC_Civilian Civilian 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA6R4 [0x0] HastyAI
+	UNIT NPC_Civilian Civilian_2 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA6R5 [0x0] HastyAI
+	UNIT NPC_Civilian Civilian_F 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA5R4 [0x0] HastyAI
+	UNIT NPC_Civilian Civilian 0x0 Level(1,NPC,0) [7,0] 0 0 1 REDA5R5 [0x0] HastyAI
 
 	UNIT
 
@@ -254,18 +254,18 @@ Traps2:
 
 BeginningScene:
 	COUNTER_SET 1 0
-	MUSC InvestigationSong
+	MUSC Investigation
 	FADU 16
 	SpawnReinforcements(GreenUnits)
 	FlashCursor(Arden,60)
 	Text(Ch1OP)
 	MoveCoords(7,4,6,8)
 	ENUN
-	MUSC ToccataAndDoomSong
+	MUSC Toccata_and_Doom
 	SpawnReinforcements(Bandits)
 	FlashCursor(Kekh,60)
 	Text(Ch1OP2)
-	MUSC ArmyASong
+	MUSC Army_A
 	SpawnReinforcements(Bosses)
 	FlashCursor(Vergil,60)
 	Text(Ch1OP3)
@@ -277,7 +277,7 @@ BeginningScene:
 	ENUN
 	CAM1 [3,11]
 	STAL 20
-	MUSC StoryLangrisserSong
+	MUSC Story_Langrisser
 	FADU 16
 	LOAD3 0x1 Units1
 	ENUN
@@ -287,7 +287,7 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	MUSC WereRangersSong
+	MUSC Were_Rangers
 	SetBackground(Outside_Village_Evening)
 	Text(Ch1Ending)
 	COUNTER_CHECK 1
@@ -297,7 +297,7 @@ EndingScene:
 		REMOVEPORTRAITS
 		GiveItem(RedGem,Sanders)
 		LABEL 1
-	MUSC ToccataAndDoomSong
+	MUSC Toccata_and_Doom
 	Text(Ch1Ending2)
 	MNC2 2
 	NoFade

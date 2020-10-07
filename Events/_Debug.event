@@ -1,0 +1,99 @@
+EventPointerTable(0xC5, PointerList)
+
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+	Seize(6,6)
+	Door(6,4)
+	DurabilityChest(SkillScroll,AdeptID,7,4)
+	Armory(DebugArmory,3,7)
+	House(0x0,DebugHouse,3,6)
+	END_MAIN
+
+ALIGN 4
+DebugArmory:
+	SHLI IronSword IronLance IronAxe
+	BYTE 00 00
+
+ALIGN 4
+DebugHouse:
+	MUSI
+	SetBackground(HouseBG)
+	Text(TestDialogue)
+	GiveItemWithDurability(RingItem,MagRing,0xFFFF)
+	MUNO
+	CALL $9EE310
+	NoFade
+	ENDA
+
+Dunno1:
+	
+	END_MAIN
+
+Dunno2:
+	
+	END_MAIN
+
+Dunno3:
+	
+	END_MAIN
+
+Tutorial:
+	
+	END_MAIN
+
+Units1:
+	UNIT Sanders Mercenary 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,MasterKey] NoAI
+	UNIT Marisa Sage_F 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Elixir,Unlock] NoAI
+	UNIT Wolt Ballistician 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,CrusaderScroll] NoAI
+	UNIT
+
+EnemyUnits:
+	UNIT ONeill Fighter 0x0 Level(1,Enemy,0) [11,6] 0 0 0 0 [0x0] DoNothing
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 Units1
+	ENUN
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	SetUnitItemDurability(Wolt,2,FalaScroll)
+	//GotoPrepScreen
+	SetHP(1,6,7)
+	ENDA
+
+EndingScene:
+	MNC2 0
+	NoFade
+	ENDA

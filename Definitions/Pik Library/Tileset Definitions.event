@@ -1,0 +1,68 @@
+
+// Vanilla
+
+#define FieldsObjectSet 0x1
+#define FieldsPalette 0x2
+#define FieldsPalette2 0x38 //darker colors
+#define FieldsPalette3 0x4C //swamp
+#define FieldsPalette4 0x5B //evil
+#define FieldsTileConfig 0x3
+#define FieldsWaterTileAnimations 0x5
+
+#define VillageObjectSet 0xE
+#define VillagePalette 0xF
+#define VillagePalette2 0x72 //darker water
+#define VillagePalette3 0xEA //faded color
+#define VillageTileConfig 0x10
+#define VillageWaterTileAnimations 0x12
+#define VillageRushingWaterTileAnimations 0xD3 //water rushes vertically
+
+#define CastleObjectSet 0x18
+#define CastlePalette 0x19 //green and red
+#define CastlePalette2 0x48 //blue and orange
+#define CastlePalette3 0x57 //blue
+#define CastlePalette4 0xB9 //faded color
+#define CastleTileConfig 0x1A
+#define CastleWaterTileAnimations 0x1C
+
+#define PlainsObjectSet 0x2E
+#define PlainsPalette 0x2F
+#define PlainsPalette2 0x34 //no visable difference
+#define PlainsTileConfig 0x30
+#define PlainsWaterTileAnimations FieldsWaterTileAnimations
+
+#define FortObjectSet 0x3C
+#define FortPalette 0x3D //purple
+#define FortPalette2 0x68 //red
+#define FortPalette3 0xCF //red but more faded
+#define FortTileConfig 0x3E
+
+#define DesertObjectSet 0x42
+#define DesertPalette 0x43
+#define DesertTileConfig 0x44
+#define DesertWaterTileAnimations FieldsWaterTileAnimations
+
+#define LavaObjectSet 0x50
+#define LavaPalette 0x51
+#define LavaTileConfig 0x52
+#define LavaTileAnimations 0x54 //type 2
+
+#define TempleObjectSet 0x5F
+#define TemplePalette 0x60
+#define TempleTileConfig 0x61
+
+#define MountainousObjectSet 0x6C
+#define MountainousPalette 0x6D
+#define MountainousPalette2 0xA3 //lagdou ruins
+#define MountainousTileConfig 0x6E
+#define MountainousWaterTileAnimations FieldsWaterTileAnimations
+
+#define ValniObjectSet 0x88
+#define ValniPalette 0x89
+#define ValniTileConfig 0x8A
+
+#define StrongholdObjectSet 0x79
+#define StrongholdPalette 0x7A
+#define StrongholdPalette2 0x7B //faded color
+#define StrongholdTileConfig 0x7B
+#define StrongholdTorchTileAnimations 0x7D

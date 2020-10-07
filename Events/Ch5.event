@@ -29,9 +29,9 @@ TurnBasedEvents:
 	END_MAIN
 
 WagonsAppear:
-	MUSC BlasterMasterStage1Song
+	MUSC Blaster_Master_Stage_1
 	SpawnReinforcements(WagonUnits)
-	FlashCursor(Wagon,60)
+	FlashCursor(Wagon1,60)
 	FlashCursor(Wagon2,60)
 	Text(Ch5Turn1Event)
 	NoFade
@@ -269,29 +269,29 @@ EnemyUnits:
 
 WagonUnits:
 	
-	UNIT Wagon Transporter 0x0 Level(5,Ally,1) [16,0] 0 0 1 REDA14R4 [0x0] NoAI
+	UNIT Wagon1 Transporter 0x0 Level(5,Ally,1) [16,0] 0 0 1 REDA14R4 [0x0] NoAI
 	UNIT Wagon2 Transporter 0x0 Level(5,Ally,1) [16,0] 0 0 1 REDA15R4 [0x0] NoAI
 
 	UNIT
 
 LeftHouseCivs:
 
-	UNIT CivilianUnit CivilianF 0x0 Level(3,NPC,1) [2,10] 0 0 1 REDA2R9 [0x0] NeverMoveAI
-	UNIT CivilianUnit Civilian3 0x0 Level(3,NPC,1) [2,10] 0 0 1 REDA3R10 [0x0] NeverMoveAI
+	UNIT NPC_Civilian Civilian_F 0x0 Level(3,NPC,1) [2,10] 0 0 1 REDA2R9 [0x0] NeverMoveAI
+	UNIT NPC_Civilian Civilian_3 0x0 Level(3,NPC,1) [2,10] 0 0 1 REDA3R10 [0x0] NeverMoveAI
 
 	UNIT
 
 RightHouseCivs:
 
-	UNIT CivilianUnit CivilianF2 0x0 Level(3,NPC,1) [7,8] 0 0 1 REDA6R8 [0x0] NeverMoveAI
-	UNIT CivilianUnit Civilian 0x0 Level(3,NPC,1) [7,8] 0 0 1 REDA7R9 [0x0] NeverMoveAI
+	UNIT NPC_Civilian Civilian_F_2 0x0 Level(3,NPC,1) [7,8] 0 0 1 REDA6R8 [0x0] NeverMoveAI
+	UNIT NPC_Civilian Civilian 0x0 Level(3,NPC,1) [7,8] 0 0 1 REDA7R9 [0x0] NeverMoveAI
 
 	UNIT
 
 MidHouseCivs:
 
-	UNIT CivilianUnit CivilianF2 0x0 Level(3,NPC,1) [6,13] 0 0 1 REDA5R13 [0x0] NeverMoveAI
-	UNIT CivilianUnit Civilian3 0x0 Level(3,NPC,1) [6,13] 0 0 1 REDA7R13 [0x0] NeverMoveAI
+	UNIT NPC_Civilian Civilian_F_2 0x0 Level(3,NPC,1) [6,13] 0 0 1 REDA5R13 [0x0] NeverMoveAI
+	UNIT NPC_Civilian Civilian_3 0x0 Level(3,NPC,1) [6,13] 0 0 1 REDA7R13 [0x0] NeverMoveAI
 
 	UNIT
 
@@ -368,13 +368,13 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
-	MUSC LonelyTownSoulBlazerSong
+	MUSC Lonely_Town
 	SetBackground(Outside_Village_Day)
 	Text(Ch5OP)
-	MUSC ToccataAndDoomSong
+	MUSC Toccata_and_Doom
 	SetBackground(Plain)
 	Text(Ch5OP2)
-	MUSC StoryLangrisserSong
+	MUSC Story_Langrisser
 	SetBackground(Village)
 	Text(Ch5OP3)
 	GotoPrepScreen
@@ -382,11 +382,11 @@ BeginningScene:
 
 EndingScene:
 	FADI 16
-	SendAll(Wagon)
+	SendAll(Wagon1)
 	SendAll(Wagon2)
-	DISA Wagon
+	DISA Wagon1
 	DISA Wagon2
-	MUSC WhereTheWindRustlesSong
+	MUSC Where_the_Wind_Rustles
 	SetBackground(Village)
 	Text(Ch5Ending)
 	COUNTER_CHECK 1
@@ -404,7 +404,7 @@ CounterChecker:
 	COUNTER_CHECK 1
 	SVAL 0x1 15
 	BLT 1 0xC 0x1
-		GiveItem(Speedwing,Sanders)
+		GiveItem(Speedwings,Sanders)
 		LABEL 1
 	COUNTER_CHECK 1
 	SVAL 0x1 12

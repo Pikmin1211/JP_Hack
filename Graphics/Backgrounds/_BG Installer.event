@@ -1,32 +1,32 @@
 #define ConvoBackgroundTable $95DD1C
 #define SetConvoBackground(Index, ImagePointer, TSAPointer, PalettePointer) "PUSH; ORG ConvoBackgroundTable + (Index * 0xC); POIN ImagePointer TSAPointer PalettePointer; POP"
 
-#define SnowFieldBG 0x6
-SetConvoBackground(SnowFieldBG, SnowFieldBGData, SnowFieldBGTSA, SnowFieldBGPal)
+#define Snow_Field 0x6
+SetConvoBackground(Snow_Field, SnowFieldBGData, SnowFieldBGTSA, SnowFieldBGPal)
 
-#define NightSnowFieldBG 0xF
-SetConvoBackground(NightSnowFieldBG, NightSnowFieldBGData, NightSnowFieldBGTSA, NightSnowFieldBGPal)
+#define Night_Snow_Field 0xF
+SetConvoBackground(Night_Snow_Field, NightSnowFieldBGData, NightSnowFieldBGTSA, NightSnowFieldBGPal)
 
 ALIGN 4
 SnowFieldBGData:
-#incbin "SnowFieldBGData.dmp"
+#incbin "Dmp/SnowFieldBGData.dmp"
 
 ALIGN 4
 SnowFieldBGTSA:
-#incbin "SnowFieldBGTSA.dmp"
+#incbin "Dmp/SnowFieldBGTSA.dmp"
 
 ALIGN 4
 SnowFieldBGPal:
-#incbin "SnowFieldBGPalette.dmp"
+#incbin "Dmp/SnowFieldBGPalette.dmp"
 
 ALIGN 4
 NightSnowFieldBGData:
-#incbin "SnowFieldNightBGData.dmp"
+#incbin "Dmp/SnowFieldNightBGData.dmp"
 
 ALIGN 4
 NightSnowFieldBGTSA:
-#incbin "SnowFieldNightBGTSA.dmp"
+#incbin "Dmp/SnowFieldNightBGTSA.dmp"
 
 ALIGN 4
 NightSnowFieldBGPal:
-#incbin "SnowFieldNightBGPalette.dmp"
+#incbin "Dmp/SnowFieldNightBGPalette.dmp"

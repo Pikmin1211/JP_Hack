@@ -49,13 +49,13 @@ HurryUp:
 
 GreensTurnBlue:
 
-	MUSC SkyEventSong
+	MUSC Sky_Event
 	CAM1 Neptune
 	FlashCursor(Neptune,60)
 	Text(Ch3PostPrep)
 	CUSA Neptune
 	CUSA Wilbell
-	MUSC FranticFactorySong
+	MUSC Frantic_Factory
 	CAM1 [9,18]
 	FlashCursor(9,18,60)
 	Text(Ch3PostPrep2)
@@ -151,12 +151,12 @@ EnemyUnits:
 	UNIT Monster Bonewalker 0x0 Level(4,Enemy,1) [1,14] 0 0 0 0 [Horseslayer] AttackInRangeAI
 	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [16,14] 0 0 0 0 [Javelin] NeverMoveAI
 	UNIT Monster Bonewalker 0x0 Level(5,Enemy,1) [11,1] 0 0 0 0 [Pilum,Zanbato] NeverMoveAI
-	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [4,9] 0 0 0 0 [SteelBow] DefaultAI
-	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [13,0] 0 0 0 0 [Longbow] AttackInRangeAI
-	UNIT Monster BonewalkerBow 0x0 Level(5,Enemy,1) [0,17] 0 0 0 0 [IronBow] NeverMoveAI
-	UNIT Monster BonewalkerBow 0x0 Level(6,Enemy,1) [1,18] 0 0 0 0 [CompositeBow] NeverMoveAI
-	UNIT Monster BonewalkerBow 0x0 Level(4,Enemy,1) [12,17] 0 0 0 0 [SteelBow] AttackInRangeAI
-	UNIT Monster BonewalkerBow 0x0 Level(4,Enemy,1) [5,18] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Monster Bonewalker_Bow 0x0 Level(5,Enemy,1) [4,9] 0 0 0 0 [SteelBow] DefaultAI
+	UNIT Monster Bonewalker_Bow 0x0 Level(5,Enemy,1) [13,0] 0 0 0 0 [Longbow] AttackInRangeAI
+	UNIT Monster Bonewalker_Bow 0x0 Level(5,Enemy,1) [0,17] 0 0 0 0 [IronBow] NeverMoveAI
+	UNIT Monster Bonewalker_Bow 0x0 Level(6,Enemy,1) [1,18] 0 0 0 0 [CompositeBow] NeverMoveAI
+	UNIT Monster Bonewalker_Bow 0x0 Level(4,Enemy,1) [12,17] 0 0 0 0 [SteelBow] AttackInRangeAI
+	UNIT Monster Bonewalker_Bow 0x0 Level(4,Enemy,1) [5,18] 0 0 0 0 [SteelBow] AttackInRangeAI
 
 	UNIT Monster MautheDoog 0x0 Level(4,Enemy,1) [1,10] 0 0 0 0 [FieryFang] DefaultAI
 	UNIT Monster MautheDoog 0x0 Level(4,Enemy,1) [14,10] 0 0 0 0 [FieryFang] AttackInRangeAI
@@ -174,8 +174,8 @@ EnemyUnits:
 
 GreenUnits:
 
-	UNIT Neptune MyrmidonF 0x0 Level(6,NPC,0) [9,7] 0 0 0 0 [Shamshir,Shadowkiller,Vulnerary] NoAI
-	UNIT Wilbell ShamanF 0x0 Level(4,NPC,0) [8,7] 0 0 0 0 [Flux,Vulnerary,Torch] NoAI
+	UNIT Neptune Myrmidon_F 0x0 Level(6,NPC,0) [9,7] 0 0 0 0 [Shamshir,Shadowkiller,Vulnerary] NoAI
+	UNIT Wilbell Shaman_F 0x0 Level(4,NPC,0) [8,7] 0 0 0 0 [Flux,Vulnerary,Torch] NoAI
 
 	UNIT
 
@@ -202,23 +202,23 @@ LeftUnits:
 
 RightUnitsNoEXP:
 
-	UNIT MonsterNoEXP Tarvos 0x0 Level(7,Enemy,1) [16,0] 0 0 1 REDA16R0 [SteelAxe,HandAxe] DefaultAI
-	UNIT MonsterNoEXP Bael 0x0 Level(6,Enemy,1) [16,0] 0 0 1 REDA15R0 [RottenClaw] DefaultAI
-	UNIT MonsterNoEXP Bael 0x0 Level(6,Enemy,1) [16,0] 0 0 1 REDA16R1 [RottenClaw] DefaultAI
+	UNIT Monster_NoEXP Tarvos 0x0 Level(7,Enemy,1) [16,0] 0 0 1 REDA16R0 [SteelAxe,HandAxe] DefaultAI
+	UNIT Monster_NoEXP Bael 0x0 Level(6,Enemy,1) [16,0] 0 0 1 REDA15R0 [RottenClaw] DefaultAI
+	UNIT Monster_NoEXP Bael 0x0 Level(6,Enemy,1) [16,0] 0 0 1 REDA16R1 [RottenClaw] DefaultAI
 	UNIT
 
 LeftUnitsNoEXP:
 	
-	UNIT MonsterNoEXP Bael 0x0 Level(7,Enemy,1) [0,0] 0 0 1 REDA0R0 [RottenClaw] DefaultAI
-	UNIT MonsterNoEXP Bonewalker 0x0 Level(6,Enemy,1) [0,0] 0 0 1 REDA1R0 [SteelSword,IronLance] DefaultAI
-	UNIT MonsterNoEXP Bonewalker 0x0 Level(6,Enemy,1) [0,0] 0 0 1 REDA0R1 [Javelin,SteelLance] DefaultAI
+	UNIT Monster_NoEXP Bael 0x0 Level(7,Enemy,1) [0,0] 0 0 1 REDA0R0 [RottenClaw] DefaultAI
+	UNIT Monster_NoEXP Bonewalker 0x0 Level(6,Enemy,1) [0,0] 0 0 1 REDA1R0 [SteelSword,IronLance] DefaultAI
+	UNIT Monster_NoEXP Bonewalker 0x0 Level(6,Enemy,1) [0,0] 0 0 1 REDA0R1 [Javelin,SteelLance] DefaultAI
 	UNIT
 
 Traps1:
-	TorchTrap(7,6)
-	TorchTrap(10,6)
-	TorchTrap(9,17)
-	RedSigil(9,18)
+	TorchTrap(7,6,4)
+	TorchTrap(10,6,4)
+	TorchTrap(9,17,4)
+	MapSpriteTrap(RedSigilTrapID,9,18)
 	ENDTRAP
 	ALIGN 4
 
@@ -227,7 +227,7 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	MUSC TheWorldIsTremblingSong
+	MUSC The_World_is_Trembling
 	SetBackground(Forest_Dense)
 	Text(Ch3OP)
 	FADI 16
@@ -236,7 +236,7 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
-	MUSC TrainRushSong
+	MUSC Train_Rush
 	CAM1 Neptune
 	FlashCursor(Neptune,60)
 	Text(Ch3OP2)
@@ -246,7 +246,7 @@ BeginningScene:
 	ENDA
 
 EndingScene:
-	MUSC InvestigationSong
+	MUSC Investigation
 	SetBackground(Forest_Dense)
 	TEXTSTART
 	TEXTSHOW Ch3Ending
@@ -259,7 +259,7 @@ EndingScene:
 	SOUN 0xF0 // legendary weapon flash
 	STAL 100
 	FAWU 16
-	MUSC GreenGardenNightSong
+	MUSC Green_Garden_Night
 	TEXTCONT
 	TEXTEND
 	REMOVEPORTRAITS

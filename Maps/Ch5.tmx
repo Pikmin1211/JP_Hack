@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <map version="1.1" tiledversion="2018.08.22" orientation="orthogonal" renderorder="right-down" width="17" height="20" tilewidth="16" tileheight="16" infinite="0" nextlayerid="8" nextobjectid="1">
  <tileset firstgid="1" name="FE8 - Plains - 2e002f30" tilewidth="16" tileheight="16" tilecount="1024" columns="32">
-  <image source="../../../VisionQuest/_UserData/Maps/Tilesets/2E002F30.png" trans="ffffff" width="512" height="512"/>
+  <image source="Tilesets/2E002F30.png" trans="ffffff" width="512" height="512"/>
   <tile id="774">
    <properties>
     <property name="Anims1" value="VillageWaterTileAnimations"/>

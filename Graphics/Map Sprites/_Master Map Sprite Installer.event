@@ -1,0 +1,239 @@
+ALIGN 4
+AxeArmorStand:
+#incbin "Dmp/Axe Armor Stand.dmp"
+
+ALIGN 4
+AxeArmorWalk:
+#incbin "Dmp/Axe Armor Walk.dmp"
+
+ALIGN 4
+ArchKnightStand:
+#incbin "Dmp/Arch Knight Stand.dmp"
+
+ALIGN 4
+ArchKnightWalk:
+#incbin "Dmp/Arch Knight Walk.dmp"
+
+ALIGN 4
+AxeKnightStand:
+#incbin "Dmp/Axe Knight Stand.dmp"
+
+ALIGN 4
+AxeKnightWalk:
+#incbin "Dmp/Axe Knight Walk.dmp"
+
+ALIGN 4
+BallisticianStand:
+#incbin "Dmp/Ballistician Stand.dmp"
+
+ALIGN 4
+BallisticianWalk:
+#incbin "Dmp/Ballistician Walk.dmp"
+
+ALIGN 4
+BattlemageStand:
+#incbin "Dmp/Battlemage Stand.dmp"
+
+ALIGN 4
+BattlemageWalk:
+#incbin "Dmp/Battlemage Walk.dmp"
+
+ALIGN 4
+BowKnightStand:
+#incbin "Dmp/Bow Knight Stand.dmp"
+
+ALIGN 4
+BowKnightWalk:
+#incbin "Dmp/Bow Knight Walk.dmp"
+
+ALIGN 4
+BrawlerStand:
+#incbin "Dmp/Brawler Stand.dmp"
+
+ALIGN 4
+BrawlerWalk:
+#incbin "Dmp/Brawler Walk.dmp"
+
+ALIGN 4
+ButlerStand:
+#incbin "Dmp/Butler Stand.dmp"
+
+ALIGN 4
+ButlerWalk:
+#incbin "Dmp/Butler Walk.dmp"
+
+ALIGN 4
+DarkFlierStand:
+#incbin "Dmp/Dark Flier Stand.dmp"
+
+ALIGN 4
+DarkFlierWalk:
+#incbin "Dmp/Dark Flier Walk.dmp"
+
+ALIGN 4
+DreadFighterFStand:
+#incbin "Dmp/Dread Fighter F Stand.dmp"
+
+ALIGN 4
+DreadFighterFWalk:
+#incbin "Dmp/Dread Fighter F Walk.dmp"
+
+ALIGN 4
+DreadFighterStand:
+#incbin "Dmp/Dread Fighter Stand.dmp"
+
+ALIGN 4
+DreadFighterWalk:
+#incbin "Dmp/Dread Fighter Walk.dmp"
+
+ALIGN 4
+DruidFStand:
+#incbin "Dmp/Druid F Stand.dmp"
+
+ALIGN 4
+DruidFWalk:
+#incbin "Dmp/Druid F Walk.dmp"
+
+ALIGN 4
+DukeKnightStand:
+#incbin "Dmp/Duke Knight Stand.dmp"
+
+ALIGN 4
+DukeKnightWalk:
+#incbin "Dmp/Duke Knight Walk.dmp"
+
+ALIGN 4
+FighterFStand:
+#incbin "Dmp/Fighter F Stand.dmp"
+
+ALIGN 4
+FighterFWalk:
+#incbin "Dmp/Fighter F Walk.dmp"
+
+ALIGN 4
+FreeKnightStand:
+#incbin "Dmp/Free Knight Stand.dmp"
+
+ALIGN 4
+FreeKnightWalk:
+#incbin "Dmp/Free Knight Walk.dmp"
+
+ALIGN 4
+GreatKnightStand:
+#incbin "Dmp/Great Knight Stand.dmp"
+
+ALIGN 4
+GreatKnightWalk:
+#incbin "Dmp/Great Knight Walk.dmp"
+
+ALIGN 4
+HalberdierStand:
+#incbin "Dmp/Halberdier Stand.dmp"
+
+ALIGN 4
+HalberdierWalk:
+#incbin "Dmp/Halberdier Walk.dmp"
+
+ALIGN 4
+HarrierStand:
+#incbin "Dmp/Harrier Stand.dmp"
+
+ALIGN 4
+HarrierWalk:
+#incbin "Dmp/Harrier Walk.dmp"
+
+ALIGN 4
+LanceKnightStand:
+#incbin "Dmp/Lance Knight Stand.dmp"
+
+ALIGN 4
+LanceKnightWalk:
+#incbin "Dmp/Lance Knight Walk.dmp"
+
+ALIGN 4
+LightMageFStand:
+#incbin "Dmp/Light Mage F Stand.dmp"
+
+ALIGN 4
+LightMageFWalk:
+#incbin "Dmp/Light Mage F Walk.dmp"
+
+ALIGN 4
+MaidStand:
+#incbin "Dmp/Maid Stand.dmp"
+
+ALIGN 4
+MaidWalk:
+#incbin "Dmp/Maid Walk.dmp"
+
+ALIGN 4
+MedicStand:
+#incbin "Dmp/Medic Stand.dmp"
+
+ALIGN 4
+MedicWalk:
+#incbin "Dmp/Medic Walk.dmp"
+
+ALIGN 4
+ShamanFStand:
+#incbin "Dmp/Shaman F Stand.dmp"
+
+ALIGN 4
+ShamanFWalk:
+#incbin "Dmp/Shaman F Walk.dmp"
+
+ALIGN 4
+SigilMapSprite:
+#incbin "Dmp/Sigil.dmp"
+
+ALIGN 4
+SwordSaintStand:
+#incbin "Dmp/Sword Saint Stand.dmp"
+
+ALIGN 4
+SwordSaintWalk:
+#incbin "Dmp/Sword Saint Walk.dmp"
+
+ALIGN 4
+TentStand:
+#incbin "Dmp/Tent Stand.dmp"
+
+ALIGN 4
+TentWalk:
+#incbin "Dmp/Tent Walk.dmp"
+
+ALIGN 4
+TorchMapSprite:
+#incbin "Dmp/Torch.dmp"
+
+ALIGN 4
+TransporterStand:
+#incbin "Dmp/Transporter Stand.dmp"
+
+ALIGN 4
+TransporterWalk:
+#incbin "Dmp/Transporter Walk.dmp"
+
+ALIGN 4
+WarMonkStand:
+#incbin "Dmp/War Monk Stand.dmp"
+
+ALIGN 4
+WarMonkWalk:
+#incbin "Dmp/War Monk Walk.dmp"
+
+ALIGN 4
+WarriorFStand:
+#incbin "Dmp/Warrior F Stand.dmp"
+
+ALIGN 4
+WarriorFWalk:
+#incbin "Dmp/Warrior F Walk.dmp"
+
+ALIGN 4
+WitchStand:
+#incbin "Dmp/Witch Stand.dmp"
+
+ALIGN 4
+WitchWalk:
+#incbin "Dmp/Witch Walk.dmp"

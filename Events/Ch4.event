@@ -23,9 +23,9 @@ TurnBasedEvents:
 	END_MAIN
 
 PostPrep:
-	MUSC DesertedChateauSong
-	CAM1 Derek
-	FlashCursor(Derek,60)
+	MUSC Deserted_Chateau
+	CAM1 Derek_Boss
+	FlashCursor(Derek_Boss,60)
 	Text(Ch4PostPrep)
 	NoFade
 	ENDA
@@ -59,14 +59,14 @@ TopThief:
 	ENDA
 
 DerekLeaves:
-	CHECK_ALIVE Derek
+	CHECK_ALIVE Derek_Boss
 	BEQ 1 0x0 0xC
-		CAM1 Derek
-		FlashCursor(Derek,60)
+		CAM1 Derek_Boss
+		FlashCursor(Derek_Boss,60)
 		Text(Ch4DerekLeaves)
 		MoveCoords(0,1,0,0)
 		ENUN
-		REMU Derek
+		REMU Derek_Boss
 		LABEL 1
 	NoFade
 	ENDA
@@ -77,7 +77,7 @@ CharacterBasedEvents:
 	END_MAIN
 
 SandersBrianTalk:
-	MUSS SkyEventSong
+	MUSS Sky_Event
 	Text(Ch4SandersBrianTalk)
 	CUSA Brian
 	MURE 2
@@ -101,9 +101,9 @@ GreenEscape:
 	ENDA
 
 LeftDoorEvent:
-	FlashCursor(Eevster,60)
+	FlashCursor(Eevster_NPC,60)
 	Text(Ch4OpenCell)
-	SetAI(Eevster,0x6,0xC,0x0,0x0) // HastyAI
+	SetAI(Eevster_NPC,0x6,0xC,0x0,0x0) // HastyAI
 	SetAI(Basement,0x6,0xC,0x0,0x0) // HastyAI
 	NoFade
 	ENDA
@@ -125,7 +125,7 @@ LocationBasedEvents:
 	Door(14,2)
 	Door(15,2)
 	Chest(RedGem,7,8)
-	Chest(AdeptManual,8,7)
+	DurabilityChest(SkillScroll,AdeptID,8,7)
 	Chest(KillerLance,10,8)
 	Chest(EnergyRing,15,0)
 	END_MAIN
@@ -164,7 +164,7 @@ EnemyUnits:
 
 	UNIT Todoroki Mercenary 0x0 Level(9,Enemy,0) [4,2] 2 0 0 0 [Flamberge] NeverMoveAI
 
-	UNIT Derek Cavalier 0x0 Level(7,Enemy,1) [0,1] 2 0 0 0 [Rapier,LightBrand,Javelin] NeverMoveAI
+	UNIT Derek_Boss Cavalier 0x0 Level(7,Enemy,1) [0,1] 2 0 0 0 [Rapier,LightBrand,Javelin] NeverMoveAI
 
 	UNIT Imperial2 AxeKnight 0x0 Level(8,Enemy,1) [0,4] 0 0 0 0 [Javelin,Halberd] NeverMoveAI
 	UNIT Imperial2 Cavalier 0x0 Level(8,Enemy,1) [1,2] 0 0 0 0 [HeavySpear,Shortsword] NeverMoveAI
@@ -230,7 +230,7 @@ GreenUnits:
 
 	UNIT Brian Thief 0x0 Level(8,NPC,0) [8,15] 0 0 0 0 [SteelBlade,Rapier,Vulnerary,Lockpick] GuardTileAI
 
-	UNIT Eevster Troubadour 0x0 Level(7,NPC,0) [0,11] 0 0 0 0 [Mend,Vulnerary] GuardTileAI
+	UNIT Eevster_NPC Troubadour 0x0 Level(7,NPC,0) [0,11] 0 0 0 0 [Mend,Vulnerary] GuardTileAI
 
 	UNIT Basement Mercenary 0x0 Level(3,NPC,1) [0,12] 0 0 0 0 [IronSword] GuardTileAI
 	UNIT Basement Soldier 0x0 Level(4,NPC,1) [1,11] 0 0 0 0 [IronLance] GuardTileAI
@@ -255,20 +255,20 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
-	MUSC BattleFFTASong
+	MUSC Battle_FFTA
 	SetBackground(Castle_Hall_2)
 	Text(Ch4OP)
-	MUSC WhereTheWindRustlesSong
+	MUSC Where_the_Wind_Rustles
 	SetBackground(Plain)
 	Text(Ch4OP2)
-	MUSC ToccataAndDoomSong
+	MUSC Toccata_and_Doom
 	SetBackground(Castle_Hall_2)
 	Text(Ch4OP3)
 	GotoPrepScreen
 	ENDA
 
 EndingScene:
-	MUSC StoryLangrisserSong
+	MUSC Story_Langrisser
 	SetBackground(Castle_Hall_2)
 	Text(Ch4Ending)
 	CenterTextbox(Ch4Ending2)
@@ -280,7 +280,7 @@ EndingScene:
 		REMOVEPORTRAITS
 		GiveItem(Swordreaver,Sanders)
 		LABEL 1
-	MUSC EnemyMessage3Song
+	MUSC Enemy_Message_3
 	SetBackground(Castle_Hall)
 	Text(Ch4Ending4)
 	MNC2 5
