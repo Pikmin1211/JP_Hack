@@ -7,7 +7,6 @@
 #define RingItem 0xBE
 #define CrusaderScroll 0xBF
 
-#define RubySword 0xCF
 #define SapphireLance 0xC0
 #define EmeraldAxe 0xC1
 #define HuntingBow 0xC2
@@ -60,6 +59,7 @@
 #define Shortsword 0xF1
 #define ShortSword Shortsword
 #define Baphomet 0xF2
+#define RubySword 0xF3
 
 #define Tyrfing Audhulma
 #define Gungnir Vidofnir
