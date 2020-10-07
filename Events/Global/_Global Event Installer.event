@@ -5,3 +5,5 @@
 #include "AI.event"
 
 #include "ASMCs/_Master ASMC Installer.event"
+
+#include "Escape Points.event"
