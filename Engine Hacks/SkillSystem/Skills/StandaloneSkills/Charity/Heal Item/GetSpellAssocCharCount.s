@@ -19,8 +19,18 @@ push {lr}
 
 push {r0,r1}
 
+/*
 mov r1, #0xFF
 and r0, r1
+cmp r0, #Vulnerary
+beq CharityCheck
+cmp r0, #Elixir
+beq CharityCheck
+b Return
+*/
+
+ldr r4, =gActionData
+ldrb r0, [r4, #0x6]
 cmp r0, #Vulnerary
 beq CharityCheck
 cmp r0, #Elixir

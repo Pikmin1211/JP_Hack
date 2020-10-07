@@ -68,7 +68,7 @@ Tutorial:
 Units1:
 	UNIT Sanders Mercenary 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,MasterKey] NoAI
 	UNIT Marisa Sage_F 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Elixir,Unlock,Heal] NoAI
-	UNIT Wolt Ballistician 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,CrusaderScroll] NoAI
+	UNIT Oskar Warrior 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,CrusaderScroll] NoAI
 	UNIT
 
 EnemyUnits:
@@ -88,7 +88,7 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
-	SetUnitItemDurability(Wolt,2,FalaScroll)
+	SetUnitItemDurability(Oskar,2,FalaScroll)
 	//GotoPrepScreen
 	SetHP(1,6,7)
 	SetHP(1,7,6)
