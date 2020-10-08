@@ -319,7 +319,7 @@ DoVanillaIconThing:
 @get icon from item table
 mov r0,r4
 cmp r0,#0
-beq GenericGoBack
+beq RetNegOne
 mov r1,#0xFF
 and r0,r1
 mov r1,#36
@@ -327,6 +327,10 @@ mul r0,r1
 ldr r1,=ItemTable
 add r0,r1
 ldrb r0,[r0,#0x1D]
+b GenericGoBack
+
+RetNegOne:
+sub r0,#1
 
 GenericGoBack:
 pop {r4}

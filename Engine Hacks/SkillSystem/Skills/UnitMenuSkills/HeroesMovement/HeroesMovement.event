@@ -38,10 +38,22 @@ prSwapCommand_Availability:
 				rCallExternal(SkillTester)
 
 prShoveCommand_Availability:
+{
 	rGetWrapper
+		rCallSequence(_CheckSkill _CheckUnitAttributes)
+
+	_CheckSkill:
 		rIfUnitHasNotState(US_CANTOING)
 			rWithConstant(ShoveID)
 				rCallExternal(SkillTester)
+
+	_CheckUnitAttributes:
+		rOr
+			rIfUnitHasNotState(US_CANTOING)
+				rIfUnitHasNotAttribute(CA_MOUNTEDAID)
+					rIfUnitHasNotAttribute(CA_CANTO)
+						rConstant(True)
+}
 
 prSmiteCommand_Availability:
 	rGetWrapper
@@ -63,7 +75,9 @@ prShove_TargetLegality:
 prSmite_TargetLegality:
     rGetWrapper // Defaults to 0
         rIfUnitHasNotGuardAI
-            rConstant(True)
+        	rIfUnitHasNotAttribute(CA_MOUNTEDAID)
+            	rIfUnitHasNotAttribute(CA_CANTO)
+            		rConstant(True)
 
 #include "HeroesMovement_Internal.event"
 
