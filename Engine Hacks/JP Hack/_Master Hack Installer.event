@@ -57,3 +57,5 @@
 #include "Pik Stuff/SRankWeight/SRankWeight.event"
 
 #include "Pik Stuff/WeatherNull/Installer.event"
+
+#include "Fixes/FillAIDangerMap/FillAIDangerMap.event"
