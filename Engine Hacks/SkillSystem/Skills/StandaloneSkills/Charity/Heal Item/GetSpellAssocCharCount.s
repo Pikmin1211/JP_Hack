@@ -39,6 +39,21 @@ b Return
 
 CharityCheck:
 ldr r4, =gActionData
+ldrb r0, [r4, #0x7]
+cmp r0, #0x1
+beq ClearFromActionData
+mov r0, #0x1
+strb r0, [r4, #0x7]
+b CheckForSelf
+
+ClearFromActionData:
+ldr r4, =gActionData
+mov r0, #0x0
+strb r0, [r4, #0x6]
+strb r0, [r4, #0x7]
+
+CheckForSelf:
+ldr r4, =gActionData
 ldrb r0, [r4, #0xD] // target
 mov r1, r0
 ldrb r0, [r4, #0xC] // user

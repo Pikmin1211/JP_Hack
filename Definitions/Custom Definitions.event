@@ -21,7 +21,7 @@
 
 #ifndef DebuffTable
   #define DebuffTable     0x0203F100
-  #define DebuffTableSize 0x00000900
+  #define DebuffTableSize 0x000005A0
 #endif
 
 #define LunarBrace MoonBracelet
