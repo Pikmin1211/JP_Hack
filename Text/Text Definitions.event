@@ -21,6 +21,8 @@
 #define BishopDescription $320
 #define SummonerDescription $32E
 #define RogueDescription $326
+#define UnitTypeText $4F1
+#define UnitTypeRText $551
 #define LearnedSkillText $03A
 #define SS_TalkText $03B
 #define SS_SkillsText $03C

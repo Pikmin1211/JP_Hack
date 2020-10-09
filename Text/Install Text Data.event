@@ -85,6 +85,14 @@ __TEXTPROCESS326:
 #incbin ".TextEntries\text_buildfileRogueDescription.fetxt.dmp"
 setText($326, __TEXTPROCESS326)
 
+__TEXTPROCESS4F1:
+#incbin ".TextEntries\text_buildfileUnitTypeText.fetxt.dmp"
+setText($4F1, __TEXTPROCESS4F1)
+
+__TEXTPROCESS551:
+#incbin ".TextEntries\text_buildfileUnitTypeRText.fetxt.dmp"
+setText($551, __TEXTPROCESS551)
+
 __TEXTPROCESS03A:
 #incbin ".TextEntries\text_buildfileLearnedSkillText.fetxt.dmp"
 setText($3A, __TEXTPROCESS03A)

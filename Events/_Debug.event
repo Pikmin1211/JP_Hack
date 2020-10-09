@@ -66,9 +66,9 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Sanders Mercenary 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,MasterKey] NoAI
-	UNIT Marisa Sage_F 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Elixir,Unlock,Hammerne] NoAI
-	UNIT Oskar Warrior 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,CrusaderScroll] NoAI
+	UNIT Sanders WyvernLord 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,MasterKey] NoAI
+	UNIT Marisa Valkyrie 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Mend,Unlock,Hammerne] NoAI
+	UNIT Oskar GreatKnight 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,CrusaderScroll] NoAI
 	UNIT
 
 EnemyUnits:

@@ -72,3 +72,9 @@ fighters. Equip: Dark, staves.[X]
 Knaves who need no tools or keys[N]
 to open locks. Equip: Swords.[X]
 
+#0x4F1 UnitTypeText
+Type[X]
+
+#0x551 UnitTypeRText
+Class type. Affects what items will[N]
+deal effective damage on this unit.[X]

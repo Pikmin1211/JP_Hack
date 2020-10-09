@@ -60,7 +60,7 @@ beq		Label2
 ldrb	r1,[r0]
 mov		r2,#0xFE
 and		r1,r2
-strb	r1,[r0]			@don't display enemy growths
+strb	r1,[r0]			@dont display enemy growths
 Label2:
 ldrb	r0,[r0]
 mov		r1,#1
@@ -95,7 +95,7 @@ ldr		r0,[sp,#0xC]
 ldr		r0,[r0,#28]		@res growth getter
 draw_growth_at 17, 15
 ldr		r0,[sp,#0xC]
-ldr		r0,[r0]			@hp growth getter (not displaying because there's no room atm)
+ldr		r0,[r0]			@hp growth getter (not displaying because theres no room atm)
 draw_growth_at 17, 17
 draw_textID_at 13, 17, textID=0x4E9, growth_func=1 @hp name
 b		NextColumn
@@ -112,13 +112,15 @@ draw_con_bar_with_getter_at 24, 3
 
 draw_textID_at 21, 5, textID=0x4f8 @aid
 draw_number_at 25, 5, 0x80189B8, 2 @aid getter
-draw_aid_icon_at 26, 5
+@draw_aid_icon_at 26, 5
 
 draw_status_text_at 21, 7
 
 draw_textID_at 21, 9, textID=0x4f1 @affin
 
-draw_affinity_icon_at 24, 9
+@draw_affinity_icon_at 24, 9
+
+draw_unit_type_at 24, 9
 
 
 .set ss_talkloc, (SS_TalkText - . - 6)

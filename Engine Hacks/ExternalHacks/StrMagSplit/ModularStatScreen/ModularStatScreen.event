@@ -8,6 +8,16 @@
 
 #ifdef _FE8_
 
+  ALIGN 4
+  MSS_leftstatscreen:
+    #incbin "asm/mss_leftstatscreen.dmp"
+    POIN HP_Name_Color
+
+  PUSH
+      ORG $86E44
+        jumpToHack(MSS_leftstatscreen);
+  POP
+
   #define Skl_Arrow_X 0x78
   #define Skl_Arrow_Y 0x38
   #define Spd_Arrow_X 0x78

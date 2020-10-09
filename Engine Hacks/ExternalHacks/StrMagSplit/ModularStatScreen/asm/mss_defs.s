@@ -59,7 +59,7 @@
   ldr r7, =TileBufferBase  @r7 contains the latest buffer. starts at 2003c2c.
   ldr     r5,=StatScreenStruct
   ldr     r0,[r5,#0xC]
-  mov r8, r0             @r8 contains the current unit's data
+  mov r8, r0             @r8 contains the current units data
   clear_buffers
 .endm
 
@@ -81,7 +81,7 @@
   strb r1, [r3, #4] @store width
   strb r2, [r3, #8] @assign the next one.
   .if \textID
-    ldr r0, =\textID @otherwise assume it's in r0
+    ldr r0, =\textID @otherwise assume its in r0
   .endif
   blh BufferText
   mov r2, #0x0
@@ -516,6 +516,61 @@
   lsl r2, #7
   ldr r0, =(tile_origin+(0x20*2*\tile_y)+(2*\tile_x))
   blh DrawIcon
+.endm
+
+.macro draw_unit_type_at tile_x, tile_y
+
+  push {r7}
+
+  ldr r0, =(tile_origin+(0x20*2*\tile_y)+(2*\tile_x))
+  mov r7, r0 // r7 = initial screen coords
+
+  mov r0, r8
+  ldr r1, [r0]
+  ldr r1, [r0,#4] // r1 = class data
+  ldr r0, =0x50
+  ldr r0, [r1, r0] // r0 = class type bitfield
+  cmp r0, #0x0
+  beq EndTypeIcon
+
+  mov r1, #0x1 // icon index
+  mov r2, #0x1 // comparator
+
+  TypeIconLoop:
+
+  // and r3, r0, r2
+  push {r0}
+  and r0, r2
+  mov r3, r0
+  pop {r0}
+
+  cmp r3, #0x0
+  beq TypeLoopRepeat
+
+  // draw an icon
+  push {r0,r1,r2}
+  mov r0, r1 @icon
+  mov r1,#3 @sheet ID
+  lsl r1,r1,#8 @shifted 8 bits left
+  orr r1, r0
+  mov r0, r7 // coords
+  mov r2, #0xA0
+  lsl r2, #7
+  blh DrawIcon
+  pop {r0,r1,r2}
+  add r7, #0x4 @ 2*2 = +2 tiles right for the next icon
+
+  TypeLoopRepeat:
+  add r1, #0x1
+  cmp r1, #0x32 // max icon number
+  beq EndTypeIcon
+  lsl r2, #0x1 // next bitfield to check
+  b TypeIconLoop
+
+  EndTypeIcon:
+
+  pop {r7}
+
 .endm
 
 .macro draw_trv_text_at, tile_x, tile_y, colour=Blue
