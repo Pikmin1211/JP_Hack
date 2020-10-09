@@ -237,3 +237,47 @@ WitchStand:
 ALIGN 4
 WitchWalk:
 #incbin "Dmp/Witch Walk.dmp"
+
+ALIGN 4
+RayManaketeWalk:
+#incbin "Dmp/Ray Manakete Walk.dmp"
+
+ALIGN 4
+BarubaryStand:
+#incbin "Dmp/Barubary Stand.dmp"
+
+ALIGN 4
+BarubaryWalk:
+#incbin "Dmp/Barubary Walk.dmp"
+
+ALIGN 4
+EarthDragonStand:
+#incbin "Dmp/Earth Dragon Stand.dmp"
+
+ALIGN 4
+EarthDragonWalk:
+#incbin "Dmp/Earth Dragon Walk.dmp"
+
+ALIGN 4
+DivineDragonStand:
+#incbin "Dmp/Divine Dragon Stand.dmp"
+
+ALIGN 4
+DivineDragonWalk:
+#incbin "Dmp/Divine Dragon Walk.dmp"
+
+ALIGN 4
+IceDragonStand:
+#incbin "Dmp/Ice Dragon Stand.dmp"
+
+ALIGN 4
+IceDragonWalk:
+#incbin "Dmp/Ice Dragon Walk.dmp"
+
+ALIGN 4
+MageDragonStand:
+#incbin "Dmp/Mage Dragon Stand.dmp"
+
+ALIGN 4
+MageDragonWalk:
+#incbin "Dmp/Mage Dragon Walk.dmp"

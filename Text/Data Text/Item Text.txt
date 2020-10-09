@@ -568,3 +568,39 @@ based on item durability.[X]
 
 ## ShortswordDescription
  [X]
+
+## FirestoneName
+Firestone[X]
+
+## FirestoneDescription
+ [X]
+
+## DivinestoneName
+Divinestone[X]
+
+## DivinestoneDescription
+ [X]
+
+## IcestoneName
+Icestone[X]
+
+## IcestoneDescription
+ [X]
+
+## MagestoneName
+Magestone[X]
+
+## MagestoneDescription
+ [X]
+
+## EarthstoneName
+Earthstone[X]
+
+## EarthstoneDescription
+ [X]
+
+## DarkstoneName
+Darkstone[X]
+
+## DarkstoneDescription
+ [X]

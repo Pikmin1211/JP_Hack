@@ -186,3 +186,33 @@ Ballistician[X]
 ## BallisticianDescription
 Heavy tanks specialized in attacking[N]
 from a great distance. Equip: Bows.[X]
+
+## ArchfiendName
+Archfiend[X]
+
+## ArchfiendDescription
+Placeholder[X]
+
+## EarthDragonName
+Earth D.[X]
+
+## EarthDragonDescription
+Placeholder[X]
+
+## DivineDragonName
+Divine D.[X]
+
+## DivineDragonDescription
+Placeholder[X]
+
+## MageDragonName
+Mage D.[X]
+
+## MageDragonDescription
+Placeholder[X]
+
+## IceDragonName
+Ice D.[X]
+
+## IceDragonDescription
+Placeholder[X]

@@ -54,14 +54,42 @@
 #define NanayaMug 0x36
 #define ViridianMug 0x37
 #define ArthurMug 0x38
+#define GritMug 0x39
+#define ValbarMug 0x3A
+#define KellyMug 0x3B
+#define DeenMug 0x3C
+#define MirorBMug 0x3D
+#define JedahMug 0x3E
+#define Jedah_2Mug 0x3F
+#define RayMug 0x40
+#define KempfMug 0x41
+#define HolmesMug 0x42
+#define Barubary_LeftMug 0x43
+#define Barubary_RightMug 0x44
+#define OerstedMug 0x45
+#define MatthisMug 0x46
+#define TienMug 0x47
+#define AliceEyepatchMug 0x48
+#define AliceMug 0x49
+#define DracoZombieMug 0x4A
+#define HydeMug 0x4B
+#define KiritoMug 0x4C
+#define QuelanaMug 0x4D
+#define RaohMug 0x4E
+#define ReinhardtMug 0x4F
+#define SatanMug 0x50
 
 // Generics start at 0x58
 
+// Anna
+#define LillianMug 0x64
 // Shops
 #define ArmoryMug 0x65
 #define VendorMug 0x66
 #define ArenaMug 0x67
 #define SecretShopMug 0x68
+
+// Free Space again starting at 0xAB
 
 // Class Cards
 #define AxeKnightClassCard 0x100
@@ -83,3 +111,8 @@
 #define TransporterClassCard 0x110
 #define WarMonkClassCard 0x111
 #define WitchClassCard 0x112
+#define BarubaryClassCard 0x113
+#define EarthDragonClassCard 0x114
+#define DivineDragonClassCard 0x115
+#define MageDragonClassCard 0x116
+#define IceDragonClassCard 0x117

@@ -126,6 +126,24 @@
 
 #define HarrierMagicAnim 0x10D
 
+#define BarubaryBreathAnim 0x10E
+#define BarubaryMagicAnim 0x10F
+
+#define RayBishopMagicAnim 0x110
+#define RayBishopStaffAnim 0x111
+#define RayBishopUnarmedAnim 0x112
+#define RayBishopTransformAnim 0x112
+#define RayBishopBreathAnim 0x113
+#define RayBishopUntransformAnim 0x114
+
+#define EarthDragonBreathAnim 0x115
+
+#define DivineDragonBreathAnim 0x116
+
+#define MageDragonBreathAnim 0x117
+
+#define IceDragonBreathAnim 0x118
+
 // Spells
 #define Thoron_index 0x48
 #define Bolganone_index 0x49
@@ -355,4 +373,34 @@ LanceAnim(WyvernLordLanceAnim)
 AxeAnim(WyvernLordAxeAnim)
 HandAxeAnim(WyvernLordHandAxeAnim)
 UnarmedAnim(WyvernLordUnarmedAnim)
+EndAnim
+
+ALIGN 4
+ArchfiendAnims:
+MonsterAnim(BarubaryBreathAnim)
+MagicAnim(BarubaryMagicAnim)
+EndAnim
+
+ALIGN 4
+EarthDragonAnims:
+MonsterAnim(EarthDragonBreathAnim)
+MagicAnim(EarthDragonBreathAnim)
+EndAnim
+
+ALIGN 4
+IceDragonAnims:
+MonsterAnim(IceDragonBreathAnim)
+MagicAnim(IceDragonBreathAnim)
+EndAnim
+
+ALIGN 4
+MageDragonAnims:
+MonsterAnim(MageDragonBreathAnim)
+MagicAnim(MageDragonBreathAnim)
+EndAnim
+
+ALIGN 4
+DivineDragonAnims:
+MonsterAnim(DivineDragonBreathAnim)
+MagicAnim(DivineDragonBreathAnim)
 EndAnim

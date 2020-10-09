@@ -151,3 +151,43 @@ ALIGN 4
 WitchClassCardPal:
 #incbin "Dmp/Witch.png_pal.dmp"
 setCardEntry(WitchClassCard, WitchClassCardData, WitchClassCardPal)
+
+ALIGN 4
+BarubaryClassCardData:
+#incbin "Dmp/Barubary.dmp"
+ALIGN 4
+BarubaryClassCardPal:
+#incbin "Dmp/Barubary.png_pal.dmp"
+setCardEntry(BarubaryClassCard, BarubaryClassCardData, BarubaryClassCardPal)
+
+ALIGN 4
+EarthDragonClassCardData:
+#incbin "Dmp/Earth Dragon.dmp"
+ALIGN 4
+EarthDragonClassCardPal:
+#incbin "Dmp/Earth Dragon.png_pal.dmp"
+setCardEntry(EarthDragonClassCard, EarthDragonClassCardData, EarthDragonClassCardPal)
+
+ALIGN 4
+MageDragonClassCardData:
+#incbin "Dmp/Mage Dragon.dmp"
+ALIGN 4
+MageDragonClassCardPal:
+#incbin "Dmp/Mage Dragon.png_pal.dmp"
+setCardEntry(MageDragonClassCard, MageDragonClassCardData, MageDragonClassCardPal)
+
+ALIGN 4
+DivineDragonClassCardData:
+#incbin "Dmp/Divine Dragon.dmp"
+ALIGN 4
+DivineDragonClassCardPal:
+#incbin "Dmp/Divine Dragon.png_pal.dmp"
+setCardEntry(DivineDragonClassCard, DivineDragonClassCardData, DivineDragonClassCardPal)
+
+ALIGN 4
+IceDragonClassCardData:
+#incbin "Dmp/Ice Dragon.dmp"
+ALIGN 4
+IceDragonClassCardPal:
+#incbin "Dmp/Ice Dragon.png_pal.dmp"
+setCardEntry(IceDragonClassCard, IceDragonClassCardData, IceDragonClassCardPal)

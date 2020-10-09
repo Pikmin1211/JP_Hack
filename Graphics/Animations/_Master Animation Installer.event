@@ -96,3 +96,14 @@
 #include "Event/Assassin Bow Installer.event"
 
 #include "Event/Falcoknight Staff Installer.event"
+
+#include "Event/Barubary Breath Installer.event"
+#include "Event/Barubary Generic Cast Installer.event"
+
+#include "Event/Earth Dragon Installer.event"
+
+#include "Event/Divine Dragon Installer.event"
+
+#include "Event/Mage Dragon Installer.event"
+
+#include "Event/Ice Dragon Installer.event"

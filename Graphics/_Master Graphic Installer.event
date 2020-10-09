@@ -24,3 +24,5 @@
 #include "Backgrounds/_BG Installer.event"
 
 #include "Spells/_Master Spell Installer.event"
+
+#include "Minimugs/_Master Minimug Installer.event"

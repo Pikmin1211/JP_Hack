@@ -109,7 +109,7 @@
 #define PureWaterIcon 		0x6c
 #define AntitoxinIcon 		0x6d
 #define TorchItemIcon 		0x6e
-#define DelphiShieldIcon 	0x6f
+#define DarkstoneIcon 	    0x6f
 #define BanditAxeIcon       0x70
 #define LogSplitterIcon     0x71
 #define BastardSwordIcon    0x72
@@ -118,7 +118,7 @@
 #define GungnirIcon         0x75
 #define TyrfingIcon         0x76
 #define CutlassIcon         0x77
-#define EckesachsIcon 		0x78
+#define FirestoneIcon 		0x78
 #define WretchedAirIcon 	0x79
 #define CompositeBowIcon    0x7a
 #define WarhammerIcon       0x7b
@@ -136,7 +136,7 @@
 #define BlueGemIcon 		0x87
 #define RedGemIcon 			0x88
 #define GoldIcon 			0x89
-#define Spear2Icon 			0x8a
+#define IcestoneIcon        0x8a
 #define ChestKey2Icon 		0x8b
 #define MineIcon 			0x8c
 #define LightRuneIcon 		0x8d
@@ -250,7 +250,7 @@
 #define AbortIcon           0xf9
 #define SwarpIcon           0xfa
 #define ResireIcon          0xfb
-//#define Icon              0xfc
-//#define Icon              0xfd
-//#define Icon              0xfe
+#define EarthstoneIcon      0xfc
+#define DivinestoneIcon     0xfd
+#define MagestoneIcon       0xfe
 #define SkillScrollIcon     0xff

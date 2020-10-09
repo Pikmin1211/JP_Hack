@@ -59,3 +59,5 @@
 #include "Pik Stuff/WeatherNull/Installer.event"
 
 #include "Fixes/FillAIDangerMap/FillAIDangerMap.event"
+
+#include "Fixes/Allow 254 generic minimugs/Allow 254 generic minimugs.event"

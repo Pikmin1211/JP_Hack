@@ -1,0 +1,7 @@
+ALIGN 4
+BanditMinimug:
+#incbin "Dmp/Bandit.dmp"
+
+ALIGN 4
+PirateMinimug:
+#incbin "Dmp/Pirate.dmp"

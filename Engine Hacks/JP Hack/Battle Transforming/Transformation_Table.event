@@ -1,0 +1,11 @@
+#define TransformEntry(arg000,arg001,arg002,arg003,arg004,arg005,arg006,arg007,arg008) "BYTE arg000 arg001 ;SHORT arg002 arg003 arg004 arg005 arg006 arg007 arg008 "
+
+// Class, Item, Transform Anim, Attack Anim, Untransform Anim, Standing Anim, Transform Start SFX, Transform End SFX, Untransform SFX
+
+#define TransformStart 0xDC
+#define TransformEnd 0xDE
+#define Untransform 0xDD
+
+Transformation_Table:
+TransformEntry(0x3C,0xAA,0xC5,0xC4,0xC6,0xC7,0xDC,0xDE,0xDD)
+TransformEntry(0x0,0x0,0,0,0,0,0,0,0)

@@ -33,3 +33,9 @@
 #define DukeKnight 0x9C
 #define Ballistician 0x9D
 #define AxeArmor 0x9E
+#define Archfiend 0x9F
+#define RayBishop 0xA0
+#define EarthDragon 0xA1
+#define DivineDragon 0xA2
+#define MageDragon 0xA3
+#define IceDragon 0xA4

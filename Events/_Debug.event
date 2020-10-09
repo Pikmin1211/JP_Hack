@@ -66,13 +66,18 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Sanders Hero 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,MasterKey] NoAI
-	UNIT Marisa Valkyrie 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Mend,Unlock,Hammerne] NoAI
-	UNIT Oskar GreatKnight 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,CrusaderScroll] NoAI
+	UNIT Sanders EarthDragon 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,MasterKey,Earthstone] NoAI
+	UNIT Marisa MageDragon 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Mend,Unlock,Magestone] NoAI
+	UNIT Scott DivineDragon 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,Divinestone] NoAI
 	UNIT
 
 EnemyUnits:
 	UNIT ONeill Bonewalker 0x0 Level(1,Enemy,0) [11,6] 0 0 0 0 [0x0] DoNothing
+	//UNIT Monster IceDragon 0x0 Level(1,Enemy,0) [11,5] 0 0 0 0 [Icestone] DoNothing
+	UNIT Monster EarthDragon 0x0 Level(1,Enemy,0) [10,6] 0 0 0 0 [Earthstone] DoNothing
+	UNIT Monster MageDragon 0x0 Level(1,Enemy,0) [10,5] 0 0 0 0 [Magestone] DoNothing
+	UNIT Monster DivineDragon 0x0 Level(1,Enemy,0) [9,6] 0 0 0 0 [Divinestone] DoNothing
+	UNIT Monster DracoZombie 0x0 Level(1,Enemy,0) [9,5] 0 0 0 0 [WretchedAir] DoNothing
 	UNIT
 
 Traps1:
@@ -88,10 +93,7 @@ BeginningScene:
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
-	SetUnitItemDurability(Oskar,2,FalaScroll)
 	//GotoPrepScreen
-	SetHP(1,6,7)
-	SetHP(1,7,6)
 	ENDA
 
 EndingScene:

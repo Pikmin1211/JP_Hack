@@ -60,6 +60,12 @@
 #define ShortSword Shortsword
 #define Baphomet 0xF2
 #define RubySword 0xF3
+#define Darkstone 0xF4
+#define Firestone 0xF5
+#define Icestone 0xF6
+#define Magestone 0xF7
+#define Earthstone 0xF8
+#define Divinestone 0xF9
 
 #define Tyrfing Audhulma
 #define Gungnir Vidofnir
