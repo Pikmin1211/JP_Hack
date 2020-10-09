@@ -66,13 +66,13 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Sanders WyvernLord 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,MasterKey] NoAI
+	UNIT Sanders Hero 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,MasterKey] NoAI
 	UNIT Marisa Valkyrie 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Mend,Unlock,Hammerne] NoAI
 	UNIT Oskar GreatKnight 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,CrusaderScroll] NoAI
 	UNIT
 
 EnemyUnits:
-	UNIT ONeill Fighter 0x0 Level(1,Enemy,0) [11,6] 0 0 0 0 [0x0] DoNothing
+	UNIT ONeill Bonewalker 0x0 Level(1,Enemy,0) [11,6] 0 0 0 0 [0x0] DoNothing
 	UNIT
 
 Traps1:
