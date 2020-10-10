@@ -70,8 +70,10 @@
 	ORG 0xA00EE0
 	BYTE $00 $00 $00 $00
 	
+  /*
     ORG $88650
       POIN NewPageNameGraphic
+      */
 
     ORG $87f38
       POIN NewPageNameLayout
