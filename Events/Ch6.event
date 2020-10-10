@@ -97,7 +97,7 @@ NPCUnits:
 	UNIT Vergil Paladin 0x0 Level(7,NPC,0) [25,16] 0 0 1 REDA22R15 [Spear,Rapier,SilverLance,Elixir] DefaultAI
 	UNIT Imperial_Vergil AxeKnight 0x0 Level(19,NPC,1) [25,16] 0 0 1 REDA21R15 [SilverAxe,ShortSpear,Vulnerary] DefaultAI
 	UNIT Imperial_Vergil Cavalier 0x0 Level(19,NPC,1) [25,16] 0 0 1 REDA23R15 [LightBrand,Axereaver,Vulnerary] DefaultAI
-	UNIT Imperial_Vergil Troubadour 0x0 Level(16,NPC,1) [25,16] 0 0 1 REDA22R14 [Mend,Physic] HealUnits
+	UNIT Imperial_Vergil Troubadour 0x0 Level(16,NPC,1) [25,16] 0 0 1 REDA22R14 [Mend,Soothe] HealUnits
 
 	UNIT
 
