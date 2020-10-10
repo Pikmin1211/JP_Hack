@@ -68,11 +68,11 @@ Tutorial:
 Units1:
 	UNIT Sanders EarthDragon 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,SkillScroll,Earthstone] NoAI
 	UNIT Marisa MageDragon 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Mend,Unlock,Magestone] NoAI
-	UNIT Scott DivineDragon 0x0 Level(10,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,Divinestone] NoAI
+	UNIT Scott Thief 0x0 Level(20,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,Divinestone] NoAI
 	UNIT
 
 EnemyUnits:
-	UNIT ONeill Bonewalker 0x0 Level(1,Enemy,0) [11,6] 0 0 0 0 [0x0] DoNothing
+	UNIT ONeill Bonewalker 0x0 Level(1,Enemy,0) [11,6] 0 0 0 0 [RedGem] DoNothing
 	//UNIT Monster IceDragon 0x0 Level(1,Enemy,0) [11,5] 0 0 0 0 [Icestone] DoNothing
 	UNIT Monster EarthDragon 0x0 Level(1,Enemy,0) [10,6] 0 0 0 0 [Earthstone] DoNothing
 	UNIT Monster MageDragon 0x0 Level(1,Enemy,0) [10,5] 0 0 0 0 [Magestone] DoNothing
