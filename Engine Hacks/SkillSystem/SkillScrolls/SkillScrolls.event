@@ -63,10 +63,11 @@ PUSH
 		jumpToHack(CheckIfSkillBookIcon_DropItem)
 
 	ORG IERevampTable + (0x39 * 16)
-		POIN MultiScrollUsability|IsPointer MultiScrollPrepUsability|IsPointer 0x2905c MultiScrollEffect|IsPointer
+		POIN MultiScrollUsability MultiScrollPrepUsability 0x2905c MultiScrollEffect
 
 	ORG IBArray + (0x39 * 4)
-		POIN MultiScrollPrepEffect|IsPointer
+		POIN MultiScrollPrepEffect
+
 
 POP
 
