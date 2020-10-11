@@ -672,3 +672,11 @@ SatanMugData:
 #incbin "Dmp/Satan_palette.dmp"
 #incbin "Dmp/Satan_minimug.dmp"
 setMugEntry(SatanMug, SatanMugData, 2, 4, 3, 2)
+
+ALIGN 16
+GatekeeperMugData:
+#incbin "Dmp/Gatekeeper_mug.dmp"
+#incbin "Dmp/Gatekeeper_frames.dmp"
+#incbin "Dmp/Gatekeeper_palette.dmp"
+#incbin "Dmp/Gatekeeper_minimug.dmp"
+setMugEntry(GatekeeperMug, GatekeeperMugData, 3, 5, 3, 3)

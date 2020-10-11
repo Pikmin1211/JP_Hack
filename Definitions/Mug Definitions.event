@@ -78,6 +78,7 @@
 #define RaohMug 0x4E
 #define ReinhardtMug 0x4F
 #define SatanMug 0x50
+#define GatekeeperMug 0x51
 
 // Generics start at 0x58
 
