@@ -139,7 +139,7 @@ Halberdier,HalberdierWalk|IsPointer,DefaultAP
 Dread Fighter (F),DreadFighterFWalk|IsPointer,DefaultAP
 Sword Saint,SwordSaintWalk|IsPointer,DefaultAP
 War Monk,WarMonkWalk|IsPointer,DefaultAP
-Maid,MaidWalk|IsPointer,0x81dcf44
+Maid,MaidWalk|IsPointer,DefaultAP|IsPointer
 Dread Fighter,DreadFighterWalk|IsPointer,DefaultAP
 Light Mage (F),LightMageFWalk|IsPointer,DefaultAP
 Arch Knight,ArchKnightWalk|IsPointer,DefaultAP

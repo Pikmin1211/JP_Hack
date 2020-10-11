@@ -15,7 +15,7 @@ ldrb r4, [r3, #0x9] // y coord
 mov r0, #0x18
 ldsb r0, [r2, r0] // presumably x coord on the stack
 cmp r1, r0
-bne End
+bne NoChest
 mov r0, #0x19
 ldsb r0, [r2, r0] // presumably y coord on the stack
 cmp r4, r0
