@@ -27,6 +27,7 @@
 	MagicSwordEntry(Flamberge,Sword,True,HitRes,HitRes)
 	MagicSwordEntry(LevinSword,Sword,True,HitRes,HitRes)
 	MagicSwordEntry(FlameLance,Lance,True,HitRes,HitRes)
+	MagicSwordEntry(Basilisk,Lance,True,HitRes,HitRes)
 	MagicSwordEntry(BoltAxe,Axe,True,HitRes,HitRes)
 	MagicSwordEntry(ShiningBow,Bow,True,HitRes,HitRes)
 	BYTE 0 0 0 //terminator
