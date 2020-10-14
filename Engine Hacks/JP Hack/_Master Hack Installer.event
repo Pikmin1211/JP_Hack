@@ -61,3 +61,7 @@
 #include "Fixes/FillAIDangerMap/FillAIDangerMap.event"
 
 #include "Fixes/Allow 254 generic minimugs/Allow 254 generic minimugs.event"
+
+#include "Fixes/Link Arena/Installer.event"
+
+#include "Fixes/Event/Installer.event"

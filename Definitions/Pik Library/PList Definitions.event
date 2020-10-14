@@ -166,7 +166,6 @@
 #define Tower8TileChange 0xA1
 #define Tower8Event 0xA2
 
-/* Used for Tilesets.
 #define Lagdou1Map 0xA4
 #define Lagdou1TileChange 0xA5
 #define Lagdou1Event 0xA6
@@ -196,7 +195,6 @@
 #define Lagdou7Event 0xB8
 
 #define Lagdou8Map 0xBA
-*/
 #define Lagdou8TileChange 0xBB
 #define Lagdou8Event 0xBC
 

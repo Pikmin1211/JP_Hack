@@ -1,9 +1,12 @@
+ALIGN 4
 c0p:
 #incbin "c0p.bin"
 
+ALIGN 4
 c1p:
 #incbin "c1p.bin"
 
+ALIGN 4
 c2p:
 #incbin "c2p.bin"
 

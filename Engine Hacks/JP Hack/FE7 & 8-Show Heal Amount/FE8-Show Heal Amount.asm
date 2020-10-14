@@ -1,6 +1,9 @@
 .thumb
 .org 0x0
 
+.equ Vulnerary, 0x6C
+.equ Elixir, 0x6D
+
 @bl'd to at 24670
 @since I cannot find a way to distinguish when a character is healing vs talk/support/dance/play, we're going to copy the entire function, essentially
 @r0 = char data of target
@@ -115,7 +118,10 @@ beq 	GetTopItem
 mov 	r1, r0
 ldr		r0,CurrentCharPtr
 ldr		r0,[r0]
-b 		CallGetHealAmount
+cmp		r0, #Vulnerary
+beq		CallGetHealAmount
+cmp		r0, #Elixir
+beq 	CallGetHealAmount
 
 GetTopItem:
 ldr		r0,CurrentCharPtr

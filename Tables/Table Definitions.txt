@@ -112,12 +112,12 @@
 #endif
 
 //weapon types
+#define Sword 0x0
+#define Lance 0x1
+#define Axe 0x2
+#define Bow 0x3
+#define Staff 0x4
 /*
-#define Swords 0x0
-#define Lances 0x1
-#define Axes 0x2
-#define Bows 0x3
-#define Staves 0x4
 #define Tomes 0x5
 #define Shurikens 0x6
 #define Stones 0x7

@@ -4,7 +4,7 @@
 	#define	DurantSortie_grp  voicegroup000
 	#define	DurantSortie_pri  0
 	#define	DurantSortie_rev  0
-	#define	DurantSortie_mvl  127
+	#define	DurantSortie_mvl  75
 	#define	DurantSortie_key  0
 	#define	DurantSortie_tbs  1
 	#define	DurantSortie_exg  0

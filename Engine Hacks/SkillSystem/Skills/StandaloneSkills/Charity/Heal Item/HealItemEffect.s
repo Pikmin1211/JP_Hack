@@ -53,11 +53,15 @@ ldrb r0, [r4, #0x6]
 cmp r0, #Elixir
 beq ElixirEffect
 // VulneraryEffect
+mov r0, r6
+blh FinishUpItemBattle
 mov r1, #0xA
 blh ExecSelfHeal
 b End
 
 ElixirEffect:
+mov r0, r6
+blh FinishUpItemBattle
 mov r1, #0xFF
 blh ExecSelfFullHeal
 b End
