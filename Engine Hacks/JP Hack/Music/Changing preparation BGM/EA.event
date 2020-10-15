@@ -13,7 +13,7 @@ c2p:
 PUSH
 
 ORG 0x965E2
-B(0x9893A)
+B(0x96656)
 
 ORG 0x965E4
 jumpToHack_r0(c0p)

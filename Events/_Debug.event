@@ -66,7 +66,7 @@ Tutorial:
 	END_MAIN
 
 Units1:
-	UNIT Sanders EarthDragon 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,SkillScroll,Earthstone] NoAI
+	UNIT Sanders Mercenary 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,SkillScroll,Earthstone] NoAI
 	UNIT Marisa MageDragon 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Mend,Unlock,Magestone] NoAI
 	UNIT Scott Thief 0x0 Level(20,Ally,1) [6,7] 0 0 0 0 [IronBow,BraveBow,Divinestone] NoAI
 	UNIT
