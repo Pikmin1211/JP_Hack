@@ -20,6 +20,7 @@ BossBGMEntry(Cedwick,Stronger_Monsters)
 BossBGMEntry(Dark_Marlen,Battle_in_the_Abandoned_Church)
 BossBGMEntry(Zane,Accursed_Combat)
 BossBGMEntry(Viridian,Stronger_Monsters)
+BossBGMEntry(Hyde,Stronger_Monsters)
 BossBGMTerminator
 
 PUSH

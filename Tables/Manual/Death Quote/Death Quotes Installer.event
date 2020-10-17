@@ -67,6 +67,9 @@ ChapterDeathQuote(Zane,13,0xA,TestDialogue)
 ChapterDeathQuote(Viridian,14,0x0,TestDialogue)
 ChapterDeathQuote(Cedwick,14,0x0,TestDialogue)
 
+// Ch15
+ChapterDeathQuote(Hyde,15,DefeatBossFlag,TestDialogue)
+
 // Always
 AlwaysDeathQuote(Sanders,GameOverFlag,SandersDeath)
 AlwaysDeathQuote(Finn,0x0,FinnDeath)

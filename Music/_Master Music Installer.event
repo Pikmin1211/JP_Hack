@@ -338,3 +338,38 @@ SongTable(Rolling_Dice,RollingDice,1)
 #include "Event/LegendTheme.event"
 SongTable(Legend_Theme,LegendTheme,1)
 }
+
+{
+#include "Event/ForTheCommanders.event"
+SongTable(For_the_Commanders,ForTheCommanders,1)
+}
+
+{
+#include "Event/GeneralGuy.event"
+SongTable(General_Guy,GeneralGuy,1)
+}
+
+{
+#include "Event/OnTheHunt.event"
+SongTable(On_the_Hunt,OnTheHunt,1)
+}
+
+{
+#include "Event/TRSPrep.event"
+SongTable(TRS_Prep,TRSPrep,1)
+}
+
+{
+#include "Event/BattleFFL2.event"
+SongTable(Battle_FFL2,BattleFFL2,1)
+}
+
+{
+#include "Event/SelfDiscipline.event"
+SongTable(Self_Discipline,SelfDiscipline,1)
+}
+
+{
+#include "Event/GritsTheme.event"
+SongTable(Grits_Theme,GritsTheme,1)
+}

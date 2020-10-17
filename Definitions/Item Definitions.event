@@ -66,6 +66,8 @@
 #define Magestone 0xF7
 #define Earthstone 0xF8
 #define Divinestone 0xF9
+#define LeatherShield 0xFA
+#define ShadowSword 0xFB
 
 #define Tyrfing Audhulma
 #define Gungnir Vidofnir

@@ -198,3 +198,24 @@ Resolution[X]
 
 ## LegendThemeName
 Legend Theme[X]
+
+## ForTheCommandersName
+For the Commanders[X]
+
+## GeneralGuyName
+General Guy[X]
+
+## OnTheHuntName
+On the Hunt[X]
+
+## TRSPrepName
+Preparations (TRS)[X]
+
+## BattleFFL2Name
+Battle (FFL2)[X]
+
+## SelfDisciplineName
+Self Discipline[X]
+
+## GritsThemeName
+Grit's Theme[X]

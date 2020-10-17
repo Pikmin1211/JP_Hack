@@ -604,3 +604,15 @@ Darkstone[X]
 
 ## DarkstoneDescription
  [X]
+
+## LeatherShieldName
+Lthr. Shield[X]
+
+## LeatherShieldDescription
++5 Defense when held.[X]
+
+## ShadowSwordName
+Shadow Sw.[X]
+
+## ShadowSwordDescription
+May damage its wielder.[X]

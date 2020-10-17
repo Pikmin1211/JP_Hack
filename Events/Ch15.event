@@ -1,0 +1,109 @@
+EventPointerTable(Ch15AEvent, PointerList)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+
+	END_MAIN
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+	Village(0,LeftVillage,1,15)
+	Village(0,RightVillage,19,8)
+	Armory(Ch15Armory,11,16)
+	Vendor(Ch15Vendor,13,14)
+	END_MAIN
+
+ALIGN 4
+Ch15Armory:
+	SHLI IronSword ShortSword IronBlade SteelSword IronLance Javelin Glaive SteelLance IronAxe ScissorAxe HandAxe SteelAxe IronBow Longbow HandBow SteelBow
+	BYTE 00 00
+
+ALIGN 4
+Ch15Vendor:
+	SHLI Fire Thunder Elfire Flux Miasma Nosferatu Heal Mend Soothe Restore Vulnerary PureWater SecretBook GoddessIcon
+	BYTE 00 00
+
+ALIGN 4
+
+LeftVillage:
+	VillageEventItem(HouseBG,TestDialogue,IronSword)
+
+RightVillage:
+	VillageEventItem(HouseBG,TestDialogue,IronSword)
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(10,24)
+	Unit(9,23)
+	Unit(11,23)
+	Unit(9,24)
+	Unit(8,24)
+	Unit(10,23)
+	Unit(8,23)
+	Unit(11,24)
+	Unit(10,22)
+	Unit(11,22)
+	Unit(9,22)
+	Unit(8,22)
+	Unit(10,25)
+	Unit(9,25)
+	UNIT
+
+EnemyUnits:
+	UNIT Hyde Mercenary 0x0 Level(14,Enemy,0) [7,1] 2 0 0 0 [ShadowSword,LeatherShield] NeverMoveAI
+
+	UNIT MercenaryUnit Mage 0x0 Level(11,Enemy,1) [14,10] 0 0 0 0 [Bolting,Fire] NeverMoveAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 16
+	NoFade
+	ENDA

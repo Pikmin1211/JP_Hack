@@ -488,3 +488,27 @@ Priest[X]
 ## PriestDescription
 A hapless priest[N]
 from the local temple.[X]
+
+## GritName
+Grit[X]
+
+## GritDescription
+Placeholder[X]
+
+## BlueMoonName
+Blue Moon[X]
+
+## BlueMoonDescription
+Placeholder[X]
+
+## HydeName
+Hyde[X]
+
+## HydeDescription
+Placeholder[X]
+
+## MercenaryName
+Mercenary[X]
+
+## MercenaryDescription
+Placeholder[X]

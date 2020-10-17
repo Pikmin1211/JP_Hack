@@ -4,6 +4,9 @@
 .global FixDurabilityChestPopupASMC
 .type FixDurabilityChestPopupASMC, %function
 
+.global PreBattle_UnsetDurabilityFlag
+.type PreBattle_UnsetDurabilityFlag, %function
+
 .equ gEventQueue,0x30004F0
 .equ MemorySlot3,0x30004B8+0xC
 .equ MemorySlot7,0x30004D4
@@ -90,4 +93,13 @@ bx r0
 .align
 
 
+
+PreBattle_UnsetDurabilityFlag:
+ldr r1, = #0x203FFFF // end of RAM
+mov r0, #0x0
+strb r0, [r1] // zero it back out
+bx r14
+
+.ltorg
+.align
 

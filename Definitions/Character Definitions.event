@@ -99,3 +99,6 @@
 #define Monster_Boss 0x78
 #define PriestUnit 0x79
 #define Basement3 0x7A
+#define Hyde 0x7B
+#define MercenaryUnit 0x7C
+#define BlueMoon 0x7D

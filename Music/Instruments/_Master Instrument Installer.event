@@ -9,3 +9,7 @@
 #include "AccursedCombat/AccursedCombatInstrument.event"
 
 #include "Aircalibur/AircaliburFix.event"
+
+#include "ForTheCommanders/ForTheCommandersInstrument.event"
+
+#include "GritsTheme/GritsThemeInstrument.event"

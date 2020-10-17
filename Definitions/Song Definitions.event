@@ -66,3 +66,10 @@
 #define Accursed_Combat 0x148
 #define Resolution_Berwick 0x149
 #define Legend_Theme 0x152
+#define For_the_Commanders 0x153
+#define General_Guy 0x15C
+#define On_the_Hunt 0x15D
+#define TRS_Prep 0x166
+#define Battle_FFL2 0x167
+#define Self_Discipline 0x170
+#define Grits_Theme 0x171

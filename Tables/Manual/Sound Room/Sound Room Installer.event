@@ -71,6 +71,13 @@ SoundRoomEntry(Rebelstar_BGM_1,0,RebelstarBGM1Name)
 SoundRoomEntry(Accursed_Combat,0,AccursedCombatName)
 SoundRoomEntry(Resolution_Berwick,0,ResolutionBerwickName)
 SoundRoomEntry(Legend_Theme,0,LegendThemeName)
+SoundRoomEntry(For_the_Commanders,0,ForTheCommandersName)
+SoundRoomEntry(General_Guy,0,GeneralGuyName)
+SoundRoomEntry(On_the_Hunt,0,OnTheHuntName)
+SoundRoomEntry(TRS_Prep,0,TRSPrepName)
+SoundRoomEntry(Battle_FFL2,0,BattleFFL2Name)
+SoundRoomEntry(Self_Discipline,0,SelfDisciplineName)
+SoundRoomEntry(Grits_Theme,0,GritsThemeName)
 SoundRoomTerminator
 
 PUSH

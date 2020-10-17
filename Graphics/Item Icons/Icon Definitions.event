@@ -137,10 +137,10 @@
 #define RedGemIcon 			0x88
 #define GoldIcon 			0x89
 #define IcestoneIcon        0x8a
-#define ChestKey2Icon 		0x8b
+#define LeatherShieldIcon 	0x8b
 #define MineIcon 			0x8c
 #define LightRuneIcon 		0x8d
-#define IronRuneIcon 		0x8e
+#define ShadowSwordIcon 	0x8e
 #define FillasMightIcon 	0x8f
 #define NinissGraceIcon 	0x90
 #define ThorsIreIcon 		0x91
