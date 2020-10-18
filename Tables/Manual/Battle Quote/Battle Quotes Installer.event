@@ -56,6 +56,9 @@ TwoWayBattleQuote(0x0,Dark_Marlen,12,Ch12DarkMarlenBattle)
 TwoWayBattleQuote(0x0,Viridian,14,TestDialogue)
 TwoWayBattleQuoteFlag(0xD,0x0,Cedwick,14,TestDialogue)
 
+// Ch15
+TwoWayBattleQuoteFlag(0xF,0x0,Hyde,15,TestDialogue)
+
 
 EndQuote
 

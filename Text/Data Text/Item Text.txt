@@ -139,7 +139,7 @@ Mag Ring[X]
 Guard Ring[X]
 
 ## GuardRingDescription
-+2 Def and Res[N]
++3 Def and Res[N]
 when held.[X]
 
 ## LegRingName

@@ -1,4 +1,5 @@
 EventPointerTable(Ch15AEvent, PointerList)
+SetChapterConvoy(15,1)
 
 PointerList:
 	POIN TurnBasedEvents
@@ -13,17 +14,95 @@ PointerList:
 	POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-
+	TurnEventNPC(0x0,GritAppears,2)
+	//TurnEventPlayer(0x0,UpperWyverns,2)
+	TurnEventPlayer(0x0,UpperWyverns,3)
+	TurnEventPlayer(0x0,MiddleGuysSpawn,4)
+	TurnEventPlayer(0x0,LowerWyverns,4)
+	TurnEventPlayer(0x0,BrigandAppears,8)
+	TurnEventPlayer(0x0,Cavaliers,6)
+	TurnEventPlayer(0x0,UpperWyverns,9)
+	TurnEventPlayer(0x0,LowerWyverns,11)
+	TurnEventPlayer(0x0,Cavaliers,13)
+	TurnEventPlayer(0x0,Paladins,13)
+	TurnEventPlayer(0xE,SpawnWyvernLords,0,255)
 	END_MAIN
+
+GritAppears:
+	MUSC Grits_Theme
+	SpawnReinforcements(GreenUnits)
+	FlashCursor(Grit,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+UpperWyverns:
+	SpawnReinforcements(TopWyverns)
+	NoFade
+	ENDA
+
+LowerWyverns:
+	SpawnReinforcements(MidWyverns)
+	NoFade
+	ENDA
+
+Cavaliers:
+	SpawnReinforcements(LeftCavs)
+	SpawnReinforcements(RightCavs)
+	NoFade
+	ENDA
+
+Paladins:
+	SpawnReinforcements(LeftPals)
+	SpawnReinforcements(RightPals)
+	NoFade
+	ENDA
+
+BrigandAppears:
+	SpawnReinforcements(BrigandUnit)
+	NoFade
+	ENDA
+
+MiddleGuysSpawn:
+	SpawnReinforcements(MiddleGuys)
+	NoFade
+	ENDA
 
 ALIGN 32
 CharacterBasedEvents:
-
+	CharacterEventBothWays(0xC,DonnalenGritTalk,Donnalen,Grit)
 	END_MAIN
+
+DonnalenGritTalk:
+	MUSS Like_a_Glint_of_Light
+	Text(TestDialogue)
+	CUSA Grit
+	MURE 2
+	NoFade
+	ENDA
 
 MiscBasedEvents:
+	DefeatBoss(EndingScene)
 	CauseGameOverIfLordDies
 	END_MAIN
+
+SpawnWyvernLords:
+	CHECK_EVENTID 0xF
+	BEQ 1 0x0 0xC
+		CAM1 Hyde
+		FlashCursor(Hyde,60)
+		MUSI
+		Text(TestDialogue)
+		MUNO
+		SetAI(Hyde,0,0,0,0)
+		SpawnReinforcements(WyvernLords)
+		GOTO 2
+	LABEL 1
+		ENUF 0xE
+	LABEL 2
+	NoFade
+	ENDA
 
 LocationBasedEvents:
 	Village(0,LeftVillage,1,15)
@@ -45,10 +124,10 @@ Ch15Vendor:
 ALIGN 4
 
 LeftVillage:
-	VillageEventItem(HouseBG,TestDialogue,IronSword)
+	VillageEventItem(TestDialogue,HouseBG,DragonSpear)
 
 RightVillage:
-	VillageEventItem(HouseBG,TestDialogue,IronSword)
+	VillageEventItem(TestDialogue,HouseBG,EnergyRing)
 
 Dunno1:
 
@@ -84,9 +163,117 @@ Units1:
 	UNIT
 
 EnemyUnits:
-	UNIT Hyde Mercenary 0x0 Level(14,Enemy,0) [7,1] 2 0 0 0 [ShadowSword,LeatherShield] NeverMoveAI
+	UNIT Hyde GaidenMerc 0x0 Level(14,Enemy,0) [7,1] 2 0 0 0 [ShadowSword,LeatherShield] NeverMoveAI
+	UNIT MercenaryUnit Fighter 0x0 Level(12,Enemy,1) [6,0] 0 0 0 0 [ScissorAxe] AttackInRangeAI
+	UNIT MercenaryUnit Fighter 0x0 Level(12,Enemy,1) [8,0] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT MercenaryUnit Soldier 0x0 Level(12,Enemy,1) [9,4] 0 0 0 0 [SilverLance] AttackInRangeAI
+
+	UNIT MercenaryUnit Priest 0x0 Level(11,Enemy,1) [13,0] 0 0 0 0 [Physic,Sleep] AttackInRangeAI
+	UNIT MercenaryUnit General 0x0 Level(1,Enemy,1) [16,3] 0 0 0 0 [Spear,Hammer,SteelBlade] NeverMoveAI
+	UNIT MercenaryUnit Shaman 0x0 Level(1,Enemy,1) [16,1] 0 0 0 0 [Miasma] AttackInRangeAI
+
+	UNIT MercenaryUnit WyvernRider 0x0 Level(11,Enemy,1) [1,0] 0 0 0 0 [FlameLance,SapphireLance] AttackInRangeAI
+	UNIT MercenaryUnit WyvernRider 0x0 Level(11,Enemy,1) [18,0] 0 0 0 0 [ShortSpear] AttackInRangeAI
 
 	UNIT MercenaryUnit Mage 0x0 Level(11,Enemy,1) [14,10] 0 0 0 0 [Bolting,Fire] NeverMoveAI
+	UNIT MercenaryUnit Fighter 0x0 Level(11,Enemy,1) [15,9] 0 0 0 0 [DragonAxe] AttackInRangeAI
+
+	UNIT MercenaryUnit WyvernRider 0x0 Level(9,Enemy,1) [21,16] 0 0 0 0 [IronLance] AttackInRangeAI
+	UNIT MercenaryUnit WyvernRider 0x0 Level(9,Enemy,1) [22,17] 0 0 0 0 [Espontoon] AttackInRangeAI
+
+	UNIT MercenaryUnit Archer 0x0 Level(10,Enemy,1) [9,17] 0 0 0 0 [Longbow] AttackInRangeAI
+	UNIT MercenaryUnit Archer 0x0 Level(10,Enemy,1) [3,17] 0 0 0 0 [Longbow] AttackInRangeAI
+	UNIT MercenaryUnit Mercenary 0x0 Level(11,Enemy,1) [1,18] 0 0 0 0 [IronBlade,Wyrmslayer,Vulnerary] AttackInRangeAI
+
+	UNIT MercenaryUnit Soldier 0x0 Level(12,Enemy,1) [14,19] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT MercenaryUnit Soldier 0x0 Level(12,Enemy,1) [15,19] 0 0 0 0 [SapphireLance] AttackInRangeAI
+	UNIT MercenaryUnit Archer 0x0 Level(10,Enemy,1) [16,18] 0 0 0 0 [HandBow] AttackInRangeAI
+
+	UNIT MercenaryUnit LanceArmor 0x0 Level(11,Enemy,1) [5,16] 0 0 0 0 [Javelin,SteelBlade] NeverMoveAI
+	UNIT MercenaryUnit AxeArmor 0x0 Level(11,Enemy,1) [6,16] 0 0 0 0 [ShortAxe,BattleAxe] NeverMoveAI
+
+	UNIT MercenaryUnit Archer 0x0 Level(10,Enemy,1) [3,11] 0 0 0 0 [Longbow] AttackInRangeAI
+	UNIT MercenaryUnit Priest 0x0 Level(10,Enemy,1) [1,10] 0 0 0 0 [Physic,Mend,SpiritDust] HealUnits
+
+	UNIT MercenaryUnit Paladin 0x0 Level(1,Enemy,1) [7,8] 2 0 0 0 [SteelLance,IronBlade,KnightCrest] AttackInRangeAI
+	UNIT MercenaryUnit Cavalier 0x0 Level(11,Enemy,1) [6,9] 0 0 0 0 [ShortSword,IronLance] AttackInRangeAI
+	UNIT MercenaryUnit AxeKnight 0x0 Level(11,Enemy,1) [8,9] 0 0 0 0 [EmeraldAxe,Glaive] AttackInRangeAI
+
+	UNIT MercenaryUnit Sage 0x0 Level(1,Enemy,1) [21,12] 2 0 0 0 [Aircalibur,Mend,GuidingRing] AttackInRangeAI
+	UNIT MercenaryUnit Mage 0x0 Level(11,Enemy,1) [20,12] 0 0 0 0 [Thunder] AttackInRangeAI
+	UNIT MercenaryUnit Shaman 0x0 Level(11,Enemy,1) [21,13] 0 0 0 0 [Jormungandr] AttackInRangeAI
+
+	UNIT MercenaryUnit AxeArmor 0x0 Level(12,Enemy,1) [20,10] 0 0 0 0 [HandAxe,SteelLance] NeverMoveAI
+	UNIT MercenaryUnit LanceArmor 0x0 Level(12,Enemy,1) [21,10] 0 0 0 0 [ShortSpear,Vulnerary] NeverMoveAI
+
+	UNIT MercenaryUnit WyvernRider 0x0 Level(9,Enemy,1) [9,2] 0 0 0 0 [IronLance] DefaultAI
+	UNIT MercenaryUnit WyvernRider 0x0 Level(9,Enemy,1) [5,2] 0 0 0 0 [Glaive] DefaultAI
+
+	UNIT MercenaryUnit Mercenary 0x0 Level(11,Enemy,1) [15,14] 0 0 0 0 [SteelSword] AttackInRangeAI
+	UNIT MercenaryUnit Fighter 0x0 Level(11,Enemy,1) [9,13] 0 0 0 0 [Poleax] AttackInRangeAI
+
+	UNIT MercenaryUnit Brigand 0x0 Level(10,Enemy,1) [10,11] 0 0 0 0 [BanditAxe] BrigandAI
+
+	UNIT MercenaryUnit Fighter 0x0 Level(11,Enemy,1) [0,7] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT MercenaryUnit Mercenary 0x0 Level(11,Enemy,1) [1,6] 0 0 0 0 [ShortSword] AttackInRangeAI
+	UNIT MercenaryUnit Shaman 0x0 Level(12,Enemy,1) [3,3] 0 0 0 0 [Miasma] AttackInRangeAI
+
+	UNIT MercenaryUnit Fighter 0x0 Level(12,Enemy,1) [14,5] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT MercenaryUnit Mage 0x0 Level(12,Enemy,1) [15,5] 0 0 0 0 [Elfire] AttackInRangeAI
+
+	UNIT MercenaryUnit Fighter 0x0 Level(9,Enemy,1) [5,21] 0 0 0 0 [IronAxe] AttackInRangeAI
+	UNIT MercenaryUnit Soldier 0x0 Level(9,Enemy,1) [14,22] 0 0 0 0 [SteelLance] AttackInRangeAI
+
+	UNIT
+
+GreenUnits:
+	UNIT Grit Ballistician 0x0 Level(1,NPC,0) [10,15] 0 0 1 REDA7R13 [KillerBow,CompositeBow,Elixir] [0x03,0x03,0x04,0x00]
+	UNIT BlueMoon Archer 0x0 Level(12,NPC,1) [10,15] 0 0 1 REDA6R13 [SteelBow,Longbow,Elixir] AttackInRangeAI
+	UNIT BlueMoon Archer 0x0 Level(12,NPC,1) [10,15] 0 0 1 REDA8R13 [IronBow,Longbow,Elixir] AttackInRangeAI
+	UNIT
+
+BrigandUnit:
+	UNIT MercenaryUnit Brigand 0x0 Level(10,Enemy,1) [22,6] 0 0 1 REDA22R6 [SteelAxe] BrigandAI
+	UNIT MercenaryUnit Brigand 0x0 Level(10,Enemy,1) [0,20] 0 0 1 REDA0R20 [SteelAxe] BrigandAI
+	UNIT
+
+MidWyverns:
+	UNIT MercenaryUnit WyvernRider 0x0 Level(10,Enemy,1) [13,9] 0 0 0 0 [IronLance] DefaultAI
+	UNIT MercenaryUnit WyvernRider 0x0 Level(10,Enemy,1) [15,0] 0 0 0 0 [SteelLance] DefaultAI
+	UNIT
+
+TopWyverns:
+	UNIT MercenaryUnit WyvernRider 0x0 Level(10,Enemy,1) [0,0] 0 0 0 0 [Glaive] DefaultAI
+	UNIT MercenaryUnit WyvernRider 0x0 Level(10,Enemy,1) [15,0] 0 0 0 0 [IronLance] DefaultAI
+	UNIT
+
+LeftCavs:
+	UNIT MercenaryUnit LanceKnight 0x0 Level(11,Enemy,1) [0,25] 0 0 1 REDA1R23 [IronLance,Javelin] DefaultAI
+	UNIT MercenaryUnit FreeKnight 0x0 Level(11,Enemy,1) [0,25] 0 0 1 REDA2R24 [SteelSword] DefaultAI
+	UNIT
+
+RightCavs:
+	UNIT MercenaryUnit FreeKnight 0x0 Level(11,Enemy,1) [22,25] 0 0 1 REDA19R24 [ShortSword] DefaultAI
+	UNIT MercenaryUnit LanceKnight 0x0 Level(11,Enemy,1) [22,25] 0 0 1 REDA18R25 [SteelLance,Javelin] DefaultAI
+	UNIT
+
+LeftPals:
+	UNIT MercenaryUnit Paladin 0x0 Level(3,Enemy,1) [0,25] 0 0 1 REDA2R23 [SilverLance,SteelBlade] DefaultAI
+	UNIT
+
+RightPals:
+	UNIT MercenaryUnit DukeKnight 0x0 Level(3,Enemy,1) [22,25] 0 0 1 REDA18R24 [KillerLance,Spear] DefaultAI
+	UNIT
+
+MiddleGuys:
+	UNIT MercenaryUnit Mercenary 0x0 Level(11,Enemy,1) [6,6] 0 0 0 0 [IronBlade] DefaultAI
+	UNIT MercenaryUnit Fighter 0x0 Level(11,Enemy,1) [6,6] 0 0 1 REDA5R6 [ScissorAxe] DefaultAI
+	UNIT MercenaryUnit Fighter 0x0 Level(11,Enemy,1) [6,6] 0 0 1 REDA7R6 [Greataxe] DefaultAI
+	UNIT
+
+WyvernLords:
+	UNIT MercenaryUnit WyvernLord 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [SteelAxe,Javelin] DefaultAI
+	UNIT MercenaryUnit WyvernLord 0x0 Level(3,Enemy,1) [15,0] 0 0 1 REDA15R0 [ShortSpear,Poleax] DefaultAI
 	UNIT
 
 Traps1:

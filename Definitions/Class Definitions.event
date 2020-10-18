@@ -39,3 +39,4 @@
 #define DivineDragon 0xA2
 #define MageDragon 0xA3
 #define IceDragon 0xA4
+#define GaidenMerc 0xA5
