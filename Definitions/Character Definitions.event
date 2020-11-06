@@ -102,3 +102,5 @@
 #define Hyde 0x7B
 #define MercenaryUnit 0x7C
 #define BlueMoon 0x7D
+#define Jedah 0x7E
+#define Faithful 0x7F

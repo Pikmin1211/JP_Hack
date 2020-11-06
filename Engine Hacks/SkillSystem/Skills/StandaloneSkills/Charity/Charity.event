@@ -3,7 +3,7 @@ PUSH
 ORG IERevampTable + (0x21 * 16)
 POIN NewHealItemUsability 0x2A100 NewHealItemTargetting NewHealItemEffect
 ORG IERevampTable + (0x22 * 16)
-POIN NewHealItemUsability 0x2A100 NewHealItemTargetting NewHealItemEffect
+POIN NewHealItemUsability 0x2A100 NewHealItemTargetting NewElixirEffect
 
 ORG 0x78248
 jumpToHack(GetSpellAssocCharCount)
@@ -32,8 +32,19 @@ NewHealItemEffect:
 POIN HealItemEffect
 
 ALIGN 4
+NewElixirEffect:
+#incbin "Generic/GenericEffect.dmp"
+POIN ElixirEffect
+
+ALIGN 4
 HealItemEffect:
 #incbin "Heal Item/HealItemEffect.dmp"
+POIN SkillTester
+WORD CharityID
+
+ALIGN 4
+ElixirEffect:
+#incbin "Heal Item/ElixirEffect.dmp"
 POIN SkillTester
 WORD CharityID
 

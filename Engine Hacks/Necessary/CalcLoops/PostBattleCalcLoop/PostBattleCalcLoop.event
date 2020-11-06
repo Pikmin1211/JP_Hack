@@ -21,3 +21,5 @@ POIN Canto CantoPlus Galeforce ReMove Powerstaff CulturedPostCombat Gridmaster U
 WORD 0 //Terminator
 
 PROTECT $1D308 $1D314
+
+PROTECT PostCombatSkills

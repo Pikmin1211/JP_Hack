@@ -264,8 +264,8 @@ NorneSniper_F:
 NorneRanger_F:
 	#incbin "./_palettes/NorneRanger_F.lzpal" 
 
-DonnalenBraler:
-	#incbin "./_palettes/DonnalenBraler.lzpal" 
+DonnalenBrawler:
+	#incbin "./_palettes/DonnalenBrawler.lzpal" 
 
 DevvyWanderer:
 	#incbin "./_palettes/DevvyWanderer.lzpal" 

@@ -37,6 +37,10 @@
     MusicSpace:
     #include "Music/_Master Music Installer.event"
     MESSAGE Music space used is_ (currentOffset - MusicSpace)
+
+    // CRC Correction
+    ALIGN 16
+    WORD 0 0 0 0
     
     MESSAGE ROM ends at_________ currentOffset
 #else

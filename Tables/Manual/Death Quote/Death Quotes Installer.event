@@ -96,6 +96,9 @@ AlwaysDeathQuote(Eevster,0x0,EevsterDeath)
 AlwaysDeathQuote(Derek,0x0,DerekDeath)
 AlwaysDeathQuote(Arle,0x0,ArleDeath)
 AlwaysDeathQuote(Jason,0x0,JasonDeath)
+
+AlwaysDeathQuote(Donnalen,GameOverFlag,TestDialogue)
+AlwaysDeathQuote(Devvy,GameOverFlag,TestDialogue)
 EndQuote
 
 PUSH

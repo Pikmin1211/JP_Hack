@@ -352,8 +352,8 @@
 	setPalette(88,NorneRanger_F)
 	setCBSP(88,Norne, 2, Ranger_F)
 
-// DonnalenBraler
-	setPalette(89,DonnalenBraler)
+// DonnalenBrawler
+	setPalette(89,DonnalenBrawler)
 	setCBSP(89,Donnalen, 0, Brawler)
 
 // DevvyWanderer

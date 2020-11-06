@@ -512,3 +512,15 @@ Mercenary[X]
 
 ## MercenaryDescription
 Placeholder[X]
+
+## JedahName
+Jedah[X]
+
+## JedahDescription
+Placeholder[X]
+
+## FaithfulName
+Faithful[X]
+
+## FaithfulDescription
+Placeholder[X]

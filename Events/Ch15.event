@@ -72,9 +72,18 @@ MiddleGuysSpawn:
 ALIGN 32
 CharacterBasedEvents:
 	CharacterEventBothWays(0xC,DonnalenGritTalk,Donnalen,Grit)
+	CharacterEventBothWays(0xC,DevvyGritTalk,Devvy,Grit)
 	END_MAIN
 
 DonnalenGritTalk:
+	MUSS Like_a_Glint_of_Light
+	Text(TestDialogue)
+	CUSA Grit
+	MURE 2
+	NoFade
+	ENDA
+
+DevvyGritTalk:
 	MUSS Like_a_Glint_of_Light
 	Text(TestDialogue)
 	CUSA Grit
@@ -168,7 +177,7 @@ EnemyUnits:
 	UNIT MercenaryUnit Fighter 0x0 Level(12,Enemy,1) [8,0] 0 0 0 0 [SteelAxe] AttackInRangeAI
 	UNIT MercenaryUnit Soldier 0x0 Level(12,Enemy,1) [9,4] 0 0 0 0 [SilverLance] AttackInRangeAI
 
-	UNIT MercenaryUnit Priest 0x0 Level(11,Enemy,1) [13,0] 0 0 0 0 [Physic,Sleep] AttackInRangeAI
+	UNIT MercenaryUnit Priest 0x0 Level(11,Enemy,1) [13,0] 2 0 0 0 [Physic,Sleep,RedGem] AttackInRangeAI
 	UNIT MercenaryUnit General 0x0 Level(1,Enemy,1) [16,3] 0 0 0 0 [Spear,Hammer,SteelBlade] NeverMoveAI
 	UNIT MercenaryUnit Shaman 0x0 Level(1,Enemy,1) [16,1] 0 0 0 0 [Miasma] AttackInRangeAI
 
@@ -227,7 +236,7 @@ EnemyUnits:
 	UNIT
 
 GreenUnits:
-	UNIT Grit Ballistician 0x0 Level(1,NPC,0) [10,15] 0 0 1 REDA7R13 [KillerBow,CompositeBow,Elixir] [0x03,0x03,0x04,0x00]
+	UNIT Grit Ballistician 0x0 Level(1,NPC,0) [10,15] 0 0 1 REDA7R13 [KillerBow,CompositeBow,Elixir] NeverMoveAI
 	UNIT BlueMoon Archer 0x0 Level(12,NPC,1) [10,15] 0 0 1 REDA6R13 [SteelBow,Longbow,Elixir] AttackInRangeAI
 	UNIT BlueMoon Archer 0x0 Level(12,NPC,1) [10,15] 0 0 1 REDA8R13 [IronBow,Longbow,Elixir] AttackInRangeAI
 	UNIT
