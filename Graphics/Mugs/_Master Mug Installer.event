@@ -31,7 +31,7 @@ RengeMugData:
 #incbin "Dmp/Renge_frames.dmp"
 #incbin "Dmp/Renge_palette.dmp"
 #incbin "Dmp/Renge_minimug.dmp"
-setMugEntry(RengeMug, RengeMugData, 3, 7, 3, 5)
+setMugEntry(RengeMug, RengeMugData, 2, 7, 3, 5)
 
 ALIGN 16
 MarisaMugData:
@@ -79,7 +79,7 @@ WoltMugData:
 #incbin "Dmp/Wolt_frames.dmp"
 #incbin "Dmp/Wolt_palette.dmp"
 #incbin "Dmp/Wolt_minimug.dmp"
-setMugEntry(WoltMug, WoltMugData, 3, 6, 3, 4)
+setMugEntry(WoltMug, WoltMugData, 2, 6, 3, 4)
 
 ALIGN 16
 ArdenMugData:
