@@ -5,7 +5,7 @@ Knight Errand[X]
 At Doom's Gate[X]
 
 ## Taisen4Name
-Taisen 4[X]
+The Untrained Demon King[X]
 
 ## SplashHDNName
 Splash[X]
@@ -219,3 +219,9 @@ Self Discipline[X]
 
 ## GritsThemeName
 Grit's Theme[X]
+
+## EarthboundName
+Earthbound[X]
+
+## KindredCryName
+Kindred Cry[X]

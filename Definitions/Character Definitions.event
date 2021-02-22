@@ -104,3 +104,5 @@
 #define BlueMoon 0x7D
 #define Jedah 0x7E
 #define Faithful 0x7F
+#define KenOhs 0x80
+#define Raoh 0x81

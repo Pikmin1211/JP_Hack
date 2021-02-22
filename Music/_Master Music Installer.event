@@ -373,3 +373,13 @@ SongTable(Self_Discipline,SelfDiscipline,1)
 #include "Event/GritsTheme.event"
 SongTable(Grits_Theme,GritsTheme,1)
 }
+
+{
+#include "Event/Earthbound.event"
+SongTable(Earthbound_Rudras,Earthbound,1)
+}
+
+{
+#include "Event/KindredCry.event"
+SongTable(Kindred_Cry,KindredCry,1)
+}

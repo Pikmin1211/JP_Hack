@@ -4,7 +4,7 @@
 #include "_Common.event"
 
 pResistanceModifiers: // Resistance
-	POIN prAddUnitResistance prHalveIfCapturing prDebuffRes prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes prItemResRingBonus
+	POIN prAddUnitResistance prHalveIfCapturing prDebuffRes prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes prItemResRingBonus prTonicResBonus
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -38,5 +38,8 @@ prItemPassiveResistance:
 
 prItemResRingBonus:
 	rRingBonus(STAT_RESISTANCE)
+
+prTonicResBonus:
+	rTonicBonus(STAT_RESISTANCE)
 
 #endif // MODULAR_GETTER_RESISTANCE_EVENT

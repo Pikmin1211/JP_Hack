@@ -616,3 +616,22 @@ Shadow Sw.[X]
 
 ## ShadowSwordDescription
 May damage its wielder.[X]
+
+## PugilistName
+Pugilist[X]
+
+## PugilistDescription
+The fabled axe.[X]
+
+## TonicName
+Tonic[X]
+
+## TonicDescription
+Boosts stats for a chapter.[X]
+
+## TonicUseText
+Boosts stats[N]
+for a chapter.[X]
+
+## TonicUseBoxText
+Stat increased.[X]

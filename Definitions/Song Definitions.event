@@ -73,3 +73,5 @@
 #define Battle_FFL2 0x167
 #define Self_Discipline 0x170
 #define Grits_Theme 0x171
+#define Earthbound_Rudras 0x17A
+#define Kindred_Cry 0x17B

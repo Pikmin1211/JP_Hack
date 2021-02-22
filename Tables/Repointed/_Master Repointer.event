@@ -2,7 +2,8 @@
 #include "AnimTable/repointedAnimTable.event"
 #include "PortraitTable/repointedPortraitTable.event"
 
-#define ClassTable
-#define ItemTable
-#define SpellAssociationTable
-#define PromotionBranchTable
+#define ClassTable NewClassTable
+#define ItemTable NewItemTable
+#define SpellAssociationTable NewSpellAssociationTable
+#define PromotionBranchTable NewPromotionBranchTable
+#define ChapterDataTable 0x8B0890

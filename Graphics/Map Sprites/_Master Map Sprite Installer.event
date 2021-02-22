@@ -281,3 +281,11 @@ MageDragonStand:
 ALIGN 4
 MageDragonWalk:
 #incbin "Dmp/Mage Dragon Walk.dmp"
+
+ALIGN 4
+SwordArmorStand:
+#incbin "Dmp/Sword Armor Stand.dmp"
+
+ALIGN 4
+SwordArmorWalk:
+#incbin "Dmp/Sword Armor Walk.dmp"

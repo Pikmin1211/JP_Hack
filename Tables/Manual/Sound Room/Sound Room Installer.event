@@ -78,6 +78,10 @@ SoundRoomEntry(TRS_Prep,0,TRSPrepName)
 SoundRoomEntry(Battle_FFL2,0,BattleFFL2Name)
 SoundRoomEntry(Self_Discipline,0,SelfDisciplineName)
 SoundRoomEntry(Grits_Theme,0,GritsThemeName)
+SoundRoomEntry(Earthbound_Rudras,0,EarthboundName)
+SoundRoomEntry(Kindred_Cry,0,KindredCryName)
+SoundRoomEntry(The_Fragrance_of_Black_Coffee,0,TheFragranceOfBlackCoffeeName)
+SoundRoomEntry(Rolling_Dice,0,RollingDiceName)
 SoundRoomTerminator
 
 PUSH

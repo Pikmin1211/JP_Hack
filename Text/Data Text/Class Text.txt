@@ -216,3 +216,10 @@ Ice D.[X]
 
 ## IceDragonDescription
 Placeholder[X]
+
+## SwordArmorName
+Swd. Armor[X]
+
+## SwordArmorDescription
+Heavily armored knights with[N]
+swift movement. Equip: Swords.[X]

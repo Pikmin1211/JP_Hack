@@ -21,6 +21,7 @@ BossBGMEntry(Dark_Marlen,Battle_in_the_Abandoned_Church)
 BossBGMEntry(Zane,Accursed_Combat)
 BossBGMEntry(Viridian,Stronger_Monsters)
 BossBGMEntry(Hyde,Stronger_Monsters)
+BossBGMEntry(Jedah,Battle_in_the_Abandoned_Church)
 BossBGMTerminator
 
 PUSH

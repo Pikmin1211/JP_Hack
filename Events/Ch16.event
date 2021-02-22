@@ -1,0 +1,280 @@
+EventPointerTable(Ch16AEvent, PointerList)
+SetChapterConvoy(16,1)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,StaircaseGuys,3)
+	TurnEventPlayer(0x0,WeakFliers,5)
+	TurnEventPlayer(0x0,Cavs,5)
+	TurnEventPlayer(0x0,WeakFliers,7)
+	TurnEventPlayer(0x0,Cavs,8)
+	TurnEventPlayer(0x0,StaircaseGuys2,9)
+	TurnEventPlayer(0x0,StrongFliers,12)
+	TurnEventPlayer(0x0,StrongCavs,13)
+	TurnEventPlayer(0x0,FinalMonster,15)
+	END_MAIN
+
+StaircaseGuys:
+	SpawnReinforcements(StaircaseUnits1)
+	NoFade
+	ENDA
+
+StaircaseGuys2:
+	SpawnReinforcements(StaircaseUnits2)
+	NoFade
+	ENDA
+
+WeakFliers:
+	SpawnReinforcements(LeftFliers1)
+	SpawnReinforcements(RightFliers1)
+	NoFade
+	ENDA
+
+Cavs:
+	SpawnReinforcements(BehindCavs)
+	NoFade
+	ENDA
+
+StrongCavs:
+	SpawnReinforcements(BehindCavs2)
+	NoFade
+	ENDA
+
+StrongFliers:
+	SpawnReinforcements(LeftFliers2)
+	SpawnReinforcements(RightFliers2)
+	NoFade
+	ENDA
+
+FinalMonster:
+	SpawnReinforcements(BigBad)
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+	Seize(11,1)
+	Door(16,10)
+	DurabilityChest(SkillScroll,PassID,2,5)
+	Chest(RedGem,1,6)
+	Chest(ElysianWhip,18,13)
+	Chest(AngelicRobe,19,11)
+	House(0x8,LeftDoor,6,22)
+	House(0x9,RightDoor,16,22)
+	House(0xA,LeftSwitch,1,11)
+	House(0xA,LeftSwitch,2,11)
+	House(0xB,RightSwitch,20,11)
+	House(0xB,RightSwitch,21,11)
+	END_MAIN
+
+LeftSwitch:
+	CHECK_EVENTID 0xB
+	BEQ 1 0x0 0xC
+		SOUN 0xB1 // door open
+		TILECHANGE 0x7
+		CAM1 [20,11]
+		SOUN 0xB1
+		TILECHANGE 0x8
+		LABEL 1
+	NoFade
+	ENDA
+
+RightSwitch:
+	CHECK_EVENTID 0xA
+	BEQ 1 0x0 0xC
+		SOUN 0xB1
+		TILECHANGE 0x8
+		CAM1 [2,11]
+		SOUN 0xB1
+		TILECHANGE 0x7
+		LABEL 1
+	NoFade
+	ENDA
+
+LeftDoor:
+	VillageEventItem(TestDialogue,HouseBG,MemberCard) // dude
+
+RightDoor:
+	VillageEventItem(TestDialogue,HouseBG,Pugilist) // lilian
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(11,21)
+	Unit(10,21)
+	Unit(12,21)
+	Unit(11,22)
+	Unit(11,20)
+	Unit(10,20)
+	Unit(12,22)
+	Unit(12,20)
+	Unit(10,22)
+	Unit(9,23)
+	Unit(10,23)
+	Unit(11,23)
+	Unit(12,23)
+	Unit(13,23)
+	UNIT
+
+EnemyUnits:
+	UNIT Jedah Druid 0x0 Level(5,Enemy,0) [11,1] 0 0 0 0 [Nosferatu,Physic,Thoron] NeverMoveAI
+	UNIT Faithful Sniper 0x0 Level(3,Enemy,1) [9,2] 0 0 0 0 [SilverBow,Longbow,SecretBook] NeverMoveAI
+	UNIT Faithful Hero 0x0 Level(3,Enemy,1) [13,2] 0 0 0 0 [SilverSword,ShortAxe,Speedwings] NeverMoveAI
+	UNIT Faithful Shaman 0x0 Level(12,Enemy,1) [11,3] 0 0 0 0 [Ruin] NeverMoveAI
+
+	UNIT Faithful LanceArmor 0x0 Level(11,Enemy,1) [10,6] 0 0 0 0 [Javelin,SteelSword] NeverMoveAI
+	UNIT Faithful LanceArmor 0x0 Level(11,Enemy,1) [12,6] 0 0 0 0 [LightBrand,Greatlance] NeverMoveAI
+	UNIT Faithful AxeArmor 0x0 Level(13,Enemy,1) [11,7] 0 0 0 0 [HandAxe,Poleax] NeverMoveAI
+	UNIT Faithful Mage 0x0 Level(12,Enemy,1) [11,6] 0 0 0 0 [Bolganone] NeverMoveAI
+
+	UNIT Faithful Butler 0x0 Level(3,Enemy,1) [11,13] 0 0 0 0 [Sleep,Physic] AttackInRangeAI
+	UNIT Faithful Shaman 0x0 Level(11,Enemy,1) [11,16] 0 0 0 0 [Miasma] AttackInRangeAI
+	UNIT Faithful Mage 0x0 Level(11,Enemy,1) [9,15] 0 0 0 0 [Fire] AttackInRangeAI
+	UNIT Faithful Mage 0x0 Level(11,Enemy,1) [13,15] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT Faithful Mercenary 0x0 Level(11,Enemy,1) [7,16] 0 0 0 0 [IronBlade] AttackInRangeAI
+	UNIT Faithful Fighter 0x0 Level(11,Enemy,1) [6,17] 0 0 0 0 [EmeraldAxe] AttackInRangeAI
+	UNIT Faithful Mage 0x0 Level(11,Enemy,1) [5,15] 0 0 0 0 [Thunder] AttackInRangeAI
+
+	UNIT Faithful Fighter 0x0 Level(11,Enemy,1) [16,14] 0 0 0 0 [SteelAxe] AttackInRangeAI
+	UNIT Faithful Soldier 0x0 Level(11,Enemy,1) [17,15] 0 0 0 0 [SapphireLance] AttackInRangeAI
+
+	UNIT Faithful General 0x0 Level(2,Enemy,1) [16,11] 2 0 0 0 [ShortSpear,BattleAxe,SilverSword,MasterKey] NeverMoveAI
+
+	UNIT Faithful Mage 0x0 Level(7,Enemy,1) [20,16] 0 0 0 0 [Bolting,Aircalibur] DefaultAI
+
+	UNIT Faithful Halberdier 0x0 Level(3,Enemy,1) [20,6] 2 0 0 0 [FlameLance] AttackInRangeAI
+	UNIT Faithful Soldier 0x0 Level(11,Enemy,1) [19,6] 0 0 0 0 [SteelLance] AttackInRangeAI
+	UNIT Faithful Soldier 0x0 Level(11,Enemy,1) [20,7] 0 0 0 0 [Greatlance] AttackInRangeAI
+
+	UNIT Faithful AxeArmor 0x0 Level(13,Enemy,1) [20,12] 0 0 0 0 [ShortAxe] NeverMoveAI
+	UNIT Faithful Archer 0x0 Level(11,Enemy,1) [21,14] 0 0 0 0 [ShortBow] AttackInRangeAI
+
+	UNIT Faithful Archer 0x0 Level(11,Enemy,1) [6,8] 0 0 0 0 [CompositeBow,HuntingBow] AttackInRangeAI
+	UNIT Faithful Archer 0x0 Level(11,Enemy,1) [16,8] 0 0 0 0 [SteelBow,Longbow] AttackInRangeAI
+
+	UNIT Faithful Mercenary 0x0 Level(11,Enemy,1) [1,12] 0 0 0 0 [SteelBlade] AttackInRangeAI
+	UNIT Faithful Fighter 0x0 Level(11,Enemy,1) [2,11] 0 0 0 0 [ScissorAxe] AttackInRangeAI
+	UNIT Faithful Shaman 0x0 Level(11,Enemy,1) [1,7] 0 0 0 0 [Miasma] AttackInRangeAI
+
+	UNIT Faithful Mercenary 0x0 Level(11,Enemy,1) [4,5] 0 0 0 0 [ShortSword] AttackInRangeAI
+	UNIT Faithful Soldier 0x0 Level(11,Enemy,1) [5,6] 0 0 0 0 [SilverLance] AttackInRangeAI
+
+	UNIT
+
+LeftFliers1:
+
+	UNIT Faithful PegasusKnight 0x0 Level(11,Enemy,1) [0,0] 0 0 1 REDA0R1 [Glaive,Pilum] WallAI
+	UNIT Faithful WyvernRider 0x0 Level(11,Enemy,1) [0,0] 0 0 1 REDA1R0 [SteelLance,Javelin] WallAI
+
+	UNIT
+
+RightFliers1:
+
+	UNIT Faithful PegasusKnight 0x0 Level(11,Enemy,1) [22,0] 0 0 1 REDA22R1 [Espontoon,Javelin] WallAI
+	UNIT Faithful WyvernRider 0x0 Level(11,Enemy,1) [22,0] 0 0 1 REDA21R0 [SapphireLance,Javelin] WallAI
+
+	UNIT
+
+LeftFliers2:
+
+	UNIT Faithful DarkFlier 0x0 Level(3,Enemy,1) [0,0] 0 0 1 REDA0R0 [SilverLance] WallAI
+	UNIT Faithful PegasusKnight 0x0 Level(11,Enemy,1) [0,0] 0 0 1 REDA0R1 [Glaive,Pilum] WallAI
+	UNIT Faithful WyvernRider 0x0 Level(11,Enemy,1) [0,0] 0 0 1 REDA1R0 [SteelLance,Javelin] WallAI
+
+	UNIT
+
+RightFliers2:
+
+	UNIT Faithful WyvernLord 0x0 Level(3,Enemy,1) [22,0] 0 0 1 REDA22R0 [SilverAxe] WallAI
+	UNIT Faithful PegasusKnight 0x0 Level(11,Enemy,1) [22,0] 0 0 1 REDA22R1 [Espontoon,Javelin] WallAI
+	UNIT Faithful WyvernRider 0x0 Level(11,Enemy,1) [22,0] 0 0 1 REDA21R0 [SapphireLance,Javelin] WallAI
+
+	UNIT
+
+StaircaseUnits1:
+
+	UNIT Faithful Mercenary 0x0 Level(12,Enemy,1) [11,9] 0 0 1 REDA11R9 [RubySword] DefaultAI
+	UNIT Faithful Fighter 0x0 Level(12,Enemy,1) [11,9] 0 0 1 REDA10R9 [IronAxe] DefaultAI
+	UNIT Faithful Fighter 0x0 Level(12,Enemy,1) [11,9] 0 0 1 REDA12R9 [SteelAxe] DefaultAI
+
+	UNIT
+
+StaircaseUnits2:
+
+	UNIT Faithful Warrior 0x0 Level(2,Enemy,1) [11,9] 0 0 1 REDA11R9 [Poleax,SteelBow] DefaultAI
+	UNIT Faithful Mercenary 0x0 Level(12,Enemy,1) [11,9] 0 0 1 REDA10R9 [IronBlade] DefaultAI
+	UNIT Faithful Mercenary 0x0 Level(12,Enemy,1) [11,9] 0 0 1 REDA12R9 [ShortSword] DefaultAI
+
+	UNIT
+
+BehindCavs:
+
+	UNIT Faithful GreatKnight 0x0 Level(2,Enemy,1) [11,24] 0 0 1 REDA11R24 [SteelAxe] DefaultAI
+	UNIT Faithful Cavalier 0x0 Level(12,Enemy,1) [11,24] 0 0 1 REDA10R24 [ShortSword,SteelLance] DefaultAI
+	UNIT Faithful Cavalier 0x0 Level(12,Enemy,1) [11,24] 0 0 1 REDA12R24 [Glaive,IronBlade] DefaultAI
+	UNIT
+
+BehindCavs2:
+
+	UNIT Faithful BowKnight 0x0 Level(4,Enemy,1) [11,24] 0 0 1 REDA11R24 [SilverBow,SteelLance] DefaultAI
+	UNIT Faithful DukeKnight 0x0 Level(2,Enemy,1) [11,24] 0 0 1 REDA10R24 [SilverLance] DefaultAI
+	UNIT Faithful DukeKnight 0x0 Level(2,Enemy,1) [11,24] 0 0 1 REDA12R24 [Espontoon] DefaultAI
+	UNIT
+
+BigBad:
+	
+	UNIT Monster_Boss DracoZombie 0x0 Level(10,Enemy,1) [11,24] 0 0 1 REDA11R23 [WretchedAir] DefaultAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 17
+	NoFade
+	ENDA

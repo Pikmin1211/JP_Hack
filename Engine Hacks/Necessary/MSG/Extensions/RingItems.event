@@ -1,3 +1,4 @@
+#define rTonicBonus(stat) "rAdd; rWithConstant(stat); rCallExternal(AddTonicBonus^1)"
 
 ALIGN 4
 IsNotRingItem:

@@ -68,6 +68,8 @@
 #define Divinestone 0xF9
 #define LeatherShield 0xFA
 #define ShadowSword 0xFB
+#define Pugilist 0xFC
+#define Tonic 0xFD
 
 #define Tyrfing Audhulma
 #define Gungnir Vidofnir

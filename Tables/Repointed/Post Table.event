@@ -1,19 +1,5 @@
 #include "HandAxe Setter.event"
 
-#undef ClassTable
-#define ClassTable NewClassTable
-
-#undef ItemTable
-#define ItemTable NewItemTable
-
-#undef SpellAssociationTable
-#define SpellAssociationTable NewSpellAssociationTable
-
-#undef PromotionBranchTable
-#define PromotionBranchTable NewPromotionBranchTable
-
-#define ChapterDataTable 0x8B0890
-
 PUSH
 ORG $CC7C8
 POIN (PromotionBranchTable-1)

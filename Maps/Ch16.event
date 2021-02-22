@@ -9,9 +9,49 @@ Map:
 
 MapChanges:
 TileMap(0,15,10,3,1,RightDoor)
+TileMap(1,1,6,1,1,Chest1)
+TileMap(2,2,5,1,1,Chest2)
+TileMap(3,18,13,1,1,Chest3)
+TileMap(4,19,11,1,1,Chest4)
+TileMap(5,0,3,3,2,LeftWall)
+TileMap(6,16,3,3,2,RightWall)
+TileMap(7,1,8,2,3,LeftSide)
+TileMap(8,19,8,3,3,RightSide)
 TileMapEnd
 
 RightDoor:
 SHORT 0xc98 0x750 0xd18 
+ALIGN 4
+
+Chest1:
+SHORT 0x4 
+ALIGN 4
+
+Chest2:
+SHORT 0x4 
+ALIGN 4
+
+Chest3:
+SHORT 0x4 
+ALIGN 4
+
+Chest4:
+SHORT 0x4 
+ALIGN 4
+
+LeftWall:
+SHORT 0xc98 0xc 0xc20 0x0 0xc 0xed4 
+ALIGN 4
+
+RightWall:
+SHORT 0xc24 0xc 0xc20 0x0 0x754 0x0 
+ALIGN 4
+
+LeftSide:
+SHORT 0xebc 0xfb8 0xf10 0xf18 0x754 0x754 
+ALIGN 4
+
+RightSide:
+SHORT 0xe94 0xebc 0xfb8 0xdd8 0xf10 0xf18 0xdd8 0x7d0 0x754 
 ALIGN 4
 

@@ -40,3 +40,4 @@
 #define MageDragon 0xA3
 #define IceDragon 0xA4
 #define GaidenMerc 0xA5
+#define SwordArmor 0xA6

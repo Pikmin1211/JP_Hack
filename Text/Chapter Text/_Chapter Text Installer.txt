@@ -15,3 +15,5 @@
 #include "Ch13.txt"
 #include "Ch14.txt"
 #include "Ch15.txt"
+#include "Ch16.txt"
+#include "Ch17.txt"

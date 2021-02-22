@@ -8,10 +8,35 @@ Map:
 #incbin "Ch17_data.dmp"
 
 MapChanges:
-TileMap(0,20,15,1,1,BottomRightVillageVisit)
+TileMap(0,15,7,3,2,RightVillageDestroy)
+TileMap(1,16,8,1,1,RightVillageVisit)
+TileMap(2,7,0,3,2,MidVillageDestroy)
+TileMap(3,8,1,1,1,MidVillageVisit)
+TileMap(4,1,7,3,2,LeftVillageDestroy)
+TileMap(5,2,8,1,1,LeftVillageVisit)
 TileMapEnd
 
-BottomRightVillageVisit:
+RightVillageDestroy:
+SHORT 0xb90 0xb94 0xb98 0xc10 0xc14 0xc18 
+ALIGN 4
+
+RightVillageVisit:
+SHORT 0x80 
+ALIGN 4
+
+MidVillageDestroy:
+SHORT 0xb80 0xb94 0xb98 0xc00 0xc14 0xc18 
+ALIGN 4
+
+MidVillageVisit:
+SHORT 0x80 
+ALIGN 4
+
+LeftVillageDestroy:
+SHORT 0xb90 0xb94 0xb84 0xc10 0xc14 0xc04 
+ALIGN 4
+
+LeftVillageVisit:
 SHORT 0x80 
 ALIGN 4
 

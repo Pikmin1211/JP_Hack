@@ -524,3 +524,21 @@ Faithful[X]
 
 ## FaithfulDescription
 Placeholder[X]
+
+## ValbarName
+Valbar[X]
+
+## ValbarDescription
+Placeholder[X]
+
+## RaohName
+Raoh[X]
+
+## RaohDescription
+Placeholder[X]
+
+## KenOhsName
+Ken-Oh's[X]
+
+## KenOhsDescription
+Placeholder[X]

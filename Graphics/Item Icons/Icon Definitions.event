@@ -170,7 +170,7 @@
 #define OceanSealIcon 		0xa9
 #define WindSwordIcon 		0xaa
 #define SpiritDustIcon 		0xab
-#define RedNoteIcon 		0xac
+#define PugilistIcon 		0xac
 #define BaphometIcon        0xad
 #define RubySwordIcon       0xae
 #define SapphireLanceIcon   0xaf

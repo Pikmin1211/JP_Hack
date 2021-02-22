@@ -73,12 +73,14 @@
 #define AliceMug 0x49
 #define DracoZombieMug 0x4A
 #define HydeMug 0x4B
-#define KiritoMug 0x4C
-#define QuelanaMug 0x4D
-#define RaohMug 0x4E
-#define ReinhardtMug 0x4F
-#define SatanMug 0x50
-#define GatekeeperMug 0x51
+// 0x4C - Pirate
+// 0x4D - Bandit
+#define KiritoMug 0x4E
+#define QuelanaMug 0x4F
+#define RaohMug 0x50
+#define ReinhardtMug 0x51
+#define SatanMug 0x52
+#define GatekeeperMug 0x53
 
 // Generics start at 0x58
 

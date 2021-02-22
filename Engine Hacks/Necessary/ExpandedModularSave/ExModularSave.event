@@ -206,6 +206,9 @@ gSuspendSaveChunks:
 	// Save Debuffs (TODO: maybe reduce size)
 	DeclSaveChunk($2598, DebuffTableSize, SUD_SaveDebuffs,  SUD_LoadDebuffs)
 
+	// Tonics
+	DeclSaveChunk($2598 + DebuffTableSize, TonicTableSize, SUD_SaveTonics, SUD_LoadTonics)
+
 	// ends at $2E98
 	// free up to $2E78	
 

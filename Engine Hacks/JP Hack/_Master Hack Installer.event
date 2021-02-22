@@ -65,3 +65,9 @@
 #include "Fixes/Link Arena/Installer.event"
 
 #include "Fixes/Event/Installer.event"
+
+#include "Fixes/HP Bar and Cloud Fix/Cloud_Fix_EA.event"
+
+#include "Music/ContinueBattleBGM/Installer.event"
+
+#include "Tonic/Tonics.event"

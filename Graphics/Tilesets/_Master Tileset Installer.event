@@ -48,6 +48,10 @@ ALIGN 4
 FrontierTileConfigData:
 #incbin "Dmp/Frontier_comp.dmp"
 
+ALIGN 4
+MountainousTileConfigData:
+#incbin "Dmp/Mountainous_comp.dmp"
+
 EventPointerTable(FieldsPaletteNight,FieldsPaletteNightData)
 EventPointerTable(CastlePaletteSewer,CastlePaletteSewerData)
 EventPointerTable(SnowObjectSet,SnowObjectSetData)
@@ -60,3 +64,4 @@ EventPointerTable(CaveTileConfig,CaveTileConfigData)
 EventPointerTable(FrontierObjectSet,FrontierObjectSetData)
 EventPointerTable(FrontierPalette,FrontierPaletteData)
 EventPointerTable(FrontierTileConfig,FrontierTileConfigData)
+EventPointerTable(MountainousTileConfig,MountainousTileConfigData)

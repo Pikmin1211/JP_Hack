@@ -1,0 +1,88 @@
+EventPointerTable(Ch17AEvent, PointerList)
+SetChapterConvoy(17,1)
+
+PointerList:
+	POIN TurnBasedEvents
+	POIN CharacterBasedEvents
+	POIN LocationBasedEvents
+	POIN MiscBasedEvents
+	POIN Dunno1 Dunno2 Dunno3 Tutorial
+	POIN Traps1 Traps2
+	POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+	POIN $0 $0 $0
+	POIN $0 $0 $0
+	POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+	TurnEventPlayer(0x0,ValbarAppears,1)
+	END_MAIN
+
+ValbarAppears:
+	MUSS Like_a_Glint_of_Light
+	SpawnReinforcements(ValbarUnit)
+	SetUnitItemDurability(Valbar,3,UlirScroll)
+	FlashCursor(Valbar,60)
+	Text(TestDialogue)
+	MURE 2
+	NoFade
+	ENDA
+
+ALIGN 32
+CharacterBasedEvents:
+
+	END_MAIN
+
+MiscBasedEvents:
+	CauseGameOverIfLordDies
+	END_MAIN
+
+LocationBasedEvents:
+
+	END_MAIN
+
+Dunno1:
+
+	END_MAIN
+
+Dunno2:
+
+	END_MAIN
+
+Dunno3:
+
+	END_MAIN
+
+Tutorial:
+
+	END_MAIN
+
+Units1:
+	Unit(17,16)
+	UNIT
+
+EnemyUnits:
+	UNIT Raoh GreatKnight 0x0 Level(1,Enemy,1) [18,11] 0 0 0 0 [IronAxe] NoAI
+	UNIT
+
+ValbarUnit:
+	UNIT Valbar SwordArmor 0x0 Level(13,Ally,0) [16,8] 0 0 1 REDA10R10 [SteelBlade,KillingEdge,Vulnerary,CrusaderScroll] NoAI
+	UNIT
+
+Traps1:
+	ENDTRAP
+	ALIGN 4
+
+Traps2:
+	ENDTRAP
+	ALIGN 4
+
+BeginningScene:
+	LOAD1 0x1 EnemyUnits
+	ENUN
+	GotoPrepScreen
+	ENDA
+
+EndingScene:
+	MNC2 18
+	NoFade
+	ENDA
