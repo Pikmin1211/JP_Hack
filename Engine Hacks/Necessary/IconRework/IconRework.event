@@ -1,7 +1,7 @@
 #ifndef HAX_ICON_REWORK
 #define HAX_ICON_REWORK
 
-#define ICON_SHEET_COUNT 8 // #0 for item icons & #1 for skill icons & #2 for affinity icons & #3 for mount type icons & #4 for weapon type icons
+#define ICON_SHEET_COUNT 9 // #0 for item icons & #1 for skill icons & #2 for affinity icons & #3 for mount type icons & #4 for weapon type icons
 
 #include "IconRework_Internal.event"
 
@@ -14,6 +14,7 @@ InjectIconGfxGetter(4, (prGetWRankIconGfx+1))
 InjectIconGfxGetter(5, (prGetSkillBookIconGfx+1))
 InjectIconGfxGetter(6, (prGetRingIconGfx+1))
 InjectIconGfxGetter(7, (prGetCrusaderScrollIconGfx+1))
+InjectIconGfxGetter(8, (prGetTonicIconGfx+1))
 
 ALIGN 4
 prGetSlillIconGfx:
@@ -43,5 +44,9 @@ prGetRingIconGfx:
 prGetCrusaderScrollIconGfx:
 	#incbin "asm/GetSheetIconGfx.bin"
 	POIN CrusaderScrollIcons
+
+prGetTonicIconGfx:
+	#incbin "asm/GetSheetIconGfx.bin"
+	POIN TonicIcons
 
 #endif // HAX_ICON_REWORK

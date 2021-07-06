@@ -635,3 +635,109 @@ for a chapter.[X]
 
 ## TonicUseBoxText
 Stat increased.[X]
+
+## HPTonicName
+HP Tonic[X]
+
+## HPTonicDescription
+HP +5 for one chapter.[X]
+
+## HPTonicUseText
+HP +5 for[N]
+one chapter.[X]
+
+## StrTonicName
+Str Tonic[X]
+
+## StrTonicDescription
+Str +2 for one chapter.[X]
+
+## StrTonicUseText
+Str +2 for[N]
+one chapter.[X]
+
+## SklTonicName
+Skl Tonic[X]
+
+## SklTonicDescription
+Skl +2 for one chapter.[X]
+
+## SklTonicUseText
+Skl +2 for[N]
+one chapter.[X]
+
+## SpdTonicName
+Spd Tonic[X]
+
+## SpdTonicDescription
+Spd +2 for one chapter.[X]
+
+## SpdTonicUseText
+Spd +2 for[N]
+one chapter.[X]
+
+## DefTonicName
+Def Tonic[X]
+
+## DefTonicDescription
+Def +2 for one chapter.[X]
+
+## DefTonicUseText
+Def +2 for[N]
+one chapter.[X]
+
+## ResTonicName
+Res Tonic[X]
+
+## ResTonicDescription
+Res +2 for one chapter.[X]
+
+## ResTonicUseText
+Res +2 for[N]
+one chapter.[X]
+
+## LuckTonicName
+Luck Tonic[X]
+
+## LuckTonicDescription
+Luck +2 for one chapter.[X]
+
+## LuckTonicUseText
+Luck +2 for[N]
+one chapter.[X]
+
+## MagTonicName
+Mag Tonic[X]
+
+## MagTonicDescription
+Mag +2 for one chapter.[X]
+
+## MagTonicUseText
+Mag +2 for[N]
+one chapter.[X]
+
+## RainbowTonicName
+Rnbw Tonic[X]
+
+## RainbowTonicDescription
+All stats +2 and HP +5[N]
+for one chapter.[X]
+
+## RainbowTonicUseText
+All stats +2[N]
+and HP +5 for[N]
+one chapter.[X]
+
+## ArmsScrollName
+Arms Scroll[X]
+
+## ArmsScrollDescription
+Raises all usable[N]
+weapon ranks.[X]
+
+## ArmsScrollUseText
+Raises all[N]
+weapon ranks.[X]
+
+## ArmsScrollPopupText
+Ranks increased.[X]

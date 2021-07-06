@@ -21,3 +21,7 @@ RingIcons:
 ALIGN 4
 CrusaderScrollIcons:
 #incbin "CrusaderScrollIcons.dmp"
+
+ALIGN 4
+TonicIcons:
+#incbin "TonicIcons.dmp"

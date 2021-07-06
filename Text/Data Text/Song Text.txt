@@ -128,7 +128,7 @@ Old Familiar Scent[X]
 Beloved Tomboyish Girl[X]
 
 ## HiryuNoKen2Name
-Hiryu No Ken 2[X]
+Street Battle (Hiryu no Ken)[X]
 
 ## BattleTalesOfPhantasiaName
 Battle (Tales of Phantasia)[X]

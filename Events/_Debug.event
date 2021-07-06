@@ -65,6 +65,13 @@ Tutorial:
 	
 	END_MAIN
 
+UnitsLoaded:
+	UNIT Sanders Hero 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [Tyrfing,SilverAxe,ArmsScroll] NoAI
+	UNIT Marisa MageDragon 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Tonic,Unlock,Magestone] NoAI
+	UNIT Finn Mercenary 0x0 Level(10,Ally,1) [0,0] 0 0 0 0 [IronSword,HeroCrest,SilverSword,ArmsScroll] NoAI
+	UNIT Scott Thief 0x0 Level(20,Ally,1) [6,7] 0 0 0 0 [IronBow,AngelicRobe,GoddessIcon,ArmsScroll] NoAI
+	UNIT
+
 Units1:
 	UNIT Sanders Mercenary 0x0 Level(10,Ally,1) [6,6] 0 0 0 0 [IronSword,HeroCrest,Tonic,Tonic] NoAI
 	UNIT Marisa MageDragon 0x0 Level(10,Ally,1) [7,6] 0 0 0 0 [Vulnerary,Tonic,Unlock,Magestone] NoAI
@@ -89,14 +96,11 @@ Traps2:
 	ALIGN 4
 
 BeginningScene:
-	LOAD1 0x1 Units1
+	LOAD1 0x1 UnitsLoaded
 	ENUN
 	LOAD1 0x1 EnemyUnits
 	ENUN
-	SetUnitItemDurability(Sanders,2,RainbowTonic)
 	SetUnitItemDurability(Marisa,1,HPTonic)
-	SetUnitItemDurability(Sanders,3,StrTonic)
-	SetUnitItemDurability(Scott,3,MagTonic)
 	GotoPrepScreen
 	ENDA
 

@@ -88,6 +88,7 @@ DurabilityBasedItemNameList: //used for item name
 DurabilityTextEntry(0xFFFF,True,SkillDescTable)
 DurabilityTextEntry(RingName,False,RingNameTable)
 DurabilityTextEntry(CrusaderScrollName,False,CrusaderScrollNameTable)
+DurabilityTextEntry(TonicName,False,TonicNameTable)
 DurabilityTextEnd
 
 ALIGN 4
@@ -95,6 +96,7 @@ DurabilityBasedItemDescList: //used for item desc
 DurabilityTextEntry(0xFFFF,False,SkillDescTable)
 DurabilityTextEntry(RingDescription,False,RingDescriptionTable)
 DurabilityTextEntry(CrusaderScrollDescription,False,CrusaderScrollDescriptionTable)
+DurabilityTextEntry(TonicDescription,False,TonicDescriptionTable)
 DurabilityTextEnd
 
 ALIGN 4
@@ -102,6 +104,7 @@ DurabilityItemList: //used for durability
 DurabilityItem(SkillScroll)
 DurabilityItem(RingItem)
 DurabilityItem(CrusaderScroll)
+DurabilityItem(Tonic)
 DurabilityItemEnd
 
 ALIGN 4
@@ -109,6 +112,7 @@ DurabilityBasedItemIconList: //used for icons
 DurabilityIcon(SkillScroll,5)
 DurabilityIcon(RingItem,6)
 DurabilityIcon(CrusaderScroll,7)
+DurabilityIcon(Tonic,8)
 DurabilityIconEnd
 
 /*
@@ -169,3 +173,29 @@ NameTableEntry(UlirScrollDescription)
 NameTableEntry(BlaggiScrollDescription)
 NameTableEntry(NobaScrollDescription)
 NameTableEntry(TordoScrollDescription)
+
+ALIGN 4
+TonicNameTable:
+NameTableEntry(0x0)
+NameTableEntry(HPTonicName)
+NameTableEntry(StrTonicName)
+NameTableEntry(SklTonicName)
+NameTableEntry(SpdTonicName)
+NameTableEntry(DefTonicName)
+NameTableEntry(ResTonicName)
+NameTableEntry(LuckTonicName)
+NameTableEntry(MagTonicName)
+NameTableEntry(RainbowTonicName)
+
+ALIGN 4
+TonicDescriptionTable:
+NameTableEntry(0x0)
+NameTableEntry(HPTonicDescription)
+NameTableEntry(StrTonicDescription)
+NameTableEntry(SklTonicDescription)
+NameTableEntry(SpdTonicDescription)
+NameTableEntry(DefTonicDescription)
+NameTableEntry(ResTonicDescription)
+NameTableEntry(LuckTonicDescription)
+NameTableEntry(MagTonicDescription)
+NameTableEntry(RainbowTonicDescription)

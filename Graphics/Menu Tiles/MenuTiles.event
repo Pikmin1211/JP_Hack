@@ -17,6 +17,12 @@ POIN MenuTilesPaletteRed
 POIN MenuTilesPaletteGreen
 POIN MenuTilesPaletteGray
 
+// For the stat screen
+POIN MenuTiles
+POIN MenuTiles
+POIN MenuTiles
+POIN MenuTiles
+
 // Battle Preview Anims Off
 ORG 0x7BDF8
 POIN MenuTilesPaletteBlue
@@ -86,6 +92,10 @@ ORG 0xCCC1C
 // Support Viewer
 ORG 0xA14D8
 	POIN SupportScreenTSA
+//ORG 0xA2420
+//  POIN SupportListTSA
+//ORG 0xA2AA0
+//	POIN SupportListTSA
 
 // Prep Screen
 ORG 0x95EB8 //0x95E3C

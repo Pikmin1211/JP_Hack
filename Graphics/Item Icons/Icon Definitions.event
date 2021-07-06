@@ -156,7 +156,7 @@
 #define AfasDropsIcon 		0x9b
 #define HeavenSealIcon 		0x9c
 #define EmblemSealIcon 		0x9d
-#define FellContractIcon 	0x9e
+#define ArmsScrollIcon		0x9e
 #define SolKattiIcon 		0x9f
 #define WolfBeilIcon 		0xa0
 #define EreshkigalIcon 		0xa1

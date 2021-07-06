@@ -1,0 +1,4 @@
+#define _DEBUG_
+#define _DEBUG_ROOM_
+
+#include "ROM Buildfile.event"

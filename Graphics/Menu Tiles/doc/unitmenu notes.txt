@@ -30,6 +30,10 @@
 !!08001EA0 SetSpecialColorEffectsParameters!!
 - For all menu transparency
 
+// to find a tsa:
+// break on write to the specific bg
+// follow r14
+
 020234A8 BG1_Map_Buffer
 02023CA8 BG2_Map_Buffer
 

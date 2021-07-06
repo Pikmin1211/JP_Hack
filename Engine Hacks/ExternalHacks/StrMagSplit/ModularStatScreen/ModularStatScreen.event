@@ -8,6 +8,12 @@
 
 #ifdef _FE8_
 
+  // Move "Equipment" tiles so I can fit the full menu tiles
+  PUSH
+    ORG 0x88668
+    WORD 0x6004400
+  POP
+
   ALIGN 4
   MSS_leftstatscreen:
     #incbin "asm/mss_leftstatscreen.dmp"
@@ -105,8 +111,8 @@
 	SHORT 0 0
 	ORG 0x87BE8
 	SHORT 0 0 //Remove alpha blending for bg1 
-	ORG 0x4E0F6
-	SHORT 0 0 //Lmao the game was loading leftover fe6 graphics 
+	//ORG 0x4E0F6
+	//SHORT 0 0 //Lmao the game was loading leftover fe6 graphics 
   
     // Display growths hack
 

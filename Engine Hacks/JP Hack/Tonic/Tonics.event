@@ -8,6 +8,20 @@ ALIGN 4
 TonicChapterExclusionTable:
 BYTE 0xFF
 
+	// Add this to ExModularSave
+
+	// Tonics
+	//DeclSaveChunk($2598 + DebuffTableSize, TonicTableSize, SUD_SaveTonic, SUD_LoadTonic)
+
+	// For MSG
+
+	//#define rTonicBonus(stat) "rAdd; rWithConstant(stat); rCallExternal(AddTonicBonus)"
+
+	// Text for prep screen
+
+	// ## TonicUseBoxText
+    // Stat increased.[X]
+
 // No Touchy
 #define HPTonic 1
 #define StrTonic 2
@@ -33,15 +47,6 @@ PUSH
 	ORG IBArray + (TonicEffectID * 4)
 	POIN TonicPrepScreenEffect
 POP
-
-	// Add this to ExModularSave
-
-	// Tonics
-	//DeclSaveChunk($2598 + DebuffTableSize, TonicTableSize, SUD_SaveTonic, SUD_LoadTonic)
-
-	// For MSG
-
-	//#define rTonicBonus(stat) "rAdd; rWithConstant(stat); rCallExternal(AddTonicBonus)"
 
 ALIGN 4
 TonicTablePointer:

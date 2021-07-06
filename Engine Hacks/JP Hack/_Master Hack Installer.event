@@ -71,3 +71,5 @@
 #include "Music/ContinueBattleBGM/Installer.event"
 
 #include "Tonic/Tonics.event"
+
+#include "ArmsScroll/ArmsScroll.event"

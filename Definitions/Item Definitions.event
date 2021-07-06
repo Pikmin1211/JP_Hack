@@ -70,6 +70,7 @@
 #define ShadowSword 0xFB
 #define Pugilist 0xFC
 #define Tonic 0xFD
+#define ArmsScroll 0xFE
 
 #define Tyrfing Audhulma
 #define Gungnir Vidofnir
